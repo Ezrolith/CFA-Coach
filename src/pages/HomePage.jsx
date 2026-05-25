@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import { TOPICS, totalCounts } from '../data/curriculum';
+import { authoredLessonIds } from '../lib/content';
+import { findLesson } from '../data/curriculum';
 import TopicCard from '../components/curriculum/TopicCard';
 import WeightBar from '../components/curriculum/WeightBar';
 
@@ -13,6 +16,7 @@ function daysUntilExam() {
 export default function HomePage() {
   const counts = totalCounts();
   const days = daysUntilExam();
+  const authored = authoredLessonIds().map(id => findLesson(id)).filter(Boolean);
 
   return (
     <div className="max-w-7xl mx-auto px-6 pt-14 pb-24">
@@ -38,6 +42,39 @@ export default function HomePage() {
           <Stat label="Days to exam"  value={days.toLocaleString()} accent />
         </div>
       </section>
+
+      {/* Authored lessons spotlight */}
+      {authored.length > 0 && (
+        <section className="mb-16">
+          <SectionHeader
+            eyebrow="Just authored"
+            title="Lessons with full content ready to study"
+            hint={`${authored.length} lesson${authored.length === 1 ? '' : 's'} with explanations, formulas, worked examples`}
+          />
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
+            {authored.map(({ topic, module, lesson }) => (
+              <Link
+                key={lesson.id}
+                to={`/lesson/${lesson.id}`}
+                className="card card-hover p-5 group"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-ink-500">
+                    {topic.shortName} · {module.name}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <h3 className="font-display text-lg font-semibold tracking-tight text-ink-900 dark:text-ink-50 leading-tight">
+                    {lesson.name}
+                  </h3>
+                  <span className="text-ink-300 group-hover:text-ink-500 transition-colors" aria-hidden>→</span>
+                </div>
+                <p className="text-xs text-ink-500 mt-1">{lesson.los?.length ?? 0} LOS · full content</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Weight bar */}
       <section className="mb-16">

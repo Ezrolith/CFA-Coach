@@ -1,6 +1,8 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { findLesson } from '../data/curriculum';
 import { styleFor } from '../data/topicStyles';
+import { getLessonContent } from '../lib/content';
+import LessonContent from '../components/lesson/LessonContent';
 
 const VERB_COLORS = {
   calculate:   'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-300',
@@ -29,6 +31,7 @@ export default function LessonPage() {
   const { topic, module, lesson } = found;
   const s = styleFor(topic.id);
   const los = lesson.los ?? [];
+  const content = getLessonContent(lesson.id);
 
   return (
     <div className="max-w-3xl mx-auto px-6 pt-10 pb-24">
@@ -55,22 +58,20 @@ export default function LessonPage() {
         <p className="mt-3 text-sm text-ink-500">{los.length} Learning Outcome Statement{los.length === 1 ? '' : 's'}</p>
       </header>
 
-      {/* Three-mode explanation placeholder (Phase 3) */}
-      <section className="card p-6 mb-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400">Explanation</h2>
-          <div className="inline-flex items-center gap-px bg-ink-100 dark:bg-ink-800/60 rounded-full p-0.5 text-[11px]">
-            <button className="px-2.5 py-1 rounded-full bg-white dark:bg-ink-950 text-ink-900 dark:text-ink-50 shadow-sm font-medium">New</button>
-            <button className="px-2.5 py-1 rounded-full text-ink-500 hover:text-ink-900 dark:hover:text-ink-50 transition-colors">Pro</button>
-            <button className="px-2.5 py-1 rounded-full text-ink-500 hover:text-ink-900 dark:hover:text-ink-50 transition-colors">Exam</button>
+      {/* Authored content if available; otherwise the placeholder */}
+      {content ? (
+        <LessonContent content={content} />
+      ) : (
+        <section className="card p-6 mb-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400">Explanation</h2>
           </div>
-        </div>
-        <p className="text-sm text-ink-500 leading-relaxed italic">
-          Phase 3 will render the full lesson body here — three-mode explanation, worked examples,
-          key formulas in KaTeX, common pitfalls, mini-FAQ, and curated resources. The Learning
-          Outcome Statements below are the spine that content is built against.
-        </p>
-      </section>
+          <p className="text-sm text-ink-500 leading-relaxed italic">
+            Detailed lesson content for this LOS is on the authoring backlog. The Learning Outcome
+            Statements below are the spine that content is built against.
+          </p>
+        </section>
+      )}
 
       {/* LOS list */}
       <section>

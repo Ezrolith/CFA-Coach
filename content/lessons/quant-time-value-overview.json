@@ -1,0 +1,72 @@
+{
+  "lessonId": "quant-time-value-overview",
+  "modes": {
+    "new": "## The big idea\n\n**A pound today is worth more than a pound tomorrow.** That's the whole topic in one line.\n\nWhy? Because the pound you have today can be invested, earn interest, and grow. The pound tomorrow can't. So if I owe you £100 next year and offer you £100 now, you should take it now — and if I want to keep the money for a year, you should make me pay extra for the wait.\n\nThat extra is **interest**. The maths of time value of money (TVM) is just about being careful with that interest: applying it forward (compounding), peeling it back (discounting), and doing it consistently across many cash flows.\n\n### Three core moves\n\n1. **Future value (FV)** — I have money today, how much will it be worth later?\n2. **Present value (PV)** — I'll get money later, how much is that worth today?\n3. **Implied rate** — Given today's price and tomorrow's payoff, what interest rate is baked in?\n\nEvery fixed-income and equity valuation question at Level 1 reduces to some version of these three moves. Get fluent here and the rest of the course gets easier.\n\n### The intuition behind discounting\n\nThink of it like your telecoms work — if a customer offers a 5-year contract worth £100/month, the back-end years are worth less than the front-end years. The £100 in year 5 has to wait, and your firm has a hurdle rate (cost of capital). So you discount each year back at the hurdle rate and add them up to get the contract's value *today*. That's a PV calculation, and it's exactly what bond investors do.\n\n### What you'll actually do on the exam\n\n- Solve for **PV**, **FV**, **N** (number of periods), **r** (rate per period), or **PMT** (payment) given the other four.\n- Handle **annuities** (equal payments) and **single sums**.\n- Convert between **stated** and **effective** rates when compounding is more than annual.\n- Apply the **cash flow additivity principle** — value any stream of cash flows by discounting each piece separately.",
+    "pro": "## TVM at speed\n\nTwo cash flows separated in time must be reconciled via a discount rate $r$. Per-period future value:\n\n$$FV = PV \\cdot (1+r)^N$$\n\nPV is just the inverse. For an ordinary annuity (payments at period end):\n\n$$PV_{annuity} = PMT \\cdot \\frac{1 - (1+r)^{-N}}{r}$$\n\nFor a perpetuity, $PV = PMT / r$.\n\n### Effective annual rate (EAR)\n\nWith $m$ compounding periods per year and stated annual rate $r_s$:\n\n$$EAR = \\left(1 + \\frac{r_s}{m}\\right)^m - 1$$\n\nContinuous compounding limit: $EAR = e^{r_s} - 1$.\n\n### Cash flow additivity\n\nValue any irregular stream as the sum of discounted pieces. This is the foundation of bond pricing, equity DDM, no-arbitrage forward pricing, and option replication. The same engine, just different cash flows.\n\n### Implied yield\n\nGiven price $P$ and cash flow stream $CF_t$, solve for $r$ such that $\\sum CF_t/(1+r)^t = P$. That's IRR. There's no closed form for $N>2$ — use a financial calculator or iteration.\n\n### Calculator workflow\n\nOn a BA II Plus: clear TVM with `2nd FV`. Sign convention: cash outflows negative, inflows positive. Set `P/Y = C/Y = 1` and convert rates yourself — fewer bugs.",
+    "exam": "## What CFA wants you to know\n\n**Verbs in the LOS:** *calculate and interpret* PV and FV for fixed-income and equity instruments; *calculate* implied returns and growth rates; *explain* the cash flow additivity principle and its role in no-arbitrage pricing.\n\n### Must-know mechanics\n- PV and FV of a single cash flow, ordinary annuity, annuity due, perpetuity, growing perpetuity.\n- Conversion between stated annual rate and EAR for any compounding frequency, including continuous.\n- Solving for any one TVM variable given the other four.\n\n### Must-know applications\n- **Bond price** = PV of coupons + PV of face value, discounted at YTM.\n- **DDM** (Gordon growth): $P_0 = D_1 / (r - g)$, valid when $r > g$ and $g$ constant.\n- **Forward rate** implied by two spot rates: $(1+S_2)^2 = (1+S_1)(1+f_{1,2})$ — pure cash-flow additivity.\n- **No-arbitrage**: if two strategies produce identical cash flows, they must cost the same today.\n\n### Sign convention\n- On the BA II Plus, outflows are negative, inflows positive. Get this wrong → wrong sign on the answer → marked incorrect.\n\n### Common exam traps\n- Mismatched periodicity (annual rate, semi-annual payments) — always convert to per-period before plugging in.\n- Annuity due vs. ordinary annuity: annuity-due payments shift one period earlier ($\\times (1+r)$).\n- Confusing EAR with simple annual rate when computing FV across multiple years.\n- Mis-reading \"yield-to-maturity\" as the coupon rate — they're equal only at par."
+  },
+  "formulas": [
+    { "name": "Future value of a single sum",        "latex": "FV = PV \\cdot (1+r)^N", "plain": "Compound a present amount forward N periods at rate r" },
+    { "name": "Present value of a single sum",       "latex": "PV = \\frac{FV}{(1+r)^N}", "plain": "Discount a future amount back N periods at rate r" },
+    { "name": "Present value of an ordinary annuity","latex": "PV = PMT \\cdot \\frac{1 - (1+r)^{-N}}{r}", "plain": "Equal payments PMT at end of each period for N periods" },
+    { "name": "Future value of an ordinary annuity", "latex": "FV = PMT \\cdot \\frac{(1+r)^N - 1}{r}", "plain": "Equal end-of-period payments compounded to maturity" },
+    { "name": "Perpetuity",                          "latex": "PV = \\frac{PMT}{r}", "plain": "Constant payment forever" },
+    { "name": "Growing perpetuity (Gordon)",         "latex": "PV = \\frac{PMT_1}{r - g}", "plain": "Payment grows at constant rate g forever (needs r > g)" },
+    { "name": "Effective annual rate",               "latex": "EAR = \\left(1 + \\frac{r_s}{m}\\right)^m - 1", "plain": "Stated rate r_s compounded m times per year" },
+    { "name": "Continuous compounding EAR",          "latex": "EAR = e^{r_s} - 1", "plain": "Limit as m → ∞" }
+  ],
+  "examples": [
+    {
+      "title": "Single-sum FV — savings account",
+      "body": "**Question.** You deposit £10,000 today into an account earning 4.5% compounded annually. What's it worth in 7 years?\n\n**Setup.** $PV = 10{,}000$, $r = 0.045$, $N = 7$. Solve for FV.\n\n**Calculation.**\n\n$$FV = 10{,}000 \\cdot (1.045)^7 = 10{,}000 \\cdot 1.36086 = £13{,}608.62$$\n\n**Answer.** £13,608.62.\n\n**Sense-check.** Doubling time at 4.5% is roughly $72/4.5 \\approx 16$ years. 7 years is just under half of that, so a ~36% gain feels right."
+    },
+    {
+      "title": "PV of an ordinary annuity — mortgage capital",
+      "body": "**Question.** A mortgage payment is £1,200 per month for 25 years at a 5% stated annual rate, compounded monthly. How much was originally borrowed?\n\n**Setup.** Convert to per-period: $r = 0.05/12 = 0.0041\\overline{6}$, $N = 25 \\times 12 = 300$, $PMT = 1{,}200$.\n\n**Calculation.**\n\n$$PV = 1{,}200 \\cdot \\frac{1 - (1.0041\\overline{6})^{-300}}{0.0041\\overline{6}} = 1{,}200 \\cdot 171.0601 \\approx £205{,}272$$\n\n**Answer.** About £205,272 was borrowed.\n\n**Lesson.** Always convert the rate and period to the same frequency as the payment before applying the formula."
+    },
+    {
+      "title": "Implied rate — bond yield",
+      "body": "**Question.** A zero-coupon bond pays £1,000 in 5 years and costs £783.53 today. What's its yield to maturity?\n\n**Setup.** $PV = 783.53$, $FV = 1{,}000$, $N = 5$, $PMT = 0$. Solve for $r$.\n\n**Calculation.** Rearrange the single-sum FV formula:\n\n$$r = \\left(\\frac{FV}{PV}\\right)^{1/N} - 1 = \\left(\\frac{1000}{783.53}\\right)^{1/5} - 1$$\n\n$$r = (1.27632)^{0.2} - 1 = 1.05 - 1 = 0.05 = 5.00\\%$$\n\n**Answer.** YTM = 5.00%.\n\n**Why it matters.** This is *exactly* how zero-coupon bond yields are quoted — pure compounded return between today's price and the £1,000 redemption."
+    },
+    {
+      "title": "Cash-flow additivity — implied 1-year forward rate",
+      "body": "**Question.** The 1-year spot rate is 3.0% and the 2-year spot rate is 4.0%. What's the 1-year forward rate one year from now ($f_{1,2}$)?\n\n**Setup.** No-arbitrage: investing for 2 years at $S_2$ must equal investing for 1 year at $S_1$ then rolling into a 1-year forward.\n\n**Equation.**\n\n$$(1 + S_2)^2 = (1 + S_1)(1 + f_{1,2})$$\n\n**Calculation.**\n\n$$f_{1,2} = \\frac{(1.04)^2}{1.03} - 1 = \\frac{1.0816}{1.03} - 1 = 0.0501 = 5.01\\%$$\n\n**Answer.** The implied 1-year forward rate is **5.01%**.\n\n**Lesson.** Spot, forward, and discounting maths are all the same engine. If you spot an arbitrage you can lock in the difference — which is why the market enforces this relationship."
+    }
+  ],
+  "pitfalls": [
+    "**Periodicity mismatch.** If payments are monthly but the quoted rate is an annual percentage, divide the rate by 12 *and* multiply N by 12 — both, not one.",
+    "**Annuity due vs. ordinary annuity.** Ordinary = end-of-period payments. Annuity due = beginning-of-period. Annuity-due value = ordinary-annuity value × (1+r). On the BA II Plus, toggle with `2nd BGN`.",
+    "**Stated rate vs. EAR.** A 12% rate compounded monthly is actually 12.68% effective. For comparing two instruments with different compounding frequencies, always convert to EAR first.",
+    "**Sign convention on the calculator.** Cash outflows are negative, inflows positive. If you enter both PV and FV as positive, the calculator returns ERROR 5 or a meaningless rate.",
+    "**Gordon growth model misuse.** Requires r > g and constant g. If g is growing or g ≥ r, the formula doesn't apply — use a multi-stage model instead.",
+    "**Confusing yield-to-maturity with coupon rate.** They're equal *only* when the bond trades at par. Above par → YTM < coupon. Below par → YTM > coupon."
+  ],
+  "faq": [
+    {
+      "q": "Why is the formula $(1+r)^N$ and not just $r \\cdot N$?",
+      "a": "Because interest compounds — you earn interest on the interest already accrued. Linear interest ($r \\cdot N$) is **simple interest** and shows up only in short-term money-market conventions. Anything multi-period for the exam uses compounding."
+    },
+    {
+      "q": "When do I use the FV-of-annuity formula vs. discounting cash flows individually?",
+      "a": "The annuity formula is a **closed-form shortcut** when payments are equal and evenly spaced. If they're irregular (different amounts or gaps), discount each cash flow individually using the cash flow additivity principle. The annuity formula is just the algebraic sum of the individual discounts."
+    },
+    {
+      "q": "Why does the Gordon growth model need $r > g$?",
+      "a": "Mathematically, the geometric series only converges when $r > g$. Intuitively, if a cash flow grows forever at a rate equal to or faster than your required return, its present value is infinite — which can't be right for a real asset. The model is only valid for *mature*, slow-growing payouts."
+    },
+    {
+      "q": "Do I memorise the formulas or use the calculator?",
+      "a": "Both. The calculator (BA II Plus or HP 12C) does the heavy lifting on the exam, but you must understand the formulas to set up problems correctly, recognise traps, and sense-check answers. Roughly 30% of the time on TVM questions is *setup*, not button-pressing."
+    },
+    {
+      "q": "What's the difference between 'discount rate' and 'interest rate'?",
+      "a": "Often used interchangeably. Pedantically: 'interest rate' = the return you earn going forward (compounding); 'discount rate' = the rate you use to bring future cash back to today (discounting). Mathematically the same — both denoted $r$."
+    }
+  ],
+  "resources": [
+    { "label": "Investopedia — Time Value of Money", "url": "https://www.investopedia.com/terms/t/timevalueofmoney.asp", "kind": "read" },
+    { "label": "Khan Academy — Present Value 1",     "url": "https://www.khanacademy.org/economics-finance-domain/core-finance/interest-tutorial/present-value/v/time-value-of-money", "kind": "watch" },
+    { "label": "BA II Plus TVM walk-through (YouTube)", "url": "https://www.youtube.com/results?search_query=ba+ii+plus+time+value+of+money", "kind": "watch" },
+    { "label": "CFA Institute — Sample Level 1 questions (Quant)", "url": "https://www.cfainstitute.org/programs/cfa/exam/study-sessions", "kind": "practice" }
+  ]
+}
