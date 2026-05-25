@@ -2,6 +2,786 @@
   "topicId": "fra",
   "questions": [
     {
+      "id": "q-fra-intro-001",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "easy",
+      "stem": "The financial statement analysis framework's *first* step is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Compute financial ratios." },
+        { "id": "B", "text": "Articulate the purpose and context of the analysis." },
+        { "id": "C", "text": "Read the auditor's report." }
+      ],
+      "answer": "B",
+      "explanation": "The 6-step FSA framework begins with purpose/context — what decision will the analysis support? Different purposes (equity, credit, M&A) emphasise different aspects.\n\n**A** and **C** are later steps, not the starting point."
+    },
+    {
+      "id": "q-fra-intro-002",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "medium",
+      "stem": "Which document *most likely* contains management's narrative on the firm's results and outlook?",
+      "choices": [
+        { "id": "A", "text": "Management Discussion and Analysis (MD&A)." },
+        { "id": "B", "text": "Auditor's report." },
+        { "id": "C", "text": "Statement of cash flows." }
+      ],
+      "answer": "A",
+      "explanation": "MD&A is management's narrative — context for the numbers, risks, outlook, and strategic priorities. Required in SEC filings.\n\n**B** is the auditor's independent opinion.\n\n**C** is a quantitative statement, not narrative."
+    },
+    {
+      "id": "q-fra-intro-003",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "medium",
+      "stem": "A balance sheet *most accurately* represents:",
+      "choices": [
+        { "id": "A", "text": "A snapshot of the firm's financial position at a single point in time." },
+        { "id": "B", "text": "Activity during the year." },
+        { "id": "C", "text": "Cash flows during the period." }
+      ],
+      "answer": "A",
+      "explanation": "BS is a snapshot — assets, liabilities, equity at a date. The IS and CFS show activity *during* a period; BS shows position *at* a point.\n\n**B** describes the IS.\n\n**C** describes the CFS."
+    },
+    {
+      "id": "q-fra-intro-004",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "easy",
+      "stem": "Notes to financial statements *most likely* contain:",
+      "choices": [
+        { "id": "A", "text": "Only computational details that duplicate the face of the statements." },
+        { "id": "B", "text": "Significant accounting policies, segment information, contingencies, and material details not on the face of the statements." },
+        { "id": "C", "text": "Forward-looking projections by management." }
+      ],
+      "answer": "B",
+      "explanation": "Notes are essential — accounting policies, segment data, contingent liabilities, lease commitments, pension obligations. Often more analytically useful than the headline statements.\n\n**A** misstates their purpose.\n\n**C** is MD&A content."
+    },
+    {
+      "id": "q-fra-intro-005",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "medium",
+      "stem": "Quality of earnings analysis *most directly* asks whether reported earnings are:",
+      "choices": [
+        { "id": "A", "text": "Recorded in compliance with GAAP." },
+        { "id": "B", "text": "Sustainable, cash-generating, and conservatively recognised." },
+        { "id": "C", "text": "Higher than the prior year." }
+      ],
+      "answer": "B",
+      "explanation": "Quality of earnings asks: are these earnings recurring? Are they backed by cash? Are they conservatively recognised? A firm can be GAAP-compliant and still have low-quality earnings.\n\n**A** describes compliance, not quality.\n\n**C** describes growth, not quality."
+    },
+    {
+      "id": "q-fra-intro-006",
+      "lessonId": "fra-intro-overview",
+      "difficulty": "hard",
+      "stem": "A material difference between US GAAP and IFRS that *most likely* affects cross-border comparisons of asset-heavy firms is:",
+      "choices": [
+        { "id": "A", "text": "Inventory: LIFO permitted under US GAAP but not IFRS." },
+        { "id": "B", "text": "PP&E revaluation upward: allowed under IFRS but not US GAAP." },
+        { "id": "C", "text": "Both A and B." }
+      ],
+      "answer": "C",
+      "explanation": "Both are material US GAAP/IFRS differences:\n- LIFO: US GAAP allows; IFRS bans. Adjustment via LIFO reserve.\n- PP&E revaluation: IFRS allows; US GAAP doesn't.\n\nBoth need adjustment when comparing cross-border firms. **C** captures both effects."
+    },
+    {
+      "id": "q-fra-cf1-001",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "easy",
+      "stem": "The cash flow statement is *most appropriately* divided into:",
+      "choices": [
+        { "id": "A", "text": "Revenue, expenses, and net income." },
+        { "id": "B", "text": "Operating, investing, and financing activities." },
+        { "id": "C", "text": "Assets, liabilities, and equity." }
+      ],
+      "answer": "B",
+      "explanation": "The cash flow statement has three sections: CFO (operating), CFI (investing), CFF (financing). The sum reconciles to the change in cash balance.\n\n**A** describes income statement components.\n\n**C** describes balance sheet components."
+    },
+    {
+      "id": "q-fra-cf1-002",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "medium",
+      "stem": "Under the indirect method, depreciation is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Subtracted from net income, since it represents a cash outflow." },
+        { "id": "B", "text": "Added to net income, since it is a non-cash expense." },
+        { "id": "C", "text": "Reported separately in the financing activities section." }
+      ],
+      "answer": "B",
+      "explanation": "Depreciation is a non-cash expense. In the indirect method, it's added back to net income because the reduction in NI from depreciation didn't involve cash outflow.\n\n**A** has the direction reversed.\n\n**C** misclassifies; depreciation affects CFO, not CFF."
+    },
+    {
+      "id": "q-fra-cf1-003",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "hard",
+      "stem": "Under IFRS, interest paid is *most likely* classified as:",
+      "choices": [
+        { "id": "A", "text": "Operating activities only, never financing." },
+        { "id": "B", "text": "Either operating or financing activities, at the firm's discretion (must be consistent)." },
+        { "id": "C", "text": "Always financing activities under both IFRS and US GAAP." }
+      ],
+      "answer": "B",
+      "explanation": "Under IFRS, interest paid can be classified as either CFO or CFF — at the firm's discretion. Must be applied consistently and disclosed.\n\n**A** is incorrect — IFRS allows either.\n\n**C** is incorrect — US GAAP requires CFO; only IFRS allows the choice."
+    },
+    {
+      "id": "q-fra-cf1-004",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "medium",
+      "stem": "Receivables grew by £30m during the year. Under the indirect method, this *most appropriately* affects CFO by:",
+      "choices": [
+        { "id": "A", "text": "+£30m (cash collected before billing)." },
+        { "id": "B", "text": "-£30m (revenue recognised but cash not yet collected)." },
+        { "id": "C", "text": "No effect, since AR is a balance sheet item." }
+      ],
+      "answer": "B",
+      "explanation": "Rising AR means revenue was recognised in IS but cash wasn't collected. Under indirect method, the increase is subtracted from NI to convert accrual to cash basis.\n\n**A** has the direction reversed.\n\n**C** misreads the indirect method — BS changes flow through CFO."
+    },
+    {
+      "id": "q-fra-cf1-005",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "medium",
+      "stem": "Free cash flow to the firm (FCFF) is *most appropriately* calculated as:",
+      "choices": [
+        { "id": "A", "text": "CFO − CapEx − Net Borrowing" },
+        { "id": "B", "text": "CFO + Interest × (1 − t) − CapEx" },
+        { "id": "C", "text": "Net Income + Depreciation − Working Capital Changes" }
+      ],
+      "answer": "B",
+      "explanation": "FCFF = CFO + Interest × (1-t) − CapEx. Adds back after-tax interest because it's a payment to capital providers (debt holders), not an operating expense for valuation purposes.\n\n**A** describes FCFE, not FCFF.\n\n**C** is a simplified CFO calc, not FCFF."
+    },
+    {
+      "id": "q-fra-cf1-006",
+      "lessonId": "fra-cf1-overview",
+      "difficulty": "easy",
+      "stem": "Which scenario *most likely* indicates that earnings quality is *low*?",
+      "choices": [
+        { "id": "A", "text": "Operating cash flow consistently exceeds net income." },
+        { "id": "B", "text": "Operating cash flow is consistently lower than net income." },
+        { "id": "C", "text": "Operating cash flow is volatile but generally matches net income." }
+      ],
+      "answer": "B",
+      "explanation": "CFO consistently below NI suggests accruals are running ahead of cash. Earnings aren't being converted to cash — quality concern.\n\n**A** is high quality.\n\n**C** is fine — quality earnings can be volatile in some sectors."
+    },
+    {
+      "id": "q-fra-cf2-001",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "medium",
+      "stem": "Free cash flow to equity (FCFE) *most likely* differs from FCFF by:",
+      "choices": [
+        { "id": "A", "text": "FCFE includes the effect of net borrowing (debt issuance / repayment); FCFF does not." },
+        { "id": "B", "text": "FCFE includes only operating cash flow, while FCFF includes operating and investing." },
+        { "id": "C", "text": "FCFE excludes capital expenditures; FCFF includes them." }
+      ],
+      "answer": "A",
+      "explanation": "FCFE = CFO - CapEx + Net Borrowing. FCFF = CFO + Interest(1-t) - CapEx (no net borrowing adjustment).\n\nThe key difference: FCFE is cash available to *equity* holders after debt service and net borrowing; FCFF is for all capital providers.\n\n**B** and **C** mischaracterise the formulas."
+    },
+    {
+      "id": "q-fra-cf2-002",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "easy",
+      "stem": "A CapEx-to-Depreciation ratio of *significantly greater than 1.0* generally indicates:",
+      "choices": [
+        { "id": "A", "text": "The firm is harvesting cash and reducing its asset base." },
+        { "id": "B", "text": "The firm is investing in growth — capital expenditure exceeds maintenance level." },
+        { "id": "C", "text": "Depreciation policy is overly aggressive." }
+      ],
+      "answer": "B",
+      "explanation": "CapEx > Depreciation means the firm is adding to its asset base, growing capacity beyond replacement.\n\n**A** would correspond to a ratio significantly < 1.0.\n\n**C** confuses CapEx investment with accounting policy."
+    },
+    {
+      "id": "q-fra-cf2-003",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "medium",
+      "stem": "Cash conversion ratio (CFO / Net Income) consistently *above 1.0* over multiple years is *most likely* an indicator of:",
+      "choices": [
+        { "id": "A", "text": "High-quality earnings backed by cash generation." },
+        { "id": "B", "text": "Aggressive accruals inflating earnings." },
+        { "id": "C", "text": "Negative working capital absorbing cash." }
+      ],
+      "answer": "A",
+      "explanation": "CFO consistently exceeding NI means cash generation is strong relative to accounting income — high-quality earnings.\n\n**B** describes a scenario where CFO falls *below* NI.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-cf2-004",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "medium",
+      "stem": "A firm's CapEx exceeds CFO. This *most likely* implies:",
+      "choices": [
+        { "id": "A", "text": "The firm is self-financing its growth from operations." },
+        { "id": "B", "text": "The firm needs external financing (debt or equity) to fund investment." },
+        { "id": "C", "text": "The firm is generating positive free cash flow." }
+      ],
+      "answer": "B",
+      "explanation": "If CapEx > CFO, internally generated cash isn't enough to fund investment. The firm must either issue debt, issue equity, or draw down cash to finance the gap.\n\n**A** describes the opposite case.\n\n**C** describes FCF — but FCF (CFO - CapEx) is negative in this scenario."
+    },
+    {
+      "id": "q-fra-cf2-005",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "hard",
+      "stem": "An analyst comparing two firms wants to neutralise the effect of capital structure differences. The *most appropriate* free cash flow measure is:",
+      "choices": [
+        { "id": "A", "text": "FCFE, since it reflects only equity holders' claims." },
+        { "id": "B", "text": "FCFF, since it represents cash available to all capital providers before debt service." },
+        { "id": "C", "text": "Net Income, since it's the standard accounting measure." }
+      ],
+      "answer": "B",
+      "explanation": "FCFF is computed before debt-service flows — it neutralises capital structure differences. Used with WACC for enterprise valuation.\n\n**A** depends on capital structure (interest, net borrowing).\n\n**C** also depends on capital structure (interest expense)."
+    },
+    {
+      "id": "q-fra-cf2-006",
+      "lessonId": "fra-cf2-overview",
+      "difficulty": "easy",
+      "stem": "Common-size cash flow analysis *most likely* involves expressing each cash flow line as:",
+      "choices": [
+        { "id": "A", "text": "An absolute monetary value." },
+        { "id": "B", "text": "A percentage of revenue or total inflows." },
+        { "id": "C", "text": "A ratio to net income." }
+      ],
+      "answer": "B",
+      "explanation": "Common-size analysis normalises by revenue (or total inflows). This permits comparison across firms of different sizes and tracking trends over time.\n\n**A** is just raw data.\n\n**C** is one specific ratio, not the general common-size approach."
+    },
+    {
+      "id": "q-fra-inv-001",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "easy",
+      "stem": "Under IFRS, inventory is *most appropriately* valued at:",
+      "choices": [
+        { "id": "A", "text": "Cost, regardless of net realisable value." },
+        { "id": "B", "text": "Lower of cost or net realisable value (NRV)." },
+        { "id": "C", "text": "Fair value (market value)." }
+      ],
+      "answer": "B",
+      "explanation": "IFRS uses 'lower of cost or NRV'. If carrying value exceeds NRV (selling price − selling costs), inventory is written down.\n\n**A** ignores the NRV write-down test.\n\n**C** is for some other assets (investments, biological assets), not inventory generally."
+    },
+    {
+      "id": "q-fra-inv-002",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "medium",
+      "stem": "Under LIFO during a period of inflation, *most likely*:",
+      "choices": [
+        { "id": "A", "text": "COGS is lower and gross profit is higher than under FIFO." },
+        { "id": "B", "text": "COGS is higher and gross profit is lower than under FIFO." },
+        { "id": "C", "text": "COGS and gross profit are the same as under FIFO." }
+      ],
+      "answer": "B",
+      "explanation": "Under LIFO in inflation, newer (higher) costs flow to COGS first. Result: higher COGS → lower gross profit. Conversely, ending inventory uses older (lower) costs → lower BS value.\n\n**A** has the direction reversed.\n\n**C** is incorrect — LIFO and FIFO differ materially in inflationary periods."
+    },
+    {
+      "id": "q-fra-inv-003",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "hard",
+      "stem": "A US firm reports LIFO inventory of £200m and a LIFO reserve of £50m. Its FIFO-equivalent inventory is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£150m" },
+        { "id": "B", "text": "£200m" },
+        { "id": "C", "text": "£250m" }
+      ],
+      "answer": "C",
+      "explanation": "FIFO inventory = LIFO inventory + LIFO reserve = 200 + 50 = **£250m**.\n\nThe LIFO reserve is the disclosed gap; adding it converts to FIFO basis for cross-firm comparison.\n\n**A** subtracts the reserve (wrong direction).\n\n**B** is the LIFO value without adjustment."
+    },
+    {
+      "id": "q-fra-inv-004",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "medium",
+      "stem": "LIFO liquidation *most likely* occurs when:",
+      "choices": [
+        { "id": "A", "text": "A firm using LIFO sells more inventory than it purchases in a period, dipping into older lower-cost layers." },
+        { "id": "B", "text": "A firm converts from LIFO to FIFO accounting method." },
+        { "id": "C", "text": "Inventory is destroyed or stolen." }
+      ],
+      "answer": "A",
+      "explanation": "LIFO liquidation = inventory reduction that exposes older lower-cost layers to COGS. Temporarily boosts gross profit but is non-recurring.\n\n**B** describes a method change, not liquidation.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-inv-005",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "easy",
+      "stem": "Inventory turnover declining from 6.0× to 4.0× over three years, with stable revenue, *most likely* signals:",
+      "choices": [
+        { "id": "A", "text": "Improving operational efficiency." },
+        { "id": "B", "text": "Excess inventory accumulation, possibly due to weak demand or poor forecasting." },
+        { "id": "C", "text": "A change in inventory accounting method." }
+      ],
+      "answer": "B",
+      "explanation": "Declining turnover with stable revenue means inventory growing faster than sales — excess stock. Warning sign: potential write-downs, demand weakness, or forecasting issues.\n\n**A** would show *rising* turnover.\n\n**C** would be a one-step change, not a gradual decline."
+    },
+    {
+      "id": "q-fra-inv-006",
+      "lessonId": "fra-inv-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS, an inventory write-down can *most likely* be:",
+      "choices": [
+        { "id": "A", "text": "Reversed up to the original cost when conditions improve." },
+        { "id": "B", "text": "Never reversed under any circumstance." },
+        { "id": "C", "text": "Reversed only with regulatory approval." }
+      ],
+      "answer": "A",
+      "explanation": "Under IFRS, write-downs can be reversed up to the original cost if NRV recovers. Under US GAAP, write-down reversals are not allowed (except for held-for-sale assets).\n\n**B** is the US GAAP position, not IFRS.\n\n**C** is fictitious."
+    },
+    {
+      "id": "q-fra-lla-001",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "easy",
+      "stem": "Which depreciation method *most likely* front-loads depreciation expense?",
+      "choices": [
+        { "id": "A", "text": "Straight-line depreciation." },
+        { "id": "B", "text": "Double-declining balance." },
+        { "id": "C", "text": "Units of production." }
+      ],
+      "answer": "B",
+      "explanation": "DDB applies a fixed rate (2/useful life) to the book value each year. Higher depreciation in early years, lower later. **A** is even across periods.\n\n**C** depends on usage, not a deliberate front-loading."
+    },
+    {
+      "id": "q-fra-lla-002",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "medium",
+      "stem": "Goodwill arising from an acquisition is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Amortised over a 40-year useful life." },
+        { "id": "B", "text": "Carried at cost and tested for impairment at least annually." },
+        { "id": "C", "text": "Written off immediately upon acquisition." }
+      ],
+      "answer": "B",
+      "explanation": "Goodwill is not amortised under either IFRS or US GAAP. Tested for impairment annually + when triggers arise.\n\n**A** describes pre-2001 GAAP rules.\n\n**C** is for immediate impairment situations, not standard treatment."
+    },
+    {
+      "id": "q-fra-lla-003",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS, an impairment loss on a long-lived asset *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Can be reversed up to the original carrying value (except for goodwill)." },
+        { "id": "B", "text": "Cannot be reversed under any circumstance." },
+        { "id": "C", "text": "Is only recognised through other comprehensive income." }
+      ],
+      "answer": "A",
+      "explanation": "IFRS allows reversal of impairments (except goodwill) up to the original carrying value (less depreciation that would have been taken).\n\n**B** is the US GAAP position.\n\n**C** is incorrect — impairments hit the P&L."
+    },
+    {
+      "id": "q-fra-lla-004",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "hard",
+      "stem": "An asset with a carrying value of £100m has expected undiscounted future cash flows of £105m and fair value of £85m. Under US GAAP, the asset is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Impaired by £15m to fair value of £85m." },
+        { "id": "B", "text": "Not impaired, since undiscounted cash flows exceed carrying value." },
+        { "id": "C", "text": "Impaired by £5m to undiscounted cash flows of £105m." }
+      ],
+      "answer": "B",
+      "explanation": "US GAAP two-step test:\n1. Recoverability: undiscounted CF (£105m) > carrying (£100m) ✓ → NO impairment.\n\nIf step 1 passes, no impairment regardless of fair value. The bright-line test is unique to US GAAP and creates situations where IFRS would impair but US GAAP wouldn't.\n\n**A** would apply only if step 1 failed.\n\n**C** misapplies the test."
+    },
+    {
+      "id": "q-fra-lla-005",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS, component depreciation is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Required when significant components have different useful lives." },
+        { "id": "B", "text": "Permitted but not required, at the firm's discretion." },
+        { "id": "C", "text": "Prohibited; all components of an asset use the same depreciation period." }
+      ],
+      "answer": "A",
+      "explanation": "IFRS *requires* component depreciation when components have materially different useful lives. US GAAP permits but doesn't require.\n\n**B** is the US GAAP position.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-fra-lla-006",
+      "lessonId": "fra-lla-overview",
+      "difficulty": "easy",
+      "stem": "Capitalising versus expensing a cost *most likely* affects:",
+      "choices": [
+        { "id": "A", "text": "Current period earnings (capitalising boosts) and the depreciation/amortisation drag in future periods." },
+        { "id": "B", "text": "Total cash flow over the asset's life." },
+        { "id": "C", "text": "The tax treatment in all jurisdictions." }
+      ],
+      "answer": "A",
+      "explanation": "Capitalising boosts current earnings (cost is spread over years) but creates future expense drag through D&A. Total expense over the life is the same; timing differs.\n\n**B** is incorrect — total cash flow is the same.\n\n**C** is jurisdiction-specific; many tax codes follow accounting treatment but not all."
+    },
+    {
+      "id": "q-fra-ltleq-001",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS 16 / ASC 842 (effective 2019), operating leases over 12 months *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Are recognised as a right-of-use asset and lease liability on the balance sheet." },
+        { "id": "B", "text": "Are disclosed only in the notes, not on the balance sheet." },
+        { "id": "C", "text": "Are treated as off-balance-sheet financing." }
+      ],
+      "answer": "A",
+      "explanation": "Both IFRS 16 and ASC 842 brought operating leases onto the balance sheet: ROU asset + lease liability. This was a major change that materially increased reported leverage for asset-light businesses.\n\n**B** is the pre-2019 treatment.\n\n**C** is also pre-2019."
+    },
+    {
+      "id": "q-fra-ltleq-002",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "easy",
+      "stem": "In a defined benefit pension plan, the *investment risk* is *most likely* borne by:",
+      "choices": [
+        { "id": "A", "text": "The employee." },
+        { "id": "B", "text": "The employer." },
+        { "id": "C", "text": "The plan trustee." }
+      ],
+      "answer": "B",
+      "explanation": "DB plans guarantee specific benefit levels — employer bears the risk that plan assets won't be enough. DC plans flip this: employee bears investment risk.\n\n**A** describes DC.\n\n**C** is procedural; the economic risk lies with the employer."
+    },
+    {
+      "id": "q-fra-ltleq-003",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "medium",
+      "stem": "A DB pension plan has plan assets of £600m and projected benefit obligation (PBO) of £800m. The plan's funded status is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "+£200m (overfunded)" },
+        { "id": "B", "text": "-£200m (underfunded)" },
+        { "id": "C", "text": "+£800m" }
+      ],
+      "answer": "B",
+      "explanation": "Funded status = Plan assets − PBO = 600 − 800 = **-£200m (underfunded)**.\n\n**A** has the direction reversed.\n\n**C** confuses funded status with PBO."
+    },
+    {
+      "id": "q-fra-ltleq-004",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "hard",
+      "stem": "Stock-based compensation under accounting standards is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "A real economic cost added back in CFO as a non-cash item." },
+        { "id": "B", "text": "Excluded from any financial statement, since it is non-cash." },
+        { "id": "C", "text": "Treated only as a tax item, not a financial reporting item." }
+      ],
+      "answer": "A",
+      "explanation": "SBC is recognised on the IS (reducing NI), added back in CFO (non-cash), increases equity (APIC). Many analysts subtract SBC from FCF for valuation purposes despite the non-cash treatment.\n\n**B** is incorrect — SBC affects multiple statements.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-fra-ltleq-005",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "medium",
+      "stem": "Analytically, an underfunded DB pension is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Ignored, since it's not contractual debt." },
+        { "id": "B", "text": "Treated as a form of quasi-debt and considered when computing leverage ratios." },
+        { "id": "C", "text": "Treated as equity, since it relates to employee compensation." }
+      ],
+      "answer": "B",
+      "explanation": "Underfunded pension obligations are economic obligations the firm must eventually fund. Analytically treated as quasi-debt. Rating agencies (Moody's, S&P) routinely include in leverage metrics.\n\n**A** ignores material economic obligations.\n\n**C** misclassifies — pensions are liabilities, not equity."
+    },
+    {
+      "id": "q-fra-ltleq-006",
+      "lessonId": "fra-ltleq-overview",
+      "difficulty": "easy",
+      "stem": "Which pension plan type is *most likely* simpler from an accounting perspective?",
+      "choices": [
+        { "id": "A", "text": "Defined benefit (DB)." },
+        { "id": "B", "text": "Defined contribution (DC)." },
+        { "id": "C", "text": "Both are equally complex." }
+      ],
+      "answer": "B",
+      "explanation": "DC: simple — employer expenses the contribution; no long-term obligation. DB: complex — actuarial assumptions, PBO, plan assets, expected return.\n\nThe trend over recent decades has been firms shifting from DB to DC plans, partly for this reason."
+    },
+    {
+      "id": "q-fra-tax-001",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "medium",
+      "stem": "A deferred tax liability (DTL) *most likely* arises from:",
+      "choices": [
+        { "id": "A", "text": "Temporary differences where accounting income exceeds taxable income in the current period." },
+        { "id": "B", "text": "A permanent difference between accounting and taxable income." },
+        { "id": "C", "text": "A change in the statutory tax rate." }
+      ],
+      "answer": "A",
+      "explanation": "DTL arises from temporary differences where book income > taxable income now (will pay more tax later). Common cause: accelerated tax depreciation > book depreciation.\n\n**B** creates a permanent gap in ETR, not a DTL.\n\n**C** may affect existing DTLs but isn't the source."
+    },
+    {
+      "id": "q-fra-tax-002",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "medium",
+      "stem": "A *permanent* difference between accounting income and taxable income *most likely* causes:",
+      "choices": [
+        { "id": "A", "text": "Effective tax rate to differ from the statutory tax rate." },
+        { "id": "B", "text": "A deferred tax asset or liability." },
+        { "id": "C", "text": "No effect on either ETR or DTL/A." }
+      ],
+      "answer": "A",
+      "explanation": "Permanent differences (tax-free income, non-deductible expenses, tax credits) cause ETR to differ from statutory. They don't reverse, so no DTL/DTA is created.\n\n**B** is created by *temporary* differences.\n\n**C** misses the ETR effect."
+    },
+    {
+      "id": "q-fra-tax-003",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "medium",
+      "stem": "A valuation allowance against a deferred tax asset *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "The firm has determined that some or all of the DTA may not be realisable due to insufficient future taxable income." },
+        { "id": "B", "text": "The firm has overpaid taxes and will receive a refund." },
+        { "id": "C", "text": "The auditor has imposed a regulatory penalty." }
+      ],
+      "answer": "A",
+      "explanation": "Valuation allowance = management's assessment that future taxable income may not be sufficient to use the DTA. Reduces DTA on the BS.\n\nA strong signal about management's profitability expectations.\n\n**B** and **C** misinterpret the valuation allowance."
+    },
+    {
+      "id": "q-fra-tax-004",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "hard",
+      "stem": "A firm reports pre-tax income of £400m. US statutory rate is 21%. Reported tax expense is £40m. The effective tax rate is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "10.0%" },
+        { "id": "B", "text": "21.0%" },
+        { "id": "C", "text": "32.5%" }
+      ],
+      "answer": "A",
+      "explanation": "ETR = Tax expense / Pre-tax income = 40 / 400 = **10.0%**.\n\nThe gap from statutory (21%) suggests material permanent differences (low-tax foreign income, tax credits, valuation allowance changes). The reconciliation footnote shows the components.\n\n**B** is the statutory rate.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-tax-005",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "medium",
+      "stem": "When the statutory tax rate increases (e.g., due to legislative change), existing DTLs *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Are remeasured upward — DTL increases, tax expense rises." },
+        { "id": "B", "text": "Remain unchanged, since they relate to past periods." },
+        { "id": "C", "text": "Are written off entirely." }
+      ],
+      "answer": "A",
+      "explanation": "DTLs are valued at the rate that will apply when the temporary difference reverses. A rate increase means more tax owed when the difference reverses — DTL revalued upward, tax expense recognised.\n\n**B** is incorrect — DTLs are dynamic.\n\n**C** is the opposite of correct."
+    },
+    {
+      "id": "q-fra-tax-006",
+      "lessonId": "fra-tax-overview",
+      "difficulty": "easy",
+      "stem": "Pillar Two (OECD BEPS) *most likely* sets a global minimum:",
+      "choices": [
+        { "id": "A", "text": "Statutory tax rate of 15% for all corporate income." },
+        { "id": "B", "text": "Effective tax rate of 15% for multinational enterprises with €750m+ revenue." },
+        { "id": "C", "text": "Withholding tax rate of 15% on cross-border payments." }
+      ],
+      "answer": "B",
+      "explanation": "Pillar Two: 15% minimum effective tax rate for large MNEs. Top-up tax applies if effective rate falls below 15% in any jurisdiction.\n\n**A** misstates — statutory rates remain jurisdiction-specific.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-quality-001",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "medium",
+      "stem": "A firm's net income consistently exceeds its operating cash flow. This *most likely* signals:",
+      "choices": [
+        { "id": "A", "text": "High-quality earnings backed by strong cash generation." },
+        { "id": "B", "text": "Possible earnings quality concerns — accruals running ahead of cash." },
+        { "id": "C", "text": "Healthy working capital management." }
+      ],
+      "answer": "B",
+      "explanation": "NI > CFO consistently means accruals are absorbing cash — earnings are being recognised without corresponding cash inflows. A classic quality red flag.\n\n**A** is the opposite case (CFO ≥ NI).\n\n**C** has the direction wrong."
+    },
+    {
+      "id": "q-fra-quality-002",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "easy",
+      "stem": "Channel stuffing *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Pushing excess product into distribution channels to recognise revenue prematurely." },
+        { "id": "B", "text": "Holding back inventory to manage gross margins." },
+        { "id": "C", "text": "Diversifying sales channels." }
+      ],
+      "answer": "A",
+      "explanation": "Channel stuffing: shipping product to distributors at quarter-end, recognising revenue, but the product may not sell through to end customers. Inflates current-period revenue at the expense of future periods.\n\n**B** and **C** are unrelated."
+    },
+    {
+      "id": "q-fra-quality-003",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "medium",
+      "stem": "A 'big bath' restructuring charge *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "A genuine, one-off charge that accurately reflects current period economic costs." },
+        { "id": "B", "text": "Recognising a larger charge than economically warranted, to cushion future periods or smooth earnings." },
+        { "id": "C", "text": "A charge required by regulators." }
+      ],
+      "answer": "B",
+      "explanation": "Big bath = deliberately over-provisioning. Reserves created in a bad year (which the market often forgives as one-off) are released in subsequent good years, smoothing reported earnings.\n\n**A** describes a legitimate restructuring.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-quality-004",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "hard",
+      "stem": "The 'fraud triangle' (Cressey) identifies three conditions *most likely* present in financial reporting fraud. They are:",
+      "choices": [
+        { "id": "A", "text": "Compensation, equity, and incentives." },
+        { "id": "B", "text": "Opportunity, pressure, and rationalisation." },
+        { "id": "C", "text": "Audit failure, management override, and material misstatement." }
+      ],
+      "answer": "B",
+      "explanation": "Fraud triangle (Donald Cressey, 1953): **Opportunity** (weak controls, dominant management), **Pressure** (compensation, debt covenants, IPO), **Rationalisation** ('just this year', 'will reverse').\n\nFirms with all three present are higher risk.\n\n**A** and **C** mischaracterise."
+    },
+    {
+      "id": "q-fra-quality-005",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "easy",
+      "stem": "Which is *most likely* a 'red flag' for low financial reporting quality?",
+      "choices": [
+        { "id": "A", "text": "Receivables growing faster than revenue." },
+        { "id": "B", "text": "Inventory growing in line with sales." },
+        { "id": "C", "text": "Stable accounting policies." }
+      ],
+      "answer": "A",
+      "explanation": "Receivables growing faster than revenue: customers paying more slowly, or aggressive revenue recognition. Quality concern.\n\n**B** is healthy proportional growth.\n\n**C** is the opposite of a red flag (stability is positive)."
+    },
+    {
+      "id": "q-fra-quality-006",
+      "lessonId": "fra-quality-overview",
+      "difficulty": "medium",
+      "stem": "External mechanisms that *most likely* promote financial reporting quality include:",
+      "choices": [
+        { "id": "A", "text": "Only internal controls and management oversight." },
+        { "id": "B", "text": "External auditors, securities regulators, credit rating agencies, and equity analyst scrutiny." },
+        { "id": "C", "text": "Tax authorities only." }
+      ],
+      "answer": "B",
+      "explanation": "Multiple external mechanisms work together to promote quality:\n- Auditors (independence + standards)\n- Regulators (SEC, FCA, ESMA)\n- Credit rating agencies\n- Analyst + short-seller scrutiny\n- Activist investors\n- Litigation risk\n\nInternal controls are also important but the question is about *external* mechanisms.\n\n**A** is internal.\n\n**C** is too narrow."
+    },
+    {
+      "id": "q-fra-tech-001",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "medium",
+      "stem": "DuPont 3-factor decomposition expresses ROE *most likely* as:",
+      "choices": [
+        { "id": "A", "text": "Net Margin × Asset Turnover × Financial Leverage" },
+        { "id": "B", "text": "Net Margin × Interest Coverage × Tax Burden" },
+        { "id": "C", "text": "Net Margin + Asset Turnover + Financial Leverage" }
+      ],
+      "answer": "A",
+      "explanation": "3-factor DuPont: ROE = (NI/Revenue) × (Revenue/Assets) × (Assets/Equity) = Net Margin × Asset Turnover × Financial Leverage.\n\nThe components reveal the drivers of ROE: profitability, efficiency, leverage.\n\n**B** is partially the 5-factor extension.\n\n**C** is additive instead of multiplicative — incorrect."
+    },
+    {
+      "id": "q-fra-tech-002",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "easy",
+      "stem": "Current ratio is *most appropriately* a measure of:",
+      "choices": [
+        { "id": "A", "text": "Short-term liquidity." },
+        { "id": "B", "text": "Long-term solvency." },
+        { "id": "C", "text": "Profitability." }
+      ],
+      "answer": "A",
+      "explanation": "Current ratio (CA / CL) measures the firm's ability to meet short-term obligations. Higher generally indicates greater short-term liquidity.\n\n**B** describes solvency / leverage measures.\n\n**C** describes margins / returns."
+    },
+    {
+      "id": "q-fra-tech-003",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "medium",
+      "stem": "Two firms have identical ROE. Firm A has high net margin and low asset turnover; Firm B has low net margin and high asset turnover. Which statement is *most accurate*?",
+      "choices": [
+        { "id": "A", "text": "The firms are economically identical, since ROE is the same." },
+        { "id": "B", "text": "They have structurally different business models that warrant different analytical approaches." },
+        { "id": "C", "text": "Firm A is necessarily more risky than Firm B." }
+      ],
+      "answer": "B",
+      "explanation": "Same ROE can reflect very different business models (luxury vs volume retail, for example). Different drivers → different risks and sensitivities. DuPont reveals this.\n\n**A** ignores the business model difference.\n\n**C** is too strong — neither business is inherently more risky."
+    },
+    {
+      "id": "q-fra-tech-004",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "easy",
+      "stem": "Interest coverage ratio = EBIT / Interest Expense. A higher ratio *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "Greater ability to service debt." },
+        { "id": "B", "text": "More leveraged capital structure." },
+        { "id": "C", "text": "Higher cost of debt." }
+      ],
+      "answer": "A",
+      "explanation": "Higher EBIT relative to interest expense means more comfortable debt service. Lenders favour high coverage; bondholders take comfort from it.\n\n**B** has the direction reversed.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-tech-005",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "medium",
+      "stem": "A current ratio of 0.7 for a *supermarket chain* *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "Serious liquidity stress — the firm cannot meet short-term obligations." },
+        { "id": "B", "text": "A typical position — supermarkets often run negative working capital and below-1 current ratios." },
+        { "id": "C", "text": "Inability to operate." }
+      ],
+      "answer": "B",
+      "explanation": "Supermarkets typically have:\n- Cash sales (low DSO)\n- Fast inventory turn\n- Long supplier payment terms (high DPO)\n\nResult: negative working capital, below-1 current ratio. Normal for the business model.\n\n**A** and **C** misapply general benchmarks. Industry context is essential."
+    },
+    {
+      "id": "q-fra-tech-006",
+      "lessonId": "fra-tech-overview",
+      "difficulty": "hard",
+      "stem": "A firm has ROE of 20%. DuPont decomposition reveals: Net Margin 5%, Asset Turnover 2.0×, Financial Leverage 2.0×. If financial leverage decreases to 1.0× (paying down debt), holding margin and turnover constant, new ROE is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "5%" },
+        { "id": "B", "text": "10%" },
+        { "id": "C", "text": "20%" }
+      ],
+      "answer": "B",
+      "explanation": "ROE = 5% × 2.0 × 1.0 = **10%**.\n\nDe-leveraging directly halves ROE (financial leverage was 2.0, now 1.0). Operating performance (margin × turnover) unchanged.\n\nThis illustrates how leverage amplifies ROE — but doesn't reflect underlying operating quality.\n\n**A** ignores asset turnover.\n\n**C** is the original ROE before de-leveraging."
+    },
+    {
+      "id": "q-fra-model-001",
+      "lessonId": "fra-model-overview",
+      "difficulty": "easy",
+      "stem": "A 'pro forma' financial model *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "Future-period projection of financial statements based on assumptions." },
+        { "id": "B", "text": "A re-statement of past financial statements." },
+        { "id": "C", "text": "An audit report." }
+      ],
+      "answer": "A",
+      "explanation": "Pro forma = projected; forward-looking. Built from explicit assumptions about revenue growth, margins, capital expenditure, etc.\n\n**B** describes restatement, not pro forma.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fra-model-002",
+      "lessonId": "fra-model-overview",
+      "difficulty": "medium",
+      "stem": "In a three-statement financial model, net income on the income statement *most appropriately* flows to:",
+      "choices": [
+        { "id": "A", "text": "Retained earnings on the balance sheet." },
+        { "id": "B", "text": "Cash on the balance sheet." },
+        { "id": "C", "text": "Goodwill on the balance sheet." }
+      ],
+      "answer": "A",
+      "explanation": "Net income flows to retained earnings (after dividends). The BS equity section accumulates: Beg Retained Earnings + NI − Dividends = End Retained Earnings.\n\n**B** is determined by the cash flow statement.\n\n**C** is unrelated (goodwill arises from acquisitions, not earnings)."
+    },
+    {
+      "id": "q-fra-model-003",
+      "lessonId": "fra-model-overview",
+      "difficulty": "medium",
+      "stem": "When forecasting working capital changes in a financial model, an analyst *most appropriately* uses:",
+      "choices": [
+        { "id": "A", "text": "Random fluctuations." },
+        { "id": "B", "text": "Days metrics (DSO, DIO, DPO) applied to forecast revenue and COGS." },
+        { "id": "C", "text": "Fixed dollar amounts unchanged from current period." }
+      ],
+      "answer": "B",
+      "explanation": "Working capital scales with sales activity. Using DSO/DIO/DPO assumptions tied to forecast revenue/COGS produces consistent BS projections.\n\n**A** is undisciplined.\n\n**C** ignores growth — wouldn't scale appropriately."
+    },
+    {
+      "id": "q-fra-model-004",
+      "lessonId": "fra-model-overview",
+      "difficulty": "easy",
+      "stem": "Multi-scenario analysis (best/base/worst case) in a financial model *most likely* helps an analyst:",
+      "choices": [
+        { "id": "A", "text": "Understand the range of plausible outcomes and assess downside risk." },
+        { "id": "B", "text": "Hide uncertainty in the forecast." },
+        { "id": "C", "text": "Eliminate the need for sensitivity analysis." }
+      ],
+      "answer": "A",
+      "explanation": "Multi-scenario analysis explicitly considers different outcomes — best case (upside), base case (most likely), worst case (downside). Helps quantify risk and sensitivity.\n\n**B** is the opposite of the purpose.\n\n**C** is incorrect — scenarios complement sensitivity analysis."
+    },
+    {
+      "id": "q-fra-model-005",
+      "lessonId": "fra-model-overview",
+      "difficulty": "hard",
+      "stem": "Sustainable growth rate (g) for a firm reinvesting earnings is *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "$g = b \\cdot ROE$" },
+        { "id": "B", "text": "$g = (1 - b) \\cdot ROE$" },
+        { "id": "C", "text": "$g = b + ROE$" }
+      ],
+      "answer": "A",
+      "explanation": "Sustainable growth rate from earnings retention: $g = b \\cdot ROE$, where $b$ is the retention ratio (1 − payout). The firm grows internally by reinvesting earnings at its ROE.\n\n**B** uses payout ratio in place of retention.\n\n**C** is additive — mathematically incorrect."
+    },
+    {
+      "id": "q-fra-model-006",
+      "lessonId": "fra-model-overview",
+      "difficulty": "medium",
+      "stem": "A common behavioural bias affecting analyst forecasts is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Optimism bias — forecasts skewed upward, especially for revenue growth." },
+        { "id": "B", "text": "Pessimism bias — forecasts skewed downward." },
+        { "id": "C", "text": "No bias — forecasts are typically accurate." }
+      ],
+      "answer": "A",
+      "explanation": "Optimism bias is well-documented in analyst consensus estimates: forecasts tend to be optimistic, particularly for next-year revenue growth and margins. Analysts also typically underweight downside scenarios.\n\n**B** is the opposite of empirical evidence.\n\n**C** misrepresents the literature on forecast accuracy."
+    },
+    {
       "id": "q-fra-bs-001",
       "lessonId": "fra-bs-overview",
       "difficulty": "easy",
