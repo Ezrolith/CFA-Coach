@@ -8,13 +8,84 @@
   "weightHigh": 12,
   "color": "pm",
   "description": "Building and managing portfolios for institutional and private investors. Modern portfolio theory, risk management, behavioural finance, fintech basics.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "pm-overview",             "name": "Portfolio Risk and Return: Part I", "lessons": [] },
-    { "id": "pm-risk-return-2",        "name": "Portfolio Risk and Return: Part II", "lessons": [] },
-    { "id": "pm-portfolio-mgmt",       "name": "Portfolio Management: An Overview", "lessons": [] },
-    { "id": "pm-basics-of-pm",         "name": "Basics of Portfolio Planning and Construction", "lessons": [] },
-    { "id": "pm-mutual-funds",         "name": "The Behavioral Biases of Individuals", "lessons": [] },
-    { "id": "pm-risk-management",      "name": "Introduction to Risk Management", "lessons": [] },
-    { "id": "pm-fintech",              "name": "Fintech in Investment Management", "lessons": [] }
+    { "id": "pm-overview", "name": "Portfolio Risk and Return: Part I",
+      "lessons": [{ "id": "pm-rr1-overview", "name": "Portfolio Risk and Return: Part I",
+        "los": [
+          { "id": "los-pm-rr1-1", "verb": "calculate", "statement": "calculate and interpret major return measures and describe their appropriate uses", "depth": "calculation" },
+          { "id": "los-pm-rr1-2", "verb": "describe", "statement": "describe characteristics of the major asset classes that investors consider in forming portfolios", "depth": "concept" },
+          { "id": "los-pm-rr1-3", "verb": "calculate", "statement": "calculate and interpret the mean, variance, and covariance (or correlation) of asset returns based on historical data", "depth": "calculation" },
+          { "id": "los-pm-rr1-4", "verb": "explain", "statement": "explain risk aversion and its implications for portfolio selection", "depth": "concept" },
+          { "id": "los-pm-rr1-5", "verb": "calculate", "statement": "calculate and interpret portfolio standard deviation", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "pm-risk-return-2", "name": "Portfolio Risk and Return: Part II",
+      "lessons": [{ "id": "pm-rr2-overview", "name": "Portfolio Risk and Return: Part II",
+        "los": [
+          { "id": "los-pm-rr2-1", "verb": "describe", "statement": "describe the implications of combining a risk-free asset with a portfolio of risky assets", "depth": "concept" },
+          { "id": "los-pm-rr2-2", "verb": "explain", "statement": "explain the capital allocation line (CAL) and the capital market line (CML)", "depth": "concept" },
+          { "id": "los-pm-rr2-3", "verb": "explain", "statement": "explain systematic and nonsystematic risk, including why an investor should not expect to receive additional return for bearing nonsystematic risk", "depth": "concept" },
+          { "id": "los-pm-rr2-4", "verb": "explain", "statement": "explain return generating models (including the market model) and their uses", "depth": "concept" },
+          { "id": "los-pm-rr2-5", "verb": "calculate", "statement": "calculate and interpret beta", "depth": "calculation" },
+          { "id": "los-pm-rr2-6", "verb": "explain", "statement": "explain the capital asset pricing model (CAPM), including its assumptions, and the security market line (SML)", "depth": "concept" },
+          { "id": "los-pm-rr2-7", "verb": "calculate", "statement": "calculate and interpret the expected return of an asset using the CAPM", "depth": "calculation" },
+          { "id": "los-pm-rr2-8", "verb": "describe", "statement": "describe and demonstrate applications of the CAPM and the SML", "depth": "application" },
+          { "id": "los-pm-rr2-9", "verb": "calculate", "statement": "calculate and interpret the Sharpe ratio, Treynor ratio, M2, and Jensen's alpha", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "pm-portfolio-mgmt", "name": "Portfolio Management: An Overview",
+      "lessons": [{ "id": "pm-mgmt-overview", "name": "Portfolio Management: An Overview",
+        "los": [
+          { "id": "los-pm-mgmt-1", "verb": "describe", "statement": "describe the portfolio approach to investing", "depth": "concept" },
+          { "id": "los-pm-mgmt-2", "verb": "describe", "statement": "describe types of investors and distinctive characteristics and needs of each", "depth": "concept" },
+          { "id": "los-pm-mgmt-3", "verb": "describe", "statement": "describe defined contribution and defined benefit pension plans", "depth": "concept" },
+          { "id": "los-pm-mgmt-4", "verb": "describe", "statement": "describe aspects of the asset management industry", "depth": "concept" },
+          { "id": "los-pm-mgmt-5", "verb": "describe", "statement": "describe mutual funds and compare them with other pooled investment products", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "pm-basics-of-pm", "name": "Basics of Portfolio Planning and Construction",
+      "lessons": [{ "id": "pm-basics-overview", "name": "Basics of Portfolio Planning and Construction",
+        "los": [
+          { "id": "los-pm-bs-1", "verb": "describe", "statement": "describe the reasons for a written investment policy statement (IPS)", "depth": "concept" },
+          { "id": "los-pm-bs-2", "verb": "describe", "statement": "describe the major components of an IPS", "depth": "concept" },
+          { "id": "los-pm-bs-3", "verb": "describe", "statement": "describe risk and return objectives and how they may be developed for a client", "depth": "concept" },
+          { "id": "los-pm-bs-4", "verb": "distinguish", "statement": "distinguish between the willingness and the ability (capacity) to take risk in analyzing an investor's financial risk tolerance", "depth": "concept" },
+          { "id": "los-pm-bs-5", "verb": "describe", "statement": "describe the specification of asset classes in relation to asset allocation", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "pm-mutual-funds", "name": "The Behavioral Biases of Individuals",
+      "lessons": [{ "id": "pm-bb-overview", "name": "The Behavioral Biases of Individuals",
+        "los": [
+          { "id": "los-pm-bb-1", "verb": "compare", "statement": "compare traditional finance and behavioral finance perspectives on investor decision making", "depth": "comparison" },
+          { "id": "los-pm-bb-2", "verb": "contrast", "statement": "contrast cognitive errors and emotional biases", "depth": "comparison" },
+          { "id": "los-pm-bb-3", "verb": "describe", "statement": "describe common cognitive errors and emotional biases and their implications for financial decision making", "depth": "concept" },
+          { "id": "los-pm-bb-4", "verb": "describe", "statement": "describe how behavioral biases of investors can lead to market characteristics that may not be explained by traditional finance", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "pm-risk-management", "name": "Introduction to Risk Management",
+      "lessons": [{ "id": "pm-rm-overview", "name": "Introduction to Risk Management",
+        "los": [
+          { "id": "los-pm-rm-1", "verb": "define", "statement": "define risk management", "depth": "concept" },
+          { "id": "los-pm-rm-2", "verb": "describe", "statement": "describe features of a risk management framework", "depth": "concept" },
+          { "id": "los-pm-rm-3", "verb": "define", "statement": "define risk governance and describe elements of effective risk governance", "depth": "concept" },
+          { "id": "los-pm-rm-4", "verb": "describe", "statement": "describe risk tolerance, identification, measurement, modification, and monitoring", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "pm-fintech", "name": "Fintech in Investment Management",
+      "lessons": [{ "id": "pm-fin-overview", "name": "Fintech in Investment Management",
+        "los": [
+          { "id": "los-pm-fin-1", "verb": "describe", "statement": "describe fintech and its uses in investment management", "depth": "concept" },
+          { "id": "los-pm-fin-2", "verb": "describe", "statement": "describe big data, artificial intelligence, and machine learning", "depth": "concept" },
+          { "id": "los-pm-fin-3", "verb": "describe", "statement": "describe applications of fintech to investment management", "depth": "application" }
+        ]
+      }]
+    }
   ]
 }

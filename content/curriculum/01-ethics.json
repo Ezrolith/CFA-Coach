@@ -8,10 +8,113 @@
   "weightHigh": 20,
   "color": "ethics",
   "description": "The bedrock of the CFA program. Code of Ethics, Standards of Professional Conduct, GIPS. Heavy in scenario-based questions where the right answer comes from applying principles to nuance.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "ethics-code-standards", "name": "Code of Ethics & Standards of Professional Conduct", "lessons": [] },
-    { "id": "ethics-guidance-i",     "name": "Guidance for Standards I–VII", "lessons": [] },
-    { "id": "ethics-intro-gips",     "name": "Introduction to the Global Investment Performance Standards (GIPS)", "lessons": [] },
-    { "id": "ethics-ai-finance",     "name": "Ethics Application", "lessons": [] }
+    {
+      "id": "ethics-code-standards",
+      "name": "Code of Ethics & Standards of Professional Conduct",
+      "lessons": [
+        {
+          "id": "ethics-code-overview",
+          "name": "Code of Ethics & Standards of Professional Conduct",
+          "los": [
+            { "id": "los-ethics-cs-1", "verb": "describe", "statement": "describe the structure of the CFA Institute Professional Conduct Program and the process for the enforcement of the Code and Standards", "depth": "concept" },
+            { "id": "los-ethics-cs-2", "verb": "identify", "statement": "identify the six components of the Code of Ethics and the seven Standards of Professional Conduct", "depth": "recall" },
+            { "id": "los-ethics-cs-3", "verb": "explain", "statement": "explain the ethical responsibilities required by the Code and Standards, including the sub-sections of each Standard", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethics-guidance-i",
+      "name": "Guidance for Standards I–VII",
+      "lessons": [
+        {
+          "id": "ethics-std-i-prof",
+          "name": "Standard I: Professionalism",
+          "los": [
+            { "id": "los-ethics-i-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard I: Professionalism (Knowledge of the Law, Independence and Objectivity, Misrepresentation, Misconduct, Competence)", "depth": "application" },
+            { "id": "los-ethics-i-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard I", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-ii-markets",
+          "name": "Standard II: Integrity of Capital Markets",
+          "los": [
+            { "id": "los-ethics-ii-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard II: Integrity of Capital Markets (Material Nonpublic Information, Market Manipulation)", "depth": "application" },
+            { "id": "los-ethics-ii-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard II", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-iii-clients",
+          "name": "Standard III: Duties to Clients",
+          "los": [
+            { "id": "los-ethics-iii-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard III: Duties to Clients (Loyalty, Prudence, and Care; Fair Dealing; Suitability; Performance Presentation; Preservation of Confidentiality)", "depth": "application" },
+            { "id": "los-ethics-iii-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard III", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-iv-employers",
+          "name": "Standard IV: Duties to Employers",
+          "los": [
+            { "id": "los-ethics-iv-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard IV: Duties to Employers (Loyalty, Additional Compensation Arrangements, Responsibilities of Supervisors)", "depth": "application" },
+            { "id": "los-ethics-iv-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard IV", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-v-analysis",
+          "name": "Standard V: Investment Analysis, Recommendations & Actions",
+          "los": [
+            { "id": "los-ethics-v-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard V: Investment Analysis, Recommendations, and Actions (Diligence and Reasonable Basis, Communication with Clients and Prospective Clients, Record Retention)", "depth": "application" },
+            { "id": "los-ethics-v-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard V", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-vi-conflicts",
+          "name": "Standard VI: Conflicts of Interest",
+          "los": [
+            { "id": "los-ethics-vi-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard VI: Conflicts of Interest (Avoid or Disclose Conflicts, Priority of Transactions, Referral Fees)", "depth": "application" },
+            { "id": "los-ethics-vi-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard VI", "depth": "application" }
+          ]
+        },
+        {
+          "id": "ethics-std-vii-cfa",
+          "name": "Standard VII: Responsibilities as a CFA Member/Candidate",
+          "los": [
+            { "id": "los-ethics-vii-1", "verb": "demonstrate", "statement": "demonstrate the application of the Code and Standards to situations involving Standard VII: Responsibilities as a CFA Institute Member or CFA Candidate (Conduct as Participants in CFA Institute Programs, Reference to CFA Institute, the CFA Designation, and the CFA Program)", "depth": "application" },
+            { "id": "los-ethics-vii-2", "verb": "recommend", "statement": "recommend practices and procedures designed to prevent violations of Standard VII", "depth": "application" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethics-intro-gips",
+      "name": "Introduction to the Global Investment Performance Standards (GIPS)",
+      "lessons": [
+        {
+          "id": "ethics-gips-overview",
+          "name": "Introduction to GIPS",
+          "los": [
+            { "id": "los-ethics-gips-1", "verb": "explain", "statement": "explain why the GIPS standards were created, what parties the GIPS standards apply to and who is served by the standards", "depth": "concept" },
+            { "id": "los-ethics-gips-2", "verb": "explain", "statement": "explain the construction and purpose of composites in performance reporting", "depth": "concept" },
+            { "id": "los-ethics-gips-3", "verb": "explain", "statement": "explain the requirements for verification", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethics-ai-finance",
+      "name": "Ethics Application",
+      "lessons": [
+        {
+          "id": "ethics-application-overview",
+          "name": "Ethics Application",
+          "los": [
+            { "id": "los-ethics-app-1", "verb": "evaluate", "statement": "evaluate practices, policies, and conduct relative to the CFA Institute Code of Ethics and Standards of Professional Conduct", "depth": "application" },
+            { "id": "los-ethics-app-2", "verb": "explain", "statement": "explain how the practices, policies, and conduct does or does not violate the CFA Institute Code of Ethics and Standards of Professional Conduct", "depth": "application" }
+          ]
+        }
+      ]
+    }
   ]
 }

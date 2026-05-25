@@ -8,16 +8,88 @@
   "weightHigh": 8,
   "color": "deriv",
   "description": "Forwards, futures, swaps and options. How they're priced, how they're used, and the no-arbitrage logic underlying them.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "deriv-features",          "name": "Derivative Instrument and Derivative Market Features", "lessons": [] },
-    { "id": "deriv-forwards-futures",  "name": "Forward Commitment and Contingent Claim Features and Instruments", "lessons": [] },
-    { "id": "deriv-benefits-risks",    "name": "Derivative Benefits, Risks, and Issuer and Investor Uses", "lessons": [] },
-    { "id": "deriv-arbitrage",         "name": "Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives", "lessons": [] },
-    { "id": "deriv-forward-pricing",   "name": "Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities", "lessons": [] },
-    { "id": "deriv-futures-pricing",   "name": "Pricing and Valuation of Futures Contracts", "lessons": [] },
-    { "id": "deriv-interest-rate",     "name": "Pricing and Valuation of Interest Rates and Other Swaps", "lessons": [] },
-    { "id": "deriv-options-pricing",   "name": "Pricing and Valuation of Options", "lessons": [] },
-    { "id": "deriv-option-replicate",  "name": "Option Replication Using Put–Call Parity", "lessons": [] },
-    { "id": "deriv-binomial-model",    "name": "Valuing a Derivative Using a One-Period Binomial Model", "lessons": [] }
+    { "id": "deriv-features", "name": "Derivative Instrument and Derivative Market Features",
+      "lessons": [{ "id": "deriv-feat-overview", "name": "Derivative Instrument and Derivative Market Features",
+        "los": [
+          { "id": "los-deriv-feat-1", "verb": "define", "statement": "define a derivative and describe basic features of a derivative instrument", "depth": "concept" },
+          { "id": "los-deriv-feat-2", "verb": "describe", "statement": "describe the basic features of derivative markets, including over-the-counter and exchange-traded derivative markets", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-forwards-futures", "name": "Forward Commitment and Contingent Claim Features and Instruments",
+      "lessons": [{ "id": "deriv-ff-overview", "name": "Forward Commitment and Contingent Claim Features and Instruments",
+        "los": [
+          { "id": "los-deriv-ff-1", "verb": "define", "statement": "define forward contracts, futures contracts, swaps, options (calls and puts), and credit derivatives and compare their basic characteristics", "depth": "concept" },
+          { "id": "los-deriv-ff-2", "verb": "determine", "statement": "determine the value at expiration and profit from a long or short position in a call or put option", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "deriv-benefits-risks", "name": "Derivative Benefits, Risks, and Issuer and Investor Uses",
+      "lessons": [{ "id": "deriv-br-overview", "name": "Derivative Benefits, Risks, and Issuer and Investor Uses",
+        "los": [
+          { "id": "los-deriv-br-1", "verb": "describe", "statement": "describe the benefits and risks of derivative instruments", "depth": "concept" },
+          { "id": "los-deriv-br-2", "verb": "compare", "statement": "compare issuer and investor uses of derivatives", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "deriv-arbitrage", "name": "Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+      "lessons": [{ "id": "deriv-arb-overview", "name": "Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+        "los": [
+          { "id": "los-deriv-arb-1", "verb": "explain", "statement": "explain how the concepts of arbitrage and replication are used in pricing derivatives", "depth": "concept" },
+          { "id": "los-deriv-arb-2", "verb": "explain", "statement": "explain the difference between the spot and expected future prices of an underlying and the cost of carry associated with holding the underlying asset", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-forward-pricing", "name": "Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities",
+      "lessons": [{ "id": "deriv-fp-overview", "name": "Pricing and Valuation of Forward Contracts",
+        "los": [
+          { "id": "los-deriv-fp-1", "verb": "explain", "statement": "explain how the value and price of a forward contract are determined at initiation, during the life of the contract, and at expiration", "depth": "concept" },
+          { "id": "los-deriv-fp-2", "verb": "explain", "statement": "explain how forward rates are determined for an underlying with a term structure and describe their uses", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-futures-pricing", "name": "Pricing and Valuation of Futures Contracts",
+      "lessons": [{ "id": "deriv-futp-overview", "name": "Pricing and Valuation of Futures Contracts",
+        "los": [
+          { "id": "los-deriv-futp-1", "verb": "compare", "statement": "compare the value and price of forward and futures contracts", "depth": "comparison" },
+          { "id": "los-deriv-futp-2", "verb": "explain", "statement": "explain why the futures price may differ from the forward price", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-interest-rate", "name": "Pricing and Valuation of Interest Rates and Other Swaps",
+      "lessons": [{ "id": "deriv-irs-overview", "name": "Pricing and Valuation of Interest Rates and Other Swaps",
+        "los": [
+          { "id": "los-deriv-irs-1", "verb": "describe", "statement": "describe how swap contracts are similar to but different from a series of forward contracts", "depth": "comparison" },
+          { "id": "los-deriv-irs-2", "verb": "contrast", "statement": "contrast the value and price of swaps", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "deriv-options-pricing", "name": "Pricing and Valuation of Options",
+      "lessons": [{ "id": "deriv-op-overview", "name": "Pricing and Valuation of Options",
+        "los": [
+          { "id": "los-deriv-op-1", "verb": "explain", "statement": "explain the exercise value, moneyness, and time value of an option", "depth": "concept" },
+          { "id": "los-deriv-op-2", "verb": "contrast", "statement": "contrast the use of arbitrage and replication concepts in pricing forward commitments and contingent claims", "depth": "comparison" },
+          { "id": "los-deriv-op-3", "verb": "identify", "statement": "identify the factors that determine the value of an option and describe how each factor affects the value of an option", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-option-replicate", "name": "Option Replication Using Put–Call Parity",
+      "lessons": [{ "id": "deriv-pcp-overview", "name": "Option Replication Using Put–Call Parity",
+        "los": [
+          { "id": "los-deriv-pcp-1", "verb": "explain", "statement": "explain put–call parity for European options", "depth": "concept" },
+          { "id": "los-deriv-pcp-2", "verb": "explain", "statement": "explain put–call forward parity for European options", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "deriv-binomial-model", "name": "Valuing a Derivative Using a One-Period Binomial Model",
+      "lessons": [{ "id": "deriv-bin-overview", "name": "Valuing a Derivative Using a One-Period Binomial Model",
+        "los": [
+          { "id": "los-deriv-bin-1", "verb": "describe", "statement": "describe and interpret the binomial option valuation model and its component terms", "depth": "concept" },
+          { "id": "los-deriv-bin-2", "verb": "calculate", "statement": "calculate the no-arbitrage values of European and American options using a two-period binomial model", "depth": "calculation" }
+        ]
+      }]
+    }
   ]
 }

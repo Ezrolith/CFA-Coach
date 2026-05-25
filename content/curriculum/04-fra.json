@@ -8,18 +8,158 @@
   "weightHigh": 14,
   "color": "fra",
   "description": "Reading the three statements, decoding ratios, understanding inventories, long-lived assets, leases, income tax, financing liabilities. The plumbing of how companies report and how analysts read them.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "fra-intro",                 "name": "Introduction to Financial Statement Analysis", "lessons": [] },
-    { "id": "fra-income-statement",      "name": "Analyzing Income Statements", "lessons": [] },
-    { "id": "fra-balance-sheet",         "name": "Analyzing Balance Sheets", "lessons": [] },
-    { "id": "fra-cash-flow",             "name": "Analyzing Statements of Cash Flows I", "lessons": [] },
-    { "id": "fra-cash-flow-ii",          "name": "Analyzing Statements of Cash Flows II", "lessons": [] },
-    { "id": "fra-ratios",                "name": "Analysis of Inventories", "lessons": [] },
-    { "id": "fra-long-lived",            "name": "Analysis of Long-Lived Assets", "lessons": [] },
-    { "id": "fra-income-taxes",          "name": "Topics in Long-Term Liabilities and Equity", "lessons": [] },
-    { "id": "fra-non-current-liab",      "name": "Analysis of Income Taxes", "lessons": [] },
-    { "id": "fra-financial-reporting",   "name": "Financial Reporting Quality", "lessons": [] },
-    { "id": "fra-techniques",            "name": "Financial Analysis Techniques", "lessons": [] },
-    { "id": "fra-introduction-quality",  "name": "Introduction to Financial Statement Modeling", "lessons": [] }
+    {
+      "id": "fra-intro",
+      "name": "Introduction to Financial Statement Analysis",
+      "lessons": [{
+        "id": "fra-intro-overview", "name": "Introduction to Financial Statement Analysis",
+        "los": [
+          { "id": "los-fra-intro-1", "verb": "describe", "statement": "describe the steps in the financial statement analysis framework", "depth": "concept" },
+          { "id": "los-fra-intro-2", "verb": "describe", "statement": "describe the roles of financial reporting and financial statement analysis", "depth": "concept" },
+          { "id": "los-fra-intro-3", "verb": "describe", "statement": "describe the importance of regulatory filings, financial statement notes and supplementary information, management's commentary, and audit reports", "depth": "concept" },
+          { "id": "los-fra-intro-4", "verb": "describe", "statement": "describe the importance of other sources of information used by analysts in financial statement analysis", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-income-statement",
+      "name": "Analyzing Income Statements",
+      "lessons": [{
+        "id": "fra-is-overview", "name": "Analyzing Income Statements",
+        "los": [
+          { "id": "los-fra-is-1", "verb": "describe", "statement": "describe the general principles of revenue recognition, specific revenue recognition applications, and accounting standards related to revenue recognition", "depth": "concept" },
+          { "id": "los-fra-is-2", "verb": "describe", "statement": "describe general principles of expense recognition, specific expense recognition applications, and the implications of expense recognition choices for financial analysis", "depth": "concept" },
+          { "id": "los-fra-is-3", "verb": "describe", "statement": "describe how non-recurring items and changes in accounting policies are reported in the income statement", "depth": "concept" },
+          { "id": "los-fra-is-4", "verb": "describe", "statement": "describe how earnings per share is calculated and calculate basic and diluted EPS, including the impact of stock dividends and stock splits and antidilutive securities", "depth": "calculation" },
+          { "id": "los-fra-is-5", "verb": "evaluate", "statement": "evaluate a company's financial performance using common-size income statements and financial ratios based on the income statement", "depth": "application" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-balance-sheet",
+      "name": "Analyzing Balance Sheets",
+      "lessons": [{
+        "id": "fra-bs-overview", "name": "Analyzing Balance Sheets",
+        "los": [
+          { "id": "los-fra-bs-1", "verb": "explain", "statement": "explain the financial reporting and disclosures related to intangible assets", "depth": "concept" },
+          { "id": "los-fra-bs-2", "verb": "explain", "statement": "explain the financial reporting and disclosures related to goodwill", "depth": "concept" },
+          { "id": "los-fra-bs-3", "verb": "explain", "statement": "explain the financial reporting and disclosures related to non-current liabilities", "depth": "concept" },
+          { "id": "los-fra-bs-4", "verb": "calculate", "statement": "calculate and interpret common-size balance sheets and related financial ratios", "depth": "calculation" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-cash-flow",
+      "name": "Analyzing Statements of Cash Flows I",
+      "lessons": [{
+        "id": "fra-cf1-overview", "name": "Analyzing Statements of Cash Flows I",
+        "los": [
+          { "id": "los-fra-cf1-1", "verb": "compare", "statement": "compare cash flows from operating, investing, and financing activities and classify cash flow items as relating to one of those three categories given a description of the items", "depth": "comparison" },
+          { "id": "los-fra-cf1-2", "verb": "contrast", "statement": "contrast cash flow statements prepared under International Financial Reporting Standards (IFRS) and US Generally Accepted Accounting Principles (US GAAP)", "depth": "comparison" },
+          { "id": "los-fra-cf1-3", "verb": "describe", "statement": "describe how non-cash investing and financing activities are reported", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-cash-flow-ii",
+      "name": "Analyzing Statements of Cash Flows II",
+      "lessons": [{
+        "id": "fra-cf2-overview", "name": "Analyzing Statements of Cash Flows II",
+        "los": [
+          { "id": "los-fra-cf2-1", "verb": "analyze", "statement": "analyze and interpret both reported and common-size cash flow statements", "depth": "application" },
+          { "id": "los-fra-cf2-2", "verb": "calculate", "statement": "calculate and interpret free cash flow to the firm, free cash flow to equity, and performance and coverage cash flow ratios", "depth": "calculation" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-ratios",
+      "name": "Analysis of Inventories",
+      "lessons": [{
+        "id": "fra-inv-overview", "name": "Analysis of Inventories",
+        "los": [
+          { "id": "los-fra-inv-1", "verb": "describe", "statement": "describe the measurement of inventory at the lower of cost and net realizable value and its implications for financial statements and ratios", "depth": "concept" },
+          { "id": "los-fra-inv-2", "verb": "describe", "statement": "describe LIFO reserve and LIFO liquidation and their effects on financial statements and ratios", "depth": "concept" },
+          { "id": "los-fra-inv-3", "verb": "calculate", "statement": "calculate and explain how inflation and deflation of inventory costs affect the financial statements and ratios of companies that use different inventory valuation methods", "depth": "calculation" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-long-lived",
+      "name": "Analysis of Long-Lived Assets",
+      "lessons": [{
+        "id": "fra-lla-overview", "name": "Analysis of Long-Lived Assets",
+        "los": [
+          { "id": "los-fra-lla-1", "verb": "contrast", "statement": "contrast the financial reporting of the following types of intangible assets: purchased, internally developed, acquired in a business combination", "depth": "comparison" },
+          { "id": "los-fra-lla-2", "verb": "explain", "statement": "explain and evaluate how impairment, revaluation, and derecognition of property, plant, and equipment and intangible assets affect the financial statements and ratios", "depth": "application" },
+          { "id": "los-fra-lla-3", "verb": "analyze", "statement": "analyze and interpret financial statement disclosures regarding property, plant, and equipment and intangible assets", "depth": "application" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-income-taxes",
+      "name": "Topics in Long-Term Liabilities and Equity",
+      "lessons": [{
+        "id": "fra-ltleq-overview", "name": "Topics in Long-Term Liabilities and Equity",
+        "los": [
+          { "id": "los-fra-ltleq-1", "verb": "explain", "statement": "explain the financial reporting of leases from the perspectives of the lessee and the lessor", "depth": "concept" },
+          { "id": "los-fra-ltleq-2", "verb": "explain", "statement": "explain the financial reporting of defined contribution, defined benefit, and stock-based compensation plans", "depth": "concept" },
+          { "id": "los-fra-ltleq-3", "verb": "describe", "statement": "describe the financial statement presentation of and disclosures relating to long-term liabilities and share-based compensation", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-non-current-liab",
+      "name": "Analysis of Income Taxes",
+      "lessons": [{
+        "id": "fra-tax-overview", "name": "Analysis of Income Taxes",
+        "los": [
+          { "id": "los-fra-tax-1", "verb": "contrast", "statement": "contrast accounting profit, taxable income, taxes payable, and income tax expense and temporary versus permanent differences between accounting profit and taxable income", "depth": "comparison" },
+          { "id": "los-fra-tax-2", "verb": "explain", "statement": "explain how deferred tax liabilities and assets are created and the factors that determine how a company's deferred tax liabilities and assets should be treated for the purposes of financial analysis", "depth": "concept" },
+          { "id": "los-fra-tax-3", "verb": "calculate", "statement": "calculate the tax base of a company's assets and liabilities", "depth": "calculation" },
+          { "id": "los-fra-tax-4", "verb": "analyze", "statement": "analyze disclosures relating to deferred tax items and the effective tax rate reconciliation and explain how information included in these disclosures affects a company's financial statements and financial ratios", "depth": "application" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-financial-reporting",
+      "name": "Financial Reporting Quality",
+      "lessons": [{
+        "id": "fra-quality-overview", "name": "Financial Reporting Quality",
+        "los": [
+          { "id": "los-fra-q-1", "verb": "compare", "statement": "compare financial reporting quality with the quality of reported results (including quality of earnings, cash flow, and balance sheet items)", "depth": "comparison" },
+          { "id": "los-fra-q-2", "verb": "describe", "statement": "describe a spectrum for assessing financial reporting quality", "depth": "concept" },
+          { "id": "los-fra-q-3", "verb": "describe", "statement": "describe motivations that might cause management to issue financial reports that are not high quality", "depth": "concept" },
+          { "id": "los-fra-q-4", "verb": "describe", "statement": "describe conditions that are conducive to issuing low-quality, or even fraudulent, financial reports", "depth": "concept" },
+          { "id": "los-fra-q-5", "verb": "describe", "statement": "describe mechanisms that discipline financial reporting quality and the potential limitations of those mechanisms", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-techniques",
+      "name": "Financial Analysis Techniques",
+      "lessons": [{
+        "id": "fra-tech-overview", "name": "Financial Analysis Techniques",
+        "los": [
+          { "id": "los-fra-t-1", "verb": "calculate", "statement": "calculate and interpret activity, liquidity, solvency, and profitability ratios", "depth": "calculation" },
+          { "id": "los-fra-t-2", "verb": "describe", "statement": "describe relationships among ratios and evaluate a company using ratio analysis", "depth": "application" },
+          { "id": "los-fra-t-3", "verb": "demonstrate", "statement": "demonstrate the application of DuPont analysis of return on equity and calculate and interpret effects of changes in its components", "depth": "calculation" },
+          { "id": "los-fra-t-4", "verb": "calculate", "statement": "calculate and interpret ratios used in equity analysis and credit analysis", "depth": "calculation" }
+        ]
+      }]
+    },
+    {
+      "id": "fra-introduction-quality",
+      "name": "Introduction to Financial Statement Modeling",
+      "lessons": [{
+        "id": "fra-model-overview", "name": "Introduction to Financial Statement Modeling",
+        "los": [
+          { "id": "los-fra-m-1", "verb": "demonstrate", "statement": "demonstrate the development of a sales-based pro forma company model", "depth": "application" },
+          { "id": "los-fra-m-2", "verb": "explain", "statement": "explain how behavioral factors affect analyst forecasts and recommend remedial actions for analyst biases", "depth": "concept" },
+          { "id": "los-fra-m-3", "verb": "explain", "statement": "explain how competitive factors affect prices and costs", "depth": "concept" }
+        ]
+      }]
+    }
   ]
 }

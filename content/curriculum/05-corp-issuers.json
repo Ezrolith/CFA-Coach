@@ -8,13 +8,75 @@
   "weightHigh": 9,
   "color": "corp",
   "description": "How companies raise capital and make investment decisions. Capital structure, working capital, ESG considerations, and the mechanics of corporate governance.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "corp-features",            "name": "Organizational Forms, Corporate Issuer Features, and Ownership", "lessons": [] },
-    { "id": "corp-investors",           "name": "Investors and Other Stakeholders", "lessons": [] },
-    { "id": "corp-governance",          "name": "Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits", "lessons": [] },
-    { "id": "corp-working-capital",     "name": "Working Capital and Liquidity", "lessons": [] },
-    { "id": "corp-capital-allocation",  "name": "Capital Investments and Capital Allocation", "lessons": [] },
-    { "id": "corp-capital-structure",   "name": "Capital Structure", "lessons": [] },
-    { "id": "corp-business-models",     "name": "Business Models", "lessons": [] }
+    { "id": "corp-features", "name": "Organizational Forms, Corporate Issuer Features, and Ownership",
+      "lessons": [{ "id": "corp-feat-overview", "name": "Organizational Forms, Corporate Issuer Features, and Ownership",
+        "los": [
+          { "id": "los-corp-feat-1", "verb": "compare", "statement": "compare the organizational forms of businesses", "depth": "comparison" },
+          { "id": "los-corp-feat-2", "verb": "describe", "statement": "describe key features of corporate issuers", "depth": "concept" },
+          { "id": "los-corp-feat-3", "verb": "compare", "statement": "compare publicly and privately owned corporate issuers", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "corp-investors", "name": "Investors and Other Stakeholders",
+      "lessons": [{ "id": "corp-inv-overview", "name": "Investors and Other Stakeholders",
+        "los": [
+          { "id": "los-corp-inv-1", "verb": "compare", "statement": "compare the financial claims and motivations of lenders and shareholders", "depth": "comparison" },
+          { "id": "los-corp-inv-2", "verb": "describe", "statement": "describe a company's stakeholder groups and compare their interests", "depth": "comparison" },
+          { "id": "los-corp-inv-3", "verb": "describe", "statement": "describe environmental, social, and governance factors of corporate issuers considered by investors", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "corp-governance", "name": "Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits",
+      "lessons": [{ "id": "corp-gov-overview", "name": "Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits",
+        "los": [
+          { "id": "los-corp-gov-1", "verb": "describe", "statement": "describe the principal-agent and other relationships in corporate governance and the conflicts that may arise in these relationships", "depth": "concept" },
+          { "id": "los-corp-gov-2", "verb": "describe", "statement": "describe stakeholder management", "depth": "concept" },
+          { "id": "los-corp-gov-3", "verb": "describe", "statement": "describe mechanisms to manage stakeholder relationships and mitigate associated risks", "depth": "concept" },
+          { "id": "los-corp-gov-4", "verb": "describe", "statement": "describe potential risks of poor corporate governance and stakeholder management and identify benefits from effective corporate governance and stakeholder management", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "corp-working-capital", "name": "Working Capital and Liquidity",
+      "lessons": [{ "id": "corp-wc-overview", "name": "Working Capital and Liquidity",
+        "los": [
+          { "id": "los-corp-wc-1", "verb": "explain", "statement": "explain the cash conversion cycle and compare issuers' cash conversion cycles", "depth": "concept" },
+          { "id": "los-corp-wc-2", "verb": "explain", "statement": "explain liquidity and compare issuers' liquidity levels", "depth": "concept" },
+          { "id": "los-corp-wc-3", "verb": "describe", "statement": "describe issuers' primary and secondary sources of liquidity and factors that influence them", "depth": "concept" },
+          { "id": "los-corp-wc-4", "verb": "evaluate", "statement": "evaluate issuers' short-term funding choices and explain how that choice may affect financial reporting", "depth": "application" }
+        ]
+      }]
+    },
+    { "id": "corp-capital-allocation", "name": "Capital Investments and Capital Allocation",
+      "lessons": [{ "id": "corp-ca-overview", "name": "Capital Investments and Capital Allocation",
+        "los": [
+          { "id": "los-corp-ca-1", "verb": "describe", "statement": "describe types of capital investments", "depth": "concept" },
+          { "id": "los-corp-ca-2", "verb": "describe", "statement": "describe the capital allocation process and basic principles of capital allocation", "depth": "concept" },
+          { "id": "los-corp-ca-3", "verb": "demonstrate", "statement": "demonstrate the use of NPV and IRR in capital allocation decisions and contrast investor and corporate use of these methods", "depth": "calculation" },
+          { "id": "los-corp-ca-4", "verb": "describe", "statement": "describe common capital allocation pitfalls", "depth": "concept" },
+          { "id": "los-corp-ca-5", "verb": "describe", "statement": "describe the use of real options in capital allocation", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "corp-capital-structure", "name": "Capital Structure",
+      "lessons": [{ "id": "corp-cs-overview", "name": "Capital Structure",
+        "los": [
+          { "id": "los-corp-cs-1", "verb": "calculate", "statement": "calculate and interpret the weighted-average cost of capital for a company", "depth": "calculation" },
+          { "id": "los-corp-cs-2", "verb": "explain", "statement": "explain factors affecting capital structure and the weighted-average cost of capital", "depth": "concept" },
+          { "id": "los-corp-cs-3", "verb": "describe", "statement": "describe the Modigliani-Miller propositions regarding capital structure", "depth": "concept" },
+          { "id": "los-corp-cs-4", "verb": "describe", "statement": "describe optimal capital structure and target capital structure", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "corp-business-models", "name": "Business Models",
+      "lessons": [{ "id": "corp-bm-overview", "name": "Business Models",
+        "los": [
+          { "id": "los-corp-bm-1", "verb": "describe", "statement": "describe key features of business models", "depth": "concept" },
+          { "id": "los-corp-bm-2", "verb": "describe", "statement": "describe variations of business models, including those of e-commerce companies", "depth": "concept" },
+          { "id": "los-corp-bm-3", "verb": "describe", "statement": "describe business model innovations and characteristics of business model innovation", "depth": "concept" }
+        ]
+      }]
+    }
   ]
 }

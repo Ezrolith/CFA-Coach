@@ -8,13 +8,65 @@
   "weightHigh": 10,
   "color": "alts",
   "description": "Everything that isn't public equity, public debt, or cash. Private equity, hedge funds, real estate, infrastructure, commodities, digital assets. Structures, fees, risks, returns.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "alts-features",           "name": "Alternative Investment Features, Methods, and Structures", "lessons": [] },
-    { "id": "alts-performance",        "name": "Alternative Investment Performance and Returns", "lessons": [] },
-    { "id": "alts-investments-due",    "name": "Investments in Private Capital: Equity and Debt", "lessons": [] },
-    { "id": "alts-real-estate",        "name": "Real Estate and Infrastructure", "lessons": [] },
-    { "id": "alts-natural-resources",  "name": "Natural Resources", "lessons": [] },
-    { "id": "alts-hedge-funds",        "name": "Hedge Funds", "lessons": [] },
-    { "id": "alts-digital-assets",     "name": "Introduction to Digital Assets", "lessons": [] }
+    { "id": "alts-features", "name": "Alternative Investment Features, Methods, and Structures",
+      "lessons": [{ "id": "alts-feat-overview", "name": "Alternative Investment Features, Methods, and Structures",
+        "los": [
+          { "id": "los-alts-feat-1", "verb": "describe", "statement": "describe features and categories of alternative investments", "depth": "concept" },
+          { "id": "los-alts-feat-2", "verb": "compare", "statement": "compare direct investment, co-investment, and fund investment methods for alternative investments", "depth": "comparison" },
+          { "id": "los-alts-feat-3", "verb": "describe", "statement": "describe investment ownership and compensation structures commonly used in alternative investments", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "alts-performance", "name": "Alternative Investment Performance and Returns",
+      "lessons": [{ "id": "alts-perf-overview", "name": "Alternative Investment Performance and Returns",
+        "los": [
+          { "id": "los-alts-perf-1", "verb": "describe", "statement": "describe investment and compensation structures commonly used in alternative investments and their effect on returns", "depth": "concept" },
+          { "id": "los-alts-perf-2", "verb": "calculate", "statement": "calculate and interpret returns of alternative investments on both before-fee and after-fee bases", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "alts-investments-due", "name": "Investments in Private Capital: Equity and Debt",
+      "lessons": [{ "id": "alts-pc-overview", "name": "Investments in Private Capital: Equity and Debt",
+        "los": [
+          { "id": "los-alts-pc-1", "verb": "explain", "statement": "explain investment characteristics of private equity", "depth": "concept" },
+          { "id": "los-alts-pc-2", "verb": "explain", "statement": "explain investment characteristics of private debt", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "alts-real-estate", "name": "Real Estate and Infrastructure",
+      "lessons": [{ "id": "alts-re-overview", "name": "Real Estate and Infrastructure",
+        "los": [
+          { "id": "los-alts-re-1", "verb": "explain", "statement": "explain features and investment characteristics of real estate", "depth": "concept" },
+          { "id": "los-alts-re-2", "verb": "explain", "statement": "explain features and investment characteristics of infrastructure", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "alts-natural-resources", "name": "Natural Resources",
+      "lessons": [{ "id": "alts-nr-overview", "name": "Natural Resources",
+        "los": [
+          { "id": "los-alts-nr-1", "verb": "explain", "statement": "explain features of raw land, timberland, and farmland and their investment characteristics", "depth": "concept" },
+          { "id": "los-alts-nr-2", "verb": "describe", "statement": "describe features of commodities and their investment characteristics", "depth": "concept" },
+          { "id": "los-alts-nr-3", "verb": "analyze", "statement": "analyze sources of risk, return, and diversification benefits among natural resource investments", "depth": "application" }
+        ]
+      }]
+    },
+    { "id": "alts-hedge-funds", "name": "Hedge Funds",
+      "lessons": [{ "id": "alts-hf-overview", "name": "Hedge Funds",
+        "los": [
+          { "id": "los-alts-hf-1", "verb": "explain", "statement": "explain investment features of hedge funds and contrast them with other types of pooled investments", "depth": "comparison" },
+          { "id": "los-alts-hf-2", "verb": "explain", "statement": "explain investment forms and types of hedge fund strategies", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "alts-digital-assets", "name": "Introduction to Digital Assets",
+      "lessons": [{ "id": "alts-da-overview", "name": "Introduction to Digital Assets",
+        "los": [
+          { "id": "los-alts-da-1", "verb": "explain", "statement": "explain features of digital assets, distributed ledger technology, and their investment forms", "depth": "concept" },
+          { "id": "los-alts-da-2", "verb": "analyze", "statement": "analyze sources of risk, return, and diversification benefits of digital assets", "depth": "application" }
+        ]
+      }]
+    }
   ]
 }

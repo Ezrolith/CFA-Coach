@@ -8,14 +8,85 @@
   "weightHigh": 9,
   "color": "economics",
   "description": "Micro and macro: demand and supply, firm behaviour, monetary and fiscal policy, international trade, currency markets. The lens for understanding why markets move.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "econ-firms-market-structures", "name": "The Firm and Market Structures", "lessons": [] },
-    { "id": "econ-aggregate-output",        "name": "Understanding Business Cycles", "lessons": [] },
-    { "id": "econ-fiscal-monetary",         "name": "Fiscal Policy", "lessons": [] },
-    { "id": "econ-monetary-policy",         "name": "Monetary Policy", "lessons": [] },
-    { "id": "econ-international-trade",     "name": "Introduction to Geopolitics", "lessons": [] },
-    { "id": "econ-currency-exchange",       "name": "International Trade", "lessons": [] },
-    { "id": "econ-currency-rates",          "name": "Capital Flows and the FX Market", "lessons": [] },
-    { "id": "econ-exchange-rate",           "name": "Exchange Rate Calculations", "lessons": [] }
+    { "id": "econ-firms-market-structures", "name": "The Firm and Market Structures",
+      "lessons": [{ "id": "econ-fms-overview", "name": "The Firm and Market Structures",
+        "los": [
+          { "id": "los-econ-fms-1", "verb": "describe", "statement": "describe characteristics of perfect competition, monopolistic competition, oligopoly, and pure monopoly", "depth": "concept" },
+          { "id": "los-econ-fms-2", "verb": "explain", "statement": "explain relationships between price, marginal revenue, marginal cost, economic profit, and the elasticity of demand under each market structure", "depth": "concept" },
+          { "id": "los-econ-fms-3", "verb": "describe", "statement": "describe a firm's supply function under each market structure", "depth": "concept" },
+          { "id": "los-econ-fms-4", "verb": "describe", "statement": "describe a firm's short-run and long-run equilibrium under each market structure", "depth": "concept" },
+          { "id": "los-econ-fms-5", "verb": "identify", "statement": "identify the type of market structure within which a firm operates", "depth": "application" }
+        ]
+      }]
+    },
+    { "id": "econ-aggregate-output", "name": "Understanding Business Cycles",
+      "lessons": [{ "id": "econ-bc-overview", "name": "Understanding Business Cycles",
+        "los": [
+          { "id": "los-econ-bc-1", "verb": "describe", "statement": "describe the business cycle and its phases", "depth": "concept" },
+          { "id": "los-econ-bc-2", "verb": "describe", "statement": "describe credit cycles", "depth": "concept" },
+          { "id": "los-econ-bc-3", "verb": "describe", "statement": "describe how resource use, consumer and business activity, housing sector activity, and external trade sector activity vary over the business cycle and describe their measurement using economic indicators", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "econ-fiscal-monetary", "name": "Fiscal Policy",
+      "lessons": [{ "id": "econ-fiscal-overview", "name": "Fiscal Policy",
+        "los": [
+          { "id": "los-econ-fp-1", "verb": "compare", "statement": "compare monetary and fiscal policy", "depth": "comparison" },
+          { "id": "los-econ-fp-2", "verb": "describe", "statement": "describe the roles and objectives of fiscal policy and tools of fiscal policy, including their advantages and disadvantages", "depth": "concept" },
+          { "id": "los-econ-fp-3", "verb": "describe", "statement": "describe the arguments about whether the size of a national debt relative to GDP matters", "depth": "concept" },
+          { "id": "los-econ-fp-4", "verb": "explain", "statement": "explain the implementation of fiscal policy and difficulties of implementation", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "econ-monetary-policy", "name": "Monetary Policy",
+      "lessons": [{ "id": "econ-monetary-overview", "name": "Monetary Policy",
+        "los": [
+          { "id": "los-econ-mp-1", "verb": "describe", "statement": "describe the roles and objectives of central banks", "depth": "concept" },
+          { "id": "los-econ-mp-2", "verb": "describe", "statement": "describe tools used to implement monetary policy and the monetary transmission mechanism, and explain the relationships between monetary policy and economic growth, inflation, interest, and exchange rates", "depth": "concept" },
+          { "id": "los-econ-mp-3", "verb": "describe", "statement": "describe qualities of effective central banks; contrast their use of inflation, interest rate, and exchange rate targeting in expansionary or contractionary monetary policy; and describe the limitations of monetary policy", "depth": "concept" },
+          { "id": "los-econ-mp-4", "verb": "explain", "statement": "explain the interaction of monetary and fiscal policy", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "econ-international-trade", "name": "Introduction to Geopolitics",
+      "lessons": [{ "id": "econ-geo-overview", "name": "Introduction to Geopolitics",
+        "los": [
+          { "id": "los-econ-geo-1", "verb": "describe", "statement": "describe geopolitics from a cooperation versus competition perspective", "depth": "concept" },
+          { "id": "los-econ-geo-2", "verb": "describe", "statement": "describe geopolitical risk", "depth": "concept" },
+          { "id": "los-econ-geo-3", "verb": "describe", "statement": "describe tools of geopolitics and their impact on regions and economies", "depth": "concept" },
+          { "id": "los-econ-geo-4", "verb": "describe", "statement": "describe the impact of geopolitical risk on investments", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "econ-currency-exchange", "name": "International Trade",
+      "lessons": [{ "id": "econ-it-overview", "name": "International Trade",
+        "los": [
+          { "id": "los-econ-it-1", "verb": "describe", "statement": "describe the benefits and costs of international trade", "depth": "concept" },
+          { "id": "los-econ-it-2", "verb": "contrast", "statement": "contrast comparative advantage and absolute advantage", "depth": "comparison" },
+          { "id": "los-econ-it-3", "verb": "explain", "statement": "explain the Ricardian and Heckscher-Ohlin models of trade and the source(s) of comparative advantage in each model", "depth": "concept" },
+          { "id": "los-econ-it-4", "verb": "compare", "statement": "compare types of trade restrictions, such as tariffs, quotas, and export subsidies, and their economic implications", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "econ-currency-rates", "name": "Capital Flows and the FX Market",
+      "lessons": [{ "id": "econ-cf-overview", "name": "Capital Flows and the FX Market",
+        "los": [
+          { "id": "los-econ-cf-1", "verb": "describe", "statement": "describe how decisions by consumers, firms, and governments affect the capital account", "depth": "concept" },
+          { "id": "los-econ-cf-2", "verb": "describe", "statement": "describe functions and participants of the foreign exchange market", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "econ-exchange-rate", "name": "Exchange Rate Calculations",
+      "lessons": [{ "id": "econ-er-overview", "name": "Exchange Rate Calculations",
+        "los": [
+          { "id": "los-econ-er-1", "verb": "calculate", "statement": "calculate and interpret the percentage change in a currency relative to another currency", "depth": "calculation" },
+          { "id": "los-econ-er-2", "verb": "calculate", "statement": "calculate and interpret currency cross-rates", "depth": "calculation" },
+          { "id": "los-econ-er-3", "verb": "calculate", "statement": "calculate an outright forward quotation from forward quotations expressed on a points basis or in percentage terms", "depth": "calculation" },
+          { "id": "los-econ-er-4", "verb": "explain", "statement": "explain the arbitrage relationship between spot rates, forward rates, and interest rates", "depth": "concept" }
+        ]
+      }]
+    }
   ]
 }

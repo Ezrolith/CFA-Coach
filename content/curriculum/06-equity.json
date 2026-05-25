@@ -8,14 +8,131 @@
   "weightHigh": 14,
   "color": "equity",
   "description": "Stock markets and how to value shares. Market organisation, indices, market efficiency, industry analysis, and three valuation approaches (DDM, multiples, asset-based).",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "equity-market-organization", "name": "Market Organization and Structure", "lessons": [] },
-    { "id": "equity-indices",             "name": "Security Market Indexes", "lessons": [] },
-    { "id": "equity-market-efficiency",   "name": "Market Efficiency", "lessons": [] },
-    { "id": "equity-overview",            "name": "Overview of Equity Securities", "lessons": [] },
-    { "id": "equity-company-analysis",    "name": "Company Analysis: Past and Present", "lessons": [] },
-    { "id": "equity-industry-analysis",   "name": "Industry and Competitive Analysis", "lessons": [] },
-    { "id": "equity-forecasting",         "name": "Company Analysis: Forecasting", "lessons": [] },
-    { "id": "equity-valuation-concepts",  "name": "Equity Valuation: Concepts and Basic Tools", "lessons": [] }
+    {
+      "id": "equity-market-organization",
+      "name": "Market Organization and Structure",
+      "lessons": [{
+        "id": "eq-mo-overview", "name": "Market Organization and Structure",
+        "los": [
+          { "id": "los-eq-mo-1", "verb": "explain", "statement": "explain the main functions of the financial system", "depth": "concept" },
+          { "id": "los-eq-mo-2", "verb": "describe", "statement": "describe classifications of assets and markets", "depth": "concept" },
+          { "id": "los-eq-mo-3", "verb": "describe", "statement": "describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets, including their distinguishing characteristics and major subtypes", "depth": "concept" },
+          { "id": "los-eq-mo-4", "verb": "describe", "statement": "describe types of financial intermediaries and services that they provide", "depth": "concept" },
+          { "id": "los-eq-mo-5", "verb": "compare", "statement": "compare positions an investor can take in an asset", "depth": "comparison" },
+          { "id": "los-eq-mo-6", "verb": "describe", "statement": "describe the use of leveraged positions and the calculation of leverage ratio, rate of return on a margin transaction, and the security price at which the investor would receive a margin call", "depth": "calculation" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-indices",
+      "name": "Security Market Indexes",
+      "lessons": [{
+        "id": "eq-idx-overview", "name": "Security Market Indexes",
+        "los": [
+          { "id": "los-eq-idx-1", "verb": "describe", "statement": "describe a security market index", "depth": "concept" },
+          { "id": "los-eq-idx-2", "verb": "calculate", "statement": "calculate and interpret the value, price return, and total return of an index", "depth": "calculation" },
+          { "id": "los-eq-idx-3", "verb": "describe", "statement": "describe the choices and issues in index construction and management", "depth": "concept" },
+          { "id": "los-eq-idx-4", "verb": "compare", "statement": "compare the different weighting methods used in index construction", "depth": "comparison" },
+          { "id": "los-eq-idx-5", "verb": "describe", "statement": "describe uses of security market indexes", "depth": "concept" },
+          { "id": "los-eq-idx-6", "verb": "describe", "statement": "describe types of equity indexes, fixed-income indexes, and indexes for alternative investments", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-market-efficiency",
+      "name": "Market Efficiency",
+      "lessons": [{
+        "id": "eq-eff-overview", "name": "Market Efficiency",
+        "los": [
+          { "id": "los-eq-eff-1", "verb": "describe", "statement": "describe market efficiency and related concepts, including their importance to investment practitioners", "depth": "concept" },
+          { "id": "los-eq-eff-2", "verb": "distinguish", "statement": "distinguish between market value and intrinsic value", "depth": "concept" },
+          { "id": "los-eq-eff-3", "verb": "explain", "statement": "explain factors that affect a market's efficiency", "depth": "concept" },
+          { "id": "los-eq-eff-4", "verb": "contrast", "statement": "contrast weak-form, semi-strong-form, and strong-form market efficiency", "depth": "comparison" },
+          { "id": "los-eq-eff-5", "verb": "explain", "statement": "explain the implications of each form of market efficiency for fundamental analysis, technical analysis, and the choice between active and passive portfolio management", "depth": "concept" },
+          { "id": "los-eq-eff-6", "verb": "describe", "statement": "describe market anomalies", "depth": "concept" },
+          { "id": "los-eq-eff-7", "verb": "describe", "statement": "describe behavioral finance and its potential implications for investor behavior and market prices", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-overview",
+      "name": "Overview of Equity Securities",
+      "lessons": [{
+        "id": "eq-ov-overview", "name": "Overview of Equity Securities",
+        "los": [
+          { "id": "los-eq-ov-1", "verb": "describe", "statement": "describe characteristics of types of equity securities", "depth": "concept" },
+          { "id": "los-eq-ov-2", "verb": "describe", "statement": "describe differences in voting rights and other ownership characteristics among different equity classes", "depth": "concept" },
+          { "id": "los-eq-ov-3", "verb": "distinguish", "statement": "distinguish between public and private equity securities", "depth": "concept" },
+          { "id": "los-eq-ov-4", "verb": "describe", "statement": "describe methods for investing in non-domestic equity securities", "depth": "concept" },
+          { "id": "los-eq-ov-5", "verb": "compare", "statement": "compare the risk and return characteristics of various types of equity securities", "depth": "comparison" },
+          { "id": "los-eq-ov-6", "verb": "explain", "statement": "explain the role of equity securities in the financing of a company's assets", "depth": "concept" },
+          { "id": "los-eq-ov-7", "verb": "distinguish", "statement": "distinguish between the market value and book value of equity securities", "depth": "concept" },
+          { "id": "los-eq-ov-8", "verb": "compare", "statement": "compare a company's cost of equity, its (accounting) return on equity, and investors' required rates of return", "depth": "comparison" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-company-analysis",
+      "name": "Company Analysis: Past and Present",
+      "lessons": [{
+        "id": "eq-cap-overview", "name": "Company Analysis: Past and Present",
+        "los": [
+          { "id": "los-eq-cap-1", "verb": "describe", "statement": "describe the steps in the top-down, bottom-up, and hybrid approaches in company analysis", "depth": "concept" },
+          { "id": "los-eq-cap-2", "verb": "describe", "statement": "describe the elements that should be covered in a thorough company analysis", "depth": "concept" },
+          { "id": "los-eq-cap-3", "verb": "analyze", "statement": "analyze a company's revenue, cost structure, and capital structure", "depth": "application" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-industry-analysis",
+      "name": "Industry and Competitive Analysis",
+      "lessons": [{
+        "id": "eq-ia-overview", "name": "Industry and Competitive Analysis",
+        "los": [
+          { "id": "los-eq-ia-1", "verb": "describe", "statement": "describe the uses of industry analysis and the relation of industry analysis to company analysis", "depth": "concept" },
+          { "id": "los-eq-ia-2", "verb": "compare", "statement": "compare methods by which companies can be grouped, current industry classification systems, and classify a company, given a description of its activities and the classification system", "depth": "comparison" },
+          { "id": "los-eq-ia-3", "verb": "explain", "statement": "explain the factors that affect the sensitivity of a company to the business cycle and the uses and limitations of industry and company descriptors such as 'growth,' 'defensive,' and 'cyclical'", "depth": "concept" },
+          { "id": "los-eq-ia-4", "verb": "describe", "statement": "describe the elements that need to be covered in a thorough industry analysis using Porter's five forces", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-forecasting",
+      "name": "Company Analysis: Forecasting",
+      "lessons": [{
+        "id": "eq-fc-overview", "name": "Company Analysis: Forecasting",
+        "los": [
+          { "id": "los-eq-fc-1", "verb": "explain", "statement": "explain principles and approaches to forecasting a company's financial results and position", "depth": "concept" },
+          { "id": "los-eq-fc-2", "verb": "explain", "statement": "explain approaches to forecasting a company's revenues", "depth": "concept" },
+          { "id": "los-eq-fc-3", "verb": "explain", "statement": "explain approaches to forecasting a company's operating expenses and working capital", "depth": "concept" },
+          { "id": "los-eq-fc-4", "verb": "explain", "statement": "explain approaches to forecasting a company's capital investments and capital structure", "depth": "concept" },
+          { "id": "los-eq-fc-5", "verb": "describe", "statement": "describe the use of scenario analysis in forecasting", "depth": "concept" }
+        ]
+      }]
+    },
+    {
+      "id": "equity-valuation-concepts",
+      "name": "Equity Valuation: Concepts and Basic Tools",
+      "lessons": [{
+        "id": "eq-val-overview", "name": "Equity Valuation: Concepts and Basic Tools",
+        "los": [
+          { "id": "los-eq-val-1", "verb": "evaluate", "statement": "evaluate whether a security, given its current market price and a value estimate, is overvalued, fairly valued, or undervalued by the market", "depth": "application" },
+          { "id": "los-eq-val-2", "verb": "describe", "statement": "describe major categories of equity valuation models", "depth": "concept" },
+          { "id": "los-eq-val-3", "verb": "describe", "statement": "describe regular cash dividends, extra dividends, stock dividends, stock splits, reverse stock splits, and share repurchases", "depth": "concept" },
+          { "id": "los-eq-val-4", "verb": "describe", "statement": "describe dividend payment chronology", "depth": "concept" },
+          { "id": "los-eq-val-5", "verb": "explain", "statement": "explain the rationale for using present value models to value equity and describe the dividend discount and free-cash-flow-to-equity models", "depth": "concept" },
+          { "id": "los-eq-val-6", "verb": "calculate", "statement": "calculate the intrinsic value of a non-callable, non-convertible preferred stock", "depth": "calculation" },
+          { "id": "los-eq-val-7", "verb": "calculate", "statement": "calculate and interpret the intrinsic value of an equity security based on the Gordon (constant) growth dividend discount model or a two-stage dividend discount model, as appropriate", "depth": "calculation" },
+          { "id": "los-eq-val-8", "verb": "identify", "statement": "identify characteristics of companies for which the constant growth or a multistage dividend discount model is appropriate", "depth": "concept" },
+          { "id": "los-eq-val-9", "verb": "explain", "statement": "explain the rationale for using price multiples to value equity, how the price-to-earnings multiple relates to fundamentals, and the use of multiples based on comparables", "depth": "concept" },
+          { "id": "los-eq-val-10", "verb": "calculate", "statement": "calculate and interpret the following multiples: price-to-earnings, price-to-book value, price-to-sales, and price-to-cash flow", "depth": "calculation" },
+          { "id": "los-eq-val-11", "verb": "describe", "statement": "describe enterprise value multiples and their use in estimating equity value", "depth": "concept" },
+          { "id": "los-eq-val-12", "verb": "describe", "statement": "describe asset-based valuation models and their use in estimating equity value", "depth": "concept" },
+          { "id": "los-eq-val-13", "verb": "explain", "statement": "explain advantages and disadvantages of each category of valuation model", "depth": "concept" }
+        ]
+      }]
+    }
   ]
 }

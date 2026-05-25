@@ -8,25 +8,163 @@
   "weightHigh": 14,
   "color": "fi",
   "description": "Bonds: features, pricing, yield measures, term structure, credit analysis, securitisation. The other side of capital markets — debt rather than equity.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "fi-features",            "name": "Fixed-Income Instrument Features", "lessons": [] },
-    { "id": "fi-cash-flows",          "name": "Fixed-Income Cash Flows and Types", "lessons": [] },
-    { "id": "fi-issuance",            "name": "Fixed-Income Issuance and Trading", "lessons": [] },
-    { "id": "fi-markets",             "name": "Fixed-Income Markets for Corporate Issuers", "lessons": [] },
-    { "id": "fi-government-markets",  "name": "Fixed-Income Markets for Government Issuers", "lessons": [] },
-    { "id": "fi-valuation",           "name": "Fixed-Income Bond Valuation: Prices and Yields", "lessons": [] },
-    { "id": "fi-yield-measures",      "name": "Yield and Yield Spread Measures for Fixed-Rate Bonds", "lessons": [] },
-    { "id": "fi-yield-floating",      "name": "Yield and Yield Spread Measures for Floating-Rate Instruments", "lessons": [] },
-    { "id": "fi-term-structure",      "name": "The Term Structure of Interest Rates: Spot, Par, and Forward Curves", "lessons": [] },
-    { "id": "fi-interest-risk",       "name": "Interest Rate Risk and Return", "lessons": [] },
-    { "id": "fi-duration-convexity",  "name": "Yield-Based Bond Duration Measures and Properties", "lessons": [] },
-    { "id": "fi-convexity",           "name": "Yield-Based Bond Convexity and Portfolio Properties", "lessons": [] },
-    { "id": "fi-curve-duration",      "name": "Curve-Based and Empirical Fixed-Income Risk Measures", "lessons": [] },
-    { "id": "fi-credit-risk",         "name": "Credit Risk", "lessons": [] },
-    { "id": "fi-credit-analysis",     "name": "Credit Analysis for Government Issuers", "lessons": [] },
-    { "id": "fi-credit-corporates",   "name": "Credit Analysis for Corporate Issuers", "lessons": [] },
-    { "id": "fi-securitization",      "name": "Fixed-Income Securitization", "lessons": [] },
-    { "id": "fi-abs-mbs",             "name": "Asset-Backed Security (ABS) Instrument and Market Features", "lessons": [] },
-    { "id": "fi-mbs",                 "name": "Mortgage-Backed Security (MBS) Instrument and Market Features", "lessons": [] }
+    { "id": "fi-features", "name": "Fixed-Income Instrument Features",
+      "lessons": [{ "id": "fi-feat-overview", "name": "Fixed-Income Instrument Features",
+        "los": [
+          { "id": "los-fi-feat-1", "verb": "describe", "statement": "describe the features of a fixed-income security", "depth": "concept" },
+          { "id": "los-fi-feat-2", "verb": "describe", "statement": "describe the contents of a bond indenture and contrast affirmative and negative covenants", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-cash-flows", "name": "Fixed-Income Cash Flows and Types",
+      "lessons": [{ "id": "fi-cf-overview", "name": "Fixed-Income Cash Flows and Types",
+        "los": [
+          { "id": "los-fi-cf-1", "verb": "describe", "statement": "describe common cash flow structures of fixed-income instruments and contrast cash flow contingencies", "depth": "concept" },
+          { "id": "los-fi-cf-2", "verb": "describe", "statement": "describe how legal, regulatory, and tax considerations affect the issuance and trading of fixed-income securities", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-issuance", "name": "Fixed-Income Issuance and Trading",
+      "lessons": [{ "id": "fi-iss-overview", "name": "Fixed-Income Issuance and Trading",
+        "los": [
+          { "id": "los-fi-iss-1", "verb": "describe", "statement": "describe fixed-income market segments and their issuer and investor participants", "depth": "concept" },
+          { "id": "los-fi-iss-2", "verb": "describe", "statement": "describe types of fixed-income indexes", "depth": "concept" },
+          { "id": "los-fi-iss-3", "verb": "compare", "statement": "compare primary and secondary fixed-income markets to equity markets", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "fi-markets", "name": "Fixed-Income Markets for Corporate Issuers",
+      "lessons": [{ "id": "fi-mkt-overview", "name": "Fixed-Income Markets for Corporate Issuers",
+        "los": [
+          { "id": "los-fi-mkt-1", "verb": "describe", "statement": "describe short-term funding alternatives available to corporations", "depth": "concept" },
+          { "id": "los-fi-mkt-2", "verb": "describe", "statement": "describe repurchase agreements (repos), their uses, and their benefits and risks", "depth": "concept" },
+          { "id": "los-fi-mkt-3", "verb": "describe", "statement": "describe long-term corporate debt and the role of credit rating agencies", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-government-markets", "name": "Fixed-Income Markets for Government Issuers",
+      "lessons": [{ "id": "fi-gov-overview", "name": "Fixed-Income Markets for Government Issuers",
+        "los": [
+          { "id": "los-fi-gov-1", "verb": "describe", "statement": "describe the features and characteristics of debt securities issued by sovereign governments", "depth": "concept" },
+          { "id": "los-fi-gov-2", "verb": "describe", "statement": "describe the features and characteristics of debt securities issued by non-sovereign governments, quasi-government entities, and supranational agencies", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-valuation", "name": "Fixed-Income Bond Valuation: Prices and Yields",
+      "lessons": [{ "id": "fi-val-overview", "name": "Fixed-Income Bond Valuation: Prices and Yields",
+        "los": [
+          { "id": "los-fi-val-1", "verb": "calculate", "statement": "calculate a bond's price given a market discount rate", "depth": "calculation" },
+          { "id": "los-fi-val-2", "verb": "identify", "statement": "identify the relationships among a bond's price, coupon rate, maturity, and market discount rate (yield-to-maturity)", "depth": "concept" },
+          { "id": "los-fi-val-3", "verb": "calculate", "statement": "calculate a bond's flat price, accrued interest, and full price between coupon payments", "depth": "calculation" },
+          { "id": "los-fi-val-4", "verb": "describe", "statement": "describe matrix pricing", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-yield-measures", "name": "Yield and Yield Spread Measures for Fixed-Rate Bonds",
+      "lessons": [{ "id": "fi-ym-overview", "name": "Yield and Yield Spread Measures for Fixed-Rate Bonds",
+        "los": [
+          { "id": "los-fi-ym-1", "verb": "calculate", "statement": "calculate annual yield on a bond for varying compounding periods in a year", "depth": "calculation" },
+          { "id": "los-fi-ym-2", "verb": "compare", "statement": "compare, calculate, and interpret yield and yield spread measures for fixed-rate bonds", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "fi-yield-floating", "name": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+      "lessons": [{ "id": "fi-yf-overview", "name": "Yield and Yield Spread Measures for Floating-Rate Instruments",
+        "los": [
+          { "id": "los-fi-yf-1", "verb": "calculate", "statement": "calculate and interpret yield spread measures for floating-rate instruments", "depth": "calculation" },
+          { "id": "los-fi-yf-2", "verb": "calculate", "statement": "calculate and interpret yield measures for money market instruments", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "fi-term-structure", "name": "The Term Structure of Interest Rates: Spot, Par, and Forward Curves",
+      "lessons": [{ "id": "fi-ts-overview", "name": "The Term Structure of Interest Rates",
+        "los": [
+          { "id": "los-fi-ts-1", "verb": "define", "statement": "define spot rates and the spot curve, and calculate the price of a bond using spot rates", "depth": "calculation" },
+          { "id": "los-fi-ts-2", "verb": "compare", "statement": "compare the spot curve, par curve, and forward curve", "depth": "comparison" },
+          { "id": "los-fi-ts-3", "verb": "define", "statement": "define forward rates and calculate spot rates from forward rates, forward rates from spot rates, and the price of a bond using forward rates", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "fi-interest-risk", "name": "Interest Rate Risk and Return",
+      "lessons": [{ "id": "fi-ir-overview", "name": "Interest Rate Risk and Return",
+        "los": [
+          { "id": "los-fi-ir-1", "verb": "calculate", "statement": "calculate and interpret the sources of return from investing in a fixed-rate bond", "depth": "calculation" },
+          { "id": "los-fi-ir-2", "verb": "describe", "statement": "describe the relationships among a bond's holding period return, its duration, and the investment horizon", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-duration-convexity", "name": "Yield-Based Bond Duration Measures and Properties",
+      "lessons": [{ "id": "fi-dur-overview", "name": "Yield-Based Bond Duration Measures and Properties",
+        "los": [
+          { "id": "los-fi-dur-1", "verb": "define", "statement": "define, calculate, and interpret Macaulay, modified, and effective durations", "depth": "calculation" },
+          { "id": "los-fi-dur-2", "verb": "explain", "statement": "explain why effective duration is the most appropriate measure of interest rate risk for bonds with embedded options", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-convexity", "name": "Yield-Based Bond Convexity and Portfolio Properties",
+      "lessons": [{ "id": "fi-conv-overview", "name": "Yield-Based Bond Convexity and Portfolio Properties",
+        "los": [
+          { "id": "los-fi-conv-1", "verb": "calculate", "statement": "calculate and interpret convexity and describe the convexity adjustment", "depth": "calculation" },
+          { "id": "los-fi-conv-2", "verb": "calculate", "statement": "calculate the percentage price change of a bond for a specified change in yield, given the bond's duration and convexity", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "fi-curve-duration", "name": "Curve-Based and Empirical Fixed-Income Risk Measures",
+      "lessons": [{ "id": "fi-curve-overview", "name": "Curve-Based and Empirical Fixed-Income Risk Measures",
+        "los": [
+          { "id": "los-fi-curve-1", "verb": "describe", "statement": "describe key rate duration and its use in measuring the sensitivity of bond prices to changes in the shape of the benchmark yield curve", "depth": "concept" },
+          { "id": "los-fi-curve-2", "verb": "describe", "statement": "describe empirical duration and contrast it with analytical duration", "depth": "comparison" }
+        ]
+      }]
+    },
+    { "id": "fi-credit-risk", "name": "Credit Risk",
+      "lessons": [{ "id": "fi-cr-overview", "name": "Credit Risk",
+        "los": [
+          { "id": "los-fi-cr-1", "verb": "describe", "statement": "describe credit risk and its sources", "depth": "concept" },
+          { "id": "los-fi-cr-2", "verb": "describe", "statement": "describe seniority rankings of corporate debt and explain the potential violation of the priority of claims in a bankruptcy proceeding", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-credit-analysis", "name": "Credit Analysis for Government Issuers",
+      "lessons": [{ "id": "fi-cag-overview", "name": "Credit Analysis for Government Issuers",
+        "los": [
+          { "id": "los-fi-cag-1", "verb": "explain", "statement": "explain special considerations when evaluating the credit of sovereign and non-sovereign government debt issuers and issues", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-credit-corporates", "name": "Credit Analysis for Corporate Issuers",
+      "lessons": [{ "id": "fi-cc-overview", "name": "Credit Analysis for Corporate Issuers",
+        "los": [
+          { "id": "los-fi-cc-1", "verb": "describe", "statement": "describe the qualitative and quantitative factors used in evaluating corporate borrowers", "depth": "concept" },
+          { "id": "los-fi-cc-2", "verb": "calculate", "statement": "calculate and interpret financial ratios used in credit analysis", "depth": "calculation" }
+        ]
+      }]
+    },
+    { "id": "fi-securitization", "name": "Fixed-Income Securitization",
+      "lessons": [{ "id": "fi-sec-overview", "name": "Fixed-Income Securitization",
+        "los": [
+          { "id": "los-fi-sec-1", "verb": "explain", "statement": "explain benefits of securitization for issuers, investors, economies, and financial markets", "depth": "concept" },
+          { "id": "los-fi-sec-2", "verb": "describe", "statement": "describe the securitization process, including roles of participants and structures employed", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-abs-mbs", "name": "Asset-Backed Security (ABS) Instrument and Market Features",
+      "lessons": [{ "id": "fi-abs-overview", "name": "Asset-Backed Security Instrument and Market Features",
+        "los": [
+          { "id": "los-fi-abs-1", "verb": "describe", "statement": "describe characteristics and risks of covered bonds and how they differ from other asset-backed securities", "depth": "concept" },
+          { "id": "los-fi-abs-2", "verb": "describe", "statement": "describe types and characteristics of non-mortgage asset-backed securities", "depth": "concept" }
+        ]
+      }]
+    },
+    { "id": "fi-mbs", "name": "Mortgage-Backed Security (MBS) Instrument and Market Features",
+      "lessons": [{ "id": "fi-mbs-overview", "name": "Mortgage-Backed Security Instrument and Market Features",
+        "los": [
+          { "id": "los-fi-mbs-1", "verb": "describe", "statement": "describe characteristics and risks of mortgage-backed securities, including types of prepayment risks", "depth": "concept" },
+          { "id": "los-fi-mbs-2", "verb": "describe", "statement": "describe how structural features of CMOs redistribute prepayment risk", "depth": "concept" }
+        ]
+      }]
+    }
   ]
 }

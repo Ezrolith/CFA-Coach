@@ -8,17 +8,179 @@
   "weightHigh": 9,
   "color": "quant",
   "description": "Statistical and mathematical foundations for finance. Time value of money, probability, sampling, hypothesis testing, regression. Underpins every other topic.",
+  "draftFlag": "LOS list authored from training knowledge; verify against current CFA Institute Level 1 syllabus.",
   "modules": [
-    { "id": "quant-rates-returns",        "name": "Rates and Returns", "lessons": [] },
-    { "id": "quant-time-value",           "name": "The Time Value of Money in Finance", "lessons": [] },
-    { "id": "quant-statistical-measures", "name": "Statistical Measures of Asset Returns", "lessons": [] },
-    { "id": "quant-probability-trees",    "name": "Probability Trees and Conditional Expectations", "lessons": [] },
-    { "id": "quant-portfolio-math",       "name": "Portfolio Mathematics", "lessons": [] },
-    { "id": "quant-simulation",           "name": "Simulation Methods", "lessons": [] },
-    { "id": "quant-estimation",           "name": "Estimation and Inference", "lessons": [] },
-    { "id": "quant-hypothesis",           "name": "Hypothesis Testing", "lessons": [] },
-    { "id": "quant-parametric",           "name": "Parametric and Non-Parametric Tests of Independence", "lessons": [] },
-    { "id": "quant-simple-regression",    "name": "Simple Linear Regression", "lessons": [] },
-    { "id": "quant-big-data",             "name": "Introduction to Big Data Techniques", "lessons": [] }
+    {
+      "id": "quant-rates-returns",
+      "name": "Rates and Returns",
+      "lessons": [
+        {
+          "id": "quant-rates-returns-overview",
+          "name": "Rates and Returns",
+          "los": [
+            { "id": "los-quant-rates-1", "verb": "calculate", "statement": "calculate and interpret different approaches to return measurement over time and describe their appropriate uses", "depth": "calculation" },
+            { "id": "los-quant-rates-2", "verb": "compare", "statement": "compare the money-weighted and time-weighted rates of return and evaluate the performance of portfolios based on these measures", "depth": "comparison" },
+            { "id": "los-quant-rates-3", "verb": "calculate", "statement": "calculate and interpret annualized return measures and continuously compounded returns, and describe their appropriate uses", "depth": "calculation" },
+            { "id": "los-quant-rates-4", "verb": "calculate", "statement": "calculate and interpret major return measures and describe their appropriate uses", "depth": "calculation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-time-value",
+      "name": "The Time Value of Money in Finance",
+      "lessons": [
+        {
+          "id": "quant-time-value-overview",
+          "name": "The Time Value of Money in Finance",
+          "los": [
+            { "id": "los-quant-tvm-1", "verb": "calculate", "statement": "calculate and interpret the present value (PV) of fixed-income and equity instruments based on expected future cash flows", "depth": "calculation" },
+            { "id": "los-quant-tvm-2", "verb": "calculate", "statement": "calculate the implied return of fixed-income instruments and required return and implied growth of equity instruments given the present value (PV) and cash flows", "depth": "calculation" },
+            { "id": "los-quant-tvm-3", "verb": "explain", "statement": "explain the cash flow additivity principle, its importance for the no-arbitrage condition, and its use in calculating implied forward rates, forward exchange rates, and option values", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-statistical-measures",
+      "name": "Statistical Measures of Asset Returns",
+      "lessons": [
+        {
+          "id": "quant-stats-overview",
+          "name": "Statistical Measures of Asset Returns",
+          "los": [
+            { "id": "los-quant-stats-1", "verb": "calculate", "statement": "calculate, interpret, and evaluate measures of central tendency and location to address an investment problem", "depth": "calculation" },
+            { "id": "los-quant-stats-2", "verb": "calculate", "statement": "calculate, interpret, and evaluate measures of dispersion to address an investment problem", "depth": "calculation" },
+            { "id": "los-quant-stats-3", "verb": "interpret", "statement": "interpret and evaluate measures of skewness and kurtosis to address an investment problem", "depth": "interpretation" },
+            { "id": "los-quant-stats-4", "verb": "interpret", "statement": "interpret correlation between two variables to address an investment problem", "depth": "interpretation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-probability-trees",
+      "name": "Probability Trees and Conditional Expectations",
+      "lessons": [
+        {
+          "id": "quant-prob-overview",
+          "name": "Probability Trees and Conditional Expectations",
+          "los": [
+            { "id": "los-quant-prob-1", "verb": "calculate", "statement": "calculate expected values, variances, and standard deviations and demonstrate their application to investment problems", "depth": "calculation" },
+            { "id": "los-quant-prob-2", "verb": "formulate", "statement": "formulate an investment problem as a probability tree and explain the use of conditional expectations in investment application", "depth": "concept" },
+            { "id": "los-quant-prob-3", "verb": "calculate", "statement": "calculate and interpret an updated probability in an investment setting using Bayes' formula", "depth": "calculation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-portfolio-math",
+      "name": "Portfolio Mathematics",
+      "lessons": [
+        {
+          "id": "quant-portmath-overview",
+          "name": "Portfolio Mathematics",
+          "los": [
+            { "id": "los-quant-pm-1", "verb": "calculate", "statement": "calculate and interpret the expected value, variance, standard deviation, covariances, and correlations of portfolio returns", "depth": "calculation" },
+            { "id": "los-quant-pm-2", "verb": "calculate", "statement": "calculate and interpret the covariance and correlation of portfolio returns using a joint probability function for returns", "depth": "calculation" },
+            { "id": "los-quant-pm-3", "verb": "define", "statement": "define shortfall risk, calculate the safety-first ratio, and identify an optimal portfolio using Roy's safety-first criterion", "depth": "calculation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-simulation",
+      "name": "Simulation Methods",
+      "lessons": [
+        {
+          "id": "quant-sim-overview",
+          "name": "Simulation Methods",
+          "los": [
+            { "id": "los-quant-sim-1", "verb": "explain", "statement": "explain the relationship between normal and lognormal distributions and why the lognormal distribution is used to model asset prices when continuously compounded asset returns are normally distributed", "depth": "concept" },
+            { "id": "los-quant-sim-2", "verb": "describe", "statement": "describe Monte Carlo simulation and explain how it can be used in investment applications", "depth": "concept" },
+            { "id": "los-quant-sim-3", "verb": "describe", "statement": "describe the use of bootstrap resampling in conducting a simulation based on observed data", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-estimation",
+      "name": "Estimation and Inference",
+      "lessons": [
+        {
+          "id": "quant-est-overview",
+          "name": "Estimation and Inference",
+          "los": [
+            { "id": "los-quant-est-1", "verb": "compare", "statement": "compare and contrast simple random, stratified random, cluster, convenience, and judgmental sampling and their implications for sampling error in an investment problem", "depth": "comparison" },
+            { "id": "los-quant-est-2", "verb": "explain", "statement": "explain the central limit theorem and its importance for the distribution and standard error of the sample mean", "depth": "concept" },
+            { "id": "los-quant-est-3", "verb": "describe", "statement": "describe the use of resampling (bootstrap, jackknife) to estimate the sampling distribution of a statistic", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-hypothesis",
+      "name": "Hypothesis Testing",
+      "lessons": [
+        {
+          "id": "quant-hyp-overview",
+          "name": "Hypothesis Testing",
+          "los": [
+            { "id": "los-quant-hyp-1", "verb": "define", "statement": "define a hypothesis, describe the steps of hypothesis testing, and describe and interpret the choice of the null and alternative hypotheses", "depth": "concept" },
+            { "id": "los-quant-hyp-2", "verb": "compare", "statement": "compare and contrast one-tailed and two-tailed tests of hypotheses", "depth": "comparison" },
+            { "id": "los-quant-hyp-3", "verb": "explain", "statement": "explain a test statistic, Type I and Type II errors, a significance level, how significance levels are used in hypothesis testing, and the power of a test", "depth": "concept" },
+            { "id": "los-quant-hyp-4", "verb": "explain", "statement": "explain a decision rule and the relation between confidence intervals and hypothesis tests, and determine whether a statistically significant result is also economically meaningful", "depth": "concept" },
+            { "id": "los-quant-hyp-5", "verb": "explain", "statement": "explain and interpret the p-value as it relates to hypothesis testing", "depth": "interpretation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-parametric",
+      "name": "Parametric and Non-Parametric Tests of Independence",
+      "lessons": [
+        {
+          "id": "quant-paramtests-overview",
+          "name": "Parametric and Non-Parametric Tests of Independence",
+          "los": [
+            { "id": "los-quant-pt-1", "verb": "explain", "statement": "explain parametric versus nonparametric tests and the use of each", "depth": "concept" },
+            { "id": "los-quant-pt-2", "verb": "explain", "statement": "explain tests of correlation between two variables, and calculate and interpret a test statistic for a correlation", "depth": "calculation" },
+            { "id": "los-quant-pt-3", "verb": "explain", "statement": "explain tests of independence based on contingency table data", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-simple-regression",
+      "name": "Simple Linear Regression",
+      "lessons": [
+        {
+          "id": "quant-slr-overview",
+          "name": "Simple Linear Regression",
+          "los": [
+            { "id": "los-quant-slr-1", "verb": "describe", "statement": "describe a simple linear regression model, how the least squares criterion is used to estimate regression coefficients, and the interpretation of these coefficients", "depth": "concept" },
+            { "id": "los-quant-slr-2", "verb": "explain", "statement": "explain the assumptions underlying the simple linear regression model and describe how residuals are used to investigate these assumptions", "depth": "concept" },
+            { "id": "los-quant-slr-3", "verb": "calculate", "statement": "calculate and interpret measures of fit and formulate and evaluate tests of fit and of regression coefficients in a simple linear regression", "depth": "calculation" },
+            { "id": "los-quant-slr-4", "verb": "describe", "statement": "describe the use of analysis of variance (ANOVA) in regression analysis, interpret ANOVA results, and calculate and interpret the standard error of the estimate in a simple linear regression", "depth": "interpretation" },
+            { "id": "los-quant-slr-5", "verb": "calculate", "statement": "calculate and interpret the predicted value for the dependent variable, and a prediction interval for it, given an estimated linear regression model and a value for the independent variable", "depth": "calculation" },
+            { "id": "los-quant-slr-6", "verb": "describe", "statement": "describe different functional forms of simple linear regressions", "depth": "concept" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant-big-data",
+      "name": "Introduction to Big Data Techniques",
+      "lessons": [
+        {
+          "id": "quant-bigdata-overview",
+          "name": "Introduction to Big Data Techniques",
+          "los": [
+            { "id": "los-quant-bd-1", "verb": "describe", "statement": "describe the use of big data in investment management, including the types and sources of big data and challenges of working with it", "depth": "concept" },
+            { "id": "los-quant-bd-2", "verb": "describe", "statement": "describe machine learning, the major types of machine learning, and their applications in investment management", "depth": "concept" },
+            { "id": "los-quant-bd-3", "verb": "describe", "statement": "describe the steps in financial forecasting using machine learning", "depth": "concept" }
+          ]
+        }
+      ]
+    }
   ]
 }

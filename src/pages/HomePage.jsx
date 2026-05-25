@@ -32,10 +32,10 @@ export default function HomePage() {
 
         {/* Stat strip */}
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-px bg-ink-200/60 dark:bg-ink-800/60 rounded-2xl overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
-          <Stat label="Topics"      value={counts.topics} />
-          <Stat label="Modules"     value={counts.modules} />
-          <Stat label="Days to exam" value={days.toLocaleString()} accent />
-          <Stat label="Hours/day suggested" value="1.0" suffix="h" />
+          <Stat label="Topics"        value={counts.topics} />
+          <Stat label="Modules"       value={counts.modules} />
+          <Stat label="LOS to learn"  value={counts.los} />
+          <Stat label="Days to exam"  value={days.toLocaleString()} accent />
         </div>
       </section>
 

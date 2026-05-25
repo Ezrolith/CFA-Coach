@@ -27,6 +27,20 @@ export function getModuleById(topicId, moduleId) {
   return topic.modules.find(m => m.id === moduleId) ?? null;
 }
 
+// Find a lesson + its parent module + parent topic by lesson id, anywhere in the curriculum.
+export function findLesson(lessonId) {
+  for (const topic of TOPICS) {
+    for (const module of topic.modules) {
+      for (const lesson of (module.lessons ?? [])) {
+        if (lesson.id === lessonId) {
+          return { topic, module, lesson };
+        }
+      }
+    }
+  }
+  return null;
+}
+
 // Total module count + (eventual) lesson + LOS counts
 export function totalCounts() {
   let modules = 0;
