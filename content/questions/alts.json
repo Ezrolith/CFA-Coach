@@ -2,6 +2,474 @@
   "topicId": "alts",
   "questions": [
     {
+      "id": "q-alts-perf-001",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "medium",
+      "stem": "TVPI for a private equity fund is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Distributions / Paid-In Capital only." },
+        { "id": "B", "text": "(Distributions + Residual NAV) / Paid-In Capital." },
+        { "id": "C", "text": "Residual NAV / Paid-In Capital only." }
+      ],
+      "answer": "B",
+      "explanation": "TVPI = (Distributions + Residual NAV) / Paid-In = DPI + RVPI. Total value multiple including realised + unrealised.\n\n**A** is DPI only.\n**C** is RVPI only."
+    },
+    {
+      "id": "q-alts-perf-002",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "easy",
+      "stem": "The *J-curve* in private equity returns *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "The shape of net cash flows over time — negative early, positive later as distributions arrive." },
+        { "id": "B", "text": "A specific consultant's name." },
+        { "id": "C", "text": "A type of derivative." }
+      ],
+      "answer": "A",
+      "explanation": "J-curve: PE fund net cash flows look like the letter J. Negative in early years (capital calls + fees, no realisations). Positive in later years (distributions from exits).\n\n**B** and **C** are unrelated."
+    },
+    {
+      "id": "q-alts-perf-003",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "medium",
+      "stem": "A hedge fund returns 18% gross. Management fee 1.5%; performance fee 20% above 8% hurdle. Net return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "12.5%" },
+        { "id": "B", "text": "14.5%" },
+        { "id": "C", "text": "16.0%" }
+      ],
+      "answer": "B",
+      "explanation": "Return above hurdle: 18 − 8 = 10%. Performance fee: 10 × 20% = 2%.\n\nNet = 18 − 1.5 − 2 = 14.5%.\n\n**A** subtracts performance fee on full return (incorrect).\n**C** subtracts only management fee."
+    },
+    {
+      "id": "q-alts-perf-004",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "hard",
+      "stem": "Reported volatility of private real estate funds is *most likely* lower than their economic volatility because:",
+      "choices": [
+        { "id": "A", "text": "Appraisal-based valuations smooth period-to-period movements." },
+        { "id": "B", "text": "Private real estate has genuinely lower economic risk than public REITs." },
+        { "id": "C", "text": "Regulators cap reported volatility." }
+      ],
+      "answer": "A",
+      "explanation": "Appraisers anchor to previous values and update slowly — smoothing returns. Reported σ understates true economic risk. Unsmoothing techniques typically raise reported σ significantly.\n\n**B** misinterprets smoothing as real risk reduction.\n**C** is fictitious."
+    },
+    {
+      "id": "q-alts-perf-005",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "medium",
+      "stem": "Survivorship bias in private equity returns *most likely* causes industry-reported returns to:",
+      "choices": [
+        { "id": "A", "text": "Understate average returns by hiding successful funds." },
+        { "id": "B", "text": "Overstate average returns by excluding failed funds that drop out of databases." },
+        { "id": "C", "text": "Be unaffected." }
+      ],
+      "answer": "B",
+      "explanation": "Failed PE funds stop reporting. Industry indices over-represent survivors → reported returns are higher than the true average across all funds. Estimated overstatement: 1-3% per year.\n\n**A** is reversed.\n**C** misreads."
+    },
+    {
+      "id": "q-alts-perf-006",
+      "lessonId": "alts-perf-overview",
+      "difficulty": "easy",
+      "stem": "The standard PE fee structure is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "1.5-2% management fee + 20% performance fee above 6-8% hurdle with high-water mark." },
+        { "id": "B", "text": "Flat 0.5% management fee with no performance fee." },
+        { "id": "C", "text": "100% management fee and no performance fee." }
+      ],
+      "answer": "A",
+      "explanation": "'2 and 20' is the classic PE structure. Many variations on it (slightly lower fees with competition), but the basic shape is consistent: management fee + performance fee + hurdle + high-water mark + (often) clawback.\n\n**B** and **C** are not PE structures."
+    },
+    {
+      "id": "q-alts-pc-001",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "medium",
+      "stem": "Venture capital (VC) *most likely* differs from leveraged buyouts (LBOs) because:",
+      "choices": [
+        { "id": "A", "text": "VC invests in early-stage companies with high failure rates; LBOs acquire mature companies with significant debt financing." },
+        { "id": "B", "text": "VC uses more leverage than LBOs." },
+        { "id": "C", "text": "They are identical strategies." }
+      ],
+      "answer": "A",
+      "explanation": "VC: early-stage, equity-funded, power-law returns (few huge winners). LBO: mature, debt-funded, operational + financial engineering.\n\n**B** has it backwards — LBOs use much more leverage.\n**C** is incorrect — they're distinct strategies."
+    },
+    {
+      "id": "q-alts-pc-002",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "medium",
+      "stem": "An LBO PE firm creates value *most likely* through:",
+      "choices": [
+        { "id": "A", "text": "Operational improvement, multiple expansion, financial engineering (debt + tax shield)." },
+        { "id": "B", "text": "Pure market timing." },
+        { "id": "C", "text": "Government subsidies." }
+      ],
+      "answer": "A",
+      "explanation": "LBO value creation: improve operations (margins, efficiency), exit at higher multiple than entry, use leverage advantageously (tax shield + debt paydown). Best LBOs do all three.\n\n**B** is occasional but not the systematic source.\n**C** is unrelated."
+    },
+    {
+      "id": "q-alts-pc-003",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "easy",
+      "stem": "Private debt as a sub-category of alternatives *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Direct lending, mezzanine, distressed debt, special situations." },
+        { "id": "B", "text": "Only US Treasury bills." },
+        { "id": "C", "text": "Only mortgages." }
+      ],
+      "answer": "A",
+      "explanation": "Private debt: direct lending (replacing bank loans), mezzanine (subordinated with equity features), distressed debt (defaulted), special situations.\n\n**B** is public sovereign debt.\n**C** is too narrow."
+    },
+    {
+      "id": "q-alts-pc-004",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "medium",
+      "stem": "The 'Public Market Equivalent' (PME) *most likely* compares:",
+      "choices": [
+        { "id": "A", "text": "Actual private equity returns to what the same capital would have returned in public markets." },
+        { "id": "B", "text": "PE returns to investment-grade bonds." },
+        { "id": "C", "text": "PE returns to inflation only." }
+      ],
+      "answer": "A",
+      "explanation": "PME: hypothetical return if the PE fund's cash flows had been invested in a public market index instead. Apples-to-apples comparison accounting for timing.\n\nKaplan-Schoar found PE roughly comparable to or modestly above public markets net of fees.\n\n**B** and **C** are specific comparisons, not the PME framework."
+    },
+    {
+      "id": "q-alts-pc-005",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "hard",
+      "stem": "Private capital fund structures *most likely* organize as:",
+      "choices": [
+        { "id": "A", "text": "Limited partnerships with GP (manager) and LPs (investors), 10-year life, capital calls and distributions over time." },
+        { "id": "B", "text": "Public corporations with daily trading." },
+        { "id": "C", "text": "Government entities." }
+      ],
+      "answer": "A",
+      "explanation": "PE funds: limited partnerships. GP runs; LPs provide most capital (with limited liability). Life typically 10 years (5-year investment + 5-year harvest). Calls and distributions over time.\n\n**B** describes public corporations.\n**C** is incorrect."
+    },
+    {
+      "id": "q-alts-pc-006",
+      "lessonId": "alts-pc-overview",
+      "difficulty": "easy",
+      "stem": "Direct lending (private debt) *most likely* fills the financing gap:",
+      "choices": [
+        { "id": "A", "text": "For mid-market companies where traditional bank lending has retreated post-2008." },
+        { "id": "B", "text": "Only for companies in default." },
+        { "id": "C", "text": "Only for governments." }
+      ],
+      "answer": "A",
+      "explanation": "Direct lending grew dramatically post-2008 as banks reduced mid-market lending due to capital requirements. Provides senior secured loans to companies with $50m-$500m EBITDA typically.\n\n**B** is distressed debt (different category).\n**C** is sovereign debt (public)."
+    },
+    {
+      "id": "q-alts-re-001",
+      "lessonId": "alts-re-overview",
+      "difficulty": "easy",
+      "stem": "A capitalisation rate ('cap rate') for real estate *most likely* equals:",
+      "choices": [
+        { "id": "A", "text": "Net Operating Income / Property Value." },
+        { "id": "B", "text": "Property Value / Net Operating Income." },
+        { "id": "C", "text": "Property Value / Annual Rent." }
+      ],
+      "answer": "A",
+      "explanation": "Cap rate = NOI / Property Value. Standard real estate yield measure. Lower cap = more expensive on income basis; higher cap = cheaper.\n\n**B** is the inverse (P/E equivalent).\n**C** uses rent rather than NOI."
+    },
+    {
+      "id": "q-alts-re-002",
+      "lessonId": "alts-re-overview",
+      "difficulty": "medium",
+      "stem": "REITs (Real Estate Investment Trusts) in the US *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Are publicly traded and required to distribute 90%+ of taxable income." },
+        { "id": "B", "text": "Are private partnerships only available to accredited investors." },
+        { "id": "C", "text": "Are foreign investment vehicles only." }
+      ],
+      "answer": "A",
+      "explanation": "REITs: publicly traded entities holding real estate portfolios. 90%+ distribution requirement provides tax pass-through. Daily-traded, liquid, accessible.\n\n**B** describes private RE funds.\n**C** is incorrect."
+    },
+    {
+      "id": "q-alts-re-003",
+      "lessonId": "alts-re-overview",
+      "difficulty": "medium",
+      "stem": "Infrastructure investments *most likely* differ from real estate because:",
+      "choices": [
+        { "id": "A", "text": "Infrastructure has more predictable, often contractually-linked cash flows (regulated utilities, contracts)." },
+        { "id": "B", "text": "Real estate has more predictable cash flows." },
+        { "id": "C", "text": "They are identical investment types." }
+      ],
+      "answer": "A",
+      "explanation": "Infrastructure: regulated utilities, contracted toll roads, etc. — typically more predictable cash flows. Real estate: more market-driven (rent renegotiations, occupancy changes).\n\nBoth diversify from equity; infrastructure more so.\n\n**B** is reversed.\n**C** is incorrect."
+    },
+    {
+      "id": "q-alts-re-004",
+      "lessonId": "alts-re-overview",
+      "difficulty": "easy",
+      "stem": "Core real estate strategy *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "High-quality, well-leased properties in prime markets with lower risk and lower returns (6-8%)." },
+        { "id": "B", "text": "Distressed properties needing major renovation." },
+        { "id": "C", "text": "Ground-up development projects." }
+      ],
+      "answer": "A",
+      "explanation": "Core: prime properties, well-leased, low risk, modest returns. Value-add: needs improvements (10-13% target returns). Opportunistic: development or distressed (15%+ target).\n\nRisk-return spectrum: core (low) → value-add (mid) → opportunistic (high).\n\n**B** is value-add or opportunistic.\n**C** is opportunistic."
+    },
+    {
+      "id": "q-alts-re-005",
+      "lessonId": "alts-re-overview",
+      "difficulty": "medium",
+      "stem": "An investor needing liquidity *most likely* prefers:",
+      "choices": [
+        { "id": "A", "text": "REITs over direct real estate ownership." },
+        { "id": "B", "text": "Direct real estate over REITs." },
+        { "id": "C", "text": "Private real estate funds." }
+      ],
+      "answer": "A",
+      "explanation": "REITs: liquid (daily traded). Direct ownership: highly illiquid (months-years to sell property). Private RE funds: locked up 5-10 years.\n\nFor liquidity needs, REITs are the appropriate vehicle despite higher correlation with equity markets.\n\n**B** and **C** are illiquid choices."
+    },
+    {
+      "id": "q-alts-re-006",
+      "lessonId": "alts-re-overview",
+      "difficulty": "medium",
+      "stem": "Real estate returns *most likely* come from:",
+      "choices": [
+        { "id": "A", "text": "Mostly income (rent) plus some appreciation; typical 6-10% long-term." },
+        { "id": "B", "text": "Mostly speculation on land prices." },
+        { "id": "C", "text": "Only from interest on mortgages." }
+      ],
+      "answer": "A",
+      "explanation": "Real estate returns historically 60-70% income (rent), 30-40% appreciation. Long-term ~6-10% per year. Inflation linkage in rents adds partial inflation hedge.\n\n**B** is raw land speculation, not core real estate.\n**C** is mortgage finance, different from equity real estate."
+    },
+    {
+      "id": "q-alts-nr-001",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "medium",
+      "stem": "For a commodity futures investor in a *contango* market (forward > spot), the *roll yield* is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Positive (gains from rolling positions)." },
+        { "id": "B", "text": "Negative (losses from rolling positions)." },
+        { "id": "C", "text": "Zero." }
+      ],
+      "answer": "B",
+      "explanation": "Contango: futures > spot. To maintain exposure, sell expiring contracts at spot, buy further-out contracts at higher prices. Net cost = negative roll yield.\n\nMost commodities have been in contango most of the time historically → significant drag on commodity futures investors.\n\n**A** would be backwardation.\n**C** is the special case of flat forward curve."
+    },
+    {
+      "id": "q-alts-nr-002",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "easy",
+      "stem": "Timberland and farmland as alternative investments *most likely* offer:",
+      "choices": [
+        { "id": "A", "text": "Stable income plus appreciation, with some inflation hedge and equity diversification." },
+        { "id": "B", "text": "High volatility and no income." },
+        { "id": "C", "text": "Identical risk-return to gold." }
+      ],
+      "answer": "A",
+      "explanation": "Both timberland and farmland generate income (timber sales or farm rent) and asset value can appreciate. Inflation-linked partially. Diversification from public equity.\n\n**B** describes raw land speculation.\n**C** is incorrect — different assets with different drivers."
+    },
+    {
+      "id": "q-alts-nr-003",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "medium",
+      "stem": "Gold's role as an *inflation hedge* is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Partial — preserves purchasing power over multi-decade horizons but unreliable short-term." },
+        { "id": "B", "text": "Perfect — always tracks inflation precisely." },
+        { "id": "C", "text": "Negative correlation with inflation." }
+      ],
+      "answer": "A",
+      "explanation": "Gold has roughly preserved purchasing power over multi-decade periods. Short-term, it often correlates more with real interest rates than current inflation. In 2022 (sharp inflation), gold was initially flat — undermining the simple inflation-hedge view.\n\nBetter inflation hedges: TIPS (direct linkage), real estate (rent linkage), diversified commodities.\n\n**B** overstates.\n**C** is incorrect — generally positive long-term correlation."
+    },
+    {
+      "id": "q-alts-nr-004",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "easy",
+      "stem": "Commodity *spot returns* refer to *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Changes in physical commodity prices." },
+        { "id": "B", "text": "Roll yield from futures positions." },
+        { "id": "C", "text": "Interest on cash collateral." }
+      ],
+      "answer": "A",
+      "explanation": "Spot return = change in physical price. Total return for futures investor = spot return + roll yield + collateral return.\n\n**B** and **C** are separate components."
+    },
+    {
+      "id": "q-alts-nr-005",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "easy",
+      "stem": "Raw land (undeveloped) as an investment *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "No income; speculative on future development; high volatility; very illiquid." },
+        { "id": "B", "text": "Stable income from rent." },
+        { "id": "C", "text": "Identical risk-return to commodity futures." }
+      ],
+      "answer": "A",
+      "explanation": "Raw land: no income, speculation on development, high volatility, very illiquid. Returns depend on timing and outcome of development.\n\n**B** describes farmland (with cultivation income).\n**C** is incorrect — very different asset."
+    },
+    {
+      "id": "q-alts-nr-006",
+      "lessonId": "alts-nr-overview",
+      "difficulty": "medium",
+      "stem": "Why do commodity ETFs based on rolling futures often *underperform spot prices*?",
+      "choices": [
+        { "id": "A", "text": "They incur roll costs in contango markets, eroding returns relative to physical spot price changes." },
+        { "id": "B", "text": "They track spot prices exactly." },
+        { "id": "C", "text": "They outperform spot due to leverage." }
+      ],
+      "answer": "A",
+      "explanation": "Most commodities have been in contango most of the time. Rolling futures means selling expiring at spot, buying next-month higher — incurring losses on each roll. Cumulative effect significantly erodes futures-based ETF returns vs spot.\n\nThis is why USO (US Oil ETF) significantly underperformed crude prices over many periods.\n\n**B** is incorrect — futures-based ETFs don't track spot.\n**C** is reversed."
+    },
+    {
+      "id": "q-alts-hf-001",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "easy",
+      "stem": "A hedge fund using a *long/short equity* strategy *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Buys stocks expected to rise and shorts stocks expected to fall, with returns driven by stock selection skill." },
+        { "id": "B", "text": "Only buys stocks." },
+        { "id": "C", "text": "Trades only commodities and currencies." }
+      ],
+      "answer": "A",
+      "explanation": "Long/short equity: most common hedge fund strategy. Long position in stocks expected to outperform; short position in stocks expected to underperform. Returns ideally from stock selection (alpha), not market direction.\n\n**B** describes long-only mutual fund.\n**C** is global macro, different strategy."
+    },
+    {
+      "id": "q-alts-hf-002",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "medium",
+      "stem": "Merger arbitrage strategy *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Buying the target company's stock and shorting the acquirer's stock after an announced acquisition, profiting if the deal closes." },
+        { "id": "B", "text": "Predicting which companies will be acquired before any announcement." },
+        { "id": "C", "text": "Only buying targets of friendly takeovers." }
+      ],
+      "answer": "A",
+      "explanation": "Merger arbitrage: after deal announcement, target stock typically trades just below deal price (reflecting risk deal won't close). Strategy buys target, shorts acquirer in stock deals.\n\nReturns: small per deal (3-8% annualised typical), with occasional large losses if deals collapse. Asymmetric return profile.\n\n**B** is pre-announcement speculation (different).\n**C** is too narrow."
+    },
+    {
+      "id": "q-alts-hf-003",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "medium",
+      "stem": "Quant (systematic) hedge funds *most likely* use:",
+      "choices": [
+        { "id": "A", "text": "Algorithmic strategies driven by statistical models and machine learning." },
+        { "id": "B", "text": "Pure intuition from charismatic individual traders." },
+        { "id": "C", "text": "Only government bonds." }
+      ],
+      "answer": "A",
+      "explanation": "Quant funds: algorithmic, model-driven strategies. Examples: Renaissance Technologies (Medallion fund), Two Sigma, DE Shaw.\n\nUse statistical arbitrage, factor investing, machine learning. Major area of HF growth.\n\n**B** describes discretionary strategies.\n**C** is too narrow."
+    },
+    {
+      "id": "q-alts-hf-004",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "easy",
+      "stem": "Performance dispersion among hedge funds is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Substantial — top quartile vs bottom quartile difference often 10-15 percentage points annually." },
+        { "id": "B", "text": "Minimal — all HF perform similarly." },
+        { "id": "C", "text": "Lower than mutual funds." }
+      ],
+      "answer": "A",
+      "explanation": "HF performance dispersion is much larger than mutual funds. Top vs bottom quartile spread typically 10-15% annually. Manager selection matters enormously in this space.\n\n**B** is incorrect — huge dispersion.\n**C** is reversed."
+    },
+    {
+      "id": "q-alts-hf-005",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "hard",
+      "stem": "Famous hedge fund blow-ups (LTCM 1998, Amaranth 2006, Archegos 2021) *most likely* shared:",
+      "choices": [
+        { "id": "A", "text": "Excessive leverage combined with concentrated positions and failure of risk management." },
+        { "id": "B", "text": "Insufficient leverage and over-diversification." },
+        { "id": "C", "text": "Excessive regulatory oversight." }
+      ],
+      "answer": "A",
+      "explanation": "Classic HF disaster pattern: high leverage (often 20-50× equity) + concentrated positions + correlated bets (positions look diversified but aren't) + weak risk management.\n\nLTCM 1998: leverage + correlations broke down.\nAmaranth 2006: concentrated natural gas trader.\nArchegos 2021: family office with cross-margined positions.\n\nAll three had insufficient risk management for the leverage they ran.\n\n**B** is the opposite.\n**C** is unrelated."
+    },
+    {
+      "id": "q-alts-hf-006",
+      "lessonId": "alts-hf-overview",
+      "difficulty": "medium",
+      "stem": "The HF '2/20' fee structure *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "2% management fee + 20% performance fee above hurdle (often with high-water mark)." },
+        { "id": "B", "text": "Fees only 2% of returns." },
+        { "id": "C", "text": "20% fee on assets and 2% performance." }
+      ],
+      "answer": "A",
+      "explanation": "Classic HF structure: 2% management fee (annual on AUM) + 20% performance fee (on profits above any hurdle).\n\nMost contemporary HF compress fees: 1-1.75% management + 15-20% performance.\n\nNet impact: gross 12-15% returns → net 6-9% historically.\n\n**B** and **C** are not the standard 2/20."
+    },
+    {
+      "id": "q-alts-da-001",
+      "lessonId": "alts-da-overview",
+      "difficulty": "easy",
+      "stem": "Digital assets, in general, *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Have very high volatility (60-100%+ annual) and extreme drawdowns (70-85% peak-to-trough)." },
+        { "id": "B", "text": "Have very low volatility, suitable for capital preservation." },
+        { "id": "C", "text": "Track US bonds closely." }
+      ],
+      "answer": "A",
+      "explanation": "Digital assets (especially major cryptos): annual volatility 60-100%+. Drawdowns of 70-85% multiple times in history (BTC 2013-15, 2018, 2022).\n\nVolatility multiples of equity; drawdowns much worse than equity worst cases.\n\n**B** is the opposite.\n**C** is unrelated."
+    },
+    {
+      "id": "q-alts-da-002",
+      "lessonId": "alts-da-overview",
+      "difficulty": "medium",
+      "stem": "Bitcoin uses *Proof of Work* consensus, while Ethereum *most likely* uses *Proof of Stake* (since 2022 merge). These are:",
+      "choices": [
+        { "id": "A", "text": "Consensus mechanisms — how the network agrees on the ledger state." },
+        { "id": "B", "text": "Specific cryptocurrency names." },
+        { "id": "C", "text": "Tax categories." }
+      ],
+      "answer": "A",
+      "explanation": "Consensus mechanisms determine how distributed networks agree on ledger state. PoW: miners compete to solve cryptographic puzzles. PoS: validators stake tokens and are selected by economic incentive.\n\nPoS is more energy-efficient than PoW.\n\n**B** and **C** are incorrect."
+    },
+    {
+      "id": "q-alts-da-003",
+      "lessonId": "alts-da-overview",
+      "difficulty": "easy",
+      "stem": "Stablecoins (USDT, USDC, DAI) are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Cryptocurrencies pegged to fiat currency (usually USD) to maintain stable value." },
+        { "id": "B", "text": "Volatile speculative tokens." },
+        { "id": "C", "text": "Government-issued cryptocurrencies." }
+      ],
+      "answer": "A",
+      "explanation": "Stablecoins: pegged to fiat (usually 1:1 to USD). Used for trading, payments, lending in crypto ecosystem. Major stablecoins: USDT (Tether), USDC (Circle), DAI (decentralised).\n\n**B** describes other cryptos like Bitcoin.\n**C** describes CBDCs (central bank digital currencies — different concept)."
+    },
+    {
+      "id": "q-alts-da-004",
+      "lessonId": "alts-da-overview",
+      "difficulty": "medium",
+      "stem": "Major risks of investing in digital assets *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Extreme volatility, regulatory uncertainty, operational risks (exchange failures), cybersecurity threats." },
+        { "id": "B", "text": "Only price volatility." },
+        { "id": "C", "text": "No material risks." }
+      ],
+      "answer": "A",
+      "explanation": "Digital assets carry multiple substantial risks: extreme volatility (60-100% annual σ), regulatory evolution (jurisdictional variation), operational (exchanges hacked, gone bankrupt — FTX 2022), cybersecurity (smart contract bugs, key theft).\n\n**B** is incomplete.\n**C** is incorrect."
+    },
+    {
+      "id": "q-alts-da-005",
+      "lessonId": "alts-da-overview",
+      "difficulty": "easy",
+      "stem": "For a typical investor, a *prudent* allocation to digital assets is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "0-5% (if any), sized small enough that 80% drawdown doesn't disrupt portfolio objectives." },
+        { "id": "B", "text": "50-75%." },
+        { "id": "C", "text": "All-or-nothing." }
+      ],
+      "answer": "A",
+      "explanation": "Digital asset volatility and drawdowns require small position sizing for most investors. 0-5% allocation common for risk-tolerant, long-horizon investors. Larger allocations only for sophisticated risk-takers who can tolerate severe drawdowns.\n\n**B** would be inappropriate for most.\n**C** is poor risk management."
+    },
+    {
+      "id": "q-alts-da-006",
+      "lessonId": "alts-da-overview",
+      "difficulty": "medium",
+      "stem": "Tokenisation of real-world assets *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "Using blockchain to represent traditional assets (bonds, real estate, art) as digital tokens enabling fractional ownership." },
+        { "id": "B", "text": "Creating new speculative cryptocurrencies." },
+        { "id": "C", "text": "Government-issued cryptocurrencies." }
+      ],
+      "answer": "A",
+      "explanation": "Tokenisation: traditional assets represented as blockchain tokens. Enables fractional ownership, atomic settlement, smart contract automation. Application: tokenised bonds, real estate, art.\n\nLess speculative than pure crypto. Useful real-world applications emerging.\n\n**B** describes speculative crypto.\n**C** is CBDCs (different)."
+    },
+    {
       "id": "q-alts-feat-001",
       "lessonId": "alts-feat-overview",
       "difficulty": "easy",
