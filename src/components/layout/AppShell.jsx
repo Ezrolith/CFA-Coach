@@ -55,7 +55,7 @@ export default function AppShell({ children }) {
 
       <footer className="border-t border-ink-200/70 dark:border-ink-800/70 mt-12">
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between text-xs text-ink-500">
-          <div>CFA·Coach — Level 1 study companion · v0.1</div>
+          <div>CFA·Coach — Level 1 study companion · v0.3</div>
           <div className="hidden sm:block">CFA® is a trademark of CFA Institute. This tool is independent.</div>
         </div>
       </footer>

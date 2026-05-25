@@ -1,0 +1,83 @@
+{
+  "topicId": "quant",
+  "questions": [
+    {
+      "id": "q-quant-tvm-001",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "easy",
+      "stem": "An investor deposits £8,000 into an account that earns 6% compounded annually. The value of the account after 10 years is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£12,800" },
+        { "id": "B", "text": "£14,327" },
+        { "id": "C", "text": "£21,589" }
+      ],
+      "answer": "B",
+      "explanation": "$FV = 8{,}000 \\cdot (1.06)^{10} = 8{,}000 \\cdot 1.79085 = £14{,}326.78$.\n\n**A** is simple interest ($8{,}000 + 8{,}000 \\cdot 0.06 \\cdot 10 = £12{,}800$) which ignores compounding.\n\n**C** would require ~10% annual return, not 6%."
+    },
+    {
+      "id": "q-quant-tvm-002",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "medium",
+      "stem": "A stated annual rate of 9% compounded monthly is equivalent to an effective annual rate (EAR) *closest* to:",
+      "choices": [
+        { "id": "A", "text": "9.00%" },
+        { "id": "B", "text": "9.31%" },
+        { "id": "C", "text": "9.38%" }
+      ],
+      "answer": "C",
+      "explanation": "$EAR = \\left(1 + \\frac{0.09}{12}\\right)^{12} - 1 = (1.0075)^{12} - 1 = 0.09381 = 9.381\\%$.\n\n**A** ignores compounding entirely.\n\n**B** comes from semi-annual rather than monthly compounding.\n\nThe more frequent the compounding, the higher the EAR for a given stated rate, approaching $e^{r_s} - 1 = 9.417\\%$ in the limit."
+    },
+    {
+      "id": "q-quant-tvm-003",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "medium",
+      "stem": "A bond pays £50 at the end of each year for 4 years, plus £1,000 at the end of year 4. If the required yield is 7%, the price *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£932.26" },
+        { "id": "B", "text": "£950.00" },
+        { "id": "C", "text": "£1,067.74" }
+      ],
+      "answer": "A",
+      "explanation": "Price = PV of coupons + PV of face.\n\nPV of coupons (annuity): $50 \\cdot \\frac{1 - (1.07)^{-4}}{0.07} = 50 \\cdot 3.3872 = 169.36$.\n\nPV of face: $1{,}000 / (1.07)^4 = 1{,}000 / 1.3108 = 762.90$.\n\nTotal: $169.36 + 762.90 = £932.26$.\n\nCoupon rate (5%) < YTM (7%), so the bond trades **below par** — eliminating choice C immediately."
+    },
+    {
+      "id": "q-quant-tvm-004",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "easy",
+      "stem": "A perpetuity pays £400 annually starting one year from today. If the discount rate is 8%, its present value is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£3,200" },
+        { "id": "B", "text": "£4,320" },
+        { "id": "C", "text": "£5,000" }
+      ],
+      "answer": "C",
+      "explanation": "Perpetuity formula: $PV = PMT / r = 400 / 0.08 = £5{,}000$.\n\n**A** is the perpetuity of £400 × 8 years, missing the discounting.\n\n**B** confuses the formula with a finite annuity."
+    },
+    {
+      "id": "q-quant-tvm-005",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "hard",
+      "stem": "The 1-year spot rate is 2.0% and the 2-year spot rate is 3.5%. The implied 1-year forward rate one year from today ($f_{1,2}$) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.50%" },
+        { "id": "B", "text": "5.02%" },
+        { "id": "C", "text": "5.50%" }
+      ],
+      "answer": "B",
+      "explanation": "No-arbitrage relation: $(1 + S_2)^2 = (1 + S_1)(1 + f_{1,2})$.\n\n$f_{1,2} = \\frac{(1.035)^2}{1.02} - 1 = \\frac{1.071225}{1.02} - 1 = 0.05022 = 5.02\\%$.\n\n**A** is the naïve difference $S_2 - S_1$ (wrong — that's not how compounding works).\n\n**C** uses simple averaging which doesn't preserve the no-arbitrage condition."
+    },
+    {
+      "id": "q-quant-tvm-006",
+      "lessonId": "quant-time-value-overview",
+      "difficulty": "medium",
+      "stem": "A company is expected to pay a dividend of £2.50 next year, growing 4% annually forever. If the required return is 9%, the share's intrinsic value using the Gordon growth model is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£27.78" },
+        { "id": "B", "text": "£50.00" },
+        { "id": "C", "text": "£62.50" }
+      ],
+      "answer": "B",
+      "explanation": "Gordon growth: $P_0 = \\frac{D_1}{r - g} = \\frac{2.50}{0.09 - 0.04} = \\frac{2.50}{0.05} = £50.00$.\n\n**A** divides by $r$ alone (treats as perpetuity, ignores growth — undershoots).\n\n**C** would imply $r - g = 0.04$, meaning the analyst used $D_0$ instead of $D_1$ or used wrong rates.\n\nKey check: the model requires $r > g$ — if growth ≥ required return, value is mathematically infinite."
+    }
+  ]
+}

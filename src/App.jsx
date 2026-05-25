@@ -3,6 +3,7 @@ import AppShell from './components/layout/AppShell';
 import HomePage from './pages/HomePage';
 import TopicPage from './pages/TopicPage';
 import LessonPage from './pages/LessonPage';
+import QuizPage from './pages/QuizPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -21,14 +22,7 @@ export default function App() {
               phase="6"
             />
           }/>
-          <Route path="/quiz" element={
-            <PlaceholderPage
-              eyebrow="Practice"
-              title="Quizzes from the question bank."
-              body="Pick a topic or a module, get five to twenty questions in real CFA format, see worked explanations after each one."
-              phase="5"
-            />
-          }/>
+          <Route path="/quiz" element={<QuizPage />} />
           <Route path="/mock-exam" element={
             <PlaceholderPage
               eyebrow="Mock exam"

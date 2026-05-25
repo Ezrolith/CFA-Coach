@@ -2,6 +2,7 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { findLesson } from '../data/curriculum';
 import { styleFor } from '../data/topicStyles';
 import { getLessonContent } from '../lib/content';
+import { questionsForLesson } from '../lib/questions';
 import LessonContent from '../components/lesson/LessonContent';
 
 const VERB_COLORS = {
@@ -32,6 +33,7 @@ export default function LessonPage() {
   const s = styleFor(topic.id);
   const los = lesson.los ?? [];
   const content = getLessonContent(lesson.id);
+  const quizCount = questionsForLesson(lesson.id).length;
 
   return (
     <div className="max-w-3xl mx-auto px-6 pt-10 pb-24">
@@ -52,10 +54,19 @@ export default function LessonPage() {
             {topic.shortName} · {module.name}
           </span>
         </div>
-        <h1 className="font-display text-3xl md:text-4xl font-semibold tracking-tighter text-ink-900 dark:text-ink-50 leading-tight">
-          {lesson.name}
-        </h1>
-        <p className="mt-3 text-sm text-ink-500">{los.length} Learning Outcome Statement{los.length === 1 ? '' : 's'}</p>
+        <div className="flex items-start justify-between gap-6 flex-wrap">
+          <div className="flex-1 min-w-0">
+            <h1 className="font-display text-3xl md:text-4xl font-semibold tracking-tighter text-ink-900 dark:text-ink-50 leading-tight">
+              {lesson.name}
+            </h1>
+            <p className="mt-3 text-sm text-ink-500">{los.length} Learning Outcome Statement{los.length === 1 ? '' : 's'}{quizCount > 0 && <> · {quizCount} practice question{quizCount === 1 ? '' : 's'}</>}</p>
+          </div>
+          {quizCount > 0 && (
+            <Link to={`/quiz?lesson=${lesson.id}`} className="btn-primary flex-shrink-0">
+              Quiz me on this →
+            </Link>
+          )}
+        </div>
       </header>
 
       {/* Authored content if available; otherwise the placeholder */}

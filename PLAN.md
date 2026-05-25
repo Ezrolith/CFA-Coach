@@ -1,6 +1,24 @@
 # CFA-Coach — Master Plan
 
-> Draft v0.3 — updated 2026-05-25. All foundational decisions locked. Ready for Phase 1 build.
+> v0.4 — updated 2026-05-25. **Phases 1, 2, 3 shipped + Phase 4/5 started.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
+
+## Status
+
+| Phase | Status | Notes |
+|---|---|---|
+| 1 — Foundation | ✅ Shipped | Vite + React + Tailwind, Firebase project `cfa-coach-app`, deployed |
+| 2 — Curriculum skeleton | ✅ Shipped | 10 topics · 93 modules · **327 LOS** with verb pills + draft flags |
+| 3 — Lesson content viewer | ✅ Shipped | Markdown + KaTeX, three-mode tabs, formulas / examples / pitfalls / FAQ / resources |
+| 4 — Content authoring sprint #1 | 🟡 Started | First showcase: Quant TVM fully authored. ~325 LOS still to write |
+| 5 — Quiz engine | 🟡 Started | Player works, 6 TVM questions, real CFA MCQ format with explanations |
+| 6 — Spaced repetition | ⏳ Next | Algorithm + daily review queue |
+| 7 — Progress dashboard | ⏳ | Heatmap, streaks, readiness % |
+| 8 — Content sprint #2 (FRA/Equity/FI) | ⏳ | |
+| 9 — Mock exam | ⏳ | 180 Q, weighted, two sessions |
+| 10 — PWA + mobile polish | ⏳ | |
+| 11 — Remaining topics deep content | ⏳ | |
+| 12 — Polish + drills | ⏳ | |
+
 
 ---
 
