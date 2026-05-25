@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { TOPICS, totalCounts } from '../data/curriculum';
 import { authoredLessonIds } from '../lib/content';
 import { findLesson } from '../data/curriculum';
+import { useGlobalProgress } from '../hooks/useProgress';
 import TopicCard from '../components/curriculum/TopicCard';
 import WeightBar from '../components/curriculum/WeightBar';
 
@@ -17,6 +18,13 @@ export default function HomePage() {
   const counts = totalCounts();
   const days = daysUntilExam();
   const authored = authoredLessonIds().map(id => findLesson(id)).filter(Boolean);
+  const { studiedIds, quizResults } = useGlobalProgress();
+  const quizzesTaken = Object.values(quizResults).reduce((s, r) => s + (r.takenCount ?? 0), 0);
+  const avgBestPct = (() => {
+    const values = Object.values(quizResults).map(r => r.bestPct ?? 0);
+    if (!values.length) return null;
+    return Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+  })();
 
   return (
     <div className="max-w-7xl mx-auto px-6 pt-14 pb-24">
@@ -41,6 +49,14 @@ export default function HomePage() {
           <Stat label="LOS to learn"  value={counts.los} />
           <Stat label="Days to exam"  value={days.toLocaleString()} accent />
         </div>
+
+        {(studiedIds.length > 0 || quizzesTaken > 0) && (
+          <div className="mt-3 grid grid-cols-2 md:grid-cols-3 gap-px bg-ink-200/60 dark:bg-ink-800/60 rounded-2xl overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
+            <Stat label="Lessons studied"  value={studiedIds.length} />
+            <Stat label="Quizzes taken"    value={quizzesTaken} />
+            <Stat label="Avg best score"   value={avgBestPct === null ? '—' : `${avgBestPct}%`} accent />
+          </div>
+        )}
       </section>
 
       {/* Authored lessons spotlight */}

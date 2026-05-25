@@ -1,14 +1,22 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MarkdownView from '../lesson/MarkdownView';
 import { shuffle } from '../../lib/questions';
+import { recordQuizResult } from '../../lib/progress';
 
-export default function QuizPlayer({ questions, title, returnTo }) {
+export default function QuizPlayer({ questions, title, returnTo, recordKey }) {
   const initial = useMemo(() => shuffle(questions), [questions]);
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState({});      // { questionId: choiceId }
   const [submitted, setSubmitted] = useState({});  // { questionId: true }
   const [finished, setFinished] = useState(false);
+
+  // When the quiz finishes, record the score for the scoped lesson (if any).
+  useEffect(() => {
+    if (!finished || !recordKey) return;
+    const correct = initial.filter(q => answers[q.id] === q.answer).length;
+    recordQuizResult(recordKey, correct, initial.length);
+  }, [finished, recordKey, initial, answers]);
 
   if (!initial.length) {
     return (

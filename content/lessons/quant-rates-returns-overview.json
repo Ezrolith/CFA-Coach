@@ -1,0 +1,64 @@
+{
+  "lessonId": "quant-rates-returns-overview",
+  "modes": {
+    "new": "## What this lesson is about\n\nBefore you can do anything in finance, you have to agree how to **measure return**. That sounds trivial — return is 'how much money you made' — but in practice there are six or seven different return measures, and using the wrong one gives the wrong answer.\n\nLevel 1 puts four return measures on you:\n\n1. **Holding period return (HPR)** — the simplest. What did you actually get over the whole period?\n2. **Money-weighted return (MWR)** — like an IRR. Reflects when you put money in and took it out. The investor's actual experience.\n3. **Time-weighted return (TWR)** — the manager's measure. Ignores when money was added or removed. Used to compare portfolio managers fairly.\n4. **Annualized return** — converts any period return to an annual equivalent so you can compare apples to apples.\n\n### Holding period return\n\n$$HPR = \\frac{P_1 - P_0 + D}{P_0}$$\n\nWhere $P_0$ is what you paid, $P_1$ is what it's worth at the end, and $D$ is any cash income (dividends, coupons) you received in between. Simple — but covers only one period.\n\n### Money-weighted vs time-weighted — the cleanest mental model\n\nImagine you give £1,000 to a fund manager at the start of year 1. The fund returns 50% that year. You enthusiastically add £10,000 at the start of year 2. The fund returns −50% in year 2.\n\n- **Manager's perspective (TWR):** the fund made +50% then −50%. Geometric mean: $\\sqrt{1.5 \\cdot 0.5} - 1 \\approx -13.4\\%$ per year.\n- **Investor's perspective (MWR):** you added £10,000 right before the bad year — you lost a lot of money. The IRR on your cash flows is sharply negative.\n\nThe manager didn't get worse — but *you* lost more because of *when* you added cash. TWR judges the manager fairly. MWR captures your actual experience.\n\n### Why annualize\n\nA 3% return over 6 months isn't directly comparable to a 5% return over 1 year. To compare, convert to an annual rate:\n\n$$r_{annual} = (1 + r_{period})^{n} - 1$$\n\nwhere $n$ is the number of periods per year. For a 6-month return, $n = 2$. For a quarterly return, $n = 4$.\n\nKey caution: this assumes the return *repeats* — which it usually doesn't. Annualizing a single noisy quarter and presenting it as a yearly rate is bad practice.\n\n### Continuously compounded returns\n\nThe natural log of (1 + HPR) gives a continuously compounded return:\n\n$$r_{cc} = \\ln(1 + HPR)$$\n\nWhy this matters: continuously compounded returns are **additive** across time. If a stock returns +10% one year (cc: $\\ln 1.10 = 0.0953$) and −10% the next (cc: $\\ln 0.90 = -0.1054$), the two-year cc return is $0.0953 - 0.1054 = -0.0101$, which converts back to $e^{-0.0101} - 1 = -1.005\\%$. Try that with simple returns and you'd get 0%, which is wrong.\n\nThis is why log returns are the standard in quantitative finance.",
+    "pro": "## Return measures at speed\n\n### Single-period\n\n**HPR** (holding period return):\n\n$$HPR = \\frac{P_1 + D - P_0}{P_0} = \\frac{P_1 + D}{P_0} - 1$$\n\n### Time-weighted return\n\nGeometric mean of sub-period HPRs:\n\n$$r_{TWR} = \\left[\\prod_{i=1}^{n}(1 + HPR_i)\\right]^{1/n} - 1$$\n\nIndependent of cash flow timing. The performance presentation standard (GIPS) is TWR-based.\n\n### Money-weighted return\n\nIRR of the investor's cash flows. No closed form for n > 2; solve iteratively:\n\n$$\\sum_{t=0}^{n} \\frac{CF_t}{(1 + r_{MWR})^t} = 0$$\n\nReflects timing. Suitable for fund-of-fund analysis where investor timing matters.\n\n### Annualization\n\n$$r_{annual} = (1 + r_{period})^n - 1$$\n\nWhere $n$ is the periods-per-year multiplier.\n\n### Continuously compounded\n\n$$r_{cc} = \\ln(1 + HPR), \\quad HPR = e^{r_{cc}} - 1$$\n\nAdditive across time. The 'log return' used in quant work.\n\n### Real vs nominal\n\nApproximate: $r_{real} \\approx r_{nominal} - \\pi$.\n\nExact (Fisher equation):\n\n$$1 + r_{nominal} = (1 + r_{real})(1 + \\pi)$$\n\n### After-tax\n\n$r_{at} = r_{bt}(1 - t)$ for simple ordinary-income returns; capital gains have separate tax rates and timing matters (deferred gains compound pre-tax).\n\n### Gross vs net\n\nGross return: before management/transaction fees. Net: after. Always specify when comparing performance — managers love quoting gross numbers.\n\n### Quick mental hierarchy\n\n- **HPR** = the simplest, single period, anchor for everything.\n- **TWR** = compare managers. Ignores investor timing.\n- **MWR** = describe one investor's actual experience. Sensitive to timing.\n- **Annualized** = standardize for comparison.\n- **Continuously compounded** = additive, used in derivatives and quant work.\n- **Real** = strip out inflation.\n- **After-tax / net** = strip out taxes and fees."
+  },
+  "formulas": [
+    { "name": "Holding period return",            "latex": "HPR = \\frac{P_1 + D - P_0}{P_0}", "plain": "Total return over the holding period" },
+    { "name": "Time-weighted return",             "latex": "r_{TWR} = \\left[\\prod_{i=1}^{n}(1 + HPR_i)\\right]^{1/n} - 1", "plain": "Geometric mean of sub-period returns; ignores cash flow timing" },
+    { "name": "Money-weighted (IRR equation)",    "latex": "\\sum_{t=0}^{n} \\frac{CF_t}{(1 + r_{MWR})^t} = 0", "plain": "Discount rate that makes NPV of investor's cash flows zero" },
+    { "name": "Annualized return",                "latex": "r_{annual} = (1 + r_{period})^n - 1", "plain": "n = periods per year" },
+    { "name": "Continuously compounded return",   "latex": "r_{cc} = \\ln(1 + HPR)", "plain": "Log return — additive across time periods" },
+    { "name": "Fisher equation (real vs nominal)","latex": "(1 + r_{nominal}) = (1 + r_{real})(1 + \\pi)", "plain": "Exact relation between real, nominal, and inflation" }
+  ],
+  "examples": [
+    {
+      "title": "HPR — share with dividend",
+      "body": "**Question.** You buy a share at £50, hold it for one year, receive a £2 dividend, and sell at £55. What is your HPR?\n\n**Calculation.**\n\n$$HPR = \\frac{55 + 2 - 50}{50} = \\frac{7}{50} = 0.14 = 14\\%$$\n\n**Answer.** 14%.\n\n**Sense-check.** Capital gain alone is 10% (5/50). Dividend adds 4% (2/50). Total 14%."
+    },
+    {
+      "title": "TWR vs MWR — manager vs investor",
+      "body": "**Question.** Year 1: portfolio rises 25%. Year 2: portfolio falls 20%. You put in £1,000 at start of year 1 and added another £10,000 at start of year 2. What are TWR and MWR?\n\n**TWR (manager's view):**\n\n$$r_{TWR} = (\\sqrt{1.25 \\cdot 0.80}) - 1 = \\sqrt{1.00} - 1 = 0\\%$$\n\nSo over two years, the manager broke even on a per-period basis.\n\n**MWR (your view):**\n\nCash flows: $-1{,}000$ at $t=0$; $-10{,}000$ at $t=1$; value at $t=2 = (1{,}000 \\cdot 1.25 + 10{,}000) \\cdot 0.80 = (1{,}250 + 10{,}000) \\cdot 0.80 = £9{,}000$.\n\nSolve IRR: $-1000 - 10000/(1+r) + 9000/(1+r)^2 = 0$. By trial, $r \\approx -16.7\\%$.\n\n**Lesson.** The manager broke even (TWR = 0%), but **you** lost meaningfully because you added cash right before the down year. Same fund, very different experiences."
+    },
+    {
+      "title": "Annualizing a quarterly return",
+      "body": "**Question.** A bond returned 2.0% in one quarter. What is the annualized return?\n\n**Calculation.**\n\n$$r_{annual} = (1.02)^4 - 1 = 1.08243 - 1 = 0.08243 = 8.24\\%$$\n\n**Answer.** 8.24%.\n\n**Caution.** This assumes you can earn 2% every quarter — which may not be realistic. Annualizing makes returns *comparable*, not necessarily *predictive*."
+    },
+    {
+      "title": "Continuously compounded — additive returns",
+      "body": "**Question.** A stock rises 8% in year 1 and falls 5% in year 2. Find the continuously compounded return per year over the two years.\n\n**Year-by-year cc returns.**\n\n$r_1^{cc} = \\ln(1.08) = 0.0770$.\n\n$r_2^{cc} = \\ln(0.95) = -0.0513$.\n\n**Sum across years** (additivity):\n\n$$r_{2yr}^{cc} = 0.0770 + (-0.0513) = 0.0257$$\n\n**Average per year:**\n\n$$\\bar{r}^{cc} = 0.0257 / 2 = 0.0128 = 1.28\\%$$\n\n**Convert back to simple:**\n\n$$1.28\\% \\rightarrow e^{0.0128} - 1 = 1.29\\%$$\n\n**Lesson.** Log returns add cleanly; simple returns don't. This is why quant models use log returns."
+    }
+  ],
+  "pitfalls": [
+    "**Confusing TWR and MWR.** Use TWR to compare managers (fair across investors); use MWR to describe what one investor actually experienced.",
+    "**Annualizing short windows.** Annualizing one quarter's noisy return overstates predictability. State both the period and the annualized number.",
+    "**Approximating real return as nominal minus inflation.** Fine at low rates; wrong at high rates. Use the Fisher equation when rates exceed ~5%.",
+    "**Forgetting dividends in HPR.** Capital gain alone is *not* total return. Always include cash income.",
+    "**Mixing arithmetic and geometric means.** Geometric mean is the correct multi-period return measure; arithmetic mean is for one-period expected return assumptions and is always ≥ geometric.",
+    "**Comparing gross returns to net returns.** Always specify whether returns are before or after fees, and align before comparing across funds."
+  ],
+  "faq": [
+    {
+      "q": "When would the arithmetic mean return be useful versus the geometric mean?",
+      "a": "**Geometric mean** is the right measure of *realized historical performance* — it's what your money actually compounded to.\n\n**Arithmetic mean** is the right measure of *expected one-period return* — i.e., the best guess for next period if returns are random and independent.\n\nIf you want to project a 10-year terminal value, use the geometric. If you want to estimate the expected return for use in CAPM or portfolio variance calculations, use the arithmetic. The arithmetic mean is always greater than or equal to the geometric mean; they're equal only when all sub-period returns are identical."
+    },
+    {
+      "q": "Why does GIPS require TWR rather than MWR?",
+      "a": "Because GIPS is about *manager* performance reporting, and TWR removes the effect of client cash flows the manager doesn't control. If your firm reports MWR, every time a big client withdraws money before a bad month, your number magically improves — that's not measuring skill. TWR forces apples-to-apples manager comparisons.\n\nMWR is more relevant for *the investor* — it shows what they actually got, including the effect of their own timing decisions."
+    },
+    {
+      "q": "Why are log returns 'additive'?",
+      "a": "Because logarithms turn multiplication into addition. A simple two-period total return is $(1 + r_1)(1 + r_2) - 1$ — a product. Take the log: $\\ln[(1+r_1)(1+r_2)] = \\ln(1+r_1) + \\ln(1+r_2)$. So the two-period log return is just the sum of single-period log returns. That's why daily log returns can be summed to give the period log return.\n\nThis property makes them ideal for statistical modeling — averaging, regression, and distributional assumptions all work cleanly on additive variables."
+    },
+    {
+      "q": "If I do an after-tax calculation, do I multiply by $(1 - t)$ once, at the end?",
+      "a": "Only if the tax is applied at one point — typically annual ordinary income (dividends, interest, short-term capital gains). For long-term capital gains, the tax is deferred until you sell, so the pre-tax return compounds, and the tax is applied to the *gain*, not each period's return. That's why **tax-deferred accounts and long-hold equities** have a big after-tax advantage even if pre-tax returns are similar.\n\nMath: 30 years of 7% pre-tax with 25% annual ordinary tax → 5.25% net compounded.\n30 years of 7% pre-tax with 25% capital gains paid only at year 30 → ~6.8% effective net. Big difference."
+    }
+  ],
+  "resources": [
+    { "label": "Investopedia — Holding Period Return", "url": "https://www.investopedia.com/terms/h/holdingperiodreturn-yield.asp", "kind": "read" },
+    { "label": "Investopedia — Money-Weighted vs Time-Weighted", "url": "https://www.investopedia.com/articles/financial-advisor/021015/twrr-vs-mwrr-which-better.asp", "kind": "read" },
+    { "label": "CFA Institute — GIPS standards (free)", "url": "https://www.cfainstitute.org/programs/gips-standards", "kind": "read" }
+  ]
+}

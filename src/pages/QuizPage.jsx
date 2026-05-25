@@ -44,7 +44,12 @@ export default function QuizPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 pt-10 pb-24">
-      <QuizPlayer questions={questions} title={title} returnTo={returnTo} />
+      <QuizPlayer
+        questions={questions}
+        title={title}
+        returnTo={returnTo}
+        recordKey={lessonId ?? null}
+      />
     </div>
   );
 }

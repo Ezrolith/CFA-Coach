@@ -1,0 +1,83 @@
+{
+  "topicId": "ethics",
+  "questions": [
+    {
+      "id": "q-ethics-i-001",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "medium",
+      "stem": "Marisa Chen, CFA, is an analyst at a firm based in a country whose securities regulations prohibit insider trading but allow brokers to trade ahead of large client orders. The CFA Code prohibits both. Which course of action is *most consistent* with Standard I?",
+      "choices": [
+        { "id": "A", "text": "Comply with the local regulation, as it is the law where she works." },
+        { "id": "B", "text": "Comply with whichever standard is stricter — in this case, the CFA Code — and refuse to trade ahead of client orders." },
+        { "id": "C", "text": "Disclose the conflict to clients and proceed with the broker activity, since disclosure cures the issue." }
+      ],
+      "answer": "B",
+      "explanation": "Standard I-A requires members to follow the **stricter** of applicable law or the Code. Here, the local law is more lenient than the Code, so the Code prevails.\n\n**A** treats local law as the floor — incorrect; the Code is a higher standard members have committed to.\n\n**C** mistakenly assumes disclosure cures a Standard violation. Disclosure can address some conflicts (e.g., independence), but it does not cure participation in front-running, which is prohibited outright."
+    },
+    {
+      "id": "q-ethics-i-002",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "easy",
+      "stem": "Daniel Park, CFA, is an equity research analyst. A company he covers offers to fly him business-class to its overseas headquarters and pay all expenses for a multi-day site visit. He discloses the offer to his employer. To remain *most consistent* with Standard I-B, Daniel should:",
+      "choices": [
+        { "id": "A", "text": "accept the trip and the disclosure resolves any concern about objectivity." },
+        { "id": "B", "text": "decline the trip, or accept only if his firm reimburses the issuer at commercial rates for travel and accommodation." },
+        { "id": "C", "text": "accept the trip if it is similar to trips other analysts in the industry routinely accept." }
+      ],
+      "answer": "B",
+      "explanation": "Independence is compromised when an issuer pays for travel-related expenses for an analyst who covers it, regardless of disclosure or peer-industry practice.\n\nThe recommended action is to **either decline or have the firm reimburse** the issuer at commercial rates, so no economic value flows from the issuer to the analyst (or firm).\n\n**A** misreads disclosure as a cure for independence violations.\n\n**C** is the appeal-to-industry-norm fallacy — common practice does not make a Standard violation acceptable."
+    },
+    {
+      "id": "q-ethics-i-003",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "medium",
+      "stem": "Sophia Patel, CFA, reads an excellent industry note published by an external research house. She incorporates three paragraphs of analysis verbatim into her own internal memo, believing it does not need attribution since the memo will not be published externally. Sophia has *most likely*:",
+      "choices": [
+        { "id": "A", "text": "not violated any Standard, because the work is internal and not for public distribution." },
+        { "id": "B", "text": "violated Standard I-C (Misrepresentation), because copying analysis without attribution is plagiarism." },
+        { "id": "C", "text": "violated Standard I-E (Competence), because she did not produce the analysis herself." }
+      ],
+      "answer": "B",
+      "explanation": "Plagiarism is treated by the Code as Misrepresentation under I-C, whether the work is internal or external. Lifting analysis or writing without attribution implies the analyst produced it themselves.\n\n**A** is incorrect — the internal/external distinction does not exempt a member from attribution rules.\n\n**C** misapplies I-E; using another's research with proper attribution is not a competence violation."
+    },
+    {
+      "id": "q-ethics-i-004",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "hard",
+      "stem": "Ryan, CFA, is convicted of misdemeanour tax fraud unrelated to his job as a portfolio manager. Under Standard I-D (Misconduct), which statement is *most accurate*?",
+      "choices": [
+        { "id": "A", "text": "There is no Code violation because the conduct was personal, not professional." },
+        { "id": "B", "text": "There is a violation of I-D because tax fraud reflects on his professional integrity and trustworthiness." },
+        { "id": "C", "text": "There is a violation only if the local jurisdiction requires the conviction to be reported to his employer." }
+      ],
+      "answer": "B",
+      "explanation": "Standard I-D reaches conduct that 'reflects adversely on professional reputation, integrity, or competence'. Personal financial dishonesty — especially tax fraud — directly bears on a finance professional's trustworthiness.\n\n**A** is the common-sense answer, but the Code is broader: 'personal' conduct is in scope when it affects perceived professional integrity.\n\n**C** confuses a local reporting requirement with the Code's threshold; the Code applies regardless of whether the matter is reportable."
+    },
+    {
+      "id": "q-ethics-i-005",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "medium",
+      "stem": "Aisha, CFA, has spent her career managing US large-cap equities. Her firm reassigns her to lead a frontier-markets emerging-debt mandate starting next month. She has no background in fixed income or frontier markets. Acting *most consistent* with Standard I-E, Aisha should:",
+      "choices": [
+        { "id": "A", "text": "accept the role and develop expertise through experience on the job." },
+        { "id": "B", "text": "decline the role, or accept it conditional on training, oversight from a frontier-debt specialist, or co-management." },
+        { "id": "C", "text": "accept the role provided her firm agrees in writing to support her decisions." }
+      ],
+      "answer": "B",
+      "explanation": "I-E requires a member to act within their competence. Taking on a mandate one is unqualified to manage — without structural safeguards — is a violation.\n\nAcceptable paths: **decline**, or accept with **training plus specialist oversight or co-management**, allowing competence to develop without exposing clients to unqualified management in the interim.\n\n**A** is exactly what I-E prohibits — learning on the job at clients' expense.\n\n**C** doesn't address the competence gap; written support from the firm does not make the manager competent in frontier debt."
+    },
+    {
+      "id": "q-ethics-i-006",
+      "lessonId": "ethics-std-i-prof",
+      "difficulty": "hard",
+      "stem": "Lee, CFA, discovers that a senior colleague is preparing client reports that include materially misleading performance numbers. Lee raises the issue with the colleague, who refuses to change the reports. The firm's compliance officer is the colleague's spouse and is unwilling to investigate. Acting *most consistent* with the Standards, Lee should *most likely*:",
+      "choices": [
+        { "id": "A", "text": "say nothing further, since he has already raised the matter once." },
+        { "id": "B", "text": "dissociate from the activity — refuse to participate, document his objection, and escalate above the compliance officer if necessary." },
+        { "id": "C", "text": "report the colleague to local financial regulators immediately." }
+      ],
+      "answer": "B",
+      "explanation": "The Code requires **dissociation** from ongoing violations — refusing to participate, documenting the position, and escalating internally. If internal escalation is blocked (as here), the member should escalate further up the firm or, ultimately, consider resignation.\n\n**A** is insufficient — a single objection that is brushed aside doesn't satisfy the duty to dissociate.\n\n**C** describes whistleblowing, which the Code does **not** generally require unless local law imposes it. The first duty is dissociation and internal escalation."
+    }
+  ]
+}

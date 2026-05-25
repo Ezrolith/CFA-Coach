@@ -3,6 +3,8 @@ import { findLesson } from '../data/curriculum';
 import { styleFor } from '../data/topicStyles';
 import { getLessonContent } from '../lib/content';
 import { questionsForLesson } from '../lib/questions';
+import { markLessonStudied, unmarkLessonStudied } from '../lib/progress';
+import { useLessonProgress } from '../hooks/useProgress';
 import LessonContent from '../components/lesson/LessonContent';
 
 const VERB_COLORS = {
@@ -34,6 +36,7 @@ export default function LessonPage() {
   const los = lesson.los ?? [];
   const content = getLessonContent(lesson.id);
   const quizCount = questionsForLesson(lesson.id).length;
+  const progress = useLessonProgress(lesson.id);
 
   return (
     <div className="max-w-3xl mx-auto px-6 pt-10 pb-24">
@@ -59,13 +62,30 @@ export default function LessonPage() {
             <h1 className="font-display text-3xl md:text-4xl font-semibold tracking-tighter text-ink-900 dark:text-ink-50 leading-tight">
               {lesson.name}
             </h1>
-            <p className="mt-3 text-sm text-ink-500">{los.length} Learning Outcome Statement{los.length === 1 ? '' : 's'}{quizCount > 0 && <> · {quizCount} practice question{quizCount === 1 ? '' : 's'}</>}</p>
+            <p className="mt-3 text-sm text-ink-500">
+              {los.length} Learning Outcome Statement{los.length === 1 ? '' : 's'}
+              {quizCount > 0 && <> · {quizCount} practice question{quizCount === 1 ? '' : 's'}</>}
+              {progress.quiz && <> · best score <strong className="num text-ink-700 dark:text-ink-200">{progress.quiz.bestPct}%</strong></>}
+            </p>
           </div>
-          {quizCount > 0 && (
-            <Link to={`/quiz?lesson=${lesson.id}`} className="btn-primary flex-shrink-0">
-              Quiz me on this →
-            </Link>
-          )}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <button
+              onClick={() => progress.studied ? unmarkLessonStudied(lesson.id) : markLessonStudied(lesson.id)}
+              className={[
+                'btn',
+                progress.studied
+                  ? 'bg-emerald-500 text-white hover:bg-emerald-600'
+                  : 'btn-ghost border border-ink-200 dark:border-ink-800',
+              ].join(' ')}
+            >
+              {progress.studied ? '✓ Studied' : 'Mark as studied'}
+            </button>
+            {quizCount > 0 && (
+              <Link to={`/quiz?lesson=${lesson.id}`} className="btn-primary">
+                Quiz me →
+              </Link>
+            )}
+          </div>
         </div>
       </header>
 

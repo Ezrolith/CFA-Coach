@@ -1,6 +1,7 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { getTopicById } from '../data/curriculum';
 import { styleFor } from '../data/topicStyles';
+import { useGlobalProgress } from '../hooks/useProgress';
 
 export default function TopicPage() {
   const { id } = useParams();
@@ -9,15 +10,20 @@ export default function TopicPage() {
   if (!topic) return <Navigate to="/" replace />;
 
   const s = styleFor(topic.id);
+  const { studiedIds, quizResults } = useGlobalProgress();
+  const studiedSet = new Set(studiedIds);
 
   let totalLessons = 0;
   let totalLOS = 0;
+  let studiedLessons = 0;
   for (const m of topic.modules) {
     for (const l of (m.lessons ?? [])) {
       totalLessons += 1;
       totalLOS += (l.los ?? []).length;
+      if (studiedSet.has(l.id)) studiedLessons += 1;
     }
   }
+  const progressPct = totalLessons > 0 ? Math.round((studiedLessons / totalLessons) * 100) : 0;
 
   return (
     <div className="max-w-5xl mx-auto px-6 pt-10 pb-24">
@@ -55,7 +61,7 @@ export default function TopicPage() {
           <MiniStat label="Lessons"  value={totalLessons} />
           <MiniStat label="LOS"      value={totalLOS} />
           <MiniStat label="Weight"   value={topic.weight} mono />
-          <MiniStat label="Progress" value="0%" accent />
+          <MiniStat label="Progress" value={`${progressPct}%`} accent />
         </div>
       </header>
 
@@ -89,17 +95,27 @@ export default function TopicPage() {
 
                 {hasContent && (
                   <ul className="mt-3 ml-10 space-y-1">
-                    {lessons.map(l => (
-                      <li key={l.id}>
-                        <Link
-                          to={`/lesson/${l.id}`}
-                          className="group/lesson flex items-center justify-between gap-3 px-3 py-2 rounded-lg hover:bg-white dark:hover:bg-ink-900 -mx-3 transition-colors"
-                        >
-                          <span className="text-sm text-ink-700 dark:text-ink-200 group-hover/lesson:text-ink-900 dark:group-hover/lesson:text-ink-50 transition-colors">{l.name}</span>
-                          <span className="num text-[11px] text-ink-400">{l.los?.length ?? 0} LOS</span>
-                        </Link>
-                      </li>
-                    ))}
+                    {lessons.map(l => {
+                      const studied = studiedSet.has(l.id);
+                      const quiz = quizResults[l.id];
+                      return (
+                        <li key={l.id}>
+                          <Link
+                            to={`/lesson/${l.id}`}
+                            className="group/lesson flex items-center justify-between gap-3 px-3 py-2 rounded-lg hover:bg-white dark:hover:bg-ink-900 -mx-3 transition-colors"
+                          >
+                            <span className="flex items-center gap-2 min-w-0">
+                              {studied && <span className="text-emerald-500 flex-shrink-0">✓</span>}
+                              <span className="text-sm text-ink-700 dark:text-ink-200 group-hover/lesson:text-ink-900 dark:group-hover/lesson:text-ink-50 transition-colors truncate">{l.name}</span>
+                            </span>
+                            <span className="flex items-center gap-3 flex-shrink-0">
+                              {quiz && <span className="num text-[11px] text-accent-600 dark:text-accent-400 font-medium">{quiz.bestPct}%</span>}
+                              <span className="num text-[11px] text-ink-400">{l.los?.length ?? 0} LOS</span>
+                            </span>
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
               </li>

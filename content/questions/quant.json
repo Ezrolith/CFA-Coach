@@ -2,6 +2,84 @@
   "topicId": "quant",
   "questions": [
     {
+      "id": "q-quant-rr-001",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "easy",
+      "stem": "An investor buys a share for £40, receives a £1.50 dividend during the year, and sells it for £43.50 a year later. The holding period return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "8.75%" },
+        { "id": "B", "text": "12.50%" },
+        { "id": "C", "text": "13.75%" }
+      ],
+      "answer": "B",
+      "explanation": "$HPR = \\frac{P_1 + D - P_0}{P_0} = \\frac{43.50 + 1.50 - 40}{40} = \\frac{5}{40} = 12.5\\%$.\n\n**A** is the capital gain only ($3.50/40 = 8.75\\%$), ignoring the dividend.\n\n**C** double-counts by adding 12.5% + dividend yield."
+    },
+    {
+      "id": "q-quant-rr-002",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "medium",
+      "stem": "Over two years, a portfolio returns +30% in year 1 and −20% in year 2. The time-weighted (geometric mean) annual return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.98%" },
+        { "id": "B", "text": "5.00%" },
+        { "id": "C", "text": "10.00%" }
+      ],
+      "answer": "A",
+      "explanation": "$r_{TWR} = (\\sqrt{1.30 \\cdot 0.80}) - 1 = \\sqrt{1.04} - 1 = 1.98\\%$ per year.\n\n**B** is the arithmetic mean ($(30 - 20)/2$), which overstates realized performance.\n\n**C** confuses arithmetic-mean components or sums the absolute returns."
+    },
+    {
+      "id": "q-quant-rr-003",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "hard",
+      "stem": "An investor places £10,000 into a fund at $t=0$. The fund returns +20% in year 1. At the start of year 2 the investor adds another £20,000. The fund returns −10% in year 2. Which statement is *most accurate*?",
+      "choices": [
+        { "id": "A", "text": "TWR and MWR will be approximately equal because the fund has the same returns regardless of investor flows." },
+        { "id": "B", "text": "TWR will exceed MWR because the investor added money before the negative year." },
+        { "id": "C", "text": "MWR will exceed TWR because additional contributions improve the IRR." }
+      ],
+      "answer": "B",
+      "explanation": "TWR is unaffected by cash flow timing — it depends only on the period returns (+20%, −10%).\n\nMWR depends on *when* the investor's money was at risk. Here, the investor added £20,000 right before a -10% year — this drags down the investor's actual experience.\n\nThe consistent direction: when investors add cash before bad periods, **MWR < TWR**. When they add before good periods, **MWR > TWR**.\n\n**A** is incorrect — different cash flow profiles always produce different MWRs even with the same returns.\n\n**C** has the direction backwards for this scenario."
+    },
+    {
+      "id": "q-quant-rr-004",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "medium",
+      "stem": "A bond returns 1.5% in a single quarter. Its annualized return (assuming the rate continues) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "6.00%" },
+        { "id": "B", "text": "6.14%" },
+        { "id": "C", "text": "6.50%" }
+      ],
+      "answer": "B",
+      "explanation": "$r_{annual} = (1.015)^4 - 1 = 1.0614 - 1 = 6.14\\%$.\n\n**A** ignores compounding ($1.5\\% \\times 4$).\n\n**C** uses an incorrect base or arithmetic."
+    },
+    {
+      "id": "q-quant-rr-005",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "medium",
+      "stem": "A stock returns +12% in one year. The continuously compounded equivalent return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "11.33%" },
+        { "id": "B", "text": "11.67%" },
+        { "id": "C", "text": "12.75%" }
+      ],
+      "answer": "A",
+      "explanation": "$r_{cc} = \\ln(1 + HPR) = \\ln(1.12) = 0.1133 = 11.33\\%$.\n\nNote: continuously compounded returns are always **less than** their simple equivalents (for positive returns). That's because $\\ln(1+x) < x$ for $x > 0$."
+    },
+    {
+      "id": "q-quant-rr-006",
+      "lessonId": "quant-rates-returns-overview",
+      "difficulty": "hard",
+      "stem": "An investor's nominal return for the year is 8% and inflation is 3%. Using the exact (Fisher) relationship, the real return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "4.85%" },
+        { "id": "B", "text": "5.00%" },
+        { "id": "C", "text": "5.24%" }
+      ],
+      "answer": "A",
+      "explanation": "Fisher: $(1 + r_{nominal}) = (1 + r_{real})(1 + \\pi)$.\n\n$r_{real} = \\frac{1.08}{1.03} - 1 = 0.04854 = 4.85\\%$.\n\n**B** is the **approximation** ($r_{nominal} - \\pi$). Acceptable at low rates but slightly overstates real return.\n\n**C** is the result of applying the formula incorrectly (e.g., multiplying instead of dividing)."
+    },
+    {
       "id": "q-quant-tvm-001",
       "lessonId": "quant-time-value-overview",
       "difficulty": "easy",
