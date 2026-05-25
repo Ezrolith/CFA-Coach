@@ -2,6 +2,630 @@
   "topicId": "ethics",
   "questions": [
     {
+      "id": "q-ethics-code-001",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *most accurately* described as a duty under the CFA Institute Code of Ethics?",
+      "choices": [
+        { "id": "A", "text": "Act with integrity, competence, diligence, and respect in dealings with clients, employers, and markets." },
+        { "id": "B", "text": "Always achieve the highest possible investment returns for clients." },
+        { "id": "C", "text": "Report any suspected violation by another member to local law enforcement." }
+      ],
+      "answer": "A",
+      "explanation": "The first obligation of the Code is to act with integrity, competence, diligence, respect, and in an ethical manner with all market participants.\n\n**B** confuses ethical obligation with investment outcomes. The Code is process-based, not results-based.\n\n**C** misstates the Code — internal escalation and dissociation are required, but the Code does not generally require external law-enforcement reporting (though local law may)."
+    },
+    {
+      "id": "q-ethics-code-002",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "medium",
+      "stem": "If a CFA charterholder refuses to cooperate with a CFA Institute Professional Conduct Program (PCP) investigation, this *most likely*:",
+      "choices": [
+        { "id": "A", "text": "is permissible if the charterholder believes the complaint is unfounded." },
+        { "id": "B", "text": "is itself a violation of the Code, regardless of the underlying complaint's merit." },
+        { "id": "C", "text": "does not affect the charterholder unless the underlying complaint is substantiated." }
+      ],
+      "answer": "B",
+      "explanation": "Refusing to cooperate with a PCP investigation is itself a violation, regardless of the merits of the underlying complaint. Members are required to cooperate; the investigation determines the substantive question.\n\n**A** is a common but incorrect intuition.\n\n**C** misreads the Code — non-cooperation is independently sanctionable."
+    },
+    {
+      "id": "q-ethics-code-003",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "medium",
+      "stem": "A CFA charterholder works in a country where local law permits an activity that the Code prohibits. The charterholder should:",
+      "choices": [
+        { "id": "A", "text": "Follow the local law, since it is the legal floor in that jurisdiction." },
+        { "id": "B", "text": "Follow the stricter standard — the Code — and refuse to engage in the activity." },
+        { "id": "C", "text": "Seek a waiver from CFA Institute before engaging in the activity." }
+      ],
+      "answer": "B",
+      "explanation": "Standard I-A: follow the stricter of applicable law or the Code. Local-law permission does not override Code prohibition.\n\n**A** treats local law as the ceiling — incorrect.\n\n**C** doesn't reflect CFA Institute practice; waivers are not granted for Code adherence."
+    },
+    {
+      "id": "q-ethics-code-004",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "easy",
+      "stem": "How many high-level obligations does the CFA Institute Code of Ethics contain?",
+      "choices": [
+        { "id": "A", "text": "4" },
+        { "id": "B", "text": "6" },
+        { "id": "C", "text": "7" }
+      ],
+      "answer": "B",
+      "explanation": "The Code of Ethics has **6** statements/obligations. These are then implemented by **7 Standards** (I through VII). Don't confuse the two.\n\n**A** is incorrect.\n\n**C** is the number of Standards, not the number of Code obligations."
+    },
+    {
+      "id": "q-ethics-code-005",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *most likely* a sanction CFA Institute can impose on members who violate the Code?",
+      "choices": [
+        { "id": "A", "text": "A cautionary letter, suspension of membership, or revocation of the CFA charter." },
+        { "id": "B", "text": "A criminal conviction and imprisonment." },
+        { "id": "C", "text": "Mandatory community service hours." }
+      ],
+      "answer": "A",
+      "explanation": "CFA Institute can impose membership/charter-related sanctions. Sanctions range from cautionary letters to suspension and ultimately revocation.\n\n**B** is in the realm of criminal/government action, separate from CFA Institute discipline.\n\n**C** is not a CFA Institute sanction."
+    },
+    {
+      "id": "q-ethics-code-006",
+      "lessonId": "ethics-code-overview",
+      "difficulty": "medium",
+      "stem": "The seven Standards of Professional Conduct are *most appropriately* organised by:",
+      "choices": [
+        { "id": "A", "text": "The type of investment vehicle (equity vs fixed income vs alternatives)." },
+        { "id": "B", "text": "The relationship type (member to public, to market, to clients, to employer, etc.)." },
+        { "id": "C", "text": "The geographic region where the member works." }
+      ],
+      "answer": "B",
+      "explanation": "Standards I-VII are organised by relationship type and what duty is owed to whom: I (Professionalism — public), II (Markets — capital markets), III (Clients), IV (Employer), V (Analysis quality), VI (Conflicts), VII (CFA program).\n\n**A** is unrelated; the Code doesn't differentiate by instrument type.\n\n**C** is unrelated; the Code applies globally."
+    },
+    {
+      "id": "q-ethics-ii-001",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "medium",
+      "stem": "A CFA charterholder learns from a private conversation that a company will announce earnings significantly above consensus tomorrow. She trades on the information. This conduct *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard II-A (Material Nonpublic Information)." },
+        { "id": "B", "text": "Standard III-E (Preservation of Confidentiality), since the information was learned privately." },
+        { "id": "C", "text": "No Standard, since the information will become public tomorrow." }
+      ],
+      "answer": "A",
+      "explanation": "Earnings information not yet announced is material (would affect a reasonable investor's decision) and nonpublic (not yet disseminated through public channels). Trading on it violates II-A.\n\n**B** could apply if she's bound by a confidentiality duty to the source, but II-A is the specific prohibition on trading itself.\n\n**C** misreads the test — the information must be *currently* nonpublic for the prohibition to apply; whether it later becomes public is irrelevant for the trade."
+    },
+    {
+      "id": "q-ethics-ii-002",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "hard",
+      "stem": "An equity analyst assembles a buy recommendation by combining: (i) public earnings disclosures, (ii) satellite imagery of factory parking lots (which she pays for, available to anyone who pays), (iii) interviews with retired industry executives, and (iv) discussions with the company's investor relations team (limited to publicly-available information). Her conclusion is material but no single input was MNPI. This is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "A clear violation of Standard II-A, since the conclusion is material." },
+        { "id": "B", "text": "A legitimate application of mosaic theory, not a violation." },
+        { "id": "C", "text": "A violation of Standard V-A (Diligence) for relying on potentially biased sources." }
+      ],
+      "answer": "B",
+      "explanation": "Mosaic theory: a material conclusion built from non-material public + non-material non-public + material public inputs is legitimate research, not insider trading. The line is crossed only when one of the inputs is itself material non-public.\n\n**A** misunderstands that the conclusion's materiality isn't the test — the inputs' status is.\n\n**C** misapplies V-A; using diverse sources of legitimate information is consistent with diligence."
+    },
+    {
+      "id": "q-ethics-ii-003",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "medium",
+      "stem": "Sharing material non-public information with another person who then trades on it (tipping) is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Permissible if the tipper does not personally profit from the disclosure." },
+        { "id": "B", "text": "A violation of Standard II-A by the tipper, with the tippee also potentially liable." },
+        { "id": "C", "text": "Permissible because the recipient is the one trading." }
+      ],
+      "answer": "B",
+      "explanation": "Tipping is itself a violation of II-A — sharing MNPI with someone who can be expected to trade it. The tippee also typically inherits liability.\n\n**A** and **C** are common but incorrect intuitions; profit motive isn't required, and the tipper participates in the trading by enabling it."
+    },
+    {
+      "id": "q-ethics-ii-004",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "easy",
+      "stem": "Which of the following *most likely* constitutes market manipulation under Standard II-B?",
+      "choices": [
+        { "id": "A", "text": "Aggressive but honest trading by a market participant who genuinely intends to execute the orders." },
+        { "id": "B", "text": "Placing large orders intended to be cancelled before execution, designed to create a false impression of demand." },
+        { "id": "C", "text": "Buying a security based on a fundamental view that it is undervalued." }
+      ],
+      "answer": "B",
+      "explanation": "Spoofing — placing orders without intent to execute, designed to deceive — is classic market manipulation under II-B.\n\n**A** and **C** describe legitimate, honest trading and are not violations."
+    },
+    {
+      "id": "q-ethics-ii-005",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "medium",
+      "stem": "A member receiving material non-public information *most appropriately* should:",
+      "choices": [
+        { "id": "A", "text": "Trade on it quickly before others learn of it." },
+        { "id": "B", "text": "Not trade, not tip, inform compliance, and observe restricted-list / information-barrier procedures." },
+        { "id": "C", "text": "Continue trading as long as they don't profit from it personally." }
+      ],
+      "answer": "B",
+      "explanation": "Standard II-A's recommended response upon receipt of MNPI: don't trade, don't tip, report to compliance, follow information-barrier procedures.\n\n**A** is the violation itself.\n\n**C** misreads the rule; trading on MNPI is prohibited regardless of who profits."
+    },
+    {
+      "id": "q-ethics-ii-006",
+      "lessonId": "ethics-std-ii-markets",
+      "difficulty": "medium",
+      "stem": "Information is *most likely* 'public' under Standard II-A when:",
+      "choices": [
+        { "id": "A", "text": "It has been disclosed to a small group of favoured analysts." },
+        { "id": "B", "text": "It has been disseminated through channels accessible to the investing public, such as press releases, regulatory filings, or major news media." },
+        { "id": "C", "text": "It has been mentioned at an industry conference attended by 50 people." }
+      ],
+      "answer": "B",
+      "explanation": "Public = disseminated through channels accessible to the general investing public. Press releases via major wires, SEC filings, mainstream news media all qualify.\n\n**A** is selective disclosure — explicitly prohibited under Reg FD-style rules; not public.\n\n**C** is limited dissemination; not public unless the substance is also released through major channels."
+    },
+    {
+      "id": "q-ethics-iv-001",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "medium",
+      "stem": "A CFA charterholder is about to resign and move to a competitor. Before resigning, she contacts her top three clients to invite them to follow her. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard IV-A (Loyalty), because she is competing with her employer while still employed." },
+        { "id": "B", "text": "Standard III-B (Fair Dealing), since not all clients are being contacted." },
+        { "id": "C", "text": "No Standard, since clients have the right to choose advisors." }
+      ],
+      "answer": "A",
+      "explanation": "Soliciting clients pre-departure is competing with the employer while still on the payroll. IV-A loyalty requires acting in the employer's interest until formal departure.\n\n**B** is unrelated — the issue isn't fair allocation among clients, but the timing of the solicitation.\n\n**C** is a true statement but doesn't address the pre-departure timing problem."
+    },
+    {
+      "id": "q-ethics-iv-002",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "easy",
+      "stem": "A CFA charterholder accepts a paid board position at an outside company. Before doing so, she should *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Inform her employer after she has accepted the position." },
+        { "id": "B", "text": "Disclose the opportunity to her employer and obtain written approval before accepting." },
+        { "id": "C", "text": "Decline the position because outside roles are never permitted." }
+      ],
+      "answer": "B",
+      "explanation": "Standard IV-B requires disclosure and written approval from the employer before accepting additional compensation arrangements that could conflict.\n\n**A** is too late — pre-approval is required.\n\n**C** is overly restrictive; outside roles are permitted if properly disclosed and approved."
+    },
+    {
+      "id": "q-ethics-iv-003",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "hard",
+      "stem": "A supervisor knows that an analyst has been recommending stocks in which the analyst holds undisclosed personal positions. The supervisor does not investigate or impose discipline. The supervisor *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard IV-A (Loyalty to Employer), because the supervisor's inaction harms the firm." },
+        { "id": "B", "text": "Standard IV-C (Responsibilities of Supervisors), for failing to make reasonable efforts to detect and prevent violations." },
+        { "id": "C", "text": "No Standard, since the supervisor is not the analyst." }
+      ],
+      "answer": "B",
+      "explanation": "IV-C requires supervisors to take reasonable efforts to ensure compliance — including investigation when violations are suspected. Inaction in the face of suspected misconduct is itself a violation.\n\n**A** could indirectly apply but IV-C is the specific Standard for supervisor failures.\n\n**C** misreads supervisor accountability."
+    },
+    {
+      "id": "q-ethics-iv-004",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "medium",
+      "stem": "After leaving her former employer, a CFA charterholder is approached by clients of that employer asking if she would manage their assets at her new firm. The most consistent approach with Standard IV-A is:",
+      "choices": [
+        { "id": "A", "text": "Refuse to accept any former clients, since the duty of loyalty continues forever." },
+        { "id": "B", "text": "Accept the clients without restriction; she has no further obligation to the former employer." },
+        { "id": "C", "text": "Accept the clients but not use the former employer's confidential information (e.g., specific portfolio details, proprietary models) in the process." }
+      ],
+      "answer": "C",
+      "explanation": "Post-departure, the duty of loyalty diminishes but the duty of confidentiality continues. She can accept former clients (assuming no contractual non-solicit), but cannot use the former employer's confidential information.\n\n**A** is too restrictive — there's no permanent ban.\n\n**B** ignores the ongoing confidentiality duty."
+    },
+    {
+      "id": "q-ethics-iv-005",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "medium",
+      "stem": "A junior analyst is asked by their supervisor to engage in conduct that the analyst believes violates the Code. The analyst's *most consistent* action with the Code is:",
+      "choices": [
+        { "id": "A", "text": "Comply with the supervisor's instruction; junior staff cannot be held personally liable." },
+        { "id": "B", "text": "Refuse to participate, raise the concern with the supervisor, then with compliance if not resolved." },
+        { "id": "C", "text": "Resign immediately without raising the concern internally." }
+      ],
+      "answer": "B",
+      "explanation": "The dissociation hierarchy: refuse to participate, raise the concern, document, escalate. The analyst remains personally liable for Code violations regardless of supervisor instruction.\n\n**A** misreads supervisor-subordinate liability — the analyst can be liable.\n\n**C** skips proper internal escalation; resignation is the last resort, not the first."
+    },
+    {
+      "id": "q-ethics-iv-006",
+      "lessonId": "ethics-std-iv-employers",
+      "difficulty": "easy",
+      "stem": "Which of the following is *most likely* a recommended supervisory procedure under Standard IV-C?",
+      "choices": [
+        { "id": "A", "text": "Hiring only senior analysts to avoid supervisory needs." },
+        { "id": "B", "text": "Establishing written compliance procedures, conducting training, monitoring for violations, and acting promptly on issues." },
+        { "id": "C", "text": "Conducting reviews only after a violation has been reported externally." }
+      ],
+      "answer": "B",
+      "explanation": "Standard IV-C requires *systematic* prevention: written procedures, training, monitoring, prompt action. Reactive supervision isn't enough.\n\n**A** is not a recommended procedure.\n\n**C** is reactive only; the Standard requires proactive systems."
+    },
+    {
+      "id": "q-ethics-v-001",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "medium",
+      "stem": "A portfolio manager places a 5% position in an obscure emerging-market small-cap stock based on a single sell-side report from a firm whose research methodology she has not assessed. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard V-A (Diligence and Reasonable Basis), because the depth of research is inadequate for the position size and risk." },
+        { "id": "B", "text": "Standard V-B (Communication with Clients), unless the client has been informed of the sell-side source." },
+        { "id": "C", "text": "No Standard, since reliance on third-party research is allowed." }
+      ],
+      "answer": "A",
+      "explanation": "Standard V-A requires diligence scaling to the risk and complexity of the recommendation. A 5% position in an obscure small-cap merits more research than a single unverified sell-side note.\n\n**B** is also relevant but V-A is more directly about the inadequate research basis.\n\n**C** confuses 'reliance permitted with quality assessment' with 'reliance without quality assessment.'"
+    },
+    {
+      "id": "q-ethics-v-002",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "easy",
+      "stem": "Marketing materials that claim a fund 'consistently outperforms the market' without supporting performance data *most likely* violate:",
+      "choices": [
+        { "id": "A", "text": "Standard V-B (Communication with Clients), for failing to distinguish opinion from fact." },
+        { "id": "B", "text": "Standard III-A (Loyalty), since the marketing harms clients." },
+        { "id": "C", "text": "No Standard, since marketing is permitted to be promotional." }
+      ],
+      "answer": "A",
+      "explanation": "V-B requires distinguishing fact from opinion. 'Consistently outperforms' presents claim as fact; without supporting data, it's unsupported opinion (or worse, false claim).\n\n**B** is less specific than V-B.\n\n**C** ignores the Standard's requirements; promotional doesn't override fact-vs-opinion rules."
+    },
+    {
+      "id": "q-ethics-v-003",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "medium",
+      "stem": "A portfolio manager uses a third-party quantitative model to generate stock recommendations without understanding the model's underlying assumptions or limitations. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard V-A (Diligence), since the manager has not assessed the model's reasonable basis." },
+        { "id": "B", "text": "Standard V-C (Record Retention), since model output isn't retained." },
+        { "id": "C", "text": "No Standard, since quant models are sophisticated tools that are inherently reliable." }
+      ],
+      "answer": "A",
+      "explanation": "V-A requires understanding the basis of recommendations, including third-party models. Black-box reliance without comprehension is a violation.\n\n**B** is unrelated.\n\n**C** ignores the diligence duty — sophistication of a tool doesn't release the user from understanding it."
+    },
+    {
+      "id": "q-ethics-v-004",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "medium",
+      "stem": "How long must investment-related records *most appropriately* be retained, in the absence of more-restrictive local regulation?",
+      "choices": [
+        { "id": "A", "text": "1 year" },
+        { "id": "B", "text": "7 years (a common professional standard)" },
+        { "id": "C", "text": "Permanently" }
+      ],
+      "answer": "B",
+      "explanation": "The Code doesn't specify a single duration, but 7 years is the common professional standard absent more-restrictive local regulation. Local regulators (SEC: 5 years; FINRA: 6; FCA: variable) may impose specific durations.\n\n**A** is too short.\n\n**C** is too long for general records; specific items (regulatory) may have longer requirements."
+    },
+    {
+      "id": "q-ethics-v-005",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "easy",
+      "stem": "When a CFA charterholder leaves a firm, investment records produced during employment *most likely* belong to:",
+      "choices": [
+        { "id": "A", "text": "The individual analyst who created them." },
+        { "id": "B", "text": "The employer." },
+        { "id": "C", "text": "The clients whose investments they relate to." }
+      ],
+      "answer": "B",
+      "explanation": "Records produced during employment are employer property, regardless of who created them. This intersects with Standard IV-A loyalty and V-C record retention.\n\n**A** misunderstands employment-IP relationships.\n\n**C** confuses subject matter with ownership."
+    },
+    {
+      "id": "q-ethics-v-006",
+      "lessonId": "ethics-std-v-analysis",
+      "difficulty": "medium",
+      "stem": "An analyst disagrees with their team's research conclusion. Acting *most consistent* with Standard V-A, the analyst should:",
+      "choices": [
+        { "id": "A", "text": "Publish the team conclusion anyway, since team consensus must be respected." },
+        { "id": "B", "text": "Raise the disagreement, document it, and consider not being associated with a conclusion they don't support." },
+        { "id": "C", "text": "Immediately escalate to compliance regardless of the disagreement's nature." }
+      ],
+      "answer": "B",
+      "explanation": "V-A requires that members are 'reasonably satisfied' with the group conclusion they're associated with. Disagreement should be raised, documented, and — if the conclusion is unsupportable — the analyst should consider dissociating.\n\n**A** is publishing something the analyst doesn't believe is supportable — a violation.\n\n**C** is overkill; reasonable professional disagreement isn't always a compliance issue."
+    },
+    {
+      "id": "q-ethics-vi-001",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "easy",
+      "stem": "An analyst publishes a buy recommendation on a stock she has owned for two years. Which Standard *most directly* requires her to disclose her position?",
+      "choices": [
+        { "id": "A", "text": "Standard III-B (Fair Dealing)." },
+        { "id": "B", "text": "Standard VI-A (Disclosure of Conflicts)." },
+        { "id": "C", "text": "Standard II-A (Material Nonpublic Information)." }
+      ],
+      "answer": "B",
+      "explanation": "VI-A specifically addresses disclosure of personal interests in covered securities. The analyst's personal stake is exactly the kind of conflict requiring disclosure.\n\n**A** is unrelated; not about allocation.\n\n**C** is about MNPI trading, not disclosure of personal positions."
+    },
+    {
+      "id": "q-ethics-vi-002",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "medium",
+      "stem": "An analyst purchases shares for her personal account just before her firm publishes a buy recommendation on the same stock. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard VI-B (Priority of Transactions) — front-running clients." },
+        { "id": "B", "text": "Standard II-A (Material Nonpublic Information) only." },
+        { "id": "C", "text": "No Standard, since the analyst's purchase is small relative to client allocations." }
+      ],
+      "answer": "A",
+      "explanation": "Front-running — personal trades placed ahead of an upcoming firm recommendation — is the textbook VI-B violation.\n\n**B** could apply if the pending recommendation is material non-public, but VI-B is the specific Standard.\n\n**C** misreads the principle; size doesn't excuse front-running."
+    },
+    {
+      "id": "q-ethics-vi-003",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "medium",
+      "stem": "A wealth manager refers a client to a tax attorney and receives an undisclosed referral fee equal to 20% of the attorney's first-year fees. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard VI-C (Referral Fees), for failing to disclose the arrangement to the client." },
+        { "id": "B", "text": "Standard III-A (Loyalty), since the client's interests are compromised." },
+        { "id": "C", "text": "No Standard, since the referral arrangement is between professionals." }
+      ],
+      "answer": "A",
+      "explanation": "VI-C specifically requires disclosure of any compensation paid or received for recommendations of products or services. The 20% referral fee is exactly that.\n\n**B** could apply but VI-C is the specific Standard for referral compensation.\n\n**C** ignores the disclosure requirement to the client."
+    },
+    {
+      "id": "q-ethics-vi-004",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "hard",
+      "stem": "Beneficial ownership for Standard VI-B (priority of transactions) *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Only the member's own accounts." },
+        { "id": "B", "text": "The member's own accounts, accounts of spouse and dependent children, and accounts where the member has investment authority." },
+        { "id": "C", "text": "All members and their families, regardless of relationship." }
+      ],
+      "answer": "B",
+      "explanation": "Beneficial ownership generally extends to the member's own accounts, immediate household members (spouse, dependent children), and accounts where the member has investment authority (e.g., trusts).\n\n**A** is too narrow.\n\n**C** is too broad — non-dependent adult family members typically aren't included unless the member has investment authority."
+    },
+    {
+      "id": "q-ethics-vi-005",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "easy",
+      "stem": "Which of the following *most likely* cures a conflict of interest under Standard VI-A?",
+      "choices": [
+        { "id": "A", "text": "A vague mention that 'conflicts may exist' in fine print." },
+        { "id": "B", "text": "A specific, prominent, plain-language disclosure of the conflict's nature and likely impact." },
+        { "id": "C", "text": "Internal documentation of the conflict, even if not disclosed to clients." }
+      ],
+      "answer": "B",
+      "explanation": "VI-A requires disclosure to be prominent, specific, and in plain language — actionable for the affected party.\n\n**A** is vague generic disclosure — not VI-A compliant.\n\n**C** misses the requirement that disclosure be made *to* the affected party."
+    },
+    {
+      "id": "q-ethics-vi-006",
+      "lessonId": "ethics-std-vi-conflicts",
+      "difficulty": "medium",
+      "stem": "Which conflict is *most likely* NOT cured by disclosure under the CFA Standards?",
+      "choices": [
+        { "id": "A", "text": "A personal stake in a stock you cover." },
+        { "id": "B", "text": "Trading on material non-public information about a client's pending merger." },
+        { "id": "C", "text": "A board membership at a company in an industry your firm covers." }
+      ],
+      "answer": "B",
+      "explanation": "Trading on MNPI is an absolute prohibition (Standard II-A). Disclosure cannot cure it.\n\n**A** can be cured by disclosure (VI-A).\n\n**C** can typically be managed by disclosure + information barriers (VI-A combined with II-A controls)."
+    },
+    {
+      "id": "q-ethics-vii-001",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "medium",
+      "stem": "A candidate who has just sat for Level I of the CFA exam posts on social media a detailed description of which topics seemed to be heavily tested. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard VII-A (Conduct as Participants in CFA Programs), for sharing exam content with future candidates." },
+        { "id": "B", "text": "Standard I-C (Misrepresentation), if she presents her interpretation as fact." },
+        { "id": "C", "text": "No Standard, since general comments on exam topics are permitted." }
+      ],
+      "answer": "A",
+      "explanation": "VII-A prohibits sharing specific exam content. Even general comments about which topics were emphasised can convey impermissible information.\n\n**B** is unrelated to the exam-content disclosure issue.\n\n**C** misreads the Standard; the safer course is to discuss study approach, not exam specifics."
+    },
+    {
+      "id": "q-ethics-vii-002",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "easy",
+      "stem": "A Level II candidate writes 'CFA' after her name on her CV. This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard VII-B (Reference to CFA Designation), because the CFA designation can only be used after the charter is awarded." },
+        { "id": "B", "text": "Standard I-C (Misrepresentation), but is unrelated to VII." },
+        { "id": "C", "text": "No Standard, since she has passed half of the exam levels." }
+      ],
+      "answer": "A",
+      "explanation": "VII-B prohibits using 'CFA' before the charter is formally awarded (after passing all levels, meeting experience, and being granted membership). Candidates can describe candidacy but not use the designation.\n\n**B** is also true (the use does misrepresent credentials), but VII-B is the specific Standard.\n\n**C** misreads the rule — half-completion doesn't permit designation use."
+    },
+    {
+      "id": "q-ethics-vii-003",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "medium",
+      "stem": "Which of the following is *most likely* acceptable use of the CFA designation?",
+      "choices": [
+        { "id": "A", "text": "'James Park, CFA' on a business card, where Park is a charterholder in good standing." },
+        { "id": "B", "text": "'CFA-certified investment advisor' on a website." },
+        { "id": "C", "text": "'Recognized by CFA Institute as among the top investment professionals' in marketing." }
+      ],
+      "answer": "A",
+      "explanation": "Standard format: 'Name, CFA' on business cards, signatures, profiles. This is the proper usage.\n\n**B** is wrong — the designation is 'charterholder,' not 'certified'.\n\n**C** implies endorsement by CFA Institute, which the designation doesn't confer."
+    },
+    {
+      "id": "q-ethics-vii-004",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "easy",
+      "stem": "Cheating on the CFA exam (e.g., using unauthorised materials) *most likely* would result in:",
+      "choices": [
+        { "id": "A", "text": "Only a written warning." },
+        { "id": "B", "text": "Cancellation of exam scores, ban from future exams, and possible permanent industry consequences." },
+        { "id": "C", "text": "No consequence if the candidate didn't ultimately pass." }
+      ],
+      "answer": "B",
+      "explanation": "Cheating is a serious VII-A violation. Sanctions can include score cancellation, ban from future exams (often permanent), public sanction, and (if a charterholder) charter revocation.\n\n**A** dramatically understates the severity.\n\n**C** misreads enforcement; the violation occurs regardless of whether the candidate passed."
+    },
+    {
+      "id": "q-ethics-vii-005",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "medium",
+      "stem": "A firm's marketing materials state: 'Our investment team is recognized by CFA Institute as having achieved the highest standard of excellence.' This *most likely* violates:",
+      "choices": [
+        { "id": "A", "text": "Standard VII-B (Reference to CFA Designation), because it implies CFA Institute endorsement." },
+        { "id": "B", "text": "Standard I-C (Misrepresentation) only." },
+        { "id": "C", "text": "No Standard, since the team includes CFA charterholders." }
+      ],
+      "answer": "A",
+      "explanation": "VII-B prohibits implying CFA Institute endorsement of firms or individuals. The charter doesn't carry endorsement.\n\n**B** is also true, but VII-B is the specific Standard for designation-related misrepresentation.\n\n**C** ignores the misleading nature of the implied endorsement."
+    },
+    {
+      "id": "q-ethics-vii-006",
+      "lessonId": "ethics-std-vii-cfa",
+      "difficulty": "medium",
+      "stem": "A charterholder lets her CFA Institute membership lapse but continues to use 'CFA' after her name. This *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Is permissible since she has earned the charter." },
+        { "id": "B", "text": "Violates Standard VII-B, since active membership is required for ongoing designation use." },
+        { "id": "C", "text": "Is permissible if she pays back-dues within 90 days." }
+      ],
+      "answer": "B",
+      "explanation": "Active CFA Institute membership is required to continue using the designation. Lapsed members must stop using 'CFA' until membership is reinstated.\n\n**A** misreads the requirement — earning the charter is necessary but not sufficient; active membership is also required.\n\n**C** is fictitious — there's no automatic 90-day grace."
+    },
+    {
+      "id": "q-ethics-gips-001",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "easy",
+      "stem": "GIPS standards are *most accurately* described as:",
+      "choices": [
+        { "id": "A", "text": "Mandatory regulatory requirements imposed by securities regulators worldwide." },
+        { "id": "B", "text": "Voluntary performance-reporting standards developed by CFA Institute and widely adopted in institutional asset management." },
+        { "id": "C", "text": "Auditing standards for hedge fund accounting." }
+      ],
+      "answer": "B",
+      "explanation": "GIPS is voluntary but widely adopted, particularly by institutional managers. CFA Institute developed and maintains the standards.\n\n**A** is incorrect — GIPS is not regulatorily mandated.\n\n**C** confuses GIPS with general auditing standards."
+    },
+    {
+      "id": "q-ethics-gips-002",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "medium",
+      "stem": "A composite under GIPS is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "A single sample portfolio selected by the firm to represent its strategy." },
+        { "id": "B", "text": "An aggregation of all fee-paying, discretionary portfolios managed to a similar strategy." },
+        { "id": "C", "text": "The firm's best-performing portfolio over a chosen time period." }
+      ],
+      "answer": "B",
+      "explanation": "A composite includes ALL fee-paying, discretionary portfolios managed to a similar strategy. Firms cannot exclude portfolios or select favorable ones.\n\n**A** is too narrow.\n\n**C** describes the cherry-picking that GIPS prohibits."
+    },
+    {
+      "id": "q-ethics-gips-003",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "medium",
+      "stem": "GIPS *most appropriately* requires the use of:",
+      "choices": [
+        { "id": "A", "text": "Money-weighted returns, since they reflect the investor's experience." },
+        { "id": "B", "text": "Time-weighted returns, since they exclude the effect of client cash flow timing." },
+        { "id": "C", "text": "Simple arithmetic returns, since they're easier to calculate." }
+      ],
+      "answer": "B",
+      "explanation": "GIPS requires time-weighted returns for most asset classes. The purpose: compare manager skill across firms regardless of when clients added or removed cash.\n\n**A** is the opposite — MWR is sensitive to timing.\n\n**C** is inadequate for multi-period reporting."
+    },
+    {
+      "id": "q-ethics-gips-004",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "easy",
+      "stem": "Performance reports under GIPS *most appropriately* are presented:",
+      "choices": [
+        { "id": "A", "text": "Gross of fees only." },
+        { "id": "B", "text": "Net of fees (may also include gross, but net is required)." },
+        { "id": "C", "text": "Either gross or net, at the firm's discretion." }
+      ],
+      "answer": "B",
+      "explanation": "GIPS requires net-of-fees reporting. Gross can supplement but never replace net.\n\n**A** is non-compliant.\n\n**C** misreads the requirement."
+    },
+    {
+      "id": "q-ethics-gips-005",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "medium",
+      "stem": "Verification under GIPS *most appropriately* is:",
+      "choices": [
+        { "id": "A", "text": "A required step for any firm claiming GIPS compliance." },
+        { "id": "B", "text": "A recommended (not required) third-party assurance that the firm's GIPS compliance procedures are sound." },
+        { "id": "C", "text": "A certification by CFA Institute that the firm's investment performance is exceptional." }
+      ],
+      "answer": "B",
+      "explanation": "Verification is recommended but voluntary. It's third-party assurance about compliance procedures, not about investment performance.\n\n**A** misreads the requirement.\n\n**C** confuses verification with performance certification — GIPS doesn't certify investment results."
+    },
+    {
+      "id": "q-ethics-gips-006",
+      "lessonId": "ethics-gips-overview",
+      "difficulty": "medium",
+      "stem": "GIPS compliance is *most likely* applied at:",
+      "choices": [
+        { "id": "A", "text": "The individual portfolio manager level." },
+        { "id": "B", "text": "The firm level (i.e., the entire firm must comply across all composites)." },
+        { "id": "C", "text": "Only the firm's largest composite." }
+      ],
+      "answer": "B",
+      "explanation": "GIPS compliance is firm-level. The firm must define itself, apply standards consistently across all composites, and cannot selectively comply.\n\n**A** misreads the scope.\n\n**C** describes the kind of selective compliance GIPS forbids."
+    },
+    {
+      "id": "q-ethics-app-001",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "hard",
+      "stem": "An analyst, while leaving a firm: (a) copies the firm's research database to her personal laptop, (b) solicits the top five clients before resigning, and (c) tips a friend who is a CFA candidate about which Standards were heavily tested. Which Standard does conduct (a) *most directly* violate?",
+      "choices": [
+        { "id": "A", "text": "Standard IV-A (Loyalty)." },
+        { "id": "B", "text": "Standard III-A (Loyalty to clients)." },
+        { "id": "C", "text": "Standard VII-A (CFA Programs)." }
+      ],
+      "answer": "A",
+      "explanation": "Taking employer-confidential materials pre-departure is a direct IV-A (employer loyalty) violation. Each of the three conducts maps to a different Standard:\n- (a) IV-A — taking firm property\n- (b) IV-A — soliciting clients pre-departure\n- (c) VII-A — sharing exam content\n\n**B** is unrelated to the database-taking conduct.\n\n**C** applies to (c), not (a)."
+    },
+    {
+      "id": "q-ethics-app-002",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "medium",
+      "stem": "A scenario presents multiple potential Standards violations. When asked 'which Standard does the conduct most likely violate?' the most appropriate answer is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "All Standards that apply, equally." },
+        { "id": "B", "text": "The most specific Standard for the primary conduct in the scenario." },
+        { "id": "C", "text": "Standard I-A, since it is the broadest." }
+      ],
+      "answer": "B",
+      "explanation": "Exam strategy: identify the most-specific Standard for the primary conduct. Multi-Standard scenarios are common; the correct answer is typically the most direct match.\n\n**A** doesn't apply to single-choice questions.\n\n**C** would over-apply I-A; specific Standards are usually better fits."
+    },
+    {
+      "id": "q-ethics-app-003",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "medium",
+      "stem": "When a member discovers their employer is engaged in illegal conduct, the Code's *most appropriate* sequence of actions is:",
+      "choices": [
+        { "id": "A", "text": "Immediately report to authorities and resign." },
+        { "id": "B", "text": "Dissociate from the misconduct, document the position, escalate internally; resignation as a last resort if internal resolution fails." },
+        { "id": "C", "text": "Continue working while the matter resolves itself." }
+      ],
+      "answer": "B",
+      "explanation": "Dissociation hierarchy: refuse to participate, document, escalate internally (compliance, senior management, board), then resign if other paths fail.\n\n**A** skips internal escalation and conflates Code obligations with whistleblower laws.\n\n**C** is complicity — the member would be implicated in ongoing conduct."
+    },
+    {
+      "id": "q-ethics-app-004",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "easy",
+      "stem": "Standards of Professional Conduct are *most accurately* characterised as:",
+      "choices": [
+        { "id": "A", "text": "Results-based — judged by the outcome of investment recommendations." },
+        { "id": "B", "text": "Process-based — judged by the conduct itself, regardless of outcomes." },
+        { "id": "C", "text": "Reputation-based — judged by public perception." }
+      ],
+      "answer": "B",
+      "explanation": "Standards judge conduct, not outcomes. A trade that violates Standard III-C is a violation even if it produces strong returns; a trade that complies is fine even if it loses money.\n\n**A** is the common-sense intuition that the exam frequently tests against.\n\n**C** misunderstands the basis of the Standards."
+    },
+    {
+      "id": "q-ethics-app-005",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "medium",
+      "stem": "Which conflict is *most likely* NOT able to be cured by disclosure alone?",
+      "choices": [
+        { "id": "A", "text": "A personal stake in a covered stock." },
+        { "id": "B", "text": "Front-running clients with personal trades." },
+        { "id": "C", "text": "A modest gift from a long-term client." }
+      ],
+      "answer": "B",
+      "explanation": "Front-running (Standard VI-B) is an absolute prohibition — cannot be cured by disclosure. The trade must not happen.\n\n**A** can typically be cured by VI-A disclosure.\n\n**C** is a minor matter usually acceptable with disclosure (often firm-policy)."
+    },
+    {
+      "id": "q-ethics-app-006",
+      "lessonId": "ethics-application-overview",
+      "difficulty": "medium",
+      "stem": "Recommended procedure for preventing front-running by analysts *most directly* would be:",
+      "choices": [
+        { "id": "A", "text": "Annual ethics training emphasising Standard VI-B." },
+        { "id": "B", "text": "A pre-clearance system requiring compliance approval of personal trades against the firm's restricted list and upcoming research pipeline." },
+        { "id": "C", "text": "Periodic written compliance manual updates." }
+      ],
+      "answer": "B",
+      "explanation": "Pre-clearance is the specific control that prevents front-running. The other options are general (training, manuals) — informative but not preventive.\n\n**A** and **C** are useful but indirect.\n\nMatch procedure to specific failure mode."
+    },
+    {
       "id": "q-ethics-iii-001",
       "lessonId": "ethics-std-iii-clients",
       "difficulty": "medium",
