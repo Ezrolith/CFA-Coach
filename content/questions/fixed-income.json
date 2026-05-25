@@ -156,6 +156,1332 @@
       ],
       "answer": "B",
       "explanation": "Price and yield move **inversely**. When market rates fall, the bond's fixed coupon becomes more attractive relative to new issuances, so the price rises.\n\n**A** would cause prices to **fall**, not rise.\n\n**C** describes reinvestment risk, which affects realised return — not the bond's current market price directly."
+    },
+    {
+      "id": "q-fi-feat-001",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "easy",
+      "stem": "The **principal** (par or face value) of a bond is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "The market price at which the bond currently trades" },
+        { "id": "B", "text": "The amount to be repaid at maturity" },
+        { "id": "C", "text": "The sum of all coupon payments" }
+      ],
+      "answer": "B",
+      "explanation": "Par/face = the principal amount returned at maturity. Coupons quoted as % of par.\n\n**A** is the market price, which moves with yields.\n\n**C** describes coupon payments, distinct from principal."
+    },
+    {
+      "id": "q-fi-feat-002",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "medium",
+      "stem": "A **negative covenant** in a bond indenture *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Requires the issuer to take a specific action (e.g., pay coupons)" },
+        { "id": "B", "text": "Restricts the issuer from taking certain actions (e.g., issuing more senior debt)" },
+        { "id": "C", "text": "Gives the bondholder the right to demand early repayment" }
+      ],
+      "answer": "B",
+      "explanation": "Negative covenants restrict issuer behaviour (limit additional debt, dividends, asset sales).\n\n**A** describes affirmative covenants.\n\n**C** describes put options."
+    },
+    {
+      "id": "q-fi-feat-003",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "easy",
+      "stem": "In default, **secured debt** is *most accurately* placed in the priority ranking:",
+      "choices": [
+        { "id": "A", "text": "First — has claim on specific collateral" },
+        { "id": "B", "text": "After common equity but before preferred shares" },
+        { "id": "C", "text": "Equal with unsecured debt" }
+      ],
+      "answer": "A",
+      "explanation": "Secured debt has first claim on specific pledged assets. Hierarchy: secured > senior unsecured > subordinated > junior subordinated > preferred > common.\n\n**B** and **C** are incorrect rankings."
+    },
+    {
+      "id": "q-fi-feat-004",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "medium",
+      "stem": "A **callable bond** *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "Lower coupon than otherwise-identical non-callable bond" },
+        { "id": "B", "text": "Higher coupon than otherwise-identical non-callable bond (to compensate holder)" },
+        { "id": "C", "text": "The same coupon — the call option doesn't affect pricing" }
+      ],
+      "answer": "B",
+      "explanation": "Callable benefits issuer (can refinance if rates fall) at holder's expense (reinvestment risk, capped upside). Holder demands higher coupon to compensate.\n\n**A** has direction reversed.\n\n**C** is incorrect — embedded options always affect pricing."
+    },
+    {
+      "id": "q-fi-feat-005",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "medium",
+      "stem": "**Clean price** of a bond differs from **dirty price** *most accurately* by:",
+      "choices": [
+        { "id": "A", "text": "Cumulative interest paid to date" },
+        { "id": "B", "text": "Accrued interest since the last coupon" },
+        { "id": "C", "text": "Tax owed on the next coupon" }
+      ],
+      "answer": "B",
+      "explanation": "Clean price (quoted) excludes accrued interest; dirty price (settlement) includes it. Dirty = clean + accrued.\n\n**A** is overstated.\n\n**C** is unrelated to price quotation."
+    },
+    {
+      "id": "q-fi-feat-006",
+      "lessonId": "fi-feat-overview",
+      "difficulty": "hard",
+      "stem": "**Sovereign debt** is *most accurately* contrasted with corporate debt in that:",
+      "choices": [
+        { "id": "A", "text": "Sovereigns can print money to repay domestic-currency obligations" },
+        { "id": "B", "text": "Sovereigns are always default-free" },
+        { "id": "C", "text": "Sovereign yields are always lower than corporate yields" }
+      ],
+      "answer": "A",
+      "explanation": "Sovereigns can print money for domestic-currency debt (though this creates inflation risk). Cannot do so for foreign-currency debt.\n\n**B** is false — sovereign defaults are real (Russia 1998, Argentina 2001, Greece 2012, Sri Lanka 2022).\n\n**C** is false — some sovereigns (EM) yield much more than IG corporates."
+    },
+    {
+      "id": "q-fi-cf-001",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "easy",
+      "stem": "A **zero-coupon bond** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Pays no periodic coupon; bought at discount, repaid at par" },
+        { "id": "B", "text": "Pays no principal, only coupons" },
+        { "id": "C", "text": "Pays only coupon and never principal" }
+      ],
+      "answer": "A",
+      "explanation": "Zero-coupon: no periodic coupon. Bought at discount; receives par at maturity. Single cash flow.\n\n**B** is the opposite.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-fi-cf-002",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "medium",
+      "stem": "A bond is described as **amortizing**. This *most accurately* means:",
+      "choices": [
+        { "id": "A", "text": "Coupons increase over time" },
+        { "id": "B", "text": "Each payment includes both interest and principal — principal balance reduces" },
+        { "id": "C", "text": "The bond can be exchanged for equity" }
+      ],
+      "answer": "B",
+      "explanation": "Amortizing bond: each payment combines interest + principal repayment (mortgages, auto loans). Principal balance reduces over time.\n\n**A** describes step-up bonds.\n\n**C** is convertible."
+    },
+    {
+      "id": "q-fi-cf-003",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "medium",
+      "stem": "An **inflation-linked bond** (e.g., TIPS) protects against:",
+      "choices": [
+        { "id": "A", "text": "Default risk" },
+        { "id": "B", "text": "Currency risk" },
+        { "id": "C", "text": "Loss of purchasing power from inflation" }
+      ],
+      "answer": "C",
+      "explanation": "Inflation-linked bonds index principal (or coupon) to CPI — real return preserved regardless of inflation.\n\n**A** is unrelated.\n\n**B** would need FX-hedged structure."
+    },
+    {
+      "id": "q-fi-cf-004",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "hard",
+      "stem": "A **convertible bond** offers the holder:",
+      "choices": [
+        { "id": "A", "text": "Pure equity exposure with no bond features" },
+        { "id": "B", "text": "Bond floor (downside protection) + equity upside via conversion option" },
+        { "id": "C", "text": "Fixed coupon with no conversion rights" }
+      ],
+      "answer": "B",
+      "explanation": "Convertible bond: hybrid. Bond floor if equity flat/down; equity upside if convertibility kicks in. Coupon typically below non-convertible.\n\n**A** describes equity.\n\n**C** describes a straight bond."
+    },
+    {
+      "id": "q-fi-cf-005",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "medium",
+      "stem": "**Original Issue Discount (OID)** tax treatment requires the bondholder to:",
+      "choices": [
+        { "id": "A", "text": "Defer all tax until bond is sold or matures" },
+        { "id": "B", "text": "Pay tax on imputed interest as it accrues, even before cash received" },
+        { "id": "C", "text": "Pay no tax until coupon payments are received" }
+      ],
+      "answer": "B",
+      "explanation": "OID rules require imputed interest (accreting from discount toward par) to be reported and taxed each year as it accrues. Even without cash received, tax is owed.\n\n**A** and **C** describe other tax treatments not applicable to OID instruments."
+    },
+    {
+      "id": "q-fi-cf-006",
+      "lessonId": "fi-cf-overview",
+      "difficulty": "easy",
+      "stem": "In a securitisation **waterfall**, losses are *most accurately* allocated:",
+      "choices": [
+        { "id": "A", "text": "Senior tranches first, equity last" },
+        { "id": "B", "text": "Equity tranche first, senior tranches last" },
+        { "id": "C", "text": "Pro-rata across all tranches" }
+      ],
+      "answer": "B",
+      "explanation": "Equity (residual) absorbs first losses. Then mezzanine, then senior. Senior tranches paid first; lose last.\n\n**A** reverses the order.\n\n**C** describes pass-through, not tranching."
+    },
+    {
+      "id": "q-fi-iss-001",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "easy",
+      "stem": "Most corporate bonds are *most accurately* traded:",
+      "choices": [
+        { "id": "A", "text": "On centralised stock exchanges like NYSE" },
+        { "id": "B", "text": "Over-the-counter (OTC) through dealer markets" },
+        { "id": "C", "text": "Through retail brokerages only" }
+      ],
+      "answer": "B",
+      "explanation": "Bonds trade OTC: dealers maintain inventories and quote spreads. Some bonds exchange-listed but predominantly retail.\n\n**A** describes equity markets.\n\n**C** is too restrictive."
+    },
+    {
+      "id": "q-fi-iss-002",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "medium",
+      "stem": "A **Dutch auction** for US Treasuries *most accurately* works by:",
+      "choices": [
+        { "id": "A", "text": "Each bidder pays their submitted bid price" },
+        { "id": "B", "text": "All accepted bidders pay the highest accepted yield (stop-out yield)" },
+        { "id": "C", "text": "Treasury sells at fixed prices set the day before" }
+      ],
+      "answer": "B",
+      "explanation": "Dutch auction (single-price): all accepted bidders pay the marginal accepted yield. Encourages aggressive bidding without winner's curse.\n\n**A** describes English auctions (rare for Treasury).\n\n**C** is incorrect — auctions determine the price."
+    },
+    {
+      "id": "q-fi-iss-003",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "medium",
+      "stem": "Compared to equity markets, bond markets *most accurately* have:",
+      "choices": [
+        { "id": "A", "text": "More transparent price discovery" },
+        { "id": "B", "text": "More liquidity for typical issuers" },
+        { "id": "C", "text": "Wider bid-ask spreads and more variable liquidity" }
+      ],
+      "answer": "C",
+      "explanation": "Bonds: OTC, less liquid, wider spreads, less transparent than equities. Many bonds trade infrequently.\n\n**A** and **B** are equity strengths."
+    },
+    {
+      "id": "q-fi-iss-004",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "hard",
+      "stem": "The Bloomberg US Aggregate Index is **cap-weighted**. This *most accurately* implies that the most heavily indebted issuers receive:",
+      "choices": [
+        { "id": "A", "text": "The lowest portfolio weights" },
+        { "id": "B", "text": "The highest portfolio weights" },
+        { "id": "C", "text": "Weights independent of debt amount" }
+      ],
+      "answer": "B",
+      "explanation": "Cap-weighted index: weight proportional to market value of outstanding debt. Most-indebted issuers get most weight — sometimes problematic (e.g., bailout-prone names).\n\n**A** reverses the relationship.\n\n**C** describes equal-weighted indexes."
+    },
+    {
+      "id": "q-fi-iss-005",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "medium",
+      "stem": "In an **underwritten public offering**, the investment bank *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Buys the bonds from the issuer and resells to investors, earning a spread" },
+        { "id": "B", "text": "Only helps the issuer pick the auction date" },
+        { "id": "C", "text": "Trades the bonds in the secondary market as a market maker" }
+      ],
+      "answer": "A",
+      "explanation": "Underwriter purchases (firm commitment) or facilitates sale (best efforts). Sells to investors. Earns underwriting spread.\n\n**B** and **C** describe other roles."
+    },
+    {
+      "id": "q-fi-iss-006",
+      "lessonId": "fi-iss-overview",
+      "difficulty": "easy",
+      "stem": "**TRACE** in US corporate bond market is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "A government bond futures market" },
+        { "id": "B", "text": "A post-trade reporting system for corporate bond transactions" },
+        { "id": "C", "text": "A bond rating agency" }
+      ],
+      "answer": "B",
+      "explanation": "TRACE (Trade Reporting and Compliance Engine): all US corporate bond trades reported, improving post-trade transparency.\n\n**A** and **C** are incorrect."
+    },
+    {
+      "id": "q-fi-mkt-001",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "easy",
+      "stem": "**Commercial paper** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Long-term secured debt issued by corporations" },
+        { "id": "B", "text": "Short-term (≤ 270 days in US) unsecured debt by IG corporates" },
+        { "id": "C", "text": "Equity certificates" }
+      ],
+      "answer": "B",
+      "explanation": "Commercial paper: unsecured short-term debt (≤ 270 days in US to avoid registration). IG issuers only. ~$1T US market.\n\n**A** describes corporate bonds.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-mkt-002",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "medium",
+      "stem": "A **repo** transaction is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "An unsecured loan between banks" },
+        { "id": "B", "text": "Sale of security with agreement to repurchase later — economically equivalent to secured borrowing" },
+        { "id": "C", "text": "An equity stock loan" }
+      ],
+      "answer": "B",
+      "explanation": "Repo: sell security, agree to repurchase later at higher price. Borrower gets cash; lender gets collateral and interest (repo rate).\n\n**A** is unsecured (e.g., fed funds).\n\n**C** is a different instrument."
+    },
+    {
+      "id": "q-fi-mkt-003",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "medium",
+      "stem": "The **haircut** in a repo transaction *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Compensates the borrower for the inconvenience of the trade" },
+        { "id": "B", "text": "Is the amount by which collateral value exceeds cash received, protecting the lender" },
+        { "id": "C", "text": "Is the rate paid on the repo" }
+      ],
+      "answer": "B",
+      "explanation": "Haircut: collateral worth > cash; protects lender against collateral price decline. Treasury haircut ~2%; equity ~25-30%.\n\n**A** is incorrect — haircut benefits lender, not borrower.\n\n**C** is the repo rate."
+    },
+    {
+      "id": "q-fi-mkt-004",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "hard",
+      "stem": "The **2007-2008 repo market freeze** *most accurately* demonstrated:",
+      "choices": [
+        { "id": "A", "text": "That repos are always safe due to collateral" },
+        { "id": "B", "text": "Refinancing risk in short-term funding markets can trigger systemic crises" },
+        { "id": "C", "text": "Repo only matters for bank balance sheets" }
+      ],
+      "answer": "B",
+      "explanation": "When repo lenders refused to roll funding, banks couldn't refinance. Forced asset sales, fire-sale prices, contagion. Triggered crisis.\n\nLesson: rollover risk is real even with collateral.\n\n**A** is wrong — collateral didn't prevent the freeze.\n\n**C** understates the scope."
+    },
+    {
+      "id": "q-fi-mkt-005",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "medium",
+      "stem": "**Investment-grade** vs **high-yield** bond classification is *most accurately* drawn at:",
+      "choices": [
+        { "id": "A", "text": "AA / Aa" },
+        { "id": "B", "text": "BBB- / Baa3 (anything above is IG; below is HY)" },
+        { "id": "C", "text": "B+ / Ba1" }
+      ],
+      "answer": "B",
+      "explanation": "IG = BBB-/Baa3 and above. HY = below. This boundary triggers major differences in pricing, liquidity, regulatory capital, and investor access.\n\n**A** is too restrictive.\n\n**C** is below the boundary."
+    },
+    {
+      "id": "q-fi-mkt-006",
+      "lessonId": "fi-mkt-overview",
+      "difficulty": "easy",
+      "stem": "**Credit rating agencies** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Always perfectly predict defaults" },
+        { "id": "B", "text": "Are the only source of credit information" },
+        { "id": "C", "text": "Provide useful but imperfect credit signals; investors should do own analysis" }
+      ],
+      "answer": "C",
+      "explanation": "Ratings: useful signals but criticised post-2008 (subprime AAAs). Issuer-pays model creates conflicts. Best used alongside own analysis.\n\n**A** and **B** overstate.\n\n**Post-2008**: ratings still relied upon but with more scepticism."
+    },
+    {
+      "id": "q-fi-gov-001",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "easy",
+      "stem": "**Treasury bills (T-bills)** are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Long-term coupon-paying bonds" },
+        { "id": "B", "text": "Short-term (≤ 1 year) zero-coupon Treasury securities sold at discount" },
+        { "id": "C", "text": "Treasury Inflation-Protected Securities" }
+      ],
+      "answer": "B",
+      "explanation": "T-bills: ≤ 1 year maturity, no coupon, sold at discount, mature at par.\n\n**A** describes T-bonds.\n\n**C** is TIPS — distinct instrument."
+    },
+    {
+      "id": "q-fi-gov-002",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "medium",
+      "stem": "A 10-year muni yields 3.0%, while a comparable 10-year Treasury yields 4.5%. For an investor in the 35% marginal tax bracket, the **tax-equivalent yield** of the muni is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.95%" },
+        { "id": "B", "text": "4.62%" },
+        { "id": "C", "text": "5.00%" }
+      ],
+      "answer": "B",
+      "explanation": "$TEY = r_{muni} / (1 - t) = 0.03 / (1 - 0.35) = 0.03/0.65 = 4.62\\%$.\n\nMuni TEY (4.62%) > Treasury yield (4.50%) → muni more attractive for this investor.\n\n**A** is the wrong direction.\n\n**C** is a calculation error."
+    },
+    {
+      "id": "q-fi-gov-003",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "medium",
+      "stem": "**US Treasury Inflation-Protected Securities (TIPS)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Pay floating coupons that adjust with CPI" },
+        { "id": "B", "text": "Have principal indexed to CPI; nominal coupon applied to indexed principal" },
+        { "id": "C", "text": "Are denominated in inflation units" }
+      ],
+      "answer": "B",
+      "explanation": "TIPS: principal adjusts upward with CPI. Fixed coupon rate applied to adjusted principal → both principal and coupon income protected from inflation.\n\n**A** and **C** misdescribe TIPS structure."
+    },
+    {
+      "id": "q-fi-gov-004",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "hard",
+      "stem": "**Sovereign default** for a country borrowing in its *own currency* is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Always possible because the government has no funds" },
+        { "id": "B", "text": "Less likely than foreign currency default because the country can print money to repay" },
+        { "id": "C", "text": "Equally likely as foreign currency default" }
+      ],
+      "answer": "B",
+      "explanation": "Local currency: government can print to repay. Risk is inflation/devaluation rather than outright default.\n\nForeign currency: must acquire foreign currency from reserves or markets — limited.\n\n**A** is incorrect — sovereigns have taxation and printing power.\n\n**C** misses the key distinction."
+    },
+    {
+      "id": "q-fi-gov-005",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "medium",
+      "stem": "**Yankee bonds** are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "USD-denominated bonds issued in the US by foreign issuers" },
+        { "id": "B", "text": "Eurobonds outside the US" },
+        { "id": "C", "text": "Treasury bonds with patriotic features" }
+      ],
+      "answer": "A",
+      "explanation": "Yankee bonds: foreign companies issue USD bonds in US market. Subject to US regulation but issuer based abroad.\n\n**B** is incorrect — different category.\n\n**C** is nonsensical."
+    },
+    {
+      "id": "q-fi-gov-006",
+      "lessonId": "fi-gov-overview",
+      "difficulty": "easy",
+      "stem": "**Quasi-government bonds** in the US (e.g., Fannie Mae, FHLB) *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Have no government backing" },
+        { "id": "B", "text": "Carry implicit (sometimes explicit) US government support; trade at small spread to Treasuries" },
+        { "id": "C", "text": "Are riskier than US corporate AAA bonds" }
+      ],
+      "answer": "B",
+      "explanation": "Agency bonds: implicit government backing (post-2008, partially explicit for Fannie/Freddie under conservatorship). Small spread (10-50 bps) over Treasuries.\n\n**A** ignores the support.\n\n**C** is incorrect — agency typically lower risk."
+    },
+    {
+      "id": "q-fi-yf-001",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "easy",
+      "stem": "A **floating-rate note (FRN)** has coupon structure *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Reference rate + quoted margin, resetting periodically" },
+        { "id": "B", "text": "Fixed at issue, never changing" },
+        { "id": "C", "text": "Conditional on equity performance" }
+      ],
+      "answer": "A",
+      "explanation": "FRN coupon = reference rate (e.g., SOFR) + quoted margin (e.g., +100 bps). Resets periodically (typically quarterly).\n\n**B** describes fixed-rate bonds.\n\n**C** describes structured notes."
+    },
+    {
+      "id": "q-fi-yf-002",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "medium",
+      "stem": "Because FRN coupons adjust to market rates, FRN prices *most accurately* tend to:",
+      "choices": [
+        { "id": "A", "text": "Stay close to par at all times" },
+        { "id": "B", "text": "Move dramatically with interest rate changes" },
+        { "id": "C", "text": "Always trade at a discount" }
+      ],
+      "answer": "A",
+      "explanation": "FRN coupon adjusts → bond value close to par. Excellent in rising-rate environments.\n\n**B** is true for fixed-rate, not FRNs.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-fi-yf-003",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "medium",
+      "stem": "A 90-day T-bill (£10,000 face) sells for £9,800. Its **bank discount yield (BDY)** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "2.00%" },
+        { "id": "B", "text": "8.00%" },
+        { "id": "C", "text": "8.16%" }
+      ],
+      "answer": "B",
+      "explanation": "$BDY = (F - P)/F \\times 360/t = 200/10{,}000 \\times 360/90 = 0.02 \\times 4 = 8\\%$.\n\n**A** ignores annualisation.\n\n**C** is the MMY (uses P as base, not F)."
+    },
+    {
+      "id": "q-fi-yf-004",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "medium",
+      "stem": "For the same 90-day T-bill (£10,000 face, £9,800 price), the **effective annual yield (EAY)** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "8.00%" },
+        { "id": "B", "text": "8.41%" },
+        { "id": "C", "text": "9.16%" }
+      ],
+      "answer": "B",
+      "explanation": "$HPR = 200/9{,}800 = 2.041\\%$.\n\n$EAY = (1.02041)^{365/90} - 1 = (1.02041)^{4.056} - 1 = 0.0841 = 8.41\\%$.\n\n**A** is BDY (understates true return).\n\n**C** is an arithmetic error."
+    },
+    {
+      "id": "q-fi-yf-005",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "hard",
+      "stem": "The **discount margin** of an FRN trading below par *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Equals the quoted margin exactly" },
+        { "id": "B", "text": "Exceeds the quoted margin (extra spread to compensate for discount)" },
+        { "id": "C", "text": "Is below the quoted margin" }
+      ],
+      "answer": "B",
+      "explanation": "Below par → buyer requires higher spread for the implied capital gain to par at reset → DM > quoted margin.\n\n**A** holds for par FRN.\n\n**C** is for premium FRN."
+    },
+    {
+      "id": "q-fi-yf-006",
+      "lessonId": "fi-yf-overview",
+      "difficulty": "easy",
+      "stem": "Which yield convention is *most accurately* meaningful as 'compounded annual rate of return'?",
+      "choices": [
+        { "id": "A", "text": "Bank Discount Yield (BDY)" },
+        { "id": "B", "text": "Money Market Yield (MMY)" },
+        { "id": "C", "text": "Effective Annual Yield (EAY)" }
+      ],
+      "answer": "C",
+      "explanation": "EAY = $(1+HPR)^{365/t} - 1$ — true compounded annual return.\n\n**A** uses face (not price) as base and 360-day year; understates.\n\n**B** doesn't compound."
+    },
+    {
+      "id": "q-fi-ts-001",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "easy",
+      "stem": "A **spot rate** $s_t$ is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "The YTM on a coupon bond of maturity t" },
+        { "id": "B", "text": "The yield on a zero-coupon bond of maturity t" },
+        { "id": "C", "text": "The current overnight repo rate" }
+      ],
+      "answer": "B",
+      "explanation": "Spot rate = yield on zero-coupon bond of given maturity. Building block for valuation: discount each CF at its maturity spot.\n\n**A** is YTM (blended).\n\n**C** is overnight rate."
+    },
+    {
+      "id": "q-fi-ts-002",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "medium",
+      "stem": "Spot rates: $s_1 = 3.0\\%, s_2 = 4.0\\%$. The implied 1-year forward rate starting 1 year from now ($f_{1,2}$) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.0%" },
+        { "id": "B", "text": "5.01%" },
+        { "id": "C", "text": "7.00%" }
+      ],
+      "answer": "B",
+      "explanation": "$(1.04)^2 = (1.03)(1 + f_{1,2})$\n\n$f_{1,2} = 1.0816/1.03 - 1 = 5.01\\%$.\n\n**A** is naive difference (wrong).\n\n**C** is too high."
+    },
+    {
+      "id": "q-fi-ts-003",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "medium",
+      "stem": "Bond price using spot rates: 3-year, 5% annual coupon, $1,000 face. Spots: $s_1 = 3\\%, s_2 = 4\\%, s_3 = 5\\%$. Price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$1,001.58" },
+        { "id": "B", "text": "$985.00" },
+        { "id": "C", "text": "$1,050.00" }
+      ],
+      "answer": "A",
+      "explanation": "$P = 50/1.03 + 50/(1.04)^2 + 1050/(1.05)^3 = 48.54 + 46.23 + 906.81 = 1{,}001.58$.\n\n**B** and **C** are incorrect calculations."
+    },
+    {
+      "id": "q-fi-ts-004",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "hard",
+      "stem": "An **inverted yield curve** (long rates < short rates) *most accurately* historically:",
+      "choices": [
+        { "id": "A", "text": "Predicts inflation surges" },
+        { "id": "B", "text": "Has often preceded recessions in developed markets" },
+        { "id": "C", "text": "Indicates strong economic growth ahead" }
+      ],
+      "answer": "B",
+      "explanation": "Inversion historically signals recession risk: tight monetary policy + weak growth expectations. In US, preceded 7 of last 8 recessions.\n\nNot deterministic but a strong indicator.\n\n**A** and **C** have direction wrong."
+    },
+    {
+      "id": "q-fi-ts-005",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "medium",
+      "stem": "The **pure expectations hypothesis** states that:",
+      "choices": [
+        { "id": "A", "text": "Forward rates equal expected future spot rates" },
+        { "id": "B", "text": "Forward rates always exceed expected future spot rates by the term premium" },
+        { "id": "C", "text": "Long rates equal short rates" }
+      ],
+      "answer": "A",
+      "explanation": "Pure expectations: forwards = market's expectation of future spots. Empirically, forwards tend to slightly overpredict (positive term premium).\n\n**B** describes term premium hypothesis (modified expectations).\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-ts-006",
+      "lessonId": "fi-ts-overview",
+      "difficulty": "easy",
+      "stem": "The three curves describing the term structure are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Spot, par, forward" },
+        { "id": "B", "text": "Treasury, corporate, municipal" },
+        { "id": "C", "text": "Government, agency, supranational" }
+      ],
+      "answer": "A",
+      "explanation": "Spot curve, par curve, forward curve — three related views of the term structure.\n\n**B** and **C** describe market segments, not term structure curves."
+    },
+    {
+      "id": "q-fi-ir-001",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "easy",
+      "stem": "The three sources of bond return are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Coupon income, reinvestment income, capital gain/loss" },
+        { "id": "B", "text": "Income, dividends, capital appreciation" },
+        { "id": "C", "text": "Interest, FX gains, taxes" }
+      ],
+      "answer": "A",
+      "explanation": "Bond return = coupons received + interest on reinvested coupons + price change (capital).\n\n**B** uses equity terminology.\n\n**C** misses the structure."
+    },
+    {
+      "id": "q-fi-ir-002",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "medium",
+      "stem": "When interest rates rise, a bond *most likely* experiences:",
+      "choices": [
+        { "id": "A", "text": "Price loss but higher reinvestment income" },
+        { "id": "B", "text": "Price gain but lower reinvestment income" },
+        { "id": "C", "text": "Both price loss and lower reinvestment income" }
+      ],
+      "answer": "A",
+      "explanation": "Rates rise: bond prices fall (capital loss), coupons reinvested at higher rates (reinvestment gain). Effects partially offset.\n\n**B** has direction reversed.\n\n**C** has reinvestment direction wrong."
+    },
+    {
+      "id": "q-fi-ir-003",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "medium",
+      "stem": "**Immunisation** of a future liability is *most accurately* achieved by:",
+      "choices": [
+        { "id": "A", "text": "Matching bond maturity to liability date" },
+        { "id": "B", "text": "Matching bond Macaulay duration to liability horizon" },
+        { "id": "C", "text": "Holding a portfolio of stocks and bonds" }
+      ],
+      "answer": "B",
+      "explanation": "At horizon = Macaulay duration, price and reinvestment effects offset → terminal value insensitive to rate changes (for parallel shifts).\n\n**A** ignores reinvestment risk.\n\n**C** introduces equity risk."
+    },
+    {
+      "id": "q-fi-ir-004",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "hard",
+      "stem": "A **zero-coupon bond** held to maturity has *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "No interest rate risk because price doesn't change with rates" },
+        { "id": "B", "text": "No reinvestment risk because there are no coupons to reinvest" },
+        { "id": "C", "text": "Both price and reinvestment risk" }
+      ],
+      "answer": "B",
+      "explanation": "Zero-coupon: single payment at maturity. No coupons → no reinvestment risk. However, price is most sensitive to rate changes (highest duration for given maturity).\n\n**A** is incorrect — price changes with rates.\n\n**C** misses zero reinvestment risk."
+    },
+    {
+      "id": "q-fi-ir-005",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "medium",
+      "stem": "If an investor's holding period is *shorter* than the bond's Macaulay duration:",
+      "choices": [
+        { "id": "A", "text": "Price risk dominates; rising rates hurt" },
+        { "id": "B", "text": "Reinvestment risk dominates; falling rates hurt" },
+        { "id": "C", "text": "Both effects perfectly offset" }
+      ],
+      "answer": "A",
+      "explanation": "Short horizon: price changes dominate (haven't had time for reinvestment effects).\n\nRising rates → bond worth less when sold → loss.\n\n**B** describes long horizon scenario.\n\n**C** holds only when horizon = Macaulay duration."
+    },
+    {
+      "id": "q-fi-ir-006",
+      "lessonId": "fi-ir-overview",
+      "difficulty": "easy",
+      "stem": "Holding period return on a bond *most accurately* depends on:",
+      "choices": [
+        { "id": "A", "text": "Only the coupon rate" },
+        { "id": "B", "text": "Coupon income, reinvestment income, and any capital gain/loss" },
+        { "id": "C", "text": "Only the difference between purchase and sale prices" }
+      ],
+      "answer": "B",
+      "explanation": "Total return decomposition: $HPR = \\text{Coupons} + \\text{Reinvestment} + \\text{Capital gain/loss}$.\n\n**A** and **C** are incomplete."
+    },
+    {
+      "id": "q-fi-dur-001",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "easy",
+      "stem": "**Macaulay duration** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Years until maturity" },
+        { "id": "B", "text": "Weighted average time to cash flows, weighted by PV" },
+        { "id": "C", "text": "The yield-to-maturity" }
+      ],
+      "answer": "B",
+      "explanation": "$D_{Mac}$ = weighted average time to receive each CF, weights = each CF's PV / total price. Always < maturity for coupon bond; equals maturity for zero-coupon.\n\n**A** ignores cash flow timing.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-dur-002",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "medium",
+      "stem": "A bond with $D_{Mac}$ = 8 years and YTM = 6% (annual). The **modified duration** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "7.55 years" },
+        { "id": "B", "text": "8.00 years" },
+        { "id": "C", "text": "8.48 years" }
+      ],
+      "answer": "A",
+      "explanation": "$D_{mod} = D_{Mac} / (1 + y) = 8 / 1.06 = 7.55$.\n\n**B** ignores the conversion.\n\n**C** would result from inverting the formula."
+    },
+    {
+      "id": "q-fi-dur-003",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "medium",
+      "stem": "A bond with $D_{mod}$ = 6 trades at 100. Yields rise by 50 bps. Estimated price change is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "+3.0%" },
+        { "id": "B", "text": "−3.0%" },
+        { "id": "C", "text": "−6.0%" }
+      ],
+      "answer": "B",
+      "explanation": "$\\Delta P/P \\approx -D_{mod} \\Delta y = -6 \\times 0.005 = -3\\%$.\n\nBond price falls when yield rises.\n\n**A** has sign reversed.\n\n**C** is for 1% yield change, not 50 bps."
+    },
+    {
+      "id": "q-fi-dur-004",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "hard",
+      "stem": "For a **callable bond at low yields**, the *most appropriate* duration measure is:",
+      "choices": [
+        { "id": "A", "text": "Macaulay duration" },
+        { "id": "B", "text": "Modified duration" },
+        { "id": "C", "text": "Effective duration" }
+      ],
+      "answer": "C",
+      "explanation": "Effective duration uses numerical price changes from yield shifts in a model, properly accounting for the call option's effect.\n\nModified duration assumes no embedded options and is misleading for callable bonds.\n\n**A** doesn't relate directly to price sensitivity.\n\n**B** is wrong for embedded option bonds."
+    },
+    {
+      "id": "q-fi-dur-005",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "medium",
+      "stem": "Among the following bonds, the *highest* duration *most likely* is:",
+      "choices": [
+        { "id": "A", "text": "10-year zero-coupon Treasury" },
+        { "id": "B", "text": "10-year coupon Treasury" },
+        { "id": "C", "text": "10-year callable corporate" }
+      ],
+      "answer": "A",
+      "explanation": "Zero-coupon: all CF at maturity → $D_{Mac}$ = maturity = 10. Highest.\n\n**B**: coupon bond has $D_{Mac}$ < maturity (CFs distributed).\n\n**C**: callable also < maturity, plus option may reduce effective duration further."
+    },
+    {
+      "id": "q-fi-dur-006",
+      "lessonId": "fi-dur-overview",
+      "difficulty": "easy",
+      "stem": "**Higher coupon** *most likely* implies:",
+      "choices": [
+        { "id": "A", "text": "Higher duration" },
+        { "id": "B", "text": "Lower duration (cash flows arrive earlier)" },
+        { "id": "C", "text": "No effect on duration" }
+      ],
+      "answer": "B",
+      "explanation": "Higher coupon: more cash arrives in early years → weighted average time decreases → lower duration.\n\nZero-coupon has highest duration (= maturity).\n\n**A** has direction reversed.\n\n**C** ignores the relationship."
+    },
+    {
+      "id": "q-fi-conv-001",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "easy",
+      "stem": "**Convexity** *most accurately* measures:",
+      "choices": [
+        { "id": "A", "text": "The slope of the price-yield curve" },
+        { "id": "B", "text": "The curvature of the price-yield relationship" },
+        { "id": "C", "text": "The bond's yield to maturity" }
+      ],
+      "answer": "B",
+      "explanation": "Convexity = second derivative of price w.r.t. yield. Captures curvature beyond duration's linear approximation.\n\n**A** describes duration.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-conv-002",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "medium",
+      "stem": "Including convexity in price change estimate, for a yield rise (vs duration-only):",
+      "choices": [
+        { "id": "A", "text": "Predicts a larger price loss" },
+        { "id": "B", "text": "Predicts a smaller price loss" },
+        { "id": "C", "text": "Predicts the same price loss" }
+      ],
+      "answer": "B",
+      "explanation": "Positive convexity: gains from yield falls > losses from yield rises. Adding convexity term lowers estimated loss for rate rises and raises estimated gain for rate falls.\n\n**A** has direction reversed.\n\n**C** ignores convexity benefit."
+    },
+    {
+      "id": "q-fi-conv-003",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "medium",
+      "stem": "Bond with $D_{mod}$ = 5, Convexity = 50. Yields rise 200 bps. Estimated price change is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "−10.0%" },
+        { "id": "B", "text": "−9.0%" },
+        { "id": "C", "text": "−8.0%" }
+      ],
+      "answer": "B",
+      "explanation": "$\\Delta P/P \\approx -5 \\times 0.02 + 0.5 \\times 50 \\times 0.02^2 = -0.10 + 0.01 = -0.09 = -9\\%$.\n\n**A** is duration-only (no convexity).\n\n**C** double-counts convexity."
+    },
+    {
+      "id": "q-fi-conv-004",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "hard",
+      "stem": "A **callable bond at low yields** *most likely* exhibits:",
+      "choices": [
+        { "id": "A", "text": "Positive convexity, like any option-free bond" },
+        { "id": "B", "text": "Negative convexity due to call cap on price upside" },
+        { "id": "C", "text": "Zero convexity" }
+      ],
+      "answer": "B",
+      "explanation": "At low yields, call option becomes valuable; issuer likely to refinance. Bond price capped near call price. Asymmetric: rate falls cap gains, rate rises full loss → negative convexity.\n\n**A** ignores the embedded option.\n\n**C** is a non-meaningful state."
+    },
+    {
+      "id": "q-fi-conv-005",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "medium",
+      "stem": "A **barbell portfolio** vs **bullet portfolio** of same duration *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "Higher convexity (barbell)" },
+        { "id": "B", "text": "Lower convexity (barbell)" },
+        { "id": "C", "text": "Equal convexity (same duration)" }
+      ],
+      "answer": "A",
+      "explanation": "Barbell (short + long maturities) has more dispersion of CFs → higher convexity than bullet (single maturity). Generally lower yield as trade-off.\n\n**B** has direction reversed.\n\n**C** ignores the dispersion."
+    },
+    {
+      "id": "q-fi-conv-006",
+      "lessonId": "fi-conv-overview",
+      "difficulty": "easy",
+      "stem": "Convexity adjustment to duration-based price change estimate is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "$C \\cdot \\Delta y$" },
+        { "id": "B", "text": "$\\frac{1}{2} C \\cdot (\\Delta y)^2$" },
+        { "id": "C", "text": "$2 C \\cdot \\Delta y$" }
+      ],
+      "answer": "B",
+      "explanation": "Combined estimate: $\\Delta P / P \\approx -D \\Delta y + \\frac{1}{2} C (\\Delta y)^2$.\n\nNote the 1/2 and the squared yield change.\n\n**A** has wrong form.\n\n**C** has wrong coefficient and form."
+    },
+    {
+      "id": "q-fi-curve-001",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "easy",
+      "stem": "Standard modified duration's *primary* limitation is:",
+      "choices": [
+        { "id": "A", "text": "It assumes parallel yield curve shifts" },
+        { "id": "B", "text": "It can only be used for short-term bonds" },
+        { "id": "C", "text": "It assumes constant inflation" }
+      ],
+      "answer": "A",
+      "explanation": "Modified duration: assumes parallel shifts. Real curves twist, steepen, flatten — duration misses these.\n\n**B** and **C** are unrelated to the limitation."
+    },
+    {
+      "id": "q-fi-curve-002",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "medium",
+      "stem": "**Key rate duration** measures sensitivity to:",
+      "choices": [
+        { "id": "A", "text": "Parallel shifts in all rates" },
+        { "id": "B", "text": "Changes in specific maturity rates, holding others constant" },
+        { "id": "C", "text": "Equity market returns" }
+      ],
+      "answer": "B",
+      "explanation": "Key rate duration: isolate sensitivity to specific maturity (e.g., 5-year, 10-year) by shifting only that rate. Sum across all maturities = effective duration.\n\n**A** is standard duration.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-curve-003",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "medium",
+      "stem": "**Empirical duration** vs **analytical duration**:",
+      "choices": [
+        { "id": "A", "text": "Empirical from formula; analytical from data" },
+        { "id": "B", "text": "Empirical from regression of historical price changes; analytical from formula" },
+        { "id": "C", "text": "They always match" }
+      ],
+      "answer": "B",
+      "explanation": "Empirical: regress historical price changes on yield changes; slope = empirical duration.\n\nAnalytical: closed-form using formula.\n\nFor MBS and credit bonds, can differ substantially.\n\n**A** has roles reversed.\n\n**C** is false in practice."
+    },
+    {
+      "id": "q-fi-curve-004",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "hard",
+      "stem": "For MBS, **empirical duration** typically *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Equals analytical duration" },
+        { "id": "B", "text": "Exceeds analytical duration" },
+        { "id": "C", "text": "Is less than analytical duration due to prepayment effects" }
+      ],
+      "answer": "C",
+      "explanation": "Prepayments accelerate when rates fall → MBS effective life shortens → empirical duration < analytical.\n\nIn stress, gap can be substantial.\n\n**A** is rare.\n\n**B** is the opposite direction."
+    },
+    {
+      "id": "q-fi-curve-005",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "medium",
+      "stem": "**Spread duration** for a corporate bond *most accurately* measures sensitivity to:",
+      "choices": [
+        { "id": "A", "text": "Treasury rate changes" },
+        { "id": "B", "text": "Credit spread changes (vs benchmark)" },
+        { "id": "C", "text": "Equity volatility" }
+      ],
+      "answer": "B",
+      "explanation": "Spread duration: % price change per 1 bp change in credit spread vs benchmark.\n\nDistinct from interest rate (Treasury) duration. Useful for credit bond analysis.\n\n**A** is interest rate duration.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-curve-006",
+      "lessonId": "fi-curve-overview",
+      "difficulty": "easy",
+      "stem": "**DV01** (dollar value of 01) for $10m of a bond with $D_{mod}$ = 7 is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$700" },
+        { "id": "B", "text": "$7,000" },
+        { "id": "C", "text": "$70,000" }
+      ],
+      "answer": "B",
+      "explanation": "$DV01 = D_{mod} \\times P \\times 0.0001 = 7 \\times 10{,}000{,}000 \\times 0.0001 = 7{,}000$.\n\nDollar P&L per 1 bp yield change.\n\n**A** is for $1m position; **C** is calculation error."
+    },
+    {
+      "id": "q-fi-cr-001",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "easy",
+      "stem": "Expected loss in credit risk *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "$EL = PD - LGD$" },
+        { "id": "B", "text": "$EL = PD \\times LGD \\times EAD$" },
+        { "id": "C", "text": "$EL = (PD + LGD)/2$" }
+      ],
+      "answer": "B",
+      "explanation": "Expected Loss = Probability × Loss Given Default × Exposure at Default.\n\nStandard credit risk decomposition.\n\n**A** and **C** are nonsensical formulas."
+    },
+    {
+      "id": "q-fi-cr-002",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "medium",
+      "stem": "Investment-grade bonds are *most accurately* rated:",
+      "choices": [
+        { "id": "A", "text": "AAA only" },
+        { "id": "B", "text": "BBB-/Baa3 and above" },
+        { "id": "C", "text": "B+/Ba1 and above" }
+      ],
+      "answer": "B",
+      "explanation": "IG boundary at BBB-/Baa3 (S&P/Fitch / Moody's). Anything above is IG; below is HY (junk).\n\n**A** is too restrictive.\n\n**C** is below the boundary."
+    },
+    {
+      "id": "q-fi-cr-003",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "medium",
+      "stem": "In a corporate bankruptcy, **senior secured debt** *most likely* recovers:",
+      "choices": [
+        { "id": "A", "text": "10-20%" },
+        { "id": "B", "text": "30-50%" },
+        { "id": "C", "text": "60-80%" }
+      ],
+      "answer": "C",
+      "explanation": "Senior secured: claim on specific collateral; typical recovery 60-80%.\n\n**A** is subordinated.\n\n**B** is senior unsecured (general claim)."
+    },
+    {
+      "id": "q-fi-cr-004",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "hard",
+      "stem": "**Z-spread** and **OAS** for a callable bond *most likely* differ by:",
+      "choices": [
+        { "id": "A", "text": "Always zero (they're the same measure)" },
+        { "id": "B", "text": "The value of the embedded call option" },
+        { "id": "C", "text": "Inflation expectations" }
+      ],
+      "answer": "B",
+      "explanation": "Z-spread − OAS = option cost. OAS removes option effect to isolate pure credit + liquidity spread.\n\nFor non-callable bonds: Z-spread = OAS.\n\nFor callable: OAS < Z-spread (option costs the holder spread).\n\n**A** is true only for option-free.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-cr-005",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "medium",
+      "stem": "Credit spread *most accurately* compensates the bondholder for:",
+      "choices": [
+        { "id": "A", "text": "Only expected default loss" },
+        { "id": "B", "text": "Expected default loss + risk premium + liquidity premium" },
+        { "id": "C", "text": "Inflation only" }
+      ],
+      "answer": "B",
+      "explanation": "Spread = expected loss + uncertainty risk premium + liquidity premium (+ small tax differences).\n\n**A** is incomplete.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-cr-006",
+      "lessonId": "fi-cr-overview",
+      "difficulty": "easy",
+      "stem": "**Priority of claims** in bankruptcy is *most accurately* often violated because:",
+      "choices": [
+        { "id": "A", "text": "Bankruptcy courts ignore the seniority structure" },
+        { "id": "B", "text": "Negotiations and going-concern preservation can favour subordinated creditors" },
+        { "id": "C", "text": "Senior creditors waive their claims" }
+      ],
+      "answer": "B",
+      "explanation": "Strict priority sometimes violated: subordinated bargaining power, litigation delays, going-concern value preserved. Lehman 2008 example.\n\n**A** overstates; courts respect priority but allow negotiation.\n\n**C** rarely happens."
+    },
+    {
+      "id": "q-fi-cag-001",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "easy",
+      "stem": "Sovereign **local currency** debt is *most accurately* generally:",
+      "choices": [
+        { "id": "A", "text": "Higher default risk than foreign currency debt" },
+        { "id": "B", "text": "Lower default risk than foreign currency debt (can print money)" },
+        { "id": "C", "text": "Equal default risk" }
+      ],
+      "answer": "B",
+      "explanation": "Local currency: government can print money to repay (with inflation/devaluation risk). Foreign currency: must acquire foreign currency, limited.\n\nRatings typically higher for local currency debt of same sovereign.\n\n**A** reverses the relationship.\n\n**C** ignores key distinction."
+    },
+    {
+      "id": "q-fi-cag-002",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "medium",
+      "stem": "Key factors in **sovereign credit analysis** *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Only debt-to-GDP ratio" },
+        { "id": "B", "text": "Economic strength, fiscal position, external position, monetary policy framework, political stability" },
+        { "id": "C", "text": "Only inflation rate" }
+      ],
+      "answer": "B",
+      "explanation": "Comprehensive sovereign analysis includes economic fundamentals (GDP, current account), fiscal position (debt, deficit), external (FX reserves), monetary (CB independence), political (institutions), external support (IMF).\n\n**A** and **C** are incomplete."
+    },
+    {
+      "id": "q-fi-cag-003",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "medium",
+      "stem": "**Argentina's** repeated sovereign defaults are *most accurately* caused by:",
+      "choices": [
+        { "id": "A", "text": "Random bad luck" },
+        { "id": "B", "text": "Structural issues: dollarisation, inflation, commodity dependence, political instability" },
+        { "id": "C", "text": "External attacks by foreign powers" }
+      ],
+      "answer": "B",
+      "explanation": "Argentina's pattern: persistent fiscal deficits, dollarisation tendency, peso instability, political populism cycles, commodity dependence. Structural rather than coincidental.\n\nPattern: 1989, 2001, 2014, 2020 defaults.\n\n**A** ignores systemic factors.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-fi-cag-004",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "hard",
+      "stem": "**IMF involvement** with a sovereign typically *most likely* signals:",
+      "choices": [
+        { "id": "A", "text": "Improving fundamentals only" },
+        { "id": "B", "text": "Stress requiring multilateral support, but with stabilising effect" },
+        { "id": "C", "text": "Imminent default with certainty" }
+      ],
+      "answer": "B",
+      "explanation": "IMF program: indicates a country is under stress requiring support, but the program itself stabilises (austerity reforms + financing). Can prevent default and signal commitment to fix issues.\n\n**A** ignores the stress.\n\n**C** is too pessimistic — IMF often prevents default."
+    },
+    {
+      "id": "q-fi-cag-005",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "medium",
+      "stem": "**Supranational bonds** (World Bank, IFC, EIB) *most likely* carry:",
+      "choices": [
+        { "id": "A", "text": "AAA ratings backed by member country contributions" },
+        { "id": "B", "text": "BB high-yield ratings" },
+        { "id": "C", "text": "Default risk equal to host country" }
+      ],
+      "answer": "A",
+      "explanation": "Supranationals: backed by multiple member countries. Strong governance. Diversified loan portfolios. Typically AAA-rated.\n\nUsed for development financing globally.\n\n**B** and **C** misunderstand the credit profile."
+    },
+    {
+      "id": "q-fi-cag-006",
+      "lessonId": "fi-cag-overview",
+      "difficulty": "easy",
+      "stem": "**Russia 2022 default** was *most accurately* caused by:",
+      "choices": [
+        { "id": "A", "text": "Bankruptcy from oil price collapse" },
+        { "id": "B", "text": "Western sanctions preventing debt service despite ability/willingness to pay" },
+        { "id": "C", "text": "Voluntary debt restructuring by Russia" }
+      ],
+      "answer": "B",
+      "explanation": "Russia 2022: had funds and willing to pay; Western sanctions blocked transfers (SWIFT, FX). Technical default despite capacity.\n\nDemonstrates geopolitical risk in sovereign credit.\n\n**A** is incorrect — different decade.\n\n**C** is wrong direction."
+    },
+    {
+      "id": "q-fi-cc-001",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "easy",
+      "stem": "The 'four Cs' of credit analysis *most accurately* include:",
+      "choices": [
+        { "id": "A", "text": "Capacity, Collateral, Covenants, Character" },
+        { "id": "B", "text": "Cost, Currency, Compliance, Convexity" },
+        { "id": "C", "text": "Capital, Cash, Coupon, Credit" }
+      ],
+      "answer": "A",
+      "explanation": "Four Cs: Capacity (ability to service debt), Collateral (security), Covenants (restrictions), Character (management quality).\n\nWidely-used framework for credit analysis.\n\n**B** and **C** are not standard."
+    },
+    {
+      "id": "q-fi-cc-002",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "medium",
+      "stem": "**Debt-to-EBITDA** ratio of 4.5x is *most likely* characterised as:",
+      "choices": [
+        { "id": "A", "text": "Very strong (IG)" },
+        { "id": "B", "text": "Investment grade typical" },
+        { "id": "C", "text": "Leveraged (likely BB/B HY)" }
+      ],
+      "answer": "C",
+      "explanation": "Debt/EBITDA framework:\n- 0-2x: very strong\n- 2-4x: IG\n- 4-6x: leveraged (HY territory)\n- 6+x: highly leveraged\n\n4.5x is leveraged → BB/B likely.\n\n**A** and **B** misclassify."
+    },
+    {
+      "id": "q-fi-cc-003",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "medium",
+      "stem": "**EBIT interest coverage ratio** of 8x *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "Distressed credit" },
+        { "id": "B", "text": "Strong coverage capacity (operating income covers interest 8x)" },
+        { "id": "C", "text": "Weak coverage" }
+      ],
+      "answer": "B",
+      "explanation": "Coverage ratio bands:\n- 5x+: strong\n- 3-5x: adequate\n- 1-3x: weak\n- <1x: distressed\n\n8x is strong.\n\n**A** and **C** misread."
+    },
+    {
+      "id": "q-fi-cc-004",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "hard",
+      "stem": "A bond analyst notices the issuer has 90% of revenue concentrated in one customer. This is *most accurately* a:",
+      "choices": [
+        { "id": "A", "text": "Positive factor — strong relationship" },
+        { "id": "B", "text": "Red flag for credit risk (concentration risk)" },
+        { "id": "C", "text": "Neutral information" }
+      ],
+      "answer": "B",
+      "explanation": "Customer concentration = key qualitative risk. Loss of major customer can crater revenue and credit profile.\n\nKey factor in bond rating agency assessments.\n\n**A** is incorrect — relationship doesn't offset risk.\n\n**C** ignores significant risk."
+    },
+    {
+      "id": "q-fi-cc-005",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "medium",
+      "stem": "**Free cash flow** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Net income + depreciation" },
+        { "id": "B", "text": "Operating cash flow − capex" },
+        { "id": "C", "text": "EBITDA − interest" }
+      ],
+      "answer": "B",
+      "explanation": "FCF = Operating cash flow − capex.\n\nMeasures cash available for debt service, dividends, buybacks after maintaining business.\n\n**A** approximates cash from ops but doesn't deduct capex.\n\n**C** is a coverage measure."
+    },
+    {
+      "id": "q-fi-cc-006",
+      "lessonId": "fi-cc-overview",
+      "difficulty": "easy",
+      "stem": "Industry-specific credit metrics for **banks** *most likely* emphasise:",
+      "choices": [
+        { "id": "A", "text": "Debt/EBITDA" },
+        { "id": "B", "text": "Tier 1 capital ratio, NIM, LCR, stress test results" },
+        { "id": "C", "text": "Free cash flow" }
+      ],
+      "answer": "B",
+      "explanation": "Banks: capital ratios (Tier 1, Total), net interest margin (NIM), Liquidity Coverage Ratio (LCR), regulatory stress test outcomes.\n\nBank credit analysis is specialised due to leverage and regulation.\n\n**A** is for corporates.\n\n**C** is less relevant for banks (whose 'cash flow' is interest spread)."
+    },
+    {
+      "id": "q-fi-sec-001",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "easy",
+      "stem": "**Securitisation** *most accurately* involves:",
+      "choices": [
+        { "id": "A", "text": "Pooling assets and issuing bonds backed by their cash flows" },
+        { "id": "B", "text": "Banking deposits insurance" },
+        { "id": "C", "text": "Equity issuance" }
+      ],
+      "answer": "A",
+      "explanation": "Securitisation: pool assets (mortgages, loans, receivables) → sell to SPV → SPV issues bonds backed by cash flows from pool.\n\n**B** and **C** are unrelated."
+    },
+    {
+      "id": "q-fi-sec-002",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "medium",
+      "stem": "The **special purpose vehicle (SPV)** in securitisation is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "An equity holding company" },
+        { "id": "B", "text": "Bankruptcy-remote legal entity holding the asset pool and issuing ABS" },
+        { "id": "C", "text": "An auditor for the deal" }
+      ],
+      "answer": "B",
+      "explanation": "SPV / SPE / Trust: legal entity holding assets. Bankruptcy-remote from originator. Issues the ABS to investors. Cash flows from underlying assets pass through SPV.\n\n**A** describes holding companies.\n\n**C** is the auditor role, separate."
+    },
+    {
+      "id": "q-fi-sec-003",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "medium",
+      "stem": "**Tranching** in securitisation *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Distributes cash flows proportionally" },
+        { "id": "B", "text": "Allocates cash flows by priority — senior tranches paid first, equity last (and bears first losses)" },
+        { "id": "C", "text": "Combines all asset classes into one tranche" }
+      ],
+      "answer": "B",
+      "explanation": "Tranching waterfall: senior → mezzanine → subordinated → equity. Equity bears first losses; senior paid first.\n\nAllows different risk/return profiles from same underlying pool.\n\n**A** describes pass-through.\n\n**C** ignores the structure."
+    },
+    {
+      "id": "q-fi-sec-004",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "hard",
+      "stem": "The **2008 crisis** revealed *most accurately* that:",
+      "choices": [
+        { "id": "A", "text": "AAA tranches are always safe regardless of underlying" },
+        { "id": "B", "text": "Correlation in stressed markets can exceed model assumptions, breaking subordination protection" },
+        { "id": "C", "text": "Securitisation should be banned" }
+      ],
+      "answer": "B",
+      "explanation": "Subprime CDO AAA tranches lost 70-80% in 2008. Models assumed low correlation; actual stressed correlation was much higher.\n\nLesson: tail correlation matters more than estimated; AAA isn't risk-free under extreme stress.\n\n**A** is what 2008 disproved.\n\n**C** is too extreme — securitisation continues with reforms."
+    },
+    {
+      "id": "q-fi-sec-005",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "medium",
+      "stem": "**Credit enhancement** in securitisation *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Subordination, overcollateralisation, reserve funds, excess spread" },
+        { "id": "B", "text": "Only government guarantees" },
+        { "id": "C", "text": "Only insurance wraps" }
+      ],
+      "answer": "A",
+      "explanation": "Multiple forms of credit enhancement: subordination (junior absorbs first), overcollateralisation (pool > securities), reserve funds, excess spread, sometimes external insurance.\n\n**B** and **C** are too restrictive."
+    },
+    {
+      "id": "q-fi-sec-006",
+      "lessonId": "fi-sec-overview",
+      "difficulty": "easy",
+      "stem": "Originators of securitisation are *most likely* motivated by:",
+      "choices": [
+        { "id": "A", "text": "Capital relief, liquidity, risk transfer, continued origination" },
+        { "id": "B", "text": "Charity" },
+        { "id": "C", "text": "Tax avoidance only" }
+      ],
+      "answer": "A",
+      "explanation": "Originator benefits: capital relief (assets off balance sheet), liquidity (cash for loans), risk transfer, fee revenue, ability to keep originating.\n\n**B** and **C** are wrong."
+    },
+    {
+      "id": "q-fi-abs-001",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "easy",
+      "stem": "**ABS** are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Asset-backed securities — bonds backed by non-mortgage receivables/loans" },
+        { "id": "B", "text": "Always government-guaranteed" },
+        { "id": "C", "text": "Backed only by stock" }
+      ],
+      "answer": "A",
+      "explanation": "ABS: non-mortgage securitisations. Auto loans, credit cards, student loans, equipment leases, etc.\n\n**B** is incorrect — most ABS not government-guaranteed.\n\n**C** is wrong."
+    },
+    {
+      "id": "q-fi-abs-002",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "medium",
+      "stem": "**Auto loan ABS** *most likely* have:",
+      "choices": [
+        { "id": "A", "text": "Very long duration (30+ years)" },
+        { "id": "B", "text": "Short duration (3-4 years typical), predictable amortisation" },
+        { "id": "C", "text": "No prepayment risk" }
+      ],
+      "answer": "B",
+      "explanation": "Auto loans typically 5-7 year terms; ABS effective life 3-4 years. Predictable amortisation. Some prepayment risk (refinancing, sale) but less than mortgages.\n\n**A** is for MBS, not auto ABS.\n\n**C** ignores some prepayment."
+    },
+    {
+      "id": "q-fi-abs-003",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "medium",
+      "stem": "**Credit card ABS** *most likely* has a **revolving structure** because:",
+      "choices": [
+        { "id": "A", "text": "Cards don't pay interest" },
+        { "id": "B", "text": "New receivables continuously added to the pool (master trust)" },
+        { "id": "C", "text": "Pool collapses every quarter" }
+      ],
+      "answer": "B",
+      "explanation": "Master trust holds receivables; new card balances continuously added. No fixed maturity for underlying. Allows multiple series of bonds issued from same pool.\n\n**A** is wrong.\n\n**C** is nonsensical."
+    },
+    {
+      "id": "q-fi-abs-004",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "hard",
+      "stem": "**Covered bonds** differ from typical ABS *most accurately* in that:",
+      "choices": [
+        { "id": "A", "text": "Covered bonds have no collateral" },
+        { "id": "B", "text": "Covered bonds stay on issuer's balance sheet; holders have dual recourse (cover pool + issuer)" },
+        { "id": "C", "text": "Covered bonds have no rating" }
+      ],
+      "answer": "B",
+      "explanation": "Covered bonds: dual recourse (cover pool AND issuer). Stay on issuer balance sheet. Pool replenishable. Strong tradition in Europe.\n\nABS: assets sold to SPV, no recourse to originator.\n\n**A** and **C** are wrong."
+    },
+    {
+      "id": "q-fi-abs-005",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "medium",
+      "stem": "**FFELP** (Federal Family Education Loan Program) student loan ABS *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Have BB high-yield ratings" },
+        { "id": "B", "text": "Are typically AAA-rated due to government guarantee" },
+        { "id": "C", "text": "Have no rating" }
+      ],
+      "answer": "B",
+      "explanation": "FFELP: government-guaranteed loans; ABS backed by them typically AAA-rated. Declining issuance (program mostly transitioned to Direct Loans).\n\n**A** and **C** are incorrect."
+    },
+    {
+      "id": "q-fi-abs-006",
+      "lessonId": "fi-abs-overview",
+      "difficulty": "easy",
+      "stem": "**ABS** typically trade at *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Lower yields than equivalent-rated corporate bonds" },
+        { "id": "B", "text": "Higher yields than equivalent-rated corporates (liquidity premium)" },
+        { "id": "C", "text": "Same yields as Treasuries" }
+      ],
+      "answer": "B",
+      "explanation": "ABS less liquid than corporates; investors require liquidity premium. AAA ABS spreads 50-100 bps over Treasury, often higher than AAA corporates.\n\n**A** and **C** are incorrect."
+    },
+    {
+      "id": "q-fi-mbs-001",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "easy",
+      "stem": "**Mortgage-backed securities (MBS)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Bonds backed by pools of mortgages" },
+        { "id": "B", "text": "Government-issued home loans" },
+        { "id": "C", "text": "Equity in REITs" }
+      ],
+      "answer": "A",
+      "explanation": "MBS: securitisations backed by mortgage pools (residential or commercial). Agency (Fannie, Freddie, Ginnie) or non-agency.\n\n**B** describes the underlying loans, not the MBS.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-fi-mbs-002",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "medium",
+      "stem": "**Prepayment risk** in MBS *most accurately* refers to:",
+      "choices": [
+        { "id": "A", "text": "Risk of late payments" },
+        { "id": "B", "text": "Borrowers paying off mortgages early (refinancing, sale, default) affecting cash flow timing" },
+        { "id": "C", "text": "Inflation eroding payments" }
+      ],
+      "answer": "B",
+      "explanation": "Prepayment: mortgage paid off before maturity. Refinancing (rates fall), selling property, default. Affects MBS cash flow timing — reinvestment risk for investors.\n\n**A** and **C** are different concepts."
+    },
+    {
+      "id": "q-fi-mbs-003",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "medium",
+      "stem": "MBS exhibit **negative convexity** *most likely* because:",
+      "choices": [
+        { "id": "A", "text": "Mortgages have no embedded options" },
+        { "id": "B", "text": "Prepayments accelerate at low rates, capping MBS price upside" },
+        { "id": "C", "text": "MBS pay floating coupons" }
+      ],
+      "answer": "B",
+      "explanation": "At low yields, borrowers refinance → prepayments speed up → cash returned at bad times → MBS price gain capped near par. Negative convexity.\n\n**A** ignores the call-like option borrowers have.\n\n**C** is wrong — most MBS pay fixed coupons (matching underlying)."
+    },
+    {
+      "id": "q-fi-mbs-004",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "hard",
+      "stem": "**Silicon Valley Bank's 2023 failure** *most accurately* demonstrated:",
+      "choices": [
+        { "id": "A", "text": "MBS are entirely safe regardless of rate environment" },
+        { "id": "B", "text": "Long-duration MBS combined with deposit outflows can trigger crisis even for safe collateral" },
+        { "id": "C", "text": "Treasury bonds are riskier than MBS" }
+      ],
+      "answer": "B",
+      "explanation": "SVB held long-duration agency MBS. Rate rises → MBS losses (unrealised in HTM). Depositor flight → forced selling → realised losses → capital crisis → failure.\n\nLesson: even AAA-equivalent MBS has duration risk; lock-in effect on prepayments extended duration further.\n\n**A** is what SVB disproved.\n\n**C** is wrong comparison."
+    },
+    {
+      "id": "q-fi-mbs-005",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "medium",
+      "stem": "**PAC (Planned Amortisation Class) tranches** in CMOs *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Have unpredictable cash flows" },
+        { "id": "B", "text": "Have stable cash flows within a PSA range, supported by companion tranches absorbing variability" },
+        { "id": "C", "text": "Are not used in modern CMOs" }
+      ],
+      "answer": "B",
+      "explanation": "PAC: stable cash flows in 100-200 PSA range. Companion tranches absorb the variability. PAC = lower yield, more predictable; companion = higher yield, volatile.\n\n**A** describes companions, not PACs.\n\n**C** is incorrect — PACs are common."
+    },
+    {
+      "id": "q-fi-mbs-006",
+      "lessonId": "fi-mbs-overview",
+      "difficulty": "easy",
+      "stem": "**Agency MBS** (Fannie, Freddie, Ginnie) *most likely* carry:",
+      "choices": [
+        { "id": "A", "text": "High default risk (BB rating)" },
+        { "id": "B", "text": "Minimal credit risk due to implicit/explicit US government backing" },
+        { "id": "C", "text": "No interest rate risk" }
+      ],
+      "answer": "B",
+      "explanation": "Agency MBS: Ginnie has explicit US government guarantee; Fannie and Freddie have implicit (and partial explicit post-conservatorship). Treated as AAA-equivalent for credit.\n\nInterest rate and prepayment risks remain.\n\n**A** is wrong.\n\n**C** ignores major risks."
     }
   ]
 }

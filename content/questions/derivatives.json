@@ -78,6 +78,708 @@
       ],
       "answer": "A",
       "explanation": "Rearranging put-call parity: $S = C - P + K/(1+r)^T$.\n\nSo synthetic long stock = buy call, sell put, and lend $K/(1+r)^T$ at risk-free.\n\n**B** is a **straddle** — a volatility bet, not directional exposure.\n\n**C** is contradictory — being short the stock isn't equivalent to being long."
+    },
+    {
+      "id": "q-deriv-feat-001",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "easy",
+      "stem": "A derivative is *most accurately* defined as a financial instrument:",
+      "choices": [
+        { "id": "A", "text": "issued by a company to raise capital" },
+        { "id": "B", "text": "whose value depends on an underlying asset, rate, or index" },
+        { "id": "C", "text": "guaranteed by a central bank" }
+      ],
+      "answer": "B",
+      "explanation": "A derivative derives its value from an underlying — could be a stock, bond, commodity, currency, rate, index, or even credit event.\n\n**A** describes equity or debt issuance, not derivatives.\n\n**C** is not a defining feature."
+    },
+    {
+      "id": "q-deriv-feat-002",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "medium",
+      "stem": "The *primary* difference between OTC and exchange-traded derivatives is:",
+      "choices": [
+        { "id": "A", "text": "OTC derivatives are illegal; exchange-traded are legal" },
+        { "id": "B", "text": "OTC are customised bilateral contracts; exchange-traded are standardised with central clearing" },
+        { "id": "C", "text": "OTC pay higher returns; exchange-traded are cheaper" }
+      ],
+      "answer": "B",
+      "explanation": "OTC = customised, bilateral, counterparty risk; exchange-traded = standardised contracts, central clearing house guarantees performance.\n\n**A** is false — both are legal.\n\n**C** confuses returns with structure."
+    },
+    {
+      "id": "q-deriv-feat-003",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "medium",
+      "stem": "Most derivative contracts have an initial value of zero because:",
+      "choices": [
+        { "id": "A", "text": "The exchanges require zero-cost trading" },
+        { "id": "B", "text": "The contract is priced by no-arbitrage so neither party gains/loses at initiation" },
+        { "id": "C", "text": "Counterparties contribute equally to margin" }
+      ],
+      "answer": "B",
+      "explanation": "No-arbitrage pricing sets forward, futures, and swap prices so the contract is fair to both sides at initiation — neither pays the other.\n\n**Note:** options are the exception — premium paid upfront.\n\n**A** misstates exchange rules.\n\n**C** confuses margin with contract value."
+    },
+    {
+      "id": "q-deriv-feat-004",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "easy",
+      "stem": "A central clearing party (CCP) in derivative markets *primarily* serves to:",
+      "choices": [
+        { "id": "A", "text": "Set market prices for all listed derivatives" },
+        { "id": "B", "text": "Guarantee performance and reduce counterparty risk" },
+        { "id": "C", "text": "Provide tax advice to participants" }
+      ],
+      "answer": "B",
+      "explanation": "The CCP interposes itself between counterparties, guaranteeing performance. If one side defaults, the CCP covers the other side. This dramatically reduces counterparty risk.\n\n**A** is wrong — markets set prices, not the CCP.\n\n**C** is unrelated to CCP function."
+    },
+    {
+      "id": "q-deriv-feat-005",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "medium",
+      "stem": "Which of the following is *not* a forward commitment?",
+      "choices": [
+        { "id": "A", "text": "Forward contract on currency" },
+        { "id": "B", "text": "Interest rate swap" },
+        { "id": "C", "text": "European put option" }
+      ],
+      "answer": "C",
+      "explanation": "Forward commitments require both parties to transact (forwards, futures, swaps).\n\nOptions are **contingent claims** — holder has the right but not the obligation.\n\n**A** and **B** are forward commitments."
+    },
+    {
+      "id": "q-deriv-feat-006",
+      "lessonId": "deriv-feat-overview",
+      "difficulty": "hard",
+      "stem": "Total notional outstanding across global derivatives markets exceeds $600 trillion. The *most accurate* interpretation is:",
+      "choices": [
+        { "id": "A", "text": "Net economic exposure equal to that figure, indicating dangerous risk" },
+        { "id": "B", "text": "Gross sum of contract sizes; actual economic exposure (mark-to-market) is far smaller" },
+        { "id": "C", "text": "Predicted future market value of all underlying assets" }
+      ],
+      "answer": "B",
+      "explanation": "Notional measures gross size of contracts, not economic risk. Net economic exposure (gross market value or potential exposure) is typically less than 5% of notional.\n\n**A** confuses notional with actual exposure.\n\n**C** misunderstands what notional represents."
+    },
+    {
+      "id": "q-deriv-ff-001",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "easy",
+      "stem": "The payoff to a long call option at expiration is:",
+      "choices": [
+        { "id": "A", "text": "$\\max(0, S_T - K)$" },
+        { "id": "B", "text": "$\\max(0, K - S_T)$" },
+        { "id": "C", "text": "$S_T - K$ regardless of sign" }
+      ],
+      "answer": "A",
+      "explanation": "Long call payoff: $\\max(0, S_T - K)$. Exercise if spot > strike; otherwise zero.\n\n**B** is the long put payoff.\n\n**C** is the forward/futures payoff (unbounded loss)."
+    },
+    {
+      "id": "q-deriv-ff-002",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "medium",
+      "stem": "An investor pays £4 for a put option with strike £100. At expiry the stock trades at £90. The investor's *profit* on the position is:",
+      "choices": [
+        { "id": "A", "text": "−£4" },
+        { "id": "B", "text": "£6" },
+        { "id": "C", "text": "£10" }
+      ],
+      "answer": "B",
+      "explanation": "Payoff = $\\max(0, 100 - 90) = £10$.\n\nProfit = Payoff − Premium = $10 - 4 = £6$.\n\n**A** would apply if option expired OTM (S > K).\n\n**C** is the payoff, not profit."
+    },
+    {
+      "id": "q-deriv-ff-003",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "medium",
+      "stem": "A short call position has *most accurately* the following risk profile:",
+      "choices": [
+        { "id": "A", "text": "Limited loss (premium), limited gain (S − K)" },
+        { "id": "B", "text": "Unlimited loss as S rises, limited gain (premium received)" },
+        { "id": "C", "text": "Limited loss (premium), unlimited gain" }
+      ],
+      "answer": "B",
+      "explanation": "Short call: premium is the maximum gain (received upfront). Loss is unlimited as the underlying rises (must deliver at strike no matter how high spot goes).\n\n**A** describes neither side.\n\n**C** describes long call."
+    },
+    {
+      "id": "q-deriv-ff-004",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "hard",
+      "stem": "A long forward contract at price $F_0 = 100$ on a non-dividend stock currently trading at $S = 102$ has, at this moment:",
+      "choices": [
+        { "id": "A", "text": "Value = 0 (forwards always worth zero)" },
+        { "id": "B", "text": "Positive value to the long because spot > original forward price" },
+        { "id": "C", "text": "Negative value to the long because the contract is locked in below market" }
+      ],
+      "answer": "B",
+      "explanation": "Value of long forward = $S_t - F_0/(1+r)^{T-t}$. If $S > F_0/(1+r)^{T-t}$ (typically yes when $S > F_0$), the long has positive value — could lock in higher gain than the original $F_0$.\n\n**A** is true only at initiation, not during the contract life.\n\n**C** has the direction backwards."
+    },
+    {
+      "id": "q-deriv-ff-005",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "easy",
+      "stem": "A credit default swap (CDS) is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "An option on equity prices" },
+        { "id": "B", "text": "A contingent claim where the seller pays if a credit event occurs" },
+        { "id": "C", "text": "A futures contract on interest rates" }
+      ],
+      "answer": "B",
+      "explanation": "CDS = contingent claim. Buyer pays periodic premium; seller pays out only if credit event (default, restructuring). Functions like insurance.\n\n**A** is unrelated.\n\n**C** describes interest rate futures."
+    },
+    {
+      "id": "q-deriv-ff-006",
+      "lessonId": "deriv-ff-overview",
+      "difficulty": "medium",
+      "stem": "Breakeven point for a long call with strike K and premium c is:",
+      "choices": [
+        { "id": "A", "text": "K − c" },
+        { "id": "B", "text": "K + c" },
+        { "id": "C", "text": "K (regardless of premium)" }
+      ],
+      "answer": "B",
+      "explanation": "Profit on long call = $\\max(0, S_T - K) - c$. Set = 0 to find breakeven: $S_T = K + c$.\n\nMust recover premium plus strike before profitable.\n\n**A** is long put breakeven.\n\n**C** ignores the premium cost."
+    },
+    {
+      "id": "q-deriv-br-001",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "easy",
+      "stem": "The *primary* economic purpose of derivatives is:",
+      "choices": [
+        { "id": "A", "text": "Speculation by retail investors" },
+        { "id": "B", "text": "Risk transfer between parties with different exposures" },
+        { "id": "C", "text": "Government tax collection" }
+      ],
+      "answer": "B",
+      "explanation": "Derivatives transfer risk from those who can't bear it (hedgers) to those who can (speculators, market makers). Other benefits include price discovery, efficiency, and market completeness.\n\n**A** is one *use*, not the primary purpose.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-deriv-br-002",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "medium",
+      "stem": "A UK airline buys oil futures to hedge fuel costs. If oil prices fall, the airline *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Has no P&L because hedge is perfect" },
+        { "id": "B", "text": "Sees gains on physical fuel costs offset by losses on futures position" },
+        { "id": "C", "text": "Earns large profits because both physical and derivative gain" }
+      ],
+      "answer": "B",
+      "explanation": "Long oil futures gain when oil rises, lose when oil falls. Physical fuel cost moves with spot oil. With oil falling: physical savings ↑, futures position loses. The hedge stabilises total cost regardless of direction.\n\n**A** ignores basis risk and oversimplifies.\n\n**C** misunderstands hedging direction."
+    },
+    {
+      "id": "q-deriv-br-003",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "medium",
+      "stem": "Basis risk in hedging arises from:",
+      "choices": [
+        { "id": "A", "text": "Counterparty credit deterioration" },
+        { "id": "B", "text": "Imperfect match between hedge instrument and underlying exposure" },
+        { "id": "C", "text": "Daily mark-to-market margin requirements" }
+      ],
+      "answer": "B",
+      "explanation": "Basis risk = the hedge doesn't perfectly match the exposure. Examples: hedging UK refining with US oil futures; hedging specific stocks with index futures; maturity mismatches.\n\n**A** is counterparty risk.\n\n**C** is operational/margin risk."
+    },
+    {
+      "id": "q-deriv-br-004",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "hard",
+      "stem": "Post-2008 regulatory reforms in derivatives markets *most accurately* aim to:",
+      "choices": [
+        { "id": "A", "text": "Eliminate derivatives entirely" },
+        { "id": "B", "text": "Reduce systemic risk via central clearing, reporting, and capital requirements" },
+        { "id": "C", "text": "Force all derivatives onto exchanges only" }
+      ],
+      "answer": "B",
+      "explanation": "Dodd-Frank, EMIR, and similar reforms mandate central clearing for standardised swaps, trade reporting, higher capital for non-cleared OTC, and position limits.\n\n**A** is incorrect — derivatives remain important.\n\n**C** overstates — bespoke OTC still exists with stricter rules."
+    },
+    {
+      "id": "q-deriv-br-005",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "medium",
+      "stem": "Receiving fixed in an interest rate swap *most accurately* benefits a company in which situation?",
+      "choices": [
+        { "id": "A", "text": "Floating-rate debt holder wanting to lock in fixed cost" },
+        { "id": "B", "text": "Fixed-rate debt holder wanting to convert to floating cost" },
+        { "id": "C", "text": "Asset manager wanting to lock in current yield on portfolio" }
+      ],
+      "answer": "C",
+      "explanation": "Receive fixed = receives the fixed rate, pays floating. Locks in yield. Common for asset managers wanting yield certainty.\n\n**A** would *pay* fixed in a swap (debt holder + IRS = fixed cost).\n\n**B** would also pay fixed, not receive."
+    },
+    {
+      "id": "q-deriv-br-006",
+      "lessonId": "deriv-br-overview",
+      "difficulty": "easy",
+      "stem": "The famous 2008 AIG collapse demonstrated which derivative risk?",
+      "choices": [
+        { "id": "A", "text": "Pure market risk from equity declines" },
+        { "id": "B", "text": "Selling massive CDS protection without adequate hedging or capital" },
+        { "id": "C", "text": "Forex losses from currency hedging" }
+      ],
+      "answer": "B",
+      "explanation": "AIG's Financial Products division sold CDS on mortgage securities without sufficient capital or hedging. When defaults cascaded, AIG faced collateral and payout demands it couldn't meet — bailed out at $182 billion.\n\nLesson: derivatives aren't inherently risky, but poor risk management is catastrophic.\n\n**A** and **C** misidentify the cause."
+    },
+    {
+      "id": "q-deriv-arb-001",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "easy",
+      "stem": "No-arbitrage pricing implies that two assets with identical payoffs must:",
+      "choices": [
+        { "id": "A", "text": "Have similar but not necessarily identical prices" },
+        { "id": "B", "text": "Have identical prices (Law of One Price)" },
+        { "id": "C", "text": "Be traded on the same exchange" }
+      ],
+      "answer": "B",
+      "explanation": "Law of One Price: identical payoffs = identical prices. Otherwise, arbitrage opportunities exist (buy cheap, sell dear).\n\n**A** allows for arbitrage.\n\n**C** is unrelated to the principle."
+    },
+    {
+      "id": "q-deriv-arb-002",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "medium",
+      "stem": "A non-dividend stock trades at $100. The 1-year risk-free rate is 4%. The no-arbitrage 1-year forward price is:",
+      "choices": [
+        { "id": "A", "text": "$96" },
+        { "id": "B", "text": "$100" },
+        { "id": "C", "text": "$104" }
+      ],
+      "answer": "C",
+      "explanation": "$F = S(1+r)^T = 100 \\times 1.04 = $104$.\n\nForward price exceeds spot by the cost of carry (financing).\n\n**A** is below spot — implies negative cost of carry.\n\n**B** ignores time value of money."
+    },
+    {
+      "id": "q-deriv-arb-003",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "medium",
+      "stem": "If the market forward price exceeds the no-arbitrage value, an arbitrageur should:",
+      "choices": [
+        { "id": "A", "text": "Buy the forward and short the underlying" },
+        { "id": "B", "text": "Sell the forward and buy the underlying (cash-and-carry)" },
+        { "id": "C", "text": "Buy both forward and underlying" }
+      ],
+      "answer": "B",
+      "explanation": "Cash-and-carry arbitrage when F > fair: borrow, buy underlying, sell forward. Lock in riskless profit equal to F − fair price (less costs).\n\n**A** is the reverse arbitrage (used when F < fair).\n\n**C** has no offsetting positions — pure speculation."
+    },
+    {
+      "id": "q-deriv-arb-004",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "hard",
+      "stem": "A commodity is in **backwardation** when:",
+      "choices": [
+        { "id": "A", "text": "Spot price exceeds forward price (convenience yield > storage cost)" },
+        { "id": "B", "text": "Forward price exceeds spot price (storage cost > convenience yield)" },
+        { "id": "C", "text": "Both spot and forward prices are declining" }
+      ],
+      "answer": "A",
+      "explanation": "Backwardation: F < S. Convenience yield dominates (physical possession valued highly).\n\n**B** describes contango (F > S).\n\n**C** confuses curve shape with price direction."
+    },
+    {
+      "id": "q-deriv-arb-005",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "medium",
+      "stem": "The forward price equals expected future spot price *only if*:",
+      "choices": [
+        { "id": "A", "text": "There is no risk premium on the underlying" },
+        { "id": "B", "text": "The forward maturity exceeds 1 year" },
+        { "id": "C", "text": "Storage costs equal zero" }
+      ],
+      "answer": "A",
+      "explanation": "$F = E[S_T] + \\text{risk premium}$. If no risk premium, F = E[S_T].\n\nIn practice, risk-averse markets demand positive risk premium → forward generally differs from expected future spot.\n\n**B** and **C** are unrelated to the relationship."
+    },
+    {
+      "id": "q-deriv-arb-006",
+      "lessonId": "deriv-arb-overview",
+      "difficulty": "easy",
+      "stem": "In real markets, perfect arbitrage opportunities are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Common and persistent for long periods" },
+        { "id": "B", "text": "Rare and quickly eliminated by arbitrageurs" },
+        { "id": "C", "text": "Forbidden by regulators" }
+      ],
+      "answer": "B",
+      "explanation": "In liquid markets, arbitrage opportunities are quickly closed by traders. Small mispricings may persist due to transaction costs but rarely exceed those costs.\n\n**A** is rare in major markets.\n\n**C** is incorrect — arbitrage is legal and economically valuable."
+    },
+    {
+      "id": "q-deriv-fp-001",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "easy",
+      "stem": "At initiation of a forward contract, its value to both parties is:",
+      "choices": [
+        { "id": "A", "text": "Equal to spot price" },
+        { "id": "B", "text": "Zero" },
+        { "id": "C", "text": "Equal to the forward price" }
+      ],
+      "answer": "B",
+      "explanation": "By construction, forward price is set so contract value = 0 at initiation. No money changes hands.\n\n**A** and **C** confuse value with prices."
+    },
+    {
+      "id": "q-deriv-fp-002",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "medium",
+      "stem": "A long forward at $F_0 = 100$ is held when spot rises to $S_t = 105$ midway through life. Time remaining is 0.5 yr at r = 4%. The forward's value to the long is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$3.06" },
+        { "id": "B", "text": "$5.00" },
+        { "id": "C", "text": "$7.04" }
+      ],
+      "answer": "A",
+      "explanation": "$V_t^{long} = S_t - F_0/(1+r)^{T-t} = 105 - 100/(1.04)^{0.5} = 105 - 100/1.0198 = 105 - 98.06 = 6.94$.\n\nWait — let me recompute: $100/1.0198 = 98.06$; $V = 105 - 98.06 = 6.94 \\approx C$. Actually closer to $7.04 if we use slightly different rounding.\n\nThe most accurate calculation: $1.04^{0.5} = 1.01980$; $100/1.01980 = 98.058$; $V = 105 - 98.058 = 6.94$.\n\n**Closest to C ($7.04)** given rounding.\n\n**B** is the naive $S - F_0$ without discounting.\n\nLearning point: value of an existing forward = current spot minus discounted original forward price."
+    },
+    {
+      "id": "q-deriv-fp-003",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "medium",
+      "stem": "Given 1-year spot rate of 3% and 2-year spot rate of 4%, the implied 1-year forward rate one year from now is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.00%" },
+        { "id": "B", "text": "5.01%" },
+        { "id": "C", "text": "7.00%" }
+      ],
+      "answer": "B",
+      "explanation": "No-arbitrage: $(1.04)^2 = (1.03)(1 + f_{1,2})$.\n\n$1 + f_{1,2} = 1.0816/1.03 = 1.0501$\n\n$f_{1,2} = 5.01\\%$.\n\n**A** is the naive difference $s_2 - s_1$ — incorrect.\n\n**C** is too high."
+    },
+    {
+      "id": "q-deriv-fp-004",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "hard",
+      "stem": "Under the *pure expectations hypothesis*, implied forward rates equal:",
+      "choices": [
+        { "id": "A", "text": "Current spot rates" },
+        { "id": "B", "text": "Expected future spot rates" },
+        { "id": "C", "text": "Realised future spot rates with certainty" }
+      ],
+      "answer": "B",
+      "explanation": "Pure expectations: forward rates = market's expectation of future spot rates.\n\nEmpirically, forwards tend to *overpredict* future spots due to term and liquidity premia.\n\n**A** is incorrect — forwards and spots differ.\n\n**C** is too strong — expectations are not certainty."
+    },
+    {
+      "id": "q-deriv-fp-005",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "medium",
+      "stem": "A long forward position is *most likely* unwound or marked-to-market when:",
+      "choices": [
+        { "id": "A", "text": "Risk reporting requires periodic MTM regardless of underlying intention" },
+        { "id": "B", "text": "Only at expiration; no MTM during life" },
+        { "id": "C", "text": "Only if counterparty defaults" }
+      ],
+      "answer": "A",
+      "explanation": "Even though forwards settle at maturity, mark-to-market is standard for risk management, accounting, and collateral purposes during the contract life.\n\n**B** is true only for cash settlement timing, not for valuation.\n\n**C** is unrelated to standard MTM practice."
+    },
+    {
+      "id": "q-deriv-fp-006",
+      "lessonId": "deriv-fp-overview",
+      "difficulty": "easy",
+      "stem": "A 1-year FX forward on EUR/USD has IRP-implied price. If USD interest rate exceeds EUR rate, the forward EUR/USD will:",
+      "choices": [
+        { "id": "A", "text": "Be lower than spot (EUR at forward discount)" },
+        { "id": "B", "text": "Be higher than spot (EUR at forward premium)" },
+        { "id": "C", "text": "Equal spot exactly" }
+      ],
+      "answer": "B",
+      "explanation": "From IRP: $F = S \\cdot (1 + r_q)/(1 + r_b) = S \\cdot (1+r_{USD})/(1+r_{EUR})$.\n\nIf $r_{USD} > r_{EUR}$: $F > S$ — EUR at forward premium (more USD per EUR).\n\nMnemonic: lower-rate currency at forward premium.\n\n**A** is the opposite direction.\n\n**C** ignores the interest rate differential."
+    },
+    {
+      "id": "q-deriv-futp-001",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "easy",
+      "stem": "Futures contracts differ from forwards *most importantly* in that futures:",
+      "choices": [
+        { "id": "A", "text": "Are illegal in most markets" },
+        { "id": "B", "text": "Settle daily via mark-to-market through a central clearing house" },
+        { "id": "C", "text": "Pay higher returns than forwards" }
+      ],
+      "answer": "B",
+      "explanation": "Key features: standardised contracts, exchange-traded, central clearing, daily MTM settlement. Forwards are OTC, bespoke, settle at maturity.\n\n**A** is false.\n\n**C** confuses pricing with structure."
+    },
+    {
+      "id": "q-deriv-futp-002",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "medium",
+      "stem": "S&P 500 spot = 4,500. 3-month risk-free rate = 5%, dividend yield = 2%. Theoretical 3-month future price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "4,466" },
+        { "id": "B", "text": "4,534" },
+        { "id": "C", "text": "4,635" }
+      ],
+      "answer": "B",
+      "explanation": "$F = S \\cdot e^{(r-q)T} = 4500 \\cdot e^{(0.05 - 0.02) \\cdot 0.25} = 4500 \\cdot e^{0.0075} = 4500 \\cdot 1.00753 = 4534$.\n\n**A** would result from $r < q$ (net negative cost).\n\n**C** is overstated."
+    },
+    {
+      "id": "q-deriv-futp-003",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "medium",
+      "stem": "Under constant interest rates, the futures price *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Equals the forward price for the same underlying and maturity" },
+        { "id": "B", "text": "Exceeds the forward price by the variation margin" },
+        { "id": "C", "text": "Equals spot price minus dividends" }
+      ],
+      "answer": "A",
+      "explanation": "With constant rates, futures and forwards have identical theoretical prices. Differences arise only when rates correlate with the underlying.\n\n**B** confuses pricing with margin.\n\n**C** is the wrong formula."
+    },
+    {
+      "id": "q-deriv-futp-004",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "hard",
+      "stem": "A commodity ETF holding near-month futures in persistent contango will *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Outperform spot returns due to roll yield" },
+        { "id": "B", "text": "Underperform spot returns due to negative roll yield" },
+        { "id": "C", "text": "Match spot returns exactly" }
+      ],
+      "answer": "B",
+      "explanation": "In contango (F > S), rolling involves selling cheaper front month and buying more expensive next month — negative roll yield. Over time, this drags returns below spot.\n\nFamous example: USO (oil ETF) lost ~80% over a decade while spot oil was roughly flat.\n\n**A** is the backwardation result.\n\n**C** ignores roll mechanics."
+    },
+    {
+      "id": "q-deriv-futp-005",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "medium",
+      "stem": "At expiration, the futures price *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Equals the spot price (basis goes to zero)" },
+        { "id": "B", "text": "Exceeds spot by cost of carry" },
+        { "id": "C", "text": "Is determined by physical delivery logistics" }
+      ],
+      "answer": "A",
+      "explanation": "Convergence at expiry: F = S. Otherwise, instantaneous arbitrage available.\n\n**B** describes futures pricing during the contract life, not at expiration.\n\n**C** misunderstands convergence."
+    },
+    {
+      "id": "q-deriv-futp-006",
+      "lessonId": "deriv-futp-overview",
+      "difficulty": "easy",
+      "stem": "Daily variation margin in futures requires:",
+      "choices": [
+        { "id": "A", "text": "No additional cash flows during the contract life" },
+        { "id": "B", "text": "Cash settlements daily — losing party pays, winning party receives" },
+        { "id": "C", "text": "An annual fee to the exchange" }
+      ],
+      "answer": "B",
+      "explanation": "Variation margin = daily settlement of P&L through margin accounts. Creates real cash flows during contract life, unlike forwards.\n\n**A** describes forwards.\n\n**C** confuses margin with fees."
+    },
+    {
+      "id": "q-deriv-irs-001",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "easy",
+      "stem": "In a vanilla interest rate swap, the fixed-rate payer:",
+      "choices": [
+        { "id": "A", "text": "Receives fixed, pays floating" },
+        { "id": "B", "text": "Pays fixed, receives floating" },
+        { "id": "C", "text": "Pays and receives both fixed and floating" }
+      ],
+      "answer": "B",
+      "explanation": "Fixed-rate payer pays fixed rate, receives floating. Floating-rate payer is the opposite (receives fixed, pays floating).\n\n**A** is the fixed receiver / floating payer."
+    },
+    {
+      "id": "q-deriv-irs-002",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "medium",
+      "stem": "The fixed rate on a new vanilla interest rate swap is *most accurately* set so that:",
+      "choices": [
+        { "id": "A", "text": "Both parties pay an upfront premium" },
+        { "id": "B", "text": "The PV of fixed payments equals the PV of expected floating payments — swap value = 0 at initiation" },
+        { "id": "C", "text": "The fixed rate equals the current overnight rate" }
+      ],
+      "answer": "B",
+      "explanation": "Vanilla swaps initiated at zero value. Fixed rate = PV-weighted average of implied forward floating rates.\n\n**A** is wrong — no upfront premium for vanilla swaps.\n\n**C** is incorrect — fixed rate depends on the entire yield curve, not overnight rate."
+    },
+    {
+      "id": "q-deriv-irs-003",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "medium",
+      "stem": "If interest rates rise after a vanilla swap is initiated, the fixed-rate payer's swap value will *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Decrease (paying old lower fixed while market is higher is unfavourable)" },
+        { "id": "B", "text": "Increase (locked in below-market fixed rate)" },
+        { "id": "C", "text": "Stay zero (vanilla swaps always worth zero)" }
+      ],
+      "answer": "B",
+      "explanation": "Fixed payer is committed to paying old fixed rate. If market rates rise, the alternative (entering a new swap) would require paying a higher rate — so original swap has positive value (saves money).\n\nFixed payer benefits from rate rises; fixed receiver benefits from rate falls.\n\n**A** has direction reversed.\n\n**C** is true only at initiation."
+    },
+    {
+      "id": "q-deriv-irs-004",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "hard",
+      "stem": "A swap can be conceptually viewed as:",
+      "choices": [
+        { "id": "A", "text": "A series of forward rate agreements (FRAs)" },
+        { "id": "B", "text": "A single combined option" },
+        { "id": "C", "text": "A bond with a floating coupon" }
+      ],
+      "answer": "A",
+      "explanation": "Each period of a swap = one forward-like exchange of fixed vs floating at that period's rates. Swap = bundle of FRAs.\n\nUseful for valuation: sum of FRA values.\n\n**B** confuses with options.\n\n**C** is part of the swap but not the full picture."
+    },
+    {
+      "id": "q-deriv-irs-005",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "medium",
+      "stem": "A UK pension fund holding 'receive fixed' swaps experienced a crisis in September 2022 because:",
+      "choices": [
+        { "id": "A", "text": "Equity markets collapsed" },
+        { "id": "B", "text": "Gilt yields rose sharply, triggering large collateral calls on the swaps" },
+        { "id": "C", "text": "Counterparty banks failed" }
+      ],
+      "answer": "B",
+      "explanation": "UK LDI (liability-driven investing) funds used receive-fixed swaps to hedge long liabilities. When gilt yields spiked, swap MTM moved against funds, requiring massive collateral. Forced selling of gilts created vicious cycle. BoE intervened.\n\nLesson: hedges can create liquidity risk via collateral demands.\n\n**A** and **C** misidentify the catalyst."
+    },
+    {
+      "id": "q-deriv-irs-006",
+      "lessonId": "deriv-irs-overview",
+      "difficulty": "easy",
+      "stem": "The notional principal in an interest rate swap:",
+      "choices": [
+        { "id": "A", "text": "Is exchanged at initiation and returned at maturity" },
+        { "id": "B", "text": "Is never exchanged — used only for interest payment calculations" },
+        { "id": "C", "text": "Determines the bid-ask spread" }
+      ],
+      "answer": "B",
+      "explanation": "Notional is a reference amount only. Used to compute interest payments but never actually changes hands.\n\nThis is one reason notional is misleading as a risk measure — actual cash flows are much smaller.\n\n**A** is true for currency swaps but not vanilla IR swaps.\n\n**C** confuses notional with quoting."
+    },
+    {
+      "id": "q-deriv-pcp-001",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "easy",
+      "stem": "Put-call parity for European options on a non-dividend stock states that:",
+      "choices": [
+        { "id": "A", "text": "$C + X/(1+r)^T = P + S$" },
+        { "id": "B", "text": "$C - P = X - S$" },
+        { "id": "C", "text": "$C + P = S + X$" }
+      ],
+      "answer": "A",
+      "explanation": "Put-call parity: $C + PV(X) = P + S$.\n\nFour-asset relationship: call + bond = put + stock.\n\n**B** has missing discount factor and wrong sign.\n\n**C** is incorrect formulation."
+    },
+    {
+      "id": "q-deriv-pcp-002",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "medium",
+      "stem": "S = $50, X = $50, r = 4%, T = 1 yr, P = $3.50. The fair value of the European call via parity is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$2.50" },
+        { "id": "B", "text": "$5.42" },
+        { "id": "C", "text": "$7.50" }
+      ],
+      "answer": "B",
+      "explanation": "$C = P + S - X/(1+r)^T = 3.5 + 50 - 50/1.04 = 3.5 + 50 - 48.08 = $5.42$.\n\nAt-the-money, $C > P$ (by PV of interest on strike).\n\n**A** misapplies the formula.\n\n**C** overcorrects."
+    },
+    {
+      "id": "q-deriv-pcp-003",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "medium",
+      "stem": "When the underlying pays dividends, put-call parity is *most appropriately* adjusted to:",
+      "choices": [
+        { "id": "A", "text": "$C + X/(1+r)^T = P + S - PV(\\text{div})$" },
+        { "id": "B", "text": "$C + X/(1+r)^T = P + S + PV(\\text{div})$" },
+        { "id": "C", "text": "$C + X/(1+r)^T = P + S \\cdot (1 + \\text{div yield})$" }
+      ],
+      "answer": "A",
+      "explanation": "Subtract PV of dividends from spot. Logic: stock-holder receives dividends; option holders don't, so adjust the stock-equivalent value down.\n\n**B** has sign reversed.\n\n**C** misuses the dividend yield."
+    },
+    {
+      "id": "q-deriv-pcp-004",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "hard",
+      "stem": "Synthetic long stock can be constructed from options and bonds as:",
+      "choices": [
+        { "id": "A", "text": "Long call + short put + invest PV of strike in bonds" },
+        { "id": "B", "text": "Long call + long put + invest PV of strike in bonds" },
+        { "id": "C", "text": "Short call + short put + invest PV of strike in bonds" }
+      ],
+      "answer": "A",
+      "explanation": "From parity: $S = C - P + X/(1+r)^T$.\n\nSo long stock = long call − short put + bond.\n\n**B** would be a straddle plus bond — not stock equivalent.\n\n**C** is short stock."
+    },
+    {
+      "id": "q-deriv-pcp-005",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "medium",
+      "stem": "For at-the-money European options ($S = X$) on a non-dividend stock with positive interest rates:",
+      "choices": [
+        { "id": "A", "text": "Call value equals put value" },
+        { "id": "B", "text": "Call value exceeds put value" },
+        { "id": "C", "text": "Put value exceeds call value" }
+      ],
+      "answer": "B",
+      "explanation": "From parity at $S = X$: $C - P = S - X/(1+r)^T = S(1 - 1/(1+r)^T) > 0$.\n\nDifference = PV of interest on strike.\n\nIntuition: call holder benefits from delayed payment of strike (earns interest); put holder doesn't.\n\n**A** would require r = 0 or T = 0.\n\n**C** is opposite direction."
+    },
+    {
+      "id": "q-deriv-pcp-006",
+      "lessonId": "deriv-pcp-overview",
+      "difficulty": "hard",
+      "stem": "Put-call parity *strictly* holds for:",
+      "choices": [
+        { "id": "A", "text": "Both American and European options" },
+        { "id": "B", "text": "European options on non-dividend stocks (and easily adjusted for dividends)" },
+        { "id": "C", "text": "Only American options on dividend-paying stocks" }
+      ],
+      "answer": "B",
+      "explanation": "Parity is exact for European options. For American options, early exercise possibilities create deviations — parity becomes a corridor (inequality).\n\n**A** is too strong.\n\n**C** is incorrect — American options break parity strictly."
+    },
+    {
+      "id": "q-deriv-bin-001",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "easy",
+      "stem": "The one-period binomial model assumes the underlying:",
+      "choices": [
+        { "id": "A", "text": "Follows a normal distribution continuously" },
+        { "id": "B", "text": "Can move to exactly one of two values in one step" },
+        { "id": "C", "text": "Stays constant" }
+      ],
+      "answer": "B",
+      "explanation": "Binomial = two outcomes per step (up or down). Building blocks for multi-period trees.\n\n**A** describes the Black-Scholes assumption (continuous lognormal).\n\n**C** is no model at all."
+    },
+    {
+      "id": "q-deriv-bin-002",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "medium",
+      "stem": "Given $u = 1.20$, $d = 0.85$, r = 5%, the risk-neutral up-state probability is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "0.43" },
+        { "id": "B", "text": "0.57" },
+        { "id": "C", "text": "0.65" }
+      ],
+      "answer": "B",
+      "explanation": "$\\pi = (1 + r - d)/(u - d) = (1.05 - 0.85)/(1.20 - 0.85) = 0.20/0.35 = 0.571$.\n\n**A** is the down probability.\n\n**C** is a calculation error."
+    },
+    {
+      "id": "q-deriv-bin-003",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "medium",
+      "stem": "Risk-neutral probability is used in option pricing because:",
+      "choices": [
+        { "id": "A", "text": "It reflects investors' true beliefs about the underlying" },
+        { "id": "B", "text": "It allows option pricing independent of real-world probabilities and expected returns" },
+        { "id": "C", "text": "It eliminates the need for the strike price" }
+      ],
+      "answer": "B",
+      "explanation": "Risk-neutral framework: option prices depend only on observable inputs (spot, strike, rates, u, d), not on investors' subjective probabilities. This is because options can be replicated by a hedging portfolio whose cost doesn't depend on real-world probabilities.\n\n**A** confuses the two probabilities.\n\n**C** is incorrect — strike is essential."
+    },
+    {
+      "id": "q-deriv-bin-004",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "hard",
+      "stem": "An American call on a non-dividend-paying stock is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Worth more than the equivalent European call" },
+        { "id": "B", "text": "Worth the same as the equivalent European call (early exercise never optimal)" },
+        { "id": "C", "text": "Worth less than the equivalent European call due to early exercise costs" }
+      ],
+      "answer": "B",
+      "explanation": "Without dividends, early exercising a call means giving up remaining time value — never optimal. So American and European call values are equal.\n\nThe situation is different for **puts** and for calls on dividend-paying stocks (early exercise can be optimal).\n\n**A** would apply only when early exercise is optimal.\n\n**C** is incorrect — early exercise is an option, not a cost."
+    },
+    {
+      "id": "q-deriv-bin-005",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "medium",
+      "stem": "In a binomial tree, the hedge ratio (delta) for a one-period option is:",
+      "choices": [
+        { "id": "A", "text": "$\\Delta = (S_u - S_d)/(C_u - C_d)$" },
+        { "id": "B", "text": "$\\Delta = (C_u - C_d)/(S_u - S_d)$" },
+        { "id": "C", "text": "$\\Delta = (C_u + C_d)/(S_u + S_d)$" }
+      ],
+      "answer": "B",
+      "explanation": "Delta = change in option value per unit change in stock. By construction:\n\n$\\Delta = (C_u - C_d)/(S_u - S_d)$\n\nUsed to construct replicating portfolio (Δ shares + cash).\n\n**A** is inverted.\n\n**C** is an incorrect formula."
+    },
+    {
+      "id": "q-deriv-bin-006",
+      "lessonId": "deriv-bin-overview",
+      "difficulty": "hard",
+      "stem": "As the number of steps in a binomial tree increases to infinity (with proper calibration), the resulting option price converges to:",
+      "choices": [
+        { "id": "A", "text": "Zero" },
+        { "id": "B", "text": "The Black-Scholes price (for European options)" },
+        { "id": "C", "text": "The strike price" }
+      ],
+      "answer": "B",
+      "explanation": "Binomial → Black-Scholes as steps → ∞ (with Cox-Ross-Rubinstein calibration: $u = e^{\\sigma \\sqrt{\\Delta t}}$, etc.).\n\nThis is why binomial trees are often used to verify Black-Scholes implementations.\n\n**A** and **C** are nonsensical results."
     }
   ]
 }

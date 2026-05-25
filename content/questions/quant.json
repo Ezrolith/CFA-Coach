@@ -234,6 +234,630 @@
       ],
       "answer": "B",
       "explanation": "Gordon growth: $P_0 = \\frac{D_1}{r - g} = \\frac{2.50}{0.09 - 0.04} = \\frac{2.50}{0.05} = £50.00$.\n\n**A** divides by $r$ alone (treats as perpetuity, ignores growth — undershoots).\n\n**C** would imply $r - g = 0.04$, meaning the analyst used $D_0$ instead of $D_1$ or used wrong rates.\n\nKey check: the model requires $r > g$ — if growth ≥ required return, value is mathematically infinite."
+    },
+    {
+      "id": "q-quant-prob-001",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "easy",
+      "stem": "A portfolio has equal probability of returning −10%, +5%, or +20% next year. Its expected return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "5.0%" },
+        { "id": "B", "text": "7.5%" },
+        { "id": "C", "text": "15.0%" }
+      ],
+      "answer": "A",
+      "explanation": "$E[R] = (1/3)(-10) + (1/3)(5) + (1/3)(20) = (-10 + 5 + 20)/3 = 15/3 = 5\\%$.\n\n**B** is incorrect arithmetic.\n\n**C** is the sum without dividing by 3."
+    },
+    {
+      "id": "q-quant-prob-002",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "medium",
+      "stem": "Given P(A) = 0.4, P(B|A) = 0.6, and P(B|not A) = 0.3, the unconditional probability P(B) using the total probability rule is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "0.18" },
+        { "id": "B", "text": "0.42" },
+        { "id": "C", "text": "0.90" }
+      ],
+      "answer": "B",
+      "explanation": "$P(B) = P(B|A) \\cdot P(A) + P(B|\\text{not }A) \\cdot P(\\text{not }A) = 0.6 \\cdot 0.4 + 0.3 \\cdot 0.6 = 0.24 + 0.18 = 0.42$.\n\n**A** counts only one branch.\n\n**C** sums conditionals without weighting by marginal probabilities."
+    },
+    {
+      "id": "q-quant-prob-003",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "hard",
+      "stem": "A test for a rare disease has 95% sensitivity and 90% specificity. The disease affects 1% of the population. If someone tests positive, the probability they actually have the disease (using Bayes' rule) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "8.8%" },
+        { "id": "B", "text": "50.0%" },
+        { "id": "C", "text": "95.0%" }
+      ],
+      "answer": "A",
+      "explanation": "Bayes: $P(D|+) = \\frac{P(+|D) \\cdot P(D)}{P(+)}$.\n\n$P(+) = P(+|D) \\cdot P(D) + P(+|\\text{not }D) \\cdot P(\\text{not }D) = 0.95 \\cdot 0.01 + 0.10 \\cdot 0.99 = 0.0095 + 0.099 = 0.1085$.\n\n$P(D|+) = 0.0095 / 0.1085 = 0.0876 \\approx 8.8\\%$.\n\n**Counterintuitive result**: even with a 95% sensitive test, low base rate means most positives are false positives.\n\n**C** is the test sensitivity, not the posterior probability."
+    },
+    {
+      "id": "q-quant-prob-004",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "medium",
+      "stem": "Two events A and B are independent if and only if:",
+      "choices": [
+        { "id": "A", "text": "P(A and B) = P(A) + P(B)" },
+        { "id": "B", "text": "P(A and B) = P(A) × P(B)" },
+        { "id": "C", "text": "P(A | B) = P(B | A)" }
+      ],
+      "answer": "B",
+      "explanation": "By definition, independence means joint probability = product of marginals: $P(A \\cap B) = P(A) P(B)$.\n\nEquivalent: $P(A|B) = P(A)$.\n\n**A** describes the addition rule for mutually exclusive events.\n\n**C** is symmetry but doesn't define independence."
+    },
+    {
+      "id": "q-quant-prob-005",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "medium",
+      "stem": "A binary outcome (success/failure) has P(success) = 0.6. For X = number of successes in 10 trials, the expected value E[X] is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "4.0" },
+        { "id": "B", "text": "5.0" },
+        { "id": "C", "text": "6.0" }
+      ],
+      "answer": "C",
+      "explanation": "For a binomial distribution, $E[X] = np = 10 \\cdot 0.6 = 6$.\n\n**A** would correspond to $p = 0.4$.\n\n**B** is the unweighted midpoint."
+    },
+    {
+      "id": "q-quant-prob-006",
+      "lessonId": "quant-prob-overview",
+      "difficulty": "hard",
+      "stem": "An investor estimates that there's a 70% chance a stock goes up. If it goes up, returns are 15%; if down, −10%. The variance of returns is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "0.0131" },
+        { "id": "B", "text": "0.0250" },
+        { "id": "C", "text": "0.0500" }
+      ],
+      "answer": "A",
+      "explanation": "$E[R] = 0.7 \\cdot 0.15 + 0.3 \\cdot (-0.10) = 0.105 - 0.030 = 0.075$ (7.5%).\n\n$\\text{Var}(R) = 0.7 \\cdot (0.15 - 0.075)^2 + 0.3 \\cdot (-0.10 - 0.075)^2$\n\n$= 0.7 \\cdot 0.005625 + 0.3 \\cdot 0.030625 = 0.00394 + 0.00919 = 0.01313$.\n\nStd dev = $\\sqrt{0.01313} = 11.46\\%$.\n\n**B** and **C** are common arithmetic mistakes."
+    },
+    {
+      "id": "q-quant-pm-001",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "easy",
+      "stem": "A portfolio holds 60% asset A (return 8%) and 40% asset B (return 4%). The expected portfolio return is:",
+      "choices": [
+        { "id": "A", "text": "5.6%" },
+        { "id": "B", "text": "6.0%" },
+        { "id": "C", "text": "6.4%" }
+      ],
+      "answer": "C",
+      "explanation": "$E[R_p] = 0.6 \\cdot 0.08 + 0.4 \\cdot 0.04 = 0.048 + 0.016 = 0.064 = 6.4\\%$.\n\n**B** is the simple average ignoring weights.\n\n**A** swaps the weights."
+    },
+    {
+      "id": "q-quant-pm-002",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "medium",
+      "stem": "Two assets each have σ = 20%. With weights of 50/50 and correlation of −1, the portfolio standard deviation is:",
+      "choices": [
+        { "id": "A", "text": "0%" },
+        { "id": "B", "text": "10%" },
+        { "id": "C", "text": "20%" }
+      ],
+      "answer": "A",
+      "explanation": "$\\sigma_p^2 = 0.5^2 \\cdot 0.04 + 0.5^2 \\cdot 0.04 + 2 \\cdot 0.5 \\cdot 0.5 \\cdot (-1) \\cdot 0.2 \\cdot 0.2 = 0.01 + 0.01 - 0.02 = 0$.\n\nPerfect negative correlation with equal volatilities and equal weights eliminates risk entirely.\n\n**C** is the individual asset σ — no diversification.\n\n**B** would require zero correlation."
+    },
+    {
+      "id": "q-quant-pm-003",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "medium",
+      "stem": "The covariance of two return series is 0.012 and their standard deviations are 20% and 30%. The correlation is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "0.06" },
+        { "id": "B", "text": "0.20" },
+        { "id": "C", "text": "0.40" }
+      ],
+      "answer": "B",
+      "explanation": "$\\rho = \\text{Cov} / (\\sigma_1 \\sigma_2) = 0.012 / (0.20 \\cdot 0.30) = 0.012 / 0.06 = 0.20$.\n\n**A** confuses correlation with covariance scale.\n\n**C** uses incorrect denominator."
+    },
+    {
+      "id": "q-quant-pm-004",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "hard",
+      "stem": "Roy's safety-first criterion identifies the portfolio that:",
+      "choices": [
+        { "id": "A", "text": "Maximises expected return for a given variance" },
+        { "id": "B", "text": "Maximises (E[R] − threshold return) / σ" },
+        { "id": "C", "text": "Minimises the probability of underperforming the risk-free rate" }
+      ],
+      "answer": "B",
+      "explanation": "Roy's safety-first ratio: $SFR = (E[R_p] - R_{threshold}) / \\sigma_p$. Maximising it maximises distance from the threshold in σ units, which (under normality) minimises shortfall probability.\n\n**A** describes the standard mean-variance optimisation.\n\n**C** is incorrect because the threshold is generally not the risk-free rate; it's a minimum acceptable return."
+    },
+    {
+      "id": "q-quant-pm-005",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "medium",
+      "stem": "Adding a low-correlation asset to a portfolio *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Always reduces portfolio variance regardless of the asset's own variance" },
+        { "id": "B", "text": "Reduces portfolio variance more than adding a high-correlation asset of equivalent volatility" },
+        { "id": "C", "text": "Increases portfolio variance because new assets always add risk" }
+      ],
+      "answer": "B",
+      "explanation": "Lower correlation gives more diversification benefit at the same individual volatility. The covariance contribution to portfolio variance is reduced.\n\n**A** is too strong — extremely high-σ assets can increase variance even at low correlation.\n\n**C** ignores correlation; diversification is the entire purpose of portfolio theory."
+    },
+    {
+      "id": "q-quant-pm-006",
+      "lessonId": "quant-portmath-overview",
+      "difficulty": "hard",
+      "stem": "A portfolio with E[R] = 10%, σ = 15%, and a minimum acceptable return of 4% has a safety-first ratio (Roy's SFR) of:",
+      "choices": [
+        { "id": "A", "text": "0.27" },
+        { "id": "B", "text": "0.40" },
+        { "id": "C", "text": "0.67" }
+      ],
+      "answer": "B",
+      "explanation": "$SFR = (E[R] - R_{min}) / \\sigma = (10 - 4) / 15 = 6/15 = 0.40$.\n\nHigher SFR = lower shortfall probability.\n\n**A** would imply different inputs.\n\n**C** would arise from dividing by something else."
+    },
+    {
+      "id": "q-quant-sim-001",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "easy",
+      "stem": "Asset prices are commonly modelled with a lognormal distribution because:",
+      "choices": [
+        { "id": "A", "text": "Lognormal allows negative prices, useful for short positions" },
+        { "id": "B", "text": "Lognormal is strictly positive and arises naturally when log returns are normal" },
+        { "id": "C", "text": "It's the only distribution that fits financial data" }
+      ],
+      "answer": "B",
+      "explanation": "If $\\ln(P_t / P_0)$ is normal, then $P_t$ is lognormal. Lognormal cannot be negative — consistent with prices ≥ 0.\n\n**A** is the opposite — lognormal is strictly positive.\n\n**C** is overstatement — many distributions fit different aspects of financial data; lognormal is convenient but not unique."
+    },
+    {
+      "id": "q-quant-sim-002",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "medium",
+      "stem": "Monte Carlo simulation in finance is *most appropriately* used when:",
+      "choices": [
+        { "id": "A", "text": "A closed-form analytical solution exists and is easy to compute" },
+        { "id": "B", "text": "Outcomes depend on complex paths or interactions that cannot be solved analytically" },
+        { "id": "C", "text": "Sample data are unavailable and assumptions must be avoided" }
+      ],
+      "answer": "B",
+      "explanation": "Monte Carlo is most valuable for path-dependent or complex problems (e.g., Asian options, retirement income simulation, VaR with non-normal distributions).\n\n**A** is wrong — if a closed form exists, it's faster and exact.\n\n**C** is incorrect — Monte Carlo *requires* distributional assumptions for the random draws."
+    },
+    {
+      "id": "q-quant-sim-003",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "medium",
+      "stem": "Bootstrap resampling differs from Monte Carlo simulation primarily in that:",
+      "choices": [
+        { "id": "A", "text": "Bootstrap uses theoretical distributions; Monte Carlo uses observed data" },
+        { "id": "B", "text": "Bootstrap resamples from observed data; Monte Carlo draws from theoretical distributions" },
+        { "id": "C", "text": "Bootstrap is only used for parameter estimation; Monte Carlo for pricing" }
+      ],
+      "answer": "B",
+      "explanation": "Bootstrap is **non-parametric**: it samples with replacement from your actual data, preserving the empirical distribution.\n\nMonte Carlo is **parametric**: it generates random draws from a specified distribution (e.g., normal).\n\n**A** has the two reversed."
+    },
+    {
+      "id": "q-quant-sim-004",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "hard",
+      "stem": "A key limitation of bootstrap resampling for financial returns is that it:",
+      "choices": [
+        { "id": "A", "text": "Assumes returns are normally distributed" },
+        { "id": "B", "text": "Cannot capture features absent from the historical sample (e.g., crashes not observed)" },
+        { "id": "C", "text": "Requires hundreds of millions of draws to converge" }
+      ],
+      "answer": "B",
+      "explanation": "Bootstrap can only sample what's in the data — extreme events not in the historical sample cannot be generated. If you bootstrap pre-2008 data, you won't generate 2008-like crashes.\n\n**A** is false — bootstrap is distribution-free.\n\n**C** is exaggerated — typically thousands suffice."
+    },
+    {
+      "id": "q-quant-sim-005",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "medium",
+      "stem": "If continuously compounded returns are normally distributed with mean 8% and σ = 20%, the expected (simple) return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "8.00%" },
+        { "id": "B", "text": "10.52%" },
+        { "id": "C", "text": "16.00%" }
+      ],
+      "answer": "B",
+      "explanation": "For lognormal: $E[R_{simple}] = e^{\\mu + \\sigma^2/2} - 1 = e^{0.08 + 0.02} - 1 = e^{0.10} - 1 = 0.1052 = 10.52\\%$.\n\nThe variance term adjusts upward because lognormal is right-skewed.\n\n**A** ignores the variance correction.\n\n**C** doubles the mean — incorrect."
+    },
+    {
+      "id": "q-quant-sim-006",
+      "lessonId": "quant-sim-overview",
+      "difficulty": "easy",
+      "stem": "Monte Carlo simulation accuracy *most likely* improves by:",
+      "choices": [
+        { "id": "A", "text": "Reducing the number of simulations to focus on a fixed period" },
+        { "id": "B", "text": "Increasing the number of simulations" },
+        { "id": "C", "text": "Using observed historical data instead of random draws" }
+      ],
+      "answer": "B",
+      "explanation": "Standard error of Monte Carlo estimates scales with $1/\\sqrt{N}$ — more draws = tighter estimates.\n\n**A** has the wrong direction.\n\n**C** describes bootstrap, not Monte Carlo, and isn't always more accurate."
+    },
+    {
+      "id": "q-quant-est-001",
+      "lessonId": "quant-est-overview",
+      "difficulty": "easy",
+      "stem": "The central limit theorem states that as sample size n grows large:",
+      "choices": [
+        { "id": "A", "text": "Sample observations become normally distributed" },
+        { "id": "B", "text": "The sampling distribution of the sample mean becomes approximately normal" },
+        { "id": "C", "text": "The population variance shrinks toward zero" }
+      ],
+      "answer": "B",
+      "explanation": "CLT says the **distribution of $\\bar{X}$** (across hypothetical samples) approaches normal, regardless of the population's distribution, as $n$ grows.\n\n**A** is wrong — observations themselves don't become normal.\n\n**C** is unrelated to CLT."
+    },
+    {
+      "id": "q-quant-est-002",
+      "lessonId": "quant-est-overview",
+      "difficulty": "medium",
+      "stem": "The standard error of the sample mean for n = 100, population σ = 20, is:",
+      "choices": [
+        { "id": "A", "text": "0.2" },
+        { "id": "B", "text": "2.0" },
+        { "id": "C", "text": "20.0" }
+      ],
+      "answer": "B",
+      "explanation": "$SE = \\sigma / \\sqrt{n} = 20 / \\sqrt{100} = 20/10 = 2.0$.\n\n**A** divides by n rather than $\\sqrt{n}$.\n\n**C** is the population σ — the SE shrinks as n grows."
+    },
+    {
+      "id": "q-quant-est-003",
+      "lessonId": "quant-est-overview",
+      "difficulty": "medium",
+      "stem": "A sample of 36 monthly returns has mean 1.2% and std dev 4%. A 95% confidence interval for the population mean (using z = 1.96) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "[-0.11%, 2.51%]" },
+        { "id": "B", "text": "[0.50%, 1.90%]" },
+        { "id": "C", "text": "[-2.80%, 5.20%]" }
+      ],
+      "answer": "A",
+      "explanation": "$SE = 4 / \\sqrt{36} = 4/6 = 0.667$.\n\nMargin = $1.96 \\cdot 0.667 = 1.307$.\n\nCI = $1.2 \\pm 1.307 = [-0.11\\%, 2.51\\%]$.\n\n**C** ignores the $\\sqrt{n}$ shrinkage of SE.\n\n**B** uses a narrower margin (e.g., z = 1.0 by mistake)."
+    },
+    {
+      "id": "q-quant-est-004",
+      "lessonId": "quant-est-overview",
+      "difficulty": "medium",
+      "stem": "Stratified random sampling improves precision compared to simple random sampling when:",
+      "choices": [
+        { "id": "A", "text": "Strata are very similar to each other" },
+        { "id": "B", "text": "Strata are heterogeneous across, homogeneous within" },
+        { "id": "C", "text": "Sample size is too large for simple sampling" }
+      ],
+      "answer": "B",
+      "explanation": "Stratified sampling is most efficient when strata differ from one another but observations within each stratum are similar — guaranteed representation reduces variance.\n\n**A** would offer no benefit over simple random sampling.\n\n**C** is unrelated; stratification is about precision, not sample size constraints."
+    },
+    {
+      "id": "q-quant-est-005",
+      "lessonId": "quant-est-overview",
+      "difficulty": "hard",
+      "stem": "An investor uses survivorship-biased hedge fund data to estimate expected returns. The bias *most likely* results in:",
+      "choices": [
+        { "id": "A", "text": "Underestimating expected returns and overstating risk" },
+        { "id": "B", "text": "Overestimating expected returns and understating risk" },
+        { "id": "C", "text": "No systematic effect, as it cancels out" }
+      ],
+      "answer": "B",
+      "explanation": "Survivors are funds that performed well enough to stay open. Failed funds drop out. Therefore, the surviving sample has higher returns and lower σ than the true universe — both directions biased favourably.\n\n**A** has the wrong direction.\n\n**C** is incorrect — bias is systematic and persistent."
+    },
+    {
+      "id": "q-quant-est-006",
+      "lessonId": "quant-est-overview",
+      "difficulty": "easy",
+      "stem": "To reduce the standard error of the mean by half, the sample size must:",
+      "choices": [
+        { "id": "A", "text": "Be doubled" },
+        { "id": "B", "text": "Be quadrupled" },
+        { "id": "C", "text": "Be increased by 50%" }
+      ],
+      "answer": "B",
+      "explanation": "$SE \\propto 1/\\sqrt{n}$. To halve SE: $\\sqrt{n_{new}} = 2 \\sqrt{n_{old}}$ → $n_{new} = 4 n_{old}$.\n\nThis 'diminishing returns' is why finance research with limited samples is hard — doubling decades of data only reduces SE by ~30%."
+    },
+    {
+      "id": "q-quant-hyp-001",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "easy",
+      "stem": "A Type I error in hypothesis testing is:",
+      "choices": [
+        { "id": "A", "text": "Failing to reject a true null hypothesis" },
+        { "id": "B", "text": "Rejecting a true null hypothesis (false positive)" },
+        { "id": "C", "text": "Failing to reject a false null hypothesis (false negative)" }
+      ],
+      "answer": "B",
+      "explanation": "Type I (α): reject H₀ when it's true. False positive. Controlled by significance level.\n\n**A** describes correct decision.\n\n**C** is Type II (β) — false negative."
+    },
+    {
+      "id": "q-quant-hyp-002",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "medium",
+      "stem": "A fund has 36 monthly excess returns with mean 0.5% and std dev 1.5%. For H₀: μ = 0 vs H₁: μ > 0, the t-statistic is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.00" },
+        { "id": "B", "text": "2.00" },
+        { "id": "C", "text": "3.00" }
+      ],
+      "answer": "B",
+      "explanation": "$t = (\\bar{X} - \\mu_0) / (s / \\sqrt{n}) = 0.5 / (1.5 / \\sqrt{36}) = 0.5 / 0.25 = 2.00$.\n\n**A** and **C** are calculation errors."
+    },
+    {
+      "id": "q-quant-hyp-003",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "medium",
+      "stem": "The p-value of a test is 0.03. At α = 0.05, the *most accurate* decision is:",
+      "choices": [
+        { "id": "A", "text": "Fail to reject H₀ because 0.03 < 0.05" },
+        { "id": "B", "text": "Reject H₀ because p < α" },
+        { "id": "C", "text": "Either decision is valid — the test is inconclusive" }
+      ],
+      "answer": "B",
+      "explanation": "Rule: if p-value < α, reject H₀. Here 0.03 < 0.05, so reject.\n\n**A** has the decision rule reversed.\n\n**C** misstates the framework — the decision rule is unambiguous."
+    },
+    {
+      "id": "q-quant-hyp-004",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "hard",
+      "stem": "The power of a hypothesis test is *most accurately* defined as:",
+      "choices": [
+        { "id": "A", "text": "1 − α (probability of correctly failing to reject)" },
+        { "id": "B", "text": "1 − β (probability of correctly rejecting a false null)" },
+        { "id": "C", "text": "The p-value of the test" }
+      ],
+      "answer": "B",
+      "explanation": "Power = 1 − β = probability of detecting a true effect.\n\n**A** describes the probability of correct retention, sometimes called specificity, not power.\n\n**C** confuses concepts — p-value is computed from data, power is a property of the test design."
+    },
+    {
+      "id": "q-quant-hyp-005",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "medium",
+      "stem": "A 95% confidence interval for the population mean is [2.0, 8.0]. For H₀: μ = 10 vs H₁: μ ≠ 10 at α = 0.05, the test result is:",
+      "choices": [
+        { "id": "A", "text": "Fail to reject H₀ because 10 is outside the CI" },
+        { "id": "B", "text": "Reject H₀ because the hypothesised mean is outside the CI" },
+        { "id": "C", "text": "Cannot be determined without the p-value" }
+      ],
+      "answer": "B",
+      "explanation": "For two-tailed tests, CI and hypothesis test are equivalent. If hypothesised value (10) is **outside** the 95% CI [2, 8], reject H₀ at 5%.\n\n**A** has the decision backwards.\n\n**C** is incorrect — the CI gives the answer directly for two-tailed tests."
+    },
+    {
+      "id": "q-quant-hyp-006",
+      "lessonId": "quant-hyp-overview",
+      "difficulty": "hard",
+      "stem": "A study finds a statistically significant fund alpha of 0.02% per month (p = 0.04). The *most appropriate* conclusion is:",
+      "choices": [
+        { "id": "A", "text": "Strong evidence of investable skill — invest with the manager" },
+        { "id": "B", "text": "Statistically significant but likely economically meaningless after costs; assess net of fees and trading" },
+        { "id": "C", "text": "The result is meaningless because all hypothesis tests are flawed" }
+      ],
+      "answer": "B",
+      "explanation": "0.02%/month = 0.24%/year — likely consumed by typical fund fees (50-100 bps) and trading. Statistical significance doesn't imply economic significance, especially with large samples.\n\n**A** confuses significance with materiality.\n\n**C** is too dismissive — hypothesis tests are valid, the issue here is magnitude."
+    },
+    {
+      "id": "q-quant-pt-001",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "easy",
+      "stem": "Non-parametric tests are *most appropriate* when:",
+      "choices": [
+        { "id": "A", "text": "Data are clearly normal and sample size is large" },
+        { "id": "B", "text": "Data are skewed, contain outliers, or are ordinal" },
+        { "id": "C", "text": "Population parameters are known precisely" }
+      ],
+      "answer": "B",
+      "explanation": "Non-parametric tests don't assume distributional form, making them robust to non-normality, outliers, and ordinal data.\n\n**A** would call for parametric tests (more powerful when assumptions hold).\n\n**C** is unrelated to the choice."
+    },
+    {
+      "id": "q-quant-pt-002",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "medium",
+      "stem": "For n = 30 with sample correlation r = 0.50, the t-statistic for testing H₀: ρ = 0 is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.50" },
+        { "id": "B", "text": "2.50" },
+        { "id": "C", "text": "3.06" }
+      ],
+      "answer": "C",
+      "explanation": "$t = r \\sqrt{n-2} / \\sqrt{1 - r^2} = 0.5 \\cdot \\sqrt{28} / \\sqrt{0.75} = (0.5 \\cdot 5.29) / 0.866 = 2.645 / 0.866 = 3.05$.\n\nClosest to **C** (3.06).\n\nCritical value (5%, two-tailed, df=28) ≈ 2.05 — reject H₀."
+    },
+    {
+      "id": "q-quant-pt-003",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "medium",
+      "stem": "Spearman rank correlation differs from Pearson correlation in that it:",
+      "choices": [
+        { "id": "A", "text": "Measures only linear association" },
+        { "id": "B", "text": "Uses the ranks of observations, capturing monotonic association" },
+        { "id": "C", "text": "Always produces a smaller absolute value than Pearson" }
+      ],
+      "answer": "B",
+      "explanation": "Spearman = Pearson on the ranks. Captures any monotonic relationship (not just linear), and is robust to outliers.\n\n**A** describes Pearson, not Spearman.\n\n**C** is not universally true."
+    },
+    {
+      "id": "q-quant-pt-004",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "hard",
+      "stem": "A 2×2 contingency table has observed cells [40, 10; 20, 30] and expected cells [30, 20; 30, 20] (under independence). The chi-square statistic is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "5.0" },
+        { "id": "B", "text": "10.0" },
+        { "id": "C", "text": "16.7" }
+      ],
+      "answer": "C",
+      "explanation": "$\\chi^2 = \\sum (O - E)^2 / E$\n\n$= (40-30)^2/30 + (10-20)^2/20 + (20-30)^2/30 + (30-20)^2/20$\n\n$= 100/30 + 100/20 + 100/30 + 100/20$\n\n$= 3.33 + 5 + 3.33 + 5 = 16.67$.\n\nDF = (2-1)(2-1) = 1; critical at 5% = 3.84. Reject H₀ — strong evidence of association."
+    },
+    {
+      "id": "q-quant-pt-005",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "medium",
+      "stem": "Degrees of freedom for a chi-square test of independence on a 3×4 contingency table is:",
+      "choices": [
+        { "id": "A", "text": "6" },
+        { "id": "B", "text": "7" },
+        { "id": "C", "text": "12" }
+      ],
+      "answer": "A",
+      "explanation": "$df = (r-1)(c-1) = (3-1)(4-1) = 2 \\cdot 3 = 6$.\n\n**B** subtracts 1 from total cells incorrectly.\n\n**C** is total cells without the df adjustment."
+    },
+    {
+      "id": "q-quant-pt-006",
+      "lessonId": "quant-paramtests-overview",
+      "difficulty": "easy",
+      "stem": "Failing to reject H₀ in a chi-square test of independence means:",
+      "choices": [
+        { "id": "A", "text": "The variables are proven independent" },
+        { "id": "B", "text": "Insufficient evidence of association at the chosen significance level" },
+        { "id": "C", "text": "The variables are positively correlated" }
+      ],
+      "answer": "B",
+      "explanation": "Failing to reject H₀ ≠ proving H₀. It means the evidence isn't strong enough to conclude an association — could be no real effect, or just insufficient data.\n\n**A** overstates the conclusion.\n\n**C** confuses chi-square (categorical) with correlation (continuous)."
+    },
+    {
+      "id": "q-quant-slr-001",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "easy",
+      "stem": "In a simple linear regression $Y = b_0 + b_1 X + \\varepsilon$, the slope $b_1$ is interpreted as:",
+      "choices": [
+        { "id": "A", "text": "The value of Y when X equals zero" },
+        { "id": "B", "text": "The expected change in Y for a one-unit change in X" },
+        { "id": "C", "text": "The correlation coefficient between X and Y" }
+      ],
+      "answer": "B",
+      "explanation": "Slope $b_1$ = change in expected Y per 1-unit change in X.\n\n**A** describes the intercept $b_0$.\n\n**C** is the correlation $\\rho$, related but distinct: $b_1 = \\rho \\cdot \\sigma_Y / \\sigma_X$."
+    },
+    {
+      "id": "q-quant-slr-002",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "medium",
+      "stem": "A regression of fund returns on market returns yields $\\hat{b}_0 = 0.5\\%$, $\\hat{b}_1 = 1.20$, $R^2 = 0.80$. The proportion of fund return variance not explained by market is:",
+      "choices": [
+        { "id": "A", "text": "0%" },
+        { "id": "B", "text": "20%" },
+        { "id": "C", "text": "80%" }
+      ],
+      "answer": "B",
+      "explanation": "$R^2$ is the **proportion explained**; $1 - R^2$ is the proportion unexplained.\n\n$1 - 0.80 = 0.20 = 20\\%$.\n\n**A** would imply perfect fit.\n\n**C** is the explained proportion."
+    },
+    {
+      "id": "q-quant-slr-003",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "medium",
+      "stem": "OLS estimation of the slope $b_1$ is given by:",
+      "choices": [
+        { "id": "A", "text": "$b_1 = \\bar{Y} / \\bar{X}$" },
+        { "id": "B", "text": "$b_1 = \\text{Cov}(X, Y) / \\text{Var}(X)$" },
+        { "id": "C", "text": "$b_1 = \\text{Var}(X) / \\text{Cov}(X, Y)$" }
+      ],
+      "answer": "B",
+      "explanation": "OLS slope = $\\text{Cov}(X, Y) / \\text{Var}(X)$ — derived by minimising squared residuals.\n\n**A** is the ratio of means — incorrect.\n\n**C** is the formula inverted."
+    },
+    {
+      "id": "q-quant-slr-004",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "hard",
+      "stem": "Which of the following is *not* a standard assumption of simple linear regression?",
+      "choices": [
+        { "id": "A", "text": "Linearity of the relationship" },
+        { "id": "B", "text": "Homoskedasticity (constant residual variance)" },
+        { "id": "C", "text": "The independent variable X must itself be normally distributed" }
+      ],
+      "answer": "C",
+      "explanation": "OLS doesn't require X to be normal. Assumptions involve **residuals** (normality, independence, homoskedasticity) and the model form (linearity, no measurement error in X).\n\nThe distribution of X is irrelevant.\n\n**A** and **B** are core assumptions."
+    },
+    {
+      "id": "q-quant-slr-005",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "medium",
+      "stem": "An F-test in regression with one independent variable tests:",
+      "choices": [
+        { "id": "A", "text": "Whether residuals are normally distributed" },
+        { "id": "B", "text": "Whether the regression as a whole is significant (slope ≠ 0)" },
+        { "id": "C", "text": "Whether two regression coefficients are equal" }
+      ],
+      "answer": "B",
+      "explanation": "F-test for overall significance: H₀ that all slopes = 0 vs H₁ at least one ≠ 0. In simple regression, $F = t_{slope}^2$.\n\n**A** describes residual diagnostic tests (e.g., Jarque-Bera).\n\n**C** would require an equality-constraint test."
+    },
+    {
+      "id": "q-quant-slr-006",
+      "lessonId": "quant-slr-overview",
+      "difficulty": "hard",
+      "stem": "A regression has $\\hat{b}_1 = 1.5$, $SE(\\hat{b}_1) = 0.3$, $n = 32$. The t-statistic for H₀: $b_1 = 0$ vs H₁: $b_1 \\neq 0$ is:",
+      "choices": [
+        { "id": "A", "text": "1.5" },
+        { "id": "B", "text": "5.0" },
+        { "id": "C", "text": "10.0" }
+      ],
+      "answer": "B",
+      "explanation": "$t = \\hat{b}_1 / SE(\\hat{b}_1) = 1.5 / 0.3 = 5.0$.\n\nDF = n − 2 = 30; critical at 5% two-tailed ≈ 2.04 — easily reject H₀.\n\n**A** is the slope estimate itself; **C** is an arithmetic error."
+    },
+    {
+      "id": "q-quant-bd-001",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "easy",
+      "stem": "The four Vs of big data are:",
+      "choices": [
+        { "id": "A", "text": "Volume, Velocity, Variety, Veracity" },
+        { "id": "B", "text": "Value, Visibility, Variability, Validity" },
+        { "id": "C", "text": "Volume, Voracity, Verifiable, Validated" }
+      ],
+      "answer": "A",
+      "explanation": "Standard 'Vs': **Volume** (size), **Velocity** (speed), **Variety** (formats), **Veracity** (quality). Some sources add Value and Variability.\n\n**B** and **C** are not standard."
+    },
+    {
+      "id": "q-quant-bd-002",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "medium",
+      "stem": "Supervised machine learning *most accurately* refers to algorithms that:",
+      "choices": [
+        { "id": "A", "text": "Find clusters of similar observations without labels" },
+        { "id": "B", "text": "Learn from labelled training data to predict outputs" },
+        { "id": "C", "text": "Take actions in an environment to maximise reward" }
+      ],
+      "answer": "B",
+      "explanation": "Supervised learning: training data includes both inputs (X) and labelled outputs (Y); algorithm learns the mapping.\n\n**A** is unsupervised learning.\n\n**C** is reinforcement learning."
+    },
+    {
+      "id": "q-quant-bd-003",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "medium",
+      "stem": "Principal component analysis (PCA) is *most appropriately* classified as:",
+      "choices": [
+        { "id": "A", "text": "Supervised learning for classification" },
+        { "id": "B", "text": "Unsupervised learning for dimensionality reduction" },
+        { "id": "C", "text": "Reinforcement learning for trading optimisation" }
+      ],
+      "answer": "B",
+      "explanation": "PCA finds linear combinations that capture maximum variance — no labels required. It reduces many variables to few principal components.\n\n**A** describes algorithms like logistic regression or SVM.\n\n**C** is unrelated to PCA's purpose."
+    },
+    {
+      "id": "q-quant-bd-004",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "hard",
+      "stem": "An ML model achieves 98% accuracy on training data but only 55% on holdout test data. This pattern is *most consistent* with:",
+      "choices": [
+        { "id": "A", "text": "Underfitting — model too simple" },
+        { "id": "B", "text": "Overfitting — model has learned noise specific to training set" },
+        { "id": "C", "text": "Data leakage — test set contains training data" }
+      ],
+      "answer": "B",
+      "explanation": "Large gap between training and test accuracy signals overfitting. The model memorised training noise and fails to generalise.\n\n**A** would show poor training accuracy too.\n\n**C** would produce the opposite — artificially high test accuracy."
+    },
+    {
+      "id": "q-quant-bd-005",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "medium",
+      "stem": "When splitting financial time-series data for ML, an investor should *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Randomly shuffle observations and split 80/20" },
+        { "id": "B", "text": "Use earlier dates for training and later dates for testing (walk-forward)" },
+        { "id": "C", "text": "Use all data for both training and testing" }
+      ],
+      "answer": "B",
+      "explanation": "Time-series data must respect time ordering to avoid **look-ahead bias** (using future info to predict past). Random splits leak information; walk-forward simulates real-world deployment.\n\n**A** introduces data leakage.\n\n**C** is the classic overfitting trap."
+    },
+    {
+      "id": "q-quant-bd-006",
+      "lessonId": "quant-bigdata-overview",
+      "difficulty": "easy",
+      "stem": "Alternative data sources used in investment management include all of the following *except*:",
+      "choices": [
+        { "id": "A", "text": "Satellite imagery of retail parking lots" },
+        { "id": "B", "text": "Audited annual financial statements" },
+        { "id": "C", "text": "Credit card transaction data" }
+      ],
+      "answer": "B",
+      "explanation": "Audited financials are **traditional** structured data — not 'alternative'. Alternative data is everything outside the traditional accounting/market-data stack.\n\n**A** and **C** are classic alternative data."
     }
   ]
 }
