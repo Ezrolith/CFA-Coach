@@ -2,6 +2,396 @@
   "topicId": "corp-issuers",
   "questions": [
     {
+      "id": "q-corp-feat-001",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "easy",
+      "stem": "Which form of business *most likely* provides shareholders with limited liability?",
+      "choices": [
+        { "id": "A", "text": "Sole proprietorship." },
+        { "id": "B", "text": "General partnership." },
+        { "id": "C", "text": "Corporation." }
+      ],
+      "answer": "C",
+      "explanation": "Corporations provide limited liability — shareholders' losses are capped at their investment. They're not personally liable for corporate debts.\n\n**A** has unlimited personal liability for the proprietor.\n**B** has unlimited liability for general partners (limited partners excepted)."
+    },
+    {
+      "id": "q-corp-feat-002",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "medium",
+      "stem": "A public corporation that pays £100m corporate tax on £400m pre-tax profit and distributes the remainder as dividends taxed at 30% has *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Combined effective tax rate of 47.5%." },
+        { "id": "B", "text": "Combined effective tax rate of 25%." },
+        { "id": "C", "text": "Combined effective tax rate of 30%." }
+      ],
+      "answer": "A",
+      "explanation": "Corporate tax: 100m / 400m = 25%. After-tax distributable: 300m.\nDividend tax: 300m × 30% = 90m.\nNet to shareholders: 210m.\nEffective rate: (100 + 90) / 400 = 47.5%.\n\nThis is the 'double taxation' problem with corporations.\n\n**B** is just the corporate level.\n**C** is just the dividend tax rate."
+    },
+    {
+      "id": "q-corp-feat-003",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "medium",
+      "stem": "A private corporation *most likely* differs from a public corporation by:",
+      "choices": [
+        { "id": "A", "text": "Less regulated disclosure, concentrated ownership, and limited liquidity." },
+        { "id": "B", "text": "Higher capital requirements." },
+        { "id": "C", "text": "Stronger shareholder rights." }
+      ],
+      "answer": "A",
+      "explanation": "Private firms are characterised by limited disclosure, concentrated ownership, and limited trading liquidity. They often have *weaker* shareholder rights for public-style investors.\n\n**B** is incorrect — private firms typically have *lower* capital requirements.\n**C** is the opposite — public firms typically have stronger rights for outside shareholders."
+    },
+    {
+      "id": "q-corp-feat-004",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *least likely* a type of debt issued by a corporation?",
+      "choices": [
+        { "id": "A", "text": "Senior secured notes." },
+        { "id": "B", "text": "Subordinated convertible notes." },
+        { "id": "C", "text": "Common shares." }
+      ],
+      "answer": "C",
+      "explanation": "Common shares are equity, not debt. They represent residual ownership claims.\n\n**A** and **B** are types of corporate debt (with different priorities and features)."
+    },
+    {
+      "id": "q-corp-feat-005",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "easy",
+      "stem": "Modern stakeholder management *most likely* recognises:",
+      "choices": [
+        { "id": "A", "text": "Only shareholders matter." },
+        { "id": "B", "text": "Multiple stakeholders (shareholders, employees, customers, suppliers, communities) have legitimate interests." },
+        { "id": "C", "text": "Only customers matter." }
+      ],
+      "answer": "B",
+      "explanation": "Stakeholder capitalism — modern view — recognises that firms have obligations to multiple constituencies. UK Companies Act s.172 explicitly requires directors to consider broader stakeholders.\n\n**A** is Friedmanite shareholder-primacy.\n**C** ignores other stakeholders."
+    },
+    {
+      "id": "q-corp-feat-006",
+      "lessonId": "corp-feat-overview",
+      "difficulty": "medium",
+      "stem": "A trend in modern capital markets is that *firms are staying private longer*, *most likely* because:",
+      "choices": [
+        { "id": "A", "text": "Abundant PE and VC capital allows firms to grow large without an IPO." },
+        { "id": "B", "text": "Public market regulation has loosened." },
+        { "id": "C", "text": "IPO underwriting fees have become prohibitive." }
+      ],
+      "answer": "A",
+      "explanation": "Modern private markets are large enough to fund significant scale without IPO. Stripe, SpaceX, Databricks all valued at $50bn+ as private companies in 2024.\n\n**B** is the opposite — disclosure requirements have tightened.\n**C** is a minor factor at best."
+    },
+    {
+      "id": "q-corp-inv-001",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "medium",
+      "stem": "Equity investors *most likely* differ from debt investors because:",
+      "choices": [
+        { "id": "A", "text": "Equity investors receive contractual fixed payments; debt investors receive residual amounts." },
+        { "id": "B", "text": "Equity investors are residual claimants with unlimited upside; debt investors have contractual fixed payments with capped upside." },
+        { "id": "C", "text": "Equity and debt investors have identical rights and returns." }
+      ],
+      "answer": "B",
+      "explanation": "Equity = residual claim, unlimited upside, capped downside (limited liability). Debt = contractual claim, capped upside, possible loss of principal.\n\n**A** has the roles reversed.\n**C** is incorrect — they are fundamentally different."
+    },
+    {
+      "id": "q-corp-inv-002",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "medium",
+      "stem": "Which group has the *highest* priority in liquidation?",
+      "choices": [
+        { "id": "A", "text": "Senior secured creditors." },
+        { "id": "B", "text": "Preferred shareholders." },
+        { "id": "C", "text": "Common shareholders." }
+      ],
+      "answer": "A",
+      "explanation": "Priority order in liquidation:\n1. Senior secured creditors\n2. Senior unsecured creditors\n3. Subordinated creditors\n4. Trade creditors\n5. Preferred shareholders\n6. Common shareholders (last)\n\nEquity is junior to all debt; senior secured is highest priority within debt."
+    },
+    {
+      "id": "q-corp-inv-003",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "medium",
+      "stem": "The principal-agent problem in corporations *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "The conflict between bondholders and trade creditors." },
+        { "id": "B", "text": "The conflict between owners (shareholders) and managers." },
+        { "id": "C", "text": "The conflict between buyers and sellers in a transaction." }
+      ],
+      "answer": "B",
+      "explanation": "Principal-agent: owners (principals) hire managers (agents). Managers' interests may diverge from owners' (empire building, perks, risk aversion, short-term focus). Drives corporate governance design.\n\n**A** is a different conflict (creditor hierarchy).\n**C** is generic transaction theory."
+    },
+    {
+      "id": "q-corp-inv-004",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "hard",
+      "stem": "Shareholders and bondholders *most likely* differ in their preferences because:",
+      "choices": [
+        { "id": "A", "text": "Shareholders prefer riskier projects (option-like upside); bondholders prefer safer projects (fixed payoff with no upside)." },
+        { "id": "B", "text": "Bondholders prefer riskier projects; shareholders prefer safer ones." },
+        { "id": "C", "text": "Both prefer the same risk level." }
+      ],
+      "answer": "A",
+      "explanation": "Shareholders' payoff is asymmetric: unlimited upside, downside capped at investment. They prefer more risk.\n\nBondholders' payoff is symmetric: fixed return if firm pays, loss if firm defaults. They prefer less risk.\n\nThis conflict drives covenants, credit ratings, and acquisition behaviour.\n\n**B** is reversed.\n**C** ignores fundamental incentive differences."
+    },
+    {
+      "id": "q-corp-inv-005",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "easy",
+      "stem": "ESG factors *most likely* refer to:",
+      "choices": [
+        { "id": "A", "text": "Environmental, Social, and Governance considerations." },
+        { "id": "B", "text": "Economic, Strategic, and Geopolitical factors." },
+        { "id": "C", "text": "Equity, Securities, and Growth metrics." }
+      ],
+      "answer": "A",
+      "explanation": "ESG: Environmental (climate, pollution), Social (employees, customers, communities), Governance (board, executive compensation, controls).\n\nIncreasingly material in investment analysis due to regulation, capital flows, customer preferences, and stakeholder pressure.\n\n**B** and **C** are not the standard ESG framework."
+    },
+    {
+      "id": "q-corp-inv-006",
+      "lessonId": "corp-inv-overview",
+      "difficulty": "medium",
+      "stem": "ESG factors *most likely* affect financial returns through:",
+      "choices": [
+        { "id": "A", "text": "Regulatory exposure (carbon taxes), stranded-asset risk, reputational risk, talent attraction, and customer preferences." },
+        { "id": "B", "text": "Direct accounting requirements only." },
+        { "id": "C", "text": "Ethical preferences of investors alone, with no financial impact." }
+      ],
+      "answer": "A",
+      "explanation": "ESG materialises through multiple financial mechanisms: regulation imposes costs, fossil reserves may become stranded, brand damage from poor practice, talent harder to attract for low-ESG firms, customer shifts.\n\n**B** is too narrow.\n**C** misreads — modern research shows ESG has direct financial effects."
+    },
+    {
+      "id": "q-corp-gov-001",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "medium",
+      "stem": "An independent director *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "No employment or material relationship with the firm or management, enabling independent oversight." },
+        { "id": "B", "text": "A senior executive position within the firm." },
+        { "id": "C", "text": "A family relationship with the CEO." }
+      ],
+      "answer": "A",
+      "explanation": "Independent directors are external — no employment, material business, or close personal relationships with the firm. Provides independent challenge to management.\n\n**B** describes inside directors.\n**C** would disqualify independence."
+    },
+    {
+      "id": "q-corp-gov-002",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "easy",
+      "stem": "The *audit committee* of the board *most likely* oversees:",
+      "choices": [
+        { "id": "A", "text": "Financial reporting, internal controls, and external auditors." },
+        { "id": "B", "text": "Executive compensation." },
+        { "id": "C", "text": "Director nominations." }
+      ],
+      "answer": "A",
+      "explanation": "Audit committee: financial reporting integrity, internal controls (SOX compliance in US), external auditor relationship. Members must be financially literate.\n\n**B** is compensation committee's role.\n**C** is nominating/governance committee's role."
+    },
+    {
+      "id": "q-corp-gov-003",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "medium",
+      "stem": "Dual-class share structures *most likely* allow founders/insiders to:",
+      "choices": [
+        { "id": "A", "text": "Maintain voting control with less economic ownership." },
+        { "id": "B", "text": "Receive higher dividends than public shareholders." },
+        { "id": "C", "text": "Avoid all regulatory disclosure." }
+      ],
+      "answer": "A",
+      "explanation": "Multi-class structures: Class A (e.g., 1 vote/share) for public, Class B (e.g., 10 votes/share) for insiders. Founders retain control with limited economic ownership.\n\nExample: Mark Zuckerberg controls Meta voting with ~13% economic ownership.\n\n**B** is rarely a feature.\n**C** is incorrect — regulatory requirements apply equally."
+    },
+    {
+      "id": "q-corp-gov-004",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "easy",
+      "stem": "Strong corporate governance *most likely* leads to:",
+      "choices": [
+        { "id": "A", "text": "Lower cost of capital and higher valuations." },
+        { "id": "B", "text": "Higher cost of capital and lower valuations." },
+        { "id": "C", "text": "No effect on valuations." }
+      ],
+      "answer": "A",
+      "explanation": "Strong governance reduces agency costs, improves transparency, aligns interests, and reduces tail risks. Investors price this in, leading to lower required returns and premium valuations.\n\nDocumented empirical relationship across multiple academic studies and markets.\n\n**B** is reversed.\n**C** ignores the documented relationship."
+    },
+    {
+      "id": "q-corp-gov-005",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "medium",
+      "stem": "Activist investors *most likely* push for:",
+      "choices": [
+        { "id": "A", "text": "Board representation, strategic refocus, divestitures, buybacks, and management changes." },
+        { "id": "B", "text": "Increased CEO power and reduced oversight." },
+        { "id": "C", "text": "Maintenance of the status quo regardless of performance." }
+      ],
+      "answer": "A",
+      "explanation": "Activists push for change — typically board seats, strategic redirection, return of capital (buybacks/dividends), divestiture of non-core assets, or management change.\n\nResults are mixed — some create value; some pursue short-term financial engineering.\n\n**B** and **C** are opposite of activist behaviour."
+    },
+    {
+      "id": "q-corp-gov-006",
+      "lessonId": "corp-gov-overview",
+      "difficulty": "easy",
+      "stem": "A board chair separated from the CEO role *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Strengthens board independence and oversight." },
+        { "id": "B", "text": "Weakens governance." },
+        { "id": "C", "text": "Has no effect on governance." }
+      ],
+      "answer": "A",
+      "explanation": "Separating Board Chair from CEO role provides clearer board independence. Combined (CEO/Chair) role concentrates power, reducing oversight.\n\nUK Corporate Governance Code recommends separation; many US firms use combined role with 'lead independent director' as partial mitigation.\n\n**B** and **C** misread the governance literature."
+    },
+    {
+      "id": "q-corp-ca-001",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "medium",
+      "stem": "Net Present Value (NPV) is *most preferred* over IRR in mutually exclusive project decisions because:",
+      "choices": [
+        { "id": "A", "text": "NPV measures absolute value created; IRR is a ratio that doesn't capture project size." },
+        { "id": "B", "text": "IRR always gives the same answer as NPV." },
+        { "id": "C", "text": "NPV is easier to calculate." }
+      ],
+      "answer": "A",
+      "explanation": "NPV gives absolute value (£10m vs £8m); IRR is a return rate. For mutually exclusive projects, you want maximum value, not maximum return ratio.\n\nAdditionally, IRR can have multiple solutions or conflict with NPV. NPV is the value-maximising criterion.\n\n**B** is incorrect — they can conflict.\n**C** isn't the substantive reason."
+    },
+    {
+      "id": "q-corp-ca-002",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "easy",
+      "stem": "A project's NPV is *most appropriately* computed as:",
+      "choices": [
+        { "id": "A", "text": "Sum of cash flows divided by the discount rate." },
+        { "id": "B", "text": "Sum of discounted future cash flows minus initial investment." },
+        { "id": "C", "text": "Maximum cash flow over the project's life." }
+      ],
+      "answer": "B",
+      "explanation": "$NPV = -CF_0 + \\sum_{t=1}^{N} \\frac{CF_t}{(1+r)^t}$\n\nDiscount each future cash flow at the cost of capital, sum, subtract initial investment.\n\n**A** ignores time value and structure.\n**C** is unrelated to NPV."
+    },
+    {
+      "id": "q-corp-ca-003",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "medium",
+      "stem": "The *sunk cost fallacy* in capital allocation *most likely* describes:",
+      "choices": [
+        { "id": "A", "text": "Continuing an investment because of past spending, even when forward cash flows don't justify it." },
+        { "id": "B", "text": "Refusing to invest because of past failures." },
+        { "id": "C", "text": "Investing in low-margin projects because they're cheaper." }
+      ],
+      "answer": "A",
+      "explanation": "Sunk cost fallacy: 'We've already spent £80m; we need to finish to recover it.' Wrong — the £80m is gone regardless. Decisions should be made on forward cash flows only.\n\nForward analysis: is investing the additional £20m to complete worth the expected revenue? If yes, finish; if no, abandon.\n\n**B** and **C** are different cognitive errors."
+    },
+    {
+      "id": "q-corp-ca-004",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "medium",
+      "stem": "A *real option* in a capital investment *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "An embedded flexibility (to expand, defer, abandon, contract, or switch) that adds value beyond traditional NPV." },
+        { "id": "B", "text": "A financial option on the company's stock." },
+        { "id": "C", "text": "A required regulatory choice." }
+      ],
+      "answer": "A",
+      "explanation": "Real options: managerial flexibility embedded in projects. Examples: option to expand (small initial → larger later), defer (wait for info), abandon, contract, switch.\n\nTraditional NPV ignores these; real options analysis values them.\n\nHigh-uncertainty + high-flexibility projects benefit most.\n\n**B** is a financial option (related but different).\n**C** is a regulatory constraint."
+    },
+    {
+      "id": "q-corp-ca-005",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "hard",
+      "stem": "A firm's ROIC is consistently below its WACC. The *most disciplined* capital allocation response is:",
+      "choices": [
+        { "id": "A", "text": "Continue investing aggressively to grow scale and improve ROIC." },
+        { "id": "B", "text": "Return capital to shareholders via buybacks or dividends rather than reinvesting." },
+        { "id": "C", "text": "Pursue large M&A to achieve scale." }
+      ],
+      "answer": "B",
+      "explanation": "ROIC < WACC means the firm destroys value with each pound reinvested. Continuing to invest is value-destructive. Returning capital to shareholders allows them to deploy it elsewhere (above WACC potentially).\n\nLegendary capital allocators (Buffett, Singleton, others) are disciplined about this — returning capital when no value-creating investments exist.\n\n**A** worsens the value destruction.\n**C** typically also value-destructive (synergies often disappoint)."
+    },
+    {
+      "id": "q-corp-ca-006",
+      "lessonId": "corp-ca-overview",
+      "difficulty": "easy",
+      "stem": "A project's payback period is *most likely* a:",
+      "choices": [
+        { "id": "A", "text": "Useful but limited tool, since it ignores time value of money and post-payback cash flows." },
+        { "id": "B", "text": "Better alternative to NPV in all cases." },
+        { "id": "C", "text": "Required regulatory metric." }
+      ],
+      "answer": "A",
+      "explanation": "Payback period = time to recover initial investment. Useful for liquidity-constrained firms but has serious limitations:\n- Ignores time value of money.\n- Ignores cash flows beyond payback.\n- Arbitrary threshold.\n\nNot a substitute for NPV.\n\n**B** is incorrect.\n**C** is not regulatory."
+    },
+    {
+      "id": "q-corp-bm-001",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "medium",
+      "stem": "A *subscription* business model *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Generates recurring revenue from customers paying for ongoing access." },
+        { "id": "B", "text": "Generates one-off revenue from product sales." },
+        { "id": "C", "text": "Generates revenue only from advertising." }
+      ],
+      "answer": "A",
+      "explanation": "Subscription: recurring fees for ongoing access. Predictable revenue, higher customer lifetime value, lower churn.\n\nExamples: Netflix, Salesforce, Microsoft 365, Costco.\n\n**B** describes transactional/product sales.\n**C** describes advertising/freemium."
+    },
+    {
+      "id": "q-corp-bm-002",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "easy",
+      "stem": "An *asset-light* business model *most likely* requires:",
+      "choices": [
+        { "id": "A", "text": "Significant ownership of physical assets like factories or fleet." },
+        { "id": "B", "text": "Minimal ownership of physical assets, relying on technology platforms or partnerships." },
+        { "id": "C", "text": "No capital at all." }
+      ],
+      "answer": "B",
+      "explanation": "Asset-light: minimal physical asset ownership. Examples: Uber (no cars), Airbnb (no hotels), SaaS firms.\n\nAdvantages: low capital intensity, scalable without proportional asset investment.\nRisks: different (technology, regulation, partnership) from asset-heavy.\n\n**A** is asset-heavy.\n**C** is unrealistic; even asset-light firms need some capital."
+    },
+    {
+      "id": "q-corp-bm-003",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "medium",
+      "stem": "Network effects in a business model *most likely* mean:",
+      "choices": [
+        { "id": "A", "text": "The value of the service grows as more users join." },
+        { "id": "B", "text": "The service requires expensive infrastructure to scale." },
+        { "id": "C", "text": "The product gets cheaper as production scales." }
+      ],
+      "answer": "A",
+      "explanation": "Network effects: each new user makes the service more valuable to existing users. Examples: social media (more users = more content), payment networks (more merchants = more usefulness), marketplaces (more sellers = more buyers).\n\nCreates winner-take-most dynamics; very defensible.\n\n**B** is operational scale, not network effects.\n**C** is economies of scale, not network effects."
+    },
+    {
+      "id": "q-corp-bm-004",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "easy",
+      "stem": "The *razor-and-blade* business model *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Selling a base product at low margin and consumables at high margin." },
+        { "id": "B", "text": "Selling only the base product at high margin." },
+        { "id": "C", "text": "Selling only consumables at low margin." }
+      ],
+      "answer": "A",
+      "explanation": "Razor-and-blade: cheap base (printer, coffee machine) creates lock-in for high-margin consumables (ink, coffee pods).\n\nExamples: HP printers, Gillette razors, Keurig coffee.\n\nDefensibility depends on barriers to generic consumables.\n\n**B** and **C** describe single-product models."
+    },
+    {
+      "id": "q-corp-bm-005",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "medium",
+      "stem": "Disruption in business models *most likely* follows the pattern:",
+      "choices": [
+        { "id": "A", "text": "Technology enables new model → initial niche → mainstream capture → incumbents struggle to respond." },
+        { "id": "B", "text": "New competitors immediately capture the entire market." },
+        { "id": "C", "text": "Existing firms always identify and respond to disruption successfully." }
+      ],
+      "answer": "A",
+      "explanation": "Christensen's disruption model: technology enables new approach; initial offering targets underserved niche; gradual improvements move upmarket; incumbents handicapped by legacy infrastructure and culture.\n\nExamples: Netflix vs Blockbuster, Uber vs taxis, Amazon vs retail.\n\n**B** is too sudden; disruption is typically gradual.\n**C** is empirically false — incumbents often struggle."
+    },
+    {
+      "id": "q-corp-bm-006",
+      "lessonId": "corp-bm-overview",
+      "difficulty": "hard",
+      "stem": "A SaaS company's *Net Revenue Retention (NRR)* of 115% *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "Customers are expanding faster than churning, generating organic growth from existing customers." },
+        { "id": "B", "text": "Customers are churning faster than expanding." },
+        { "id": "C", "text": "The company has no new customers." }
+      ],
+      "answer": "A",
+      "explanation": "NRR = % of current revenue retained from existing customers (including expansions, less churn). Above 100% = customers expanding (upgrades, additional users, additional products) faster than churning.\n\n115% NRR is healthy for SaaS — indicates strong product-market fit and customer expansion.\n\n**B** would be below 100% NRR.\n**C** is unrelated to NRR."
+    },
+    {
       "id": "q-corp-wc-001",
       "lessonId": "corp-wc-overview",
       "difficulty": "easy",
