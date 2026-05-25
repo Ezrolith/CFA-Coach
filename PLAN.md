@@ -1,6 +1,6 @@
 # CFA-Coach — Master Plan
 
-> v0.8 — updated 2026-05-25. **All 12 phases now have shipped functionality.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
+> v0.9 — updated 2026-05-25. **All 12 phases shipped. Comprehensive content across all 10 topics.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
 
 ## Status
 
@@ -9,8 +9,8 @@
 | 1 — Foundation | ✅ Shipped | Vite + React + Tailwind, Firebase project `cfa-coach-app`, deployed |
 | 2 — Curriculum skeleton | ✅ Shipped | 10 topics · 93 modules · **327 LOS** with verb pills + draft flags |
 | 3 — Lesson content viewer | ✅ Shipped | Markdown + KaTeX, three-mode tabs, formulas / examples / pitfalls / FAQ / resources |
-| 4 — Content authoring | 🟡 18 lessons | TVM · Rates & Returns · Ethics I · Ethics III · Eq Val · Eq Mkt Efficiency · FRA Inc Stmts · FRA Balance Sheet · PM Risk I · PM Risk II · FI Bond Val · FI Yield Measures · Derivatives Options · Cap Structure · Monetary Policy · Alts Features · Quant Stat Measures · Corp Working Capital. ~310 LOS remain. |
-| 5 — Quiz engine | ✅ Shipped | **108 questions** across all 10 topics. Random shuffle, submit, explanation, results. |
+| 4 — Content authoring | ✅ **93 lessons across all 10 topics** | Comprehensive coverage of every CFA Level 1 module: Ethics (Standards I-VII), Quant (TVM, rates/returns, stats, probability, portfolio math, simulation, estimation, hypothesis testing, parametric tests, SLR, big data), Economics (multiple lessons), FRA (income statement, balance sheet, cash flow, ratios, inventories, long-lived assets, taxes, etc.), Corp Issuers (capital structure, working capital, governance, M&A), Equity (markets, valuation, types, industry analysis), Fixed Income (features, cash flows, issuance, corporate/govt markets, FRN/MM yields, term structure, IR risk/return, duration, convexity, curve measures, credit risk, sovereign/corp credit, securitisation, ABS, MBS), Derivatives (features, forwards/options, benefits/risks, arbitrage, forward/futures/swap pricing, put-call parity, binomial), Alts (features, real estate, infrastructure, private equity, hedge funds, commodities, digital assets), PM (process, risk/return I-II, beh fin, ETFs, planning). |
+| 5 — Quiz engine | ✅ Shipped | **600+ questions** across all 10 topics. Random shuffle, submit, explanation, results. |
 | 6 — Spaced repetition | ✅ Shipped | Full SM-2 algorithm; quiz scores auto-feed; manual rating on /review; daily-due queue; **streak tracking** |
 | 7 — Progress dashboard | ✅ Shipped | Per-topic heatmap, readiness %, quiz performance, suggested focus |
 | 8 — Content sprint #2 | ✅ Merged into 4 | The remaining authoring is one continuous backlog |
