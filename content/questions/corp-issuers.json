@@ -1,0 +1,83 @@
+{
+  "topicId": "corp-issuers",
+  "questions": [
+    {
+      "id": "q-corp-cs-001",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "easy",
+      "stem": "A firm has £150m equity (market) and £50m debt (market). Cost of equity = 12%, cost of debt = 6%, tax rate = 25%. Its WACC is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "9.75%" },
+        { "id": "B", "text": "10.13%" },
+        { "id": "C", "text": "10.50%" }
+      ],
+      "answer": "B",
+      "explanation": "$\\text{WACC} = (150/200) \\cdot 12\\% + (50/200) \\cdot 6\\% \\cdot (1 - 0.25) = 9.00\\% + 1.125\\% = 10.125\\%$.\n\n**A** ignores the tax shield on debt entirely.\n\n**C** uses book values or wrong weights."
+    },
+    {
+      "id": "q-corp-cs-002",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "medium",
+      "stem": "An unlevered firm has cost of capital 10%. Cost of debt is 5%. Under M&M Prop II (no taxes), if the firm levers to D/E = 1.0, its cost of equity becomes *closest* to:",
+      "choices": [
+        { "id": "A", "text": "10.00%" },
+        { "id": "B", "text": "12.50%" },
+        { "id": "C", "text": "15.00%" }
+      ],
+      "answer": "C",
+      "explanation": "$r_E = r_0 + (r_0 - r_D) \\cdot D/E = 10 + (10 - 5) \\cdot 1.0 = 15\\%$.\n\n**A** is the unlevered cost — no change due to leverage.\n\n**B** likely results from using D/V = 0.5 instead of D/E = 1.0."
+    },
+    {
+      "id": "q-corp-cs-003",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "medium",
+      "stem": "Modigliani-Miller's Proposition I (no taxes) states that:",
+      "choices": [
+        { "id": "A", "text": "the value of a firm rises monotonically with the amount of debt it issues." },
+        { "id": "B", "text": "in a perfect market with no taxes, firm value is independent of capital structure." },
+        { "id": "C", "text": "the optimal capital structure is 100% debt because debt is cheaper than equity." }
+      ],
+      "answer": "B",
+      "explanation": "M&M Prop I (no taxes): $V_L = V_U$. The total firm value is the same regardless of debt/equity mix because investors can replicate any capital structure via personal leverage.\n\n**A** would be M&M with taxes, where tax shields raise levered value — but Prop I in the *no-tax* world specifically says no.\n\n**C** ignores that as leverage rises, the cost of equity rises proportionally, leaving WACC and firm value unchanged."
+    },
+    {
+      "id": "q-corp-cs-004",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "hard",
+      "stem": "A firm carries £200m of permanent debt. Tax rate is 30%. Under M&M with taxes, the present value of the tax shield is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£12m" },
+        { "id": "B", "text": "£40m" },
+        { "id": "C", "text": "£60m" }
+      ],
+      "answer": "C",
+      "explanation": "PV of the perpetual tax shield is $t \\cdot D = 0.30 \\cdot 200 = £60m$.\n\nThe annual tax shield is $D \\cdot r_D \\cdot t$ but it grows in perpetuity so dividing by $r_D$ collapses to just $t \\cdot D$.\n\n**A** uses only one year of shield (at e.g. 6% rate × 30% × £200m = £3.6m × something).\n\n**B** uses a 20% tax rate."
+    },
+    {
+      "id": "q-corp-cs-005",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "medium",
+      "stem": "Static trade-off theory of capital structure *most likely* implies that an optimal capital structure is found where:",
+      "choices": [
+        { "id": "A", "text": "the marginal benefit of the tax shield equals the marginal cost of financial distress." },
+        { "id": "B", "text": "the firm relies on internal funds before considering external financing." },
+        { "id": "C", "text": "the cost of equity equals the cost of debt." }
+      ],
+      "answer": "A",
+      "explanation": "Trade-off theory: more debt → more tax shield value (good) but also more expected bankruptcy + agency cost (bad). Optimum is the leverage level where the marginal pound of debt adds as much in tax shield as it costs in distress.\n\n**B** describes **pecking order theory**, a different (and not mutually exclusive) view.\n\n**C** is incorrect — costs of debt and equity should never be expected to equalise at the optimum; debt remains cheaper, but additional debt raises both."
+    },
+    {
+      "id": "q-corp-cs-006",
+      "lessonId": "corp-cs-overview",
+      "difficulty": "easy",
+      "stem": "All else equal, which company is *most likely* to have the highest debt capacity?",
+      "choices": [
+        { "id": "A", "text": "An early-stage biotech with negative cash flows and intangible asset base." },
+        { "id": "B", "text": "A mature regulated utility with stable cash flows and large tangible asset base." },
+        { "id": "C", "text": "A software firm with rapid growth and minimal tangible assets." }
+      ],
+      "answer": "B",
+      "explanation": "Debt capacity is highest where (i) cash flows are stable and predictable (low default risk on coupons), (ii) tangible assets provide collateral (lenders' recovery value in default).\n\nUtilities tick both boxes — that's why their D/V ratios are historically 50–65%, much higher than tech firms (often 0–20%).\n\n**A** has neither stable cash flows nor tangible assets.\n\n**C** has tangible-light assets and growth volatility."
+    }
+  ]
+}

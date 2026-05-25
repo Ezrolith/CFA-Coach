@@ -7,6 +7,8 @@ import QuizPage from './pages/QuizPage';
 import ProgressPage from './pages/ProgressPage';
 import SettingsPage from './pages/SettingsPage';
 import MockExamPage from './pages/MockExamPage';
+import ReviewPage from './pages/ReviewPage';
+import FormulaDrillPage from './pages/FormulaDrillPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -17,14 +19,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/topic/:id" element={<TopicPage />} />
           <Route path="/lesson/:id" element={<LessonPage />} />
-          <Route path="/review" element={
-            <PlaceholderPage
-              eyebrow="Daily review"
-              title="Your spaced-repetition queue lives here."
-              body="Once you've started studying, this page shows the lessons and questions due for review today, based on what you've seen and how confidently you answered."
-              phase="6"
-            />
-          }/>
+          <Route path="/review" element={<ReviewPage />} />
+          <Route path="/drills/formulas" element={<FormulaDrillPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/mock-exam" element={<MockExamPage />} />
           <Route path="/progress" element={<ProgressPage />} />

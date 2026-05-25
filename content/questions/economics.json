@@ -1,0 +1,83 @@
+{
+  "topicId": "economics",
+  "questions": [
+    {
+      "id": "q-econ-mp-001",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *most likely* a tool of monetary policy used by modern central banks?",
+      "choices": [
+        { "id": "A", "text": "Setting income tax rates." },
+        { "id": "B", "text": "Adjusting government spending on infrastructure." },
+        { "id": "C", "text": "Conducting open market operations in government securities." }
+      ],
+      "answer": "C",
+      "explanation": "Open market operations — buying or selling government bonds — directly change banking-system reserves and short-term rates. This is a core monetary policy tool.\n\n**A** and **B** are fiscal policy levers, controlled by government / legislature, not the central bank."
+    },
+    {
+      "id": "q-econ-mp-002",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "medium",
+      "stem": "A central bank lowers its policy rate from 4% to 3%. The *most likely* short-run consequences are:",
+      "choices": [
+        { "id": "A", "text": "domestic currency strengthens, bond prices fall, equity markets fall." },
+        { "id": "B", "text": "domestic currency weakens, bond prices rise, equity markets typically rise." },
+        { "id": "C", "text": "no effect on currency, bond prices, or equity markets — those depend only on long-run expectations." }
+      ],
+      "answer": "B",
+      "explanation": "Lower domestic rates → currency less attractive to hold → weakens. Bond prices rise (lower yields). Equity markets typically rally (lower discount rate, supportive of valuations and borrowing).\n\n**A** has all directions reversed.\n\n**C** is wrong — short-run effects are real and significant; long-run effects are an additional layer."
+    },
+    {
+      "id": "q-econ-mp-003",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "medium",
+      "stem": "Which of the following is *most likely* a limitation of monetary policy?",
+      "choices": [
+        { "id": "A", "text": "Its effects on inflation are nearly instantaneous, giving little time for adjustment." },
+        { "id": "B", "text": "It is poorly suited to addressing inflation caused by supply-side shocks." },
+        { "id": "C", "text": "It can be implemented without any concern for fiscal policy positioning." }
+      ],
+      "answer": "B",
+      "explanation": "**Supply shocks** (oil price spikes, supply-chain disruptions) cause cost-push inflation that monetary tightening can't easily address — raising rates won't fix the supply. Worse, tightening into a supply shock risks recession.\n\n**A** is the opposite of correct — monetary policy has substantial lags (12-24 months).\n\n**C** ignores that monetary and fiscal policy interact significantly."
+    },
+    {
+      "id": "q-econ-mp-004",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "hard",
+      "stem": "When a central bank is at the *zero lower bound* on conventional rates, it *most likely* extends its policy through:",
+      "choices": [
+        { "id": "A", "text": "raising reserve requirements aggressively." },
+        { "id": "B", "text": "quantitative easing — large-scale asset purchases — and forward guidance." },
+        { "id": "C", "text": "imposing capital controls to limit currency outflows." }
+      ],
+      "answer": "B",
+      "explanation": "At the ZLB, conventional rate cuts run out. Unconventional tools include **QE** (expand balance sheet via asset purchases) and **forward guidance** (commit to keeping rates low).\n\n**A** would tighten policy — opposite of what's needed.\n\n**C** is a desperate emerging-market move, not standard developed-market practice."
+    },
+    {
+      "id": "q-econ-mp-005",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "easy",
+      "stem": "Which characteristic *most contributes* to an effective central bank?",
+      "choices": [
+        { "id": "A", "text": "Direct control by the executive branch of government." },
+        { "id": "B", "text": "Frequent changes in stated targets to respond to political conditions." },
+        { "id": "C", "text": "Independence from short-term political pressure, combined with transparent communication." }
+      ],
+      "answer": "C",
+      "explanation": "**Independence + transparency** anchor long-run inflation expectations. The track record of credible delivery is what makes monetary policy actually work.\n\n**A** historically links to higher persistent inflation (governments prefer easy policy).\n\n**B** destroys credibility — once expectations de-anchor, they're hard to restore."
+    },
+    {
+      "id": "q-econ-mp-006",
+      "lessonId": "econ-monetary-overview",
+      "difficulty": "medium",
+      "stem": "If a central bank reduces its policy rate while inflation expectations remain anchored at the 2% target, the *real* interest rate has *most likely*:",
+      "choices": [
+        { "id": "A", "text": "risen, regardless of the size of the rate cut." },
+        { "id": "B", "text": "fallen, making monetary policy more expansionary." },
+        { "id": "C", "text": "remained unchanged — only nominal rates moved." }
+      ],
+      "answer": "B",
+      "explanation": "Real rate $\\approx$ nominal − inflation expectation. If nominal falls and expectations are unchanged, real rate falls → more expansionary stance.\n\n**A** has the direction backwards.\n\n**C** confuses nominal and real — they move together only when inflation expectations move with them, which they don't here."
+    }
+  ]
+}

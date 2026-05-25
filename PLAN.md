@@ -1,6 +1,6 @@
 # CFA-Coach — Master Plan
 
-> v0.6 — updated 2026-05-25. **Phases 1, 2, 3, 5, 7, 9 shipped + Phases 4/6/10 in progress.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
+> v0.7 — updated 2026-05-25. **Phases 1, 2, 3, 5, 6, 7, 9, 11 shipped + Phases 4/10/12 in progress.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
 
 ## Status
 
@@ -9,15 +9,15 @@
 | 1 — Foundation | ✅ Shipped | Vite + React + Tailwind, Firebase project `cfa-coach-app`, deployed |
 | 2 — Curriculum skeleton | ✅ Shipped | 10 topics · 93 modules · **327 LOS** with verb pills + draft flags |
 | 3 — Lesson content viewer | ✅ Shipped | Markdown + KaTeX, three-mode tabs, formulas / examples / pitfalls / FAQ / resources |
-| 4 — Content authoring | 🟡 In progress | **8 lessons fully authored** (TVM, Rates & Returns, Ethics I, Eq Val, FRA Inc Stmts, PM Risk II, FI Bond Val, Derivatives Options). ~320 LOS still to write |
-| 5 — Quiz engine | ✅ Shipped | Player works, **48 questions** across Quant/Ethics/Equity/FRA/PM/FI/Derivatives |
-| 6 — Spaced repetition | 🟡 Lite shipped | localStorage study state + quiz score tracking. SM-2 scheduling not yet wired |
+| 4 — Content authoring | 🟡 In progress | **10 lessons fully authored** (TVM, Rates & Returns, Ethics I, Eq Val, FRA Inc Stmts, PM Risk II, FI Bond Val, Deriv Options, Cap Structure, Monetary Policy). ~317 LOS still to write |
+| 5 — Quiz engine | ✅ Shipped | Player works, **60 questions** across 9 topics |
+| 6 — Spaced repetition | ✅ Shipped | **Full SM-2 algorithm** wired; quiz scores auto-feed; manual rating on /review page; daily-due queue |
 | 7 — Progress dashboard | ✅ Shipped | Per-topic heatmap, readiness %, quiz performance, suggested focus |
-| 8 — Content sprint #2 (Alts/Corp/Econ/more) | ⏳ Next | |
-| 9 — Mock exam | ✅ Shipped | 30-question scaled simulation with topic weighting, timer, flag-for-review, by-topic breakdown |
-| 10 — PWA + mobile polish | 🟡 Lite shipped | Manifest + service worker; mobile polish still to come |
-| 11 — Settings + theme | ✅ Shipped (added scope) | Dark/Light/System theme toggle + reset-progress button |
-| 12 — Polish + drills | ⏳ | |
+| 8 — Content sprint #2 (Alts/more topics) | ⏳ Next | |
+| 9 — Mock exam | ✅ Shipped | 30-Q scaled simulation, topic weighting, timer, flag, by-topic results |
+| 10 — PWA + mobile polish | 🟡 Mostly shipped | Manifest + service worker + **mobile drawer nav** |
+| 11 — Settings + theme | ✅ Shipped | Dark/Light/System theme toggle + reset-progress button |
+| 12 — Polish + drills | 🟡 Started | **Formula drill mode** with 53 cards across all authored lessons |
 
 
 ---
