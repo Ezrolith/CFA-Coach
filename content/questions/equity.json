@@ -2,6 +2,474 @@
   "topicId": "equity",
   "questions": [
     {
+      "id": "q-eq-mo-001",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "easy",
+      "stem": "Buying a security with an initial margin requirement of 50% means the investor *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Borrows 50% of the purchase price from the broker." },
+        { "id": "B", "text": "Pays 50% upfront and borrows the remaining 50%." },
+        { "id": "C", "text": "Receives a 50% discount from the broker." }
+      ],
+      "answer": "B",
+      "explanation": "Initial margin = the percentage of purchase price the investor must contribute as their own equity. 50% IM means the investor puts up 50% in cash and borrows 50% from the broker.\n\n**A** is the inverse of the requirement.\n\n**C** misinterprets margin as a discount."
+    },
+    {
+      "id": "q-eq-mo-002",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "medium",
+      "stem": "A stock is purchased at £80 on 60% initial margin. Maintenance margin is 30%. The margin call price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£45.71" },
+        { "id": "B", "text": "£60.00" },
+        { "id": "C", "text": "£68.00" }
+      ],
+      "answer": "A",
+      "explanation": "Margin call price = $P_0 \\cdot (1 − IM) / (1 − MM) = 80 \\cdot 0.40 / 0.70 = 32 / 0.70 = £45.71$.\n\n**B** confuses initial margin with margin call.\n\n**C** uses incorrect formula."
+    },
+    {
+      "id": "q-eq-mo-003",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "medium",
+      "stem": "Short selling carries *most distinctively* the risk that:",
+      "choices": [
+        { "id": "A", "text": "Maximum loss is limited to the initial investment." },
+        { "id": "B", "text": "Maximum loss is theoretically unlimited, since the stock can rise without bound." },
+        { "id": "C", "text": "The short seller pays dividends to the lender of shares." }
+      ],
+      "answer": "B",
+      "explanation": "Short sellers face unlimited loss potential — stocks can rise indefinitely. Long positions cap loss at original investment (price can go to zero).\n\n**A** describes long positions.\n\n**C** is technically correct (short sellers do pay dividends to lenders) but isn't the distinctive *risk* — it's a cost."
+    },
+    {
+      "id": "q-eq-mo-004",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "easy",
+      "stem": "A *market order* differs from a *limit order* *most likely* because:",
+      "choices": [
+        { "id": "A", "text": "Market orders prioritise execution speed; limit orders prioritise price." },
+        { "id": "B", "text": "Limit orders are for institutional investors only." },
+        { "id": "C", "text": "Market orders are illegal in many jurisdictions." }
+      ],
+      "answer": "A",
+      "explanation": "Market order = execute immediately at best available price (speed > price). Limit order = execute only at specified price or better (price > speed). Trade-off between immediacy and price.\n\n**B** and **C** are incorrect."
+    },
+    {
+      "id": "q-eq-mo-005",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "easy",
+      "stem": "Which type of market participant *most likely* trades for its own inventory?",
+      "choices": [
+        { "id": "A", "text": "Broker." },
+        { "id": "B", "text": "Dealer." },
+        { "id": "C", "text": "Custodian." }
+      ],
+      "answer": "B",
+      "explanation": "Dealers trade as principal — buying from sellers and selling to buyers from their own inventory. Earn profit from the bid-ask spread.\n\n**A** Brokers are agents (execute for clients).\n\n**C** Custodians hold securities, don't trade."
+    },
+    {
+      "id": "q-eq-mo-006",
+      "lessonId": "eq-mo-overview",
+      "difficulty": "medium",
+      "stem": "Which type of market is *most likely* described as 'order-driven'?",
+      "choices": [
+        { "id": "A", "text": "Foreign exchange (FX) market." },
+        { "id": "B", "text": "NYSE / NASDAQ equity exchanges." },
+        { "id": "C", "text": "Bilateral OTC bond market." }
+      ],
+      "answer": "B",
+      "explanation": "Order-driven = orders matched directly by the trading system. NYSE and NASDAQ use auction mechanisms.\n\n**A** FX is quote-driven (dealer markets).\n\n**C** Most bond markets are dealer-driven."
+    },
+    {
+      "id": "q-eq-idx-001",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "medium",
+      "stem": "A *price-weighted* index *most likely* gives larger weights to:",
+      "choices": [
+        { "id": "A", "text": "Stocks with larger market capitalisation." },
+        { "id": "B", "text": "Stocks with higher per-share prices." },
+        { "id": "C", "text": "Stocks with higher historical dividends." }
+      ],
+      "answer": "B",
+      "explanation": "Price-weighted indices weight by share price. A £200 stock has 4× the influence of a £50 stock, regardless of company size.\n\n**A** describes cap-weighted indices.\n\n**C** is fundamental weighting, not price."
+    },
+    {
+      "id": "q-eq-idx-002",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "easy",
+      "stem": "The S&P 500 is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Price-weighted." },
+        { "id": "B", "text": "Float-adjusted market-cap-weighted." },
+        { "id": "C", "text": "Equal-weighted." }
+      ],
+      "answer": "B",
+      "explanation": "The S&P 500 is float-adjusted market-cap-weighted — weights companies by publicly available market cap.\n\n**A** describes the DJIA.\n\n**C** describes the equal-weight version of the S&P 500."
+    },
+    {
+      "id": "q-eq-idx-003",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "medium",
+      "stem": "Total return on an index differs from price return *most likely* by:",
+      "choices": [
+        { "id": "A", "text": "Inclusion of dividend income in total return; price return measures only capital appreciation." },
+        { "id": "B", "text": "Total return ignores capital gains; price return measures them." },
+        { "id": "C", "text": "Total return is always lower than price return." }
+      ],
+      "answer": "A",
+      "explanation": "Total return = price return + dividend income. Price return only captures capital appreciation.\n\nFor S&P 500 historically: price return ~6-7% per year; total return ~9-10% (including ~3% dividend yield reinvested).\n\n**B** has the direction reversed.\n\n**C** is incorrect — total return is usually higher (positive dividend yield)."
+    },
+    {
+      "id": "q-eq-idx-004",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "medium",
+      "stem": "An equal-weighted index *most likely* requires:",
+      "choices": [
+        { "id": "A", "text": "No rebalancing — weights stay constant automatically." },
+        { "id": "B", "text": "Periodic rebalancing (e.g., quarterly) to maintain equal weights, requiring buying losers and selling winners." },
+        { "id": "C", "text": "Annual rebalancing tied to corporate actions." }
+      ],
+      "answer": "B",
+      "explanation": "Equal-weighted indices drift as prices move — winners' weights grow, losers' shrink. Restoring equal weight requires selling winners and buying losers (mean-reversion trading).\n\n**A** describes cap-weighted indices.\n\n**C** is too narrow; most equal-weighted indices rebalance quarterly."
+    },
+    {
+      "id": "q-eq-idx-005",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "easy",
+      "stem": "Which is *most likely* a benefit of using market indices?",
+      "choices": [
+        { "id": "A", "text": "They eliminate all investment risk." },
+        { "id": "B", "text": "They provide a low-cost passive investment vehicle and a performance benchmark." },
+        { "id": "C", "text": "They guarantee outperformance vs the market." }
+      ],
+      "answer": "B",
+      "explanation": "Indices serve as benchmarks for active managers and as the basis for passive ETFs/index funds — providing diversified exposure at very low cost.\n\n**A** is incorrect — indices reflect market risk.\n\n**C** is incorrect — indices match the market, not outperform."
+    },
+    {
+      "id": "q-eq-idx-006",
+      "lessonId": "eq-idx-overview",
+      "difficulty": "hard",
+      "stem": "When a stock is added to a major market-cap index, it *most likely* experiences:",
+      "choices": [
+        { "id": "A", "text": "Short-term upward price pressure as index funds buy shares to track the index." },
+        { "id": "B", "text": "Immediate price decline as supply increases." },
+        { "id": "C", "text": "No predictable price impact." }
+      ],
+      "answer": "A",
+      "explanation": "Index inclusion typically triggers buying by passive funds tracking the index, creating short-term upward pressure. Documented effect, though weaker than in earlier decades due to broader market awareness.\n\n**B** would describe supply increases (e.g., new equity issuance), not inclusion.\n\n**C** ignores the documented inclusion effect."
+    },
+    {
+      "id": "q-eq-ov-001",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "easy",
+      "stem": "Preferred shares *most likely* sit between:",
+      "choices": [
+        { "id": "A", "text": "Common shares (junior) and debt (senior)." },
+        { "id": "B", "text": "Cash (junior) and money market funds (senior)." },
+        { "id": "C", "text": "Common shares (senior) and debt (junior)." }
+      ],
+      "answer": "A",
+      "explanation": "Preferred shares are junior to debt but senior to common equity in liquidation. Preferred dividends are paid before common dividends. Higher in capital structure than common; lower than debt.\n\n**C** has the direction reversed."
+    },
+    {
+      "id": "q-eq-ov-002",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "medium",
+      "stem": "A *cumulative* preferred share *most likely* differs from a *non-cumulative* preferred *because*:",
+      "choices": [
+        { "id": "A", "text": "Cumulative requires that any missed dividends be paid up before common dividends resume." },
+        { "id": "B", "text": "Cumulative gives the issuer the right to redeem at a premium." },
+        { "id": "C", "text": "Cumulative allows conversion to common stock at maturity." }
+      ],
+      "answer": "A",
+      "explanation": "Cumulative preferred: if dividends are missed in any year, they accumulate and must be paid before common dividends resume. Non-cumulative: missed dividends are simply lost.\n\n**B** describes callable preferreds.\n\n**C** describes convertible preferreds."
+    },
+    {
+      "id": "q-eq-ov-003",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "easy",
+      "stem": "An American Depositary Receipt (ADR) *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Represents shares of a foreign company traded in USD on US exchanges." },
+        { "id": "B", "text": "Is a US-issued stock listed on foreign exchanges." },
+        { "id": "C", "text": "Is a derivative without underlying security exposure." }
+      ],
+      "answer": "A",
+      "explanation": "ADRs allow US investors to buy foreign company shares without dealing directly with foreign markets. The ADR represents shares (often 1, 4, or 8 to 1) of the foreign company, traded in USD on NYSE or NASDAQ.\n\n**B** has the direction reversed.\n\n**C** misclassifies ADRs."
+    },
+    {
+      "id": "q-eq-ov-004",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "medium",
+      "stem": "A firm has ROE > Cost of Equity. This *most likely* implies:",
+      "choices": [
+        { "id": "A", "text": "The firm is creating value for shareholders." },
+        { "id": "B", "text": "The firm is destroying value for shareholders." },
+        { "id": "C", "text": "The firm should reduce capital expenditure." }
+      ],
+      "answer": "A",
+      "explanation": "ROE > Cost of Equity = the firm is earning more on its equity capital than shareholders require. Value created. P/B typically > 1.0 in this case.\n\n**B** describes ROE < Cost of Equity.\n\n**C** is unrelated to the immediate question."
+    },
+    {
+      "id": "q-eq-ov-005",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "medium",
+      "stem": "A convertible preferred share *most likely* behaves like:",
+      "choices": [
+        { "id": "A", "text": "A bond when the underlying stock is low; like equity when the underlying stock is high." },
+        { "id": "B", "text": "Pure equity at all times." },
+        { "id": "C", "text": "Pure debt at all times." }
+      ],
+      "answer": "A",
+      "explanation": "Convertible preferred has a bond-like floor (set by the value of the preferred dividend at maturity) and equity-like upside (via conversion). When stock is low, conversion value is small and the bond floor dominates. When stock is high, conversion value drives pricing.\n\nHybrid risk/return profile.\n\n**B** and **C** miss the hybrid nature."
+    },
+    {
+      "id": "q-eq-ov-006",
+      "lessonId": "eq-ov-overview",
+      "difficulty": "easy",
+      "stem": "Multi-class share structures *most likely* allow founders/insiders to:",
+      "choices": [
+        { "id": "A", "text": "Receive higher dividends than public shareholders." },
+        { "id": "B", "text": "Maintain voting control with less economic ownership." },
+        { "id": "C", "text": "Avoid paying taxes on stock sales." }
+      ],
+      "answer": "B",
+      "explanation": "Common approach: Class B super-voting shares for insiders, Class A one-vote shares for public. Founders can retain control of the firm with relatively small economic stakes.\n\n**A** is rarely a feature of multi-class structures.\n\n**C** is incorrect."
+    },
+    {
+      "id": "q-eq-cap-001",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "medium",
+      "stem": "A *top-down* company analysis approach *most appropriately* starts with:",
+      "choices": [
+        { "id": "A", "text": "The company's specific financial statements." },
+        { "id": "B", "text": "Macroeconomic conditions and industry dynamics." },
+        { "id": "C", "text": "The company's management team interview." }
+      ],
+      "answer": "B",
+      "explanation": "Top-down: macroeconomic / industry → company. Best for sectors where macro factors dominate (cyclicals, interest-sensitive).\n\n**A** describes bottom-up.\n\n**C** is part of management analysis, used in both approaches."
+    },
+    {
+      "id": "q-eq-cap-002",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "medium",
+      "stem": "High operating leverage *most likely* means that:",
+      "choices": [
+        { "id": "A", "text": "Small revenue changes drive proportionally larger EBIT changes." },
+        { "id": "B", "text": "The firm has low debt." },
+        { "id": "C", "text": "The firm is in a defensive industry." }
+      ],
+      "answer": "A",
+      "explanation": "Operating leverage = sensitivity of EBIT to revenue. High fixed costs + lower variable costs → high operating leverage. Common in airlines, hotels, capital-intensive businesses.\n\n**B** refers to financial leverage (debt-related).\n\n**C** describes industry classification, not operating leverage."
+    },
+    {
+      "id": "q-eq-cap-003",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "easy",
+      "stem": "A company's *cost leadership* strategy *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Being the lowest-cost producer in the industry, competing on price." },
+        { "id": "B", "text": "Charging premium prices for differentiated products." },
+        { "id": "C", "text": "Serving a narrow niche market." }
+      ],
+      "answer": "A",
+      "explanation": "Cost leadership = lowest-cost producer; price-competitive. Examples: Walmart, Costco, Aldi.\n\n**B** describes differentiation strategy.\n\n**C** describes focus strategy."
+    },
+    {
+      "id": "q-eq-cap-004",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "medium",
+      "stem": "An economic moat *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "A geographic barrier limiting where a firm can operate." },
+        { "id": "B", "text": "A sustainable competitive advantage that protects the firm from competition." },
+        { "id": "C", "text": "A type of regulatory penalty for monopoly behaviour." }
+      ],
+      "answer": "B",
+      "explanation": "Moat = durable competitive advantage. Sources include brand, IP, network effects, switching costs, regulatory licences. Firms with moats can sustain higher ROIC longer.\n\n**A** and **C** misuse the term."
+    },
+    {
+      "id": "q-eq-cap-005",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "medium",
+      "stem": "Which scenario *most likely* indicates that a company is creating value?",
+      "choices": [
+        { "id": "A", "text": "ROIC consistently above WACC over multiple years." },
+        { "id": "B", "text": "Net income growing each year regardless of capital intensity." },
+        { "id": "C", "text": "Higher revenue than competitors." }
+      ],
+      "answer": "A",
+      "explanation": "Value creation = ROIC > WACC sustainable over time. A firm earning more on invested capital than the cost of capital is creating economic value.\n\n**B** can have growing NI but still destroy value (if ROIC < WACC).\n\n**C** is unrelated to value creation."
+    },
+    {
+      "id": "q-eq-cap-006",
+      "lessonId": "eq-cap-overview",
+      "difficulty": "easy",
+      "stem": "Revenue concentration risk *most likely* increases when:",
+      "choices": [
+        { "id": "A", "text": "A small number of customers account for a large percentage of total revenue." },
+        { "id": "B", "text": "Revenue is diversified across many small customers." },
+        { "id": "C", "text": "Revenue comes from multiple geographies." }
+      ],
+      "answer": "A",
+      "explanation": "High concentration = high dependence on specific customers. Loss of any of them can materially affect revenue. Common red flag for SaaS firms with 20%+ revenue from a single customer.\n\n**B** describes diversification, the opposite of concentration.\n\n**C** describes geographic diversification."
+    },
+    {
+      "id": "q-eq-ia-001",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "easy",
+      "stem": "An industry in the *embryonic* stage of its life cycle is *most likely* characterised by:",
+      "choices": [
+        { "id": "A", "text": "Stable revenue, established competitors, and consolidation." },
+        { "id": "B", "text": "High potential growth, few competitors, high R&D, and high failure rates." },
+        { "id": "C", "text": "Negative growth and industry contraction." }
+      ],
+      "answer": "B",
+      "explanation": "Embryonic stage: high potential, few players, R&D-intensive, high failure rate. Examples: early-stage tech, biotech.\n\n**A** describes mature stage.\n\n**C** describes decline stage."
+    },
+    {
+      "id": "q-eq-ia-002",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "medium",
+      "stem": "Porter's Five Forces *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Threat of new entrants, supplier power, buyer power, threat of substitutes, industry rivalry." },
+        { "id": "B", "text": "Threat of regulators, government policy, economic conditions, currency risk, interest rates." },
+        { "id": "C", "text": "Market efficiency, information asymmetry, behavioural biases, transaction costs, liquidity." }
+      ],
+      "answer": "A",
+      "explanation": "Porter's Five Forces: threat of new entrants, supplier power, buyer power, threat of substitutes, industry rivalry.\n\n**B** describes macroeconomic factors.\n\n**C** describes market microstructure / behavioural finance concepts."
+    },
+    {
+      "id": "q-eq-ia-003",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "easy",
+      "stem": "A *cyclical* industry *most likely* has revenue and earnings that:",
+      "choices": [
+        { "id": "A", "text": "Move closely with the broader economic cycle." },
+        { "id": "B", "text": "Are completely insensitive to economic conditions." },
+        { "id": "C", "text": "Grow faster than the economy at all times." }
+      ],
+      "answer": "A",
+      "explanation": "Cyclical industries (autos, financials, capital goods) amplify economic cycles. Revenue and earnings swing up in expansions and down in recessions, often more sharply than GDP.\n\n**B** describes defensive industries.\n\n**C** describes growth industries."
+    },
+    {
+      "id": "q-eq-ia-004",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "medium",
+      "stem": "Switching costs as a competitive moat *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Make it costly or inconvenient for customers to change suppliers, allowing incumbents to maintain margins." },
+        { "id": "B", "text": "Increase the cost of doing business for the firm itself." },
+        { "id": "C", "text": "Are easily replicable by competitors." }
+      ],
+      "answer": "A",
+      "explanation": "Switching costs lock customers in. Examples: enterprise software (training, integration), banking (account-change friction), telecom (contract terms). High switching costs sustain pricing power.\n\n**B** misinterprets — switching costs benefit incumbents.\n\n**C** is the opposite of what switching-cost moats provide."
+    },
+    {
+      "id": "q-eq-ia-005",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "medium",
+      "stem": "A 'sub-industry' classification *most likely* is more useful than 'sector' classification for:",
+      "choices": [
+        { "id": "A", "text": "Broad asset allocation decisions." },
+        { "id": "B", "text": "Detailed peer benchmarking and ratio analysis." },
+        { "id": "C", "text": "Macroeconomic forecasting." }
+      ],
+      "answer": "B",
+      "explanation": "Sub-industry classification tightens the peer set to similar businesses, making ratio comparisons more meaningful. Sector is too broad for company-level analysis (tech includes both hardware and software with very different economics).\n\n**A** uses sector level.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-eq-ia-006",
+      "lessonId": "eq-ia-overview",
+      "difficulty": "hard",
+      "stem": "Which combination of Porter's Five Forces would *most likely* produce a structurally attractive industry?",
+      "choices": [
+        { "id": "A", "text": "High threat of new entrants, high supplier power, high buyer power, high substitutes, high rivalry." },
+        { "id": "B", "text": "Low threat of new entrants, low supplier power, low buyer power, low substitutes, low rivalry." },
+        { "id": "C", "text": "High threat of new entrants, low supplier power, low buyer power, low substitutes, high rivalry." }
+      ],
+      "answer": "B",
+      "explanation": "All five forces favourable (low) → industry is structurally attractive. Few new entrants, suppliers and buyers can't extract value, no substitutes, low competition.\n\n**A** describes a difficult, low-margin industry.\n\n**C** is mixed but still has high entrants and rivalry."
+    },
+    {
+      "id": "q-eq-fc-001",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "easy",
+      "stem": "Top-down revenue forecasting *most appropriately* starts with:",
+      "choices": [
+        { "id": "A", "text": "Total addressable market and firm's market share." },
+        { "id": "B", "text": "Specific product units and prices." },
+        { "id": "C", "text": "Historical accounting policies." }
+      ],
+      "answer": "A",
+      "explanation": "Top-down: market size × firm share. Useful when measurable industry data available.\n\n**B** describes bottom-up.\n\n**C** is unrelated to forecasting approach."
+    },
+    {
+      "id": "q-eq-fc-002",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "medium",
+      "stem": "Working capital changes in a forecast *most appropriately* are projected by:",
+      "choices": [
+        { "id": "A", "text": "Random fluctuations based on historical volatility." },
+        { "id": "B", "text": "Days-based metrics (DSO, DIO, DPO) applied to forecast revenue and COGS." },
+        { "id": "C", "text": "Fixed amounts unchanged from current period." }
+      ],
+      "answer": "B",
+      "explanation": "Working capital scales with sales activity. Using days-based metrics (DSO × Revenue / 365 for AR, etc.) produces a disciplined working capital forecast tied to revenue projections.\n\n**A** is undisciplined.\n\n**C** ignores growth dynamics."
+    },
+    {
+      "id": "q-eq-fc-003",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "medium",
+      "stem": "Sensitivity analysis in a financial model *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Tests how the model's output changes with variation in key input assumptions." },
+        { "id": "B", "text": "Predicts the future with certainty." },
+        { "id": "C", "text": "Replaces the need for forecasting." }
+      ],
+      "answer": "A",
+      "explanation": "Sensitivity analysis identifies which assumptions drive the most variability in the output. Reveals which assumptions matter most and where uncertainty concentrates.\n\n**B** misreads — analysis doesn't eliminate uncertainty.\n\n**C** complements rather than replaces forecasting."
+    },
+    {
+      "id": "q-eq-fc-004",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "easy",
+      "stem": "A 'scenario analysis' typically includes *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Multiple discrete cases (base, bull, bear) with different assumption combinations." },
+        { "id": "B", "text": "Only the most optimistic forecast." },
+        { "id": "C", "text": "A single point estimate with confidence interval." }
+      ],
+      "answer": "A",
+      "explanation": "Scenario analysis: discrete cases with materially different assumptions. Captures the range of plausible outcomes for risk assessment.\n\n**B** would miss downside scenarios.\n\n**C** describes statistical analysis, not multi-scenario forecasting."
+    },
+    {
+      "id": "q-eq-fc-005",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "medium",
+      "stem": "A *bottom-up* revenue forecast for a retailer *most likely* uses:",
+      "choices": [
+        { "id": "A", "text": "Number of stores × revenue per store (with same-store growth + new stores)." },
+        { "id": "B", "text": "Macroeconomic GDP forecast applied to retail sector." },
+        { "id": "C", "text": "Random historical trend extrapolation." }
+      ],
+      "answer": "A",
+      "explanation": "Bottom-up retail forecast: drivers are stores and per-store productivity. Captures same-store sales growth + new store openings.\n\n**B** is top-down.\n\n**C** is undisciplined trend-based forecasting."
+    },
+    {
+      "id": "q-eq-fc-006",
+      "lessonId": "eq-fc-overview",
+      "difficulty": "hard",
+      "stem": "A common analyst bias *most likely* in revenue forecasting is:",
+      "choices": [
+        { "id": "A", "text": "Optimism bias — forecasts tend to overestimate revenue growth." },
+        { "id": "B", "text": "Pessimism bias — forecasts tend to underestimate." },
+        { "id": "C", "text": "No systematic bias — forecasts are typically accurate." }
+      ],
+      "answer": "A",
+      "explanation": "Empirical literature consistently shows analysts' forecast accuracy is skewed toward optimism — particularly for next-year revenue growth and margins. Bear cases are typically underweighted.\n\n**B** is the opposite of empirical evidence.\n\n**C** misrepresents the forecast-accuracy literature."
+    },
+    {
       "id": "q-equity-eff-001",
       "lessonId": "eq-eff-overview",
       "difficulty": "easy",
