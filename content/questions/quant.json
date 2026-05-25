@@ -2,6 +2,84 @@
   "topicId": "quant",
   "questions": [
     {
+      "id": "q-quant-stats-001",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "easy",
+      "stem": "For a sample of monthly returns: -5%, +10%, +3%, -2%, +6%, the **arithmetic mean** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.0%" },
+        { "id": "B", "text": "2.4%" },
+        { "id": "C", "text": "3.0%" }
+      ],
+      "answer": "B",
+      "explanation": "Sum: (−5 + 10 + 3 − 2 + 6) = 12. Mean = 12 / 5 = **2.4%**.\n\n**A** and **C** are not the correct arithmetic mean."
+    },
+    {
+      "id": "q-quant-stats-002",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "medium",
+      "stem": "Over 3 years, an investor's annual returns were +25%, -10%, +30%. The geometric mean annual return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "13.9%" },
+        { "id": "B", "text": "14.5%" },
+        { "id": "C", "text": "15.0%" }
+      ],
+      "answer": "A",
+      "explanation": "$(1.25 \\cdot 0.90 \\cdot 1.30)^{1/3} - 1 = (1.4625)^{0.333} - 1 = 0.1349 = 13.5\\% \\approx \\text{closest A}$.\n\nMore precisely: $1.4625^{1/3} = 1.1349$, so geometric mean = 13.49%.\n\n**B** is closer to the arithmetic mean (15.0%); arithmetic > geometric always when returns vary.\n\n**C** is the arithmetic mean exactly."
+    },
+    {
+      "id": "q-quant-stats-003",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "medium",
+      "stem": "Two assets each have annual σ = 20%. Combined 50/50 in a portfolio with correlation 0.5, the portfolio's standard deviation is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "12.2%" },
+        { "id": "B", "text": "17.3%" },
+        { "id": "C", "text": "20.0%" }
+      ],
+      "answer": "B",
+      "explanation": "$\\sigma_p^2 = 0.5^2 \\cdot 0.04 + 0.5^2 \\cdot 0.04 + 2 \\cdot 0.5 \\cdot 0.5 \\cdot 0.5 \\cdot 0.2 \\cdot 0.2 = 0.01 + 0.01 + 0.01 = 0.03$.\n\n$\\sigma_p = \\sqrt{0.03} = 17.3\\%$.\n\n**A** would result if correlation were 0 ($\\sigma_p = 0.2 / \\sqrt{2} \\approx 14.1\\%$).\n\n**C** is the individual asset σ — no diversification."
+    },
+    {
+      "id": "q-quant-stats-004",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "easy",
+      "stem": "A distribution with **positive excess kurtosis** is *most accurately* described as:",
+      "choices": [
+        { "id": "A", "text": "Symmetric, with thinner tails than the normal distribution." },
+        { "id": "B", "text": "Symmetric, with fatter tails than the normal distribution — more extreme observations expected." },
+        { "id": "C", "text": "Skewed to the right." }
+      ],
+      "answer": "B",
+      "explanation": "Excess kurtosis > 0 = **leptokurtic**: fatter tails, more frequent extreme observations than a normal distribution would predict. Equity returns typically exhibit this.\n\n**A** is platykurtic (thin tails — less frequent extremes).\n\n**C** confuses kurtosis with skewness — they're separate moments."
+    },
+    {
+      "id": "q-quant-stats-005",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "medium",
+      "stem": "If two return series have correlation $\\rho = 0$, which statement is *most accurate*?",
+      "choices": [
+        { "id": "A", "text": "They are statistically independent." },
+        { "id": "B", "text": "They have no linear relationship; nonlinear dependence may still exist." },
+        { "id": "C", "text": "Their covariance must be 1 by construction." }
+      ],
+      "answer": "B",
+      "explanation": "Correlation measures only **linear** dependence. Two variables can be deterministically related nonlinearly (e.g., $Y = X^2$) yet have ρ = 0.\n\n**A** is a stronger claim than zero correlation supports — independence implies ρ = 0 but not vice versa.\n\n**C** confuses correlation with covariance."
+    },
+    {
+      "id": "q-quant-stats-006",
+      "lessonId": "quant-stats-overview",
+      "difficulty": "easy",
+      "stem": "For positive returns with non-trivial variability, the relationship between arithmetic and geometric mean is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Arithmetic > Geometric" },
+        { "id": "B", "text": "Arithmetic = Geometric" },
+        { "id": "C", "text": "Arithmetic < Geometric" }
+      ],
+      "answer": "A",
+      "explanation": "$\\bar{x} \\geq \\bar{x}_g$ always (Jensen's inequality), with equality only when all values are identical. The wider the spread, the larger the gap.\n\n**B** is true only for constant returns.\n\n**C** is mathematically impossible."
+    },
+    {
       "id": "q-quant-rr-001",
       "lessonId": "quant-rates-returns-overview",
       "difficulty": "easy",

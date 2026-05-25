@@ -1,0 +1,83 @@
+{
+  "topicId": "alts",
+  "questions": [
+    {
+      "id": "q-alts-feat-001",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *least likely* to be classified as an alternative investment?",
+      "choices": [
+        { "id": "A", "text": "A leveraged buyout fund." },
+        { "id": "B", "text": "A long-only S&P 500 index fund." },
+        { "id": "C", "text": "A diversified hedge fund using market-neutral strategies." }
+      ],
+      "answer": "B",
+      "explanation": "Alternatives are defined by exclusion from traditional public-market long-only equity, debt, and cash. **A long-only S&P 500 index fund is traditional** — exactly what alternatives are *not*.\n\n**A** (LBO) and **C** (hedge fund) are both alternatives."
+    },
+    {
+      "id": "q-alts-feat-002",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "medium",
+      "stem": "A hedge fund returns 18% gross. Management fee is 1.5%; performance fee is 20% above a 6% hurdle. Net return to investors is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "12.50%" },
+        { "id": "B", "text": "14.10%" },
+        { "id": "C", "text": "16.50%" }
+      ],
+      "answer": "B",
+      "explanation": "Return above hurdle: $18 - 6 = 12\\%$. Performance fee: $12 \\cdot 0.20 = 2.4\\%$.\n\n$r_{net} = 18 - 1.5 - 2.4 = 14.1\\%$.\n\n**A** subtracts the full performance fee on the gross return (20% × 18 = 3.6%), ignoring the hurdle.\n\n**C** subtracts only management fee, missing carry."
+    },
+    {
+      "id": "q-alts-feat-003",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "medium",
+      "stem": "The 'illiquidity premium' in alternative investments *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "the extra return investors expect for committing capital that cannot be readily redeemed." },
+        { "id": "B", "text": "the discount applied to public-market valuations when comparing to private deals." },
+        { "id": "C", "text": "the performance fee paid to managers in lieu of management fees." }
+      ],
+      "answer": "A",
+      "explanation": "Illiquidity premium = compensation for the inability to exit the investment quickly. Investors require this premium *ex ante*; it's the empirical observation that long-lockup investments tend to deliver higher returns than equivalent-risk liquid alternatives.\n\n**B** describes a valuation methodology, not a return premium.\n\n**C** misuses the concept; performance fees are a separate compensation structure."
+    },
+    {
+      "id": "q-alts-feat-004",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "hard",
+      "stem": "The 'J-curve' phenomenon in private equity *most likely* refers to:",
+      "choices": [
+        { "id": "A", "text": "the upward-sloping cash distribution pattern from years 4-7 of a fund's life." },
+        { "id": "B", "text": "the typical pattern where fund returns appear negative early and become positive only after several years." },
+        { "id": "C", "text": "a yield curve specific to private debt markets." }
+      ],
+      "answer": "B",
+      "explanation": "In early years, PE funds are calling capital (cash outflows) and incurring fees, with little to no realisations — returns look negative. As portfolio companies mature and exits begin, distributions accelerate and the cumulative return turns positive, often steeply. This pattern of dipping then rising looks like the letter J.\n\n**A** describes part of the curve but misses the early-negative portion.\n\n**C** is a confusion with fixed-income yield curve terminology."
+    },
+    {
+      "id": "q-alts-feat-005",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "easy",
+      "stem": "A high-water mark provision in a hedge fund's fee structure ensures that:",
+      "choices": [
+        { "id": "A", "text": "the manager earns performance fees only on new peaks in NAV, not on the recovery from previous losses." },
+        { "id": "B", "text": "the management fee rises during periods of strong fund performance." },
+        { "id": "C", "text": "investors are guaranteed a minimum return level." }
+      ],
+      "answer": "A",
+      "explanation": "High-water mark = manager only earns performance fee on NAV gains above the previous high. Prevents the manager from earning carry twice on the same dollar of returns (lose money, recover, repeat).\n\n**B** is wrong — management fees are unrelated to performance levels.\n\n**C** is a guaranteed-return product, not a hedge fund mechanism."
+    },
+    {
+      "id": "q-alts-feat-006",
+      "lessonId": "alts-feat-overview",
+      "difficulty": "medium",
+      "stem": "Reported volatility of a private real estate fund is *most likely* lower than its true economic volatility because:",
+      "choices": [
+        { "id": "A", "text": "appraisal-based valuations smooth period-to-period movements." },
+        { "id": "B", "text": "private real estate genuinely has lower risk than public equity." },
+        { "id": "C", "text": "regulators cap reported volatility for retail-eligible alternatives." }
+      ],
+      "answer": "A",
+      "explanation": "Appraisers anchor on previous valuations and adjust slowly — this creates an autocorrelated, smoothed return series with lower observed σ than the underlying economic exposure. Unsmoothing techniques typically raise the measured σ from say 6% to 12-15%.\n\n**B** misinterprets the smoothing effect as a genuine risk reduction.\n\n**C** is fictitious — no such regulation exists."
+    }
+  ]
+}

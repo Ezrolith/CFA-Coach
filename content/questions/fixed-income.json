@@ -2,6 +2,84 @@
   "topicId": "fixed-income",
   "questions": [
     {
+      "id": "q-fi-ym-001",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "easy",
+      "stem": "A bond pays £40 annual coupons, with a current market price of £900 (face £1,000). Its **current yield** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "4.00%" },
+        { "id": "B", "text": "4.44%" },
+        { "id": "C", "text": "5.00%" }
+      ],
+      "answer": "B",
+      "explanation": "Current yield = Annual coupon / Price = 40 / 900 = **4.44%**.\n\n**A** is the coupon rate (40/1000 — uses face, not market price).\n\n**C** is unrelated to either."
+    },
+    {
+      "id": "q-fi-ym-002",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "medium",
+      "stem": "A 5-year semi-annual-pay bond is priced at par. Its YTM is quoted as 6% bond-equivalent yield. The *effective annual yield* (EAY) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "6.00%" },
+        { "id": "B", "text": "6.09%" },
+        { "id": "C", "text": "12.36%" }
+      ],
+      "answer": "B",
+      "explanation": "$EAY = (1 + BEY/2)^2 - 1 = (1.03)^2 - 1 = 0.0609 = 6.09\\%$.\n\n**A** is just the BEY, which understates the effective annual rate due to semi-annual compounding.\n\n**C** double-compounds incorrectly."
+    },
+    {
+      "id": "q-fi-ym-003",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "medium",
+      "stem": "For a callable corporate bond trading at a premium, the *most appropriate* yield measure for a conservative investor is:",
+      "choices": [
+        { "id": "A", "text": "Current yield, since it captures the income return only." },
+        { "id": "B", "text": "Yield to maturity, assuming the bond will not be called." },
+        { "id": "C", "text": "Yield to worst — the minimum of YTM and all yield-to-calls." }
+      ],
+      "answer": "C",
+      "explanation": "YTW captures the lowest yield scenario for the bondholder. For a callable bond trading at a premium, calling is likely (issuer can refinance lower). Assuming YTM overestimates expected return.\n\n**A** ignores capital impact entirely.\n\n**B** ignores the call risk."
+    },
+    {
+      "id": "q-fi-ym-004",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "hard",
+      "stem": "For a callable corporate bond, the difference between the Z-spread and the OAS *most likely* represents:",
+      "choices": [
+        { "id": "A", "text": "Compensation to the bondholder for credit risk." },
+        { "id": "B", "text": "The cost of the embedded call option to the bondholder." },
+        { "id": "C", "text": "Pure liquidity premium." }
+      ],
+      "answer": "B",
+      "explanation": "Z-spread − OAS = embedded option cost. The call is valuable to the *issuer* (can refinance if rates fall) and a cost to the bondholder (capped upside, accelerated cash flow). OAS strips that cost out to isolate the 'pure' credit + liquidity spread.\n\n**A** and **C** are captured by OAS — both Z-spread and OAS contain credit and liquidity premia. The *gap* is option cost."
+    },
+    {
+      "id": "q-fi-ym-005",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "medium",
+      "stem": "A 91-day T-bill trades at £99.20 per £100 face. Its **bank discount yield** (US convention, 360-day year) is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "3.16%" },
+        { "id": "B", "text": "3.20%" },
+        { "id": "C", "text": "3.30%" }
+      ],
+      "answer": "A",
+      "explanation": "Bank discount yield: $\\frac{F - P}{F} \\cdot \\frac{360}{t} = \\frac{0.80}{100} \\cdot \\frac{360}{91} = 0.008 \\cdot 3.956 = 3.16\\%$.\n\nNote: this is the conventionally quoted figure, but it **understates** the true return because it uses face value as the base and a 360-day year.\n\n**B** is the money-market yield (uses price as base).\n\n**C** is the BEY (uses 365-day year)."
+    },
+    {
+      "id": "q-fi-ym-006",
+      "lessonId": "fi-ym-overview",
+      "difficulty": "easy",
+      "stem": "For a bond trading at a *premium* to par, the relationship among yield measures is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Coupon rate < Current yield < YTM" },
+        { "id": "B", "text": "YTM < Current yield < Coupon rate" },
+        { "id": "C", "text": "All three are equal." }
+      ],
+      "answer": "B",
+      "explanation": "Premium bond ($P > F$): YTM < Current Yield < Coupon Rate. The bond will lose value as it pulls toward par at maturity, eating into the realised return → YTM is below the coupon rate.\n\n**A** would describe a **discount** bond.\n\n**C** describes a **par** bond."
+    },
+    {
       "id": "q-fi-val-001",
       "lessonId": "fi-val-overview",
       "difficulty": "easy",

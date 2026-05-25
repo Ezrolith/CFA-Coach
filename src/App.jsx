@@ -9,6 +9,7 @@ import SettingsPage from './pages/SettingsPage';
 import MockExamPage from './pages/MockExamPage';
 import ReviewPage from './pages/ReviewPage';
 import FormulaDrillPage from './pages/FormulaDrillPage';
+import EthicsDrillPage from './pages/EthicsDrillPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/lesson/:id" element={<LessonPage />} />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/drills/formulas" element={<FormulaDrillPage />} />
+          <Route path="/drills/ethics" element={<EthicsDrillPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/mock-exam" element={<MockExamPage />} />
           <Route path="/progress" element={<ProgressPage />} />

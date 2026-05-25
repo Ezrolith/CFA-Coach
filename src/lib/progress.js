@@ -10,7 +10,16 @@ const EMPTY = {
   lessonsStudied: {},
   quizResults: {},
   reviews: {},
+  activityDays: {},   // { 'YYYY-MM-DD': true } — any day with study activity
 };
+
+function dateKey(d = new Date()) {
+  return d.toISOString().slice(0, 10);
+}
+
+function recordActivity(state) {
+  state.activityDays[dateKey()] = true;
+}
 
 function read() {
   try {
@@ -18,7 +27,12 @@ function read() {
     if (!raw) return { ...EMPTY };
     const parsed = JSON.parse(raw);
     if (parsed?.version !== 1) return { ...EMPTY };
-    return { ...EMPTY, ...parsed, reviews: parsed.reviews ?? {} };
+    return {
+      ...EMPTY,
+      ...parsed,
+      reviews: parsed.reviews ?? {},
+      activityDays: parsed.activityDays ?? {},
+    };
   } catch {
     return { ...EMPTY };
   }
@@ -45,6 +59,7 @@ export function markLessonStudied(lessonId) {
   if (!state.reviews[lessonId]) {
     state.reviews[lessonId] = seedReview();
   }
+  recordActivity(state);
   write(state);
   notify();
 }
@@ -78,6 +93,7 @@ export function recordQuizResult(lessonId, correct, total) {
   const quality = quizPctToQuality(pct);
   state.reviews[lessonId] = applySm2(state.reviews[lessonId] ?? seedReview(), quality);
 
+  recordActivity(state);
   write(state);
   notify();
 }
@@ -147,8 +163,27 @@ export function gradeReview(lessonId, ratingKey) {
   const state = read();
   const q = MANUAL_RATING_TO_Q[ratingKey] ?? 3;
   state.reviews[lessonId] = applySm2(state.reviews[lessonId] ?? seedReview(), q);
+  recordActivity(state);
   write(state);
   notify();
+}
+
+// --- Streak tracking ---
+
+export function getStreak() {
+  const days = read().activityDays;
+  let streak = 0;
+  const d = new Date();
+  // Count back: today + each previous consecutive day with activity.
+  while (days[dateKey(d)]) {
+    streak += 1;
+    d.setDate(d.getDate() - 1);
+  }
+  return streak;
+}
+
+export function getTotalActiveDays() {
+  return Object.keys(read().activityDays).length;
 }
 
 export function getReview(lessonId) {

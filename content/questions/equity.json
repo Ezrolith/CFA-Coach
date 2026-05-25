@@ -2,6 +2,84 @@
   "topicId": "equity",
   "questions": [
     {
+      "id": "q-equity-eff-001",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "easy",
+      "stem": "In a *semi-strong-form* efficient market, which strategy is *least likely* to produce risk-adjusted excess returns?",
+      "choices": [
+        { "id": "A", "text": "Fundamental analysis based on publicly available information." },
+        { "id": "B", "text": "Trading on material non-public information." },
+        { "id": "C", "text": "Both A and B would be unable to generate excess returns." }
+      ],
+      "answer": "A",
+      "explanation": "Semi-strong efficiency says prices reflect all **public** information, so analysis of public info cannot reliably beat the market.\n\n**B** is the case in strong-form efficiency — but semi-strong allows insiders to potentially profit (and is the form most consistent with empirical evidence).\n\n**C** overstates: semi-strong does not preclude insider profits."
+    },
+    {
+      "id": "q-equity-eff-002",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "medium",
+      "stem": "Which empirical observation *most challenges* semi-strong-form efficiency?",
+      "choices": [
+        { "id": "A", "text": "Stock prices follow approximately a random walk over short horizons." },
+        { "id": "B", "text": "Post-earnings-announcement drift, where prices continue to move in the direction of the earnings surprise for weeks after the announcement." },
+        { "id": "C", "text": "Stock prices respond instantly to public announcements." }
+      ],
+      "answer": "B",
+      "explanation": "PEAD suggests prices do *not* fully incorporate publicly-announced earnings information immediately — a direct challenge to semi-strong efficiency.\n\n**A** is consistent with **weak-form** efficiency.\n\n**C** is what semi-strong predicts; not a challenge."
+    },
+    {
+      "id": "q-equity-eff-003",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "medium",
+      "stem": "Behavioural finance *most likely* explains anomalies in market prices by:",
+      "choices": [
+        { "id": "A", "text": "Arguing that markets are perfectly efficient and apparent anomalies are mismeasurement." },
+        { "id": "B", "text": "Identifying systematic cognitive biases that cause investors to deviate from full rationality." },
+        { "id": "C", "text": "Claiming that anomalies are only profitable for institutional investors with information advantages." }
+      ],
+      "answer": "B",
+      "explanation": "Behavioural finance identifies specific biases (overconfidence, anchoring, loss aversion, herding) that produce systematic, predictable deviations from rational pricing.\n\n**A** is the opposite stance.\n\n**C** is a different theory (information asymmetry), not the behavioural one."
+    },
+    {
+      "id": "q-equity-eff-004",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "easy",
+      "stem": "The 'momentum effect' refers to:",
+      "choices": [
+        { "id": "A", "text": "Stocks that have recently outperformed tend to continue outperforming for several more months." },
+        { "id": "B", "text": "Stocks with higher trading volume tend to rise faster than those with lower volume." },
+        { "id": "C", "text": "Stock prices are most sensitive to news announcements just before market close." }
+      ],
+      "answer": "A",
+      "explanation": "Momentum: ranking stocks on 6-12 month past returns; recent winners tend to continue winning over the next few months, recent losers continue losing. Documented anomaly inconsistent with weak-form efficiency.\n\n**B** is a market microstructure observation, not the momentum factor.\n\n**C** is not the academic definition of momentum."
+    },
+    {
+      "id": "q-equity-eff-005",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "medium",
+      "stem": "If the empirical evidence supports semi-strong efficiency in a particular market, an investor *most appropriately* should:",
+      "choices": [
+        { "id": "A", "text": "Hire active managers with strong fundamental analysis." },
+        { "id": "B", "text": "Use low-cost passive index funds for that market exposure." },
+        { "id": "C", "text": "Trade aggressively on quarterly earnings announcements." }
+      ],
+      "answer": "B",
+      "explanation": "Semi-strong efficiency implies that fundamental analysis on public info doesn't reliably produce excess returns net of fees. Passive index investing captures market exposure at minimal cost — the consistent choice.\n\n**A** would only make sense if you believe markets are *less* efficient than semi-strong.\n\n**C** is essentially trading on public information — which semi-strong says won't pay off."
+    },
+    {
+      "id": "q-equity-eff-006",
+      "lessonId": "eq-eff-overview",
+      "difficulty": "hard",
+      "stem": "The Grossman-Stiglitz paradox suggests that:",
+      "choices": [
+        { "id": "A", "text": "If markets were perfectly efficient, no investor would have incentive to gather information, so markets could not become efficient in the first place." },
+        { "id": "B", "text": "Insider trading is necessary to maintain market efficiency." },
+        { "id": "C", "text": "Active management always outperforms passive investing." }
+      ],
+      "answer": "A",
+      "explanation": "The Grossman-Stiglitz paradox observes that information-gathering is costly. If markets were perfectly efficient (no profit from research), no one would research. If no one researches, prices wouldn't incorporate information → markets wouldn't be efficient. Equilibrium is *partial* efficiency.\n\n**B** misreads the paradox.\n\n**C** is contradicted by empirical evidence."
+    },
+    {
       "id": "q-equity-val-001",
       "lessonId": "eq-val-overview",
       "difficulty": "easy",

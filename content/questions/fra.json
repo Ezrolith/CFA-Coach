@@ -2,6 +2,84 @@
   "topicId": "fra",
   "questions": [
     {
+      "id": "q-fra-bs-001",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "easy",
+      "stem": "Goodwill arising from a business acquisition is *most appropriately* treated as:",
+      "choices": [
+        { "id": "A", "text": "Amortised on a straight-line basis over 10 years." },
+        { "id": "B", "text": "Carried at cost and tested for impairment at least annually." },
+        { "id": "C", "text": "Written off immediately upon acquisition." }
+      ],
+      "answer": "B",
+      "explanation": "Under both IFRS and US GAAP, goodwill is **not amortised**. It's carried on the balance sheet and tested for impairment at least annually (and when triggers arise).\n\n**A** describes the pre-2001 GAAP treatment which has been replaced.\n\n**C** would be appropriate only if there's an immediate impairment, not as standard treatment."
+    },
+    {
+      "id": "q-fra-bs-002",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "medium",
+      "stem": "Company X reports current assets £200m (of which cash £40m, receivables £60m, inventory £100m). Current liabilities £100m. Its **quick ratio** is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.00" },
+        { "id": "B", "text": "1.60" },
+        { "id": "C", "text": "2.00" }
+      ],
+      "answer": "A",
+      "explanation": "Quick ratio = (Cash + ST investments + AR) / CL = (40 + 60) / 100 = **1.00**.\n\n**B** results from incorrectly including inventory.\n\n**C** is the current ratio (200/100), not quick. Quick excludes inventory because it's less reliably liquid."
+    },
+    {
+      "id": "q-fra-bs-003",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS, *internally generated* development costs *most likely* should be:",
+      "choices": [
+        { "id": "A", "text": "Expensed entirely as incurred." },
+        { "id": "B", "text": "Capitalised when specific criteria are met (technical feasibility, intention to complete, future benefits, etc.)." },
+        { "id": "C", "text": "Treated the same as goodwill — never amortised, tested for impairment." }
+      ],
+      "answer": "B",
+      "explanation": "IFRS allows capitalisation of development costs (later phase of R&D) when six specific criteria are met. Research costs (earlier phase) are always expensed.\n\n**A** describes US GAAP treatment for both research and development.\n\n**C** confuses development with goodwill treatment."
+    },
+    {
+      "id": "q-fra-bs-004",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "easy",
+      "stem": "The balance-sheet accounting identity is:",
+      "choices": [
+        { "id": "A", "text": "Revenue = Expenses + Net Income" },
+        { "id": "B", "text": "Assets = Liabilities + Equity" },
+        { "id": "C", "text": "Cash Inflows = Cash Outflows + Net Change in Cash" }
+      ],
+      "answer": "B",
+      "explanation": "$A = L + E$ — the foundational identity. Assets are funded either by borrowing (liabilities) or by owner capital (equity).\n\n**A** is an income statement identity.\n\n**C** is a cash flow statement identity."
+    },
+    {
+      "id": "q-fra-bs-005",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "hard",
+      "stem": "A serial acquirer's balance sheet shows goodwill of £600m and total equity of £900m. From an analyst's *conservative* perspective on tangible book value, the equity to use in valuation comparisons is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£300m (£900m equity minus £600m goodwill)" },
+        { "id": "B", "text": "£900m (use full reported equity)" },
+        { "id": "C", "text": "£1,500m (add goodwill to equity)" }
+      ],
+      "answer": "A",
+      "explanation": "Tangible book value = Equity − Goodwill = 900 − 600 = **£300m**.\n\nAnalysts often deduct goodwill in conservative analysis, especially for financials and asset-heavy comparisons.\n\n**B** uses the full equity, including the soft asset.\n\n**C** double-counts goodwill."
+    },
+    {
+      "id": "q-fra-bs-006",
+      "lessonId": "fra-bs-overview",
+      "difficulty": "medium",
+      "stem": "Under IFRS 16 / ASC 842, operating leases with terms greater than 12 months *most likely* should be:",
+      "choices": [
+        { "id": "A", "text": "Disclosed only in the notes; not recognised on the balance sheet." },
+        { "id": "B", "text": "Recognised as both a lease liability and a right-of-use asset on the balance sheet." },
+        { "id": "C", "text": "Treated as contingent obligations and disclosed off-balance-sheet." }
+      ],
+      "answer": "B",
+      "explanation": "Both standards (~2019) brought operating leases on-balance-sheet: a right-of-use asset on one side and a lease liability on the other. This materially increased reported leverage for asset-light businesses.\n\n**A** describes pre-2019 GAAP treatment.\n\n**C** confuses lease liabilities with contingent ones."
+    },
+    {
       "id": "q-fra-is-001",
       "lessonId": "fra-is-overview",
       "difficulty": "medium",

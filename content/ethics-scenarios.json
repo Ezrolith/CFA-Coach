@@ -1,0 +1,124 @@
+{
+  "scenarios": [
+    {
+      "id": "scen-001",
+      "scenario": "Marcus, CFA, is a portfolio manager at a large investment firm. A company he covers offers to fly him and his family to an exclusive resort for a 'site visit' to its facilities. The site visit is genuine, but the resort accommodation goes beyond reasonable business needs.",
+      "options": [
+        { "id": "A", "text": "Standard I-A: Knowledge of the Law" },
+        { "id": "B", "text": "Standard I-B: Independence and Objectivity" },
+        { "id": "C", "text": "Standard I-C: Misrepresentation" },
+        { "id": "D", "text": "Standard II-A: Material Nonpublic Information" }
+      ],
+      "answer": "B",
+      "explanation": "Accepting lavish hospitality from an issuer he covers compromises Marcus's independence. The 'site visit' is genuine, but the resort element provides value beyond legitimate business needs.\n\n**Recommended action:** Decline the resort element, or have his firm pay commercial rates so no economic value flows from the issuer to him personally."
+    },
+    {
+      "id": "scen-002",
+      "scenario": "Sarah, CFA, learns during a confidential client meeting that her client's company is planning a major acquisition. The information is material and not yet public. Sarah does not personally trade, but she mentions the upcoming deal to a friend over dinner, who then trades on the information.",
+      "options": [
+        { "id": "A", "text": "No violation — Sarah didn't trade herself." },
+        { "id": "B", "text": "Standard II-A: Material Nonpublic Information" },
+        { "id": "C", "text": "Standard III-E: Preservation of Confidentiality only" },
+        { "id": "D", "text": "Standard IV-A: Loyalty to employer" }
+      ],
+      "answer": "B",
+      "explanation": "Sharing material non-public information enables insider trading by the recipient ('tipping'). Sarah violates Standard II-A even though she didn't trade herself — tipping is treated as participating in the trading.\n\nIII-E is also violated (confidentiality), but II-A is the more specific and serious Standard here.\n\n**A** is incorrect — tipping is itself a violation. **D** is the wrong Standard."
+    },
+    {
+      "id": "scen-003",
+      "scenario": "James, CFA, has been managing a pension plan whose IPS allocates 40% to bonds. Convinced bonds are a poor investment, he reduces the bond allocation to 20% without consulting the plan trustees. The portfolio outperforms over the next year.",
+      "options": [
+        { "id": "A", "text": "No violation — the portfolio outperformed, demonstrating skill." },
+        { "id": "B", "text": "Standard III-C: Suitability" },
+        { "id": "C", "text": "Standard V-A: Diligence and Reasonable Basis" },
+        { "id": "D", "text": "Standard III-D: Performance Presentation" }
+      ],
+      "answer": "B",
+      "explanation": "III-C requires trades to match the IPS. Deviating without trustee consultation violates the suitability standard, regardless of the investment outcome. Standards are *process*-based, not results-based.\n\nIf James thought bonds were poor, the correct path was to propose updating the IPS through normal governance, not unilateral deviation.\n\n**A** is the common but wrong intuition — 'no harm, no foul' doesn't apply to procedural violations."
+    },
+    {
+      "id": "scen-004",
+      "scenario": "Lin, CFA, prepares marketing materials for her firm's flagship fund. She highlights only the fund's best three-year period (during which it returned 18% annually) without disclosing that the fund has been operating for 12 years with an overall annualised return of 6%.",
+      "options": [
+        { "id": "A", "text": "Standard III-A: Loyalty, Prudence, and Care" },
+        { "id": "B", "text": "Standard III-D: Performance Presentation" },
+        { "id": "C", "text": "Standard VII: Responsibilities of CFA Institute Members" },
+        { "id": "D", "text": "No violation — the 18% figure is factually correct." }
+      ],
+      "answer": "B",
+      "explanation": "III-D requires performance presentation to be **fair, accurate, and complete**. Cherry-picking the best three-year window and omitting the full 12-year context misrepresents the fund's track record — a textbook III-D violation.\n\n**A** is also implicitly violated but III-D is the specific standard.\n\n**D** confuses 'factually correct' with 'fairly presented'. The 18% is real, but the presentation is misleading."
+    },
+    {
+      "id": "scen-005",
+      "scenario": "Aiden, CFA, just received a hot IPO allocation that significantly exceeds initial expectations. The firm's policy is pro-rata allocation across all qualifying clients, but Aiden gives 80% of the allocation to a single large institutional client because 'they're more strategic and pay higher fees.'",
+      "options": [
+        { "id": "A", "text": "Standard III-B: Fair Dealing" },
+        { "id": "B", "text": "Standard IV-A: Loyalty to Employer" },
+        { "id": "C", "text": "Standard V-B: Communication with Clients" },
+        { "id": "D", "text": "No violation — favouring strategic clients is acceptable." }
+      ],
+      "answer": "A",
+      "explanation": "III-B requires equitable treatment of all clients when allocating investment opportunities. Pre-established firm policy is pro-rata; Aiden has deviated without authorisation, favouring fee-paying clients — a clear III-B violation.\n\n**B** is unrelated; this is a client-allocation issue.\n\n**C** is about communications, not allocation.\n\n**D** ignores the firm's stated policy and the equitable-treatment requirement."
+    },
+    {
+      "id": "scen-006",
+      "scenario": "Priya, CFA, recently moved from Firm A to Firm B. She brought a digital copy of Firm A's proprietary research database, which she intends to use as a starting point for her new role's research output.",
+      "options": [
+        { "id": "A", "text": "Standard I-C: Misrepresentation only" },
+        { "id": "B", "text": "Standard IV-A: Loyalty to Employer (former employer)" },
+        { "id": "C", "text": "Standard V-A: Diligence and Reasonable Basis" },
+        { "id": "D", "text": "No violation — research she helped create is hers." }
+      ],
+      "answer": "B",
+      "explanation": "Misappropriating an ex-employer's confidential or proprietary materials violates Standard IV-A, which extends to loyalty *during and after* the employment relationship. Research databases are typically the employer's property regardless of who authored individual pieces.\n\nUsing the materials at Firm B would also raise I-C (misrepresentation) concerns about the source of analysis, and potentially legal issues separate from the Code.\n\n**D** ignores the property-rights issue."
+    },
+    {
+      "id": "scen-007",
+      "scenario": "Tomás, CFA, manages a global fund. The fund's prospectus states 'invests primarily in developed-market equities'. Without changing the prospectus, Tomás allocates 25% to emerging-market equities, justifying this as 'tactical positioning'.",
+      "options": [
+        { "id": "A", "text": "Standard III-A: Loyalty, Prudence, and Care" },
+        { "id": "B", "text": "Standard III-C: Suitability" },
+        { "id": "C", "text": "Standard I-C: Misrepresentation" },
+        { "id": "D", "text": "All of the above could potentially apply." }
+      ],
+      "answer": "D",
+      "explanation": "Multiple standards potentially apply:\n- **III-A** — failing to act in clients' best interest given they bought into a specific mandate.\n- **III-C** — investments not matching the stated strategy.\n- **I-C** — actions inconsistent with the prospectus could be misrepresentation.\n\nThe most specific violation is **III-C** (mismatch with the IPS-equivalent prospectus), but all three are reasonable answers. CFA exam scenarios often have multiple applicable standards — usually the most-specific one is the expected answer."
+    },
+    {
+      "id": "scen-008",
+      "scenario": "Catherine, CFA, is asked by a friend at a social gathering 'what stocks should I buy?' Without doing any research on the friend's circumstances or risk tolerance, Catherine recommends three specific stocks she likes.",
+      "options": [
+        { "id": "A", "text": "Standard III-C: Suitability — recommendations should match individual circumstances." },
+        { "id": "B", "text": "Standard V-A: Diligence and Reasonable Basis" },
+        { "id": "C", "text": "Standard III-E: Preservation of Confidentiality" },
+        { "id": "D", "text": "No violation — informal advice in a social setting." }
+      ],
+      "answer": "A",
+      "explanation": "Even in informal settings, a CFA charterholder making specific investment recommendations should know the recipient's circumstances enough to ensure suitability. Recommending specific stocks without understanding the friend's risk tolerance, time horizon, and financial situation violates III-C.\n\n**B** could also apply (no research basis), but III-C is more specific to the recommendation-to-an-individual context.\n\n**D** is the common-sense answer but the Code applies to all professional recommendations, regardless of setting."
+    },
+    {
+      "id": "scen-009",
+      "scenario": "Diego, CFA, holds personal positions in several stocks. He receives a buy recommendation from his firm's research team for a stock he already owns. He buys more shares for his personal account before the recommendation is published to clients.",
+      "options": [
+        { "id": "A", "text": "Standard VI-B: Priority of Transactions" },
+        { "id": "B", "text": "Standard II-B: Market Manipulation" },
+        { "id": "C", "text": "Standard I-A: Knowledge of the Law" },
+        { "id": "D", "text": "No violation — personal account purchases are always permitted." }
+      ],
+      "answer": "A",
+      "explanation": "VI-B requires client and employer transactions to take priority over personal transactions. Front-running clients — trading personally before a recommendation reaches them — is a clear violation.\n\n**B** is market manipulation generally; the specific issue here is the priority of transactions.\n\n**D** ignores the priority-of-transactions standard."
+    },
+    {
+      "id": "scen-010",
+      "scenario": "Mei, CFA, supervises a junior analyst who has been issuing buy recommendations on stocks he personally owns, without disclosing the personal positions. Mei knows about the analyst's positions but hasn't required disclosure or supervision.",
+      "options": [
+        { "id": "A", "text": "Standard IV-C: Responsibilities of Supervisors" },
+        { "id": "B", "text": "Standard VI-A: Disclosure of Conflicts" },
+        { "id": "C", "text": "Both A and B — Mei has both supervisory and disclosure obligations" },
+        { "id": "D", "text": "Standard I-D: Misconduct" }
+      ],
+      "answer": "C",
+      "explanation": "Mei has both:\n- **IV-C**: failing to adequately supervise an analyst with known conflicts.\n- **VI-A**: not ensuring conflict disclosure for material conflicts that affect recommendations.\n\nBoth Standards are directly implicated. The CFA exam often credits answers that recognise multiple standards in supervisor-related cases."
+    }
+  ]
+}

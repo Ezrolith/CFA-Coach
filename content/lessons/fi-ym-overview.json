@@ -1,0 +1,63 @@
+{
+  "lessonId": "fi-ym-overview",
+  "modes": {
+    "new": "## What 'yield' really means\n\nWhen you buy a fixed-rate bond at a given price, multiple **yield measures** describe the return you can expect. Each captures a different angle:\n\n- **Coupon rate** — the contract rate; pays the periodic coupon. Doesn't change.\n- **Current yield** — annual coupon ÷ current price. Income only; ignores capital gain/loss.\n- **Yield to maturity (YTM)** — the IRR that equates PV of cash flows to current price. Most-quoted measure.\n- **Yield to call (YTC)** — YTM assuming the bond is called at the first call date.\n- **Yield to worst (YTW)** — minimum of YTM and all YTCs; conservative measure for callable bonds.\n\n### The compounding gotcha\n\nMost bonds pay coupons **semi-annually** but YTM is typically quoted **annualised**. The conversion convention:\n\n$$\\text{Stated annual YTM} = 2 \\cdot \\text{Periodic (semi-annual) yield}$$\n\nThis is *bond-equivalent yield* (BEY) — common in US markets. It's *not* the effective annual yield (EAY), which would be $(1 + r)^2 - 1$ — usually about 20-30 bp higher.\n\nWhen comparing bonds with different coupon frequencies, **always convert to a common compounding basis**.\n\n### Yield spread measures\n\nYields are usually decomposed into a benchmark rate + a spread:\n\n- **G-spread** — yield over a comparable government bond. Captures credit + liquidity + tax differences.\n- **I-spread** — yield over the comparable interpolated swap rate.\n- **Z-spread (zero-volatility)** — constant spread added to the spot rate curve to match the bond's price. Used in OAS analysis.\n- **OAS (option-adjusted spread)** — Z-spread minus the cost of embedded options. The 'pure' credit + liquidity premium net of optionality.\n\nFor a non-callable, default-free bond, all spreads collapse to the same thing. For bonds with embedded options or significant credit risk, they diverge.\n\n### Money-market yield conventions\n\nShort-term instruments (T-bills, commercial paper) use different conventions:\n\n- **Bank discount yield** — based on face value, 360-day year (US T-bills).\n- **Money market yield** — based on holding period return, 360-day year.\n- **Bond-equivalent yield** — annualised on 365-day basis, comparable to bonds.\n- **Effective annual yield** — full compounding-based annual rate.\n\nThese can differ by 30-50 bp on the same instrument. Mixing them when comparing yields = the most common mistake in money-market analysis.\n\n### Practical implications\n\nWhen comparing two bonds:\n1. Convert both to a common periodicity (e.g., semi-annual BEY).\n2. Compare apples-to-apples (YTM vs YTM, or yield-to-worst vs yield-to-worst for callables).\n3. If credit qualities differ, look at spreads over a common benchmark.\n4. Check whether yields are quoted gross or net of withholding tax (jurisdictional difference).",
+    "pro": "## Yield measures at speed\n\n### Single-bond yields\n\n| Measure | Formula / definition | When to use |\n|---|---|---|\n| Coupon rate | Annual coupon / Face | Static contract spec |\n| Current yield | Coupon / Price | Income-only view |\n| YTM | IRR of CF stream | Most-quoted; bond-equiv. by convention |\n| YTC | YTM assuming earliest call | Callable bonds |\n| YTW | min(YTM, all YTCs) | Conservative callable measure |\n| EAY | $(1 + r_{period})^n - 1$ | True effective return |\n| Realised yield | Empirical return ex-post | Performance attribution |\n\n### Periodicity conversion\n\n$$\\text{BEY (semi-annual)} = 2 \\cdot \\text{periodic semi-annual yield}$$\n\n$$\\text{EAY} = (1 + r_{period})^m - 1$$\n\nFor semi-annual bonds: $EAY = (1 + BEY/2)^2 - 1 \\approx BEY \\cdot 1.005$ ish.\n\n### Spread measures\n\n- **Nominal spread (G-spread)**: YTM(bond) − YTM(comparable government).\n- **I-spread**: YTM − swap rate of same tenor.\n- **Z-spread**: constant addition to spot curve s.t. PV(CF) = price. Solved iteratively.\n- **OAS**: Z-spread net of embedded-option cost. Calculated via tree / Monte Carlo.\n\nFor a vanilla corporate bond, all four converge in magnitude. They diverge when:\n- Curve is steep (G-spread vs Z-spread differ).\n- Bond is callable/putable (OAS < Z-spread by call-option value).\n- Credit quality is weak (Z-spread captures non-parallel curve risk).\n\n### Money market\n\n| Yield | Base | Day count | Notes |\n|---|---|---|---|\n| Discount yield | Face | 360 | T-bills US; understates true yield |\n| Money market yield | Price | 360 | Holding period; semi-conservative |\n| BEY | Price | 365 | Comparable to coupon bonds |\n| EAY | Price | 365, compounded | True annual rate |\n\n### Common conversion\n\nFrom HPY (holding period yield) on a 90-day T-bill:\n\n$$BEY = HPY \\cdot \\frac{365}{90}$$\n\nUseful as the lingua franca to compare a 91-day T-bill with a 91-day commercial paper."
+  },
+  "formulas": [
+    { "name": "Current yield",         "latex": "\\text{CY} = \\frac{\\text{Annual coupon}}{P}", "plain": "Income return only; ignores capital gain/loss to maturity" },
+    { "name": "YTM equation",          "latex": "P = \\sum_{t=1}^{N} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^N}", "plain": "Solve for r — the IRR of the cash flow stream" },
+    { "name": "BEY to EAY",            "latex": "EAY = \\left(1 + \\frac{BEY}{2}\\right)^2 - 1", "plain": "Convert semi-annual bond-equivalent yield to effective annual" },
+    { "name": "Bank discount yield",   "latex": "r_{BD} = \\frac{F - P}{F} \\cdot \\frac{360}{t}", "plain": "T-bill US convention; understates true return" },
+    { "name": "Money market yield",    "latex": "r_{MM} = \\frac{F - P}{P} \\cdot \\frac{360}{t}", "plain": "Holding period basis, 360-day year" },
+    { "name": "BEY from HPY",          "latex": "BEY = HPY \\cdot \\frac{365}{t}", "plain": "Annualise on 365-day basis for cross-instrument comparison" }
+  ],
+  "examples": [
+    {
+      "title": "YTM from price — semi-annual coupon bond",
+      "body": "**Question.** A bond pays £30 semi-annual coupons on £1,000 face, matures in 10 years. Price = £1,050. Find YTM (BEY).\n\n**Setup.** $C = 30$, $N = 20$ periods, $F = 1{,}000$, $P = 1{,}050$. Solve for periodic $r$ in:\n\n$$1{,}050 = 30 \\cdot \\frac{1 - (1+r)^{-20}}{r} + \\frac{1{,}000}{(1+r)^{20}}$$\n\n**By iteration / financial calculator:** periodic $r \\approx 2.68\\%$.\n\n**BEY:** $2 \\cdot 2.68\\% = 5.36\\%$.\n\n**Answer.** YTM ≈ **5.36% BEY**.\n\nNote: coupon rate is 6% (30 × 2 / 1000), but YTM is lower because the bond trades at a premium (P > F)."
+    },
+    {
+      "title": "Current yield vs YTM",
+      "body": "**Scenario.** A 5% coupon bond, £1,000 face, currently priced at £900.\n\n**Current yield:** $50 / 900 = 5.56\\%$.\n\n**YTM** (assume 4 years to maturity, annual coupon): Solve for $r$ where $900 = 50 \\cdot \\text{annuity}(r, 4) + 1{,}000 / (1+r)^4$. Result: $r \\approx 8.06\\%$.\n\n**Why are they different?** YTM captures the **capital gain** (price will rise from £900 toward £1,000 as maturity nears). Current yield doesn't.\n\n**Rule of thumb.**\n- Premium bond ($P > F$): CY > Coupon > YTM\n- Par bond ($P = F$): CY = Coupon = YTM\n- Discount bond ($P < F$): CY < Coupon < YTM"
+    },
+    {
+      "title": "Z-spread vs OAS for a callable bond",
+      "body": "**Scenario.** A 10-year corporate bond with a 4-year call provision. The market price implies:\n- Z-spread: 200 bp over the Treasury curve\n- OAS: 150 bp\n\n**Interpretation.** The 50 bp gap is the **embedded call's cost to the bondholder**. The issuer benefits from being able to call (refinance at lower rates if they fall) — this option is valuable to the issuer and *costly* to the bondholder.\n\nThe 'pure' credit + liquidity spread is the 150 bp OAS. The other 50 bp is reservation for the option exposure.\n\n**Trading implication.** When comparing callable bonds across issuers, use OAS — not Z-spread. Z-spread overstates the apparent yield premium because part of it compensates for short option exposure, not credit risk."
+    },
+    {
+      "title": "Money-market yield conversion",
+      "body": "**Question.** A 91-day T-bill is sold at £99.20 per £100 face value. Compute the bank discount yield, money market yield, and BEY.\n\n**Bank discount yield:** $\\frac{100 - 99.20}{100} \\cdot \\frac{360}{91} = 0.008 \\cdot 3.956 = 3.16\\%$.\n\n**HPY:** $\\frac{100 - 99.20}{99.20} = 0.806\\%$.\n\n**Money market yield:** $0.806\\% \\cdot \\frac{360}{91} = 3.19\\%$.\n\n**BEY:** $0.806\\% \\cdot \\frac{365}{91} = 3.23\\%$.\n\n**Lesson.** All three describe the same instrument but produce different numbers — 3.16%, 3.19%, 3.23%. The differences come from numerator base (Face vs Price) and day count (360 vs 365). The **BEY** is what to use when comparing to bond yields."
+    }
+  ],
+  "pitfalls": [
+    "**Comparing semi-annual YTM directly to annual YTM** without conversion. A 5% semi-annual is 5.06% effective annual, not 5%.",
+    "**Treating current yield as 'real' return.** It misses the price-to-par convergence over time. Discount bonds earn capital gain; premium bonds earn capital loss.",
+    "**Using Z-spread for callable bonds.** The option cost confounds the credit-spread comparison. Always use OAS for callables.",
+    "**Confusing yield with return.** Yield is what the bond *would* deliver if held to maturity at unchanged rates. Actual realised return depends on reinvestment rates and any sale before maturity.",
+    "**Money-market yield mismatch.** Comparing a 360-day discount-basis T-bill yield to a 365-day bond yield without conversion will systematically understate the T-bill's effective rate.",
+    "**Forgetting accrued interest in yield calculations.** Yield should use flat price (so the calculation isn't distorted by where you are in the coupon cycle)."
+  ],
+  "faq": [
+    {
+      "q": "Why is YTM treated as an 'IRR' rather than a simple return?",
+      "a": "Because the bond's cash flows occur at multiple dates — coupons over the bond's life plus the face redemption at maturity. There's no single 'return' that summarises all of them except the discount rate that makes them all consistent with the current price.\n\nThat discount rate is YTM = IRR of cash flows. It implicitly assumes coupons are reinvested at the same rate — which won't be true if interest rates change. This is the **reinvestment-rate assumption** of YTM; in practice, realised return can differ from YTM."
+    },
+    {
+      "q": "When does yield to worst matter most?",
+      "a": "For callable bonds, especially in falling-rate environments where call is likely.\n\nIf rates fall significantly after issuance, the issuer will exercise the call to refinance at the lower rate — capturing the savings for themselves. The bondholder gets the call payment but loses the high-yielding bond and reinvests at lower rates.\n\nFor a buyer of a callable: assume the worst case for you = the issuer's best case. That's **yield to worst** = minimum of YTM and all yield-to-calls. If your analysis is based on YTM but the bond gets called early at lower-yielding refinance, you've overestimated your return."
+    },
+    {
+      "q": "What's the practical difference between Z-spread and G-spread?",
+      "a": "**G-spread** is computed against a single comparable government bond — typically the on-the-run Treasury of similar maturity. Simple but ignores curve shape.\n\n**Z-spread** is a constant addition to the entire spot-rate curve. More accurate when the bond has cash flows spread across multiple maturities and the curve is non-flat.\n\nFor a 10-year bullet bond, the two will be close (especially with a flat curve). For amortising or stepped bonds, Z-spread is the more rigorous measure. In modern practice, Z-spread (or OAS) is the standard for institutional credit analysis."
+    },
+    {
+      "q": "Why do US T-bills use 360-day discount yield when bonds use 365-day BEY?",
+      "a": "Pure historical convention. The 360-day discount yield dates back to commercial-paper conventions where 30-day months × 12 = 360-day years simplified manual calculation. Bonds adopted 365-day conventions consistent with calendar years.\n\nThe practical effect: T-bill quotes look misleadingly low. A T-bill quoted at 3% discount yield is actually closer to 3.05% money-market yield, 3.1% BEY, 3.13% EAY. Always convert to a common basis when comparing across instruments — never compare a T-bill quote directly to a corporate bond yield."
+    }
+  ],
+  "resources": [
+    { "label": "Investopedia — Yield to Maturity", "url": "https://www.investopedia.com/terms/y/yieldtomaturity.asp", "kind": "read" },
+    { "label": "Investopedia — Option-Adjusted Spread (OAS)", "url": "https://www.investopedia.com/terms/o/optionadjustedspread.asp", "kind": "read" }
+  ]
+}

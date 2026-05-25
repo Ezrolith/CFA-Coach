@@ -18,7 +18,7 @@ export default function HomePage() {
   const counts = totalCounts();
   const days = daysUntilExam();
   const authored = authoredLessonIds().map(id => findLesson(id)).filter(Boolean);
-  const { studiedIds, quizResults } = useGlobalProgress();
+  const { studiedIds, quizResults, streak, activeDays } = useGlobalProgress();
   const quizzesTaken = Object.values(quizResults).reduce((s, r) => s + (r.takenCount ?? 0), 0);
   const avgBestPct = (() => {
     const values = Object.values(quizResults).map(r => r.bestPct ?? 0);
@@ -51,10 +51,11 @@ export default function HomePage() {
         </div>
 
         {(studiedIds.length > 0 || quizzesTaken > 0) && (
-          <div className="mt-3 grid grid-cols-2 md:grid-cols-3 gap-px bg-ink-200/60 dark:bg-ink-800/60 rounded-2xl overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
+          <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-px bg-ink-200/60 dark:bg-ink-800/60 rounded-2xl overflow-hidden border border-ink-200/60 dark:border-ink-800/60">
+            <Stat label="Day streak"       value={streak} suffix={streak === 1 ? 'd' : 'd'} accent={streak > 0} />
             <Stat label="Lessons studied"  value={studiedIds.length} />
             <Stat label="Quizzes taken"    value={quizzesTaken} />
-            <Stat label="Avg best score"   value={avgBestPct === null ? '—' : `${avgBestPct}%`} accent />
+            <Stat label="Avg best score"   value={avgBestPct === null ? '—' : `${avgBestPct}%`} />
           </div>
         )}
       </section>

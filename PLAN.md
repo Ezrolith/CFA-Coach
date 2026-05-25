@@ -1,6 +1,6 @@
 # CFA-Coach — Master Plan
 
-> v0.7 — updated 2026-05-25. **Phases 1, 2, 3, 5, 6, 7, 9, 11 shipped + Phases 4/10/12 in progress.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
+> v0.8 — updated 2026-05-25. **All 12 phases now have shipped functionality.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
 
 ## Status
 
@@ -9,15 +9,15 @@
 | 1 — Foundation | ✅ Shipped | Vite + React + Tailwind, Firebase project `cfa-coach-app`, deployed |
 | 2 — Curriculum skeleton | ✅ Shipped | 10 topics · 93 modules · **327 LOS** with verb pills + draft flags |
 | 3 — Lesson content viewer | ✅ Shipped | Markdown + KaTeX, three-mode tabs, formulas / examples / pitfalls / FAQ / resources |
-| 4 — Content authoring | 🟡 In progress | **10 lessons fully authored** (TVM, Rates & Returns, Ethics I, Eq Val, FRA Inc Stmts, PM Risk II, FI Bond Val, Deriv Options, Cap Structure, Monetary Policy). ~317 LOS still to write |
-| 5 — Quiz engine | ✅ Shipped | Player works, **60 questions** across 9 topics |
-| 6 — Spaced repetition | ✅ Shipped | **Full SM-2 algorithm** wired; quiz scores auto-feed; manual rating on /review page; daily-due queue |
+| 4 — Content authoring | 🟡 18 lessons | TVM · Rates & Returns · Ethics I · Ethics III · Eq Val · Eq Mkt Efficiency · FRA Inc Stmts · FRA Balance Sheet · PM Risk I · PM Risk II · FI Bond Val · FI Yield Measures · Derivatives Options · Cap Structure · Monetary Policy · Alts Features · Quant Stat Measures · Corp Working Capital. ~310 LOS remain. |
+| 5 — Quiz engine | ✅ Shipped | **108 questions** across all 10 topics. Random shuffle, submit, explanation, results. |
+| 6 — Spaced repetition | ✅ Shipped | Full SM-2 algorithm; quiz scores auto-feed; manual rating on /review; daily-due queue; **streak tracking** |
 | 7 — Progress dashboard | ✅ Shipped | Per-topic heatmap, readiness %, quiz performance, suggested focus |
-| 8 — Content sprint #2 (Alts/more topics) | ⏳ Next | |
+| 8 — Content sprint #2 | ✅ Merged into 4 | The remaining authoring is one continuous backlog |
 | 9 — Mock exam | ✅ Shipped | 30-Q scaled simulation, topic weighting, timer, flag, by-topic results |
-| 10 — PWA + mobile polish | 🟡 Mostly shipped | Manifest + service worker + **mobile drawer nav** |
-| 11 — Settings + theme | ✅ Shipped | Dark/Light/System theme toggle + reset-progress button |
-| 12 — Polish + drills | 🟡 Started | **Formula drill mode** with 53 cards across all authored lessons |
+| 10 — PWA + mobile | ✅ Shipped | Manifest + service worker + mobile drawer nav |
+| 11 — Settings + theme | ✅ Shipped | Dark/Light/System theme + reset progress |
+| 12 — Polish + drills | ✅ Shipped | **Formula drill** (86 cards) + **Ethics scenario drill** (10 scenarios) |
 
 
 ---

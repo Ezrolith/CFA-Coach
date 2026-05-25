@@ -2,6 +2,84 @@
   "topicId": "corp-issuers",
   "questions": [
     {
+      "id": "q-corp-wc-001",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "easy",
+      "stem": "A retailer has DSO of 30 days, DIO of 80 days, and DPO of 50 days. Its cash conversion cycle is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "60 days" },
+        { "id": "B", "text": "100 days" },
+        { "id": "C", "text": "160 days" }
+      ],
+      "answer": "A",
+      "explanation": "$CCC = DSO + DIO - DPO = 30 + 80 - 50 = 60$ days.\n\n**B** would be DSO + DIO ignoring DPO benefit.\n\n**C** would be the sum without netting against payables."
+    },
+    {
+      "id": "q-corp-wc-002",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "medium",
+      "stem": "A supplier offers terms 2/10 net 30. The implied annualised cost of foregoing the discount is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "2.0%" },
+        { "id": "B", "text": "24.5%" },
+        { "id": "C", "text": "37.2%" }
+      ],
+      "answer": "C",
+      "explanation": "Cost $= (0.02/0.98) \\cdot (365/(30 - 10)) = 0.0204 \\cdot 18.25 = 37.2\\%$ annualised.\n\n**A** is just the discount itself, not annualised.\n\n**B** is a common but incorrect simple-interest approximation."
+    },
+    {
+      "id": "q-corp-wc-003",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "medium",
+      "stem": "A negative cash conversion cycle *most likely* indicates that:",
+      "choices": [
+        { "id": "A", "text": "The firm is in financial distress and cannot pay its bills." },
+        { "id": "B", "text": "The firm collects from customers before paying suppliers — supplier credit funds operations." },
+        { "id": "C", "text": "The firm has run out of inventory." }
+      ],
+      "answer": "B",
+      "explanation": "Negative CCC = DPO > DSO + DIO. The firm pays suppliers *after* receiving cash from customers, so working capital becomes a source of cash rather than a use. Companies with significant bargaining power (Apple, supermarkets) often achieve this.\n\n**A** confuses negative NWC with negative CCC — they're different concepts.\n\n**C** isn't a meaningful interpretation."
+    },
+    {
+      "id": "q-corp-wc-004",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "easy",
+      "stem": "Which of the following is *most likely* a *primary* source of liquidity for a corporation?",
+      "choices": [
+        { "id": "A", "text": "A new bond issuance to public markets." },
+        { "id": "B", "text": "Collection of accounts receivable in the normal course of business." },
+        { "id": "C", "text": "Sale of a piece of fixed PP&E asset." }
+      ],
+      "answer": "B",
+      "explanation": "Primary sources = liquidity from normal operations (cash holdings, A/R collection, inventory turnover). Secondary sources = external action (issuance, asset sales, lines of credit).\n\n**A** and **C** are secondary sources. Reliance on these for routine operations signals distress."
+    },
+    {
+      "id": "q-corp-wc-005",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "medium",
+      "stem": "A firm's net working capital is positive but its cash conversion cycle is *very long* (90+ days). The *most likely* implication is:",
+      "choices": [
+        { "id": "A", "text": "The firm has strong supplier credit terms but weak collection from customers." },
+        { "id": "B", "text": "Significant cash is tied up in receivables and/or inventory, even though short-term ratios look healthy." },
+        { "id": "C", "text": "The firm is in immediate liquidity crisis." }
+      ],
+      "answer": "B",
+      "explanation": "Long CCC means substantial cash is tied up in receivables + inventory minus payables. The firm needs to finance this gap, even if NWC ratios look fine. This is a working-capital-intensive business — capital-intensive growth.\n\n**A** is the opposite — short DPO with long DSO/DIO would do this, but it's not the *most* common reason.\n\n**C** overstates — long CCC is a *characteristic* of certain industries (pharma, heavy industrial), not a crisis signal."
+    },
+    {
+      "id": "q-corp-wc-006",
+      "lessonId": "corp-wc-overview",
+      "difficulty": "hard",
+      "stem": "A retailer's revenue per day is £2m. Daily working capital tied up = CCC × daily revenue. If the firm can reduce its CCC from 50 days to 40 days, the *one-time cash release* is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£10m" },
+        { "id": "B", "text": "£20m" },
+        { "id": "C", "text": "£100m" }
+      ],
+      "answer": "B",
+      "explanation": "Cash released = ΔCCC × Daily Revenue = (50 - 40) × £2m = **£20m** one-time freed up from operations.\n\n**A** uses ΔCCC of 5 days.\n\n**C** uses the full CCC of 50 days (not the change)."
+    },
+    {
       "id": "q-corp-cs-001",
       "lessonId": "corp-cs-overview",
       "difficulty": "easy",
