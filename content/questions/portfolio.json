@@ -2,6 +2,396 @@
   "topicId": "portfolio",
   "questions": [
     {
+      "id": "q-pm-mgmt-001",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "easy",
+      "stem": "In a *defined benefit (DB)* pension plan, the investment risk *most likely* falls on:",
+      "choices": [
+        { "id": "A", "text": "The employee/plan participant." },
+        { "id": "B", "text": "The employer/plan sponsor." },
+        { "id": "C", "text": "The pension regulator." }
+      ],
+      "answer": "B",
+      "explanation": "DB plans promise specific benefits — employer is responsible for funding shortfalls. DC plans (the opposite) place risk on employees.\n\n**A** describes DC. **C** is incorrect — regulators oversee but don't bear investment risk."
+    },
+    {
+      "id": "q-pm-mgmt-002",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "medium",
+      "stem": "Brinson, Hood, and Beebower (1986) *most famously* found that:",
+      "choices": [
+        { "id": "A", "text": "Security selection drives ~90% of return variation." },
+        { "id": "B", "text": "Asset allocation drives ~90% of return variation across pension funds." },
+        { "id": "C", "text": "Market timing is the most important driver." }
+      ],
+      "answer": "B",
+      "explanation": "The classic Brinson study finding: ~90% of return variation across funds is from asset allocation; ~5% from security selection; ~5% from market timing.\n\nImplication: strategic allocation matters most.\n\n**A** and **C** reverse the finding."
+    },
+    {
+      "id": "q-pm-mgmt-003",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "easy",
+      "stem": "Compared to mutual funds, ETFs *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Trade continuously on exchanges, have lower fees, and are typically more tax-efficient." },
+        { "id": "B", "text": "Are only available to institutional investors." },
+        { "id": "C", "text": "Are always actively managed." }
+      ],
+      "answer": "A",
+      "explanation": "ETFs trade intraday like stocks, generally have lower expense ratios than equivalent mutual funds, and use in-kind redemptions for greater tax efficiency.\n\n**B** is incorrect — ETFs are open to all.\n**C** is incorrect — most ETFs are passive, though active ETFs are growing."
+    },
+    {
+      "id": "q-pm-mgmt-004",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "medium",
+      "stem": "The *three phases* of portfolio management are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Planning, execution, feedback." },
+        { "id": "B", "text": "Stocks, bonds, alternatives." },
+        { "id": "C", "text": "Buy, hold, sell." }
+      ],
+      "answer": "A",
+      "explanation": "Standard portfolio management cycle: planning (objectives, IPS, allocation) → execution (security selection, trading) → feedback (performance review, rebalancing).\n\n**B** describes asset classes. **C** describes basic trading actions."
+    },
+    {
+      "id": "q-pm-mgmt-005",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "medium",
+      "stem": "Passive management has *most likely* gained market share in:",
+      "choices": [
+        { "id": "A", "text": "US large-cap equity, where markets are highly efficient." },
+        { "id": "B", "text": "Distressed debt, where information asymmetry is greatest." },
+        { "id": "C", "text": "Emerging market frontier debt, where indices barely exist." }
+      ],
+      "answer": "A",
+      "explanation": "Passive dominates in highly efficient markets where active managers struggle to beat the index net of fees. US large-cap is the canonical example.\n\n**B** and **C** are inefficient markets where active still has potential edge — and where indices are harder to construct."
+    },
+    {
+      "id": "q-pm-mgmt-006",
+      "lessonId": "pm-mgmt-overview",
+      "difficulty": "easy",
+      "stem": "Strategic asset allocation (SAA) is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "A short-term tactical adjustment around the long-term target." },
+        { "id": "B", "text": "The long-term target mix of asset classes for a portfolio." },
+        { "id": "C", "text": "An algorithmic trading strategy." }
+      ],
+      "answer": "B",
+      "explanation": "SAA = long-term target. TAA = short-term tactical adjustments around it. Most return variation comes from SAA per Brinson.\n\n**A** describes TAA. **C** is unrelated."
+    },
+    {
+      "id": "q-pm-basics-001",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "medium",
+      "stem": "An Investment Policy Statement (IPS) *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Purpose, objectives, constraints, guidelines, and evaluation processes." },
+        { "id": "B", "text": "Only quantitative return targets." },
+        { "id": "C", "text": "Detailed trading algorithms." }
+      ],
+      "answer": "A",
+      "explanation": "IPS includes: purpose, duties/responsibilities, objectives (return + risk), constraints (LLTTU), guidelines (asset classes, ranges), and evaluation processes.\n\n**B** is incomplete — risk and constraints are essential.\n**C** is implementation detail, not IPS content."
+    },
+    {
+      "id": "q-pm-basics-002",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "medium",
+      "stem": "When *willingness* and *ability* to take risk diverge, the *most appropriate* approach is:",
+      "choices": [
+        { "id": "A", "text": "Use the higher of the two as the guide." },
+        { "id": "B", "text": "Use the lower of the two as the guide." },
+        { "id": "C", "text": "Average them mathematically." }
+      ],
+      "answer": "B",
+      "explanation": "The lower governs. A high-ability investor with low willingness will panic-sell at the wrong time; a low-ability investor with high willingness may take risks they can't afford to lose on.\n\n**A** ignores the constraint. **C** is arbitrary."
+    },
+    {
+      "id": "q-pm-basics-003",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "easy",
+      "stem": "Investment constraints under the LLTTU acronym *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Liquidity, Time horizon, Taxes, Legal/Regulatory, Unique circumstances." },
+        { "id": "B", "text": "Leverage, Liquidity, Turnover, Total return, Underwriting." },
+        { "id": "C", "text": "Loss, Liability, Tracking error, Total cost, Underweight." }
+      ],
+      "answer": "A",
+      "explanation": "LLTTU: **L**iquidity, **L**egal/regulatory, **T**ime horizon, **T**axes, **U**nique circumstances. Standard CFA framework for investment constraints.\n\n**B** and **C** are not the LLTTU acronym."
+    },
+    {
+      "id": "q-pm-basics-004",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "hard",
+      "stem": "A young, high-earning investor with limited investment experience and high anxiety about losses *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "High ability and high willingness → should take high risk." },
+        { "id": "B", "text": "High ability and low willingness → should take moderate risk." },
+        { "id": "C", "text": "Low ability and high willingness → should take low risk." }
+      ],
+      "answer": "B",
+      "explanation": "Young + high earner = high ability (long horizon, future earnings).\nLimited experience + anxiety = low willingness.\nLower of two governs → moderate risk is appropriate.\n\nTaking high risk despite low willingness leads to panic-selling at losses.\n\n**A** ignores willingness. **C** has ability wrong."
+    },
+    {
+      "id": "q-pm-basics-005",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "medium",
+      "stem": "An IPS should be reviewed *most appropriately*:",
+      "choices": [
+        { "id": "A", "text": "Once per decade." },
+        { "id": "B", "text": "At minimum annually, plus after material life events." },
+        { "id": "C", "text": "Only when performance falls short of target." }
+      ],
+      "answer": "B",
+      "explanation": "Annual review is standard, with additional reviews triggered by major life events (job change, divorce, inheritance, retirement). Performance-driven reviews are reactive and miss circumstance changes.\n\n**A** is too infrequent. **C** is reactive only."
+    },
+    {
+      "id": "q-pm-basics-006",
+      "lessonId": "pm-basics-overview",
+      "difficulty": "easy",
+      "stem": "Rebalancing a portfolio *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Selling assets that have grown beyond target weights and buying those below target." },
+        { "id": "B", "text": "Selling all positions and re-buying." },
+        { "id": "C", "text": "Adding new asset classes." }
+      ],
+      "answer": "A",
+      "explanation": "Rebalancing restores target weights by selling overweight positions (often recent winners) and buying underweight (often recent losers). Forces 'sell high, buy low' discipline.\n\n**B** is excessive; you only trade enough to restore target. **C** is asset allocation changes, not rebalancing."
+    },
+    {
+      "id": "q-pm-bb-001",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "medium",
+      "stem": "The *disposition effect* describes investors' tendency to:",
+      "choices": [
+        { "id": "A", "text": "Hold losing positions too long and sell winning positions too quickly." },
+        { "id": "B", "text": "Sell losing positions too quickly and hold winning positions too long." },
+        { "id": "C", "text": "Trade based on technical indicators rather than fundamentals." }
+      ],
+      "answer": "A",
+      "explanation": "Disposition effect: driven by loss aversion (losses hurt 2× as much as equivalent gains). Investors hold losers to avoid 'realising' the loss and sell winners to 'lock in' the gain.\n\nResult: tax-inefficient and behaviourally suboptimal.\n\n**B** is the rational/correct behaviour, not the empirical pattern.\n**C** is unrelated."
+    },
+    {
+      "id": "q-pm-bb-002",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "easy",
+      "stem": "Cognitive errors *most likely* differ from emotional biases because:",
+      "choices": [
+        { "id": "A", "text": "Cognitive errors are reducible through education and structured processes; emotional biases are harder to fully correct." },
+        { "id": "B", "text": "Cognitive errors only affect institutional investors." },
+        { "id": "C", "text": "Emotional biases are fully addressable through more data analysis." }
+      ],
+      "answer": "A",
+      "explanation": "Cognitive errors (faulty reasoning) can be reduced with awareness, checklists, and structured decision processes. Emotional biases (feelings) are deeper and require structural interventions (auto-rebalancing, pre-commitment).\n\n**B** is incorrect — biases affect all investors.\n**C** misreads the nature of emotional biases."
+    },
+    {
+      "id": "q-pm-bb-003",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "medium",
+      "stem": "Anchoring bias *most likely* manifests when an investor:",
+      "choices": [
+        { "id": "A", "text": "Bases the valuation of a stock on its previous high price, rather than on forward fundamentals." },
+        { "id": "B", "text": "Diversifies their portfolio across many assets." },
+        { "id": "C", "text": "Rebalances to target weights regularly." }
+      ],
+      "answer": "A",
+      "explanation": "Anchoring: starting from a reference point (e.g., previous high) and insufficiently adjusting based on new information. Leads to 'this was £200, now it's £100, so it must be cheap' even when forward fundamentals have permanently weakened.\n\n**B** and **C** are positive behaviours, not anchoring."
+    },
+    {
+      "id": "q-pm-bb-004",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "easy",
+      "stem": "Loss aversion *most accurately* describes:",
+      "choices": [
+        { "id": "A", "text": "Investors weigh losses approximately twice as heavily as equivalent gains." },
+        { "id": "B", "text": "Investors are rational and indifferent between equal-magnitude gains and losses." },
+        { "id": "C", "text": "Investors prefer high-volatility investments." }
+      ],
+      "answer": "A",
+      "explanation": "Loss aversion: ~2× ratio for losses vs equivalent gains (Kahneman & Tversky). Drives prospect theory and the disposition effect.\n\n**B** is the rational assumption that empirical evidence contradicts.\n**C** describes risk-seeking, which is rare."
+    },
+    {
+      "id": "q-pm-bb-005",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "medium",
+      "stem": "Empirical research shows that overconfident investors *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Trade more frequently and underperform after costs." },
+        { "id": "B", "text": "Achieve consistently superior returns due to bold positioning." },
+        { "id": "C", "text": "Hold cash for longer periods than warranted." }
+      ],
+      "answer": "A",
+      "explanation": "Barber and Odean's research: overconfident investors trade more, but trading costs and behavioural errors (often selling at lows, buying at highs) erode returns. Net result: underperformance.\n\n**B** is the overconfident self-image; the evidence is the opposite.\n**C** is unrelated."
+    },
+    {
+      "id": "q-pm-bb-006",
+      "lessonId": "pm-bb-overview",
+      "difficulty": "hard",
+      "stem": "Effective behavioural mitigation in portfolio management *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Pre-committed rules in a written IPS, structural safeguards (auto-rebalancing), and disciplined process." },
+        { "id": "B", "text": "Trusting your gut on each decision." },
+        { "id": "C", "text": "Avoiding all market participation to escape biases." }
+      ],
+      "answer": "A",
+      "explanation": "Behavioural mitigation: structures that prevent bad decisions in moments of weakness. Written IPS pre-commits to allocation. Auto-rebalancing removes individual rebalancing decisions. Decision rules counter emotional reactions.\n\n**B** is the source of behavioural problems.\n**C** is impractical and would forego all expected returns."
+    },
+    {
+      "id": "q-pm-rm-001",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "medium",
+      "stem": "Value at Risk (VaR) *most directly* measures:",
+      "choices": [
+        { "id": "A", "text": "The maximum loss expected at a given confidence level over a given period." },
+        { "id": "B", "text": "The average loss in the worst-case scenarios beyond the VaR threshold." },
+        { "id": "C", "text": "The annualised volatility of returns." }
+      ],
+      "answer": "A",
+      "explanation": "VaR: loss not expected to be exceeded with X% confidence over Y period. E.g., 95% 1-day VaR of £1m means 95% of days won't lose more than £1m.\n\n**B** describes CVaR / Expected Shortfall.\n**C** describes standard deviation."
+    },
+    {
+      "id": "q-pm-rm-002",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "medium",
+      "stem": "Conditional Value at Risk (CVaR) *most likely* improves upon VaR by:",
+      "choices": [
+        { "id": "A", "text": "Capturing the average magnitude of losses in the tail beyond the VaR threshold." },
+        { "id": "B", "text": "Replacing variance as a risk measure." },
+        { "id": "C", "text": "Being easier to compute than VaR." }
+      ],
+      "answer": "A",
+      "explanation": "VaR tells you the loss at the threshold; it doesn't tell you how bad losses get in the worst-case tail. CVaR (Expected Shortfall) is the average loss in those tail scenarios — captures tail magnitude.\n\n**B** is partly true but not the main improvement over VaR.\n**C** is incorrect — CVaR is generally harder to compute than VaR."
+    },
+    {
+      "id": "q-pm-rm-003",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "easy",
+      "stem": "The 'three lines of defence' model for risk management *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Business units (1st), risk management function (2nd), internal audit (3rd)." },
+        { "id": "B", "text": "Front office, middle office, back office." },
+        { "id": "C", "text": "External auditors, regulators, board." }
+      ],
+      "answer": "A",
+      "explanation": "Three lines of defence: business owns its risks (1st), risk function challenges and oversees (2nd), internal audit independently assures (3rd).\n\n**B** describes operational structure, not risk governance.\n**C** describes external oversight."
+    },
+    {
+      "id": "q-pm-rm-004",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "medium",
+      "stem": "Stress testing *most likely* differs from VaR analysis because:",
+      "choices": [
+        { "id": "A", "text": "Stress testing examines specific scenarios; VaR uses statistical assumptions about distribution." },
+        { "id": "B", "text": "Stress testing is performed by regulators only." },
+        { "id": "C", "text": "VaR is more commonly used for extreme tail events." }
+      ],
+      "answer": "A",
+      "explanation": "Stress tests: specific scenarios (2008 crash, COVID shock, etc.) applied to the portfolio. Useful for tail events that statistical models might not capture.\n\nVaR: relies on historical or assumed distribution; can understate tails if distribution is fat-tailed.\n\n**B** is incorrect — stress testing is widely used internally.\n**C** is the opposite of typical use — stress testing better captures extremes."
+    },
+    {
+      "id": "q-pm-rm-005",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "medium",
+      "stem": "In a financial crisis, correlations between asset classes *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Decline toward zero, providing diversification benefits." },
+        { "id": "B", "text": "Increase toward 1, reducing diversification benefits when most needed." },
+        { "id": "C", "text": "Stay constant — correlations don't change over time." }
+      ],
+      "answer": "B",
+      "explanation": "'Correlation breakdown': in crises, asset classes that normally diversify each other tend to sell off together. Investors raise cash; risk assets fall in tandem. Diversification fails exactly when needed.\n\nExamples: 2008, March 2020, 2022. Even bonds and equities fell together in 2022.\n\n**A** is the opposite of empirical evidence.\n**C** ignores regime shifts."
+    },
+    {
+      "id": "q-pm-rm-006",
+      "lessonId": "pm-rm-overview",
+      "difficulty": "easy",
+      "stem": "The four broad ways to *modify* an identified risk are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Accept, avoid, mitigate, transfer." },
+        { "id": "B", "text": "Ignore, hide, blame, escalate." },
+        { "id": "C", "text": "Buy, sell, hold, hedge." }
+      ],
+      "answer": "A",
+      "explanation": "Standard risk modification framework: accept (live with it), avoid (don't engage), mitigate (reduce via diversification/hedging), transfer (insurance, derivatives).\n\n**B** describes dysfunctional reactions.\n**C** is specific trading actions, not risk modification categories."
+    },
+    {
+      "id": "q-pm-fin-001",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "easy",
+      "stem": "Alternative data sources for investment analysis *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "10-K filings and earnings releases." },
+        { "id": "B", "text": "Satellite imagery, credit card transactions, web traffic, social media sentiment." },
+        { "id": "C", "text": "Standard analyst reports." }
+      ],
+      "answer": "B",
+      "explanation": "Alternative data = non-traditional sources beyond filings and reports. Includes satellite imagery (count cars in parking lots), credit card data (consumer spending), web traffic (e-commerce health), social media (sentiment).\n\n**A** and **C** are traditional data sources."
+    },
+    {
+      "id": "q-pm-fin-002",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "medium",
+      "stem": "A robo-advisor *most likely* provides:",
+      "choices": [
+        { "id": "A", "text": "Automated portfolio management with algorithmic allocation, low fees, and rebalancing." },
+        { "id": "B", "text": "Complex estate and tax planning services." },
+        { "id": "C", "text": "Active stock selection by human portfolio managers." }
+      ],
+      "answer": "A",
+      "explanation": "Robo-advisors: questionnaire → algorithmic allocation → ETF-based portfolio → auto-rebalancing → 15-30 bp fees. Strong fit for mass-market simple needs.\n\n**B** describes services for HNW clients; robo-advisors don't typically provide these.\n**C** is human active management."
+    },
+    {
+      "id": "q-pm-fin-003",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "medium",
+      "stem": "A key risk of using machine learning models in investment management is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Overfitting — the model fits past data but doesn't generalise to new data." },
+        { "id": "B", "text": "ML models always outperform humans." },
+        { "id": "C", "text": "ML cannot be applied to unstructured data." }
+      ],
+      "answer": "A",
+      "explanation": "Overfitting is a fundamental ML risk: model captures noise in training data rather than true signal. Out-of-sample performance often disappoints.\n\nRelated risks: data snooping, black-box (lack of explainability), concept drift.\n\n**B** is empirically false — humans + ML beats either alone in most contexts.\n**C** is incorrect — ML excels at unstructured data (text, images)."
+    },
+    {
+      "id": "q-pm-fin-004",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "easy",
+      "stem": "Blockchain / distributed ledger technology *most likely* has applications in:",
+      "choices": [
+        { "id": "A", "text": "Securities settlement, custody, tokenisation of real-world assets." },
+        { "id": "B", "text": "Replacing all traditional asset classes." },
+        { "id": "C", "text": "Eliminating the need for regulation entirely." }
+      ],
+      "answer": "A",
+      "explanation": "Realistic blockchain applications: faster settlement (T+0 vs T+2), cryptographic custody, tokenisation enabling fractional ownership of traditional assets, smart contracts for automated execution.\n\n**B** overstates — crypto/blockchain complement rather than replace traditional assets.\n**C** misunderstands; regulators are active in the crypto/DLT space."
+    },
+    {
+      "id": "q-pm-fin-005",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "medium",
+      "stem": "Robo-advisors are *most likely* a poor fit for:",
+      "choices": [
+        { "id": "A", "text": "Young accumulators with simple retirement saving needs." },
+        { "id": "B", "text": "High-net-worth individuals with complex tax, estate, and multi-jurisdictional planning needs." },
+        { "id": "C", "text": "Mass-market investors with limited assets." }
+      ],
+      "answer": "B",
+      "explanation": "Robo-advisors fit simple cases well. Complex situations (HNW, multi-jurisdictional, complex tax/estate planning, illiquid holdings) need human expertise beyond algorithmic allocation.\n\n**A** and **C** are core robo-advisor markets."
+    },
+    {
+      "id": "q-pm-fin-006",
+      "lessonId": "pm-fin-overview",
+      "difficulty": "hard",
+      "stem": "An asset manager using machine learning models *most appropriately* should:",
+      "choices": [
+        { "id": "A", "text": "Treat them as black-box oracles to follow without question." },
+        { "id": "B", "text": "Validate models, monitor for concept drift, maintain explainability, and apply judgement overlay." },
+        { "id": "C", "text": "Avoid all ML applications until regulation is fully clarified." }
+      ],
+      "answer": "B",
+      "explanation": "ML governance: model validation, ongoing monitoring (concept drift = relationships changing), explainability (regulators and clients increasingly require), human judgement layered over algorithmic output.\n\n**A** is irresponsible.\n**C** ignores the genuine value ML can add when properly governed."
+    },
+    {
       "id": "q-pm-rr1-001",
       "lessonId": "pm-rr1-overview",
       "difficulty": "medium",
