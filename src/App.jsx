@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import TopicPage from './pages/TopicPage';
 import LessonPage from './pages/LessonPage';
 import QuizPage from './pages/QuizPage';
+import ProgressPage from './pages/ProgressPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -31,14 +32,7 @@ export default function App() {
               phase="9"
             />
           }/>
-          <Route path="/progress" element={
-            <PlaceholderPage
-              eyebrow="Progress"
-              title="See exactly where you stand."
-              body="Heatmap of confidence across every topic and module, streaks, study time, and a predicted-readiness score that updates as you go."
-              phase="7"
-            />
-          }/>
+          <Route path="/progress" element={<ProgressPage />} />
           <Route path="/settings" element={
             <PlaceholderPage
               eyebrow="Settings"

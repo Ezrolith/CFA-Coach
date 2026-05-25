@@ -1,0 +1,83 @@
+{
+  "topicId": "portfolio",
+  "questions": [
+    {
+      "id": "q-pm-rr2-001",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "easy",
+      "stem": "The risk-free rate is 3%, the expected market return is 10%, and an asset has β = 0.8. Its CAPM expected return is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "5.6%" },
+        { "id": "B", "text": "8.0%" },
+        { "id": "C", "text": "8.6%" }
+      ],
+      "answer": "C",
+      "explanation": "$E(R) = R_f + \\beta (R_m - R_f) = 0.03 + 0.8 \\cdot 0.07 = 0.086 = 8.6\\%$.\n\n**A** is just $\\beta \\cdot R_m$ — ignores the risk-free rate.\n\n**B** computes $\\beta \\cdot 10\\%$ — also ignores the risk-free rate baseline."
+    },
+    {
+      "id": "q-pm-rr2-002",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "medium",
+      "stem": "Which statement *best* describes the difference between the Capital Market Line (CML) and the Security Market Line (SML)?",
+      "choices": [
+        { "id": "A", "text": "CML uses total risk and applies only to efficient portfolios; SML uses systematic risk and applies to any individual asset or portfolio." },
+        { "id": "B", "text": "CML and SML measure the same thing; the two terms are interchangeable." },
+        { "id": "C", "text": "CML uses systematic risk and SML uses total risk." }
+      ],
+      "answer": "A",
+      "explanation": "CML's x-axis is total risk (σ); SML's x-axis is systematic risk (β). CML traces efficient combinations of cash and the market portfolio; SML provides the required return for **any** asset based on its beta.\n\nAn inefficient asset sits **below the CML** (because total σ exceeds what would be required for that level of systematic risk) but **on the SML** (because CAPM equilibrium requires this).\n\n**B** is incorrect — different lines, different risk measures.\n\n**C** has the axes reversed."
+    },
+    {
+      "id": "q-pm-rr2-003",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "medium",
+      "stem": "A portfolio returns 12% with σ = 16% and β = 0.9. The market returns 9% with σ = 12%. The risk-free rate is 4%. The portfolio's Sharpe ratio is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "0.50" },
+        { "id": "B", "text": "0.75" },
+        { "id": "C", "text": "0.89" }
+      ],
+      "answer": "A",
+      "explanation": "$S_p = (R_p - R_f) / \\sigma_p = (12 - 4) / 16 = 0.50$.\n\n**B** mistakenly uses market σ (12) in denominator.\n\n**C** mistakenly divides by β instead of σ — that would be Treynor (8/0.9 = 8.89), not Sharpe."
+    },
+    {
+      "id": "q-pm-rr2-004",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "hard",
+      "stem": "A portfolio has return 15%, β = 1.4. Market return is 11%, risk-free rate is 3%. Jensen's alpha is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "+0.8%" },
+        { "id": "B", "text": "+4.0%" },
+        { "id": "C", "text": "+1.2%" }
+      ],
+      "answer": "A",
+      "explanation": "CAPM required return: $R_f + \\beta(R_m - R_f) = 3 + 1.4 \\cdot 8 = 14.2\\%$.\n\nAlpha: $R_p - \\text{required} = 15 - 14.2 = 0.8\\%$.\n\n**B** is the raw excess return over market (15 − 11), ignoring the higher-than-market beta.\n\n**C** comes from using β = 1.2 by mistake."
+    },
+    {
+      "id": "q-pm-rr2-005",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "medium",
+      "stem": "A diversified large-cap equity fund will be added as a sleeve within a broader well-diversified portfolio. Which performance measure is *most appropriate* for evaluating the fund's contribution?",
+      "choices": [
+        { "id": "A", "text": "Sharpe ratio, because it measures excess return per unit of total risk." },
+        { "id": "B", "text": "Treynor ratio, because in a diversified context only systematic risk matters." },
+        { "id": "C", "text": "Standard deviation of returns alone." }
+      ],
+      "answer": "B",
+      "explanation": "When a fund is a **sub-portfolio** within a larger diversified portfolio, its idiosyncratic risk will be diversified away at the higher level. Only its systematic risk matters → use **Treynor** (systematic-risk-adjusted).\n\n**A** Sharpe would be appropriate if the fund were the entire portfolio (where total risk matters because there's nothing else to diversify against).\n\n**C** σ alone tells you nothing about return."
+    },
+    {
+      "id": "q-pm-rr2-006",
+      "lessonId": "pm-rr2-overview",
+      "difficulty": "hard",
+      "stem": "Systematic risk is *best* described as:",
+      "choices": [
+        { "id": "A", "text": "the only risk that can be eliminated through diversification." },
+        { "id": "B", "text": "the risk that affects the entire market and cannot be diversified away." },
+        { "id": "C", "text": "the risk specific to an individual company." }
+      ],
+      "answer": "B",
+      "explanation": "Systematic = market-wide, non-diversifiable risk. This is the only risk the market rewards via the equity risk premium.\n\n**A** is the opposite — diversifiable risk is the *non*-systematic part.\n\n**C** describes nonsystematic (firm-specific) risk."
+    }
+  ]
+}
