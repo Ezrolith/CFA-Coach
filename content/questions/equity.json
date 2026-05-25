@@ -44,14 +44,14 @@
       "id": "q-equity-val-004",
       "lessonId": "eq-val-overview",
       "difficulty": "medium",
-      "stem": "A firm has a payout ratio of 30%, an ROE of 14%, and a required return of 11%. Its justified leading P/E ratio is *closest* to:",
+      "stem": "A firm has a payout ratio of 40%, an ROE of 15%, and a required return of 12%. Its justified leading P/E ratio is *closest* to:",
       "choices": [
-        { "id": "A", "text": "10.0" },
-        { "id": "B", "text": "15.0" },
-        { "id": "C", "text": "20.0" }
+        { "id": "A", "text": "9.5" },
+        { "id": "B", "text": "13.3" },
+        { "id": "C", "text": "18.0" }
       ],
       "answer": "B",
-      "explanation": "Sustainable growth $g = b \\cdot ROE$ where $b$ is the retention ratio = 1 − payout = 0.70.\n\n$g = 0.70 \\cdot 0.14 = 9.8\\%$.\n\nJustified leading P/E:\n\n$$\\frac{P_0}{E_1} = \\frac{1 - b}{r - g} = \\frac{0.30}{0.11 - 0.098} = \\frac{0.30}{0.012} \\approx 25$$\n\nWait — this gives 25, which doesn't match the choices. Re-checking with rounding: $0.30 / 0.012 = 25.0$.\n\nActually the closest provided answer is **B** if we use slightly different rounding. The technique to remember: low denominators ($r - g$) produce high justified P/Es. This is why low-rate environments push P/Es up structurally.\n\n**Lesson.** Sense-check: high ROE with high retention pushes growth close to the required return, and the justified P/E explodes."
+      "explanation": "Sustainable growth $g = b \\cdot ROE$ where $b$ is the retention ratio = 1 − payout = 0.60.\n\n$g = 0.60 \\cdot 0.15 = 9\\%$.\n\nJustified leading P/E:\n\n$$\\frac{P_0}{E_1} = \\frac{1 - b}{r - g} = \\frac{0.40}{0.12 - 0.09} = \\frac{0.40}{0.03} = 13.33$$\n\n**A** likely comes from confusing payout with retention.\n\n**C** results from using ROE in place of $r$ or another input mix-up.\n\n**Lesson.** Higher ROE with high retention pushes $g$ close to $r$ — small denominator, large justified P/E. This is why structurally low-rate environments push multiples up."
     },
     {
       "id": "q-equity-val-005",

@@ -1,0 +1,83 @@
+{
+  "topicId": "fixed-income",
+  "questions": [
+    {
+      "id": "q-fi-val-001",
+      "lessonId": "fi-val-overview",
+      "difficulty": "easy",
+      "stem": "A 5-year, £1,000 face bond pays a 4% annual coupon. The market YTM is 6%. The bond's price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£831.55" },
+        { "id": "B", "text": "£915.75" },
+        { "id": "C", "text": "£1,000.00" }
+      ],
+      "answer": "B",
+      "explanation": "$P = 40 \\cdot \\frac{1 - (1.06)^{-5}}{0.06} + \\frac{1000}{(1.06)^5}$\n\n$= 40 \\cdot 4.2124 + 747.26 = 168.50 + 747.26 = £915.75$.\n\n**A** is too low — likely from miscalculating compounding.\n\n**C** is par — incorrect because coupon < YTM (the bond must trade at a discount)."
+    },
+    {
+      "id": "q-fi-val-002",
+      "lessonId": "fi-val-overview",
+      "difficulty": "medium",
+      "stem": "A 10-year, £1,000 face bond pays a 7% annual coupon **semi-annually**. The market YTM is 6%. Using semi-annual periods, the bond's price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£930.66" },
+        { "id": "B", "text": "£1,000.00" },
+        { "id": "C", "text": "£1,074.39" }
+      ],
+      "answer": "C",
+      "explanation": "Convert to per-period: $C = 35$, $r = 0.03$, $N = 20$.\n\nCoupon PV: $35 \\cdot \\frac{1 - (1.03)^{-20}}{0.03} = 35 \\cdot 14.8775 = 520.71$.\n\nFace PV: $1000 / (1.03)^{20} = 1000 / 1.8061 = 553.68$.\n\nTotal: **£1,074.39** (premium).\n\nCoupon (7%) > YTM (6%) → bond trades **above par**.\n\n**A** has the relationship backwards.\n\n**B** ignores the coupon-YTM differential."
+    },
+    {
+      "id": "q-fi-val-003",
+      "lessonId": "fi-val-overview",
+      "difficulty": "medium",
+      "stem": "A zero-coupon bond, £10,000 face, matures in 4 years and currently trades at £8,548.04. Its annual YTM is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "3.00%" },
+        { "id": "B", "text": "4.00%" },
+        { "id": "C", "text": "4.50%" }
+      ],
+      "answer": "B",
+      "explanation": "$r = (10{,}000 / 8{,}548.04)^{1/4} - 1 = (1.1698)^{0.25} - 1 = 1.04 - 1 = 4.00\\%$.\n\n**A** is the actual gain split over 4 years (≈ 17%/4) — wrong because it ignores compounding.\n\n**C** is a slight overshoot likely from approximation."
+    },
+    {
+      "id": "q-fi-val-004",
+      "lessonId": "fi-val-overview",
+      "difficulty": "easy",
+      "stem": "Which statement about a bond trading at a **premium** is *most accurate*?",
+      "choices": [
+        { "id": "A", "text": "Its coupon rate equals its yield to maturity." },
+        { "id": "B", "text": "Its yield to maturity exceeds its coupon rate." },
+        { "id": "C", "text": "Its coupon rate exceeds its yield to maturity." }
+      ],
+      "answer": "C",
+      "explanation": "A premium bond's coupon **exceeds** the market YTM — investors compete for the above-market income stream and bid the price above par.\n\n**A** describes a par bond.\n\n**B** is the opposite condition — a **discount** bond."
+    },
+    {
+      "id": "q-fi-val-005",
+      "lessonId": "fi-val-overview",
+      "difficulty": "hard",
+      "stem": "A semi-annual-pay bond has £1,000 face and a 5% coupon. The previous coupon paid 45 days ago; the next coupon is 137 days away (182-day period). The quoted (flat) price is £985. The settlement (full) price is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "£985.00" },
+        { "id": "B", "text": "£991.18" },
+        { "id": "C", "text": "£1,010.00" }
+      ],
+      "answer": "B",
+      "explanation": "Periodic coupon: $C = 50/2 = 25$.\n\nAccrued interest: $AI = 25 \\cdot 45/182 = 6.18$.\n\nFull price: $985 + 6.18 = £991.18$.\n\n**A** ignores accrued interest entirely.\n\n**C** uses the full coupon (£25) rather than time-prorated AI."
+    },
+    {
+      "id": "q-fi-val-006",
+      "lessonId": "fi-val-overview",
+      "difficulty": "medium",
+      "stem": "All else equal, a bond's price will rise *most* in response to which scenario?",
+      "choices": [
+        { "id": "A", "text": "A small increase in market interest rates." },
+        { "id": "B", "text": "A small decrease in market interest rates." },
+        { "id": "C", "text": "Falling reinvestment opportunities for coupons." }
+      ],
+      "answer": "B",
+      "explanation": "Price and yield move **inversely**. When market rates fall, the bond's fixed coupon becomes more attractive relative to new issuances, so the price rises.\n\n**A** would cause prices to **fall**, not rise.\n\n**C** describes reinvestment risk, which affects realised return — not the bond's current market price directly."
+    }
+  ]
+}

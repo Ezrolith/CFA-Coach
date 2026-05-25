@@ -1,0 +1,18 @@
+{
+  "name": "CFA Coach",
+  "short_name": "CFA Coach",
+  "description": "Interactive CFA Level 1 study companion — full curriculum, three-mode explanations, quizzes, mock exam, progress tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#050507",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

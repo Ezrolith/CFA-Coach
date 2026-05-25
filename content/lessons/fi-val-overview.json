@@ -1,0 +1,67 @@
+{
+  "lessonId": "fi-val-overview",
+  "modes": {
+    "new": "## What we're trying to do\n\nA bond is a promise: 'lend me money now, and I'll pay you a stream of coupons plus your principal back at maturity'. The bond's **price** is just the present value of those promised cash flows, discounted at the **market discount rate** investors require to hold the bond.\n\n### The core formula in one line\n\n$$P = \\sum_{t=1}^{N} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^N}$$\n\nWhere:\n- $P$ = price today\n- $C$ = periodic coupon payment\n- $F$ = face (par) value\n- $r$ = market discount rate per period (a.k.a. yield-to-maturity)\n- $N$ = number of periods to maturity\n\nThe first term is the present value of the coupon stream (an annuity); the second is the present value of the face redemption (a single sum).\n\n### Par, premium, discount — the three states\n\n| | If coupon < YTM | If coupon = YTM | If coupon > YTM |\n|---|---|---|---|\n| Price | **Below par** | **At par** (= F) | **Above par** |\n| Term | Discount bond | Par bond | Premium bond |\n\nThink of it this way. If the market currently demands 6% but the bond only pays a 4% coupon, no one will pay full face — they'll only pay enough to bring their effective yield up to 6%. The bond trades at a **discount**. Conversely, if the coupon is 8% in a 6% market, investors compete to own the bond and bid the price above par — a **premium**.\n\n### Periodicity — getting the rate right\n\nMost bonds pay coupons semi-annually. The standard convention:\n- $C$ = annual coupon / 2\n- $r$ = annual YTM / 2 (the **periodic** rate)\n- $N$ = years to maturity × 2 (number of semi-annual periods)\n\nIf you mix annual and semi-annual rates without converting, the price will be wrong. This is the single most common Level 1 trap on bond pricing.\n\n### Pricing between coupon dates\n\nBetween coupon payments, the bond accrues interest. The **flat price** (a.k.a. clean price) is what's quoted. The **full price** (a.k.a. dirty price) is what's actually paid:\n\n$$\\text{Full price} = \\text{Flat price} + \\text{Accrued interest}$$\n\nAccrued interest is straight-line based on days since the last coupon:\n\n$$AI = C \\cdot \\frac{\\text{days since last coupon}}{\\text{days in coupon period}}$$\n\nThis split exists because quoting the flat price decouples 'market value of the bond' from 'where we are in the coupon cycle' — you compare bonds on flat prices, then add accrued interest to settle the trade.\n\n### Matrix pricing\n\nWhen a bond doesn't trade actively, you can estimate its price by looking at the yields of similar-maturity, similar-credit-quality bonds that *do* trade. You build a yield grid (a 'matrix') and interpolate. Cheap-and-cheerful, but only as good as the comparables.\n\n### Why this matters\n\nEverything in fixed income builds on bond pricing — credit spread analysis, term structure, duration/convexity, fixed-income derivatives. Get fluent here or every subsequent FI lesson is a struggle.",
+    "pro": "## Bond pricing at speed\n\n### Core equation\n\n$$P = C \\cdot \\frac{1 - (1+r)^{-N}}{r} + \\frac{F}{(1+r)^N}$$\n\nWhere $r$ is the **periodic** YTM, $C$ is the **periodic** coupon, $N$ is the number of periods. For semi-annual bonds (the US norm), all three are 'per-half-year' values.\n\n### Price-yield relationship\n\n- $P$ and $r$ move **inversely**, **nonlinearly**, **convexly**.\n- A given yield change produces a larger price increase (when yields fall) than price decrease (when yields rise of equal magnitude). Convexity strikes.\n\n### Price relationships to memorise\n\n| Coupon vs YTM | Price vs Par |\n|---|---|\n| Coupon > YTM | Premium (P > F) |\n| Coupon = YTM | Par (P = F) |\n| Coupon < YTM | Discount (P < F) |\n\n### Pull to par\n\nA premium bond drifts toward par as it approaches maturity (loses premium each period). A discount bond similarly drifts up to par. Holding the bond produces this 'pull-to-par' return regardless of YTM changes.\n\n### Flat vs full price\n\n$$\\text{Flat price} = \\text{Full price} - AI$$\n\nWhere $AI$ is accrued interest, normally straight-line within a coupon period. Flat price is quoted; full price is settled.\n\n### Matrix pricing\n\nFor illiquid bonds: pick comparable maturities, average their YTMs, optionally adjust for credit. Used heavily by corporate-bond desks.\n\n### Conventions catalogue\n\n- **US Treasuries**: semi-annual coupons, actual/actual day count.\n- **US corporates**: semi-annual coupons, 30/360 day count.\n- **UK gilts**: semi-annual, actual/actual.\n- **Eurobonds**: usually annual, 30/360.\n\n### Special cases\n\n- **Zero-coupon bond**: $P = F / (1+r)^N$, no coupons. YTM is the pure CAGR between price and face.\n- **Floating-rate note**: reset to current market each period; trades close to par on reset dates.\n- **Inflation-linked**: principal indexed to inflation; coupon = real coupon × indexed principal."
+  },
+  "formulas": [
+    { "name": "Bond price (general)",            "latex": "P = C \\cdot \\frac{1 - (1+r)^{-N}}{r} + \\frac{F}{(1+r)^N}", "plain": "PV of coupon annuity plus PV of face redemption" },
+    { "name": "Zero-coupon bond price",          "latex": "P = \\frac{F}{(1+r)^N}", "plain": "No coupons — pure single-sum discounting" },
+    { "name": "Yield from zero-coupon price",    "latex": "r = \\left(\\frac{F}{P}\\right)^{1/N} - 1", "plain": "Implied yield on a zero-coupon bond" },
+    { "name": "Full price",                       "latex": "P_{full} = P_{flat} + AI", "plain": "Settlement price = quoted price plus accrued interest" },
+    { "name": "Accrued interest",                 "latex": "AI = C \\cdot \\frac{t}{T}", "plain": "C = full-period coupon, t = days since last coupon, T = days in coupon period" }
+  ],
+  "examples": [
+    {
+      "title": "Annual coupon bond — price from yield",
+      "body": "**Question.** A 5-year bond pays £50 annual coupons (5% coupon on £1,000 face). The market YTM is 6%. What's the price?\n\n**Setup.** $C = 50$, $r = 0.06$, $N = 5$, $F = 1{,}000$.\n\n**Coupon PV:** $50 \\cdot \\frac{1 - (1.06)^{-5}}{0.06} = 50 \\cdot 4.2124 = £210.62$.\n\n**Face PV:** $1{,}000 / (1.06)^5 = 1{,}000 / 1.3382 = £747.26$.\n\n**Total: £957.88.**\n\n**Interpretation.** Coupon (5%) < YTM (6%), so the bond trades **at a discount** below par. As expected."
+    },
+    {
+      "title": "Semi-annual bond — getting the conventions right",
+      "body": "**Question.** A 10-year corporate bond, $1{,}000 face, 6% annual coupon paid semi-annually. Market YTM is 5%. Price?\n\n**Periodicity conversion:** $C = 30$ per half-year, $r = 0.025$ per half-year, $N = 20$ half-years.\n\n**Coupon PV:** $30 \\cdot \\frac{1 - (1.025)^{-20}}{0.025} = 30 \\cdot 15.5892 = £467.68$.\n\n**Face PV:** $1{,}000 / (1.025)^{20} = 1{,}000 / 1.6386 = £610.27$.\n\n**Total: £1,077.95** → premium (coupon 6% > YTM 5%).\n\n**Trap.** If you'd used $r = 5\\%$ and $N = 10$ (annual frame), price would be ~£1,077 — close but wrong. Worse — using $r = 2.5\\%$ with $N = 10$ (mixed convention) gives a very different (and wrong) number."
+    },
+    {
+      "title": "Implied YTM — zero-coupon bond",
+      "body": "**Question.** A 6-year zero-coupon bond, £1,000 face, currently trading at £762.34. What is the YTM (assuming annual compounding)?\n\n**Setup.** No coupons. Use the zero-coupon yield formula.\n\n$$r = \\left(\\frac{1{,}000}{762.34}\\right)^{1/6} - 1 = (1.3118)^{0.1667} - 1$$\n\n$$r = 1.046 - 1 = 0.046 = 4.6\\%$$\n\n**Answer.** YTM ≈ **4.60%**.\n\n**Sense-check.** Bond price is well below face → positive yield. Higher discount = higher YTM. Consistent."
+    },
+    {
+      "title": "Flat vs full price",
+      "body": "**Scenario.** A semi-annual-pay bond, £1,000 face, 5% coupon. The previous coupon was 60 days ago; the next coupon is 122 days away (so 182-day coupon period). The flat (quoted) price is £980.\n\n**Periodic coupon:** $C = 50 / 2 = £25$.\n\n**Accrued interest:** $AI = 25 \\cdot (60/182) = £8.24$.\n\n**Full (settlement) price:** $980 + 8.24 = £988.24$.\n\n**Why both?** Comparing two bonds on flat price is fair (it's a pure market-value measure). On full price, the bond closer to its next coupon would look 'more expensive' due to accrual, which would distort comparison."
+    }
+  ],
+  "pitfalls": [
+    "**Periodicity mismatch.** A 6% semi-annual coupon means the periodic coupon is £30 (per £1k), not £60. Likewise YTM must be split: 5% annual = 2.5% per half-year.",
+    "**Forgetting pull-to-par.** A bond bought at a premium gradually loses that premium over its life, even if YTM never moves. The premium amortisation is part of your effective return.",
+    "**Comparing full prices instead of flat prices.** Full price changes with the coupon cycle. Flat (quoted) price strips out that cycle effect and is comparable.",
+    "**Treating coupon rate as YTM.** They're only equal when the bond trades at par. Above par → YTM < coupon. Below par → YTM > coupon.",
+    "**Plug 'YTM' into TVM formula without checking annualisation.** A semi-annual bond's quoted YTM is typically stated as 2× the per-half-year rate. Don't compound a stated annual YTM as if it were already periodic.",
+    "**Assuming zero-coupon yields equal coupon-bond yields of same maturity.** Pricing using the **bond's own YTM** mixes all cash flows at one rate; **spot rates** discount each cash flow at the rate for its specific maturity. Spot-rate pricing is more precise."
+  ],
+  "faq": [
+    {
+      "q": "If yields rise 1%, what happens to a bond's price?",
+      "a": "Price falls — and the magnitude depends on **duration**. A 5-year bond with modified duration ≈ 4.5 would lose about 4.5% of its value for a 1% yield rise. Longer-maturity, lower-coupon bonds have higher duration and so more sensitivity.\n\nThe relationship is convex: a 1% fall in yield raises the price by *more* than a 1% rise in yield lowers it. That asymmetry is **convexity**, and it's why long-duration bonds can outperform in falling-rate environments more than they suffer in rising-rate environments of the same magnitude."
+    },
+    {
+      "q": "Why do bonds quoted in newspapers use flat prices rather than full prices?",
+      "a": "Because flat price is comparable across bonds at different points in their coupon cycle. If you saw two 5% bonds quoted at £1,000 (full price), but one had just paid a coupon and the other was about to, you'd be paying very different amounts for the *same* economic value.\n\nFlat price decouples the bond's underlying market value from the calendar accident of where you are in the coupon cycle. Then accrued interest is added at settlement to give the cash actually changing hands."
+    },
+    {
+      "q": "What's the difference between YTM and 'current yield'?",
+      "a": "**YTM** is the IRR of holding the bond to maturity — it accounts for all coupons, the face redemption, *and* the gain/loss from price moving to par.\n\n**Current yield** is just $C / P$ — annual coupon divided by current price. It ignores any capital gain/loss from holding the bond to maturity.\n\nFor a bond trading at par, current yield = coupon rate = YTM. For a premium bond, YTM < current yield < coupon rate (because price will pull down to par). For a discount bond, the opposite."
+    },
+    {
+      "q": "Why does the YTM 'reinvestment assumption' matter?",
+      "a": "YTM is the rate that makes the PV of cash flows equal the price. Mathematically, this is equivalent to assuming you can **reinvest each coupon at the YTM** until maturity. If you can't (because rates have changed), your *realised* return will differ from YTM.\n\nIn practice: zero-coupon bonds have no reinvestment risk (no coupons to reinvest); high-coupon, long-maturity bonds have substantial reinvestment risk. This is the foundation for understanding duration as a measure of interest-rate risk."
+    },
+    {
+      "q": "If the bank sells me a bond at 'flat price £980' should I expect to pay £980?",
+      "a": "No — you'll pay the **full price**: flat price + accrued interest. The accrued interest compensates the seller for the coupon they've earned during the holding period since the last coupon date, which they won't receive (you will, when the next coupon pays). The net economic effect is fair: you collect a 'full' coupon at the next payment date, but you've effectively prepaid the seller for their portion of it via the accrued interest."
+    }
+  ],
+  "resources": [
+    { "label": "Investopedia — Bond Pricing", "url": "https://www.investopedia.com/articles/bonds/07/pricing_conventions.asp", "kind": "read" },
+    { "label": "Investopedia — Accrued Interest", "url": "https://www.investopedia.com/terms/a/accruedinterest.asp", "kind": "read" },
+    { "label": "Treasury Direct — How Treasuries Are Priced", "url": "https://www.treasurydirect.gov/marketable-securities/", "kind": "read" }
+  ]
+}

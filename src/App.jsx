@@ -5,6 +5,8 @@ import TopicPage from './pages/TopicPage';
 import LessonPage from './pages/LessonPage';
 import QuizPage from './pages/QuizPage';
 import ProgressPage from './pages/ProgressPage';
+import SettingsPage from './pages/SettingsPage';
+import MockExamPage from './pages/MockExamPage';
 import PlaceholderPage from './pages/PlaceholderPage';
 
 export default function App() {
@@ -24,23 +26,9 @@ export default function App() {
             />
           }/>
           <Route path="/quiz" element={<QuizPage />} />
-          <Route path="/mock-exam" element={
-            <PlaceholderPage
-              eyebrow="Mock exam"
-              title="180 questions. Two sessions. Real exam conditions."
-              body="A full simulation of the CFA Level 1 exam, with the official topic weights, timing, and no-back-skipping between sessions."
-              phase="9"
-            />
-          }/>
+          <Route path="/mock-exam" element={<MockExamPage />} />
           <Route path="/progress" element={<ProgressPage />} />
-          <Route path="/settings" element={
-            <PlaceholderPage
-              eyebrow="Settings"
-              title="Account, appearance, study preferences."
-              body="Connects your Google account for cloud-synced progress (Phase 1+), and lets you toggle dark mode, default explanation depth, daily targets."
-              phase="1"
-            />
-          }/>
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="*" element={
             <PlaceholderPage
               eyebrow="Lost?"

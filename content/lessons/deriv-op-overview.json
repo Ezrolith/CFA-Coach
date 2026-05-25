@@ -1,0 +1,68 @@
+{
+  "lessonId": "deriv-op-overview",
+  "modes": {
+    "new": "## What an option actually is\n\nA **call** option gives you the *right, not the obligation,* to buy the underlying at a fixed price (the **strike**, $K$) on or before expiration. A **put** option gives you the right to sell at the strike. The buyer pays a premium for this right; the seller (writer) collects it and takes on the obligation.\n\nKey vocab to know cold:\n- **In-the-money (ITM)**: call when underlying > strike; put when underlying < strike. The option has *positive intrinsic value*.\n- **At-the-money (ATM)**: underlying ≈ strike. Zero intrinsic value but high time value.\n- **Out-of-the-money (OTM)**: call when underlying < strike; put when underlying > strike. Zero intrinsic value.\n\n### Intrinsic value, time value, premium\n\nThe option premium has two components:\n\n$$\\text{Premium} = \\text{Intrinsic value} + \\text{Time value}$$\n\n- **Intrinsic value** = $\\max(S - K, 0)$ for a call, $\\max(K - S, 0)$ for a put. What you'd get from immediate exercise. Can't be negative — that's the point of an option.\n- **Time value** is everything else: pays for the chance the option will become more valuable before expiration.\n\nAt expiration, time value = 0 by definition. The option is worth exactly its intrinsic value.\n\n### What drives option value\n\nSix factors. Memorise their direction:\n\n| Factor | Effect on call | Effect on put |\n|---|---|---|\n| Underlying price (S) | + | − |\n| Strike (K) | − | + |\n| Time to expiry (T) | + (mostly) | + (mostly) |\n| Volatility (σ) | + | + |\n| Risk-free rate (r) | + | − |\n| Dividends / yield | − | + |\n\nThe two intuitive ones: higher $S$ raises call value (more in-the-money) and lowers put value. The not-so-intuitive: **higher volatility raises both call and put values** — because options are bounded below at zero (the worst case), more volatility increases upside without proportional downside. This is the bedrock of Black-Scholes pricing.\n\n### Put-call parity — the equation that ties them together\n\nFor European options on a non-dividend-paying stock:\n\n$$C - P = S - \\frac{K}{(1+r)^T}$$\n\nIn words: a call minus a put equals the underlying minus the PV of the strike. Rearranging:\n\n$$P = C - S + \\frac{K}{(1+r)^T}$$\n\nThis lets you *synthesise* one option from the others. If you own the stock + bought a put, that combination is equivalent to a call + cash invested at the risk-free rate. The market enforces this — if the equation breaks, arbitrageurs collapse it.\n\n### Why it matters for the exam\n\n- The factors table is examinable directly — 'how does option X respond to factor Y?'\n- Put-call parity gives quick valuation answers when you know three of the four components.\n- Knowing that options can replicate positions (synthetic long, synthetic short) reveals why derivatives are powerful for hedging and speculation.",
+    "pro": "## Options at Level 1 speed\n\n### Definitions\n\n**Call payoff at expiry:** $\\max(S_T - K, 0)$\n\n**Put payoff at expiry:** $\\max(K - S_T, 0)$\n\n**Profit:** payoff minus premium paid (for buyer) or plus premium received (for writer).\n\n### Moneyness\n\nFor calls: ITM if $S > K$. For puts: ITM if $S < K$. At expiry, only intrinsic value matters; before expiry, time value layers on.\n\n### Six factor signs\n\n| Factor | Call | Put | Why |\n|---|---|---|---|\n| $S$ | + | − | Underlying movement |\n| $K$ | − | + | Strike opposes the option holder |\n| $T$ | + | + | More time = more chance (some put exceptions) |\n| $\\sigma$ | + | + | Volatility increases probability of in-the-money expiry |\n| $r$ | + | − | Discounting effect on strike; raises call PV, lowers put PV |\n| Dividends | − | + | Dividends reduce $S$ ex-div; bad for call, good for put |\n\n### Put-call parity (Euro, no dividends)\n\n$$C + \\frac{K}{(1+r)^T} = P + S$$\n\nReading: **fiduciary call** (call + risk-free bond) = **protective put** (put + stock).\n\nRearrange to:\n- Synthetic call: $C = P + S - \\frac{K}{(1+r)^T}$\n- Synthetic put: $P = C - S + \\frac{K}{(1+r)^T}$\n- Synthetic stock: $S = C - P + \\frac{K}{(1+r)^T}$\n- Synthetic bond: $\\frac{K}{(1+r)^T} = P + S - C$\n\n### Put-call forward parity\n\nWith forward price $F$: $C - P = \\frac{F - K}{(1+r)^T}$.\n\nIf $F = K$, $C = P$ for the at-the-money-forward strike — a useful sanity check.\n\n### American vs European\n\nAmerican = exercisable any time before expiry. European = only at expiry.\n\n- American ≥ European, always.\n- For **non-dividend-paying** stock: American call = European call (never optimal to early-exercise). American put > European put (early exercise can be optimal).\n- For dividend-paying stock: both American calls and puts can have early-exercise value above European."
+  },
+  "formulas": [
+    { "name": "Call payoff",                "latex": "\\text{Payoff}_C = \\max(S_T - K, 0)", "plain": "Value at expiration of a call option" },
+    { "name": "Put payoff",                 "latex": "\\text{Payoff}_P = \\max(K - S_T, 0)", "plain": "Value at expiration of a put option" },
+    { "name": "Call intrinsic value",       "latex": "IV_C = \\max(S - K, 0)", "plain": "Pre-expiry intrinsic; ignores time value" },
+    { "name": "Put intrinsic value",        "latex": "IV_P = \\max(K - S, 0)", "plain": "Pre-expiry intrinsic; ignores time value" },
+    { "name": "Put-call parity (Euro, no div)", "latex": "C + \\frac{K}{(1+r)^T} = P + S", "plain": "Fiduciary call = protective put" },
+    { "name": "Put-call forward parity",    "latex": "C - P = \\frac{F - K}{(1+r)^T}", "plain": "Using forward price F instead of spot" }
+  ],
+  "examples": [
+    {
+      "title": "Intrinsic value of a call",
+      "body": "**Question.** A call option has strike £50. The underlying stock currently trades at £63. What is its intrinsic value?\n\n**Setup.** Call IV = $\\max(S - K, 0) = \\max(63 - 50, 0) = £13$.\n\n**Answer.** **£13.**\n\n**Note.** If the option's market price is, say, £15, then £13 is intrinsic and £2 is time value. As expiration nears, the £2 of time value decays to zero (theta decay) and the option is worth just its intrinsic value."
+    },
+    {
+      "title": "Put-call parity — finding a put price",
+      "body": "**Question.** A European call on a non-dividend stock costs £6. The stock is at £100, strike is £100, 1-year expiry, risk-free rate is 4%. What's the matching put price?\n\n**Put-call parity rearranged:**\n\n$$P = C - S + \\frac{K}{(1+r)^T} = 6 - 100 + \\frac{100}{1.04} = 6 - 100 + 96.15 = £2.15$$\n\n**Answer.** Put ≈ **£2.15**.\n\n**Sanity check.** Call is ITM-forward (the present value of the strike is £96.15, less than the spot £100, so a call holder is essentially long the stock above strike), so call > put. Confirmed."
+    },
+    {
+      "title": "Volatility's effect on option value",
+      "body": "**Scenario.** Two otherwise identical at-the-money European calls expire in 6 months, struck at £100, on stocks trading at £100.\n\n- Stock A has 15% annualised volatility.\n- Stock B has 35% annualised volatility.\n\n**Which option is worth more, and why?**\n\nStock B's option is worth more. Even though both stocks are at the strike right now (zero intrinsic value), higher volatility means a wider distribution of possible expiration prices. The downside is capped at zero (you just don't exercise), but the upside is open-ended — so more variance translates directly to more expected payoff, and thus a higher premium.\n\nThis is also why options on biotech / small caps (high σ) are expensive relative to those on utilities (low σ)."
+    },
+    {
+      "title": "Synthetic position — replicating stock",
+      "body": "**Question.** You want exposure to a non-dividend stock at £80 but the market is closed for direct equity. The options market is open and a 3-month £80 call and put are quoted at £6 and £4.50 respectively. Risk-free rate is 5%. Can you replicate ownership of the stock?\n\n**Synthetic stock formula:**\n\n$$S = C - P + \\frac{K}{(1+r)^T}$$\n\nBuy call (+£6), sell put (−£4.50), invest $K/(1+r)^T = 80/(1.05)^{0.25} = £79.04$ in T-bills.\n\nNet cost: $6 - 4.50 + 79.04 = £80.54$.\n\n**Answer.** Yes — for £80.54 you build a synthetic long position equivalent to owning the stock. The 54p premium reflects very minor mispricing or bid/ask. In a clean equilibrium, synthetic stock = actual stock = £80.\n\n**Why this matters.** Arbitrageurs continuously enforce this. If synthetic stock drifts below real stock, arbs buy synthetic / sell real. The market is held together by these no-arbitrage relations."
+    }
+  ],
+  "pitfalls": [
+    "**Intrinsic value can never be negative.** $\\max(\\cdot, 0)$ — if exercising would lose money, you just don't exercise. The minimum is always zero.",
+    "**Forgetting that higher volatility raises *both* puts and calls.** It's not 'good for calls, bad for puts'. Volatility is unambiguously option-value-positive.",
+    "**Confusing American and European pricing.** American ≥ European always, but for *non-dividend* stocks, American call = European call (never optimal to early-exercise a call without dividends).",
+    "**Mishandling discounting in put-call parity.** The K term must be discounted to PV using the option's expiry as the discount horizon — not annualised or undiscounted.",
+    "**Reversing the sign on dividends.** Dividends *reduce* the underlying ex-div, which is *bad for call holders* (smaller upside) and *good for put holders* (larger downside).",
+    "**Using simple instead of compound time discounting.** For multi-year options, $K/(1+r)^T$ with the proper exponent matters significantly."
+  ],
+  "faq": [
+    {
+      "q": "If options are zero-sum, why does anyone write them?",
+      "a": "Because the buyer pays a premium upfront. The writer collects this premium and earns it if the option expires worthless (i.e., out-of-the-money) — which happens for the majority of OTM options. The writer takes on tail risk in exchange for steady premium income.\n\nProfessional option writers also use sophisticated hedging (delta hedging, gamma management) to lock in the premium with minimal directional risk. They make money on the *spread* between perceived implied volatility and realised volatility, not on directional bets."
+    },
+    {
+      "q": "What does 'theta' mean and why is it important?",
+      "a": "**Theta** measures how much an option's value decays per day (holding everything else constant). It's negative for option *buyers* — every day they hold, time value erodes. It's positive for option *writers* — they benefit from decay.\n\nNear expiration, theta accelerates dramatically: a 30-day option loses far less value per day than a 5-day option. This is why long-dated options have most of their value as 'time value' that decays slowly, while short-dated options can lose half their premium in a few days.\n\nAt Level 1 you don't need theta calculations — but you should know that **time value decays as expiration approaches**."
+    },
+    {
+      "q": "Why is put-call parity so heavily emphasised in CFA?",
+      "a": "Because it's the simplest no-arbitrage relationship in option pricing, and **most of derivatives theory builds on it**. If you understand parity, you understand:\n- Synthetic positions (build any of {stock, call, put, bond} from the other three).\n- Why the option market and equity market are linked.\n- The intuition for how dividends and interest rates affect option prices.\n\nLevel 2 derivatives builds out into Black-Scholes (continuous-time put-call parity) and into binomial trees (discrete version of the same no-arbitrage logic). Level 1 mastery of parity is foundational."
+    },
+    {
+      "q": "Are options usually exercised, or sold back?",
+      "a": "Mostly **sold back** before expiration, especially for liquidly-traded options on stocks. Exercising captures only intrinsic value; selling captures intrinsic + remaining time value. As long as time value > 0, selling is more economically attractive than exercising.\n\nFor deep-ITM American puts on dividend-paying stocks, *early exercise* can be optimal. For everything else, the market generally prefers offsetting via the secondary market."
+    },
+    {
+      "q": "What's the difference between an option's premium and its 'fair value'?",
+      "a": "**Premium** = the market price.\n\n**Fair value** = the price a model (Black-Scholes, binomial) gives you given inputs (S, K, T, r, σ, dividends).\n\nThe gap between them tells you whether the market's *implied volatility* differs from your own estimate of true volatility. If market premium > model fair value, the market is pricing in higher volatility than you — sell options if you trust your model. If less, buy.\n\nAt Level 1 you won't run option models, but you should understand that **fair value is derived; premium is observed**, and discrepancies are how option traders make money."
+    }
+  ],
+  "resources": [
+    { "label": "Investopedia — Put-Call Parity", "url": "https://www.investopedia.com/terms/p/putcallparity.asp", "kind": "read" },
+    { "label": "Investopedia — Intrinsic Value of Options", "url": "https://www.investopedia.com/terms/i/intrinsicvalue.asp", "kind": "read" },
+    { "label": "Hull — Options textbook reference (publicly summarised)", "url": "https://en.wikipedia.org/wiki/Put%E2%80%93call_parity", "kind": "read" }
+  ]
+}

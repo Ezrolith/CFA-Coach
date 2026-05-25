@@ -18,14 +18,14 @@
       "id": "q-quant-rr-002",
       "lessonId": "quant-rates-returns-overview",
       "difficulty": "medium",
-      "stem": "Over two years, a portfolio returns +30% in year 1 and −20% in year 2. The time-weighted (geometric mean) annual return is *closest* to:",
+      "stem": "Over two years, a portfolio returns +40% in year 1 and −20% in year 2. The time-weighted (geometric mean) annual return is *closest* to:",
       "choices": [
-        { "id": "A", "text": "1.98%" },
-        { "id": "B", "text": "5.00%" },
-        { "id": "C", "text": "10.00%" }
+        { "id": "A", "text": "5.83%" },
+        { "id": "B", "text": "10.00%" },
+        { "id": "C", "text": "12.00%" }
       ],
       "answer": "A",
-      "explanation": "$r_{TWR} = (\\sqrt{1.30 \\cdot 0.80}) - 1 = \\sqrt{1.04} - 1 = 1.98\\%$ per year.\n\n**B** is the arithmetic mean ($(30 - 20)/2$), which overstates realized performance.\n\n**C** confuses arithmetic-mean components or sums the absolute returns."
+      "explanation": "$r_{TWR} = (\\sqrt{1.40 \\cdot 0.80}) - 1 = \\sqrt{1.12} - 1 = 5.83\\%$ per year.\n\n**B** is the arithmetic mean ($(40 - 20)/2$), which overstates realized performance — a common trap.\n\n**C** confuses simple averages or sums of absolute returns."
     },
     {
       "id": "q-quant-rr-003",

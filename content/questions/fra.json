@@ -21,11 +21,11 @@
       "stem": "A company begins the year with 800,000 shares outstanding. It issues 200,000 new shares on 1 July and repurchases 100,000 shares on 1 October. Net income for the year is £2,100,000. Basic EPS is *closest* to:",
       "choices": [
         { "id": "A", "text": "£2.21" },
-        { "id": "B", "text": "£2.33" },
+        { "id": "B", "text": "£2.40" },
         { "id": "C", "text": "£2.63" }
       ],
-      "answer": "A",
-      "explanation": "Weighted-average shares:\n\n- 800,000 × 6/12 = 400,000\n- 1,000,000 × 3/12 = 250,000\n- 900,000 × 3/12 = 225,000\n\nWeighted-average = 875,000.\n\n$\\text{Basic EPS} = 2{,}100{,}000 / 875{,}000 \\approx £2.40$.\n\nWait — that's not in the choices. Let me reconsider with slight rounding: the intended answer reflects $2{,}100{,}000 / 950{,}000$ if using a different cut. The closest match using the correct method is **A**.\n\n**Lesson.** The mechanics matter more than the exact number — always time-weight mid-period changes."
+      "answer": "B",
+      "explanation": "Weighted-average shares:\n\n- 800,000 × 6/12 = 400,000 (Jan–Jun)\n- 1,000,000 × 3/12 = 250,000 (Jul–Sep)\n- 900,000 × 3/12 = 225,000 (Oct–Dec)\n\nWeighted-average = **875,000**.\n\n$\\text{Basic EPS} = 2{,}100{,}000 / 875{,}000 = £2.40$.\n\n**A** uses ending shares (900,000 + a partial-year tweak) — incorrect.\n\n**C** is the simple average of beginning and ending shares (~800k average) which ignores that the 200k issue was mid-year. Always **time-weight** mid-period changes."
     },
     {
       "id": "q-fra-is-003",
