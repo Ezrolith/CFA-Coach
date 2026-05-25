@@ -2,6 +2,552 @@
   "topicId": "economics",
   "questions": [
     {
+      "id": "q-econ-fms-001",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "easy",
+      "stem": "In *perfect competition*, the demand curve faced by an individual firm is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Downward-sloping." },
+        { "id": "B", "text": "Perfectly elastic (horizontal)." },
+        { "id": "C", "text": "Upward-sloping." }
+      ],
+      "answer": "B",
+      "explanation": "Perfect competition: many firms, homogeneous products, no individual firm has market power. Each firm is a price taker — its individual demand curve is perfectly elastic at the market price.\n\n**A** describes monopolistic competition or monopoly.\n**C** is economically rare for demand curves."
+    },
+    {
+      "id": "q-econ-fms-002",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "medium",
+      "stem": "In long-run equilibrium under perfect competition, firms *most likely* earn:",
+      "choices": [
+        { "id": "A", "text": "Positive economic profit." },
+        { "id": "B", "text": "Zero economic profit." },
+        { "id": "C", "text": "Negative economic profit." }
+      ],
+      "answer": "B",
+      "explanation": "Free entry/exit drives economic profit to zero in long-run equilibrium. New entrants compete away positive profits; firms exit if losses sustained.\n\n**A** would attract entrants until profits compete away.\n**C** would prompt exits until profits return to zero."
+    },
+    {
+      "id": "q-econ-fms-003",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "medium",
+      "stem": "The *kinked demand model* of oligopoly *most likely* implies that:",
+      "choices": [
+        { "id": "A", "text": "Prices in oligopolistic industries tend to be rigid." },
+        { "id": "B", "text": "Oligopoly prices change frequently with cost changes." },
+        { "id": "C", "text": "Oligopolists always engage in cutthroat price competition." }
+      ],
+      "answer": "A",
+      "explanation": "Kinked demand model: competitors match price decreases (to maintain share) but not increases (to gain share). Result: price increases lose share, price decreases trigger industry-wide drops — both punished, so prices tend to be rigid.\n\n**B** is empirically observed less than the rigid pattern in many oligopolies.\n**C** is rarely sustained — collusion or rigidity is more common."
+    },
+    {
+      "id": "q-econ-fms-004",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "easy",
+      "stem": "A profit-maximising firm produces at the level where:",
+      "choices": [
+        { "id": "A", "text": "Total revenue equals total cost." },
+        { "id": "B", "text": "Marginal revenue equals marginal cost." },
+        { "id": "C", "text": "Average cost is at its minimum." }
+      ],
+      "answer": "B",
+      "explanation": "MR = MC is the universal profit-maximisation rule, regardless of market structure. The price set depends on the demand curve faced (which varies by structure).\n\n**A** is the breakeven point (zero profit).\n**C** is one efficiency point but not the profit-max."
+    },
+    {
+      "id": "q-econ-fms-005",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "medium",
+      "stem": "A monopoly *most likely* differs from perfect competition because:",
+      "choices": [
+        { "id": "A", "text": "Monopoly produces less and sets a higher price than perfect competition." },
+        { "id": "B", "text": "Monopoly faces an elastic demand curve." },
+        { "id": "C", "text": "Monopoly's demand curve is unrelated to its pricing decision." }
+      ],
+      "answer": "A",
+      "explanation": "Monopoly restricts output (sets MR = MC where MR < demand) to maintain higher prices. Perfect competition produces more at lower prices because each firm is a price taker.\n\n**B** is backwards — monopoly faces downward-sloping demand.\n**C** is incorrect — the demand curve determines the price."
+    },
+    {
+      "id": "q-econ-fms-006",
+      "lessonId": "econ-fms-overview",
+      "difficulty": "medium",
+      "stem": "Sustained economic profits in any market structure *most likely* require:",
+      "choices": [
+        { "id": "A", "text": "Durable barriers to entry that prevent competition from eroding profits." },
+        { "id": "B", "text": "Significant government subsidies." },
+        { "id": "C", "text": "Identical products to competitors." }
+      ],
+      "answer": "A",
+      "explanation": "Barriers to entry (scale, network effects, brand, switching costs, regulatory, IP) prevent competitors from competing away profits. Without barriers, free entry drives profits to zero in the long run.\n\n**B** is occasionally a factor but not the general principle.\n**C** would be perfect competition with zero economic profit."
+    },
+    {
+      "id": "q-econ-bc-001",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "easy",
+      "stem": "The *four phases* of a typical business cycle are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Expansion, peak, contraction, trough." },
+        { "id": "B", "text": "Birth, growth, maturity, decline." },
+        { "id": "C", "text": "Boom, bust, recovery, plateau." }
+      ],
+      "answer": "A",
+      "explanation": "Standard business cycle: expansion (growing), peak (highest point), contraction/recession (declining), trough (lowest point), then back to expansion.\n\n**B** describes product life cycles.\n**C** is informal language."
+    },
+    {
+      "id": "q-econ-bc-002",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "medium",
+      "stem": "A *leading economic indicator* is one that *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Rises after the economy turns." },
+        { "id": "B", "text": "Rises before the broader economy turns." },
+        { "id": "C", "text": "Rises in lockstep with the broader economy." }
+      ],
+      "answer": "B",
+      "explanation": "Leading indicators precede economic turning points. Examples: stock market, building permits, durable goods orders, yield curve, consumer sentiment.\n\n**A** describes lagging indicators.\n**C** describes coincident indicators."
+    },
+    {
+      "id": "q-econ-bc-003",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "medium",
+      "stem": "An inverted yield curve (short rates > long rates) *most likely* signals:",
+      "choices": [
+        { "id": "A", "text": "Imminent economic expansion." },
+        { "id": "B", "text": "Increased recession probability (with variable lag)." },
+        { "id": "C", "text": "Stable economic conditions." }
+      ],
+      "answer": "B",
+      "explanation": "Yield curve inversions have preceded most US recessions since 1960. Lag varies (months to 2+ years). Inversion 2022-2023 has been widely watched but timing variable.\n\n**A** is reverse direction.\n**C** misreads the signal."
+    },
+    {
+      "id": "q-econ-bc-004",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "easy",
+      "stem": "Which sector is *most likely* defensive (less cyclically sensitive)?",
+      "choices": [
+        { "id": "A", "text": "Auto manufacturers." },
+        { "id": "B", "text": "Consumer staples / supermarkets." },
+        { "id": "C", "text": "Construction." }
+      ],
+      "answer": "B",
+      "explanation": "Defensive sectors have demand relatively insensitive to economic cycles. People still need food, healthcare, basic necessities in recessions. Examples: staples, healthcare, utilities, telecoms.\n\n**A** and **C** are cyclical — autos and construction track economy strongly."
+    },
+    {
+      "id": "q-econ-bc-005",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "medium",
+      "stem": "Credit cycles *most likely* affect business cycles by:",
+      "choices": [
+        { "id": "A", "text": "Amplifying both upturns (more lending) and downturns (lending pullback)." },
+        { "id": "B", "text": "Working independently of business cycles." },
+        { "id": "C", "text": "Smoothing business cycle peaks and troughs." }
+      ],
+      "answer": "A",
+      "explanation": "Credit cycles tend to amplify business cycles: expansion drives lending which supports growth; contraction reduces lending which deepens recession. 2008 GFC is the classic example.\n\n**B** is incorrect — they're tightly linked.\n**C** is the opposite of what occurs."
+    },
+    {
+      "id": "q-econ-bc-006",
+      "lessonId": "econ-bc-overview",
+      "difficulty": "easy",
+      "stem": "Capacity utilisation above 80% *most likely* signals:",
+      "choices": [
+        { "id": "A", "text": "Early-cycle, with slack and room for growth." },
+        { "id": "B", "text": "Late-cycle, with inflation and wage pressure building." },
+        { "id": "C", "text": "Recession territory." }
+      ],
+      "answer": "B",
+      "explanation": "High capacity utilisation = economy near full capacity. Inflation and wage pressures accumulate. Late-cycle indicator.\n\n**A** is low capacity utilisation (under 70%).\n**C** would also be low utilisation."
+    },
+    {
+      "id": "q-econ-fp-001",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "easy",
+      "stem": "*Expansionary* fiscal policy *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Raising taxes and cutting spending." },
+        { "id": "B", "text": "Cutting taxes and increasing spending." },
+        { "id": "C", "text": "Holding policy unchanged." }
+      ],
+      "answer": "B",
+      "explanation": "Expansionary fiscal policy boosts aggregate demand: tax cuts (raise disposable income), increased spending (direct demand). Used to fight recessions.\n\n**A** describes contractionary fiscal policy.\n**C** is neither."
+    },
+    {
+      "id": "q-econ-fp-002",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "medium",
+      "stem": "Automatic fiscal stabilisers *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Income taxes and unemployment benefits." },
+        { "id": "B", "text": "Central bank interest rate decisions." },
+        { "id": "C", "text": "Discretionary stimulus packages." }
+      ],
+      "answer": "A",
+      "explanation": "Automatic stabilisers: tax revenue rises with income (cushion booms); unemployment benefits rise with joblessness (support recession). Act without political process.\n\n**B** is monetary policy, not fiscal.\n**C** is discretionary fiscal action."
+    },
+    {
+      "id": "q-econ-fp-003",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "medium",
+      "stem": "Time lags in fiscal policy *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Recognition lag, decision lag, implementation lag, effect lag." },
+        { "id": "B", "text": "Currency lag, trade lag, capital lag, debt lag." },
+        { "id": "C", "text": "Inflation lag, growth lag, unemployment lag, interest lag." }
+      ],
+      "answer": "A",
+      "explanation": "Standard lags: recognition (identify need), decision (political process), implementation (operational), effect (economic impact). Total typically 6-18 months.\n\n**B** and **C** are not the standard fiscal lag categories."
+    },
+    {
+      "id": "q-econ-fp-004",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "hard",
+      "stem": "When real interest rate (r) on government debt exceeds real GDP growth (g), debt-to-GDP *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Falls even with a primary deficit." },
+        { "id": "B", "text": "Rises even with a balanced primary budget." },
+        { "id": "C", "text": "Remains constant regardless of primary balance." }
+      ],
+      "answer": "B",
+      "explanation": "Debt dynamics: $\\Delta(D/GDP) = \\text{Primary Deficit} + (r-g) \\cdot (D/GDP)$.\n\nWhen $r > g$: even with primary balance (= 0), debt-to-GDP rises due to compounding. Vicious cycle.\n\n**A** would be the case when $r < g$.\n**C** ignores debt dynamics."
+    },
+    {
+      "id": "q-econ-fp-005",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "medium",
+      "stem": "The Keynesian fiscal multiplier *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Is typically less than 1 due to crowding-out." },
+        { "id": "B", "text": "Is typically greater than 1 in recessions (with slack), suggesting fiscal stimulus is amplified." },
+        { "id": "C", "text": "Is always exactly 1 regardless of conditions." }
+      ],
+      "answer": "B",
+      "explanation": "Keynesian view: fiscal multipliers exceed 1 in recessions (slack, low rates, idle resources). Each pound of spending generates multiple pounds of GDP growth.\n\nEmpirically: ~1.5 in deep recessions; closer to 1.0 in normal times; less in overheated conditions.\n\n**A** is classical view (less generally accepted in deep recessions).\n**C** is incorrect — depends on conditions."
+    },
+    {
+      "id": "q-econ-fp-006",
+      "lessonId": "econ-fiscal-overview",
+      "difficulty": "medium",
+      "stem": "When monetary and fiscal policies conflict (e.g., monetary tightening + fiscal expansion), *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Monetary policy must do more to achieve its inflation target." },
+        { "id": "B", "text": "Both cancel out, leaving no net effect." },
+        { "id": "C", "text": "Fiscal policy always dominates." }
+      ],
+      "answer": "A",
+      "explanation": "When monetary pulls one direction (tightening for inflation) and fiscal pulls the other (expansion for growth), monetary must work harder. Recent example: 2022-2024 US — Fed raised rates aggressively while fiscal remained expansionary.\n\n**B** is incorrect — there's a net effect.\n**C** is incorrect — both matter."
+    },
+    {
+      "id": "q-econ-geo-001",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "easy",
+      "stem": "Geopolitical risk for investors *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Sanctions, trade restrictions, conflicts, and supply chain disruptions." },
+        { "id": "B", "text": "Only military conflicts." },
+        { "id": "C", "text": "Only currency exchange rate movements." }
+      ],
+      "answer": "A",
+      "explanation": "Geopolitical risk is broad: economic restrictions (sanctions, tariffs), military conflicts, supply chain disruptions, political instability, regulatory shifts.\n\n**B** is too narrow.\n**C** is currency-specific risk, a subset of broader geopolitical."
+    },
+    {
+      "id": "q-econ-geo-002",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "medium",
+      "stem": "Russia's 2022 invasion of Ukraine *most likely* caused for Western investors holding Russian assets:",
+      "choices": [
+        { "id": "A", "text": "Minimal disruption due to natural risk diversification." },
+        { "id": "B", "text": "Comprehensive sanctions resulting in effectively zero value for many Russian holdings." },
+        { "id": "C", "text": "Increased returns due to commodity gains." }
+      ],
+      "answer": "B",
+      "explanation": "Comprehensive Western sanctions in response to invasion: SWIFT cut-off, reserves frozen, equity suspensions, delistings. Western investors' Russian holdings effectively worth zero in portfolios.\n\n**A** misjudges concentration risk in country-specific exposures.\n**C** would apply to Russian-currency-paying owners, not Western investors."
+    },
+    {
+      "id": "q-econ-geo-003",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "easy",
+      "stem": "The trend of *globalisation reversal* since 2015 *most likely* shows:",
+      "choices": [
+        { "id": "A", "text": "Continued expansion of cross-border trade." },
+        { "id": "B", "text": "Higher tariffs, slower trade growth, friend-shoring, and near-shoring." },
+        { "id": "C", "text": "Reduction in supply chain costs across all industries." }
+      ],
+      "answer": "B",
+      "explanation": "Post-2015 trends include rising tariffs (especially US-China), slowing trade growth, friend-shoring (sourcing from allies), and near-shoring (closer to home markets).\n\n**A** is the pre-2015 trend.\n**C** misjudges — globalisation reversal typically raises costs."
+    },
+    {
+      "id": "q-econ-geo-004",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "medium",
+      "stem": "Country risk for portfolio investors *most likely* includes:",
+      "choices": [
+        { "id": "A", "text": "Political stability, currency convertibility, regulatory environment, sanctions exposure." },
+        { "id": "B", "text": "Only sovereign debt rating." },
+        { "id": "C", "text": "Only currency exchange rate." }
+      ],
+      "answer": "A",
+      "explanation": "Country risk is multi-dimensional: political stability (government, elections), macroeconomic (debt, inflation), regulatory (rule of law, property rights), and external (sanctions, conflict).\n\n**B** is too narrow.\n**C** is too narrow."
+    },
+    {
+      "id": "q-econ-geo-005",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "easy",
+      "stem": "Sanctions *most likely* affect investment portfolios by:",
+      "choices": [
+        { "id": "A", "text": "Forcing divestment from named entities and reducing the value of specific holdings." },
+        { "id": "B", "text": "Having no effect on portfolios." },
+        { "id": "C", "text": "Increasing the value of all related assets." }
+      ],
+      "answer": "A",
+      "explanation": "Sanctions force divestment from named entities, freeze assets, restrict transactions. Direct effects on portfolios with exposure.\n\n**B** and **C** misread the impact."
+    },
+    {
+      "id": "q-econ-geo-006",
+      "lessonId": "econ-geo-overview",
+      "difficulty": "medium",
+      "stem": "Tools of economic geopolitical influence *most likely* include:",
+      "choices": [
+        { "id": "A", "text": "Tariffs, sanctions, export controls, foreign aid, currency interventions." },
+        { "id": "B", "text": "Only military force." },
+        { "id": "C", "text": "Only cultural exchanges." }
+      ],
+      "answer": "A",
+      "explanation": "Economic tools: tariffs (taxes on imports), sanctions (restrictions on transactions), export controls (technology restrictions), foreign aid (carrots/sticks), currency interventions.\n\n**B** is military, separate category.\n**C** is soft power, distinct."
+    },
+    {
+      "id": "q-econ-it-001",
+      "lessonId": "econ-it-overview",
+      "difficulty": "medium",
+      "stem": "*Comparative advantage* *most likely* differs from *absolute advantage* because:",
+      "choices": [
+        { "id": "A", "text": "Comparative advantage is based on opportunity cost, not absolute productivity." },
+        { "id": "B", "text": "Comparative advantage requires the country to be most productive in everything." },
+        { "id": "C", "text": "They are the same concept." }
+      ],
+      "answer": "A",
+      "explanation": "Absolute advantage: producing with fewer inputs. Comparative advantage: lowest opportunity cost. Comparative is the key concept because it shows that even non-absolutely-advantageous countries can gain from trade.\n\n**B** is reversed; absolute advantage requires that.\n**C** is incorrect — they're distinct concepts."
+    },
+    {
+      "id": "q-econ-it-002",
+      "lessonId": "econ-it-overview",
+      "difficulty": "easy",
+      "stem": "Tariffs on imports *most likely* benefit:",
+      "choices": [
+        { "id": "A", "text": "Domestic producers; harm domestic consumers." },
+        { "id": "B", "text": "All domestic stakeholders equally." },
+        { "id": "C", "text": "Foreign exporters." }
+      ],
+      "answer": "A",
+      "explanation": "Tariffs raise prices for imports → domestic producers face less competition → benefit. Consumers pay higher prices → harmed. Net effect typically negative (consumer losses exceed producer gains).\n\n**B** treats producers and consumers identically — they're not.\n**C** is opposite — foreign exporters lose sales."
+    },
+    {
+      "id": "q-econ-it-003",
+      "lessonId": "econ-it-overview",
+      "difficulty": "medium",
+      "stem": "An *import quota* differs from a *tariff* *most likely* because:",
+      "choices": [
+        { "id": "A", "text": "Quotas restrict quantity; tariffs raise price. Quotas don't generate government revenue." },
+        { "id": "B", "text": "Quotas raise prices more than tariffs." },
+        { "id": "C", "text": "Quotas and tariffs are identical in all respects." }
+      ],
+      "answer": "A",
+      "explanation": "Tariff = tax per imported unit (government revenue). Quota = quantitative limit (no government revenue; rents go to those who get permits or to foreign producers if they're scarce). Both reduce imports and raise domestic prices.\n\n**B** misreads — both have similar effects on prices.\n**C** ignores the revenue-generation difference."
+    },
+    {
+      "id": "q-econ-it-004",
+      "lessonId": "econ-it-overview",
+      "difficulty": "medium",
+      "stem": "The Ricardian model of comparative advantage *most likely* emphasises:",
+      "choices": [
+        { "id": "A", "text": "Technology differences between countries as the source of trade." },
+        { "id": "B", "text": "Resource endowments as the source of trade." },
+        { "id": "C", "text": "Pure market structure differences." }
+      ],
+      "answer": "A",
+      "explanation": "Ricardo's model: technology and productivity differences drive comparative advantage. Different production possibility frontiers due to technology.\n\n**B** describes Heckscher-Ohlin model (factor endowments).\n**C** is more market structure, not the comparative advantage framework."
+    },
+    {
+      "id": "q-econ-it-005",
+      "lessonId": "econ-it-overview",
+      "difficulty": "easy",
+      "stem": "Net welfare effect of tariffs in the imposing country is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Net positive — protect domestic industry." },
+        { "id": "B", "text": "Net negative — consumer losses exceed producer + government gains." },
+        { "id": "C", "text": "Net zero — all effects cancel." }
+      ],
+      "answer": "B",
+      "explanation": "Economic analysis shows: domestic consumer losses (higher prices) exceed gains to domestic producers (less competition) and government (tariff revenue). Net welfare is reduced.\n\nExceptions: optimal tariff theory (very large countries), strategic sectors.\n\n**A** and **C** misjudge the standard welfare analysis."
+    },
+    {
+      "id": "q-econ-it-006",
+      "lessonId": "econ-it-overview",
+      "difficulty": "easy",
+      "stem": "The WTO (World Trade Organization) is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "A global institution setting rules for international trade and resolving disputes." },
+        { "id": "B", "text": "A regional trade bloc covering Western Europe only." },
+        { "id": "C", "text": "An advisory body without enforcement powers." }
+      ],
+      "answer": "A",
+      "explanation": "WTO (formed 1995, successor to GATT): 164 member countries. Sets rules, resolves disputes, monitors trade barriers.\n\n**B** confuses with EU.\n**C** is incorrect — has dispute resolution and limited enforcement powers."
+    },
+    {
+      "id": "q-econ-cf-001",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "medium",
+      "stem": "The balance of payments *most likely* consists of:",
+      "choices": [
+        { "id": "A", "text": "Current account + Capital account + Financial account." },
+        { "id": "B", "text": "Only the current account." },
+        { "id": "C", "text": "GDP - National Debt." }
+      ],
+      "answer": "A",
+      "explanation": "Balance of payments has three sections: current (trade in goods/services + income), capital (cross-border transfers), financial (cross-border investment). Identity: sum = 0 (with errors/omissions).\n\n**B** is incomplete.\n**C** is unrelated."
+    },
+    {
+      "id": "q-econ-cf-002",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "easy",
+      "stem": "A country with a *persistent current account deficit* *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Is receiving net capital inflows to finance the deficit." },
+        { "id": "B", "text": "Has no foreign investment." },
+        { "id": "C", "text": "Has an oversupply of currency." }
+      ],
+      "answer": "A",
+      "explanation": "Current account deficit means net imports + outflows of income exceed exports + inflows. The deficit must be financed by net capital inflows (foreign borrowing or asset sales).\n\nUS persistently runs current account deficit, financed by global appetite for USD assets.\n\n**B** and **C** misread the relationship."
+    },
+    {
+      "id": "q-econ-cf-003",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "easy",
+      "stem": "The FX market is *most likely*:",
+      "choices": [
+        { "id": "A", "text": "A centralised exchange with daily trading limits." },
+        { "id": "B", "text": "The largest financial market by trading volume, with continuous 24-hour trading on weekdays." },
+        { "id": "C", "text": "Only available to central banks." }
+      ],
+      "answer": "B",
+      "explanation": "FX is the largest market (over $7 trillion daily), decentralised, trading ~24 hours weekdays (overlapping Tokyo, London, New York sessions).\n\n**A** is incorrect — decentralised, not exchange-based.\n**C** is incorrect — open to many participants."
+    },
+    {
+      "id": "q-econ-cf-004",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "medium",
+      "stem": "A *fixed exchange rate regime* *most likely* requires the country to:",
+      "choices": [
+        { "id": "A", "text": "Have unlimited monetary policy flexibility." },
+        { "id": "B", "text": "Give up independent monetary policy to maintain the peg." },
+        { "id": "C", "text": "Pay no attention to capital flows." }
+      ],
+      "answer": "B",
+      "explanation": "Impossible Trinity: a country can have only two of three: free capital movement, fixed exchange rate, independent monetary policy.\n\nFixed rate + open capital → must surrender monetary policy independence (rates set to defend peg).\n\nHong Kong, Saudi Arabia (USD pegs) demonstrate this trade-off.\n\n**A** and **C** misread the constraints."
+    },
+    {
+      "id": "q-econ-cf-005",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "medium",
+      "stem": "Higher domestic interest rates relative to other countries *most likely* cause the domestic currency to:",
+      "choices": [
+        { "id": "A", "text": "Depreciate due to inflation concerns." },
+        { "id": "B", "text": "Appreciate due to capital inflows seeking yield." },
+        { "id": "C", "text": "Remain unchanged — interest rates don't affect FX." }
+      ],
+      "answer": "B",
+      "explanation": "Higher rates attract foreign capital seeking yield → currency appreciation. Demand-supply: more buyers of domestic currency for investment.\n\n2022-2024: US rate hikes drove USD higher vs EUR, JPY, GBP.\n\n**A** reverses the relationship.\n**C** ignores the mechanism."
+    },
+    {
+      "id": "q-econ-cf-006",
+      "lessonId": "econ-cf-overview",
+      "difficulty": "medium",
+      "stem": "Hot money flows are *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Long-term foreign direct investment in factories and equipment." },
+        { "id": "B", "text": "Short-term, highly mobile capital flows seeking yield or speculative gains." },
+        { "id": "C", "text": "Reserves held by central banks." }
+      ],
+      "answer": "B",
+      "explanation": "Hot money: short-term, mobile capital. Sensitive to interest rates and risk sentiment. Can leave quickly during stress, contributing to crises.\n\n**A** describes FDI (much more stable).\n**C** is reserve flows."
+    },
+    {
+      "id": "q-econ-er-001",
+      "lessonId": "econ-er-overview",
+      "difficulty": "easy",
+      "stem": "Given USD/JPY = 150 and EUR/USD = 1.08, the EUR/JPY cross-rate is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "138.89" },
+        { "id": "B", "text": "162.00" },
+        { "id": "C", "text": "0.0072" }
+      ],
+      "answer": "B",
+      "explanation": "Cross-rate: EUR/JPY = EUR/USD × USD/JPY = 1.08 × 150 = 162.\n\nMeaning: 1 EUR = 162 JPY.\n\n**A** has incorrect calculation.\n**C** is the inverse (JPY/EUR)."
+    },
+    {
+      "id": "q-econ-er-002",
+      "lessonId": "econ-er-overview",
+      "difficulty": "medium",
+      "stem": "Interest rate parity *most likely* implies that the currency with the *higher* interest rate will:",
+      "choices": [
+        { "id": "A", "text": "Trade at a forward premium." },
+        { "id": "B", "text": "Trade at a forward discount." },
+        { "id": "C", "text": "Trade at the same forward rate as spot." }
+      ],
+      "answer": "B",
+      "explanation": "IRP: $F = S \\cdot (1 + r_q) / (1 + r_b)$. Currency with higher rate is the base; forward rate is *lower* in terms of quote currency (i.e., the high-rate currency trades at forward discount).\n\nNo arbitrage condition.\n\n**A** is reversed.\n**C** would only be the case for equal interest rates."
+    },
+    {
+      "id": "q-econ-er-003",
+      "lessonId": "econ-er-overview",
+      "difficulty": "medium",
+      "stem": "Spot EUR/USD = 1.10. 1-year USD rate = 5%; 1-year EUR rate = 3%. Forward 1-year EUR/USD via IRP is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "1.072" },
+        { "id": "B", "text": "1.121" },
+        { "id": "C", "text": "1.100" }
+      ],
+      "answer": "B",
+      "explanation": "$F = S \\cdot (1 + r_{USD}) / (1 + r_{EUR}) = 1.10 \\cdot 1.05 / 1.03 = 1.10 \\cdot 1.0194 = 1.121$.\n\nEUR has lower rate → forward premium → forward EUR/USD higher than spot.\n\n**A** uses incorrect ratio direction.\n**C** is spot only."
+    },
+    {
+      "id": "q-econ-er-004",
+      "lessonId": "econ-er-overview",
+      "difficulty": "medium",
+      "stem": "Purchasing Power Parity (PPP) *most likely* says that:",
+      "choices": [
+        { "id": "A", "text": "Exchange rates immediately adjust to equate purchasing power across countries." },
+        { "id": "B", "text": "In the long run, exchange rate changes approximate the inflation differential between countries." },
+        { "id": "C", "text": "Exchange rates are unrelated to inflation." }
+      ],
+      "answer": "B",
+      "explanation": "Relative PPP: $\\%\\Delta S \\approx \\pi_{foreign} - \\pi_{domestic}$. Long-term concept; weakly held in short term (other factors dominate).\n\n**A** is too strong — PPP holds in the long run only.\n**C** is incorrect — PPP is the inflation-FX relationship."
+    },
+    {
+      "id": "q-econ-er-005",
+      "lessonId": "econ-er-overview",
+      "difficulty": "medium",
+      "stem": "A currency at a *forward premium* relative to spot *most likely* has:",
+      "choices": [
+        { "id": "A", "text": "Higher interest rate than the counter currency." },
+        { "id": "B", "text": "Lower interest rate than the counter currency." },
+        { "id": "C", "text": "Same interest rate as the counter currency." }
+      ],
+      "answer": "B",
+      "explanation": "Lower interest rate currency trades at forward premium (compensates for lower interest earnings).\n\nExample: EUR with 3% vs USD with 5% — EUR has forward premium in USD terms.\n\n**A** is reversed.\n**C** would mean no forward premium."
+    },
+    {
+      "id": "q-econ-er-006",
+      "lessonId": "econ-er-overview",
+      "difficulty": "hard",
+      "stem": "Triangular arbitrage opportunities *most likely* exist when:",
+      "choices": [
+        { "id": "A", "text": "The direct exchange rate between two currencies differs from the cross-rate calculated via a third currency." },
+        { "id": "B", "text": "The three currencies have identical interest rates." },
+        { "id": "C", "text": "Markets are extremely liquid." }
+      ],
+      "answer": "A",
+      "explanation": "If EUR/JPY direct quote differs from EUR/USD × USD/JPY cross-rate, arbitrage profits exist. Liquid markets keep this small or zero in practice.\n\n**B** is unrelated.\n**C** is when arbitrage opportunities are minimal — the opposite of when they exist."
+    },
+    {
       "id": "q-econ-mp-001",
       "lessonId": "econ-monetary-overview",
       "difficulty": "easy",
