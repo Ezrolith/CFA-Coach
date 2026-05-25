@@ -1,0 +1,23 @@
+{
+  "id": "derivatives",
+  "name": "Derivatives",
+  "shortName": "Deriv",
+  "order": 8,
+  "weight": "5-8%",
+  "weightLow": 5,
+  "weightHigh": 8,
+  "color": "deriv",
+  "description": "Forwards, futures, swaps and options. How they're priced, how they're used, and the no-arbitrage logic underlying them.",
+  "modules": [
+    { "id": "deriv-features",          "name": "Derivative Instrument and Derivative Market Features", "lessons": [] },
+    { "id": "deriv-forwards-futures",  "name": "Forward Commitment and Contingent Claim Features and Instruments", "lessons": [] },
+    { "id": "deriv-benefits-risks",    "name": "Derivative Benefits, Risks, and Issuer and Investor Uses", "lessons": [] },
+    { "id": "deriv-arbitrage",         "name": "Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives", "lessons": [] },
+    { "id": "deriv-forward-pricing",   "name": "Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities", "lessons": [] },
+    { "id": "deriv-futures-pricing",   "name": "Pricing and Valuation of Futures Contracts", "lessons": [] },
+    { "id": "deriv-interest-rate",     "name": "Pricing and Valuation of Interest Rates and Other Swaps", "lessons": [] },
+    { "id": "deriv-options-pricing",   "name": "Pricing and Valuation of Options", "lessons": [] },
+    { "id": "deriv-option-replicate",  "name": "Option Replication Using Put–Call Parity", "lessons": [] },
+    { "id": "deriv-binomial-model",    "name": "Valuing a Derivative Using a One-Period Binomial Model", "lessons": [] }
+  ]
+}

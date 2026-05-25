@@ -1,0 +1,24 @@
+{
+  "id": "quant",
+  "name": "Quantitative Methods",
+  "shortName": "Quant",
+  "order": 2,
+  "weight": "6-9%",
+  "weightLow": 6,
+  "weightHigh": 9,
+  "color": "quant",
+  "description": "Statistical and mathematical foundations for finance. Time value of money, probability, sampling, hypothesis testing, regression. Underpins every other topic.",
+  "modules": [
+    { "id": "quant-rates-returns",        "name": "Rates and Returns", "lessons": [] },
+    { "id": "quant-time-value",           "name": "The Time Value of Money in Finance", "lessons": [] },
+    { "id": "quant-statistical-measures", "name": "Statistical Measures of Asset Returns", "lessons": [] },
+    { "id": "quant-probability-trees",    "name": "Probability Trees and Conditional Expectations", "lessons": [] },
+    { "id": "quant-portfolio-math",       "name": "Portfolio Mathematics", "lessons": [] },
+    { "id": "quant-simulation",           "name": "Simulation Methods", "lessons": [] },
+    { "id": "quant-estimation",           "name": "Estimation and Inference", "lessons": [] },
+    { "id": "quant-hypothesis",           "name": "Hypothesis Testing", "lessons": [] },
+    { "id": "quant-parametric",           "name": "Parametric and Non-Parametric Tests of Independence", "lessons": [] },
+    { "id": "quant-simple-regression",    "name": "Simple Linear Regression", "lessons": [] },
+    { "id": "quant-big-data",             "name": "Introduction to Big Data Techniques", "lessons": [] }
+  ]
+}

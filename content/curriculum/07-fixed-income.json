@@ -1,0 +1,32 @@
+{
+  "id": "fixed-income",
+  "name": "Fixed Income",
+  "shortName": "FI",
+  "order": 7,
+  "weight": "11-14%",
+  "weightLow": 11,
+  "weightHigh": 14,
+  "color": "fi",
+  "description": "Bonds: features, pricing, yield measures, term structure, credit analysis, securitisation. The other side of capital markets — debt rather than equity.",
+  "modules": [
+    { "id": "fi-features",            "name": "Fixed-Income Instrument Features", "lessons": [] },
+    { "id": "fi-cash-flows",          "name": "Fixed-Income Cash Flows and Types", "lessons": [] },
+    { "id": "fi-issuance",            "name": "Fixed-Income Issuance and Trading", "lessons": [] },
+    { "id": "fi-markets",             "name": "Fixed-Income Markets for Corporate Issuers", "lessons": [] },
+    { "id": "fi-government-markets",  "name": "Fixed-Income Markets for Government Issuers", "lessons": [] },
+    { "id": "fi-valuation",           "name": "Fixed-Income Bond Valuation: Prices and Yields", "lessons": [] },
+    { "id": "fi-yield-measures",      "name": "Yield and Yield Spread Measures for Fixed-Rate Bonds", "lessons": [] },
+    { "id": "fi-yield-floating",      "name": "Yield and Yield Spread Measures for Floating-Rate Instruments", "lessons": [] },
+    { "id": "fi-term-structure",      "name": "The Term Structure of Interest Rates: Spot, Par, and Forward Curves", "lessons": [] },
+    { "id": "fi-interest-risk",       "name": "Interest Rate Risk and Return", "lessons": [] },
+    { "id": "fi-duration-convexity",  "name": "Yield-Based Bond Duration Measures and Properties", "lessons": [] },
+    { "id": "fi-convexity",           "name": "Yield-Based Bond Convexity and Portfolio Properties", "lessons": [] },
+    { "id": "fi-curve-duration",      "name": "Curve-Based and Empirical Fixed-Income Risk Measures", "lessons": [] },
+    { "id": "fi-credit-risk",         "name": "Credit Risk", "lessons": [] },
+    { "id": "fi-credit-analysis",     "name": "Credit Analysis for Government Issuers", "lessons": [] },
+    { "id": "fi-credit-corporates",   "name": "Credit Analysis for Corporate Issuers", "lessons": [] },
+    { "id": "fi-securitization",      "name": "Fixed-Income Securitization", "lessons": [] },
+    { "id": "fi-abs-mbs",             "name": "Asset-Backed Security (ABS) Instrument and Market Features", "lessons": [] },
+    { "id": "fi-mbs",                 "name": "Mortgage-Backed Security (MBS) Instrument and Market Features", "lessons": [] }
+  ]
+}

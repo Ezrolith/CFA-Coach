@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv11', 'ss03', 'cv02', 'cv03', 'cv04';
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-white text-ink-800 font-sans;
+    @apply dark:bg-ink-950 dark:text-ink-100;
+  }
+
+  /* Tabular numbers everywhere by default — finance app */
+  body, table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Hairline scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-200 dark:bg-ink-700 rounded-full;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ink-300 dark:bg-ink-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl;
+  }
+  .card-hover {
+    @apply transition-all duration-300 ease-out-soft;
+    @apply hover:border-ink-300 dark:hover:border-ink-700;
+    @apply hover:shadow-[0_2px_24px_-6px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_2px_24px_-6px_rgba(0,0,0,0.4)];
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-sm font-medium;
+    @apply transition-all duration-200 ease-out-soft;
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-ink-950;
+  }
+  .btn-primary {
+    @apply btn bg-ink-900 text-white hover:bg-ink-800 dark:bg-white dark:text-ink-900 dark:hover:bg-ink-100;
+  }
+  .btn-ghost {
+    @apply btn text-ink-600 hover:bg-ink-100 dark:text-ink-300 dark:hover:bg-ink-800;
+  }
+  .pill {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .pill-muted {
+    @apply pill bg-ink-100 text-ink-600 dark:bg-ink-800 dark:text-ink-400;
+  }
+  .pill-accent {
+    @apply pill bg-accent-50 text-accent-700 dark:bg-accent-900/40 dark:text-accent-300;
+  }
+  .divider {
+    @apply h-px w-full bg-ink-200 dark:bg-ink-800;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .mono {
+    @apply font-mono;
+    font-feature-settings: 'calt' 0;
+  }
+}

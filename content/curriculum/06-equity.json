@@ -1,0 +1,21 @@
+{
+  "id": "equity",
+  "name": "Equity Investments",
+  "shortName": "Equity",
+  "order": 6,
+  "weight": "11-14%",
+  "weightLow": 11,
+  "weightHigh": 14,
+  "color": "equity",
+  "description": "Stock markets and how to value shares. Market organisation, indices, market efficiency, industry analysis, and three valuation approaches (DDM, multiples, asset-based).",
+  "modules": [
+    { "id": "equity-market-organization", "name": "Market Organization and Structure", "lessons": [] },
+    { "id": "equity-indices",             "name": "Security Market Indexes", "lessons": [] },
+    { "id": "equity-market-efficiency",   "name": "Market Efficiency", "lessons": [] },
+    { "id": "equity-overview",            "name": "Overview of Equity Securities", "lessons": [] },
+    { "id": "equity-company-analysis",    "name": "Company Analysis: Past and Present", "lessons": [] },
+    { "id": "equity-industry-analysis",   "name": "Industry and Competitive Analysis", "lessons": [] },
+    { "id": "equity-forecasting",         "name": "Company Analysis: Forecasting", "lessons": [] },
+    { "id": "equity-valuation-concepts",  "name": "Equity Valuation: Concepts and Basic Tools", "lessons": [] }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "fra",
+  "name": "Financial Statement Analysis",
+  "shortName": "FRA",
+  "order": 4,
+  "weight": "11-14%",
+  "weightLow": 11,
+  "weightHigh": 14,
+  "color": "fra",
+  "description": "Reading the three statements, decoding ratios, understanding inventories, long-lived assets, leases, income tax, financing liabilities. The plumbing of how companies report and how analysts read them.",
+  "modules": [
+    { "id": "fra-intro",                 "name": "Introduction to Financial Statement Analysis", "lessons": [] },
+    { "id": "fra-income-statement",      "name": "Analyzing Income Statements", "lessons": [] },
+    { "id": "fra-balance-sheet",         "name": "Analyzing Balance Sheets", "lessons": [] },
+    { "id": "fra-cash-flow",             "name": "Analyzing Statements of Cash Flows I", "lessons": [] },
+    { "id": "fra-cash-flow-ii",          "name": "Analyzing Statements of Cash Flows II", "lessons": [] },
+    { "id": "fra-ratios",                "name": "Analysis of Inventories", "lessons": [] },
+    { "id": "fra-long-lived",            "name": "Analysis of Long-Lived Assets", "lessons": [] },
+    { "id": "fra-income-taxes",          "name": "Topics in Long-Term Liabilities and Equity", "lessons": [] },
+    { "id": "fra-non-current-liab",      "name": "Analysis of Income Taxes", "lessons": [] },
+    { "id": "fra-financial-reporting",   "name": "Financial Reporting Quality", "lessons": [] },
+    { "id": "fra-techniques",            "name": "Financial Analysis Techniques", "lessons": [] },
+    { "id": "fra-introduction-quality",  "name": "Introduction to Financial Statement Modeling", "lessons": [] }
+  ]
+}

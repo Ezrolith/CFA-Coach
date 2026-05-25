@@ -1,0 +1,20 @@
+{
+  "id": "portfolio",
+  "name": "Portfolio Management",
+  "shortName": "PM",
+  "order": 10,
+  "weight": "8-12%",
+  "weightLow": 8,
+  "weightHigh": 12,
+  "color": "pm",
+  "description": "Building and managing portfolios for institutional and private investors. Modern portfolio theory, risk management, behavioural finance, fintech basics.",
+  "modules": [
+    { "id": "pm-overview",             "name": "Portfolio Risk and Return: Part I", "lessons": [] },
+    { "id": "pm-risk-return-2",        "name": "Portfolio Risk and Return: Part II", "lessons": [] },
+    { "id": "pm-portfolio-mgmt",       "name": "Portfolio Management: An Overview", "lessons": [] },
+    { "id": "pm-basics-of-pm",         "name": "Basics of Portfolio Planning and Construction", "lessons": [] },
+    { "id": "pm-mutual-funds",         "name": "The Behavioral Biases of Individuals", "lessons": [] },
+    { "id": "pm-risk-management",      "name": "Introduction to Risk Management", "lessons": [] },
+    { "id": "pm-fintech",              "name": "Fintech in Investment Management", "lessons": [] }
+  ]
+}

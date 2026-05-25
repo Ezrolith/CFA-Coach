@@ -1,0 +1,21 @@
+{
+  "id": "economics",
+  "name": "Economics",
+  "shortName": "Econ",
+  "order": 3,
+  "weight": "6-9%",
+  "weightLow": 6,
+  "weightHigh": 9,
+  "color": "economics",
+  "description": "Micro and macro: demand and supply, firm behaviour, monetary and fiscal policy, international trade, currency markets. The lens for understanding why markets move.",
+  "modules": [
+    { "id": "econ-firms-market-structures", "name": "The Firm and Market Structures", "lessons": [] },
+    { "id": "econ-aggregate-output",        "name": "Understanding Business Cycles", "lessons": [] },
+    { "id": "econ-fiscal-monetary",         "name": "Fiscal Policy", "lessons": [] },
+    { "id": "econ-monetary-policy",         "name": "Monetary Policy", "lessons": [] },
+    { "id": "econ-international-trade",     "name": "Introduction to Geopolitics", "lessons": [] },
+    { "id": "econ-currency-exchange",       "name": "International Trade", "lessons": [] },
+    { "id": "econ-currency-rates",          "name": "Capital Flows and the FX Market", "lessons": [] },
+    { "id": "econ-exchange-rate",           "name": "Exchange Rate Calculations", "lessons": [] }
+  ]
+}

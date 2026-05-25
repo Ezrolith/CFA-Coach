@@ -1,0 +1,20 @@
+{
+  "id": "corp-issuers",
+  "name": "Corporate Issuers",
+  "shortName": "Corp",
+  "order": 5,
+  "weight": "6-9%",
+  "weightLow": 6,
+  "weightHigh": 9,
+  "color": "corp",
+  "description": "How companies raise capital and make investment decisions. Capital structure, working capital, ESG considerations, and the mechanics of corporate governance.",
+  "modules": [
+    { "id": "corp-features",            "name": "Organizational Forms, Corporate Issuer Features, and Ownership", "lessons": [] },
+    { "id": "corp-investors",           "name": "Investors and Other Stakeholders", "lessons": [] },
+    { "id": "corp-governance",          "name": "Corporate Governance: Conflicts, Mechanisms, Risks, and Benefits", "lessons": [] },
+    { "id": "corp-working-capital",     "name": "Working Capital and Liquidity", "lessons": [] },
+    { "id": "corp-capital-allocation",  "name": "Capital Investments and Capital Allocation", "lessons": [] },
+    { "id": "corp-capital-structure",   "name": "Capital Structure", "lessons": [] },
+    { "id": "corp-business-models",     "name": "Business Models", "lessons": [] }
+  ]
+}

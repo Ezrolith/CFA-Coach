@@ -1,0 +1,17 @@
+{
+  "id": "ethics",
+  "name": "Ethical & Professional Standards",
+  "shortName": "Ethics",
+  "order": 1,
+  "weight": "15-20%",
+  "weightLow": 15,
+  "weightHigh": 20,
+  "color": "ethics",
+  "description": "The bedrock of the CFA program. Code of Ethics, Standards of Professional Conduct, GIPS. Heavy in scenario-based questions where the right answer comes from applying principles to nuance.",
+  "modules": [
+    { "id": "ethics-code-standards", "name": "Code of Ethics & Standards of Professional Conduct", "lessons": [] },
+    { "id": "ethics-guidance-i",     "name": "Guidance for Standards I–VII", "lessons": [] },
+    { "id": "ethics-intro-gips",     "name": "Introduction to the Global Investment Performance Standards (GIPS)", "lessons": [] },
+    { "id": "ethics-ai-finance",     "name": "Ethics Application", "lessons": [] }
+  ]
+}

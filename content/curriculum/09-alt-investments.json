@@ -1,0 +1,20 @@
+{
+  "id": "alts",
+  "name": "Alternative Investments",
+  "shortName": "Alts",
+  "order": 9,
+  "weight": "7-10%",
+  "weightLow": 7,
+  "weightHigh": 10,
+  "color": "alts",
+  "description": "Everything that isn't public equity, public debt, or cash. Private equity, hedge funds, real estate, infrastructure, commodities, digital assets. Structures, fees, risks, returns.",
+  "modules": [
+    { "id": "alts-features",           "name": "Alternative Investment Features, Methods, and Structures", "lessons": [] },
+    { "id": "alts-performance",        "name": "Alternative Investment Performance and Returns", "lessons": [] },
+    { "id": "alts-investments-due",    "name": "Investments in Private Capital: Equity and Debt", "lessons": [] },
+    { "id": "alts-real-estate",        "name": "Real Estate and Infrastructure", "lessons": [] },
+    { "id": "alts-natural-resources",  "name": "Natural Resources", "lessons": [] },
+    { "id": "alts-hedge-funds",        "name": "Hedge Funds", "lessons": [] },
+    { "id": "alts-digital-assets",     "name": "Introduction to Digital Assets", "lessons": [] }
+  ]
+}
