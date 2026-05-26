@@ -1,6 +1,6 @@
 # CFA-Coach — Master Plan
 
-> v0.9 — updated 2026-05-25. **All 12 phases shipped. Comprehensive content across all 10 topics.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
+> v1.0 — updated 2026-05-26. **Full Level-1 content coverage. All 12 phases shipped.** Live at https://cfa-coach-app.web.app · code at https://github.com/Ezrolith/CFA-Coach.
 
 ## Status
 
@@ -9,8 +9,8 @@
 | 1 — Foundation | ✅ Shipped | Vite + React + Tailwind, Firebase project `cfa-coach-app`, deployed |
 | 2 — Curriculum skeleton | ✅ Shipped | 10 topics · 93 modules · **327 LOS** with verb pills + draft flags |
 | 3 — Lesson content viewer | ✅ Shipped | Markdown + KaTeX, three-mode tabs, formulas / examples / pitfalls / FAQ / resources |
-| 4 — Content authoring | ✅ **93 lessons across all 10 topics** | Comprehensive coverage of every CFA Level 1 module: Ethics (Standards I-VII), Quant (TVM, rates/returns, stats, probability, portfolio math, simulation, estimation, hypothesis testing, parametric tests, SLR, big data), Economics (multiple lessons), FRA (income statement, balance sheet, cash flow, ratios, inventories, long-lived assets, taxes, etc.), Corp Issuers (capital structure, working capital, governance, M&A), Equity (markets, valuation, types, industry analysis), Fixed Income (features, cash flows, issuance, corporate/govt markets, FRN/MM yields, term structure, IR risk/return, duration, convexity, curve measures, credit risk, sovereign/corp credit, securitisation, ABS, MBS), Derivatives (features, forwards/options, benefits/risks, arbitrage, forward/futures/swap pricing, put-call parity, binomial), Alts (features, real estate, infrastructure, private equity, hedge funds, commodities, digital assets), PM (process, risk/return I-II, beh fin, ETFs, planning). |
-| 5 — Quiz engine | ✅ Shipped | **600+ questions** across all 10 topics. Random shuffle, submit, explanation, results. |
+| 4 — Content authoring | ✅ **99 lessons (1:1 with curriculum)** | Every curriculum lesson has authored content. Validated: 99 content files ↔ 99 curriculum lesson IDs, zero orphans either side. Coverage by topic: Ethics 10 · Quant 11 · Econ 8 · FRA 12 · Corp Issuers 7 · Equity 8 · Fixed Income 19 · Derivatives 10 · Alts 7 · PM 7. |
+| 5 — Quiz engine | ✅ Shipped | **594 questions** across all 10 topics, all referencing valid lessons & valid answer IDs. Distribution: Ethics 60 · Quant 66 · Econ 48 · FRA 72 · Corp 42 · Equity 48 · FI 114 · Deriv 60 · Alts 42 · PM 42. |
 | 6 — Spaced repetition | ✅ Shipped | Full SM-2 algorithm; quiz scores auto-feed; manual rating on /review; daily-due queue; **streak tracking** |
 | 7 — Progress dashboard | ✅ Shipped | Per-topic heatmap, readiness %, quiz performance, suggested focus |
 | 8 — Content sprint #2 | ✅ Merged into 4 | The remaining authoring is one continuous backlog |
