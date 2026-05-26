@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Asset-Backed Security", "url": "https://www.investopedia.com/terms/a/asset-backedsecurity.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Asset-Backed Security",
+      "url": "https://www.investopedia.com/terms/a/asset-backedsecurity.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-sec-overview",
+      "why": "Securitisation mechanics that underlie ABS."
+    },
+    {
+      "id": "fi-mbs-overview",
+      "why": "Mortgage-backed counterpart."
+    }
   ]
 }

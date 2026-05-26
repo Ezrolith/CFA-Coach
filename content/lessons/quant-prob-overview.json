@@ -5,11 +5,31 @@
     "pro": "## Probability + conditional expectations at speed\n\n### Expected value\n\n$E(X) = \\sum p_i x_i$\n\nWeighted average of outcomes.\n\n### Variance\n\n$\\sigma^2 = \\sum p_i (x_i - E(X))^2$\n\nDispersion around mean. Standard deviation = √variance.\n\n### Conditional expectation\n\n$E(X | Y = y) = \\sum_x x \\cdot P(X = x | Y = y)$\n\nExpected X given Y = y.\n\n### Total expectation (law of total expectation)\n\n$E(X) = E_Y[E(X | Y)]$\n\nUnconditional = weighted average of conditional expectations.\n\n### Probability trees\n\nVisual representation of multi-stage random events. Useful for:\n- Scenario analysis\n- Multi-stage decisions\n- Computing conditional expectations\n\n### Joint, marginal, conditional probabilities\n\n- **Joint**: P(A and B)\n- **Marginal**: P(A) summing over B\n- **Conditional**: P(A | B) = P(A and B) / P(B)\n\n### Bayes' theorem\n\n$P(A | B) = \\frac{P(B | A) \\cdot P(A)}{P(B)}$\n\nUpdate priors with new information.\n\n### Base rate fallacy\n\nIgnoring prior probability when evaluating evidence. Example: medical test with 90% sensitivity, 95% specificity, base rate 1% → positive result implies only 15% disease probability.\n\n### Covariance and correlation\n\n$\\text{Cov}(X,Y) = E[(X-\\mu_X)(Y-\\mu_Y)]$\n\n$\\rho = \\text{Cov} / (\\sigma_X \\sigma_Y)$\n\nRanges −1 to +1. Measure of linear association.\n\n### Applications in finance\n\n- Earnings surprises (conditional)\n- Credit risk (conditional on macro)\n- Updating views (Bayesian)\n- Scenario analysis\n- Portfolio variance (covariances among assets)\n- Risk management (joint probabilities of bad events)"
   },
   "formulas": [
-    { "name": "Expected value",           "latex": "E(X) = \\sum p_i x_i", "plain": "Probability-weighted sum of outcomes" },
-    { "name": "Variance",                  "latex": "\\sigma^2 = \\sum p_i (x_i - E(X))^2", "plain": "Probability-weighted squared deviations" },
-    { "name": "Conditional expectation",   "latex": "E(X | Y) = \\sum_x x \\cdot P(X = x | Y)", "plain": "Expected X given Y" },
-    { "name": "Bayes' theorem",            "latex": "P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}", "plain": "Update priors with new information" },
-    { "name": "Covariance (joint dist)",   "latex": "\\text{Cov}(X,Y) = E[(X - \\mu_X)(Y - \\mu_Y)]", "plain": "Measure of linear association" }
+    {
+      "name": "Expected value",
+      "latex": "E(X) = \\sum p_i x_i",
+      "plain": "Probability-weighted sum of outcomes"
+    },
+    {
+      "name": "Variance",
+      "latex": "\\sigma^2 = \\sum p_i (x_i - E(X))^2",
+      "plain": "Probability-weighted squared deviations"
+    },
+    {
+      "name": "Conditional expectation",
+      "latex": "E(X | Y) = \\sum_x x \\cdot P(X = x | Y)",
+      "plain": "Expected X given Y"
+    },
+    {
+      "name": "Bayes' theorem",
+      "latex": "P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}",
+      "plain": "Update priors with new information"
+    },
+    {
+      "name": "Covariance (joint dist)",
+      "latex": "\\text{Cov}(X,Y) = E[(X - \\mu_X)(Y - \\mu_Y)]",
+      "plain": "Measure of linear association"
+    }
   ],
   "examples": [
     {
@@ -30,6 +50,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bayes' Theorem", "url": "https://www.investopedia.com/terms/b/bayes-theorem.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Bayes' Theorem",
+      "url": "https://www.investopedia.com/terms/b/bayes-theorem.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-portmath-overview",
+      "why": "Expected value, variance and covariance applied to portfolios."
+    },
+    {
+      "id": "quant-stats-overview",
+      "why": "Sample statistics that estimate these moments."
+    }
   ]
 }

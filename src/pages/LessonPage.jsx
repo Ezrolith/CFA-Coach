@@ -6,6 +6,8 @@ import { questionsForLesson } from '../lib/questions';
 import { markLessonStudied, unmarkLessonStudied } from '../lib/progress';
 import { useLessonProgress } from '../hooks/useProgress';
 import LessonContent from '../components/lesson/LessonContent';
+import LessonNotes from '../components/lesson/LessonNotes';
+import SeeAlso from '../components/lesson/SeeAlso';
 
 const VERB_COLORS = {
   calculate:   'bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-300',
@@ -103,6 +105,12 @@ export default function LessonPage() {
           </p>
         </section>
       )}
+
+      {/* See also (cross-references) */}
+      {content?.relatedLessons && <SeeAlso items={content.relatedLessons} />}
+
+      {/* Personal notes */}
+      <LessonNotes lessonId={lesson.id} initialNote={progress.note} />
 
       {/* LOS list */}
       <section>

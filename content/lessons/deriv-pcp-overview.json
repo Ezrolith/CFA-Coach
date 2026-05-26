@@ -5,10 +5,26 @@
     "pro": "## Put–call parity at speed\n\n### European options on non-dividend stock\n\n$C + \\frac{X}{(1+r)^T} = P + S$\n\nWhere:\n- C = call premium\n- P = put premium\n- S = spot price\n- X = strike\n- $X/(1+r)^T$ = PV of strike\n\n### Synthetic equivalents\n\n- **Synthetic call**: $C = P + S - X/(1+r)^T$\n- **Synthetic put**: $P = C - S + X/(1+r)^T$\n- **Synthetic stock**: $S = C - P + X/(1+r)^T$\n- **Synthetic bond**: $X/(1+r)^T = P - C + S$\n\n### With dividends\n\n$C + \\frac{X}{(1+r)^T} = P + S - PV(\\text{div})$\n\n### Forward parity\n\n$C - P = \\frac{F - X}{(1+r)^T}$\n\n- At-the-money forward (F = X): C = P\n\n### At-the-money on spot (X = S)\n\n$C - P = S(1 - 1/(1+r)^T) > 0$\n\nSo ATM call > ATM put.\n\n### Why C > P at the money\n\n- Long call has $X to invest at risk-free until potential exercise.\n- Long put receives $X without time value.\n- Difference = present value of interest on X over T.\n\n### Arbitrage test\n\nIf $C + X/(1+r)^T \\neq P + S$, arbitrage available:\n- Buy cheaper side, sell expensive side.\n- Lock in riskless profit.\n\n### Box spread\n\nLong synthetic stock at K1 + short synthetic stock at K2.\n- Riskless under parity.\n- Reveals implied risk-free rate.\n\n### American options caveat\n\nParity is an inequality:\n$S - X \\leq C - P \\leq S - PV(X)$\n\nAmerican puts on dividend-paying stocks may break parity due to early exercise.\n\n### Common exam usage\n\n- Construct synthetic positions\n- Identify mispricings\n- Sanity check option prices"
   },
   "formulas": [
-    { "name": "Put–call parity (Eur, no div)",  "latex": "C + \\frac{X}{(1+r)^T} = P + S", "plain": "Basic parity equation" },
-    { "name": "Put–call parity (with div)",    "latex": "C + \\frac{X}{(1+r)^T} = P + S - PV(\\text{div})", "plain": "Adjusted for dividends" },
-    { "name": "Put–call forward parity",       "latex": "C - P = \\frac{F - X}{(1+r)^T}", "plain": "Using forward price F" },
-    { "name": "Synthetic call",                 "latex": "C = P + S - \\frac{X}{(1+r)^T}", "plain": "Construct call from put, stock, bond" }
+    {
+      "name": "Put–call parity (Eur, no div)",
+      "latex": "C + \\frac{X}{(1+r)^T} = P + S",
+      "plain": "Basic parity equation"
+    },
+    {
+      "name": "Put–call parity (with div)",
+      "latex": "C + \\frac{X}{(1+r)^T} = P + S - PV(\\text{div})",
+      "plain": "Adjusted for dividends"
+    },
+    {
+      "name": "Put–call forward parity",
+      "latex": "C - P = \\frac{F - X}{(1+r)^T}",
+      "plain": "Using forward price F"
+    },
+    {
+      "name": "Synthetic call",
+      "latex": "C = P + S - \\frac{X}{(1+r)^T}",
+      "plain": "Construct call from put, stock, bond"
+    }
   ],
   "examples": [
     {
@@ -33,6 +49,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Put-Call Parity", "url": "https://www.investopedia.com/terms/p/putcallparity.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Put-Call Parity",
+      "url": "https://www.investopedia.com/terms/p/putcallparity.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-op-overview",
+      "why": "Concepts of moneyness, time value, and exercise."
+    },
+    {
+      "id": "deriv-bin-overview",
+      "why": "Binomial valuation uses replication logic too."
+    },
+    {
+      "id": "deriv-arb-overview",
+      "why": "Parity is a no-arbitrage statement."
+    }
   ]
 }

@@ -5,10 +5,26 @@
     "pro": "## Portfolio math at speed\n\n### Portfolio expected return\n\n$E(R_p) = \\sum w_i E(R_i)$\n\nLinear in weights.\n\n### Two-asset portfolio variance\n\n$\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2$\n\nThird term is the diversification (correlation-dependent).\n\n### N-asset portfolio variance\n\n$\\sigma_p^2 = \\sum_i \\sum_j w_i w_j \\sigma_i \\sigma_j \\rho_{ij}$\n\n### Covariance\n\n$\\text{Cov}(X, Y) = \\rho_{XY} \\sigma_X \\sigma_Y$\n\nRange: $-\\sigma_X \\sigma_Y$ to $+\\sigma_X \\sigma_Y$.\n\n### Correlation\n\n$\\rho = \\text{Cov} / (\\sigma_X \\sigma_Y)$\n\nRange: −1 to +1.\n\n### Diversification benefit\n\n- ρ = 1: no diversification (portfolio σ = weighted average σ)\n- ρ = 0: substantial diversification\n- ρ = -1: maximum diversification (can theoretically reach σ = 0)\n\n### Diversification in large portfolios\n\n$\\lim_{N \\to \\infty} \\sigma_p^2 = \\bar{\\text{Cov}}$\n\nIdiosyncratic risk diversified away; systematic risk remains.\n\nPractical limit: 20-30 stocks captures most benefit.\n\n### Risk-free + risky\n\n$\\sigma_p = w_{risky} \\sigma_{risky}$\n\nLinear in risky weight (because risk-free contributes no variance).\n\n### Shortfall risk\n\nProbability of return below threshold $R_L$.\n\n**Roy's safety-first ratio:**\n\n$\\text{SFRatio} = \\frac{E(R_p) - R_L}{\\sigma_p}$\n\nHigher = better (more standard deviations above threshold).\n\nMaximise SFRatio = minimise shortfall probability (assuming normal distribution).\n\n### Efficient frontier\n\nSet of portfolios maximising return for given risk. Any portfolio inside is suboptimal.\n\n### Why this matters\n\n- Foundation of asset allocation\n- Portfolio risk management\n- CAPM and SML build on this\n- Efficient frontier analysis"
   },
   "formulas": [
-    { "name": "Portfolio expected return",          "latex": "E(R_p) = \\sum_{i=1}^{N} w_i E(R_i)", "plain": "Weighted average of expected returns" },
-    { "name": "Two-asset portfolio variance",       "latex": "\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2", "plain": "Variance with correlation cross-term" },
-    { "name": "Covariance",                          "latex": "\\text{Cov}(X, Y) = \\rho_{XY} \\sigma_X \\sigma_Y", "plain": "Product of correlation and standard deviations" },
-    { "name": "Roy's safety-first ratio",            "latex": "\\text{SFRatio} = \\frac{E(R_p) - R_L}{\\sigma_p}", "plain": "Measure of return above threshold, in standard deviations" }
+    {
+      "name": "Portfolio expected return",
+      "latex": "E(R_p) = \\sum_{i=1}^{N} w_i E(R_i)",
+      "plain": "Weighted average of expected returns"
+    },
+    {
+      "name": "Two-asset portfolio variance",
+      "latex": "\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2",
+      "plain": "Variance with correlation cross-term"
+    },
+    {
+      "name": "Covariance",
+      "latex": "\\text{Cov}(X, Y) = \\rho_{XY} \\sigma_X \\sigma_Y",
+      "plain": "Product of correlation and standard deviations"
+    },
+    {
+      "name": "Roy's safety-first ratio",
+      "latex": "\\text{SFRatio} = \\frac{E(R_p) - R_L}{\\sigma_p}",
+      "plain": "Measure of return above threshold, in standard deviations"
+    }
   ],
   "examples": [
     {
@@ -29,6 +45,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Portfolio Variance", "url": "https://www.investopedia.com/terms/p/portfolio-variance.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Portfolio Variance",
+      "url": "https://www.investopedia.com/terms/p/portfolio-variance.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-prob-overview",
+      "why": "Expected return and variance from joint distributions."
+    },
+    {
+      "id": "pm-rr2-overview",
+      "why": "Mean-variance portfolio theory uses this directly."
+    },
+    {
+      "id": "quant-stats-overview",
+      "why": "Correlation and covariance sample estimates."
+    }
   ]
 }

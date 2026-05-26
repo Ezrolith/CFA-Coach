@@ -5,12 +5,36 @@
     "pro": "## Options at Level 1 speed\n\n### Definitions\n\n**Call payoff at expiry:** $\\max(S_T - K, 0)$\n\n**Put payoff at expiry:** $\\max(K - S_T, 0)$\n\n**Profit:** payoff minus premium paid (for buyer) or plus premium received (for writer).\n\n### Moneyness\n\nFor calls: ITM if $S > K$. For puts: ITM if $S < K$. At expiry, only intrinsic value matters; before expiry, time value layers on.\n\n### Six factor signs\n\n| Factor | Call | Put | Why |\n|---|---|---|---|\n| $S$ | + | − | Underlying movement |\n| $K$ | − | + | Strike opposes the option holder |\n| $T$ | + | + | More time = more chance (some put exceptions) |\n| $\\sigma$ | + | + | Volatility increases probability of in-the-money expiry |\n| $r$ | + | − | Discounting effect on strike; raises call PV, lowers put PV |\n| Dividends | − | + | Dividends reduce $S$ ex-div; bad for call, good for put |\n\n### Put-call parity (Euro, no dividends)\n\n$$C + \\frac{K}{(1+r)^T} = P + S$$\n\nReading: **fiduciary call** (call + risk-free bond) = **protective put** (put + stock).\n\nRearrange to:\n- Synthetic call: $C = P + S - \\frac{K}{(1+r)^T}$\n- Synthetic put: $P = C - S + \\frac{K}{(1+r)^T}$\n- Synthetic stock: $S = C - P + \\frac{K}{(1+r)^T}$\n- Synthetic bond: $\\frac{K}{(1+r)^T} = P + S - C$\n\n### Put-call forward parity\n\nWith forward price $F$: $C - P = \\frac{F - K}{(1+r)^T}$.\n\nIf $F = K$, $C = P$ for the at-the-money-forward strike — a useful sanity check.\n\n### American vs European\n\nAmerican = exercisable any time before expiry. European = only at expiry.\n\n- American ≥ European, always.\n- For **non-dividend-paying** stock: American call = European call (never optimal to early-exercise). American put > European put (early exercise can be optimal).\n- For dividend-paying stock: both American calls and puts can have early-exercise value above European."
   },
   "formulas": [
-    { "name": "Call payoff",                "latex": "\\text{Payoff}_C = \\max(S_T - K, 0)", "plain": "Value at expiration of a call option" },
-    { "name": "Put payoff",                 "latex": "\\text{Payoff}_P = \\max(K - S_T, 0)", "plain": "Value at expiration of a put option" },
-    { "name": "Call intrinsic value",       "latex": "IV_C = \\max(S - K, 0)", "plain": "Pre-expiry intrinsic; ignores time value" },
-    { "name": "Put intrinsic value",        "latex": "IV_P = \\max(K - S, 0)", "plain": "Pre-expiry intrinsic; ignores time value" },
-    { "name": "Put-call parity (Euro, no div)", "latex": "C + \\frac{K}{(1+r)^T} = P + S", "plain": "Fiduciary call = protective put" },
-    { "name": "Put-call forward parity",    "latex": "C - P = \\frac{F - K}{(1+r)^T}", "plain": "Using forward price F instead of spot" }
+    {
+      "name": "Call payoff",
+      "latex": "\\text{Payoff}_C = \\max(S_T - K, 0)",
+      "plain": "Value at expiration of a call option"
+    },
+    {
+      "name": "Put payoff",
+      "latex": "\\text{Payoff}_P = \\max(K - S_T, 0)",
+      "plain": "Value at expiration of a put option"
+    },
+    {
+      "name": "Call intrinsic value",
+      "latex": "IV_C = \\max(S - K, 0)",
+      "plain": "Pre-expiry intrinsic; ignores time value"
+    },
+    {
+      "name": "Put intrinsic value",
+      "latex": "IV_P = \\max(K - S, 0)",
+      "plain": "Pre-expiry intrinsic; ignores time value"
+    },
+    {
+      "name": "Put-call parity (Euro, no div)",
+      "latex": "C + \\frac{K}{(1+r)^T} = P + S",
+      "plain": "Fiduciary call = protective put"
+    },
+    {
+      "name": "Put-call forward parity",
+      "latex": "C - P = \\frac{F - K}{(1+r)^T}",
+      "plain": "Using forward price F instead of spot"
+    }
   ],
   "examples": [
     {
@@ -61,8 +85,34 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Put-Call Parity", "url": "https://www.investopedia.com/terms/p/putcallparity.asp", "kind": "read" },
-    { "label": "Investopedia — Intrinsic Value of Options", "url": "https://www.investopedia.com/terms/i/intrinsicvalue.asp", "kind": "read" },
-    { "label": "Hull — Options textbook reference (publicly summarised)", "url": "https://en.wikipedia.org/wiki/Put%E2%80%93call_parity", "kind": "read" }
+    {
+      "label": "Investopedia — Put-Call Parity",
+      "url": "https://www.investopedia.com/terms/p/putcallparity.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Intrinsic Value of Options",
+      "url": "https://www.investopedia.com/terms/i/intrinsicvalue.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Hull — Options textbook reference (publicly summarised)",
+      "url": "https://en.wikipedia.org/wiki/Put%E2%80%93call_parity",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-pcp-overview",
+      "why": "Put-call parity links call and put prices."
+    },
+    {
+      "id": "deriv-bin-overview",
+      "why": "Binomial model gives numeric option prices."
+    },
+    {
+      "id": "deriv-ff-overview",
+      "why": "Payoff structure of calls and puts."
+    }
   ]
 }

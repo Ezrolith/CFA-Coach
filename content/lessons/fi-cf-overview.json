@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bond Types", "url": "https://www.investopedia.com/terms/b/bond.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Bond Types",
+      "url": "https://www.investopedia.com/terms/b/bond.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-feat-overview",
+      "why": "Bond features that create these cash flows."
+    },
+    {
+      "id": "fi-mbs-overview",
+      "why": "Contingent cash flows in mortgage securitisations."
+    }
   ]
 }

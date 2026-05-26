@@ -5,12 +5,36 @@
     "pro": "## Simple linear regression at speed\n\n### The model\n\n$Y_i = b_0 + b_1 X_i + \\varepsilon_i$\n\n- $b_0$: intercept\n- $b_1$: slope (change in Y per unit X)\n- $\\varepsilon_i$: residual\n\n### Least squares estimation\n\n$b_1 = \\text{Cov}(X, Y) / \\text{Var}(X)$\n\n$b_0 = \\bar{Y} - b_1 \\bar{X}$\n\nMinimises sum of squared residuals.\n\n### Assumptions\n\n1. Linearity\n2. Independence of residuals\n3. Homoskedasticity (constant variance)\n4. Normality of residuals\n5. No measurement error in X\n\n### Measures of fit\n\n**R²** = 1 − SSR/SST = SSE/SST\nProportion of Y variance explained by X.\n\n**Standard error of estimate (SEE)** = $\\sqrt{SSR / (n - 2)}$\nTypical residual size.\n\n### Hypothesis tests\n\n**Slope:** $t = \\hat{b}_1 / SE(\\hat{b}_1)$, df = n − 2\n\n**Intercept:** same approach\n\n**Overall (F-test):** $F = (SSE/k) / (SSR/(n-k-1))$\n\nFor simple regression: $F = t_{slope}^2$\n\n### ANOVA decomposition\n\n| Source | SS | df |\n|---|---|---|\n| Regression | SSE | k |\n| Residual | SSR | n−k−1 |\n| Total | SST | n−1 |\n\nSST = SSE + SSR\n\n### Prediction interval\n\n$\\hat{Y} \\pm t \\times SEE \\times \\sqrt{1 + 1/n + (X_{new} - \\bar{X})^2 / \\sum (X_i - \\bar{X})^2}$\n\nWider further from $\\bar{X}$.\n\n### Functional forms\n\n- **Log-linear**: $\\ln(Y) = b_0 + b_1 X$ → % change in Y per unit X\n- **Linear-log**: $Y = b_0 + b_1 \\ln(X)$ → change in Y per 1% X\n- **Log-log**: $\\ln(Y) = b_0 + b_1 \\ln(X)$ → elasticity\n- **Polynomial**: $Y = b_0 + b_1 X + b_2 X^2$ → curved (still linear in parameters)\n\n### Applications in finance\n\n- CAPM beta: $R_{fund} - R_f = \\alpha + \\beta (R_{market} - R_f) + \\varepsilon$\n- Factor models\n- Return forecasting on signals\n- Risk attribution\n\n### Diagnostic plots\n\n- Residuals vs fitted: pattern → non-linearity\n- Residuals vs X: funnel → heteroskedasticity\n- Q-Q plot: deviations → non-normality\n- Durbin-Watson: autocorrelation\n\n### Common pitfalls\n\n- Assuming linear when non-linear\n- Ignoring outliers\n- Treating R² as proof of causation\n- Extrapolating beyond data range\n- Multiple comparisons inflating significance"
   },
   "formulas": [
-    { "name": "Regression model",            "latex": "Y_i = b_0 + b_1 X_i + \\varepsilon_i", "plain": "Linear regression equation" },
-    { "name": "OLS slope",                  "latex": "b_1 = \\frac{\\text{Cov}(X,Y)}{\\text{Var}(X)}", "plain": "Slope via covariance / variance" },
-    { "name": "OLS intercept",              "latex": "b_0 = \\bar{Y} - b_1 \\bar{X}", "plain": "Line passes through means" },
-    { "name": "R-squared",                  "latex": "R^2 = 1 - \\frac{SSR}{SST}", "plain": "Proportion of variance explained" },
-    { "name": "Standard error of estimate", "latex": "SEE = \\sqrt{\\frac{SSR}{n-2}}", "plain": "Typical residual size" },
-    { "name": "Slope t-statistic",          "latex": "t = \\frac{\\hat{b}_1}{SE(\\hat{b}_1)}", "plain": "Test slope vs 0; df = n-2" }
+    {
+      "name": "Regression model",
+      "latex": "Y_i = b_0 + b_1 X_i + \\varepsilon_i",
+      "plain": "Linear regression equation"
+    },
+    {
+      "name": "OLS slope",
+      "latex": "b_1 = \\frac{\\text{Cov}(X,Y)}{\\text{Var}(X)}",
+      "plain": "Slope via covariance / variance"
+    },
+    {
+      "name": "OLS intercept",
+      "latex": "b_0 = \\bar{Y} - b_1 \\bar{X}",
+      "plain": "Line passes through means"
+    },
+    {
+      "name": "R-squared",
+      "latex": "R^2 = 1 - \\frac{SSR}{SST}",
+      "plain": "Proportion of variance explained"
+    },
+    {
+      "name": "Standard error of estimate",
+      "latex": "SEE = \\sqrt{\\frac{SSR}{n-2}}",
+      "plain": "Typical residual size"
+    },
+    {
+      "name": "Slope t-statistic",
+      "latex": "t = \\frac{\\hat{b}_1}{SE(\\hat{b}_1)}",
+      "plain": "Test slope vs 0; df = n-2"
+    }
   ],
   "examples": [
     {
@@ -31,7 +55,29 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Linear Regression", "url": "https://www.investopedia.com/terms/r/regression.asp", "kind": "read" },
-    { "label": "Investopedia — R-Squared", "url": "https://www.investopedia.com/terms/r/r-squared.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Linear Regression",
+      "url": "https://www.investopedia.com/terms/r/regression.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — R-Squared",
+      "url": "https://www.investopedia.com/terms/r/r-squared.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-hyp-overview",
+      "why": "Coefficient t-tests and overall F-test."
+    },
+    {
+      "id": "quant-stats-overview",
+      "why": "Correlation is the building block of slope estimation."
+    },
+    {
+      "id": "quant-bigdata-overview",
+      "why": "Regression as the simplest supervised ML model."
+    }
   ]
 }

@@ -5,7 +5,11 @@
     "pro": "## Mortgage-backed securities at speed\n\n### Major categories\n\n- **Agency MBS**: Fannie, Freddie, Ginnie ($8T US); AAA-equivalent\n- **Non-agency MBS**: private label; various qualities; smaller post-2008\n- **CMBS**: commercial mortgages; less prepayment risk\n\n### Pass-through (simplest)\n\n- Pool of conforming mortgages\n- Cash flows passed pro-rata to investors\n- Issuer guarantees timely payment\n- Standard: 30-year fixed-rate\n\n### Prepayment risk (defining MBS risk)\n\nBorrowers can prepay anytime.\n\n**Causes:**\n- Refinancing (rate-driven)\n- Property sale (turnover)\n- Default and foreclosure\n- Curtailment\n\n**Impact:**\n- Rates fall → prepayments speed (cash returned at bad time)\n- Rates rise → prepayments slow (cash stuck at bad rates)\n- Creates negative convexity\n\n### Prepayment metrics\n\n**CPR**: annualised prepayment rate (% of pool/year)\n\n**SMM**: monthly equivalent ($1 - (1-CPR)^{1/12}$)\n\n**PSA standard**: 0.2% CPR month 1, rising to 6% by month 30, stable\n\n**100 PSA**: industry standard; faster/slower as multiples\n\n### Prepayment drivers\n\n- Interest rate level (refi incentive)\n- Burnout (fast pools slow later)\n- Seasonality (spring/summer faster)\n- Geography (hot markets faster)\n- Loan size (larger more responsive)\n- Borrower characteristics (FICO, age)\n\n### CMO tranches\n\n**Sequential pay**: principal to A first, then B, C, Z\n\n**PAC (Planned Amortization Class)**:\n- Specified principal schedule (typical 100-200 PSA)\n- Companion tranches absorb variability\n- Predictable, lower yield\n\n**Companion**: absorbs prepayment variability; volatile but higher yield\n\n**Z-bonds (accrual)**:\n- No interest until other tranches paid\n- Accrues at coupon rate\n- Very long duration\n\n### IO/PO strips\n\n**IO (Interest-Only)**:\n- Receives only interest\n- Value depends on outstanding balance\n- Negative correlation with rates (prepayment hurts)\n\n**PO (Principal-Only)**:\n- Receives only principal\n- Fixed total cash flow\n- Positive correlation with rates (faster prepay helps)\n\n### Negative convexity\n\nMBS price-yield curve has cap at low yields (prepayments accelerate).\n\n- Less gain in rallies\n- More loss in sell-offs\n- Asymmetric to holder's detriment\n\nMBS yields higher than equivalent Treasury duration to compensate.\n\n### Effective duration\n\n- Analytical (no prepay adjustment): 7-8 yrs for 30-yr MBS\n- Effective (with prepay): 3-5 yrs\n- Wide difference, varies with rates\n\n### Risks\n\n- Prepayment (dominant)\n- Extension risk (slow prepay when rates rise)\n- Contraction risk (fast prepay when rates fall)\n- Credit (limited agency, significant non-agency)\n- Liquidity (CMOs less liquid)\n- Structural (waterfall complexity)\n\n### 2024 context\n\n- 30-yr mortgage rates ~7%\n- Most existing mortgages <4% (2020-21 vintage)\n- Lock-in effect → very slow prepayments\n- MBS extension significant\n- SVB 2023: long-duration MBS losses revealed\n\n### Investors\n\nBanks, insurers, pensions, foreign CBs, Fed (~$2.5T from QE), REITs, asset managers.\n\n### Level 1 focus\n\n- MBS structures (pass-through, CMO)\n- Prepayment risk causes and impact\n- Agency vs non-agency\n- CMO tranches\n- Negative convexity\n- IO/PO strips"
   },
   "formulas": [
-    { "name": "SMM from CPR", "latex": "SMM = 1 - (1 - CPR)^{1/12}", "plain": "Monthly prepayment rate from annualised" }
+    {
+      "name": "SMM from CPR",
+      "latex": "SMM = 1 - (1 - CPR)^{1/12}",
+      "plain": "Monthly prepayment rate from annualised"
+    }
   ],
   "examples": [
     {
@@ -26,7 +30,29 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Mortgage-Backed Security", "url": "https://www.investopedia.com/terms/m/mbs.asp", "kind": "read" },
-    { "label": "Investopedia — CMO", "url": "https://www.investopedia.com/terms/c/cmo.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Mortgage-Backed Security",
+      "url": "https://www.investopedia.com/terms/m/mbs.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — CMO",
+      "url": "https://www.investopedia.com/terms/c/cmo.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-sec-overview",
+      "why": "Securitisation framework."
+    },
+    {
+      "id": "fi-conv-overview",
+      "why": "MBS show negative convexity from prepayment optionality."
+    },
+    {
+      "id": "fi-curve-overview",
+      "why": "Empirical duration is essential for MBS."
+    }
   ]
 }

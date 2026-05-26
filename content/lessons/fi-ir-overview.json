@@ -5,8 +5,16 @@
     "pro": "## Interest rate risk and return at speed\n\n### Three sources of bond return\n\n1. **Coupon income**: certain (absent default)\n2. **Reinvestment income**: uncertain — varies with rates\n3. **Capital gain/loss**: depends on rate changes and time\n\n### Key trade-off: price risk vs reinvestment risk\n\n**Rates rise**:\n- Bond price falls (loss)\n- Reinvestment income rises (gain)\n\n**Rates fall**:\n- Bond price rises (gain)\n- Reinvestment income falls (loss)\n\nThey partially offset.\n\n### Macaulay duration\n\nWeighted-average time to cash flows (weights = PV of CF):\n\n$D_{Mac} = \\frac{\\sum t \\cdot CF_t / (1+y)^t}{P}$\n\n### Horizon vs duration\n\n- **Horizon = $D_{Mac}$**: price and reinvestment offset (immunised)\n- **Horizon > $D_{Mac}$**: reinvestment dominates\n- **Horizon < $D_{Mac}$**: price risk dominates\n\nUsed in **liability immunisation**.\n\n### Modified duration\n\nApproximates % price change per 1% yield change:\n\n$D_{mod} = D_{Mac} / (1 + y/n)$\n\n### Risk profiles\n\n| Bond | Price risk | Reinvestment risk |\n|---|---|---|\n| Long fixed-rate | High | High |\n| Zero-coupon | High | None |\n| FRN | Low | Low |\n| Short coupon | Low | Some |\n\n### Strategies\n\n- **Buy-and-hold**: minimise interim risk\n- **Active duration management**: tilt with rate views\n- **LDI (immunisation)**: match $D_{Mac}$ to liabilities\n- **Barbell**: short + long maturities\n- **Bullet**: single concentrated maturity\n\n### Drivers of interest rates\n\n- Monetary policy (short rates direct)\n- Inflation expectations\n- Growth expectations\n- Supply/demand (issuance, foreign demand)\n- Risk appetite (flight to quality)\n\n### Total return decomposition\n\n$HPR = \\text{Coupons} + \\text{Reinvestment} + \\text{Capital}$\n\nHeld to maturity: capital = par − price; total ≈ YTM.\n\nSold early: capital = sale − price.\n\n### Level 1 focus\n\n- Three sources of return\n- Price vs reinvestment risk\n- Macaulay duration concept\n- Horizon-duration relationship\n- Total return calculation"
   },
   "formulas": [
-    { "name": "Macaulay duration",  "latex": "D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\cdot CF_t / (1+y)^t}{P}", "plain": "Weighted average time to cash flows" },
-    { "name": "Modified duration", "latex": "D_{mod} = \\frac{D_{Mac}}{1 + y/n}", "plain": "% price change per 1% yield change" }
+    {
+      "name": "Macaulay duration",
+      "latex": "D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\cdot CF_t / (1+y)^t}{P}",
+      "plain": "Weighted average time to cash flows"
+    },
+    {
+      "name": "Modified duration",
+      "latex": "D_{mod} = \\frac{D_{Mac}}{1 + y/n}",
+      "plain": "% price change per 1% yield change"
+    }
   ],
   "examples": [
     {
@@ -27,6 +35,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Duration", "url": "https://www.investopedia.com/terms/d/duration.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Duration",
+      "url": "https://www.investopedia.com/terms/d/duration.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-dur-overview",
+      "why": "Macaulay duration = the horizon at which price/reinvestment offset."
+    },
+    {
+      "id": "fi-conv-overview",
+      "why": "Adds second-order correction for large rate moves."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "How rate-curve shapes drive total return."
+    }
   ]
 }

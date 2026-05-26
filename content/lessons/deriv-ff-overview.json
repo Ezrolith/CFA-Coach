@@ -5,10 +5,26 @@
     "pro": "## Forward commitments and contingent claims at speed\n\n### Two families\n\n**Forward commitments** (must transact):\n- Forwards, futures, swaps\n- Zero cost at initiation\n- Linear payoff, symmetric P&L\n\n**Contingent claims** (right, not obligation):\n- Options (calls, puts), CDS\n- Premium paid at initiation\n- Asymmetric payoff (kinked)\n\n### Forward payoff at expiry\n\n- Long: $S_T - F_0$\n- Short: $F_0 - S_T$\n\nZero-sum.\n\n### Swap settlement (each period)\n\n$(\\text{Floating} - \\text{Fixed}) \\times \\text{Notional} \\times \\text{Day fraction}$\n\n### Option payoffs at expiry\n\n| Position | Payoff | Profit |\n|---|---|---|\n| Long call | $\\max(0, S_T - K)$ | Payoff − Premium |\n| Long put | $\\max(0, K - S_T)$ | Payoff − Premium |\n| Short call | $-\\max(0, S_T - K)$ | Premium − Payoff |\n| Short put | $-\\max(0, K - S_T)$ | Premium − Payoff |\n\n### Key risk profile\n\n**Long options:** limited loss (premium), unlimited gain.\n\n**Short options:** limited gain (premium), unlimited loss (calls) or large loss (puts).\n\n**Forwards/futures:** unlimited gain and loss for both.\n\n### Breakeven points\n\n- Long call breakeven: K + premium\n- Long put breakeven: K − premium\n- Short call breakeven: K + premium\n- Short put breakeven: K − premium\n\n### Credit default swap (CDS)\n\n- Buyer pays periodic premium\n- Seller pays out on credit event\n- Like insurance on default\n\n### When to use which\n\n- **Outright hedge / direction**: forward, future\n- **Smooth periodic payments**: swap\n- **Asymmetric protection**: option (put for downside)\n- **Credit-specific protection**: CDS\n- **Tail event positioning**: deep OTM options"
   },
   "formulas": [
-    { "name": "Long forward payoff",     "latex": "\\text{Payoff} = S_T - F_0", "plain": "Long forward at expiry" },
-    { "name": "Short forward payoff",    "latex": "\\text{Payoff} = F_0 - S_T", "plain": "Short forward at expiry" },
-    { "name": "Long call payoff",        "latex": "\\text{Payoff} = \\max(0, S_T - K)", "plain": "Call option intrinsic value at expiry" },
-    { "name": "Long put payoff",         "latex": "\\text{Payoff} = \\max(0, K - S_T)", "plain": "Put option intrinsic value at expiry" }
+    {
+      "name": "Long forward payoff",
+      "latex": "\\text{Payoff} = S_T - F_0",
+      "plain": "Long forward at expiry"
+    },
+    {
+      "name": "Short forward payoff",
+      "latex": "\\text{Payoff} = F_0 - S_T",
+      "plain": "Short forward at expiry"
+    },
+    {
+      "name": "Long call payoff",
+      "latex": "\\text{Payoff} = \\max(0, S_T - K)",
+      "plain": "Call option intrinsic value at expiry"
+    },
+    {
+      "name": "Long put payoff",
+      "latex": "\\text{Payoff} = \\max(0, K - S_T)",
+      "plain": "Put option intrinsic value at expiry"
+    }
   ],
   "examples": [
     {
@@ -29,6 +45,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Options Basics", "url": "https://www.investopedia.com/options-basics-tutorial-4583012", "kind": "read" }
+    {
+      "label": "Investopedia — Options Basics",
+      "url": "https://www.investopedia.com/options-basics-tutorial-4583012",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-feat-overview",
+      "why": "Underlying definitions and market features."
+    },
+    {
+      "id": "deriv-op-overview",
+      "why": "Detailed mechanics of options."
+    },
+    {
+      "id": "deriv-pcp-overview",
+      "why": "Put-call parity links calls and puts."
+    }
   ]
 }

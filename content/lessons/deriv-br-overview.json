@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Hedge", "url": "https://www.investopedia.com/terms/h/hedge.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Hedge",
+      "url": "https://www.investopedia.com/terms/h/hedge.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-feat-overview",
+      "why": "Instrument features that produce these risks."
+    },
+    {
+      "id": "deriv-irs-overview",
+      "why": "A worked example of issuer hedging."
+    }
   ]
 }

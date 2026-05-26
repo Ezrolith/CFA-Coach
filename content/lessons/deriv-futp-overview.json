@@ -5,9 +5,21 @@
     "pro": "## Futures pricing and valuation at speed\n\n### Forwards vs futures\n\n| | Forwards | Futures |\n|---|---|---|\n| Market | OTC | Exchange |\n| Terms | Bespoke | Standardised |\n| Counterparty | Each other | CCP |\n| Settlement | Maturity | Daily MTM |\n| Margin | Bilateral | Initial + variation |\n\n### Mark-to-market mechanics\n\n- **Initial margin**: opening capital\n- **Variation margin**: daily P&L settled in cash\n- **Maintenance margin**: minimum balance\n- **Margin call**: triggered if balance < maintenance\n\nAt expiration: cumulative MTM = total P&L\n\n### Theoretical pricing\n\nWith constant rates:\n$F_{fut} = F_{fwd} = S (1+r)^T$\n\n(or with cost-of-carry adjustments)\n\n### Why futures may differ from forwards\n\nDepends on correlation between underlying and interest rates:\n\n- Positive correlation: futures > forward (long gains compound at high rates)\n- Negative correlation: futures < forward\n- No correlation: equal\n\nEffect is small except for interest-rate futures.\n\n### Convergence at expiration\n\n$F_T = S_T$ (basis goes to zero)\n\n### Contango and backwardation\n\n- **Contango**: F > S (upward curve). Storage > convenience yield.\n- **Backwardation**: F < S (downward curve). Convenience yield > storage.\n\n### Roll yield (commodity futures)\n\n- Contango: negative roll yield (drag on long positions)\n- Backwardation: positive roll yield (boost to long)\n\n### When to use futures vs forwards\n\n**Use futures**: standardised exposure, low counterparty risk, high liquidity.\n\n**Use forwards**: bespoke needs, specific dates/amounts.\n\n### Risk: margin liquidity\n\nDaily MTM can demand significant cash even when hedge is working long-term. Metallgesellschaft 1993 is the canonical case.\n\n### Position limits and price limits\n\n- Position limits cap concentration\n- Daily price limits prevent panic moves"
   },
   "formulas": [
-    { "name": "Futures = forward (constant rates)", "latex": "F_{fut} = S_0 (1+r)^T", "plain": "Same as forward under constant rates" },
-    { "name": "Continuous (index) future",        "latex": "F = S \\cdot e^{(r - q)T}", "plain": "With continuous dividend yield q" },
-    { "name": "Commodity future",                 "latex": "F = S \\cdot e^{(r + u - y)T}", "plain": "Storage u, convenience yield y" }
+    {
+      "name": "Futures = forward (constant rates)",
+      "latex": "F_{fut} = S_0 (1+r)^T",
+      "plain": "Same as forward under constant rates"
+    },
+    {
+      "name": "Continuous (index) future",
+      "latex": "F = S \\cdot e^{(r - q)T}",
+      "plain": "With continuous dividend yield q"
+    },
+    {
+      "name": "Commodity future",
+      "latex": "F = S \\cdot e^{(r + u - y)T}",
+      "plain": "Storage u, convenience yield y"
+    }
   ],
   "examples": [
     {
@@ -28,6 +40,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Futures Contract", "url": "https://www.investopedia.com/terms/f/futurescontract.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Futures Contract",
+      "url": "https://www.investopedia.com/terms/f/futurescontract.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-fp-overview",
+      "why": "Forward pricing is the conceptual baseline."
+    },
+    {
+      "id": "deriv-arb-overview",
+      "why": "Cost of carry and convergence to spot."
+    }
   ]
 }

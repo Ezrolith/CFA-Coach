@@ -5,7 +5,11 @@
     "pro": "## Hypothesis testing at speed\n\n### Five-step framework\n\n1. State hypotheses (H₀ and H₁)\n2. Choose significance level α (typically 0.05)\n3. Identify test statistic\n4. Compute test statistic from data\n5. Compare to critical value / compute p-value; decide\n\n### Common tests\n\n| What's tested | Statistic |\n|---|---|\n| One sample mean | t |\n| Two sample means | t |\n| Paired means | t (paired) |\n| One proportion | z |\n| Two proportions | z |\n| One variance | χ² |\n| Two variances | F |\n| Goodness of fit | χ² |\n\n### One-tailed vs two-tailed\n\n- **Two-tailed:** $H_1: \\mu \\neq \\mu_0$\n- **One-tailed:** $H_1: \\mu > \\mu_0$ (or <)\n\nOne-tailed uses entire α in one tail; two-tailed splits α/2 each side.\n\n### t-statistic (one-sample mean)\n\n$t = (\\bar{X} - \\mu_0) / (s/\\sqrt{n})$\n\nDegrees of freedom: n − 1.\n\n### Type I and Type II errors\n\n- **Type I (α)**: reject H₀ when true. False positive.\n- **Type II (β)**: fail to reject H₀ when false. False negative.\n- **Power = 1 − β**: probability of correctly rejecting false null.\n\nTrade-off: lower α → higher β (and vice versa).\n\n### p-value\n\nProbability of observing test statistic (or more extreme) given H₀ is true.\n\n- p < α: reject H₀\n- p ≥ α: fail to reject\n\n### Confidence interval and hypothesis test relationship\n\nEquivalent for two-tailed tests. If hypothesised value outside 95% CI → reject at 5%.\n\n### Critical values (normal, two-tailed)\n\n- 90%: 1.645\n- 95%: 1.96\n- 99%: 2.576\n\nFor t-distribution with small df, critical values are larger.\n\n### Statistical vs economic significance\n\n**Statistical:** is the effect real (not noise)?\n**Economic:** is the effect material to decisions?\n\nLarge samples can find statistically significant but tiny effects. Always check both.\n\n### Common pitfalls\n\n- **Multiple testing**: testing many; some significant by chance\n- **Data snooping**: trying many models until one works\n- **Survivorship bias**: missing data distorts tests\n- **Stationarity**: time series tests assume invariance\n- **Statistical vs economic significance**: don't confuse"
   },
   "formulas": [
-    { "name": "One-sample t-statistic",      "latex": "t = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}}", "plain": "Test for sample mean vs hypothesised value" }
+    {
+      "name": "One-sample t-statistic",
+      "latex": "t = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}}",
+      "plain": "Test for sample mean vs hypothesised value"
+    }
   ],
   "examples": [
     {
@@ -26,6 +30,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Hypothesis Testing", "url": "https://www.investopedia.com/terms/h/hypothesistesting.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Hypothesis Testing",
+      "url": "https://www.investopedia.com/terms/h/hypothesistesting.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-est-overview",
+      "why": "Sampling theory underpins test statistics."
+    },
+    {
+      "id": "quant-paramtests-overview",
+      "why": "Specific parametric / non-parametric tests."
+    },
+    {
+      "id": "quant-slr-overview",
+      "why": "Regression coefficients tested with the same framework."
+    }
   ]
 }

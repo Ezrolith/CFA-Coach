@@ -25,6 +25,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Cryptocurrency", "url": "https://www.investopedia.com/terms/c/cryptocurrency.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Cryptocurrency",
+      "url": "https://www.investopedia.com/terms/c/cryptocurrency.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "alts-perf-overview",
+      "why": "How alternative-asset performance is measured."
+    },
+    {
+      "id": "pm-bb-overview",
+      "why": "Behavioural biases especially relevant in crypto markets."
+    }
   ]
 }

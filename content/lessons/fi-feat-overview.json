@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bond", "url": "https://www.investopedia.com/terms/b/bond.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Bond",
+      "url": "https://www.investopedia.com/terms/b/bond.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-cf-overview",
+      "why": "How different cash-flow structures shape risk."
+    },
+    {
+      "id": "fi-cr-overview",
+      "why": "Seniority and covenants are credit-risk levers."
+    }
   ]
 }

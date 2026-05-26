@@ -5,8 +5,16 @@
     "pro": "## Parametric and non-parametric tests at speed\n\n### Definitions\n\n- **Parametric**: assumes distribution (commonly normal). Uses parameters (mean, variance).\n- **Non-parametric**: distribution-free. Uses ranks, signs, or counts.\n\n### When to use each\n\n| Situation | Use |\n|---|---|\n| Continuous, ~normal, n ≥ 30 | Parametric (t, F, Pearson) |\n| Small sample or non-normal | Non-parametric |\n| Ordinal data (rankings) | Non-parametric |\n| Categorical data | Chi-square |\n| Outliers present | Non-parametric |\n\n### Pearson correlation test\n\n$r = \\sum (X - \\bar{X})(Y - \\bar{Y}) / \\sqrt{\\sum (X-\\bar{X})^2 \\sum (Y-\\bar{Y})^2}$\n\n**Test statistic:**\n$t = r \\sqrt{n-2} / \\sqrt{1 - r^2}$\n\nDF: n − 2.\n\n### Spearman rank correlation (non-parametric)\n\n1. Rank each variable separately.\n2. Compute Pearson on ranks.\n\nMeasures monotonic association. Robust to outliers.\n\n### Chi-square test of independence (contingency table)\n\n**Test statistic:**\n$\\chi^2 = \\sum (O_{ij} - E_{ij})^2 / E_{ij}$\n\n**Expected frequency:**\n$E_{ij} = (\\text{row total} \\times \\text{col total}) / n$\n\n**Degrees of freedom:** $(r-1)(c-1)$ where r = rows, c = columns.\n\n### Applications in finance\n\n- Portfolio/market correlation\n- Fund return rankings persistence\n- Sector vs default rate\n- Rating vs company size\n- Manager type vs performance\n\n### Trade-offs\n\n**Parametric (when assumptions hold):**\n- More powerful (lower Type II)\n- Direct parameter estimates\n\n**Non-parametric:**\n- Robust to violations\n- Works with ranks/categories\n- Less powerful when normality actually holds\n\n### Common pitfalls\n\n- Mistaking statistical association for causation\n- Ignoring sample size requirements (chi-square: ≥ 5 expected per cell)\n- Using parametric on clearly non-normal data\n- Multiple testing without correction"
   },
   "formulas": [
-    { "name": "Correlation t-statistic",         "latex": "t = \\frac{r \\sqrt{n - 2}}{\\sqrt{1 - r^2}}", "plain": "Test H0: rho = 0; df = n-2" },
-    { "name": "Chi-square statistic",           "latex": "\\chi^2 = \\sum \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}", "plain": "Sum over cells; df = (r-1)(c-1)" }
+    {
+      "name": "Correlation t-statistic",
+      "latex": "t = \\frac{r \\sqrt{n - 2}}{\\sqrt{1 - r^2}}",
+      "plain": "Test H0: rho = 0; df = n-2"
+    },
+    {
+      "name": "Chi-square statistic",
+      "latex": "\\chi^2 = \\sum \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}",
+      "plain": "Sum over cells; df = (r-1)(c-1)"
+    }
   ],
   "examples": [
     {
@@ -27,7 +35,25 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Chi-Square Test", "url": "https://www.investopedia.com/terms/c/chi-square-statistic.asp", "kind": "read" },
-    { "label": "Investopedia — Spearman's Rank Correlation", "url": "https://www.investopedia.com/terms/s/spearmans-rank-correlation-coefficient.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Chi-Square Test",
+      "url": "https://www.investopedia.com/terms/c/chi-square-statistic.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Spearman's Rank Correlation",
+      "url": "https://www.investopedia.com/terms/s/spearmans-rank-correlation-coefficient.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-hyp-overview",
+      "why": "General hypothesis-testing framework."
+    },
+    {
+      "id": "quant-slr-overview",
+      "why": "Tests on regression coefficients and correlation."
+    }
   ]
 }

@@ -5,10 +5,26 @@
     "pro": "## Bond duration at speed\n\n### Three measures\n\n**Macaulay duration ($D_{Mac}$):** weighted average time to cash flows\n\n$D_{Mac} = \\frac{\\sum_t t \\cdot CF_t / (1+y)^t}{P}$\n\n**Modified duration ($D_{mod}$):** % price change per 1% yield change\n\n$D_{mod} = D_{Mac} / (1 + y/m)$\n\nWhere m = compounding frequency.\n\n**Effective duration ($D_{eff}$):** numerical, handles embedded options\n\n$D_{eff} = (P_- - P_+) / (2 P_0 \\Delta y)$\n\n### Price change approximation\n\n$\\Delta P / P \\approx -D_{mod} \\Delta y$\n\nMinus sign: bond prices and yields move oppositely.\n\n### Properties of duration\n\n- Zero coupon: $D_{Mac}$ = maturity\n- Higher coupon → lower duration\n- Higher yield → lower duration\n- Longer maturity → higher duration\n\n### When to use each\n\n- **Macaulay**: immunisation, conceptual\n- **Modified**: option-free bonds, standard\n- **Effective**: embedded options (callable, putable, MBS)\n\n### Why effective for embedded options\n\nCallable bond price-yield is non-linear; modified duration overstates risk. Effective uses actual model-driven price changes.\n\nFor callable: $D_{eff} < D_{mod}$ (capped upside).\nFor putable: $D_{eff} < D_{mod}$ (capped downside).\n\n### Typical durations\n\n- 1-yr T-bill: ~1\n- 5-yr T-note: ~4.5\n- 10-yr T-note: ~8.5\n- 30-yr T-bond: ~17\n- 30-yr zero: 30\n- FRN: ~0.25 (only reset period)\n- MBS 30-yr: ~6-7 (prepayment)\n\n### Portfolio duration\n\nWeighted average of constituent durations:\n\n$D_{portfolio} = \\sum w_i D_i$\n\nWeights = market value.\n\n### What duration tells you\n\n- Approximate sensitivity to small parallel yield shifts\n- Risk per unit of rate move\n\n### What it doesn't\n\n- Large move price changes (need convexity)\n- Spread risk\n- Default risk\n- Curve twist risk\n\n### Limitations\n\n- Parallel shift assumption\n- Linear approximation\n- Doesn't capture options\n- Time-varying\n\n### Level 1 focus\n\n- Compute $D_{Mac}$\n- Convert to $D_{mod}$\n- Estimate price change from $D_{mod}$ and yield change\n- Apply $D_{eff}$ formula\n- Recognise when each is appropriate"
   },
   "formulas": [
-    { "name": "Macaulay duration",  "latex": "D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\cdot CF_t / (1+y)^t}{P}", "plain": "Weighted average time to cash flows" },
-    { "name": "Modified duration", "latex": "D_{mod} = \\frac{D_{Mac}}{1 + y/m}", "plain": "Annual yield change sensitivity" },
-    { "name": "Effective duration", "latex": "D_{eff} = \\frac{P_- - P_+}{2 P_0 \\Delta y}", "plain": "Numerical approximation; for bonds with options" },
-    { "name": "Price change estimate", "latex": "\\frac{\\Delta P}{P} \\approx -D_{mod} \\cdot \\Delta y", "plain": "Linear approximation for small yield changes" }
+    {
+      "name": "Macaulay duration",
+      "latex": "D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\cdot CF_t / (1+y)^t}{P}",
+      "plain": "Weighted average time to cash flows"
+    },
+    {
+      "name": "Modified duration",
+      "latex": "D_{mod} = \\frac{D_{Mac}}{1 + y/m}",
+      "plain": "Annual yield change sensitivity"
+    },
+    {
+      "name": "Effective duration",
+      "latex": "D_{eff} = \\frac{P_- - P_+}{2 P_0 \\Delta y}",
+      "plain": "Numerical approximation; for bonds with options"
+    },
+    {
+      "name": "Price change estimate",
+      "latex": "\\frac{\\Delta P}{P} \\approx -D_{mod} \\cdot \\Delta y",
+      "plain": "Linear approximation for small yield changes"
+    }
   ],
   "examples": [
     {
@@ -29,7 +45,29 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Macaulay Duration", "url": "https://www.investopedia.com/terms/m/macaulayduration.asp", "kind": "read" },
-    { "label": "Investopedia — Modified Duration", "url": "https://www.investopedia.com/terms/m/modifiedduration.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Macaulay Duration",
+      "url": "https://www.investopedia.com/terms/m/macaulayduration.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Modified Duration",
+      "url": "https://www.investopedia.com/terms/m/modifiedduration.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-conv-overview",
+      "why": "Convexity refines duration for larger yield moves."
+    },
+    {
+      "id": "fi-ir-overview",
+      "why": "Sources of return and the duration vs horizon relationship."
+    },
+    {
+      "id": "fi-curve-overview",
+      "why": "Key-rate duration handles non-parallel curve shifts."
+    }
   ]
 }

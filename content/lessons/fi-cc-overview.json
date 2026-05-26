@@ -5,10 +5,26 @@
     "pro": "## Corporate credit analysis at speed\n\n### Four Cs framework\n\n1. **Capacity**: ability to service debt (cash flow, profitability, coverage)\n2. **Collateral**: assets securing debt\n3. **Covenants**: indenture restrictions\n4. **Character**: management quality and integrity\n\n### Key qualitative factors\n\n- Industry cyclicality, regulation, competitive structure, growth\n- Market position, diversification, brand\n- Management strategy, track record, conservatism\n- Sovereign/country risk\n\n### Key quantitative ratios\n\n**Profitability:**\n- EBITDA margin = EBITDA / Revenue\n- Return on capital\n\n**Cash flow:**\n- Free cash flow = OCF − Capex\n- CF / total debt\n\n**Leverage:**\n- Debt / EBITDA (key metric)\n  - 0-2x: very strong\n  - 2-4x: IG\n  - 4-6x: leveraged\n  - 6+x: highly leveraged\n- Net debt / EBITDA\n- Debt / Equity\n\n**Coverage:**\n- EBIT / Interest (most common)\n  - 5x+: strong\n  - 3-5x: adequate\n  - 1-3x: weak\n  - <1x: distressed\n- EBITDA / Interest\n- FFO / Interest\n\n### Industry-specific\n\n- **Banks**: Tier 1 capital, NIM, LCR, stress tests\n- **Insurance**: RBC, loss ratios, reserves\n- **REITs**: FFO, AFFO, DSCR\n- **Utilities**: FFO/debt, regulatory\n- **Cyclicals**: mid-cycle vs peak/trough\n\n### Trend analysis\n\n- 3-5 year ratio trends\n- Improving → upgrade likely\n- Deteriorating → downgrade risk\n- Management guidance important\n\n### Peer comparison\n\nSame ratio means different things in different industries — always benchmark.\n\n### Red flags\n\n**Quantitative**: deteriorating CF, rising leverage, large goodwill, working capital issues, auditor changes\n\n**Qualitative**: management turnover, aggressive M&A, related-party transactions, restatements, customer concentration\n\n### Rating change anticipation\n\n- CDS spreads move first\n- Bond/equity prices anticipate\n- Watchlist additions signal review\n- Outlook = direction in 18-24 months\n\n### Recovery analysis\n\n- Enterprise value in default (30-50% of historical)\n- Allocation by seniority\n- Senior secured: 60-80%\n- Senior unsecured: 30-50%\n- Subordinated: 10-25%\n\n### Distress scenarios\n\n- Out-of-court restructuring (negotiated)\n- Pre-packaged bankruptcy\n- Chapter 11 (US — continue operations)\n- Chapter 7 (US — liquidate)\n\n### Tools\n\n- Financial models, scenario analysis, stress testing\n- CDS spreads, bond yields, equity prices\n- Industry research\n- Regulatory filings\n\n### Level 1 focus\n\n- Compute credit ratios\n- Use 4Cs qualitatively\n- Industry-specific considerations\n- Recovery basics\n- Quantitative + qualitative integration"
   },
   "formulas": [
-    { "name": "Debt-to-EBITDA",          "latex": "\\frac{\\text{Total debt}}{\\text{EBITDA}}", "plain": "Most-cited leverage ratio" },
-    { "name": "EBIT interest coverage", "latex": "\\frac{\\text{EBIT}}{\\text{Interest expense}}", "plain": "Operating earnings coverage of interest" },
-    { "name": "EBITDA margin",          "latex": "\\frac{\\text{EBITDA}}{\\text{Revenue}}", "plain": "Operating profitability before D&A" },
-    { "name": "Free cash flow",         "latex": "FCF = \\text{Operating CF} - \\text{Capex}", "plain": "Cash available after maintaining business" }
+    {
+      "name": "Debt-to-EBITDA",
+      "latex": "\\frac{\\text{Total debt}}{\\text{EBITDA}}",
+      "plain": "Most-cited leverage ratio"
+    },
+    {
+      "name": "EBIT interest coverage",
+      "latex": "\\frac{\\text{EBIT}}{\\text{Interest expense}}",
+      "plain": "Operating earnings coverage of interest"
+    },
+    {
+      "name": "EBITDA margin",
+      "latex": "\\frac{\\text{EBITDA}}{\\text{Revenue}}",
+      "plain": "Operating profitability before D&A"
+    },
+    {
+      "name": "Free cash flow",
+      "latex": "FCF = \\text{Operating CF} - \\text{Capex}",
+      "plain": "Cash available after maintaining business"
+    }
   ],
   "examples": [
     {
@@ -29,6 +45,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Credit Analysis", "url": "https://www.investopedia.com/terms/c/creditanalysis.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Credit Analysis",
+      "url": "https://www.investopedia.com/terms/c/creditanalysis.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-cr-overview",
+      "why": "Core credit-risk concepts and seniority."
+    },
+    {
+      "id": "fi-feat-overview",
+      "why": "Covenants and indenture terms feed the qualitative side."
+    },
+    {
+      "id": "fra-tech-overview",
+      "why": "Financial analysis techniques and ratios used in credit analysis."
+    }
   ]
 }

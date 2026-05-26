@@ -5,13 +5,41 @@
     "pro": "## Statistical measures at speed\n\n### Central tendency\n\n- Arithmetic: $\\bar{x} = \\frac{1}{n} \\sum x_t$\n- Geometric: $\\bar{x}_g = \\left[\\prod (1 + r_t)\\right]^{1/n} - 1$\n- Harmonic: $\\bar{x}_h = \\frac{n}{\\sum (1/x_t)}$\n- Order: $\\bar{x}_h \\leq \\bar{x}_g \\leq \\bar{x}$ for positive values, equality only when all equal.\n\n### Dispersion\n\n- Sample variance: $s^2 = \\frac{1}{n-1} \\sum (x_t - \\bar{x})^2$\n- Sample std: $s = \\sqrt{s^2}$\n- CV: $s / |\\bar{x}|$, useful when scales differ\n- Range: max − min, sensitive to outliers\n- IQR: Q3 − Q1, robust\n- MAD: mean absolute deviation, an alternative to variance\n\n### Shape\n\n- Skewness: $\\frac{1}{n} \\sum \\left(\\frac{x_t - \\bar{x}}{\\sigma}\\right)^3$\n- Kurtosis: $\\frac{1}{n} \\sum \\left(\\frac{x_t - \\bar{x}}{\\sigma}\\right)^4$; excess = kurt − 3\n- Equity returns: typically left-skewed + leptokurtic\n- Bond returns: smaller departures from normality\n\n### Quantile measures\n\n- Median, quartiles, deciles, percentiles\n- Useful when distributions are skewed (median > mean is right-shifted thinking)\n- VaR and CVaR are quantile-based risk measures\n\n### Association\n\n- Covariance: $\\text{Cov}(X, Y) = \\frac{1}{n-1} \\sum (X_t - \\bar{X})(Y_t - \\bar{Y})$\n- Correlation: $\\rho = \\text{Cov}/(\\sigma_X \\sigma_Y)$\n- Sample variants use $n-1$ in denominator\n\n### Portfolio variance (two-asset)\n\n$$\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2$$\n\nLower $\\rho$ → lower portfolio variance for given individual variances → diversification benefit.\n\n### Distribution-free facts\n\n**Chebyshev's inequality**: at least $1 - 1/k^2$ of observations within $k$ standard deviations of mean, for any distribution.\n\n- k = 2 → at least 75% within ±2σ\n- k = 3 → at least 89% within ±3σ\n\nNormal distribution sharpens this: ~68% within ±1σ, 95% within ±2σ, 99.7% within ±3σ.\n\n### Skewness and kurtosis effects\n\n- **Right skew**: mean > median > mode\n- **Left skew**: mean < median < mode\n- **Leptokurtic**: excess kurt > 0; more extreme observations than normal would predict\n- **Mesokurtic** (normal): excess kurt = 0\n- **Platykurtic**: excess kurt < 0; less extreme observations than normal"
   },
   "formulas": [
-    { "name": "Arithmetic mean",     "latex": "\\bar{x} = \\frac{1}{n} \\sum_{t=1}^{n} x_t", "plain": "Sum divided by count" },
-    { "name": "Geometric mean",      "latex": "\\bar{x}_g = \\left[\\prod_{t=1}^{n} (1 + r_t)\\right]^{1/n} - 1", "plain": "Realised compound growth" },
-    { "name": "Sample variance",     "latex": "s^2 = \\frac{1}{n-1} \\sum_{t=1}^{n} (x_t - \\bar{x})^2", "plain": "Use n-1 for unbiased sample estimate" },
-    { "name": "Correlation",         "latex": "\\rho_{XY} = \\frac{\\text{Cov}(X, Y)}{\\sigma_X \\sigma_Y}", "plain": "Cov scaled by product of std deviations; range -1 to +1" },
-    { "name": "Two-asset portfolio variance", "latex": "\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2", "plain": "Lower ρ → lower σp for given individual σ" },
-    { "name": "Coefficient of variation", "latex": "CV = \\frac{\\sigma}{|\\bar{x}|}", "plain": "Risk per unit of return" },
-    { "name": "Chebyshev's inequality", "latex": "P(|X - \\mu| \\geq k\\sigma) \\leq \\frac{1}{k^2}", "plain": "Distribution-free bound on tail probability" }
+    {
+      "name": "Arithmetic mean",
+      "latex": "\\bar{x} = \\frac{1}{n} \\sum_{t=1}^{n} x_t",
+      "plain": "Sum divided by count"
+    },
+    {
+      "name": "Geometric mean",
+      "latex": "\\bar{x}_g = \\left[\\prod_{t=1}^{n} (1 + r_t)\\right]^{1/n} - 1",
+      "plain": "Realised compound growth"
+    },
+    {
+      "name": "Sample variance",
+      "latex": "s^2 = \\frac{1}{n-1} \\sum_{t=1}^{n} (x_t - \\bar{x})^2",
+      "plain": "Use n-1 for unbiased sample estimate"
+    },
+    {
+      "name": "Correlation",
+      "latex": "\\rho_{XY} = \\frac{\\text{Cov}(X, Y)}{\\sigma_X \\sigma_Y}",
+      "plain": "Cov scaled by product of std deviations; range -1 to +1"
+    },
+    {
+      "name": "Two-asset portfolio variance",
+      "latex": "\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\rho \\sigma_1 \\sigma_2",
+      "plain": "Lower ρ → lower σp for given individual σ"
+    },
+    {
+      "name": "Coefficient of variation",
+      "latex": "CV = \\frac{\\sigma}{|\\bar{x}|}",
+      "plain": "Risk per unit of return"
+    },
+    {
+      "name": "Chebyshev's inequality",
+      "latex": "P(|X - \\mu| \\geq k\\sigma) \\leq \\frac{1}{k^2}",
+      "plain": "Distribution-free bound on tail probability"
+    }
   ],
   "examples": [
     {
@@ -54,7 +82,25 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Descriptive Statistics", "url": "https://www.investopedia.com/terms/d/descriptive_statistics.asp", "kind": "read" },
-    { "label": "Investopedia — Skewness and Kurtosis", "url": "https://www.investopedia.com/terms/s/skewness.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Descriptive Statistics",
+      "url": "https://www.investopedia.com/terms/d/descriptive_statistics.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Skewness and Kurtosis",
+      "url": "https://www.investopedia.com/terms/s/skewness.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-portmath-overview",
+      "why": "Volatility and correlation feed into portfolio risk."
+    },
+    {
+      "id": "quant-est-overview",
+      "why": "Sampling distributions and standard errors."
+    }
   ]
 }

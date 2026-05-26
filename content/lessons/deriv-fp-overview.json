@@ -5,9 +5,21 @@
     "pro": "## Forward pricing and valuation at speed\n\n### Price vs value\n\n- **Forward price** ($F$): contracted rate for future transaction\n- **Forward value** ($V$): current mark-to-market value of position\n\n### At initiation\n\n$F_0 = S_0 (1 + r)^T$ (no-dividend)\n\n$V_0 = 0$ (no money changes hands)\n\n### During contract life (time t)\n\nCurrent forward price (new contracts):\n$F_t = S_t (1 + r)^{T-t}$\n\nValue of existing long forward:\n$V_t^{long} = \\frac{F_t - F_0}{(1 + r)^{T-t}}$\n\nOr equivalently:\n$V_t^{long} = S_t - \\frac{F_0}{(1 + r)^{T-t}}$\n\nShort position: $V^{short} = -V^{long}$.\n\n### At expiration\n\n$V_T^{long} = S_T - F_0$\n\nEquals the payoff.\n\n### Implied forward rate\n\nFrom term structure:\n$(1 + s_{t_2})^{t_2} = (1 + s_{t_1})^{t_1} (1 + f_{t_1,t_2})^{t_2 - t_1}$\n\nSolve for $f$:\n$f = [(1+s_{t_2})^{t_2} / (1+s_{t_1})^{t_1}]^{1/(t_2-t_1)} - 1$\n\n### FX forward (IRP)\n\n$F = S (1 + r_q) / (1 + r_b)$\n\n### Uses of forward rates\n\n- Imply expected future spot rates\n- Enable no-arbitrage discounting\n- Inform strategy/expectations\n- Anchor bond and derivative valuation\n\n### Settlement modes\n\n- **Physical delivery**: underlying transferred (commodities, FX)\n- **Cash settlement**: net cash only (index, IR forwards)\n\n### Futures vs forwards\n\n- Futures: daily mark-to-market settlement\n- Forwards: settled at expiration\n- Economically near-identical for major contracts"
   },
   "formulas": [
-    { "name": "Forward price at t",          "latex": "F_t = S_t (1 + r)^{T-t}", "plain": "Forward price during contract life" },
-    { "name": "Value of long forward",       "latex": "V_t^{long} = \\frac{F_t - F_0}{(1 + r)^{T-t}}", "plain": "Mark-to-market of existing long forward" },
-    { "name": "Implied forward rate",        "latex": "(1 + s_2)^{t_2} = (1 + s_1)^{t_1} (1 + f_{1,2})^{t_2 - t_1}", "plain": "Forward rate from term structure" }
+    {
+      "name": "Forward price at t",
+      "latex": "F_t = S_t (1 + r)^{T-t}",
+      "plain": "Forward price during contract life"
+    },
+    {
+      "name": "Value of long forward",
+      "latex": "V_t^{long} = \\frac{F_t - F_0}{(1 + r)^{T-t}}",
+      "plain": "Mark-to-market of existing long forward"
+    },
+    {
+      "name": "Implied forward rate",
+      "latex": "(1 + s_2)^{t_2} = (1 + s_1)^{t_1} (1 + f_{1,2})^{t_2 - t_1}",
+      "plain": "Forward rate from term structure"
+    }
   ],
   "examples": [
     {
@@ -28,6 +40,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Forward Contract", "url": "https://www.investopedia.com/terms/f/forwardcontract.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Forward Contract",
+      "url": "https://www.investopedia.com/terms/f/forwardcontract.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-arb-overview",
+      "why": "No-arbitrage logic underpins forward pricing."
+    },
+    {
+      "id": "deriv-futp-overview",
+      "why": "How futures pricing compares."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "Implied forward rates from the spot curve."
+    }
   ]
 }

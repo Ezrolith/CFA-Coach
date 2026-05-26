@@ -6,13 +6,41 @@
     "exam": "## What CFA wants on equity valuation\n\n**LOS verbs:** *evaluate* over/under/fairly valued; *describe* model categories; *describe* dividend types and payment chronology; *explain* the rationale for PV models; *calculate* preferred and equity values via Gordon and two-stage DDM; *identify* when models apply; *calculate* and *interpret* P/E, P/B, P/S, P/CF; *describe* enterprise value multiples; *describe* asset-based models; *explain* advantages and disadvantages.\n\n### Must-do calculations\n\n- Gordon growth: $P_0 = D_1 / (r - g)$.\n- Two-stage DDM: PV of explicit dividends + PV of terminal value.\n- Preferred stock value: $D / r$.\n- Justified P/E: $(1 - b) / (r - g)$.\n- Basic and diluted EPS (cross-reference with FRA).\n- EV computation and EV/EBITDA.\n\n### Common exam traps\n\n- **Wrong dividend.** Gordon uses $D_1$ (next year's), not $D_0$ (most recent paid). If given $D_0$, grow it: $D_1 = D_0(1 + g)$.\n- **Negative denominator.** If $r ≤ g$, Gordon is invalid; use multi-stage or a different model.\n- **Forgetting to add the terminal value.** In two-stage, the terminal $P_N$ must be discounted back $N$ periods, not $N+1$.\n- **P/E numerator/denominator timing.** Trailing P/E = price / past EPS; forward P/E = price / next-year EPS. They are different multiples and not interchangeable.\n- **Confusing P/E with justified P/E.** Market P/E is observed; justified is what the model says it *should* be.\n- **Asset-based misuse.** Don't use NAV for a software company — the value is in intangibles not on the balance sheet.\n\n### Quick triage\n\n| Company profile | Best fit |\n|---|---|\n| Mature dividend payer, stable growth | Gordon growth DDM |\n| Growing now, will mature later | Two-stage DDM |\n| No dividends, growing rapidly | Forward P/E or EV/EBITDA vs comparables |\n| Bank or asset-heavy financial | P/B |\n| Holding co. with operating businesses | Sum-of-the-parts / asset-based |\n| Loss-making | P/S, EV/Sales |"
   },
   "formulas": [
-    { "name": "Gordon growth model",      "latex": "P_0 = \\frac{D_1}{r - g}", "plain": "Value of an equity with constant dividend growth g forever; requires r > g" },
-    { "name": "Two-stage DDM",            "latex": "P_0 = \\sum_{t=1}^{N} \\frac{D_t}{(1+r)^t} + \\frac{1}{(1+r)^N} \\cdot \\frac{D_{N+1}}{r - g_L}", "plain": "Sum of explicit dividends plus PV of terminal value" },
-    { "name": "Preferred stock value",    "latex": "P_0 = \\frac{D}{r}", "plain": "Non-callable, non-convertible preferred = perpetuity of fixed dividend" },
-    { "name": "Justified leading P/E",    "latex": "\\frac{P_0}{E_1} = \\frac{1 - b}{r - g}", "plain": "Where b is retention ratio; payout ratio = 1 - b" },
-    { "name": "Enterprise value",         "latex": "EV = \\text{Market cap} + \\text{Debt} + \\text{Preferred} - \\text{Cash}", "plain": "What it would cost to buy the whole firm net of cash" },
-    { "name": "CAPM required return",     "latex": "r = R_f + \\beta(R_m - R_f)", "plain": "Risk-free rate plus beta times equity risk premium" },
-    { "name": "Sustainable growth rate",  "latex": "g = b \\cdot ROE", "plain": "Growth from earnings retention only — no external financing" }
+    {
+      "name": "Gordon growth model",
+      "latex": "P_0 = \\frac{D_1}{r - g}",
+      "plain": "Value of an equity with constant dividend growth g forever; requires r > g"
+    },
+    {
+      "name": "Two-stage DDM",
+      "latex": "P_0 = \\sum_{t=1}^{N} \\frac{D_t}{(1+r)^t} + \\frac{1}{(1+r)^N} \\cdot \\frac{D_{N+1}}{r - g_L}",
+      "plain": "Sum of explicit dividends plus PV of terminal value"
+    },
+    {
+      "name": "Preferred stock value",
+      "latex": "P_0 = \\frac{D}{r}",
+      "plain": "Non-callable, non-convertible preferred = perpetuity of fixed dividend"
+    },
+    {
+      "name": "Justified leading P/E",
+      "latex": "\\frac{P_0}{E_1} = \\frac{1 - b}{r - g}",
+      "plain": "Where b is retention ratio; payout ratio = 1 - b"
+    },
+    {
+      "name": "Enterprise value",
+      "latex": "EV = \\text{Market cap} + \\text{Debt} + \\text{Preferred} - \\text{Cash}",
+      "plain": "What it would cost to buy the whole firm net of cash"
+    },
+    {
+      "name": "CAPM required return",
+      "latex": "r = R_f + \\beta(R_m - R_f)",
+      "plain": "Risk-free rate plus beta times equity risk premium"
+    },
+    {
+      "name": "Sustainable growth rate",
+      "latex": "g = b \\cdot ROE",
+      "plain": "Growth from earnings retention only — no external financing"
+    }
   ],
   "examples": [
     {
@@ -63,8 +91,34 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Gordon Growth Model", "url": "https://www.investopedia.com/terms/g/gordongrowthmodel.asp", "kind": "read" },
-    { "label": "Aswath Damodaran's valuation site (free lecture notes)", "url": "https://pages.stern.nyu.edu/~adamodar/", "kind": "read" },
-    { "label": "Khan Academy — Stocks and Bonds", "url": "https://www.khanacademy.org/economics-finance-domain/core-finance/stock-and-bonds", "kind": "watch" }
+    {
+      "label": "Investopedia — Gordon Growth Model",
+      "url": "https://www.investopedia.com/terms/g/gordongrowthmodel.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Aswath Damodaran's valuation site (free lecture notes)",
+      "url": "https://pages.stern.nyu.edu/~adamodar/",
+      "kind": "read"
+    },
+    {
+      "label": "Khan Academy — Stocks and Bonds",
+      "url": "https://www.khanacademy.org/economics-finance-domain/core-finance/stock-and-bonds",
+      "kind": "watch"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "eq-fc-overview",
+      "why": "Company analysis and forecasting feed valuation inputs."
+    },
+    {
+      "id": "fra-tech-overview",
+      "why": "Ratios that feed multiples-based valuation."
+    },
+    {
+      "id": "corp-bm-overview",
+      "why": "Business model affects valuation framework choice."
+    }
   ]
 }

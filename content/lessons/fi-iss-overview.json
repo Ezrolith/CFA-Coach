@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bond Market", "url": "https://www.investopedia.com/terms/b/bondmarket.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Bond Market",
+      "url": "https://www.investopedia.com/terms/b/bondmarket.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-mkt-overview",
+      "why": "Corporate short- and long-term funding markets."
+    },
+    {
+      "id": "fi-gov-overview",
+      "why": "Government issuers and their auction mechanics."
+    }
   ]
 }

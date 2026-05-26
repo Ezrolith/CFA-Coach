@@ -5,7 +5,11 @@
     "pro": "## Government fixed-income markets at speed\n\n### US Treasury (largest market ~$25T)\n\n**Instruments:**\n- T-bills: ≤ 1 year (zero coupon)\n- T-notes: 2, 3, 5, 7, 10 years\n- T-bonds: 20, 30 years\n- TIPS: inflation-protected\n- STRIPS: zero-coupon stripped\n- FRNs: 2-year floating\n\n**Auction**: Dutch (single-price) by primary dealers.\n\n**Tax (US Treasury)**: federal taxable; state/local exempt.\n\n### Other major sovereigns\n\n- **Japan (JGBs)**: ¥1100T; BOJ-dominated holding\n- **Eurozone**: Bunds (DE), OATs (FR), BTPs (IT), Bonos (ES) — separate by country\n- **UK (gilts)**: £2.5T; index-linked variants\n- **China**: ~$13T; largely domestic\n- **EM sovereigns**: Brazil, Mexico, others — higher yields\n\n### Sub-sovereign\n\n**US municipal bonds**:\n- General obligation: full taxing power\n- Revenue: specific revenue stream\n- Tax-exempt federally (often), state-exempt in-state\n\n**Tax-equivalent yield:**\n$TEY = r_{muni} / (1 - t)$\n\n### Quasi-government and supranational\n\n- **US agency**: Fannie, Freddie, Ginnie, FHLB — implicit gov't backing\n- **Supranational**: World Bank, IFC, EIB, ADB — AAA typically\n\n### Why government bonds matter\n\n- Risk-free benchmark for discount rates and spreads\n- Safe-haven asset (rally in equity sell-offs)\n- Monetary policy tool (Fed buys/sells)\n- Liability matching for pensions/insurers\n- Collateral in repo markets\n\n### Indicative 10-year yields (2024)\n\n- US: 4.30%\n- Germany: 2.40%\n- Japan: 1.10%\n- UK: 4.20%\n- Italy: 3.80%\n- Brazil: 11.00%\n- Mexico: 9.50%\n\nDriven by monetary policy, growth, inflation, credit.\n\n### US Treasury special features\n\n- Quasi-monopoly on global safe asset\n- ~30% foreign holdings; ~25% Fed-held\n- Most liquid bond market globally\n- USD reserve currency supports demand\n\n### Risks\n\n- Interest rate risk\n- Inflation risk (mitigated by TIPS/linkers)\n- Currency risk (for foreign holders)\n- Credit risk (non-AAA sovereigns)\n- Liquidity risk (smaller sovereigns)\n- Political risk (debt ceiling, sanctions)\n\n### Level 1 focus\n\n- Sovereign instrument types\n- US Treasury structure\n- Municipal tax treatment (TEY)\n- Quasi/supranational basics\n- Risk-free benchmark role"
   },
   "formulas": [
-    { "name": "Tax-equivalent yield", "latex": "TEY = \\frac{r_{muni}}{1 - t}", "plain": "Compare tax-exempt muni yield with taxable equivalent" }
+    {
+      "name": "Tax-equivalent yield",
+      "latex": "TEY = \\frac{r_{muni}}{1 - t}",
+      "plain": "Compare tax-exempt muni yield with taxable equivalent"
+    }
   ],
   "examples": [
     {
@@ -26,7 +30,25 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Treasury Bond", "url": "https://www.investopedia.com/terms/t/treasurybond.asp", "kind": "read" },
-    { "label": "Investopedia — Municipal Bond", "url": "https://www.investopedia.com/terms/m/municipalbond.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Treasury Bond",
+      "url": "https://www.investopedia.com/terms/t/treasurybond.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Municipal Bond",
+      "url": "https://www.investopedia.com/terms/m/municipalbond.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-iss-overview",
+      "why": "Auctions and primary issuance practices."
+    },
+    {
+      "id": "fi-cag-overview",
+      "why": "Credit analysis for sovereign issuers."
+    }
   ]
 }

@@ -5,10 +5,26 @@
     "pro": "## Arbitrage, replication, cost of carry at speed\n\n### Core principles\n\n**No-arbitrage**: no riskless profit possible. **Law of One Price**: identical payoffs → identical prices.\n\n**Replication**: derivative price = cost of replicating portfolio.\n\n### Forward pricing\n\n**Non-dividend asset:**\n$F_0 = S_0 (1 + r)^T$\n\n**Dividend-paying:**\n$F_0 = (S_0 - PV(\\text{div}))(1 + r)^T$\n\n**Currency (IRP):**\n$F_0 = S_0 (1 + r_d) / (1 + r_f)$\n\n**Commodity with storage:**\n$F_0 = S_0 e^{(r + u - y)T}$\nu = storage, y = convenience yield\n\n### Cost of carry\n\nCost of carry = financing cost + storage − income/convenience yield\n\n- Cost > 0: contango (F > S)\n- Cost < 0: backwardation (F < S)\n\n### Spot vs forward vs expected future spot\n\n- **Spot**: today's price\n- **Forward**: locked-in price for future, set by no-arbitrage\n- **Expected future spot**: market view\n\nForward ≠ expected future spot generally. Difference = risk premium.\n\n### Forward = E[S_T] if:\n\n- No risk premium\n- Or it's the no-arbitrage relation\n\nNot generally true; risk-averse markets demand premium.\n\n### Arbitrage strategies\n\n- **Cash-and-carry**: borrow, buy spot, sell forward (when F > carry).\n- **Reverse cash-and-carry**: sell short, lend, buy forward (when F < carry).\n- **Covered interest arbitrage**: borrow low-yield, invest high-yield, lock in forward.\n- **Index arbitrage**: futures vs basket of stocks.\n\n### When arbitrage breaks down\n\n- Transaction costs\n- Capital constraints\n- Borrowing limits\n- Counterparty risk\n- Margin and funding\n\nSmall mispricings persist; large ones get exploited.\n\n### Convenience yield (commodities)\n\nValue of physical possession (operational flexibility).\n\n- Positive convenience → forward discount (backwardation)\n- Negative or low → forward premium (contango)\n\n### Why it matters\n\nNo-arbitrage tells us the fair price. Deviations indicate market stress, pricing error, or different expectations."
   },
   "formulas": [
-    { "name": "Forward (no dividends)",          "latex": "F_0 = S_0 (1 + r)^T", "plain": "Basic forward price formula" },
-    { "name": "Forward (dividend-paying)",       "latex": "F_0 = (S_0 - PV(\\text{div}))(1 + r)^T", "plain": "Subtract PV of dividends from spot" },
-    { "name": "Forward FX (IRP)",                "latex": "F_0 = S_0 \\frac{1 + r_d}{1 + r_f}", "plain": "Quote/base currency forward via interest rate parity" },
-    { "name": "Commodity forward",               "latex": "F_0 = S_0 \\cdot e^{(r + u - y)T}", "plain": "Including storage u and convenience yield y" }
+    {
+      "name": "Forward (no dividends)",
+      "latex": "F_0 = S_0 (1 + r)^T",
+      "plain": "Basic forward price formula"
+    },
+    {
+      "name": "Forward (dividend-paying)",
+      "latex": "F_0 = (S_0 - PV(\\text{div}))(1 + r)^T",
+      "plain": "Subtract PV of dividends from spot"
+    },
+    {
+      "name": "Forward FX (IRP)",
+      "latex": "F_0 = S_0 \\frac{1 + r_d}{1 + r_f}",
+      "plain": "Quote/base currency forward via interest rate parity"
+    },
+    {
+      "name": "Commodity forward",
+      "latex": "F_0 = S_0 \\cdot e^{(r + u - y)T}",
+      "plain": "Including storage u and convenience yield y"
+    }
   ],
   "examples": [
     {
@@ -29,6 +45,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Arbitrage", "url": "https://www.investopedia.com/terms/a/arbitrage.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Arbitrage",
+      "url": "https://www.investopedia.com/terms/a/arbitrage.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-fp-overview",
+      "why": "Forward pricing comes directly from no-arbitrage."
+    },
+    {
+      "id": "deriv-pcp-overview",
+      "why": "Put-call parity is no-arbitrage for options."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "Forward rates from spot rates use the same logic."
+    }
   ]
 }

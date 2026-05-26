@@ -5,8 +5,16 @@
     "pro": "## Estimation + inference at speed\n\n### Sampling methods\n\n- **Simple random**: equal chance for all\n- **Stratified**: divide into strata, random within\n- **Cluster**: random groups\n- **Systematic**: every Nth (watch periodicity)\n- **Convenience/judgmental**: bias risk\n\n### Central Limit Theorem\n\nSample mean $\\bar{X}$ from any distribution:\n\nAs n → ∞: $\\bar{X} \\sim N(\\mu, \\sigma^2/n)$\n\nStandard error: $SE = \\sigma/\\sqrt{n}$\n\nWorks even for non-normal underlying distribution. 'Large n' ≈ 30+.\n\n### Confidence intervals\n\n95% CI for mean: $\\bar{X} \\pm 1.96 \\cdot SE$\n\n**Interpretation:** if we repeated sampling many times and built CI each time, ~95% would contain the true population parameter.\n\nNot: 'probability true mean in this interval' (Bayesian).\n\n### Standard errors\n\n- Mean (known σ): $\\sigma/\\sqrt{n}$\n- Mean (unknown σ): $s/\\sqrt{n}$ (s = sample std)\n- Proportion: $\\sqrt{p(1-p)/n}$\n- Difference of means: $\\sqrt{\\sigma_1^2/n_1 + \\sigma_2^2/n_2}$\n\n### Estimator properties\n\n- **Unbiased**: E(estimator) = parameter\n- **Consistent**: converges as n grows\n- **Efficient**: minimum variance among unbiased\n- **Sufficient**: uses all relevant info\n\nFor normal population: sample mean is all three.\n\n### Biases in finance data\n\n- **Survivorship bias**: failed funds drop out → overstated returns\n- **Backfill bias**: report only good histories → indices overstated\n- **Selection bias**: non-random sampling\n- **Self-selection**: respondents differ from non-respondents\n- **Data-snooping**: testing many hypotheses, false positives\n- **Look-ahead**: using unavailable-at-time data\n- **Time-period**: results dependent on chosen period\n\n### Critical values (normal)\n\n- 90% CI: 1.645\n- 95% CI: 1.96\n- 99% CI: 2.576\n\nFor smaller samples (unknown σ), use t-distribution; critical values larger.\n\n### Sample size guidelines\n\n- n < 30: small sample, use t-distribution\n- n = 30-100: moderate\n- n > 100: large; normal approximation accurate"
   },
   "formulas": [
-    { "name": "Standard error of the mean",  "latex": "SE(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}}", "plain": "Decreases with √n; basis of CLT" },
-    { "name": "95% confidence interval (mean)", "latex": "CI = \\bar{X} \\pm 1.96 \\cdot SE(\\bar{X})", "plain": "Interval likely to contain true mean" }
+    {
+      "name": "Standard error of the mean",
+      "latex": "SE(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}}",
+      "plain": "Decreases with √n; basis of CLT"
+    },
+    {
+      "name": "95% confidence interval (mean)",
+      "latex": "CI = \\bar{X} \\pm 1.96 \\cdot SE(\\bar{X})",
+      "plain": "Interval likely to contain true mean"
+    }
   ],
   "examples": [
     {
@@ -28,6 +36,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Central Limit Theorem", "url": "https://www.investopedia.com/terms/c/central_limit_theorem.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Central Limit Theorem",
+      "url": "https://www.investopedia.com/terms/c/central_limit_theorem.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-hyp-overview",
+      "why": "Hypothesis testing builds on sampling distributions."
+    },
+    {
+      "id": "quant-stats-overview",
+      "why": "Sample statistics — what estimation produces."
+    },
+    {
+      "id": "quant-sim-overview",
+      "why": "Bootstrap as a resampling estimator."
+    }
   ]
 }

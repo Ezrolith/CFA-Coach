@@ -5,11 +5,31 @@
     "pro": "## Bond pricing at speed\n\n### Core equation\n\n$$P = C \\cdot \\frac{1 - (1+r)^{-N}}{r} + \\frac{F}{(1+r)^N}$$\n\nWhere $r$ is the **periodic** YTM, $C$ is the **periodic** coupon, $N$ is the number of periods. For semi-annual bonds (the US norm), all three are 'per-half-year' values.\n\n### Price-yield relationship\n\n- $P$ and $r$ move **inversely**, **nonlinearly**, **convexly**.\n- A given yield change produces a larger price increase (when yields fall) than price decrease (when yields rise of equal magnitude). Convexity strikes.\n\n### Price relationships to memorise\n\n| Coupon vs YTM | Price vs Par |\n|---|---|\n| Coupon > YTM | Premium (P > F) |\n| Coupon = YTM | Par (P = F) |\n| Coupon < YTM | Discount (P < F) |\n\n### Pull to par\n\nA premium bond drifts toward par as it approaches maturity (loses premium each period). A discount bond similarly drifts up to par. Holding the bond produces this 'pull-to-par' return regardless of YTM changes.\n\n### Flat vs full price\n\n$$\\text{Flat price} = \\text{Full price} - AI$$\n\nWhere $AI$ is accrued interest, normally straight-line within a coupon period. Flat price is quoted; full price is settled.\n\n### Matrix pricing\n\nFor illiquid bonds: pick comparable maturities, average their YTMs, optionally adjust for credit. Used heavily by corporate-bond desks.\n\n### Conventions catalogue\n\n- **US Treasuries**: semi-annual coupons, actual/actual day count.\n- **US corporates**: semi-annual coupons, 30/360 day count.\n- **UK gilts**: semi-annual, actual/actual.\n- **Eurobonds**: usually annual, 30/360.\n\n### Special cases\n\n- **Zero-coupon bond**: $P = F / (1+r)^N$, no coupons. YTM is the pure CAGR between price and face.\n- **Floating-rate note**: reset to current market each period; trades close to par on reset dates.\n- **Inflation-linked**: principal indexed to inflation; coupon = real coupon × indexed principal."
   },
   "formulas": [
-    { "name": "Bond price (general)",            "latex": "P = C \\cdot \\frac{1 - (1+r)^{-N}}{r} + \\frac{F}{(1+r)^N}", "plain": "PV of coupon annuity plus PV of face redemption" },
-    { "name": "Zero-coupon bond price",          "latex": "P = \\frac{F}{(1+r)^N}", "plain": "No coupons — pure single-sum discounting" },
-    { "name": "Yield from zero-coupon price",    "latex": "r = \\left(\\frac{F}{P}\\right)^{1/N} - 1", "plain": "Implied yield on a zero-coupon bond" },
-    { "name": "Full price",                       "latex": "P_{full} = P_{flat} + AI", "plain": "Settlement price = quoted price plus accrued interest" },
-    { "name": "Accrued interest",                 "latex": "AI = C \\cdot \\frac{t}{T}", "plain": "C = full-period coupon, t = days since last coupon, T = days in coupon period" }
+    {
+      "name": "Bond price (general)",
+      "latex": "P = C \\cdot \\frac{1 - (1+r)^{-N}}{r} + \\frac{F}{(1+r)^N}",
+      "plain": "PV of coupon annuity plus PV of face redemption"
+    },
+    {
+      "name": "Zero-coupon bond price",
+      "latex": "P = \\frac{F}{(1+r)^N}",
+      "plain": "No coupons — pure single-sum discounting"
+    },
+    {
+      "name": "Yield from zero-coupon price",
+      "latex": "r = \\left(\\frac{F}{P}\\right)^{1/N} - 1",
+      "plain": "Implied yield on a zero-coupon bond"
+    },
+    {
+      "name": "Full price",
+      "latex": "P_{full} = P_{flat} + AI",
+      "plain": "Settlement price = quoted price plus accrued interest"
+    },
+    {
+      "name": "Accrued interest",
+      "latex": "AI = C \\cdot \\frac{t}{T}",
+      "plain": "C = full-period coupon, t = days since last coupon, T = days in coupon period"
+    }
   ],
   "examples": [
     {
@@ -60,8 +80,34 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bond Pricing", "url": "https://www.investopedia.com/articles/bonds/07/pricing_conventions.asp", "kind": "read" },
-    { "label": "Investopedia — Accrued Interest", "url": "https://www.investopedia.com/terms/a/accruedinterest.asp", "kind": "read" },
-    { "label": "Treasury Direct — How Treasuries Are Priced", "url": "https://www.treasurydirect.gov/marketable-securities/", "kind": "read" }
+    {
+      "label": "Investopedia — Bond Pricing",
+      "url": "https://www.investopedia.com/articles/bonds/07/pricing_conventions.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Accrued Interest",
+      "url": "https://www.investopedia.com/terms/a/accruedinterest.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Treasury Direct — How Treasuries Are Priced",
+      "url": "https://www.treasurydirect.gov/marketable-securities/",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-ym-overview",
+      "why": "YTM and yield spread measures for fixed-rate bonds."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "Spot rates as discount factors."
+    },
+    {
+      "id": "fi-dur-overview",
+      "why": "Once you can price the bond, measure its rate sensitivity."
+    }
   ]
 }

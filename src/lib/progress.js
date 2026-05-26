@@ -11,6 +11,7 @@ const EMPTY = {
   quizResults: {},
   reviews: {},
   activityDays: {},   // { 'YYYY-MM-DD': true } — any day with study activity
+  notes: {},          // { [lessonId]: { text, updatedAt } } — user's personal notes per lesson
 };
 
 function dateKey(d = new Date()) {
@@ -32,6 +33,7 @@ function read() {
       ...parsed,
       reviews: parsed.reviews ?? {},
       activityDays: parsed.activityDays ?? {},
+      notes: parsed.notes ?? {},
     };
   } catch {
     return { ...EMPTY };
@@ -206,6 +208,36 @@ export function dueReviewIds(asOf = new Date()) {
   }
   out.sort((a, b) => b.daysOverdue - a.daysOverdue);
   return out.map(x => x.lessonId);
+}
+
+// --- Personal notes ---
+
+export function getNote(lessonId) {
+  return read().notes[lessonId] ?? null;
+}
+
+export function setNote(lessonId, text) {
+  const state = read();
+  const trimmed = (text ?? '').toString();
+  if (trimmed.length === 0) {
+    delete state.notes[lessonId];
+  } else {
+    state.notes[lessonId] = {
+      text: trimmed,
+      updatedAt: new Date().toISOString(),
+    };
+    recordActivity(state);
+  }
+  write(state);
+  notify();
+}
+
+export function allNotes() {
+  return read().notes;
+}
+
+export function notedLessonCount() {
+  return Object.keys(read().notes).length;
 }
 
 // --- Reset (settings page utility) ---

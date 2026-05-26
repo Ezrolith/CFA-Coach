@@ -5,8 +5,16 @@
     "pro": "## Interest rate swaps at speed\n\n### Basic structure\n\n- Fixed-rate payer pays fixed, receives floating\n- Fixed-rate receiver pays floating, receives fixed\n- Notional: never exchanged\n- Net settlement each period\n\n### Settlement formula (per period)\n\n$\\text{Net} = (\\text{Float} - \\text{Fix}) \\times \\text{Notional} \\times \\text{Day fraction}$\n\n### Pricing at initiation\n\n**Fixed rate** set so swap value = 0:\n\n$\\sum F_{fix} D_i = \\sum F_i^{fwd} D_i$\n\n→ Fixed rate ≈ PV-weighted average of implied forward rates.\n\n### Swap as series of forwards\n\nEach period settlement ≈ one forward rate agreement. Swap = sum of FRAs.\n\n### Valuation during life\n\nFor fixed payer:\n$V = PV(\\text{remaining float}) - PV(\\text{remaining fix})$\n\n- Rates rise → fixed payer gains\n- Rates fall → fixed payer loses\n\n### Common types\n\n- **Plain vanilla** (fix vs float)\n- **Basis swap** (float vs different float)\n- **Currency swap** (different currency principals + interest)\n- **Equity swap** (equity return vs fix/float)\n- **Total return swap (TRS)** (asset total return vs floating)\n- **Commodity swap** (floating commodity vs fixed)\n\n### Use cases\n\n**Corporates:** convert floating debt to fixed (or vice versa).\n\n**Investors:** lock in yields, modify duration, speculate.\n\n**Banks:** market making, balance sheet hedging.\n\n**Pension funds (LDI):** match long liability duration with receive-fixed swaps.\n\n### UK LDI crisis (Sep 2022)\n\nPension funds had massive receive-fix swaps. Rate spike → huge collateral calls → forced selling → BoE intervention.\n\nLesson: hedge can create liquidity risk.\n\n### Counterparty risk\n\nMitigated by:\n- Central clearing (post-2009 reform)\n- CSA collateral agreements\n- Netting\n- ISDA Master Agreement\n- CVA adjustments\n\n### Level 1 expectations\n\n- Swap = series of forwards\n- Zero value at initiation by design\n- Value moves with rate curve\n- Major use cases"
   },
   "formulas": [
-    { "name": "Swap settlement",   "latex": "\\text{Net} = (r_{float} - r_{fix}) \\cdot N \\cdot \\frac{d}{360}", "plain": "Per-period net cash flow on a vanilla IRS" },
-    { "name": "Swap value (payer)", "latex": "V_{swap}^{pay-fix} = PV(\\text{remaining float}) - PV(\\text{remaining fix})", "plain": "Mark-to-market for fixed-rate payer" }
+    {
+      "name": "Swap settlement",
+      "latex": "\\text{Net} = (r_{float} - r_{fix}) \\cdot N \\cdot \\frac{d}{360}",
+      "plain": "Per-period net cash flow on a vanilla IRS"
+    },
+    {
+      "name": "Swap value (payer)",
+      "latex": "V_{swap}^{pay-fix} = PV(\\text{remaining float}) - PV(\\text{remaining fix})",
+      "plain": "Mark-to-market for fixed-rate payer"
+    }
   ],
   "examples": [
     {
@@ -31,6 +39,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Interest Rate Swap", "url": "https://www.investopedia.com/terms/i/interestrateswap.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Interest Rate Swap",
+      "url": "https://www.investopedia.com/terms/i/interestrateswap.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-fp-overview",
+      "why": "A swap is conceptually a strip of forwards."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "Swap rate is a PV-weighted forward-rate average."
+    }
   ]
 }

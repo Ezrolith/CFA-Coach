@@ -5,9 +5,21 @@
     "pro": "## Binomial option pricing at speed\n\n### One-period setup\n\n- Up state: $S \\cdot u$\n- Down state: $S \\cdot d$\n- Risk-free rate r per period\n- No-arbitrage: u > 1+r > d\n\n### Risk-neutral probability\n\n$\\pi = \\frac{(1+r) - d}{u - d}$\n\n### Option value (one period)\n\n$C_0 = \\frac{\\pi C_u + (1-\\pi) C_d}{1 + r}$\n\n### Replicating portfolio\n\n**Delta (hedge ratio):**\n$\\Delta = \\frac{C_u - C_d}{S_u - S_d}$\n\n**Cash position B:** chosen to match payoff in either state.\n\n**Option value** = $\\Delta S_0 + B$\n\n### Two-period model\n\nBackward induction:\n1. Compute payoffs at final nodes\n2. Work back to intermediate nodes: $C = (\\pi C_u + (1-\\pi) C_d)/(1+r)$\n3. Continue back to root\n\n### European vs American\n\n**European**: only continuation value at each node.\n\n**American**: $\\max(\\text{continuation}, \\text{immediate exercise})$.\n\n**American call (no div)**: never optimal to exercise early → equals European.\n\n**American put**: may be optimal to exercise early (deep ITM, low r).\n\n### Cox-Ross-Rubinstein calibration\n\n- $u = e^{\\sigma \\sqrt{\\Delta t}}$\n- $d = 1/u$\n- $\\pi = (e^{r \\Delta t} - d)/(u - d)$\n\nConverges to Black-Scholes as steps → ∞.\n\n### Risk-neutral vs real-world\n\n- Real-world: actual probability of up/down\n- Risk-neutral: makes underlying earn risk-free rate\n- Option pricing uses risk-neutral only\n- Real-world expected return irrelevant to option value\n\n### Strengths\n\n- Shows no-arbitrage logic clearly\n- Handles American options naturally\n- Flexible for complex payoffs\n\n### Limitations\n\n- Binary outcomes (approximation)\n- Constant volatility assumed\n- Computational cost for many steps\n\n### Level 1 focus\n\n- Build 1-2 period tree\n- Compute risk-neutral probability\n- Backward induction\n- Replication argument\n- European vs American distinction"
   },
   "formulas": [
-    { "name": "Risk-neutral probability",   "latex": "\\pi = \\frac{(1+r) - d}{u - d}", "plain": "Up state probability under risk-neutral measure" },
-    { "name": "Binomial option value (1-period)", "latex": "C_0 = \\frac{\\pi C_u + (1-\\pi) C_d}{1 + r}", "plain": "Discounted expected payoff under risk-neutral" },
-    { "name": "Hedge ratio (delta)",          "latex": "\\Delta = \\frac{C_u - C_d}{S_u - S_d}", "plain": "Replicating shares per option" }
+    {
+      "name": "Risk-neutral probability",
+      "latex": "\\pi = \\frac{(1+r) - d}{u - d}",
+      "plain": "Up state probability under risk-neutral measure"
+    },
+    {
+      "name": "Binomial option value (1-period)",
+      "latex": "C_0 = \\frac{\\pi C_u + (1-\\pi) C_d}{1 + r}",
+      "plain": "Discounted expected payoff under risk-neutral"
+    },
+    {
+      "name": "Hedge ratio (delta)",
+      "latex": "\\Delta = \\frac{C_u - C_d}{S_u - S_d}",
+      "plain": "Replicating shares per option"
+    }
   ],
   "examples": [
     {
@@ -28,6 +40,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Binomial Option Pricing Model", "url": "https://www.investopedia.com/terms/b/binomialoptionpricing.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Binomial Option Pricing Model",
+      "url": "https://www.investopedia.com/terms/b/binomialoptionpricing.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-op-overview",
+      "why": "Option factors fed into the binomial tree."
+    },
+    {
+      "id": "deriv-pcp-overview",
+      "why": "Cross-check American vs European via parity."
+    }
   ]
 }

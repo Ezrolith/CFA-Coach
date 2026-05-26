@@ -5,12 +5,36 @@
     "pro": "## Yield measures at speed\n\n### Single-bond yields\n\n| Measure | Formula / definition | When to use |\n|---|---|---|\n| Coupon rate | Annual coupon / Face | Static contract spec |\n| Current yield | Coupon / Price | Income-only view |\n| YTM | IRR of CF stream | Most-quoted; bond-equiv. by convention |\n| YTC | YTM assuming earliest call | Callable bonds |\n| YTW | min(YTM, all YTCs) | Conservative callable measure |\n| EAY | $(1 + r_{period})^n - 1$ | True effective return |\n| Realised yield | Empirical return ex-post | Performance attribution |\n\n### Periodicity conversion\n\n$$\\text{BEY (semi-annual)} = 2 \\cdot \\text{periodic semi-annual yield}$$\n\n$$\\text{EAY} = (1 + r_{period})^m - 1$$\n\nFor semi-annual bonds: $EAY = (1 + BEY/2)^2 - 1 \\approx BEY \\cdot 1.005$ ish.\n\n### Spread measures\n\n- **Nominal spread (G-spread)**: YTM(bond) − YTM(comparable government).\n- **I-spread**: YTM − swap rate of same tenor.\n- **Z-spread**: constant addition to spot curve s.t. PV(CF) = price. Solved iteratively.\n- **OAS**: Z-spread net of embedded-option cost. Calculated via tree / Monte Carlo.\n\nFor a vanilla corporate bond, all four converge in magnitude. They diverge when:\n- Curve is steep (G-spread vs Z-spread differ).\n- Bond is callable/putable (OAS < Z-spread by call-option value).\n- Credit quality is weak (Z-spread captures non-parallel curve risk).\n\n### Money market\n\n| Yield | Base | Day count | Notes |\n|---|---|---|---|\n| Discount yield | Face | 360 | T-bills US; understates true yield |\n| Money market yield | Price | 360 | Holding period; semi-conservative |\n| BEY | Price | 365 | Comparable to coupon bonds |\n| EAY | Price | 365, compounded | True annual rate |\n\n### Common conversion\n\nFrom HPY (holding period yield) on a 90-day T-bill:\n\n$$BEY = HPY \\cdot \\frac{365}{90}$$\n\nUseful as the lingua franca to compare a 91-day T-bill with a 91-day commercial paper."
   },
   "formulas": [
-    { "name": "Current yield",         "latex": "\\text{CY} = \\frac{\\text{Annual coupon}}{P}", "plain": "Income return only; ignores capital gain/loss to maturity" },
-    { "name": "YTM equation",          "latex": "P = \\sum_{t=1}^{N} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^N}", "plain": "Solve for r — the IRR of the cash flow stream" },
-    { "name": "BEY to EAY",            "latex": "EAY = \\left(1 + \\frac{BEY}{2}\\right)^2 - 1", "plain": "Convert semi-annual bond-equivalent yield to effective annual" },
-    { "name": "Bank discount yield",   "latex": "r_{BD} = \\frac{F - P}{F} \\cdot \\frac{360}{t}", "plain": "T-bill US convention; understates true return" },
-    { "name": "Money market yield",    "latex": "r_{MM} = \\frac{F - P}{P} \\cdot \\frac{360}{t}", "plain": "Holding period basis, 360-day year" },
-    { "name": "BEY from HPY",          "latex": "BEY = HPY \\cdot \\frac{365}{t}", "plain": "Annualise on 365-day basis for cross-instrument comparison" }
+    {
+      "name": "Current yield",
+      "latex": "\\text{CY} = \\frac{\\text{Annual coupon}}{P}",
+      "plain": "Income return only; ignores capital gain/loss to maturity"
+    },
+    {
+      "name": "YTM equation",
+      "latex": "P = \\sum_{t=1}^{N} \\frac{C}{(1+r)^t} + \\frac{F}{(1+r)^N}",
+      "plain": "Solve for r — the IRR of the cash flow stream"
+    },
+    {
+      "name": "BEY to EAY",
+      "latex": "EAY = \\left(1 + \\frac{BEY}{2}\\right)^2 - 1",
+      "plain": "Convert semi-annual bond-equivalent yield to effective annual"
+    },
+    {
+      "name": "Bank discount yield",
+      "latex": "r_{BD} = \\frac{F - P}{F} \\cdot \\frac{360}{t}",
+      "plain": "T-bill US convention; understates true return"
+    },
+    {
+      "name": "Money market yield",
+      "latex": "r_{MM} = \\frac{F - P}{P} \\cdot \\frac{360}{t}",
+      "plain": "Holding period basis, 360-day year"
+    },
+    {
+      "name": "BEY from HPY",
+      "latex": "BEY = HPY \\cdot \\frac{365}{t}",
+      "plain": "Annualise on 365-day basis for cross-instrument comparison"
+    }
   ],
   "examples": [
     {
@@ -57,7 +81,29 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Yield to Maturity", "url": "https://www.investopedia.com/terms/y/yieldtomaturity.asp", "kind": "read" },
-    { "label": "Investopedia — Option-Adjusted Spread (OAS)", "url": "https://www.investopedia.com/terms/o/optionadjustedspread.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Yield to Maturity",
+      "url": "https://www.investopedia.com/terms/y/yieldtomaturity.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Option-Adjusted Spread (OAS)",
+      "url": "https://www.investopedia.com/terms/o/optionadjustedspread.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-val-overview",
+      "why": "Pricing mechanics behind every yield measure."
+    },
+    {
+      "id": "fi-yf-overview",
+      "why": "Yields for floating-rate and money market instruments."
+    },
+    {
+      "id": "fi-cr-overview",
+      "why": "Z-spread vs OAS dissects credit & option premia."
+    }
   ]
 }

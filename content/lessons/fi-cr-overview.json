@@ -5,7 +5,11 @@
     "pro": "## Credit risk at speed\n\n### Sources of credit risk\n\n1. **Default risk**: failure to pay\n2. **Credit migration risk**: downgrade reduces price\n3. **Spread risk**: market-wide spread widening\n4. **Liquidity risk**: hard to sell\n\n### Expected loss\n\n$EL = PD \\times LGD \\times EAD$\n\n- PD: probability of default\n- LGD: loss given default (1 − recovery rate)\n- EAD: exposure at default\n\n### Recovery rates\n\n- Senior secured: 60-80%\n- Senior unsecured: 30-50%\n- Subordinated: 10-20%\n\n### Rating agencies\n\nMoody's, S&P, Fitch.\n\n**Investment grade**: BBB-/Baa3 and above.\n\n**High yield (junk)**: below.\n\n### Rating scale\n\n- AAA/Aaa: highest\n- AA/Aa, A, BBB/Baa: IG\n- BB/Ba, B, CCC/Caa, CC/Ca, C: HY\n- D: in default\n\n### Issuer vs issue rating\n\n- **Issuer**: overall credit quality\n- **Issue**: specific bond, considering seniority, security, covenants\n\n### Credit spreads\n\nYield differential vs Treasury.\n\n**Measures:**\n- Nominal spread\n- Z-spread\n- OAS\n- Asset swap spread\n- CDS spread\n\n### Typical spreads (2024)\n\n| Rating | Spread to Treasury |\n|---|---|\n| AAA | 30-60 bps |\n| AA | 50-100 bps |\n| A | 80-130 bps |\n| BBB | 130-200 bps |\n| BB | 250-400 bps |\n| B | 400-650 bps |\n| CCC | 800+ bps |\n\nSpreads widen in stress.\n\n### Seniority ranking (default order)\n\n1. Secured debt\n2. Senior unsecured\n3. Senior subordinated\n4. Subordinated\n5. Junior subordinated\n6. Preferred shares\n7. Common equity (last)\n\n### Priority violations\n\nIn practice, strict priority sometimes broken:\n- Bargaining power dynamics\n- Subordinated litigation\n- Going-concern preservation\n- Court discretion\n\n### Liquidation vs reorganisation\n\n- **Chapter 7 (US)**: shut down, liquidate\n- **Chapter 11 (US)**: continue, restructure debt\n\n### Credit risk by bond type\n\n- **Sovereign**: variable; AAA developed minimal, EM significant\n- **IG corporate**: low default, more migration\n- **HY corporate**: 2-5% annual defaults, 10%+ in recessions\n- **Structured**: tranched; lower tranches volatile\n\n### Modelling\n\n- **Structural (Merton)**: firm value < debt → default\n- **Reduced-form**: default as point process; calibrated to spreads\n- **Ratings-based**: transition matrices\n\n### Managing credit risk\n\n- Diversification\n- Bottom-up analysis\n- CDS hedging\n- Position limits\n- Stress testing\n- Active management\n\n### Credit cycles\n\n- Expansion: tight spreads, low defaults\n- Late cycle: stretched issuers\n- Recession: spreads widen, defaults rise\n- Recovery: spreads tighten\n\nHistorical big years: 1989-91, 2000-02, 2008-09, 2020.\n\n### Level 1 focus\n\n- Credit risk sources\n- Seniority and priority\n- Rating categories\n- Distinguish from interest rate risk\n- Spread basics"
   },
   "formulas": [
-    { "name": "Expected loss", "latex": "EL = PD \\times LGD \\times EAD", "plain": "Standard credit risk decomposition" }
+    {
+      "name": "Expected loss",
+      "latex": "EL = PD \\times LGD \\times EAD",
+      "plain": "Standard credit risk decomposition"
+    }
   ],
   "examples": [
     {
@@ -26,6 +30,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Credit Risk", "url": "https://www.investopedia.com/terms/c/creditrisk.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Credit Risk",
+      "url": "https://www.investopedia.com/terms/c/creditrisk.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-cc-overview",
+      "why": "Quantitative + qualitative analysis of corporate borrowers."
+    },
+    {
+      "id": "fi-cag-overview",
+      "why": "How sovereign credit differs from corporate."
+    },
+    {
+      "id": "fi-curve-overview",
+      "why": "Spread duration measures credit-spread sensitivity."
+    }
   ]
 }

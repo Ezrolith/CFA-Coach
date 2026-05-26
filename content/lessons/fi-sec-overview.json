@@ -24,6 +24,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Securitization", "url": "https://www.investopedia.com/terms/s/securitization.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Securitization",
+      "url": "https://www.investopedia.com/terms/s/securitization.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-abs-overview",
+      "why": "Non-mortgage securitised products."
+    },
+    {
+      "id": "fi-mbs-overview",
+      "why": "Mortgage-backed securitisations."
+    },
+    {
+      "id": "fi-cr-overview",
+      "why": "Tranching reallocates credit risk."
+    }
   ]
 }

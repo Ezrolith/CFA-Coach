@@ -5,11 +5,31 @@
     "pro": "## Floating-rate and money market yields at speed\n\n### Floating-rate notes (FRN)\n\nCoupon = reference rate + quoted margin\n\nResets typically quarterly.\n\nPrice stays close to par (low duration).\n\n**Discount margin**: spread over reference equating PV to price.\n- If FRN at par: DM = quoted margin\n- If at discount: DM > quoted\n- If at premium: DM < quoted\n\n### Money market yield conventions\n\nFor instruments with face value F, price P, days t:\n\n**Bank discount yield (BDY):**\n$BDY = \\frac{F - P}{F} \\times \\frac{360}{t}$\n\n**Holding period return (HPR):**\n$HPR = \\frac{F - P}{P}$\n\n**Money market yield (MMY):**\n$MMY = HPR \\times \\frac{360}{t}$\n\n**Bond equivalent yield (BEY):**\n$BEY = HPR \\times \\frac{365}{t}$\n\n**Effective annual yield (EAY):**\n$EAY = (1 + HPR)^{365/t} - 1$\n\n### Comparison (90-day T-bill, F=1000, P=980)\n\n| Measure | Value |\n|---|---|\n| BDY | 8.00% |\n| MMY | 8.16% |\n| BEY | 8.28% |\n| EAY | 8.60% |\n\n**Most useful: EAY** for cross-instrument comparison.\n\n### BDY limitations\n\n- Uses face value as base (should use price)\n- Uses 360-day year\n- Doesn't reflect true return\n\n### Conventions vary\n\n- US T-bills quoted as BDY\n- Commercial paper: discount basis (BDY-like)\n- Eurodollar deposits: actual/360\n- UK money market: actual/365\n\n### Why conventions matter\n\n- Comparing yields across instruments requires same convention\n- Quoted yields can mislead (BDY understates true return)\n- Conversion between conventions is common exam question\n\n### Level 1 focus\n\n- Convert between BDY, MMY, BEY, EAY\n- Understand FRN structure\n- Discount margin concept\n- Recognise floating prices stay near par"
   },
   "formulas": [
-    { "name": "Bank discount yield",        "latex": "BDY = \\frac{F - P}{F} \\times \\frac{360}{t}", "plain": "US T-bill yield convention" },
-    { "name": "Holding period return",      "latex": "HPR = \\frac{F - P}{P}", "plain": "Actual return over holding period" },
-    { "name": "Money market yield",         "latex": "MMY = HPR \\times \\frac{360}{t}", "plain": "Annualised on 360-day year" },
-    { "name": "Bond equivalent yield",      "latex": "BEY = HPR \\times \\frac{365}{t}", "plain": "Annualised on 365-day year" },
-    { "name": "Effective annual yield",     "latex": "EAY = (1 + HPR)^{365/t} - 1", "plain": "Compounded annual return" }
+    {
+      "name": "Bank discount yield",
+      "latex": "BDY = \\frac{F - P}{F} \\times \\frac{360}{t}",
+      "plain": "US T-bill yield convention"
+    },
+    {
+      "name": "Holding period return",
+      "latex": "HPR = \\frac{F - P}{P}",
+      "plain": "Actual return over holding period"
+    },
+    {
+      "name": "Money market yield",
+      "latex": "MMY = HPR \\times \\frac{360}{t}",
+      "plain": "Annualised on 360-day year"
+    },
+    {
+      "name": "Bond equivalent yield",
+      "latex": "BEY = HPR \\times \\frac{365}{t}",
+      "plain": "Annualised on 365-day year"
+    },
+    {
+      "name": "Effective annual yield",
+      "latex": "EAY = (1 + HPR)^{365/t} - 1",
+      "plain": "Compounded annual return"
+    }
   ],
   "examples": [
     {
@@ -30,6 +50,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Bank Discount Rate", "url": "https://www.investopedia.com/terms/b/bank-discount-basis.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Bank Discount Rate",
+      "url": "https://www.investopedia.com/terms/b/bank-discount-basis.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-ym-overview",
+      "why": "Fixed-rate yield conventions for comparison."
+    },
+    {
+      "id": "fi-mkt-overview",
+      "why": "Commercial paper and repos sit in this short-end market."
+    }
   ]
 }

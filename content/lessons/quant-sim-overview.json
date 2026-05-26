@@ -5,7 +5,11 @@
     "pro": "## Simulation at speed\n\n### Normal vs lognormal\n\n**Normal:** symmetric, real-valued. Used for return distributions.\n**Lognormal:** $\\ln(X) \\sim N(\\mu, \\sigma^2)$. Always positive. Used for prices.\n\n**Why:** prices ≥ 0; continuously compounded returns can be normal while implying lognormal prices.\n\n### Monte Carlo simulation\n\n**Steps:**\n1. Specify input distributions\n2. Generate random samples\n3. Compute output\n4. Repeat (10,000+ times)\n5. Summarise distribution\n\n**Use cases:**\n- Option pricing (path-dependent)\n- VaR computation\n- Retirement planning\n- Risk scenarios\n- Asset allocation under uncertainty\n\n### Strengths\n\n- Handles complex models\n- Captures interactions\n- Produces full distribution\n- Works for non-linear payoffs\n\n### Limitations\n\n- Garbage in, garbage out\n- Computationally intensive\n- Doesn't capture 'unknown unknowns'\n- Tail-event focus needs many simulations\n\n### Bootstrap resampling\n\n**Idea:** use historical data, no distributional assumption.\n\n**Process:**\n1. Take historical sample\n2. Resample with replacement\n3. Compute statistic\n4. Repeat (10,000+ times)\n5. Get distribution of statistic\n\n**Advantages over Monte Carlo:**\n- No distributional assumption\n- Captures real fat tails, skewness, serial correlation\n- Works with limited data\n\n**Limitations:**\n- Only as good as historical sample\n- Doesn't extrapolate\n- Doesn't capture regime changes\n\n### Use cases for bootstrap\n\n- Confidence intervals\n- Standard errors\n- Backtesting strategies\n- Stress testing\n- Statistical inference (non-normal data)\n\n### When to use which\n\n**Analytical** for simple, closed-form problems.\n\n**Monte Carlo** when distributions are known but problem is complex.\n\n**Bootstrap** when empirical distribution preferred over assumed.\n\nOften combined: bootstrap historical data through Monte Carlo framework.\n\n### Best practices\n\n- Use 10,000+ simulations typically\n- Validate with known cases\n- Good random number generators\n- Document assumptions\n- Stress test sensitivity\n- Report distributions, not single numbers"
   },
   "formulas": [
-    { "name": "Lognormal mean",         "latex": "E(X) = e^{\\mu + \\sigma^2/2}", "plain": "When ln(X) ~ N(μ, σ²)" }
+    {
+      "name": "Lognormal mean",
+      "latex": "E(X) = e^{\\mu + \\sigma^2/2}",
+      "plain": "When ln(X) ~ N(μ, σ²)"
+    }
   ],
   "examples": [
     {
@@ -26,6 +30,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Monte Carlo Simulation", "url": "https://www.investopedia.com/terms/m/montecarlosimulation.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Monte Carlo Simulation",
+      "url": "https://www.investopedia.com/terms/m/montecarlosimulation.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-est-overview",
+      "why": "Bootstrap resampling is a simulation technique."
+    },
+    {
+      "id": "quant-prob-overview",
+      "why": "Distributions used in Monte Carlo simulation."
+    }
   ]
 }

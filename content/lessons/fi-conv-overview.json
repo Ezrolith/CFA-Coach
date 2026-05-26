@@ -5,8 +5,16 @@
     "pro": "## Bond convexity at speed\n\n### Concept\n\nDuration approximates price-yield as linear (tangent).\n\nTrue relationship is curved (convex).\n\n**Convexity** measures the curvature.\n\nIncluding convexity gives better estimates for large yield moves.\n\n### Effective convexity formula\n\n$\\text{Convexity} = \\frac{P_- + P_+ - 2 P_0}{P_0 (\\Delta y)^2}$\n\n### Price change with duration + convexity\n\n$\\frac{\\Delta P}{P} \\approx -D_{mod} \\Delta y + \\frac{1}{2} \\text{Convexity} (\\Delta y)^2$\n\n### Positive vs negative convexity\n\n**Positive (option-free)**:\n- Gains > losses for equal yield moves\n- Favourable curvature\n- Standard for bullets, zeros\n\n**Negative (callable, MBS)**:\n- Price capped at low yields (call/prepayment)\n- Gains < losses for equal yield moves\n- Unfavourable\n\n### Why negative for callable/MBS\n\nLow yields trigger call/prepayment → price capped.\n\nAsymmetric to bondholder's detriment.\n\n### Convexity comparison\n\n| Bond | Convexity |\n|---|---|\n| Short option-free | Low |\n| Long option-free | High |\n| Zero-coupon | Very high |\n| Callable | Often negative |\n| MBS | Often negative |\n| Putable | Lower than option-free |\n\n### Barbell vs bullet\n\n- **Barbell**: short + long (high convexity)\n- **Bullet**: single maturity (lower convexity)\n\nFor same duration, barbell has higher convexity but typically lower yield.\n\n### Why convexity matters\n\n- Better estimates for large yield moves\n- Asymmetric payoff (gains > losses)\n- More valuable in high-volatility environments\n- Hedging improvement (match D and C)\n\n### Annual vs periodic\n\nIf computed semi-annually:\n$\\text{Annual C} = \\text{Semi C} / m^2$\n\n### Limitations\n\n- Parallel shift assumption\n- Ignores higher-order terms\n- Doesn't capture curve twists\n- Embedded options need effective convexity\n\n### Level 1 focus\n\n- Compute effective convexity\n- Apply combined price change formula\n- Distinguish positive vs negative convexity\n- Understand callable/MBS effect\n- Barbell vs bullet trade-off"
   },
   "formulas": [
-    { "name": "Effective convexity",      "latex": "\\text{Convexity} = \\frac{P_- + P_+ - 2 P_0}{P_0 (\\Delta y)^2}", "plain": "Numerical approximation" },
-    { "name": "Price change with C",      "latex": "\\frac{\\Delta P}{P} \\approx -D_{mod} \\Delta y + \\frac{1}{2} \\text{Convexity} (\\Delta y)^2", "plain": "Combined estimate using duration and convexity" }
+    {
+      "name": "Effective convexity",
+      "latex": "\\text{Convexity} = \\frac{P_- + P_+ - 2 P_0}{P_0 (\\Delta y)^2}",
+      "plain": "Numerical approximation"
+    },
+    {
+      "name": "Price change with C",
+      "latex": "\\frac{\\Delta P}{P} \\approx -D_{mod} \\Delta y + \\frac{1}{2} \\text{Convexity} (\\Delta y)^2",
+      "plain": "Combined estimate using duration and convexity"
+    }
   ],
   "examples": [
     {
@@ -27,6 +35,24 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Convexity", "url": "https://www.investopedia.com/terms/c/convexity.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Convexity",
+      "url": "https://www.investopedia.com/terms/c/convexity.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-dur-overview",
+      "why": "Duration is the first-order term; convexity is the second."
+    },
+    {
+      "id": "fi-mbs-overview",
+      "why": "MBS exhibit negative convexity at low yields."
+    },
+    {
+      "id": "fi-curve-overview",
+      "why": "Curve-based risk measures extend convexity ideas."
+    }
   ]
 }

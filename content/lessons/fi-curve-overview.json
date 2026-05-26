@@ -5,7 +5,11 @@
     "pro": "## Curve-based risk measures at speed\n\n### Why parallel shift fails\n\nReal yield curves twist:\n- **Steepening**: long > short rises\n- **Flattening**: short > long rises\n- **Twisting**: different ends move oppositely\n- **Butterfly**: middle vs ends\n\n### Key rate duration\n\n**Concept**: sensitivity to specific maturity rate, holding others constant.\n\nFor a bond: $D_{KR1}, D_{KR2}, ..., D_{KR30}$ — one per maturity bucket.\n\nSum = total effective duration.\n\n**Numerical**: shift only rate at maturity k by Δy; reprice; compute $D_{KRk}$.\n\n### Uses\n\n- Risk attribution (which curve sections drive risk)\n- Hedging vs liabilities\n- Scenario analysis (steepener, flattener)\n- Strategy design\n\n### Analytical vs effective duration\n\n- **Analytical**: closed-form for option-free bonds\n- **Effective**: numerical, handles embedded options\n\n### Empirical duration\n\nFrom historical price changes regressed on yield changes:\n\n$\\Delta P/P = \\alpha + \\beta \\Delta y$\n\nβ = empirical duration.\n\n**Captures**:\n- Prepayment effects (MBS)\n- Spread changes\n- Liquidity\n- Idiosyncratic effects\n\n### When to use empirical\n\n- MBS/ABS (prepayments)\n- Credit-risky bonds\n- Bonds with options\n- Stressed markets\n\n### Spread duration\n\nSensitivity to credit spread changes (separate from Treasury):\n\nFor corporate bond:\n- Treasury duration (vs Treasury rate)\n- Spread duration (vs spread)\n- Total = combination\n\n### DV01 (dollar value of 01)\n\n$DV01 = D_{mod} \\times P \\times 0.0001$\n\nDollar price change per 1 bp yield change.\n\nUsed by traders for sizing and risk.\n\n### Risk decomposition\n\n$\\Delta P/P \\approx -D_{Tres} \\Delta y_{Tres} - D_{spread} \\Delta s + \\text{convexity}$\n\n### Limitations of curve measures\n\n- Implementation complexity\n- Data needs (full curves, history)\n- Model dependence\n- Numerical approximation errors\n\n### Level 1 focus\n\n- Recognise parallel-shift limitations\n- Key rate duration concept\n- Distinguish analytical / effective / empirical\n- Spread duration for credit\n- When each measure is appropriate"
   },
   "formulas": [
-    { "name": "DV01", "latex": "DV01 = D_{mod} \\times P \\times 0.0001", "plain": "Dollar change per 1 bp yield change" }
+    {
+      "name": "DV01",
+      "latex": "DV01 = D_{mod} \\times P \\times 0.0001",
+      "plain": "Dollar change per 1 bp yield change"
+    }
   ],
   "examples": [
     {
@@ -26,6 +30,28 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Key Rate Duration", "url": "https://www.investopedia.com/terms/k/keyrateduration.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Key Rate Duration",
+      "url": "https://www.investopedia.com/terms/k/keyrateduration.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-dur-overview",
+      "why": "Foundational parallel-shift duration measures."
+    },
+    {
+      "id": "fi-conv-overview",
+      "why": "Convexity for large parallel moves."
+    },
+    {
+      "id": "fi-ts-overview",
+      "why": "Term structure shapes drive non-parallel risk."
+    },
+    {
+      "id": "fi-cr-overview",
+      "why": "Spread duration is a key curve measure for credit."
+    }
   ]
 }

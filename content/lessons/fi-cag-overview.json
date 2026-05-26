@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Sovereign Debt", "url": "https://www.investopedia.com/terms/s/sovereign-debt.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Sovereign Debt",
+      "url": "https://www.investopedia.com/terms/s/sovereign-debt.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-cr-overview",
+      "why": "Credit-risk fundamentals applied to sovereigns."
+    },
+    {
+      "id": "econ-er-overview",
+      "why": "FX dynamics matter heavily for sovereign credit."
+    }
   ]
 }

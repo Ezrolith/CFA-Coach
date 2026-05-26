@@ -25,7 +25,25 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Big Data", "url": "https://www.investopedia.com/terms/b/big-data.asp", "kind": "read" },
-    { "label": "Investopedia — Machine Learning", "url": "https://www.investopedia.com/terms/m/machine-learning.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Big Data",
+      "url": "https://www.investopedia.com/terms/b/big-data.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Machine Learning",
+      "url": "https://www.investopedia.com/terms/m/machine-learning.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "quant-slr-overview",
+      "why": "Linear regression is the simplest supervised ML model."
+    },
+    {
+      "id": "quant-sim-overview",
+      "why": "Simulation and resampling techniques used in ML evaluation."
+    }
   ]
 }

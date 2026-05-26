@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
-import { subscribeProgress, isLessonStudied, getQuizResult, studiedLessonIds, allQuizResults, getStreak, getTotalActiveDays } from '../lib/progress';
+import {
+  subscribeProgress, isLessonStudied, getQuizResult, studiedLessonIds,
+  allQuizResults, getStreak, getTotalActiveDays, getNote, notedLessonCount,
+} from '../lib/progress';
 
 // Force a re-render whenever progress state changes anywhere in the app.
 function useProgressTick() {
@@ -13,6 +16,7 @@ export function useLessonProgress(lessonId) {
   return {
     studied: isLessonStudied(lessonId),
     quiz: getQuizResult(lessonId),
+    note: getNote(lessonId),
   };
 }
 
@@ -23,5 +27,6 @@ export function useGlobalProgress() {
     quizResults: allQuizResults(),
     streak: getStreak(),
     activeDays: getTotalActiveDays(),
+    noteCount: notedLessonCount(),
   };
 }

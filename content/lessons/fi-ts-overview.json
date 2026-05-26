@@ -5,8 +5,16 @@
     "pro": "## Term structure at speed\n\n### Three curves\n\n- **Spot rate** $s_t$: yield on zero-coupon to maturity t\n- **Par rate** $par_t$: coupon making new bond trade at par\n- **Forward rate** $f_{t_1, t_2}$: rate locked in today for borrowing $t_1$ to $t_2$\n\nAll arithmetic transformations of each other.\n\n### Bond price using spot rates\n\n$P = \\sum_{t=1}^{n} \\frac{CF_t}{(1 + s_t)^t}$\n\n### Forward rate from spot rates\n\n$(1 + s_{t_2})^{t_2} = (1 + s_{t_1})^{t_1} (1 + f_{t_1, t_2})^{t_2 - t_1}$\n\nSolve:\n\n$f_{t_1, t_2} = \\left[\\frac{(1+s_{t_2})^{t_2}}{(1+s_{t_1})^{t_1}}\\right]^{1/(t_2-t_1)} - 1$\n\n### Forward rate notation\n\n- $f_{1,2}$ or $f(1,1)$: 1-year forward starting 1 year out\n- $f_{1,3}$ or $f(1,2)$: 2-year forward starting 1 year out\n\n### Pricing bonds using forwards\n\nDiscount each CF by chain of forwards from 0 to t.\n\nSame result as spot rate pricing.\n\n### Yield curve shapes\n\n- **Normal (upward)**: long > short; growth\n- **Flat**: long ≈ short; transitional\n- **Inverted (downward)**: long < short; recession indicator\n- **Humped**: rare\n\n### Curve movements\n\n- **Parallel**: all rates move equally (rare)\n- **Steepening**: long − short rises\n- **Flattening**: long − short falls\n- **Bull steepener**: short rates fall\n- **Bear flattener**: short rates rise\n\n### Term premium\n\nExpected: forwards = expected future spots (pure expectations).\n\nEmpirically: forwards > expected → positive term premium (most periods).\n\nReasons: interest rate risk, liquidity, preference for short maturities.\n\nCan be negative in flight-to-quality periods.\n\n### Constructing spot curve\n\n- **Bootstrap** from coupon bond yields\n- **STRIPS** (US): direct spot rates\n- **OIS curve**: post-LIBOR risk-free benchmark\n\n### Curves in markets\n\n- US Treasury (benchmark)\n- SOFR/OIS (new risk-free)\n- Swap (derived from OIS)\n- Corporate spread (over Treasury/OIS)\n\n### Uses of forward rates\n\n- Forecast future spot rates\n- Price forward-starting bonds\n- Price swaps/FRAs\n- Detect policy expectations\n- Strategy: ride the curve, etc.\n\n### Level 1 focus\n\n- Compute price from spot rates\n- Compute forward rate from spots\n- Distinguish three curves\n- Interpret curve shape\n- Pure expectations hypothesis"
   },
   "formulas": [
-    { "name": "Bond price from spot rates",   "latex": "P = \\sum_{t=1}^{n} \\frac{CF_t}{(1 + s_t)^t}", "plain": "Discount each CF at maturity-matched spot rate" },
-    { "name": "Forward rate from spot rates", "latex": "(1 + s_{t_2})^{t_2} = (1 + s_{t_1})^{t_1} (1 + f_{t_1, t_2})^{t_2 - t_1}", "plain": "No-arbitrage relation between spots and forwards" }
+    {
+      "name": "Bond price from spot rates",
+      "latex": "P = \\sum_{t=1}^{n} \\frac{CF_t}{(1 + s_t)^t}",
+      "plain": "Discount each CF at maturity-matched spot rate"
+    },
+    {
+      "name": "Forward rate from spot rates",
+      "latex": "(1 + s_{t_2})^{t_2} = (1 + s_{t_1})^{t_1} (1 + f_{t_1, t_2})^{t_2 - t_1}",
+      "plain": "No-arbitrage relation between spots and forwards"
+    }
   ],
   "examples": [
     {
@@ -27,7 +35,33 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Yield Curve", "url": "https://www.investopedia.com/terms/y/yieldcurve.asp", "kind": "read" },
-    { "label": "Investopedia — Forward Rate", "url": "https://www.investopedia.com/terms/f/forwardrate.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Yield Curve",
+      "url": "https://www.investopedia.com/terms/y/yieldcurve.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Forward Rate",
+      "url": "https://www.investopedia.com/terms/f/forwardrate.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-val-overview",
+      "why": "Spot rates discount each bond cash flow individually."
+    },
+    {
+      "id": "fi-yf-overview",
+      "why": "Short-end of the curve uses different yield conventions."
+    },
+    {
+      "id": "fi-ir-overview",
+      "why": "Curve shape drives return realisations."
+    },
+    {
+      "id": "deriv-fp-overview",
+      "why": "Forward rates derived from the spot curve."
+    }
   ]
 }

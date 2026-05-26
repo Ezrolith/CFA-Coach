@@ -24,6 +24,20 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Derivative", "url": "https://www.investopedia.com/terms/d/derivative.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Derivative",
+      "url": "https://www.investopedia.com/terms/d/derivative.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "deriv-ff-overview",
+      "why": "Distinguishing forward commitments from contingent claims."
+    },
+    {
+      "id": "deriv-br-overview",
+      "why": "Why derivatives exist — benefits and risks."
+    }
   ]
 }

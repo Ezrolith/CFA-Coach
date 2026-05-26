@@ -24,7 +24,25 @@
     }
   ],
   "resources": [
-    { "label": "Investopedia — Commercial Paper", "url": "https://www.investopedia.com/terms/c/commercialpaper.asp", "kind": "read" },
-    { "label": "Investopedia — Repurchase Agreement", "url": "https://www.investopedia.com/terms/r/repurchaseagreement.asp", "kind": "read" }
+    {
+      "label": "Investopedia — Commercial Paper",
+      "url": "https://www.investopedia.com/terms/c/commercialpaper.asp",
+      "kind": "read"
+    },
+    {
+      "label": "Investopedia — Repurchase Agreement",
+      "url": "https://www.investopedia.com/terms/r/repurchaseagreement.asp",
+      "kind": "read"
+    }
+  ],
+  "relatedLessons": [
+    {
+      "id": "fi-yf-overview",
+      "why": "Money-market yield conventions used here."
+    },
+    {
+      "id": "fi-iss-overview",
+      "why": "Issuance and trading structure."
+    }
   ]
 }
