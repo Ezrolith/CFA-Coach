@@ -1,18 +1,39 @@
 import { useSearchParams, Link, Navigate } from 'react-router-dom';
-import { questionsForLesson, questionsForTopic, allQuestions } from '../lib/questions';
-import { findLesson, getTopicById } from '../data/curriculum';
+import { questionsForLesson, questionsForLos, questionsForTopic, allQuestions } from '../lib/questions';
+import { findLesson, getTopicById, TOPICS } from '../data/curriculum';
 import QuizPlayer from '../components/quiz/QuizPlayer';
+
+// Resolve a LOS id back to its parent lesson, module, and topic.
+function findLos(losId) {
+  for (const topic of TOPICS) {
+    for (const module of topic.modules ?? []) {
+      for (const lesson of module.lessons ?? []) {
+        for (const lo of lesson.los ?? []) {
+          if (lo.id === losId) return { topic, module, lesson, los: lo };
+        }
+      }
+    }
+  }
+  return null;
+}
 
 export default function QuizPage() {
   const [params] = useSearchParams();
   const lessonId = params.get('lesson');
   const topicId = params.get('topic');
+  const losId = params.get('los');
 
   let questions = [];
   let title = 'Practice quiz';
   let returnTo = '/';
 
-  if (lessonId) {
+  if (losId) {
+    const found = findLos(losId);
+    if (!found) return <Navigate to="/quiz" replace />;
+    questions = questionsForLos(losId);
+    title = `${found.topic.shortName} · LOS drill`;
+    returnTo = `/lesson/${found.lesson.id}`;
+  } else if (lessonId) {
     const found = findLesson(lessonId);
     if (!found) return <Navigate to="/quiz" replace />;
     questions = questionsForLesson(lessonId);

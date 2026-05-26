@@ -2,7 +2,7 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { findLesson } from '../data/curriculum';
 import { styleFor } from '../data/topicStyles';
 import { getLessonContent } from '../lib/content';
-import { questionsForLesson } from '../lib/questions';
+import { questionsForLesson, questionsForLos } from '../lib/questions';
 import { markLessonStudied, unmarkLessonStudied } from '../lib/progress';
 import { useLessonProgress } from '../hooks/useProgress';
 import LessonContent from '../components/lesson/LessonContent';
@@ -114,26 +114,47 @@ export default function LessonPage() {
 
       {/* LOS list */}
       <section>
-        <h2 className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400 mb-4">Learning Outcome Statements</h2>
+        <div className="flex items-baseline justify-between mb-4 flex-wrap gap-2">
+          <h2 className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400">Learning Outcome Statements</h2>
+          {los.some(l => questionsForLos(l.id).length > 0) && (
+            <span className="text-[10px] uppercase tracking-wider text-ink-400">
+              <span className="text-emerald-600 dark:text-emerald-500">●</span> has practice questions
+            </span>
+          )}
+        </div>
         <ol className="space-y-3">
-          {los.map((item, i) => (
-            <li key={item.id} className="card p-5 flex gap-4">
-              <span className="num text-xs font-medium text-ink-400 w-6 pt-0.5">{String(i + 1).padStart(2, '0')}</span>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className={`pill text-[10px] uppercase tracking-wider ${verbStyle(item.verb)}`}>
-                    {item.verb}
-                  </span>
-                  {item.depth && (
-                    <span className="pill-muted text-[10px] uppercase tracking-wider">{item.depth}</span>
-                  )}
+          {los.map((item, i) => {
+            const losQuestions = questionsForLos(item.id);
+            const hasQuestions = losQuestions.length > 0;
+            return (
+              <li key={item.id} className="card p-5 flex gap-4">
+                <span className="num text-xs font-medium text-ink-400 w-6 pt-0.5">{String(i + 1).padStart(2, '0')}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                    <span className={`pill text-[10px] uppercase tracking-wider ${verbStyle(item.verb)}`}>
+                      {item.verb}
+                    </span>
+                    {item.depth && (
+                      <span className="pill-muted text-[10px] uppercase tracking-wider">{item.depth}</span>
+                    )}
+                    {hasQuestions && (
+                      <Link
+                        to={`/quiz?los=${item.id}`}
+                        title={`Practice this LOS — ${losQuestions.length} question${losQuestions.length === 1 ? '' : 's'}`}
+                        className="inline-flex items-center gap-1 text-[10px] uppercase tracking-wider text-emerald-600 dark:text-emerald-500 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
+                      >
+                        <span>●</span>
+                        <span>{losQuestions.length} Q</span>
+                      </Link>
+                    )}
+                  </div>
+                  <p className="text-[15px] leading-relaxed text-ink-800 dark:text-ink-100">
+                    {item.statement}
+                  </p>
                 </div>
-                <p className="text-[15px] leading-relaxed text-ink-800 dark:text-ink-100">
-                  {item.statement}
-                </p>
-              </div>
-            </li>
-          ))}
+              </li>
+            );
+          })}
         </ol>
       </section>
     </div>

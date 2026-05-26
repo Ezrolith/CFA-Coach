@@ -624,6 +624,370 @@
       ],
       "answer": "B",
       "explanation": "EV/EBITDA strips out the effects of debt (capital structure) and taxes, so it's more reliable when comparing companies that differ on those dimensions.\n\n**A** describes the case where P/E and EV/EBITDA give similar information — there's no special reason to prefer EV/EBITDA.\n\n**C** is a job for sum-of-the-parts / NAV, not a multiple. Aggregated multiples obscure subsidiary-level differences."
+    },
+    {
+      "id": "q-eq-ov-007",
+      "lessonId": "eq-ov-overview",
+      "losId": "los-eq-ov-3",
+      "difficulty": "easy",
+      "stem": "**Preferred shares** typically differ from common shares *most accurately* in that preferred:",
+      "choices": [
+        { "id": "A", "text": "Are paid before bondholders in bankruptcy" },
+        { "id": "B", "text": "Receive a fixed dividend with priority over common dividends but rank below all debt" },
+        { "id": "C", "text": "Always have voting rights" }
+      ],
+      "answer": "B",
+      "explanation": "Preferred = senior to common (in dividends and on liquidation) but subordinated to all debt. Fixed dividend; usually non-voting; cumulative variants exist.\n\n**A** reverses the seniority — debt always ranks above preferred.\n\n**C** is the opposite of the norm; most preferreds are non-voting."
+    },
+    {
+      "id": "q-eq-ov-008",
+      "lessonId": "eq-ov-overview",
+      "losId": "los-eq-ov-5",
+      "difficulty": "medium",
+      "stem": "**Private equity** vs **public equity** differ *most importantly* in:",
+      "choices": [
+        { "id": "A", "text": "Liquidity, disclosure requirements, and investor access" },
+        { "id": "B", "text": "Whether they pay dividends" },
+        { "id": "C", "text": "The geographic location of the company" }
+      ],
+      "answer": "A",
+      "explanation": "Private equity: illiquid (lock-up), limited disclosure, accredited/institutional investors only. Public equity: liquid, regulated disclosure, retail-accessible.\n\n**B** and **C** are not defining differences."
+    },
+    {
+      "id": "q-eq-ov-009",
+      "lessonId": "eq-ov-overview",
+      "losId": "los-eq-ov-6",
+      "difficulty": "medium",
+      "stem": "A company issues **callable preferred shares**. The call feature *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Benefits the investor by guaranteeing higher returns" },
+        { "id": "B", "text": "Benefits the issuer — can be redeemed if rates fall, capping investor upside" },
+        { "id": "C", "text": "Has no effect on pricing" }
+      ],
+      "answer": "B",
+      "explanation": "Callable: issuer can redeem at fixed price. Useful if rates fall → issuer refinances cheaper. Investor faces reinvestment risk and capped upside → must be compensated with a higher coupon.\n\n**A** is backwards.\n\n**C** ignores how options affect price."
+    },
+    {
+      "id": "q-eq-ov-010",
+      "lessonId": "eq-ov-overview",
+      "losId": "los-eq-ov-8",
+      "difficulty": "hard",
+      "stem": "From the issuer's perspective, equity vs debt financing *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Equity is cheaper because dividends are tax-deductible" },
+        { "id": "B", "text": "Debt is cheaper at the margin (interest tax-deductible) but adds bankruptcy risk; equity is more flexible but more expensive" },
+        { "id": "C", "text": "Equity gives the issuer claim on assets that debt does not" }
+      ],
+      "answer": "B",
+      "explanation": "Debt: tax-deductible interest = lower after-tax cost, but mandatory payments add bankruptcy risk. Equity: no mandatory payments (flexible) but no tax shield + dilutes ownership = higher cost of capital.\n\n**A** has the tax treatment reversed (interest, not dividends, is deductible).\n\n**C** is incorrect — debt has senior claim on assets."
+    },
+    {
+      "id": "q-eq-mo-007",
+      "lessonId": "eq-mo-overview",
+      "losId": "los-eq-mo-1",
+      "difficulty": "easy",
+      "stem": "A **secondary market** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Is where new securities are issued by the company" },
+        { "id": "B", "text": "Is where existing securities trade between investors after issuance" },
+        { "id": "C", "text": "Only exists for derivatives" }
+      ],
+      "answer": "B",
+      "explanation": "Primary market = new issuance (IPO, SPO). Secondary market = subsequent trading between investors. Liquidity in secondary market supports demand in primary.\n\n**A** describes the primary market.\n\n**C** is wrong — all major securities have secondary markets."
+    },
+    {
+      "id": "q-eq-mo-008",
+      "lessonId": "eq-mo-overview",
+      "losId": "los-eq-mo-5",
+      "difficulty": "medium",
+      "stem": "A **limit order** to buy at $50 *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Executes immediately at the market price" },
+        { "id": "B", "text": "Executes only at $50 or lower" },
+        { "id": "C", "text": "Executes only at $50 or higher" }
+      ],
+      "answer": "B",
+      "explanation": "Buy limit at $50 = willing to pay up to $50. Executes at $50 or any lower price. Higher prices = no fill.\n\n**A** describes a market order.\n\n**C** has the direction reversed for a buy."
+    },
+    {
+      "id": "q-eq-mo-009",
+      "lessonId": "eq-mo-overview",
+      "losId": "los-eq-mo-6",
+      "difficulty": "hard",
+      "stem": "Investor short-sells 100 shares at $40. Stock rises to $52. Loss before fees is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$1,200 loss" },
+        { "id": "B", "text": "$1,200 gain" },
+        { "id": "C", "text": "$0 (limited downside)" }
+      ],
+      "answer": "A",
+      "explanation": "Short sell: borrow + sell at $40, buy back at $52. Loss = 100 × (40 − 52) = −$1,200.\n\nShort positions have **unlimited loss potential** (stock can rise indefinitely).\n\n**B** has direction reversed.\n\n**C** describes long puts, not shorts."
+    },
+    {
+      "id": "q-eq-idx-007",
+      "lessonId": "eq-idx-overview",
+      "losId": "los-eq-idx-2",
+      "difficulty": "easy",
+      "stem": "An index with three stocks (prices $20, $50, $30 → $25, $55, $30) and **price-weighted** construction has a return *closest* to:",
+      "choices": [
+        { "id": "A", "text": "5.0%" },
+        { "id": "B", "text": "10.0%" },
+        { "id": "C", "text": "12.5%" }
+      ],
+      "answer": "B",
+      "explanation": "Price-weighted: sum prices, divide. Start: $20+$50+$30 = $100. End: $25+$55+$30 = $110. Return = $10/$100 = 10%.\n\n**A** and **C** are calculation errors."
+    },
+    {
+      "id": "q-eq-idx-008",
+      "lessonId": "eq-idx-overview",
+      "losId": "los-eq-idx-4",
+      "difficulty": "medium",
+      "stem": "The **S&P 500** is *most accurately* a:",
+      "choices": [
+        { "id": "A", "text": "Price-weighted index of 30 US blue-chip stocks" },
+        { "id": "B", "text": "Market-cap-weighted index of 500 large US companies" },
+        { "id": "C", "text": "Equal-weighted index of all US listed firms" }
+      ],
+      "answer": "B",
+      "explanation": "S&P 500: market-cap-weighted, ~500 large-cap US companies. Most widely-followed benchmark.\n\n**A** describes the DJIA.\n\n**C** describes an equal-weighted or total market construction."
+    },
+    {
+      "id": "q-eq-idx-009",
+      "lessonId": "eq-idx-overview",
+      "losId": "los-eq-idx-6",
+      "difficulty": "hard",
+      "stem": "A **price-weighted** index's most significant limitation is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "It gives more weight to higher-priced stocks regardless of company size" },
+        { "id": "B", "text": "It uses inflation-adjusted prices" },
+        { "id": "C", "text": "It can only include 30 stocks" }
+      ],
+      "answer": "A",
+      "explanation": "Price weighting: a $200 stock has 10× the influence of a $20 stock, even if both have identical market caps. Stock splits artificially change influence. DJIA is the classic example.\n\n**B** is wrong.\n\n**C** is a DJIA-specific choice, not a methodology limit."
+    },
+    {
+      "id": "q-eq-eff-007",
+      "lessonId": "eq-eff-overview",
+      "losId": "los-eq-eff-2",
+      "difficulty": "easy",
+      "stem": "**Semi-strong form** market efficiency means prices reflect:",
+      "choices": [
+        { "id": "A", "text": "Only past price information" },
+        { "id": "B", "text": "All publicly available information (including financials, news)" },
+        { "id": "C", "text": "All information, public and private" }
+      ],
+      "answer": "B",
+      "explanation": "Semi-strong: past prices + all public info. Implication: fundamental analysis on public info doesn't yield consistent excess returns.\n\n**A** is weak-form.\n\n**C** is strong-form."
+    },
+    {
+      "id": "q-eq-eff-008",
+      "lessonId": "eq-eff-overview",
+      "losId": "los-eq-eff-3",
+      "difficulty": "medium",
+      "stem": "An investor with consistently profitable trading on **past price patterns alone** *most likely* contradicts:",
+      "choices": [
+        { "id": "A", "text": "Weak form efficiency" },
+        { "id": "B", "text": "Semi-strong form efficiency only" },
+        { "id": "C", "text": "Strong form efficiency only" }
+      ],
+      "answer": "A",
+      "explanation": "Weak form says prices already reflect past patterns → no excess returns from technical analysis. Consistent profit from price patterns contradicts this.\n\nSemi-strong and strong forms include weak form's claims plus more.\n\n**B** and **C** are subsumed — contradicting weak also contradicts the others, but A is the most precise answer about what's directly disproved."
+    },
+    {
+      "id": "q-eq-eff-009",
+      "lessonId": "eq-eff-overview",
+      "losId": "los-eq-eff-5",
+      "difficulty": "hard",
+      "stem": "**Behavioural finance** challenges market efficiency *most accurately* by:",
+      "choices": [
+        { "id": "A", "text": "Showing markets are always inefficient" },
+        { "id": "B", "text": "Identifying systematic biases (overconfidence, herding, anchoring) that can create persistent mispricings" },
+        { "id": "C", "text": "Proving prices always reflect intrinsic value" }
+      ],
+      "answer": "B",
+      "explanation": "Behavioural finance: investors aren't fully rational. Documented biases (overconfidence, herding, anchoring, loss aversion) can create temporary or persistent deviations from fair value.\n\n**A** overstates — markets are *often* efficient, just not always.\n\n**C** is the strict EMH view that behavioural finance disputes."
+    },
+    {
+      "id": "q-eq-cap-007",
+      "lessonId": "eq-cap-overview",
+      "losId": "los-eq-cap-1",
+      "difficulty": "easy",
+      "stem": "An **IPO** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "An existing shareholder selling all their shares at once" },
+        { "id": "B", "text": "The first time a private company offers shares to the public" },
+        { "id": "C", "text": "A type of bond offering" }
+      ],
+      "answer": "B",
+      "explanation": "IPO = Initial Public Offering. Private → public transition. Underwriting bank prices and distributes.\n\n**A** describes a secondary offering or block trade.\n\n**C** is wrong category."
+    },
+    {
+      "id": "q-eq-cap-008",
+      "lessonId": "eq-cap-overview",
+      "losId": "los-eq-cap-2",
+      "difficulty": "medium",
+      "stem": "A **secondary offering** by an existing public company *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Increases the number of outstanding shares, potentially diluting existing holders" },
+        { "id": "B", "text": "Has no effect on share count" },
+        { "id": "C", "text": "Always reduces total market cap" }
+      ],
+      "answer": "A",
+      "explanation": "Secondary offering: company issues additional shares → outstanding count rises → existing holders' % ownership diluted.\n\nProceeds typically used for growth, acquisitions, or debt reduction.\n\n**B** is wrong.\n\n**C** is incorrect — cap may rise if capital is well-deployed."
+    },
+    {
+      "id": "q-eq-cap-009",
+      "lessonId": "eq-cap-overview",
+      "losId": "los-eq-cap-3",
+      "difficulty": "hard",
+      "stem": "**Share buybacks** vs **dividends** are *most accurately* contrasted by:",
+      "choices": [
+        { "id": "A", "text": "Buybacks reduce share count and EPS rises mechanically; dividends pay cash but leave share count unchanged" },
+        { "id": "B", "text": "Dividends always preferred by tax-efficient investors" },
+        { "id": "C", "text": "Buybacks dilute existing shareholders" }
+      ],
+      "answer": "A",
+      "explanation": "Buybacks: reduce shares outstanding → EPS rises by arithmetic; remaining holders own a larger fraction. Dividends: cash distribution; share count unchanged.\n\nTax efficiency varies: buybacks generally tax-favoured in US (capital gains vs ordinary income on dividends).\n\n**B** is too absolute.\n\n**C** is opposite of reality (buybacks are anti-dilutive)."
+    },
+    {
+      "id": "q-eq-ia-007",
+      "lessonId": "eq-ia-overview",
+      "losId": "los-eq-ia-1",
+      "difficulty": "easy",
+      "stem": "**Porter's Five Forces** include all *except*:",
+      "choices": [
+        { "id": "A", "text": "Threat of new entrants" },
+        { "id": "B", "text": "Bargaining power of suppliers and buyers" },
+        { "id": "C", "text": "Government taxation rates" }
+      ],
+      "answer": "C",
+      "explanation": "Porter's Five Forces: threat of entrants, rivalry, supplier power, buyer power, threat of substitutes.\n\nGovernment / taxes are external macro factors, not part of the framework directly.\n\n**A** and **B** are forces."
+    },
+    {
+      "id": "q-eq-ia-008",
+      "lessonId": "eq-ia-overview",
+      "losId": "los-eq-ia-2",
+      "difficulty": "medium",
+      "stem": "An industry in its **mature stage** *most likely* exhibits:",
+      "choices": [
+        { "id": "A", "text": "Rapid revenue growth, low margins" },
+        { "id": "B", "text": "Stable revenue, established competitive structure, moderate margins" },
+        { "id": "C", "text": "Declining revenue, exiting firms" }
+      ],
+      "answer": "B",
+      "explanation": "Industry life cycle:\n- Embryonic: high uncertainty\n- Growth: rapid expansion\n- Mature: stable, oligopoly\n- Decline: shrinking\n\nMature: slower growth, established players, moderate margins.\n\n**A** is growth stage.\n\n**C** is decline."
+    },
+    {
+      "id": "q-eq-ia-009",
+      "lessonId": "eq-ia-overview",
+      "losId": "los-eq-ia-3",
+      "difficulty": "hard",
+      "stem": "**Industry concentration** (e.g., Herfindahl-Hirschman Index) is *most useful* for:",
+      "choices": [
+        { "id": "A", "text": "Predicting macro inflation" },
+        { "id": "B", "text": "Assessing competitive intensity and potential for pricing power" },
+        { "id": "C", "text": "Identifying tax-efficient jurisdictions" }
+      ],
+      "answer": "B",
+      "explanation": "Higher concentration → fewer competitors → more pricing power and potential excess returns. Used by analysts to assess industry attractiveness.\n\nLow concentration → fragmented → price competition → margin pressure.\n\n**A** and **C** are unrelated."
+    },
+    {
+      "id": "q-eq-fc-007",
+      "lessonId": "eq-fc-overview",
+      "losId": "los-eq-fc-1",
+      "difficulty": "easy",
+      "stem": "**Top-down forecasting** *most accurately* starts with:",
+      "choices": [
+        { "id": "A", "text": "Detailed assumptions about individual product lines" },
+        { "id": "B", "text": "Macro and industry outlooks, then company-specific" },
+        { "id": "C", "text": "Historical company financials only" }
+      ],
+      "answer": "B",
+      "explanation": "Top-down: GDP → industry growth → company revenue. Macro-led.\n\nBottom-up: detailed product/customer modelling → company revenue.\n\n**A** describes bottom-up.\n\n**C** is historical not forecast."
+    },
+    {
+      "id": "q-eq-fc-008",
+      "lessonId": "eq-fc-overview",
+      "losId": "los-eq-fc-3",
+      "difficulty": "medium",
+      "stem": "A **gross margin** assumption is *most critical* for forecasting:",
+      "choices": [
+        { "id": "A", "text": "Working capital needs" },
+        { "id": "B", "text": "Operating profit and operating leverage" },
+        { "id": "C", "text": "Tax expense" }
+      ],
+      "answer": "B",
+      "explanation": "Gross margin = (Revenue − COGS)/Revenue. Drives gross profit, which feeds operating profit. Operating leverage = % change in op profit / % change in revenue → very sensitive to gross margin assumption.\n\n**A** depends on receivables, inventory, payables.\n\n**C** depends on pre-tax profit and tax rates."
+    },
+    {
+      "id": "q-eq-fc-009",
+      "lessonId": "eq-fc-overview",
+      "losId": "los-eq-fc-5",
+      "difficulty": "hard",
+      "stem": "**Scenario analysis** in forecasting *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Generates a single point estimate" },
+        { "id": "B", "text": "Builds discrete scenarios (e.g., bull/base/bear) with explicit assumptions for each" },
+        { "id": "C", "text": "Only applies to companies in distress" }
+      ],
+      "answer": "B",
+      "explanation": "Scenario analysis: define multiple coherent futures (e.g., bull, base, bear). Assign probabilities. Compute expected value or range.\n\nUseful for valuation under uncertainty and stress-testing assumptions.\n\n**A** describes a single-point estimate (not scenario).\n\n**C** is too restrictive — scenarios are used everywhere."
+    },
+    {
+      "id": "q-eq-val-007",
+      "lessonId": "eq-val-overview",
+      "losId": "los-eq-val-6",
+      "difficulty": "medium",
+      "stem": "A two-stage DDM has $D_1$ = $2.00, high-growth at 15% for years 1-5, then 4% terminal. Required return 10%. The **terminal value** at end of year 5 is *closest* to:",
+      "choices": [
+        { "id": "A", "text": "$58.20" },
+        { "id": "B", "text": "$60.65" },
+        { "id": "C", "text": "$66.45" }
+      ],
+      "answer": "B",
+      "explanation": "$D_5 = D_1 \\cdot (1.15)^4 = 2.00 \\cdot 1.749 = 3.498$\n\n$D_6 = D_5 \\cdot 1.04 = 3.498 \\cdot 1.04 = 3.638$\n\n$TV_5 = \\frac{D_6}{r - g_2} = \\frac{3.638}{0.10 - 0.04} = \\frac{3.638}{0.06} = 60.63 \\approx B$\n\n**A**: too low — likely from using $D_5$ instead of $D_6$ in the numerator.\n\n**C**: too high — likely from using high-growth rate in the perpetuity formula."
+    },
+    {
+      "id": "q-eq-val-008",
+      "lessonId": "eq-val-overview",
+      "losId": "los-eq-val-10",
+      "difficulty": "hard",
+      "stem": "**Free Cash Flow to Equity (FCFE)** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Cash available to all capital providers (equity + debt)" },
+        { "id": "B", "text": "Cash available to equity holders after capex and net debt repayment" },
+        { "id": "C", "text": "Net income + depreciation" }
+      ],
+      "answer": "B",
+      "explanation": "FCFE = CFO − Capex + Net borrowing.\n\nRepresents cash equity holders could in principle withdraw without harming the business.\n\n**A** describes FCFF (Free Cash Flow to Firm).\n\n**C** is a rough proxy for cash earnings but ignores capex and working capital."
+    },
+    {
+      "id": "q-eq-val-009",
+      "lessonId": "eq-val-overview",
+      "losId": "los-eq-val-11",
+      "difficulty": "medium",
+      "stem": "**Price-to-Book (P/B)** ratio is *most appropriate* for valuing:",
+      "choices": [
+        { "id": "A", "text": "Tech firms with high intangibles" },
+        { "id": "B", "text": "Asset-heavy firms (banks, real estate, industrials)" },
+        { "id": "C", "text": "Service firms with no inventory" }
+      ],
+      "answer": "B",
+      "explanation": "P/B compares price to book value of equity. Most meaningful when book value reflects actual asset value — i.e., asset-heavy businesses with tangible book.\n\n**A**: tech firms have low book value relative to market (intangibles unrecorded), making P/B less meaningful.\n\n**C**: services have little physical asset base."
+    },
+    {
+      "id": "q-eq-val-010",
+      "lessonId": "eq-val-overview",
+      "losId": "los-eq-val-13",
+      "difficulty": "hard",
+      "stem": "**Justified P/E** can be derived from the Gordon growth model as *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "$P/E = (1 - b)/(r - g)$ where b = retention ratio" },
+        { "id": "B", "text": "$P/E = E_1/D_1$" },
+        { "id": "C", "text": "$P/E = ROE - g$" }
+      ],
+      "answer": "A",
+      "explanation": "From GGM: $P_0 = D_1/(r-g)$ and $D_1 = E_1(1-b)$ where $b$ = retention ratio. So $P_0/E_1 = (1-b)/(r-g)$.\n\nDividend payout ratio (1−b) and growth/required return drive justified P/E.\n\n**B** is wrong.\n\n**C** is unrelated."
     }
   ]
 }

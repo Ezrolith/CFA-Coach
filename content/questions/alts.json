@@ -546,6 +546,300 @@
       ],
       "answer": "A",
       "explanation": "Appraisers anchor on previous valuations and adjust slowly — this creates an autocorrelated, smoothed return series with lower observed σ than the underlying economic exposure. Unsmoothing techniques typically raise the measured σ from say 6% to 12-15%.\n\n**B** misinterprets the smoothing effect as a genuine risk reduction.\n\n**C** is fictitious — no such regulation exists."
+    },
+    {
+      "id": "q-alts-feat-007",
+      "lessonId": "alts-feat-overview",
+      "losId": "los-alts-feat-1",
+      "difficulty": "easy",
+      "stem": "**Alternative investments** *most accurately* include all except:",
+      "choices": [
+        { "id": "A", "text": "Hedge funds, private equity, real estate, commodities" },
+        { "id": "B", "text": "Publicly-listed common stocks" },
+        { "id": "C", "text": "Infrastructure and natural resources" }
+      ],
+      "answer": "B",
+      "explanation": "Alternatives = anything outside traditional public equity, bonds, cash. Includes hedge funds, PE/VC, real estate, infrastructure, commodities, natural resources, digital assets.\n\nPublic common stocks are the canonical *traditional* investment.\n\n**A** and **C** are all alternatives."
+    },
+    {
+      "id": "q-alts-feat-008",
+      "lessonId": "alts-feat-overview",
+      "losId": "los-alts-feat-2",
+      "difficulty": "medium",
+      "stem": "Compared to traditional investments, alternatives *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Have higher liquidity and lower fees" },
+        { "id": "B", "text": "Have illiquidity, higher fees, more limited transparency, and potentially diversification benefits" },
+        { "id": "C", "text": "Always outperform" }
+      ],
+      "answer": "B",
+      "explanation": "Alternatives: typically illiquid (long lock-ups), high fees (PE: 2-and-20), limited transparency, and *potentially* diversifying.\n\nCFA Institute emphasises evaluating fees, lock-ups, and net-of-fee returns carefully.\n\n**A** is inverted.\n\n**C** is overstated — many alternatives underperform after fees."
+    },
+    {
+      "id": "q-alts-feat-009",
+      "lessonId": "alts-feat-overview",
+      "losId": "los-alts-feat-2",
+      "difficulty": "hard",
+      "stem": "An institutional investor allocating 20% to alternatives is *most likely* motivated by:",
+      "choices": [
+        { "id": "A", "text": "Better short-term liquidity than traditional assets" },
+        { "id": "B", "text": "Diversification + illiquidity premium + potential alpha, accepting lock-ups and fee drag" },
+        { "id": "C", "text": "Regulatory mandate to hold alternatives" }
+      ],
+      "answer": "B",
+      "explanation": "Institutional motivations: diversification, illiquidity premium, alpha access, inflation hedge.\n\nTrade-offs: lock-ups, J-curve, fee load (1-2% mgmt + 20% carry typical), valuation opacity.\n\n**A** is opposite (alternatives less liquid).\n\n**C** is not a regulatory requirement."
+    },
+    {
+      "id": "q-alts-perf-007",
+      "lessonId": "alts-perf-overview",
+      "losId": "los-alts-perf-1",
+      "difficulty": "easy",
+      "stem": "**IRR (Internal Rate of Return)** in PE *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Discount rate that makes NPV of fund cash flows equal zero" },
+        { "id": "B", "text": "Same as TWR for any fund" },
+        { "id": "C", "text": "Equal to the management fee rate" }
+      ],
+      "answer": "A",
+      "explanation": "IRR: solve for r such that PV of all distributions + remaining NAV = PV of contributions.\n\nMoney-weighted; influenced by timing of capital calls and distributions.\n\nPE standard: net IRR (after fees and carry).\n\n**B** is wrong — TWR and IRR differ for PE.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-alts-perf-008",
+      "lessonId": "alts-perf-overview",
+      "losId": "los-alts-perf-2",
+      "difficulty": "medium",
+      "stem": "**MOIC (Multiple of Invested Capital)** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Total value to paid-in capital ratio (TVPI)" },
+        { "id": "B", "text": "Annualised return measure" },
+        { "id": "C", "text": "Fee structure" }
+      ],
+      "answer": "A",
+      "explanation": "MOIC = (Distributions + NAV) / Capital contributed.\n\nIgnores timing — just measures gross multiple. A 2.0× MOIC means fund returned twice the capital, regardless of period.\n\nCombines with IRR: 2× MOIC over 5 years (~15% IRR) vs over 10 years (~7% IRR).\n\n**B** is IRR.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-alts-perf-009",
+      "lessonId": "alts-perf-overview",
+      "losId": "los-alts-perf-2",
+      "difficulty": "hard",
+      "stem": "The **'J-curve'** in PE refers to *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Increasing fees over time" },
+        { "id": "B", "text": "Negative early returns followed by positive returns as portfolio matures" },
+        { "id": "C", "text": "Tax depreciation schedule" }
+      ],
+      "answer": "B",
+      "explanation": "J-curve: PE funds typically show negative returns in early years due to management fees on committed capital, initial acquisition costs, and markdowns on unrealised positions.\n\nAs portfolio companies mature and are exited, returns turn positive — creating a 'J' shape.\n\nTypical: years 1-3 negative, years 4-10 positive.\n\n**A** and **C** are unrelated."
+    },
+    {
+      "id": "q-alts-pc-007",
+      "lessonId": "alts-pc-overview",
+      "losId": "los-alts-pc-1",
+      "difficulty": "easy",
+      "stem": "**Private equity (PE)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Invests only in publicly listed firms" },
+        { "id": "B", "text": "Acquires private companies (or takes public ones private), often with leverage" },
+        { "id": "C", "text": "Same as venture capital" }
+      ],
+      "answer": "B",
+      "explanation": "PE: acquires controlling stakes in private companies or takes public firms private. Often uses leveraged buyouts (LBO). Improves operations or financial engineering, then exits via sale or IPO.\n\nDistinct from VC (early-stage minority stakes) and growth equity (later-stage minority).\n\n**A** is inverted.\n\n**C** is incorrect — VC is a subset/sister strategy."
+    },
+    {
+      "id": "q-alts-pc-008",
+      "lessonId": "alts-pc-overview",
+      "losId": "los-alts-pc-2",
+      "difficulty": "medium",
+      "stem": "PE **fee structure** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "0.5% management fee with no carry" },
+        { "id": "B", "text": "Typically 2% management fee + 20% carried interest above a hurdle rate" },
+        { "id": "C", "text": "Performance fee only" }
+      ],
+      "answer": "B",
+      "explanation": "PE classic structure: 2-and-20.\n- 2% annual management fee on committed capital (some funds tier down)\n- 20% carried interest on profits above hurdle (typically 8%)\n\nGPs argue carry aligns incentives; critics note fee drag substantial.\n\nNet IRR after fees often 3-5% below gross IRR.\n\n**A** and **C** are atypical."
+    },
+    {
+      "id": "q-alts-pc-009",
+      "lessonId": "alts-pc-overview",
+      "losId": "los-alts-pc-2",
+      "difficulty": "hard",
+      "stem": "**Vintage year** of a PE fund is *most accurately* important because:",
+      "choices": [
+        { "id": "A", "text": "Returns depend strongly on the macro environment at the time of investing and exiting" },
+        { "id": "B", "text": "Only the fund age matters for fees" },
+        { "id": "C", "text": "Vintage has no impact on returns" }
+      ],
+      "answer": "A",
+      "explanation": "Vintage year: year fund makes first investments. Performance heavily depends on entry valuations (cheap vs expensive) and exit environment at maturity.\n\nExample: 2005-2007 vintages → bought at peak before GFC → poor returns. 2009-2011 vintages → bought cheap → excellent returns.\n\nInvestors diversify across vintages to smooth.\n\n**B** and **C** are wrong."
+    },
+    {
+      "id": "q-alts-re-007",
+      "lessonId": "alts-re-overview",
+      "losId": "los-alts-re-1",
+      "difficulty": "easy",
+      "stem": "**REITs (Real Estate Investment Trusts)** are *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Private partnerships with high lock-ups" },
+        { "id": "B", "text": "Publicly listed entities holding real estate, distributing most income as dividends, with favourable tax treatment" },
+        { "id": "C", "text": "Mutual funds investing in stocks only" }
+      ],
+      "answer": "B",
+      "explanation": "REITs: liquid public vehicles for real estate exposure.\n\nUS rules: distribute ≥90% of taxable income as dividends → pass-through tax treatment (no corporate income tax at REIT level).\n\nTypes: equity REITs (own property), mortgage REITs (own loans), hybrid.\n\n**A** describes private real estate funds.\n\n**C** is wrong."
+    },
+    {
+      "id": "q-alts-re-008",
+      "lessonId": "alts-re-overview",
+      "losId": "los-alts-re-2",
+      "difficulty": "medium",
+      "stem": "**Infrastructure investments** *most likely* offer:",
+      "choices": [
+        { "id": "A", "text": "High volatility, no income" },
+        { "id": "B", "text": "Long-duration, predictable cash flows (often regulated), inflation linkage, illiquidity" },
+        { "id": "C", "text": "Same characteristics as venture capital" }
+      ],
+      "answer": "B",
+      "explanation": "Infrastructure: toll roads, airports, utilities, renewable energy, telecom towers.\n\nCharacteristics:\n- Stable cash flows (regulated or contracted)\n- Long duration (20-50 yr concessions)\n- Inflation linkage (regulated tariffs adjusted)\n- Illiquid (private fund structures)\n- Lower correlation with traditional assets\n\nPopular for pension funds matching long liabilities.\n\n**A** and **C** are wrong."
+    },
+    {
+      "id": "q-alts-re-009",
+      "lessonId": "alts-re-overview",
+      "losId": "los-alts-re-2",
+      "difficulty": "hard",
+      "stem": "**Real estate** as an inflation hedge *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Always perfectly tracks CPI" },
+        { "id": "B", "text": "Provides partial inflation protection over long horizons through rent increases and property appreciation, but with significant period-to-period deviation" },
+        { "id": "C", "text": "Has no relationship with inflation" }
+      ],
+      "answer": "B",
+      "explanation": "Real estate inflation hedge:\n- Rents (especially in inflation-linked leases) rise with CPI\n- Property values tied to nominal cash flows + replacement cost\n- Over multi-year horizons, real estate roughly tracks inflation\n- Period-to-period varies significantly (interest rate sensitivity, supply cycles)\n\n2022-2023: rising rates hit real estate even as inflation spiked.\n\n**A** and **C** are extremes."
+    },
+    {
+      "id": "q-alts-nr-007",
+      "lessonId": "alts-nr-overview",
+      "losId": "los-alts-nr-1",
+      "difficulty": "easy",
+      "stem": "**Commodities** in a portfolio *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Generate predictable cash flows like bonds" },
+        { "id": "B", "text": "Have no income; return = price change + roll yield; provide inflation hedge and diversification" },
+        { "id": "C", "text": "Always positively correlated with equities" }
+      ],
+      "answer": "B",
+      "explanation": "Commodities: no cash flow (unlike stocks/bonds/real estate).\n\nReturn components: spot price change, roll yield (positive in backwardation, negative in contango), collateral yield (from cash backing futures).\n\nInflation hedge: positive correlation with surprise inflation, especially energy.\n\n**A** is wrong.\n\n**C** is too strong."
+    },
+    {
+      "id": "q-alts-nr-008",
+      "lessonId": "alts-nr-overview",
+      "losId": "los-alts-nr-2",
+      "difficulty": "medium",
+      "stem": "**Contango** in commodity futures *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Benefits long commodity futures holders (positive roll yield)" },
+        { "id": "B", "text": "Hurts long commodity futures holders (negative roll yield)" },
+        { "id": "C", "text": "Has no effect on returns" }
+      ],
+      "answer": "B",
+      "explanation": "Contango: futures price > spot. Rolling involves selling cheaper near-month and buying more expensive far-month → loss on every roll.\n\nUSO (oil ETF) lost ~80% over a decade while spot was flat — almost entirely roll drag.\n\nBackwardation (opposite): positive roll yield.\n\n**A** is reversed.\n\n**C** ignores roll mechanics."
+    },
+    {
+      "id": "q-alts-nr-009",
+      "lessonId": "alts-nr-overview",
+      "losId": "los-alts-nr-2",
+      "difficulty": "hard",
+      "stem": "**Timberland and farmland** investments *most accurately* offer:",
+      "choices": [
+        { "id": "A", "text": "High liquidity, no inflation linkage" },
+        { "id": "B", "text": "Biological growth + commodity prices + land appreciation; long lock-ups; low correlation with traditional assets" },
+        { "id": "C", "text": "Same risk-return profile as REITs" }
+      ],
+      "answer": "B",
+      "explanation": "Natural resources (timberland, farmland):\n- Biological growth (trees grow, crops produced)\n- Underlying commodity prices (lumber, agricultural products)\n- Land appreciation (especially scarce land)\n- ESG appeal (carbon sequestration in forestry)\n- Illiquid (long lock-ups)\n- Low correlation with traditional assets\n\nInvestors: pension funds, endowments (Yale, Harvard endowments large in these).\n\n**A** is inverted.\n\n**C** is wrong (timberland is private, illiquid)."
+    },
+    {
+      "id": "q-alts-hf-007",
+      "lessonId": "alts-hf-overview",
+      "losId": "los-alts-hf-1",
+      "difficulty": "easy",
+      "stem": "**Hedge funds** are *most accurately* characterised by:",
+      "choices": [
+        { "id": "A", "text": "Standardised retail-friendly products with low fees" },
+        { "id": "B", "text": "Flexible strategies (long-short, derivatives, leverage), limited regulation, high fees, qualified investors only" },
+        { "id": "C", "text": "Same as mutual funds with different name" }
+      ],
+      "answer": "B",
+      "explanation": "Hedge funds: pooled vehicles with flexibility traditional funds lack — long-short, leverage, derivatives, concentrated positions, various asset classes.\n\nLimited regulation (qualified investor / accredited only). High fees (typically 1.5-2 + 20%). Lock-ups vary.\n\nGoal: absolute returns / alpha.\n\n**A** and **C** are wrong."
+    },
+    {
+      "id": "q-alts-hf-008",
+      "lessonId": "alts-hf-overview",
+      "losId": "los-alts-hf-2",
+      "difficulty": "medium",
+      "stem": "**Long-short equity** hedge fund strategy *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Only goes long" },
+        { "id": "B", "text": "Holds long positions in expected winners and short positions in expected losers, isolating alpha from market direction" },
+        { "id": "C", "text": "Only uses derivatives" }
+      ],
+      "answer": "B",
+      "explanation": "Long-short equity: most common HF strategy.\n\nNet exposure varies (net long bias common: 30-70%); gross exposure can be 150-200%.\n\nGoal: alpha from stock picking, partially insulated from market beta.\n\nPair trades, sector long-short, statistical arbitrage all variations.\n\n**A** describes long-only.\n\n**C** describes derivative-focused strategies."
+    },
+    {
+      "id": "q-alts-hf-009",
+      "lessonId": "alts-hf-overview",
+      "losId": "los-alts-hf-2",
+      "difficulty": "hard",
+      "stem": "**Hedge fund survivorship bias** in databases *most likely* causes:",
+      "choices": [
+        { "id": "A", "text": "Under-reporting of returns" },
+        { "id": "B", "text": "Over-reporting of historical returns and under-reporting of volatility (failed funds drop out)" },
+        { "id": "C", "text": "No effect on reported returns" }
+      ],
+      "answer": "B",
+      "explanation": "Survivorship bias: HF database only includes funds that survived. Failed funds (~30% of new HFs) disappear.\n\nResult: reported aggregate returns are higher and σ lower than reality.\n\nEstimates: 2-4% per year bias upward in returns.\n\nAlso: backfill bias (new funds add history only if good).\n\nProper analysis adjusts or uses survivorship-bias-free databases.\n\n**A** has direction wrong.\n\n**C** ignores the effect."
+    },
+    {
+      "id": "q-alts-da-007",
+      "lessonId": "alts-da-overview",
+      "losId": "los-alts-da-1",
+      "difficulty": "easy",
+      "stem": "**Cryptocurrencies** as an asset class *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Generate predictable income like dividends" },
+        { "id": "B", "text": "No intrinsic income; valued primarily on adoption, scarcity, and speculative demand; highly volatile" },
+        { "id": "C", "text": "Government-backed currencies" }
+      ],
+      "answer": "B",
+      "explanation": "Crypto (Bitcoin, ETH, etc.):\n- No cash flow → no DCF\n- Valued on: adoption, scarcity (Bitcoin: 21M cap), network effects, speculation\n- Annualised σ: 60-100%+ for major coins\n- Some claim 'digital gold' (BTC) or platform (ETH)\n\nNot government-backed (decentralised) unless CBDC.\n\n**A** is wrong (no income generally).\n\n**C** is wrong (stateless)."
+    },
+    {
+      "id": "q-alts-da-008",
+      "lessonId": "alts-da-overview",
+      "losId": "los-alts-da-2",
+      "difficulty": "medium",
+      "stem": "**Smart contracts** on blockchain *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Legal contracts signed by lawyers" },
+        { "id": "B", "text": "Self-executing code on blockchain that runs predefined logic without intermediaries" },
+        { "id": "C", "text": "Software updates pushed to wallets" }
+      ],
+      "answer": "B",
+      "explanation": "Smart contracts: code deployed on blockchain (e.g., Ethereum). Executes automatically when conditions met. Removes need for trusted intermediaries.\n\nApplications: DeFi (lending, exchanges, derivatives), NFT royalties, tokenisation, automated payouts.\n\nRisks: bugs (DAO hack 2016), unintended consequences, regulatory uncertainty.\n\n**A** and **C** misdescribe."
+    },
+    {
+      "id": "q-alts-da-009",
+      "lessonId": "alts-da-overview",
+      "losId": "los-alts-da-2",
+      "difficulty": "hard",
+      "stem": "Allocation to **digital assets** for a typical institutional investor *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Should be 30%+ to capture upside" },
+        { "id": "B", "text": "Typically 0-3% if any, given volatility, regulatory uncertainty, and lack of intrinsic cash flow" },
+        { "id": "C", "text": "Equal to equity allocation" }
+      ],
+      "answer": "B",
+      "explanation": "Institutional crypto allocation realistic range:\n- Most: 0%\n- Engaged: 0.5-3% (BlackRock, Fidelity products)\n- Aggressive: 5%+\n\nReasoning for caution: σ of 60-100%+ vs equity 15-20%; 80%+ drawdowns multiple times; regulatory uncertainty; operational risk (custody, exchanges); no cash flow → unclear intrinsic value.\n\nMust sit within risk tolerance and liability matching framework.\n\n**A** and **C** are well above typical institutional practice."
     }
   ]
 }

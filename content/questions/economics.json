@@ -624,6 +624,342 @@
       ],
       "answer": "B",
       "explanation": "Real rate $\\approx$ nominal − inflation expectation. If nominal falls and expectations are unchanged, real rate falls → more expansionary stance.\n\n**A** has the direction backwards.\n\n**C** confuses nominal and real — they move together only when inflation expectations move with them, which they don't here."
+    },
+    {
+      "id": "q-econ-fms-007",
+      "lessonId": "econ-fms-overview",
+      "losId": "los-econ-fms-1",
+      "difficulty": "easy",
+      "stem": "**Perfect competition** *most accurately* features:",
+      "choices": [
+        { "id": "A", "text": "A single seller with pricing power" },
+        { "id": "B", "text": "Many small firms producing identical products with no pricing power" },
+        { "id": "C", "text": "A few firms with strong differentiation" }
+      ],
+      "answer": "B",
+      "explanation": "Perfect competition: many firms, identical products, no barriers to entry, no pricing power (price-takers). Long-run economic profit = 0.\n\nReal-world approximations: agricultural commodities, foreign exchange spot.\n\n**A** describes monopoly.\n\n**C** describes oligopoly."
+    },
+    {
+      "id": "q-econ-fms-008",
+      "lessonId": "econ-fms-overview",
+      "losId": "los-econ-fms-2",
+      "difficulty": "medium",
+      "stem": "An **oligopoly** firm *most likely* makes pricing decisions:",
+      "choices": [
+        { "id": "A", "text": "Independently with no regard for competitors" },
+        { "id": "B", "text": "Strategically, anticipating competitor responses (often modelled by game theory)" },
+        { "id": "C", "text": "By regulator-mandated pricing schedule" }
+      ],
+      "answer": "B",
+      "explanation": "Oligopoly: few large firms, interdependent decisions. Each must anticipate rivals' responses.\n\nTools: Cournot, Bertrand, kinked demand, prisoner's dilemma.\n\nExamples: telecoms, airlines, cement, autos.\n\n**A** is monopolistic competition / perfect competition.\n\n**C** is regulated industry, not generic oligopoly."
+    },
+    {
+      "id": "q-econ-fms-009",
+      "lessonId": "econ-fms-overview",
+      "losId": "los-econ-fms-2",
+      "difficulty": "hard",
+      "stem": "The **Herfindahl-Hirschman Index (HHI)** *most accurately* measures:",
+      "choices": [
+        { "id": "A", "text": "Industry inflation rate" },
+        { "id": "B", "text": "Market concentration, calculated as sum of squared market shares" },
+        { "id": "C", "text": "Average industry profitability" }
+      ],
+      "answer": "B",
+      "explanation": "HHI = Σ(market share %)². Range: 0 (perfectly competitive) to 10,000 (monopoly).\n\nUS antitrust thresholds:\n- < 1,500: unconcentrated\n- 1,500-2,500: moderate\n- > 2,500: highly concentrated\n\nUsed by DOJ/FTC in merger reviews.\n\n**A** and **C** are unrelated."
+    },
+    {
+      "id": "q-econ-bc-007",
+      "lessonId": "econ-bc-overview",
+      "losId": "los-econ-bc-1",
+      "difficulty": "easy",
+      "stem": "**Leading indicators** are *most accurately* economic data that:",
+      "choices": [
+        { "id": "A", "text": "Lag the business cycle" },
+        { "id": "B", "text": "Move ahead of the business cycle, providing forecast signals" },
+        { "id": "C", "text": "Coincide exactly with GDP" }
+      ],
+      "answer": "B",
+      "explanation": "Leading indicators: PMI, housing starts, stock prices, yield curve. Used by economists to forecast 6-12 months ahead.\n\nLagging: unemployment, inflation (peak after recession).\nCoincident: GDP, industrial production, employment.\n\n**A** describes lagging.\n\n**C** describes coincident."
+    },
+    {
+      "id": "q-econ-bc-008",
+      "lessonId": "econ-bc-overview",
+      "losId": "los-econ-bc-2",
+      "difficulty": "medium",
+      "stem": "An **inverted yield curve** historically *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Predicts strong economic growth" },
+        { "id": "B", "text": "Has preceded most US recessions in the past 50 years" },
+        { "id": "C", "text": "Has no signalling value" }
+      ],
+      "answer": "B",
+      "explanation": "Inverted yield curve (short rates > long rates): typically signals expected rate cuts → weak growth. Preceded 7 of last 8 US recessions, often by 6-18 months.\n\nNot deterministic — can be delayed or fail. Strong empirical indicator.\n\n**A** has direction wrong.\n\n**C** ignores historical record."
+    },
+    {
+      "id": "q-econ-bc-009",
+      "lessonId": "econ-bc-overview",
+      "losId": "los-econ-bc-2",
+      "difficulty": "hard",
+      "stem": "**Stagflation** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "High inflation with high growth" },
+        { "id": "B", "text": "High inflation combined with stagnant growth and high unemployment" },
+        { "id": "C", "text": "Deflation with low unemployment" }
+      ],
+      "answer": "B",
+      "explanation": "Stagflation: simultaneously high inflation + economic stagnation. Defies standard Phillips curve logic.\n\nClassic example: 1970s US/UK after oil shocks.\n\nDifficult for policymakers — tightening worsens stagnation; loosening worsens inflation.\n\n**A** and **C** misdescribe."
+    },
+    {
+      "id": "q-econ-fiscal-007",
+      "lessonId": "econ-fiscal-overview",
+      "losId": "los-econ-fp-1",
+      "difficulty": "easy",
+      "stem": "**Expansionary fiscal policy** *most accurately* involves:",
+      "choices": [
+        { "id": "A", "text": "Raising taxes and reducing government spending" },
+        { "id": "B", "text": "Cutting taxes and/or increasing government spending to boost demand" },
+        { "id": "C", "text": "Central bank rate cuts" }
+      ],
+      "answer": "B",
+      "explanation": "Expansionary fiscal: increase G or decrease T → boosts aggregate demand. Used in recessions.\n\nContrasted with monetary policy (central bank rate moves).\n\n**A** is contractionary.\n\n**C** is monetary policy, not fiscal."
+    },
+    {
+      "id": "q-econ-fiscal-008",
+      "lessonId": "econ-fiscal-overview",
+      "losId": "los-econ-fp-2",
+      "difficulty": "medium",
+      "stem": "**Crowding out** *most accurately* refers to:",
+      "choices": [
+        { "id": "A", "text": "Government spending displacing private investment by raising interest rates" },
+        { "id": "B", "text": "Foreigners buying up local assets" },
+        { "id": "C", "text": "Tax cuts increasing private consumption" }
+      ],
+      "answer": "A",
+      "explanation": "Crowding out: government deficit spending → bond issuance → higher interest rates → reduced private investment and consumption.\n\nReduces effectiveness of fiscal expansion. Magnitude debated empirically.\n\n**B** is portfolio inflows.\n\n**C** is the intended fiscal mechanism, not crowding out."
+    },
+    {
+      "id": "q-econ-fiscal-009",
+      "lessonId": "econ-fiscal-overview",
+      "losId": "los-econ-fp-2",
+      "difficulty": "hard",
+      "stem": "The **fiscal multiplier** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Always exactly 1" },
+        { "id": "B", "text": "The change in GDP per dollar of fiscal stimulus, typically estimated at 0.5-2 depending on conditions" },
+        { "id": "C", "text": "Equal to the tax rate" }
+      ],
+      "answer": "B",
+      "explanation": "Fiscal multiplier: $\\Delta GDP / \\Delta G$ (or $\\Delta T$).\n\nLarger when:\n- Economy below potential (slack)\n- Monetary policy accommodative\n- Closed economy\n- Stimulus reaches high-MPC recipients\n\nSmaller when crowding out strong or open economy with leaks to imports.\n\nTypical IMF estimates: 0.5-1.5 in normal times; higher (1-2.5) during zero-bound monetary policy.\n\n**A** and **C** are oversimplifications."
+    },
+    {
+      "id": "q-econ-monetary-007",
+      "lessonId": "econ-monetary-overview",
+      "losId": "los-econ-mp-1",
+      "difficulty": "easy",
+      "stem": "**Open market operations** *most accurately* involve:",
+      "choices": [
+        { "id": "A", "text": "Central bank buying/selling government bonds to influence the money supply" },
+        { "id": "B", "text": "Treasury issuing new debt" },
+        { "id": "C", "text": "FX intervention" }
+      ],
+      "answer": "A",
+      "explanation": "OMO: primary monetary policy tool. Central bank buys bonds → money supply expands, rates fall. Sells bonds → money supply shrinks, rates rise.\n\nFed conducts daily OMO via primary dealers.\n\n**B** is Treasury operations, separate from monetary policy.\n\n**C** is FX intervention, distinct (though related)."
+    },
+    {
+      "id": "q-econ-monetary-008",
+      "lessonId": "econ-monetary-overview",
+      "losId": "los-econ-mp-2",
+      "difficulty": "medium",
+      "stem": "**Quantitative easing (QE)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Lowers short-term policy rates" },
+        { "id": "B", "text": "Central bank purchases of longer-dated assets to lower long-term rates and stimulate when short rates are at zero" },
+        { "id": "C", "text": "Tightens monetary policy" }
+      ],
+      "answer": "B",
+      "explanation": "QE: unconventional monetary policy. When short rates ≈ 0 (zero bound), central bank buys long-dated bonds and MBS → lowers long rates → boosts asset prices, lending, growth.\n\nUsed extensively post-2008 and during COVID.\n\nQT (quantitative tightening) = reverse.\n\n**A** describes standard rate-setting.\n\n**C** has direction reversed."
+    },
+    {
+      "id": "q-econ-monetary-009",
+      "lessonId": "econ-monetary-overview",
+      "losId": "los-econ-mp-2",
+      "difficulty": "hard",
+      "stem": "**Central bank independence** is *most accurately* valued because:",
+      "choices": [
+        { "id": "A", "text": "It allows central banks to ignore inflation" },
+        { "id": "B", "text": "Insulates monetary policy from short-term political pressures, improving inflation credibility" },
+        { "id": "C", "text": "It gives central banks taxation authority" }
+      ],
+      "answer": "B",
+      "explanation": "Independent central banks resist political pressure to inflate before elections, monetise debt, etc. Empirical evidence: more independent CBs achieve lower long-term inflation.\n\nExamples: Fed (semi-independent), ECB (very independent), BOJ (formalised 1998).\n\nCounter-examples: some EM CBs lack effective independence → higher inflation.\n\n**A** is opposite.\n\n**C** is wrong category."
+    },
+    {
+      "id": "q-econ-geo-007",
+      "lessonId": "econ-geo-overview",
+      "losId": "los-econ-geo-1",
+      "difficulty": "easy",
+      "stem": "**Geopolitical risk** *most accurately* refers to:",
+      "choices": [
+        { "id": "A", "text": "Risk of natural disasters" },
+        { "id": "B", "text": "Risk from international conflict, sanctions, regime change, or government action affecting investments" },
+        { "id": "C", "text": "Currency volatility only" }
+      ],
+      "answer": "B",
+      "explanation": "Geopolitical risk: conflict (wars, sanctions), policy uncertainty, regime changes, expropriation, regulatory regime shifts.\n\nMajor examples: Russia 2022 (sanctions), China-US trade tensions, Middle East conflicts, Brexit.\n\nAffects equity risk premium, sovereign yields, FX, commodity prices.\n\n**A** is natural disaster risk.\n\n**C** is too narrow."
+    },
+    {
+      "id": "q-econ-geo-008",
+      "lessonId": "econ-geo-overview",
+      "losId": "los-econ-geo-2",
+      "difficulty": "medium",
+      "stem": "**Sanctions** on a country *most likely* affect investors via:",
+      "choices": [
+        { "id": "A", "text": "Frozen assets, restricted transactions, compliance burden, market access loss" },
+        { "id": "B", "text": "Higher dividends from sanctioned companies" },
+        { "id": "C", "text": "No effect on financial markets" }
+      ],
+      "answer": "A",
+      "explanation": "Sanctions: asset freezes, transaction bans, blocked payments, secondary sanctions on third parties. Investors holding sanctioned assets may face stranded positions.\n\nRussia 2022: hundreds of billions in Russian assets frozen; foreign investors unable to repatriate.\n\n**B** is wrong.\n\n**C** is contradicted by extensive evidence."
+    },
+    {
+      "id": "q-econ-geo-009",
+      "lessonId": "econ-geo-overview",
+      "losId": "los-econ-geo-2",
+      "difficulty": "hard",
+      "stem": "**'De-globalisation' or fragmentation** in global trade is *most likely* to:",
+      "choices": [
+        { "id": "A", "text": "Increase global growth via specialisation" },
+        { "id": "B", "text": "Raise inflation, reduce supply chain efficiency, and lower global growth potential" },
+        { "id": "C", "text": "Have no effect on inflation" }
+      ],
+      "answer": "B",
+      "explanation": "Globalisation 1980-2010s: drove low inflation, efficient supply chains, lower global poverty.\n\nFragmentation (US-China decoupling, friendshoring, sanctions): higher trade costs, redundant supply chains, less specialisation, higher inflation.\n\nIMF estimates: fragmentation could reduce global GDP 0.2-7% over time.\n\n**A** describes globalisation.\n\n**C** ignores supply chain effects on prices."
+    },
+    {
+      "id": "q-econ-it-007",
+      "lessonId": "econ-it-overview",
+      "losId": "los-econ-it-1",
+      "difficulty": "easy",
+      "stem": "**Comparative advantage** (Ricardo) *most accurately* says countries should:",
+      "choices": [
+        { "id": "A", "text": "Produce only what they need domestically" },
+        { "id": "B", "text": "Specialise in goods where they have the lowest opportunity cost, then trade" },
+        { "id": "C", "text": "Trade only with neighbouring countries" }
+      ],
+      "answer": "B",
+      "explanation": "Comparative advantage: even if Country A is better at everything (absolute advantage), both countries gain by A specialising in its biggest advantage and B in its smallest disadvantage. Opportunity cost determines specialisation.\n\nCornerstone of international trade theory.\n\n**A** is autarky.\n\n**C** is geographic, not economic logic."
+    },
+    {
+      "id": "q-econ-it-008",
+      "lessonId": "econ-it-overview",
+      "losId": "los-econ-it-2",
+      "difficulty": "medium",
+      "stem": "**Tariffs** on imports *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Reduce domestic prices for consumers" },
+        { "id": "B", "text": "Raise prices for consumers, protect some domestic producers, but reduce overall economic efficiency" },
+        { "id": "C", "text": "Always boost overall employment" }
+      ],
+      "answer": "B",
+      "explanation": "Tariff: import tax. Effects:\n- Higher prices for consumers\n- Protected domestic producers (winners)\n- Imported goods more expensive → less consumed\n- Net deadweight loss to economy\n- Foreign trading partners may retaliate\n\nEvidence from US-China tariffs 2018-2019: prices rose, manufacturing employment barely changed.\n\n**A** and **C** are common myths."
+    },
+    {
+      "id": "q-econ-it-009",
+      "lessonId": "econ-it-overview",
+      "losId": "los-econ-it-2",
+      "difficulty": "hard",
+      "stem": "**Balance of payments** = current account + capital account. A persistent **current account deficit** *most likely* implies:",
+      "choices": [
+        { "id": "A", "text": "Surplus on capital account (foreign capital inflows)" },
+        { "id": "B", "text": "Surplus on current account also" },
+        { "id": "C", "text": "Government surplus" }
+      ],
+      "answer": "A",
+      "explanation": "BoP must balance. Current account deficit (imports > exports) requires capital account surplus (foreign capital inflows finance the deficit).\n\nUS example: persistent CA deficit financed by foreign Treasury buying.\n\nReversal of capital flows can trigger BoP crisis (sudden stop).\n\n**B** contradicts BoP identity.\n\n**C** is unrelated (government budget is separate)."
+    },
+    {
+      "id": "q-econ-cf-007",
+      "lessonId": "econ-cf-overview",
+      "losId": "los-econ-cf-1",
+      "difficulty": "easy",
+      "stem": "**Foreign Direct Investment (FDI)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Short-term portfolio investment in foreign stocks" },
+        { "id": "B", "text": "Long-term cross-border investment with management control (typically ≥10% ownership)" },
+        { "id": "C", "text": "Currency trading" }
+      ],
+      "answer": "B",
+      "explanation": "FDI: long-term cross-border investment with significant control. Typical 10%+ ownership threshold.\n\nExamples: building a factory abroad, acquiring foreign subsidiary, joint ventures.\n\nDistinct from portfolio investment (passive, can flow quickly).\n\n**A** is portfolio investment.\n\n**C** is FX trading."
+    },
+    {
+      "id": "q-econ-cf-008",
+      "lessonId": "econ-cf-overview",
+      "losId": "los-econ-cf-2",
+      "difficulty": "medium",
+      "stem": "**'Sudden stop' capital outflows** *most accurately* are:",
+      "choices": [
+        { "id": "A", "text": "Gradual reduction of capital inflows" },
+        { "id": "B", "text": "Rapid reversal of foreign capital, often triggering currency crisis and recession" },
+        { "id": "C", "text": "Planned monetary policy" }
+      ],
+      "answer": "B",
+      "explanation": "Sudden stop: foreign investors rapidly withdraw capital. Causes:\n- Sharp currency depreciation\n- Inability to service foreign-denominated debt\n- Banking crisis (foreign funding lost)\n- Economic recession\n\nClassic examples: Asian crisis 1997, Argentina 2001, Turkey 2018.\n\n**A** is gradual.\n\n**C** is not policy."
+    },
+    {
+      "id": "q-econ-cf-009",
+      "lessonId": "econ-cf-overview",
+      "losId": "los-econ-cf-2",
+      "difficulty": "hard",
+      "stem": "**Capital controls** in emerging markets are *most likely* used to:",
+      "choices": [
+        { "id": "A", "text": "Promote global capital allocation" },
+        { "id": "B", "text": "Limit short-term portfolio flows to reduce currency volatility and financial instability risk" },
+        { "id": "C", "text": "Increase taxes" }
+      ],
+      "answer": "B",
+      "explanation": "Capital controls: restrictions on cross-border capital flows. Targets:\n- Short-term portfolio flows (hot money)\n- Outflows during crisis (Iceland 2008, Greece 2015)\n- Inflows during boom (Brazil 2009-2011)\n\nIMF historically opposed but now acknowledges role for selective use.\n\nTrade-off: stability vs market efficiency, FDI deterrent.\n\n**A** is opposite.\n\n**C** is unrelated."
+    },
+    {
+      "id": "q-econ-er-007",
+      "lessonId": "econ-er-overview",
+      "losId": "los-econ-er-1",
+      "difficulty": "easy",
+      "stem": "**Purchasing Power Parity (PPP)** *most accurately* predicts that:",
+      "choices": [
+        { "id": "A", "text": "Exchange rates have no relationship to prices" },
+        { "id": "B", "text": "Exchange rates adjust to equalise the purchasing power of currencies across countries" },
+        { "id": "C", "text": "Inflation has no effect on FX" }
+      ],
+      "answer": "B",
+      "explanation": "PPP: same basket of goods should cost the same in any currency after FX conversion.\n\nAbsolute PPP: prices equalise (rarely holds short-term).\nRelative PPP: FX moves equal inflation differential (holds better long-term).\n\nBig Mac index = informal absolute PPP gauge.\n\n**A** and **C** contradict the theory."
+    },
+    {
+      "id": "q-econ-er-008",
+      "lessonId": "econ-er-overview",
+      "losId": "los-econ-er-2",
+      "difficulty": "medium",
+      "stem": "Under **interest rate parity (IRP)**, if USD rates exceed JPY rates, the **forward USDJPY** *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Trades below spot (USD at forward discount; equivalently JPY at forward premium)" },
+        { "id": "B", "text": "Trades above spot (USD at forward premium)" },
+        { "id": "C", "text": "Equals spot exactly" }
+      ],
+      "answer": "A",
+      "explanation": "IRP: $F = S \\cdot (1+r_{quote})/(1+r_{base})$. \n\nQuote convention USDJPY: USD = base, JPY = quote. If $r_{USD} > r_{JPY}$, the higher-yield currency (USD) trades at forward **discount** — i.e., forward USDJPY < spot. Equivalently, JPY trades at forward **premium**.\n\nThis no-arbitrage relation prevents free lunch from borrowing in low-yield and investing in high-yield without offsetting via the forward.\n\n**B** has direction reversed.\n\n**C** ignores rate differential."
+    },
+    {
+      "id": "q-econ-er-009",
+      "lessonId": "econ-er-overview",
+      "losId": "los-econ-er-2",
+      "difficulty": "hard",
+      "stem": "A **carry trade** strategy *most likely* involves:",
+      "choices": [
+        { "id": "A", "text": "Borrowing in low-yield currency and investing in high-yield currency, profiting from rate differential" },
+        { "id": "B", "text": "Borrowing and lending in same currency" },
+        { "id": "C", "text": "Hedging all currency exposure" }
+      ],
+      "answer": "A",
+      "explanation": "Carry trade: borrow in low-yield (e.g., JPY, CHF) and invest in high-yield (e.g., AUD, EM). Profit = interest differential, assuming FX doesn't move adversely.\n\nIRP says expected return is zero in equilibrium, but empirically carry trades earn positive return (forward premium puzzle) — at cost of crash risk.\n\n**B** is funding mismatch, not carry.\n\n**C** eliminates the carry."
     }
   ]
 }

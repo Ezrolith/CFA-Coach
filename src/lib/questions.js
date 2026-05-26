@@ -5,6 +5,7 @@ const modules = import.meta.glob('../../content/questions/*.json', { eager: true
 const QUESTIONS = [];
 const BY_LESSON = {};
 const BY_TOPIC = {};
+const BY_LOS = {};
 
 for (const path in modules) {
   const data = modules[path].default ?? modules[path];
@@ -14,6 +15,9 @@ for (const path in modules) {
     QUESTIONS.push(enriched);
     if (q.lessonId) {
       (BY_LESSON[q.lessonId] ||= []).push(enriched);
+    }
+    if (q.losId) {
+      (BY_LOS[q.losId] ||= []).push(enriched);
     }
     (BY_TOPIC[data.topicId] ||= []).push(enriched);
   }
@@ -25,6 +29,10 @@ export function allQuestions() {
 
 export function questionsForLesson(lessonId) {
   return BY_LESSON[lessonId] ?? [];
+}
+
+export function questionsForLos(losId) {
+  return BY_LOS[losId] ?? [];
 }
 
 export function questionsForTopic(topicId) {

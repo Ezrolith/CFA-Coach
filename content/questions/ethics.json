@@ -780,6 +780,412 @@
       ],
       "answer": "B",
       "explanation": "The Code requires **dissociation** from ongoing violations — refusing to participate, documenting the position, and escalating internally. If internal escalation is blocked (as here), the member should escalate further up the firm or, ultimately, consider resignation.\n\n**A** is insufficient — a single objection that is brushed aside doesn't satisfy the duty to dissociate.\n\n**C** describes whistleblowing, which the Code does **not** generally require unless local law imposes it. The first duty is dissociation and internal escalation."
+    },
+    {
+      "id": "q-ethics-code-007",
+      "lessonId": "ethics-code-overview",
+      "losId": "los-ethics-cs-1",
+      "difficulty": "easy",
+      "stem": "The **Code of Ethics** of the CFA Institute *most accurately* applies to:",
+      "choices": [
+        { "id": "A", "text": "Only CFA charterholders" },
+        { "id": "B", "text": "All CFA Institute members, CFA charterholders, and candidates enrolled in the CFA Program" },
+        { "id": "C", "text": "Only US-based professionals" }
+      ],
+      "answer": "B",
+      "explanation": "Code and Standards apply to:\n- CFA Institute members (any level)\n- CFA charterholders\n- Candidates currently enrolled in the CFA Program\n\nGlobal in scope — no geographic limit.\n\n**A** is too narrow.\n\n**C** is wrong — global standards."
+    },
+    {
+      "id": "q-ethics-code-008",
+      "lessonId": "ethics-code-overview",
+      "losId": "los-ethics-cs-2",
+      "difficulty": "medium",
+      "stem": "If **local law conflicts** with the Code and Standards, members should *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Always follow local law over the Code" },
+        { "id": "B", "text": "Comply with the more strict of the two; never violate local law to comply with the Code" },
+        { "id": "C", "text": "Choose whichever serves the client best" }
+      ],
+      "answer": "B",
+      "explanation": "Code requires compliance with whichever is *stricter* — and never violation of applicable law.\n\nExample: if local law allows soft commissions but Code restricts them, follow Code.\n\nIf law prohibits something Code allows, follow law.\n\n**A** could violate Code where Code is stricter.\n\n**C** is subjective and not the standard."
+    },
+    {
+      "id": "q-ethics-std-i-007",
+      "lessonId": "ethics-std-i-prof",
+      "losId": "los-ethics-i-1",
+      "difficulty": "easy",
+      "stem": "Under **Standard I(A) Knowledge of the Law**, members *most accurately* must:",
+      "choices": [
+        { "id": "A", "text": "Memorise all applicable laws" },
+        { "id": "B", "text": "Understand and comply with applicable laws, rules, and regulations of governments, regulators, and professional associations" },
+        { "id": "C", "text": "Only follow CFA Institute Code" }
+      ],
+      "answer": "B",
+      "explanation": "I(A) requires:\n- Understanding applicable laws/rules\n- Compliance with the more stringent\n- Dissociation from any violations encountered\n\nNot memorisation — practical understanding sufficient.\n\n**A** is unrealistic.\n\n**C** is too narrow."
+    },
+    {
+      "id": "q-ethics-std-i-008",
+      "lessonId": "ethics-std-i-prof",
+      "losId": "los-ethics-i-2",
+      "difficulty": "medium",
+      "stem": "A member is offered a **lavish business gift** from a major client. Under **I(B) Independence and Objectivity** *most likely*:",
+      "choices": [
+        { "id": "A", "text": "Accept it but disclose" },
+        { "id": "B", "text": "Decline gifts that could compromise (or appear to compromise) independence; modest token gifts may be acceptable with disclosure" },
+        { "id": "C", "text": "Accept silently — gifts are personal matters" }
+      ],
+      "answer": "B",
+      "explanation": "I(B) Independence and Objectivity:\n- Decline anything that could reasonably impair independence\n- Modest customary gifts (e.g., meal, small token) may be acceptable\n- Disclose if accepted\n- Employer guidance often sets specific thresholds\n\nKey test: would a reasonable observer think the gift could compromise judgment?\n\n**A** is incomplete (must consider appearance).\n\n**C** violates disclosure requirements."
+    },
+    {
+      "id": "q-ethics-std-i-009",
+      "lessonId": "ethics-std-i-prof",
+      "losId": "los-ethics-i-2",
+      "difficulty": "hard",
+      "stem": "An analyst's research is **influenced by a paid trip** from a covered company to visit their facility. The analyst *most likely* should:",
+      "choices": [
+        { "id": "A", "text": "Pay her own travel expenses or those of her employer, not accept the trip" },
+        { "id": "B", "text": "Accept the trip but disclose in the report" },
+        { "id": "C", "text": "Accept without disclosure since site visits are common practice" }
+      ],
+      "answer": "A",
+      "explanation": "I(B) Independence and Objectivity: best practice is **decline** the paid trip and have employer (or self) cover costs. If unavoidable, disclose prominently and consider impact on independence.\n\nCorporate-paid travel for analysts is a classic conflict of interest. Best practice is the firm pays.\n\n**B** is second-best — disclosure helps but ideal is not to accept.\n\n**C** violates disclosure norms."
+    },
+    {
+      "id": "q-ethics-std-ii-007",
+      "lessonId": "ethics-std-ii-markets",
+      "losId": "los-ethics-ii-1",
+      "difficulty": "easy",
+      "stem": "**Material non-public information (MNPI)** in **Standard II(A)** *most accurately* is information that:",
+      "choices": [
+        { "id": "A", "text": "Has been published in newspapers" },
+        { "id": "B", "text": "Would influence a reasonable investor's decision AND is not yet publicly available" },
+        { "id": "C", "text": "Is only known to senior executives" }
+      ],
+      "answer": "B",
+      "explanation": "MNPI = Material + Non-public.\n\n**Material**: would a reasonable investor consider it important in their decision? (e.g., earnings surprise, major contract, merger).\n\n**Non-public**: not widely disseminated to the market through formal channels (filings, press releases).\n\nActing on or disseminating MNPI violates II(A).\n\n**A** is public information.\n\n**C** confuses 'limited circulation' with 'non-public' — even widely-internally-shared info can be non-public to markets."
+    },
+    {
+      "id": "q-ethics-std-ii-008",
+      "lessonId": "ethics-std-ii-markets",
+      "losId": "los-ethics-ii-2",
+      "difficulty": "medium",
+      "stem": "**Market manipulation** under **II(B)** includes *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Legitimate market making" },
+        { "id": "B", "text": "Wash trades, painting the tape, pump-and-dump schemes — actions distorting prices or volumes to mislead market participants" },
+        { "id": "C", "text": "Buying a stock based on research" }
+      ],
+      "answer": "B",
+      "explanation": "II(B) prohibits practices that distort markets:\n- Wash trades (sell to self to fake volume)\n- Painting the tape (coordinated trades to create false impression)\n- Pump-and-dump (artificially inflate, then sell)\n- Spreading false rumours\n- Spoofing (orders without intent to fill)\n\n**A** is legitimate.\n\n**C** is normal trading."
+    },
+    {
+      "id": "q-ethics-std-ii-009",
+      "lessonId": "ethics-std-ii-markets",
+      "losId": "los-ethics-ii-1",
+      "difficulty": "hard",
+      "stem": "An analyst is at a private CFO dinner and overhears the CFO say earnings will miss consensus. The analyst's *most accurate* response is:",
+      "choices": [
+        { "id": "A", "text": "Sell shares immediately and call clients to sell too" },
+        { "id": "B", "text": "Do not trade or recommend on the basis of this information; wait until it is publicly disclosed" },
+        { "id": "C", "text": "Confidentially share with one trusted client only" }
+      ],
+      "answer": "B",
+      "explanation": "Earnings miss is MNPI. Trading or recommending trading on it violates II(A) (and securities law).\n\nCorrect actions:\n- Do not trade or recommend trades\n- Encourage company to disclose publicly\n- If concerned, consult compliance\n- Wait for public dissemination\n\n**A** is insider trading violation.\n\n**C** is tipping — also a violation."
+    },
+    {
+      "id": "q-ethics-std-iii-007",
+      "lessonId": "ethics-std-iii-clients",
+      "losId": "los-ethics-iii-1",
+      "difficulty": "easy",
+      "stem": "Under **III(A) Loyalty, Prudence, and Care**, the member's duty is *most accurately* to:",
+      "choices": [
+        { "id": "A", "text": "Themselves first" },
+        { "id": "B", "text": "Place client interests before their own and their employer's; act with care, skill, and diligence" },
+        { "id": "C", "text": "Their employer first" }
+      ],
+      "answer": "B",
+      "explanation": "III(A): client interests come first.\n\nFiduciary-like duty: care, skill, diligence in client's best interests. Loyalty to clients precedes self-interest and employer interest.\n\n**A** and **C** invert the priority."
+    },
+    {
+      "id": "q-ethics-std-iii-008",
+      "lessonId": "ethics-std-iii-clients",
+      "losId": "los-ethics-iii-2",
+      "difficulty": "medium",
+      "stem": "Under **III(B) Fair Dealing**, when distributing a research report's findings *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "All clients should receive it at the same time or as close to simultaneous as practical" },
+        { "id": "B", "text": "Best clients receive it first" },
+        { "id": "C", "text": "Only the largest clients are entitled to it" }
+      ],
+      "answer": "A",
+      "explanation": "III(B): treat all clients fairly. Distribute material new information (research) to all clients simultaneously, or as close to it as practical.\n\nCannot favour large/profitable clients with early access to actionable research.\n\n**B** and **C** discriminate, violating fair dealing."
+    },
+    {
+      "id": "q-ethics-std-iii-009",
+      "lessonId": "ethics-std-iii-clients",
+      "losId": "los-ethics-iii-2",
+      "difficulty": "hard",
+      "stem": "Under **III(C) Suitability**, before recommending an investment to a client, the member *most likely* must:",
+      "choices": [
+        { "id": "A", "text": "Maintain a written investment policy statement (IPS) covering the client's objectives, constraints, risk tolerance, and investment horizon" },
+        { "id": "B", "text": "Verbal agreement with client is sufficient" },
+        { "id": "C", "text": "Match what other similar clients hold" }
+      ],
+      "answer": "A",
+      "explanation": "III(C) Suitability:\n- Written IPS (or equivalent documentation) covering client's:\n  - Risk tolerance\n  - Return objectives\n  - Investment horizon\n  - Liquidity needs\n  - Tax circumstances\n  - Legal/regulatory constraints\n- Update periodically (annually min).\n- Each recommendation must be suitable for that client.\n\n**B** is insufficient.\n\n**C** ignores individual circumstances."
+    },
+    {
+      "id": "q-ethics-std-iv-007",
+      "lessonId": "ethics-std-iv-employers",
+      "losId": "los-ethics-iv-1",
+      "difficulty": "easy",
+      "stem": "**Standard IV(A) Loyalty to Employer** *most likely* requires members to:",
+      "choices": [
+        { "id": "A", "text": "Quit if disagreeing with management" },
+        { "id": "B", "text": "Act for the employer's benefit, not deprive of skill/knowledge/inventions, not disclose confidential info during/after employment" },
+        { "id": "C", "text": "Stay with the employer for life" }
+      ],
+      "answer": "B",
+      "explanation": "IV(A) Duty to Employer:\n- Act for employer's benefit\n- Do not deprive of skills/knowledge/inventions\n- Maintain confidentiality during AND after employment\n- Avoid conflicts of interest\n\nMembers can leave, but cannot harm former employer with use of confidential info or solicitation while still employed.\n\n**A** is extreme.\n\n**C** is unrealistic."
+    },
+    {
+      "id": "q-ethics-std-iv-008",
+      "lessonId": "ethics-std-iv-employers",
+      "losId": "los-ethics-iv-2",
+      "difficulty": "medium",
+      "stem": "A member preparing to leave their firm *most accurately* may:",
+      "choices": [
+        { "id": "A", "text": "Copy client lists to take to the new firm" },
+        { "id": "B", "text": "Not solicit clients before leaving; not take confidential records; may make general public announcements" },
+        { "id": "C", "text": "Begin actively soliciting clients while still employed" }
+      ],
+      "answer": "B",
+      "explanation": "IV(A) Duty to Employer in transition:\n- Do not solicit clients while still employed\n- Do not take client lists, research, or confidential records\n- Do not start new business while still employed\n- May prepare logistically (new office space, professional registration)\n- May make public announcement upon departure\n\n**A** is theft of property.\n\n**C** breaches duty."
+    },
+    {
+      "id": "q-ethics-std-iv-009",
+      "lessonId": "ethics-std-iv-employers",
+      "losId": "los-ethics-iv-2",
+      "difficulty": "hard",
+      "stem": "Under **IV(B) Additional Compensation Arrangements**, an analyst offered a bonus by a client for outperformance *most accurately* should:",
+      "choices": [
+        { "id": "A", "text": "Accept silently as it's a fee deal" },
+        { "id": "B", "text": "Decline unless prior written employer consent; if accepted, disclose to employer in writing" },
+        { "id": "C", "text": "Accept and report to clients only" }
+      ],
+      "answer": "B",
+      "explanation": "IV(B) Additional Compensation:\n- Any compensation from third parties (clients, others) creating potential conflict\n- Must obtain written employer consent BEFORE accepting\n- Disclose nature, amount, conditions\n\nPrevents conflicts of interest between client recommendation and personal incentive.\n\n**A** and **C** miss employer disclosure requirement."
+    },
+    {
+      "id": "q-ethics-std-v-007",
+      "lessonId": "ethics-std-v-analysis",
+      "losId": "los-ethics-v-1",
+      "difficulty": "easy",
+      "stem": "Under **V(A) Diligence and Reasonable Basis**, before making an investment recommendation a member *most likely* must:",
+      "choices": [
+        { "id": "A", "text": "Conduct adequate research; investment recommendations must have a reasonable and adequate basis" },
+        { "id": "B", "text": "Accept information from any source without verification" },
+        { "id": "C", "text": "Only consider qualitative factors" }
+      ],
+      "answer": "A",
+      "explanation": "V(A) Diligence:\n- Reasonable and adequate research basis\n- Independent verification of important information\n- Multiple sources where possible\n- Document the analysis\n\nApplies to both initial recommendations and ongoing monitoring.\n\n**B** violates diligence.\n\n**C** ignores quantitative analysis."
+    },
+    {
+      "id": "q-ethics-std-v-008",
+      "lessonId": "ethics-std-v-analysis",
+      "losId": "los-ethics-v-2",
+      "difficulty": "medium",
+      "stem": "Under **V(B) Communication with Clients**, when presenting research members *most likely* should:",
+      "choices": [
+        { "id": "A", "text": "Hide methodology to maintain edge" },
+        { "id": "B", "text": "Distinguish between facts and opinions; identify limitations; describe key factors and assumptions" },
+        { "id": "C", "text": "Use only certainty language" }
+      ],
+      "answer": "B",
+      "explanation": "V(B) Communication:\n- Distinguish facts from opinions/forecasts\n- Identify limitations and risks\n- Describe key factors and assumptions\n- Use appropriate language (avoid overstating certainty)\n\nClients can then evaluate the analysis themselves.\n\n**A** undermines client interests.\n\n**C** misleads clients."
+    },
+    {
+      "id": "q-ethics-std-v-009",
+      "lessonId": "ethics-std-v-analysis",
+      "losId": "los-ethics-v-2",
+      "difficulty": "hard",
+      "stem": "Under **V(C) Record Retention**, members *most accurately* must:",
+      "choices": [
+        { "id": "A", "text": "Maintain records supporting investment analyses, recommendations, and actions for a period at least as long as required by law or employer policy (typically 7 years)" },
+        { "id": "B", "text": "Delete records after 1 year for client confidentiality" },
+        { "id": "C", "text": "No record retention required" }
+      ],
+      "answer": "A",
+      "explanation": "V(C) Record Retention:\n- Maintain records supporting all analyses and recommendations\n- Minimum 7 years recommended (varies by jurisdiction)\n- Records include data, communications, decision rationale\n- Supports compliance, regulatory inspection, and quality control\n\n**B** is too short and contradicts retention duty.\n\n**C** is wrong — retention is required."
+    },
+    {
+      "id": "q-ethics-std-vi-007",
+      "lessonId": "ethics-std-vi-conflicts",
+      "losId": "los-ethics-vi-1",
+      "difficulty": "easy",
+      "stem": "Under **VI(A) Disclosure of Conflicts**, members *most likely* must disclose:",
+      "choices": [
+        { "id": "A", "text": "Only criminal conflicts" },
+        { "id": "B", "text": "All matters that could reasonably be expected to impair independence or interfere with duties to clients and employer" },
+        { "id": "C", "text": "Only conflicts after they cause harm" }
+      ],
+      "answer": "B",
+      "explanation": "VI(A): proactive disclosure of any potential conflicts.\n\nExamples:\n- Ownership in covered company\n- Board service\n- Family relationships\n- Compensation arrangements\n- Soft dollar relationships\n\nDisclosed in plain language to clients, employer, and others as appropriate.\n\n**A** and **C** are too narrow / reactive."
+    },
+    {
+      "id": "q-ethics-std-vi-008",
+      "lessonId": "ethics-std-vi-conflicts",
+      "losId": "los-ethics-vi-2",
+      "difficulty": "medium",
+      "stem": "**VI(B) Priority of Transactions** *most accurately* requires that:",
+      "choices": [
+        { "id": "A", "text": "Members' personal trades come first" },
+        { "id": "B", "text": "Investment transactions for clients and employer take precedence over personal transactions" },
+        { "id": "C", "text": "Personal and client trades have equal priority" }
+      ],
+      "answer": "B",
+      "explanation": "VI(B): client interests first.\n\nRules:\n- Client orders executed before similar personal orders\n- Personal orders cannot benefit from advance knowledge of client orders ('front-running')\n- Pre-clearance of personal trades required at most firms\n\n**A** and **C** violate this priority."
+    },
+    {
+      "id": "q-ethics-std-vi-009",
+      "lessonId": "ethics-std-vi-conflicts",
+      "losId": "los-ethics-vi-2",
+      "difficulty": "hard",
+      "stem": "Under **VI(C) Referral Fees**, if a member accepts a referral fee for sending clients to another service provider, they *most accurately* must:",
+      "choices": [
+        { "id": "A", "text": "Disclose the referral fee in writing to both employer and client" },
+        { "id": "B", "text": "Refuse all referral fees as a matter of policy" },
+        { "id": "C", "text": "Accept silently — referral fees are standard practice" }
+      ],
+      "answer": "A",
+      "explanation": "VI(C) Referral Fees:\n- Disclosure to employer (and client) of referral fee arrangements\n- Disclosure in writing, before any referral\n- Includes both fees received and fees paid\n\nAllows employer and client to evaluate potential conflict.\n\n**B** is overly restrictive (referrals can be ethical with disclosure).\n\n**C** violates disclosure requirement."
+    },
+    {
+      "id": "q-ethics-std-vii-007",
+      "lessonId": "ethics-std-vii-cfa",
+      "losId": "los-ethics-vii-1",
+      "difficulty": "easy",
+      "stem": "Under **VII(A) Conduct as Participants in CFA Programs**, candidates *most likely* must:",
+      "choices": [
+        { "id": "A", "text": "Share exam material with future candidates to help them prepare" },
+        { "id": "B", "text": "Not discuss specific exam questions; not give advance information; respect exam integrity" },
+        { "id": "C", "text": "Discuss exam openly with other candidates immediately after" }
+      ],
+      "answer": "B",
+      "explanation": "VII(A) Exam Conduct:\n- Maintain exam confidentiality\n- Do not share specific questions, content, or experiences in detail\n- Respect exam integrity\n- Don't cheat or assist others to cheat\n- Don't share grading rubrics\n\nThe Code preserves the integrity of the CFA designation by protecting exam content.\n\n**A** and **C** breach exam confidentiality."
+    },
+    {
+      "id": "q-ethics-std-vii-008",
+      "lessonId": "ethics-std-vii-cfa",
+      "losId": "los-ethics-vii-2",
+      "difficulty": "medium",
+      "stem": "Under **VII(B) Reference to CFA Institute, CFA Designation, and CFA Program**, members *most accurately* should describe themselves as:",
+      "choices": [
+        { "id": "A", "text": "'Top-tier CFA' if they performed well" },
+        { "id": "B", "text": "'CFA charterholder' or 'CFA' (after the name) — no implication of superiority or exam-result distinctions" },
+        { "id": "C", "text": "Make up descriptions as needed" }
+      ],
+      "answer": "B",
+      "explanation": "VII(B): proper use of CFA designation.\n\nCorrect: 'John Smith, CFA' or 'John Smith, CFA charterholder'.\n\nIncorrect:\n- 'Top-tier CFA' / 'High-pass CFA' (implies ranking)\n- 'Better CFA than X' (comparative)\n- Use as a noun ('a CFA') if it implies professional standing\n- Use prior to passing all three levels\n\n**A** misrepresents.\n\n**C** violates clear rules."
+    },
+    {
+      "id": "q-ethics-std-vii-009",
+      "lessonId": "ethics-std-vii-cfa",
+      "losId": "los-ethics-vii-2",
+      "difficulty": "hard",
+      "stem": "A **CFA candidate** who has just passed Level 1 *most accurately* may state:",
+      "choices": [
+        { "id": "A", "text": "'CFA Level 1' after her name" },
+        { "id": "B", "text": "She has passed Level 1 of the CFA Program; she may not call herself 'a CFA' or use the CFA marks until full charter awarded" },
+        { "id": "C", "text": "Use the CFA letters anywhere" }
+      ],
+      "answer": "B",
+      "explanation": "VII(B) candidate references:\n- Permissible: 'passed Level 1 (or 2) of the CFA Program'\n- Permissible: 'Candidate in the CFA Program'\n- Not permissible: 'CFA Level 1' as a suffix (implies designation)\n- Not permissible: 'a CFA' or 'CFA' until full charter awarded (passed all 3 + 4 years work experience + membership active)\n\n**A** is a common violation — looks like a designation but isn't.\n\n**C** breaches the boundary."
+    },
+    {
+      "id": "q-ethics-gips-007",
+      "lessonId": "ethics-gips-overview",
+      "losId": "los-ethics-gips-1",
+      "difficulty": "easy",
+      "stem": "**GIPS (Global Investment Performance Standards)** *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Are mandatory for all asset managers globally" },
+        { "id": "B", "text": "Are voluntary standards for fair and consistent reporting of investment performance, widely adopted by institutional managers" },
+        { "id": "C", "text": "Apply only to retail mutual funds" }
+      ],
+      "answer": "B",
+      "explanation": "GIPS: voluntary global standards for performance presentation.\n\nFirms claiming GIPS compliance:\n- Use prescribed calculation and presentation methods\n- Include all discretionary, fee-paying composite portfolios\n- Maintain at least 5 years of compliant history\n- Independent verification recommended\n\nWidely adopted by institutional managers seeking consistency and credibility.\n\n**A** overstates; voluntary.\n\n**C** is wrong — applies to institutional too."
+    },
+    {
+      "id": "q-ethics-gips-008",
+      "lessonId": "ethics-gips-overview",
+      "losId": "los-ethics-gips-2",
+      "difficulty": "medium",
+      "stem": "A **GIPS composite** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "A single portfolio managed by the firm" },
+        { "id": "B", "text": "An aggregation of portfolios managed to a similar investment strategy/objective" },
+        { "id": "C", "text": "A benchmark index" }
+      ],
+      "answer": "B",
+      "explanation": "Composite: groups all portfolios managed to the same investment mandate (e.g., 'US Large Cap Value Composite').\n\nGIPS requires:\n- All discretionary, fee-paying portfolios included in appropriate composite\n- Composite-level return calculation\n- Description of composite\n- Comparison to relevant benchmark\n\nPrevents cherry-picking best portfolios for presentation.\n\n**A** is too narrow.\n\n**C** is a separate concept."
+    },
+    {
+      "id": "q-ethics-gips-009",
+      "lessonId": "ethics-gips-overview",
+      "losId": "los-ethics-gips-2",
+      "difficulty": "hard",
+      "stem": "The major benefit of **GIPS compliance** for asset managers *most likely* is:",
+      "choices": [
+        { "id": "A", "text": "Higher fees" },
+        { "id": "B", "text": "Credibility, comparability, and competitive advantage in institutional markets where compliance is increasingly required" },
+        { "id": "C", "text": "Reduced regulatory oversight" }
+      ],
+      "answer": "B",
+      "explanation": "GIPS benefits for managers:\n- Credibility (independent verification possible)\n- Comparability (standardised approach)\n- Competitive advantage (RFPs often require GIPS)\n- Reduced disputes over performance claims\n\nFor investors: confidence in comparisons across managers.\n\nCost: implementation and ongoing compliance.\n\n**A** and **C** are not GIPS purposes."
+    },
+    {
+      "id": "q-ethics-app-007",
+      "lessonId": "ethics-application-overview",
+      "losId": "los-ethics-app-1",
+      "difficulty": "easy",
+      "stem": "When a member faces an **ethical dilemma**, the *most accurate* first step is to:",
+      "choices": [
+        { "id": "A", "text": "Act based on personal judgement alone" },
+        { "id": "B", "text": "Identify the relevant Code/Standards and analyse the facts; consult compliance or supervisor if uncertain" },
+        { "id": "C", "text": "Ignore it if no one is watching" }
+      ],
+      "answer": "B",
+      "explanation": "Ethical decision-making framework:\n1. Identify the issue and applicable standards\n2. Analyse facts and consider alternatives\n3. Consult: compliance, supervisor, ethics expert if needed\n4. Decide and document\n5. Reflect / learn for next time\n\n**A** is risky (personal blind spots).\n\n**C** is the unethical default."
+    },
+    {
+      "id": "q-ethics-app-008",
+      "lessonId": "ethics-application-overview",
+      "losId": "los-ethics-app-2",
+      "difficulty": "medium",
+      "stem": "An analyst is **pressured by management** to issue a buy recommendation on a poor company because the firm has an investment banking relationship with it. The analyst *most likely* should:",
+      "choices": [
+        { "id": "A", "text": "Issue the buy and disclose the IB relationship" },
+        { "id": "B", "text": "Resist the pressure; only issue recommendations supported by analysis; document the conflict; consider escalation if pressure continues" },
+        { "id": "C", "text": "Quit immediately" }
+      ],
+      "answer": "B",
+      "explanation": "Multiple Standards apply:\n- I(B) Independence: pressure compromises objectivity\n- V(A) Diligence: must have reasonable basis\n- V(B) Communication: distinguish opinion from analysis\n- VI(A) Disclose conflicts\n\nResist; if pressure persists, escalate to compliance; if unresolved, may need to dissociate or leave.\n\n**A** is insufficient — the recommendation itself must be supported.\n\n**C** is extreme; escalation first."
+    },
+    {
+      "id": "q-ethics-app-009",
+      "lessonId": "ethics-application-overview",
+      "losId": "los-ethics-app-2",
+      "difficulty": "hard",
+      "stem": "A junior member discovers their **supervisor is systematically violating** the Code. The most accurate course of action under the Standards is:",
+      "choices": [
+        { "id": "A", "text": "Report to local regulators immediately" },
+        { "id": "B", "text": "Attempt to address with the supervisor; if unsuccessful, escalate within firm (compliance, ethics office); dissociate from violations; consider resignation if leadership fails to act" },
+        { "id": "C", "text": "Ignore — supervisor is in charge" }
+      ],
+      "answer": "B",
+      "explanation": "Hierarchy of response:\n1. Address with supervisor (privately, professionally)\n2. Internal escalation: compliance, ethics, senior management\n3. Dissociate from violations\n4. Document everything\n5. Resignation as last resort\n6. Whistleblowing to regulators only if law requires (Code does not generally require this)\n\nGoal: stop violations; protect own reputation and CFA designation; act with integrity.\n\n**A** skips internal escalation (often not required by Code).\n\n**C** complicit with violations — itself a Code violation."
     }
   ]
 }

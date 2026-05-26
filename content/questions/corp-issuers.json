@@ -546,6 +546,300 @@
       ],
       "answer": "B",
       "explanation": "Debt capacity is highest where (i) cash flows are stable and predictable (low default risk on coupons), (ii) tangible assets provide collateral (lenders' recovery value in default).\n\nUtilities tick both boxes — that's why their D/V ratios are historically 50–65%, much higher than tech firms (often 0–20%).\n\n**A** has neither stable cash flows nor tangible assets.\n\n**C** has tangible-light assets and growth volatility."
+    },
+    {
+      "id": "q-corp-feat-007",
+      "lessonId": "corp-feat-overview",
+      "losId": "los-corp-feat-1",
+      "difficulty": "easy",
+      "stem": "A **for-profit corporation's** primary fiduciary duty is *most accurately* to:",
+      "choices": [
+        { "id": "A", "text": "Shareholders (in most jurisdictions)" },
+        { "id": "B", "text": "Government regulators" },
+        { "id": "C", "text": "Suppliers" }
+      ],
+      "answer": "A",
+      "explanation": "Corporate law in most jurisdictions establishes board's fiduciary duty primarily to shareholders. Stakeholder theory is increasingly recognised but shareholders remain the legal primary beneficiary in most cases.\n\n**B** and **C** are stakeholders, not fiduciary beneficiaries."
+    },
+    {
+      "id": "q-corp-feat-008",
+      "lessonId": "corp-feat-overview",
+      "losId": "los-corp-feat-2",
+      "difficulty": "medium",
+      "stem": "A **limited partnership (LP)** vs **limited liability company (LLC)** *most accurately* differ in:",
+      "choices": [
+        { "id": "A", "text": "Tax treatment is identical in all jurisdictions" },
+        { "id": "B", "text": "LP requires at least one general partner with unlimited liability; LLC provides limited liability for all members" },
+        { "id": "C", "text": "Both can issue public stock by default" }
+      ],
+      "answer": "B",
+      "explanation": "LP: general partner (unlimited liability + management) + limited partners (limited liability + passive). LLC: all members have limited liability; management flexible.\n\nLLC widely used for closely-held businesses; LP common for PE/VC funds.\n\n**A** is wrong — structural rules differ even though both can be pass-through.\n\n**C** is wrong — typically neither is public-listed directly."
+    },
+    {
+      "id": "q-corp-feat-009",
+      "lessonId": "corp-feat-overview",
+      "losId": "los-corp-feat-3",
+      "difficulty": "hard",
+      "stem": "The **agency problem** in public corporations *most accurately* arises from:",
+      "choices": [
+        { "id": "A", "text": "Government regulation of business" },
+        { "id": "B", "text": "Separation of ownership (shareholders) and control (management) creating misaligned incentives" },
+        { "id": "C", "text": "Conflicts between equity and bond holders" }
+      ],
+      "answer": "B",
+      "explanation": "Agency problem: managers (agents) act on behalf of owners (principals) but have different preferences. Managers may pursue perks, empire-building, risk-aversion vs shareholder value max.\n\nMitigated by board oversight, compensation alignment, and disclosure.\n\n**A** is unrelated.\n\n**C** is a separate equity-debt conflict."
+    },
+    {
+      "id": "q-corp-inv-007",
+      "lessonId": "corp-inv-overview",
+      "losId": "los-corp-inv-1",
+      "difficulty": "easy",
+      "stem": "**Institutional investors** (pension funds, mutual funds, sovereign wealth funds) *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Hold only a small share of public equity markets" },
+        { "id": "B", "text": "Collectively hold the majority of public equity in developed markets and influence corporate governance" },
+        { "id": "C", "text": "Are prohibited from voting on corporate decisions" }
+      ],
+      "answer": "B",
+      "explanation": "Institutional investors own ~70-80% of US public equity. Their voting power and engagement (proxy fights, shareholder activism) shape corporate governance.\n\n**A** is wrong — they're the dominant ownership class.\n\n**C** is incorrect — they actively vote, often deciding."
+    },
+    {
+      "id": "q-corp-inv-008",
+      "lessonId": "corp-inv-overview",
+      "losId": "los-corp-inv-2",
+      "difficulty": "medium",
+      "stem": "**ESG investing** *most accurately* incorporates:",
+      "choices": [
+        { "id": "A", "text": "Only short-term return considerations" },
+        { "id": "B", "text": "Environmental, social, and governance factors alongside financial analysis" },
+        { "id": "C", "text": "Solely environmental factors" }
+      ],
+      "answer": "B",
+      "explanation": "ESG investing: assesses companies on environmental impact, social practices, and governance quality alongside traditional financial metrics. $30+ trillion ESG-aligned globally.\n\n**A** and **C** are incomplete."
+    },
+    {
+      "id": "q-corp-inv-009",
+      "lessonId": "corp-inv-overview",
+      "losId": "los-corp-inv-3",
+      "difficulty": "hard",
+      "stem": "A **stakeholder vs shareholder** view of the corporation is *most accurately* characterised by:",
+      "choices": [
+        { "id": "A", "text": "Stakeholder view ignores profitability" },
+        { "id": "B", "text": "Stakeholder view considers employees, customers, suppliers, community alongside shareholders; shareholder view prioritises shareholder value" },
+        { "id": "C", "text": "The two views are identical in practice" }
+      ],
+      "answer": "B",
+      "explanation": "Shareholder primacy (Friedman): maximise shareholder value within law/ethics.\n\nStakeholder view: balance interests of all parties — employees, customers, suppliers, community, environment, plus shareholders.\n\n**A** mischaracterises stakeholder view.\n\n**C** ignores the practical differences."
+    },
+    {
+      "id": "q-corp-gov-007",
+      "lessonId": "corp-gov-overview",
+      "losId": "los-corp-gov-1",
+      "difficulty": "easy",
+      "stem": "An **independent director** is *most accurately* one who:",
+      "choices": [
+        { "id": "A", "text": "Owns no shares" },
+        { "id": "B", "text": "Has no material relationship with the company beyond their board role" },
+        { "id": "C", "text": "Is a former senior executive" }
+      ],
+      "answer": "B",
+      "explanation": "Independent director: not employed, not significant supplier/customer, not related to executives. Brings objective oversight.\n\nMost listing standards require majority of board be independent.\n\n**A** is unrelated — independents often own shares for alignment.\n\n**C** is the opposite — former executives typically *not* independent."
+    },
+    {
+      "id": "q-corp-gov-008",
+      "lessonId": "corp-gov-overview",
+      "losId": "los-corp-gov-2",
+      "difficulty": "medium",
+      "stem": "**Cumulative voting** for board elections *most likely* benefits:",
+      "choices": [
+        { "id": "A", "text": "Majority shareholders who win all seats" },
+        { "id": "B", "text": "Minority shareholders by allowing concentrated voting on a single candidate" },
+        { "id": "C", "text": "Management by reducing shareholder influence" }
+      ],
+      "answer": "B",
+      "explanation": "Cumulative voting: each share gets votes equal to seats; can cast all votes for one candidate. Minority block can potentially win at least one seat.\n\nStraight voting: each share = one vote per seat; majority wins all seats.\n\n**A** and **C** describe straight voting outcomes."
+    },
+    {
+      "id": "q-corp-gov-009",
+      "lessonId": "corp-gov-overview",
+      "losId": "los-corp-gov-4",
+      "difficulty": "hard",
+      "stem": "A **dual-class share** structure (founders with super-voting shares) *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Always benefits public shareholders" },
+        { "id": "B", "text": "Concentrates control with founders/insiders; can entrench leadership but reduces accountability" },
+        { "id": "C", "text": "Eliminates the need for a board of directors" }
+      ],
+      "answer": "B",
+      "explanation": "Dual-class: founders hold Class A (10× voting) while public buys Class B (1× voting). Common in tech IPOs (Google, Meta, Snap).\n\nPros: founders can pursue long-term vision without short-term pressure.\nCons: reduced accountability; minority view ignored.\n\n**A** is contested.\n\n**C** is wrong — boards still exist."
+    },
+    {
+      "id": "q-corp-wc-007",
+      "lessonId": "corp-wc-overview",
+      "losId": "los-corp-wc-1",
+      "difficulty": "easy",
+      "stem": "**Working capital** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "Total assets" },
+        { "id": "B", "text": "Current assets minus current liabilities" },
+        { "id": "C", "text": "Total equity" }
+      ],
+      "answer": "B",
+      "explanation": "Working capital = current assets − current liabilities. Measures short-term liquidity and financing of operations.\n\n**A** and **C** are unrelated balance sheet measures."
+    },
+    {
+      "id": "q-corp-wc-008",
+      "lessonId": "corp-wc-overview",
+      "losId": "los-corp-wc-2",
+      "difficulty": "medium",
+      "stem": "**Days Sales Outstanding (DSO)** of 60 days vs industry average 30 days *most likely* indicates:",
+      "choices": [
+        { "id": "A", "text": "Excellent receivables management" },
+        { "id": "B", "text": "Slow collections — potential credit issues with customers or aggressive sales terms" },
+        { "id": "C", "text": "No issue (DSO doesn't matter)" }
+      ],
+      "answer": "B",
+      "explanation": "DSO = (Receivables / Revenue) × 365. Higher than peers signals slow collections — could indicate credit problems, aggressive payment terms granted to win sales, or weak collections processes.\n\n**A** has direction wrong.\n\n**C** dismisses a key working capital indicator."
+    },
+    {
+      "id": "q-corp-wc-009",
+      "lessonId": "corp-wc-overview",
+      "losId": "los-corp-wc-4",
+      "difficulty": "hard",
+      "stem": "**Cash conversion cycle (CCC)** is *most accurately*:",
+      "choices": [
+        { "id": "A", "text": "DSO + DIO − DPO" },
+        { "id": "B", "text": "Total assets / total liabilities" },
+        { "id": "C", "text": "Operating cycle minus financing period" }
+      ],
+      "answer": "A",
+      "explanation": "CCC = Days Sales Outstanding + Days Inventory Outstanding − Days Payables Outstanding.\n\nMeasures how long cash is tied up between paying suppliers and collecting from customers.\n\nLower CCC = more efficient working capital. Negative CCC: collect before paying (e.g., Amazon historically) = float advantage.\n\n**B** is a different ratio.\n\n**C** is conceptual but not the formula."
+    },
+    {
+      "id": "q-corp-ca-007",
+      "lessonId": "corp-ca-overview",
+      "losId": "los-corp-ca-1",
+      "difficulty": "easy",
+      "stem": "**NPV (Net Present Value)** is *most accurately* used to:",
+      "choices": [
+        { "id": "A", "text": "Measure historical profits" },
+        { "id": "B", "text": "Evaluate whether a project's expected cash flows justify the investment at the firm's cost of capital" },
+        { "id": "C", "text": "Determine the optimal capital structure" }
+      ],
+      "answer": "B",
+      "explanation": "NPV = PV of expected future cash flows − initial investment. Positive NPV = value-creating; project should be accepted.\n\nDiscount rate = cost of capital (typically WACC).\n\n**A** is historical accounting.\n\n**C** is a separate decision."
+    },
+    {
+      "id": "q-corp-ca-008",
+      "lessonId": "corp-ca-overview",
+      "losId": "los-corp-ca-3",
+      "difficulty": "medium",
+      "stem": "Comparing **NPV** and **IRR** for two mutually exclusive projects with different scales:",
+      "choices": [
+        { "id": "A", "text": "IRR is always preferred" },
+        { "id": "B", "text": "NPV is preferred — directly measures value added in dollars" },
+        { "id": "C", "text": "Both always give same ranking" }
+      ],
+      "answer": "B",
+      "explanation": "When mutually exclusive projects differ in scale, IRR and NPV can disagree. NPV measures absolute value added — preferred decision rule.\n\nIRR % can be high on small projects but add less total value than larger projects with lower IRR.\n\n**A** is wrong for scale differences.\n\n**C** is false when projects differ in scale or timing."
+    },
+    {
+      "id": "q-corp-ca-009",
+      "lessonId": "corp-ca-overview",
+      "losId": "los-corp-ca-5",
+      "difficulty": "hard",
+      "stem": "**Real options** in capital budgeting *most accurately* refer to:",
+      "choices": [
+        { "id": "A", "text": "Options on real estate" },
+        { "id": "B", "text": "Managerial flexibility (expand, abandon, delay) that traditional NPV ignores" },
+        { "id": "C", "text": "Stock options for management" }
+      ],
+      "answer": "B",
+      "explanation": "Real options: optionality embedded in projects.\n- Option to expand (scale up if successful)\n- Option to abandon (cut losses)\n- Option to delay (wait for info)\n- Option to switch inputs\n\nTraditional NPV ignores these → undervalues projects with flexibility.\n\n**A** is misinterpretation.\n\n**C** is equity compensation, different concept."
+    },
+    {
+      "id": "q-corp-cs-007",
+      "lessonId": "corp-cs-overview",
+      "losId": "los-corp-cs-1",
+      "difficulty": "easy",
+      "stem": "The **Modigliani-Miller (MM) theorem without taxes** *most accurately* states that:",
+      "choices": [
+        { "id": "A", "text": "Firm value depends on capital structure" },
+        { "id": "B", "text": "In perfect markets, firm value is independent of capital structure" },
+        { "id": "C", "text": "Debt always reduces firm value" }
+      ],
+      "answer": "B",
+      "explanation": "MM Proposition I (no taxes): in a frictionless market, firm value depends on assets/cash flows, not financing mix.\n\nReal-world frictions (especially tax shields and bankruptcy costs) make capital structure matter in practice.\n\n**A** and **C** are wrong without context."
+    },
+    {
+      "id": "q-corp-cs-008",
+      "lessonId": "corp-cs-overview",
+      "losId": "los-corp-cs-2",
+      "difficulty": "medium",
+      "stem": "**Adding the tax shield** to MM (MM with taxes) implies:",
+      "choices": [
+        { "id": "A", "text": "Firms should use minimal debt" },
+        { "id": "B", "text": "Firms benefit from debt because interest is tax-deductible, increasing firm value with leverage" },
+        { "id": "C", "text": "Capital structure is irrelevant" }
+      ],
+      "answer": "B",
+      "explanation": "Tax shield value = $t \\times D$ (tax rate × debt). Interest deductible → cash flow gain → value gain.\n\nNaive interpretation: 100% debt is optimal. Reality: bankruptcy costs offset → static trade-off theory predicts moderate leverage.\n\n**A** is opposite.\n\n**C** is MM without taxes."
+    },
+    {
+      "id": "q-corp-cs-009",
+      "lessonId": "corp-cs-overview",
+      "losId": "los-corp-cs-4",
+      "difficulty": "hard",
+      "stem": "The **pecking order theory** of capital structure *most accurately* predicts:",
+      "choices": [
+        { "id": "A", "text": "Firms prefer external equity to retained earnings" },
+        { "id": "B", "text": "Firms prefer internal funds first, then debt, then external equity last" },
+        { "id": "C", "text": "Capital structure is random" }
+      ],
+      "answer": "B",
+      "explanation": "Pecking order (Myers): info asymmetry between insiders and outsiders.\n\n1. **Internal financing** (retained earnings): no signal, no costs.\n2. **Debt**: low signal cost.\n3. **External equity**: high signal cost — market may infer overvaluation.\n\nExplains why profitable firms often have low leverage despite tax shield.\n\n**A** is opposite.\n\n**C** rejects systematic theory."
+    },
+    {
+      "id": "q-corp-bm-007",
+      "lessonId": "corp-bm-overview",
+      "losId": "los-corp-bm-1",
+      "difficulty": "easy",
+      "stem": "A **business model** *most accurately* describes:",
+      "choices": [
+        { "id": "A", "text": "Only the financial statements" },
+        { "id": "B", "text": "How a company creates, delivers, and captures value" },
+        { "id": "C", "text": "The legal incorporation papers" }
+      ],
+      "answer": "B",
+      "explanation": "Business model: value proposition + customer segments + channels + revenue model + cost structure + key resources + partnerships.\n\nHow does the company make money? Who pays for what? Why does customer prefer?\n\n**A** and **C** are too narrow."
+    },
+    {
+      "id": "q-corp-bm-008",
+      "lessonId": "corp-bm-overview",
+      "losId": "los-corp-bm-2",
+      "difficulty": "medium",
+      "stem": "A **subscription business model** (SaaS, streaming) is *most accurately* characterised by:",
+      "choices": [
+        { "id": "A", "text": "One-time large transactions" },
+        { "id": "B", "text": "Recurring revenue, lower churn → more predictable cash flow, higher valuation multiples" },
+        { "id": "C", "text": "Unpredictable, project-based revenue" }
+      ],
+      "answer": "B",
+      "explanation": "Subscription: monthly/annual recurring revenue (MRR/ARR). Lower customer churn → higher LTV. Predictability commands higher multiples (e.g., SaaS at 6-15× revenue vs 1-3× for transactional businesses).\n\n**A** describes transactional models.\n\n**C** describes professional services."
+    },
+    {
+      "id": "q-corp-bm-009",
+      "lessonId": "corp-bm-overview",
+      "losId": "los-corp-bm-3",
+      "difficulty": "hard",
+      "stem": "**Network effects** in a business model *most accurately* create:",
+      "choices": [
+        { "id": "A", "text": "Linear scale advantage" },
+        { "id": "B", "text": "Increasing returns to scale — each user adds value for all users, creating winner-takes-most dynamics" },
+        { "id": "C", "text": "Cost reductions through bulk purchasing only" }
+      ],
+      "answer": "B",
+      "explanation": "Network effects: value of network grows with users. Examples: Facebook, eBay, payments networks. Classic 'Metcalfe's law' (value ~ n²).\n\nCreates structural moats and winner-takes-most outcomes — hard for competitors to dislodge.\n\n**A** is linear (just headcount scale).\n\n**C** is economies of scale, different concept."
     }
   ]
 }
